@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>8cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Rectangle Name="Rectangle1">
+                      <ReportItems>
+                        <Textbox Name="Textbox13">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>客户名称:</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
+                          <Top>0.1cm</Top>
+                          <Left>0.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>1.91cm</Width>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox14">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>供应商名称：</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <Top>0.5cm</Top>
+                          <Left>0.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>1.91cm</Width>
+                          <ZIndex>1</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox15">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>供应商代码：</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <Top>0.9cm</Top>
+                          <Left>0.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>1.91cm</Width>
+                          <ZIndex>2</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox18">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>物料描述：</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <Top>1.3cm</Top>
+                          <Left>0.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>1.91cm</Width>
+                          <ZIndex>3</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox19">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>数量：</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <Top>2.1cm</Top>
+                          <Left>0.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>1.91cm</Width>
+                          <ZIndex>4</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox20">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>物料编码：</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox20</rd:DefaultName>
+                          <Top>2.5cm</Top>
+                          <Left>0.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>1.91cm</Width>
+                          <ZIndex>5</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox21">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>产品版本：</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <Top>2.9cm</Top>
+                          <Left>0.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>1.91cm</Width>
+                          <ZIndex>6</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox22">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>采购单号：</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <Top>3.3cm</Top>
+                          <Left>0.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>1.91cm</Width>
+                          <ZIndex>7</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox24">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>镀层物料：</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox24</rd:DefaultName>
+                          <Top>3.7cm</Top>
+                          <Left>0.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>1.91cm</Width>
+                          <ZIndex>8</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox16">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>京信通信</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
+                          <Top>0.1cm</Top>
+                          <Left>2.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>4.2cm</Width>
+                          <ZIndex>9</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox17">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!SUPNAME.Value</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <Top>0.5cm</Top>
+                          <Left>2.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>4.2cm</Width>
+                          <ZIndex>10</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox23">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!SUPCODE.Value</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <Top>0.9cm</Top>
+                          <Left>2.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>4.2cm</Width>
+                          <ZIndex>11</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox26">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Left(Fields!MATERIALDESC.Value,20)</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <Top>1.3cm</Top>
+                          <Left>2.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>5cm</Width>
+                          <ZIndex>12</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox27">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!QTY.Value</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <Format>0;(0)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <Top>2.1cm</Top>
+                          <Left>2.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>4.2cm</Width>
+                          <ZIndex>13</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox28">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!MATERIALNO.Value</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox20</rd:DefaultName>
+                          <Top>2.5cm</Top>
+                          <Left>2.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>4.2cm</Width>
+                          <ZIndex>14</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox29">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!PRDVERSION.Value</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <Top>2.9cm</Top>
+                          <Left>2.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>4.2cm</Width>
+                          <ZIndex>15</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox30">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!VOUCHERNO.Value &amp; " - " &amp; Fields!ROWNO.Value</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <Top>3.3cm</Top>
+                          <Left>2.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>4.2cm</Width>
+                          <ZIndex>16</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Image Name="Image1">
+                          <Source>Embedded</Source>
+                          <Value>logo1</Value>
+                          <Sizing>Fit</Sizing>
+                          <Top>0.15cm</Top>
+                          <Left>6.3cm</Left>
+                          <Height>1cm</Height>
+                          <Width>1.3cm</Width>
+                          <ZIndex>17</ZIndex>
+                          <Visibility>
+                            <Hidden>=IIF(Fields!ISROHS.Value = 2,true,false)</Hidden>
+                          </Visibility>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Image>
+                        <Image Name="Image5">
+                          <Source>Database</Source>
+                          <Value>=Fields!BARCODEIMG.Value</Value>
+                          <MIMEType>image/bmp</MIMEType>
+                          <Sizing>FitProportional</Sizing>
+                          <Top>2.3cm</Top>
+                          <Left>6.3cm</Left>
+                          <Height>1.3cm</Height>
+                          <Width>1.3cm</Width>
+                          <ZIndex>18</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Image>
+                        <Textbox Name="Textbox37">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>镀银</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox37</rd:DefaultName>
+                          <Top>3.7cm</Top>
+                          <Left>2.6cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>0.7cm</Width>
+                          <ZIndex>19</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="PLATEDSILVER">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=IIF(Fields!PLATEDSILVER.Value = 2,"√"," ")</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>PLATEDSILVER</rd:DefaultName>
+                          <Top>3.75cm</Top>
+                          <Left>2.3cm</Left>
+                          <Height>0.2cm</Height>
+                          <Width>0.2cm</Width>
+                          <ZIndex>20</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox38">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>镀锡</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox37</rd:DefaultName>
+                          <Top>3.7cm</Top>
+                          <Left>4.05cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>0.7cm</Width>
+                          <ZIndex>21</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="PLATEDTIN">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=IIF(Fields!PLATEDTIN.Value = 2,"√"," ")</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>3.75cm</Top>
+                          <Left>3.75cm</Left>
+                          <Height>0.2cm</Height>
+                          <Width>0.2cm</Width>
+                          <ZIndex>22</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox39">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>其他</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox37</rd:DefaultName>
+                          <Top>3.7cm</Top>
+                          <Left>5.4cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>0.7cm</Width>
+                          <ZIndex>23</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="PLATEDOTHER">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=IIF(Fields!OTHERS.Value = 2,"√"," ")</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>3.75cm</Top>
+                          <Left>5.1cm</Left>
+                          <Height>0.2cm</Height>
+                          <Width>0.2cm</Width>
+                          <ZIndex>24</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox1">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=LTrim(Mid(Fields!MATERIALDESC.Value,21))</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Top>1.7cm</Top>
+                          <Left>2.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>5cm</Width>
+                          <ZIndex>25</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox25">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Constant">生产批号：</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox24</rd:DefaultName>
+                          <Top>4.1cm</Top>
+                          <Left>0.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>1.91cm</Width>
+                          <ZIndex>26</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox32">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!BATCHNO.Value</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <Top>4.1cm</Top>
+                          <Left>2.1cm</Left>
+                          <Height>0.5cm</Height>
+                          <Width>4.2cm</Width>
+                          <ZIndex>27</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox36">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Microsoft.VisualBasic.Strings.Left(Fields!SERIALNO.Value, 8) &amp; Microsoft.VisualBasic.Constants.vbCrlf &amp; Microsoft.VisualBasic.Strings.Right(Fields!SERIALNO.Value, 4)</Value>
+                                  <Style>
+                                    <FontFamily>黑体</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <Top>3.6cm</Top>
+                          <Left>6.3cm</Left>
+                          <Height>0.9cm</Height>
+                          <Width>1.3cm</Width>
+                          <ZIndex>28</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>0cm</PaddingLeft>
+                            <PaddingRight>0cm</PaddingRight>
+                            <PaddingTop>0cm</PaddingTop>
+                            <PaddingBottom>0cm</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                      <KeepTogether>true</KeepTogether>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Rectangle>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="详细信息">
+                <PageBreak>
+                  <BreakLocation>Between</BreakLocation>
+                </PageBreak>
+              </Group>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
+        <Left>0cm</Left>
+        <Height>6cm</Height>
+        <Width>8cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>2.3622in</Height>
+    <Style />
+  </Body>
+  <Width>3.14961in</Width>
+  <Page>
+    <PageHeight>10cm</PageHeight>
+    <PageWidth>10cm</PageWidth>
+    <LeftMargin>0cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>0cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="JingXinWMSJXWebService">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>eba2aa24-363c-4b19-b4d9-2d1f7d34dc4a</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>JingXinWMSJXWebService</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="BARCODE">
+          <DataField>BARCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BARCODEIMG">
+          <DataField>BARCODEIMG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BARCODENO">
+          <DataField>BARCODENO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="BARCODETYPE">
+          <DataField>BARCODETYPE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="BATCHNO">
+          <DataField>BATCHNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BATCHQTY">
+          <DataField>BATCHQTY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ClaimArriveTime">
+          <DataField>ClaimArriveTime</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ClaimDeliveryNum">
+          <DataField>ClaimDeliveryNum</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Comba">
+          <DataField>Comba</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CorrespondDepartment">
+          <DataField>CorrespondDepartment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CreateTime">
+          <DataField>CreateTime</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CURRENTLYDELIVERYNUM">
+          <DataField>CURRENTLYDELIVERYNUM</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CUSCODE">
+          <DataField>CUSCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSNAME">
+          <DataField>CUSNAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DeliveryAddress">
+          <DataField>DeliveryAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DELIVERYNO">
+          <DataField>DELIVERYNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DeliveryNo1">
+          <DataField>DeliveryNo1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Dghead">
+          <DataField>Dghead</DataField>
+          <rd:TypeName>JingXinWMS.WebService.Dghead</rd:TypeName>
+        </Field>
+        <Field Name="FactPrintedNum">
+          <DataField>FactPrintedNum</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="INNER_ID">
+          <DataField>INNER_ID</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="INNERCOUNT">
+          <DataField>INNERCOUNT</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="INNERPACKQTY">
+          <DataField>INNERPACKQTY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="INNERQTY">
+          <DataField>INNERQTY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="InRoadDeliveryNum">
+          <DataField>InRoadDeliveryNum</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ISROHS">
+          <DataField>ISROHS</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="IsROHS1">
+          <DataField>IsROHS1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="IsRoSH">
+          <DataField>IsRoSH</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="JingxinName">
+          <DataField>JingxinName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MANTISSAQTY">
+          <DataField>MANTISSAQTY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="MATERIALDESC">
+          <DataField>MATERIALDESC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MaterialDesc1">
+          <DataField>MaterialDesc1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MATERIALNO">
+          <DataField>MATERIALNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MaterialNo1">
+          <DataField>MaterialNo1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Message">
+          <DataField>Message</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NOPACK">
+          <DataField>NOPACK</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="OPERATIONDATE">
+          <DataField>OPERATIONDATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="OPERATOR">
+          <DataField>OPERATOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OTHERS">
+          <DataField>OTHERS</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="OUTBOX_ID">
+          <DataField>OUTBOX_ID</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="OUTCOUNT">
+          <DataField>OUTCOUNT</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="OUTPACKQTY">
+          <DataField>OUTPACKQTY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Plant">
+          <DataField>Plant</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Plated">
+          <DataField>Plated</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PLATEDGOLD">
+          <DataField>PLATEDGOLD</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="PLATEDSILVER">
+          <DataField>PLATEDSILVER</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="PLATEDTIN">
+          <DataField>PLATEDTIN</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="PRDVERSION">
+          <DataField>PRDVERSION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRINTQTY">
+          <DataField>PRINTQTY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="QTY">
+          <DataField>QTY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ReadyDeliveryNum">
+          <DataField>ReadyDeliveryNum</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="RECEIVEQTY">
+          <DataField>RECEIVEQTY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ReceiveTime">
+          <DataField>ReceiveTime</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Row">
+          <DataField>Row</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ROWNO">
+          <DataField>ROWNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RowNo1">
+          <DataField>RowNo1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SERIALNO">
+          <DataField>SERIALNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Status">
+          <DataField>Status</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STORAGELOC">
+          <DataField>STORAGELOC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SUPCODE">
+          <DataField>SUPCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SUPNAME">
+          <DataField>SUPNAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Supplier">
+          <DataField>Supplier</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Type">
+          <DataField>Type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Unit">
+          <DataField>Unit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VERSIONNUM">
+          <DataField>VERSIONNUM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VOUCHERNO">
+          <DataField>VOUCHERNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VoucherNo1">
+          <DataField>VoucherNo1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VOUCHERQTY">
+          <DataField>VOUCHERQTY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="VOUCHERTYPE">
+          <DataField>VOUCHERTYPE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WaitDeliveryNum">
+          <DataField>WaitDeliveryNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WorkCode">
+          <DataField>WorkCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>JingXinWMS.WebService</rd:DataSetName>
+        <rd:TableName>Barcode_Model</rd:TableName>
+        <rd:ObjectDataSourceType>JingXinWMS.WebService.Barcode_Model, Service References.WebService.Reference.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo1">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAHIAAAA7CAIAAAAo6EmOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK+SURBVHhe7Zy7dcMwDEU9ikdI7SplxkjleTyN25QpM0CGUWhLkfEAguIPonOCe9BEFCXwCvyk8WFyDHCtJoDWz8/p48OjMr6+Fo0B0Ho8ToeDR2W8vi4aA661W2xofX9f/nQyCUJda39cqwmu1QTXaoJrNcG1muBaf/meTnjqvC4NNZho/b48kktES94UeN0p+BGgMv7e66NJRl2SI7WGOPdQ26I1J9WKHO210nGKiRbiEtFQRr1WZeJfz3DxcL5fLWFfrTNsMOVJM6q1gj5Mg1Vx6bcfoVUkXTHLKNVaz+SiFHc5PVpLF6sxWtk4G9eBSq2K6xVay6fLcjGTQVq3KqWILlrbl3jKP65W/LSl9ZhmkFY8KkYWLuUsGbmzQSvb8TuaHaOV7gbyJACtIuTgq7UGaMHO0eUovbdWaLoHWwGk06uoXGZWPjMdzJs0e4u2Y5+91mSw0mAdwTjKpR0btQa0J1QvCyO1yp0qfTyAx5JJ0K51IbqgR1eVLQZpjU4xOiplMFHvmu4H+toaAW++RblZe61rTpiuLMac43f0P5/OWu80HhJ21MpyFQVLW7XtOKreQmuAmc3sNbOrVjY8VrA7a40+CsBeWkpR9tXKSgALdnucinorrbiUP7VWNkJasNBLOTZ23LISH3glfTJJsLtW3HagTGKDB/AAtN5QpxV6lbwuhwFaE+nCv1iiI60d+j3qtLKLsmAhGaWcNUZozS7YEIsCdlDHZ1ZqZesAbWKvK1wBAmO0srxpwUqzMuD+Bq0BKEklijarmUFat6YYne8QscnYojUA3UWU1umMidZurDqUb9MX6re8QIHn1vpnca0muFYTXKsJrtUE12qCazXBtZrgWk1wrSa4VhNcqwmu1QTXaoJr
+NSFL69sb/7kMj3S8vGRo9agL12oSqlb/ZaGWUH9ZyOmFazVgmn4AwjGCnw+jhxgAAAAASUVORK5CYII=</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>c513b489-8bff-480d-8598-88692286387d</rd:ReportID>
+</Report>

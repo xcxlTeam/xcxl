@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_MaterialOuterLabel" targetNamespace="http://tempuri.org/DS_MaterialOuterLabel.xsd" xmlns:mstns="http://tempuri.org/DS_MaterialOuterLabel.xsd" xmlns="http://tempuri.org/DS_MaterialOuterLabel.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_MaterialOuterLabel" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_MaterialOuterLabel" msprop:Generator_UserDSName="DS_MaterialOuterLabel">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MaterialOuterLabel" msprop:Generator_TableClassName="MaterialOuterLabelDataTable" msprop:Generator_TableVarName="tableMaterialOuterLabel" msprop:Generator_TablePropName="MaterialOuterLabel" msprop:Generator_RowDeletingName="MaterialOuterLabelRowDeleting" msprop:Generator_RowChangingName="MaterialOuterLabelRowChanging" msprop:Generator_RowEvHandlerName="MaterialOuterLabelRowChangeEventHandler" msprop:Generator_RowDeletedName="MaterialOuterLabelRowDeleted" msprop:Generator_UserTableName="MaterialOuterLabel" msprop:Generator_RowChangedName="MaterialOuterLabelRowChanged" msprop:Generator_RowEvArgName="MaterialOuterLabelRowChangeEvent" msprop:Generator_RowClassName="MaterialOuterLabelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INVSTD" msprop:Generator_ColumnVarNameInTable="columnINVSTD" msprop:Generator_ColumnPropNameInRow="INVSTD" msprop:Generator_ColumnPropNameInTable="INVSTDColumn" msprop:Generator_UserColumnName="INVSTD" type="xs:string" minOccurs="0" />
+              <xs:element name="Barcode" msprop:Generator_ColumnVarNameInTable="columnBarcode" msprop:Generator_ColumnPropNameInRow="Barcode" msprop:Generator_ColumnPropNameInTable="BarcodeColumn" msprop:Generator_UserColumnName="Barcode" type="xs:string" minOccurs="0" />
+              <xs:element name="POCode" msprop:Generator_ColumnVarNameInTable="columnPOCode" msprop:Generator_ColumnPropNameInRow="POCode" msprop:Generator_ColumnPropNameInTable="POCodeColumn" msprop:Generator_UserColumnName="POCode" type="xs:string" minOccurs="0" />
+              <xs:element name="LabelType" msprop:Generator_ColumnVarNameInTable="columnLabelType" msprop:Generator_ColumnPropNameInRow="LabelType" msprop:Generator_ColumnPropNameInTable="LabelTypeColumn" msprop:Generator_UserColumnName="LabelType" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIALNO" msprop:Generator_ColumnVarNameInTable="columnMATERIALNO" msprop:Generator_ColumnPropNameInRow="MATERIALNO" msprop:Generator_ColumnPropNameInTable="MATERIALNOColumn" msprop:Generator_UserColumnName="MATERIALNO" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIALDESC" msprop:Generator_ColumnVarNameInTable="columnMATERIALDESC" msprop:Generator_ColumnPropNameInRow="MATERIALDESC" msprop:Generator_ColumnPropNameInTable="MATERIALDESCColumn" msprop:Generator_UserColumnName="MATERIALDESC" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPCODE" msprop:Generator_ColumnVarNameInTable="columnSUPCODE" msprop:Generator_ColumnPropNameInRow="SUPCODE" msprop:Generator_ColumnPropNameInTable="SUPCODEColumn" msprop:Generator_UserColumnName="SUPCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPNAME" msprop:Generator_ColumnVarNameInTable="columnSUPNAME" msprop:Generator_ColumnPropNameInRow="SUPNAME" msprop:Generator_ColumnPropNameInTable="SUPNAMEColumn" msprop:Generator_UserColumnName="SUPNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PrintDate" msprop:Generator_ColumnVarNameInTable="columnPrintDate" msprop:Generator_ColumnPropNameInRow="PrintDate" msprop:Generator_ColumnPropNameInTable="PrintDateColumn" msprop:Generator_UserColumnName="PrintDate" type="xs:string" minOccurs="0" />
+              <xs:element name="SupBatch" msprop:Generator_ColumnVarNameInTable="columnSupBatch" msprop:Generator_ColumnPropNameInRow="SupBatch" msprop:Generator_ColumnPropNameInTable="SupBatchColumn" msprop:Generator_UserColumnName="SupBatch" type="xs:string" minOccurs="0" />
+              <xs:element name="OUTPACKQTY" msprop:Generator_ColumnVarNameInTable="columnOUTPACKQTY" msprop:Generator_ColumnPropNameInRow="OUTPACKQTY" msprop:Generator_ColumnPropNameInTable="OUTPACKQTYColumn" msprop:Generator_UserColumnName="OUTPACKQTY" type="xs:string" minOccurs="0" />
+              <xs:element name="PACKNO" msprop:Generator_ColumnVarNameInTable="columnPACKNO" msprop:Generator_ColumnPropNameInRow="PACKNO" msprop:Generator_ColumnPropNameInTable="PACKNOColumn" msprop:Generator_UserColumnName="PACKNO" type="xs:string" minOccurs="0" />
+              <xs:element name="pobarcode" msprop:Generator_ColumnVarNameInTable="columnpobarcode" msprop:Generator_ColumnPropNameInRow="pobarcode" msprop:Generator_ColumnPropNameInTable="pobarcodeColumn" msprop:Generator_UserColumnName="pobarcode" type="xs:string" minOccurs="0" />
+              <xs:element name="qrbarcode" msprop:Generator_ColumnVarNameInTable="columnqrbarcode" msprop:Generator_ColumnPropNameInRow="qrbarcode" msprop:Generator_ColumnPropNameInTable="qrbarcodeColumn" msprop:Generator_UserColumnName="qrbarcode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

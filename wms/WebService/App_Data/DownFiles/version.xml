@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<VERSION>
+  <VERSIONCODE>1.0.3.96</VERSIONCODE>
+  <FILENAME>updateversion</FILENAME>
+  <LOADURL>
+    http://192.168.0.102/XinJieWebserver/DownFiles.aspx?filename=SHIMGE.apk
+  </LOADURL>
+</VERSION>

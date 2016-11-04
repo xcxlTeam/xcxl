@@ -1,0 +1,1237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11369C55-91AE-43C7-AF79-726CC52A3022}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMS</RootNamespace>
+    <AssemblyName>SCG_WMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\192.168.0.215\JingXinWMS\UpdatePC\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4FB603A2D3A345E068D2C8A7A8F6091246A9F004</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>JingXinWMS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.4489.42329, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.U8.Framework.Login.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=19a34671517e8c56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\UFSoft.U8.Framework.Login.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Basic\Basic_Func.cs" />
+    <Compile Include="Basic\Basic_Var.cs" />
+    <Compile Include="Basic\FrmAreaFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmAreaFile.Designer.cs">
+      <DependentUpon>FrmAreaFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmAreaList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmAreaList.Designer.cs">
+      <DependentUpon>FrmAreaList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmGroupFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmGroupFile.Designer.cs">
+      <DependentUpon>FrmGroupFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmGroupMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmGroupMenu.Designer.cs">
+      <DependentUpon>FrmGroupMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmHouseFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmHouseFile.Designer.cs">
+      <DependentUpon>FrmHouseFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmHouseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmHouseList.Designer.cs">
+      <DependentUpon>FrmHouseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmMenuFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmMenuFile.Designer.cs">
+      <DependentUpon>FrmMenuFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmUserFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmUserFile.Designer.cs">
+      <DependentUpon>FrmUserFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmUserList.Designer.cs">
+      <DependentUpon>FrmUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmWarehouseFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmWarehouseFile.Designer.cs">
+      <DependentUpon>FrmWarehouseFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmWarehouseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmWarehouseList.Designer.cs">
+      <DependentUpon>FrmWarehouseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check\Check_Func.cs" />
+    <Compile Include="Check\FrmCheckAnalyse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check\FrmCheckAnalyse.designer.cs">
+      <DependentUpon>FrmCheckAnalyse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check\FrmCheckFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check\FrmCheckFile.designer.cs">
+      <DependentUpon>FrmCheckFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check\FrmCheckList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check\FrmCheckList.designer.cs">
+      <DependentUpon>FrmCheckList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check\FrmCheckOmitAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check\FrmCheckOmitAdd.Designer.cs">
+      <DependentUpon>FrmCheckOmitAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check\FrmCheckProfitLoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check\FrmCheckProfitLoss.designer.cs">
+      <DependentUpon>FrmCheckProfitLoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check\FrmReCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check\FrmReCheck.designer.cs">
+      <DependentUpon>FrmReCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BeepUp.cs" />
+    <Compile Include="Common\Common_Func.cs" />
+    <Compile Include="Common\Common_Var.cs" />
+    <Compile Include="Common\FrmBaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FrmBaseDialog.Designer.cs">
+      <DependentUpon>FrmBaseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FrmBasic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FrmBasic.Designer.cs">
+      <DependentUpon>FrmBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ObjectExtend.cs" />
+    <Compile Include="Common\OperXml.cs" />
+    <Compile Include="Common\PinYinConvert.cs" />
+    <Compile Include="Common\WebService.cs" />
+    <Compile Include="FastInNotHavePO\Frmmain_FastInNotHavePO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastInNotHavePO\Frmmain_FastInNotHavePO.Designer.cs">
+      <DependentUpon>Frmmain_FastInNotHavePO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastInNotHavePO\Frmmain_FastInNotHavePOQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastInNotHavePO\Frmmain_FastInNotHavePOQuery.Designer.cs">
+      <DependentUpon>Frmmain_FastInNotHavePOQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastIn\FastIn_Func.cs" />
+    <Compile Include="FastIn\FrmAdd_FastIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastIn\FrmAdd_FastIn.Designer.cs">
+      <DependentUpon>FrmAdd_FastIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastIn\Frmmain_FastIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastIn\Frmmain_FastIn.designer.cs">
+      <DependentUpon>Frmmain_FastIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastIn\FrmQuery_FastIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastIn\FrmQuery_FastIn.Designer.cs">
+      <DependentUpon>FrmQuery_FastIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastTask\frmFastInEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastTask\frmFastInEdit.Designer.cs">
+      <DependentUpon>frmFastInEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastTask\frmFastOutEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastTask\frmFastOutEdit.Designer.cs">
+      <DependentUpon>frmFastOutEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMainTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMainTab.Designer.cs">
+      <DependentUpon>FrmMainTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmChangePwd.Designer.cs">
+      <DependentUpon>FrmChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmVersionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmVersionInfo.Designer.cs">
+      <DependentUpon>FrmVersionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\IP_Func.cs" />
+    <Compile Include="Login\Login_Func.cs" />
+    <Compile Include="Login\Login_Var.cs" />
+    <Compile Include="MaterialRequest\FrmMaterialRequestList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialRequest\FrmMaterialRequestList.Designer.cs">
+      <DependentUpon>FrmMaterialRequestList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialRequest\MaterialRequest_Func.cs" />
+    <Compile Include="Print\BarCode128.cs" />
+    <Compile Include="Print\DS_MaterialOuterLabel.cs">
+      <DependentUpon>DS_MaterialOuterLabel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Print\DS_MaterialOuterLabel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_MaterialOuterLabel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Print\DS_ProductLabel.cs">
+      <DependentUpon>DS_ProductLabel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Print\DS_ProductLabel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProductLabel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form15.Designer.cs">
+      <DependentUpon>Form15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmAreaOutBarcodePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmAreaOutBarcodePrint.Designer.cs">
+      <DependentUpon>FrmAreaOutBarcodePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmBarcodePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmBarcodePrint.Designer.cs">
+      <DependentUpon>FrmBarcodePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmInitMaterialPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmInitMaterialPrint.Designer.cs">
+      <DependentUpon>FrmInitMaterialPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmMaterialLabelAlter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmMaterialLabelAlter.Designer.cs">
+      <DependentUpon>FrmMaterialLabelAlter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmMaterialPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmMaterialPrint.Designer.cs">
+      <DependentUpon>FrmMaterialPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmAreaPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmAreaPrint.Designer.cs">
+      <DependentUpon>FrmAreaPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmCensorshipPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmCensorshipPrint.Designer.cs">
+      <DependentUpon>FrmCensorshipPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmInnerBarcodePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmInnerBarcodePrint.Designer.cs">
+      <DependentUpon>FrmInnerBarcodePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmNoSourceMaterialPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmNoSourceMaterialPrint.Designer.cs">
+      <DependentUpon>FrmNoSourceMaterialPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmOMMaterialPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmOMMaterialPrint.Designer.cs">
+      <DependentUpon>FrmOMMaterialPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmOutBarcodePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmOutBarcodePrint.Designer.cs">
+      <DependentUpon>FrmOutBarcodePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmOutBarcodeRePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmOutBarcodeRePrint.Designer.cs">
+      <DependentUpon>FrmOutBarcodeRePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmPrinterSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmPrinterSet.Designer.cs">
+      <DependentUpon>FrmPrinterSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmPrintProductLabelReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmPrintProductLabelReview.Designer.cs">
+      <DependentUpon>FrmPrintProductLabelReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmPrintTesdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmPrintTesdt.Designer.cs">
+      <DependentUpon>FrmPrintTesdt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmProductLabelPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmProductLabelPrint.Designer.cs">
+      <DependentUpon>FrmProductLabelPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmQueryPrintSerialNo.cs" />
+    <Compile Include="Print\FrmQueryPrintSerialNo.Designer.cs">
+      <DependentUpon>FrmQueryPrintSerialNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmRePrintSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmRePrintSample.Designer.cs">
+      <DependentUpon>FrmRePrintSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmRePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmRePrint.Designer.cs">
+      <DependentUpon>FrmRePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmStockLabelPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmStockLabelPrint.Designer.cs">
+      <DependentUpon>FrmStockLabelPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\FrmStockPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmStockPrint.Designer.cs">
+      <DependentUpon>FrmStockPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Print_Func.cs" />
+    <Compile Include="Print\Print_Var.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quality\FrmQuality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quality\FrmQuality.Designer.cs">
+      <DependentUpon>FrmQuality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\FrmQualityList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quality\FrmQualityList.Designer.cs">
+      <DependentUpon>FrmQualityList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\Quality_Func.cs" />
+    <Compile Include="Query\FrmBarcodeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmBarcodeReport.Designer.cs">
+      <DependentUpon>FrmBarcodeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmBarcodeTrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmBarcodeTrace.Designer.cs">
+      <DependentUpon>FrmBarcodeTrace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmMaterialBarcodeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmMaterialBarcodeReport.Designer.cs">
+      <DependentUpon>FrmMaterialBarcodeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmQueryStockSumByWHcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmQueryStockSumByWHcode.designer.cs">
+      <DependentUpon>FrmQueryStockSumByWHcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmProductLineQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmProductLineQuery.Designer.cs">
+      <DependentUpon>FrmProductLineQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmPrintRecordQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmPrintRecordQuery.Designer.cs">
+      <DependentUpon>FrmPrintRecordQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmReceiveTransQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmReceiveTransQuery.Designer.cs">
+      <DependentUpon>FrmReceiveTransQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmStockDetailQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmStockDetailQuery.Designer.cs">
+      <DependentUpon>FrmStockDetailQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmStockInQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmStockInQuery.Designer.cs">
+      <DependentUpon>FrmStockInQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmStockMoveQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmStockMoveQuery.Designer.cs">
+      <DependentUpon>FrmStockMoveQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmStockOutQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmStockOutQuery.Designer.cs">
+      <DependentUpon>FrmStockOutQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\FrmStockQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\FrmStockQuery.Designer.cs">
+      <DependentUpon>FrmStockQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\Query_Func.cs" />
+    <Compile Include="ReportView\FrmCensorshipPrinting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportView\FrmCensorshipPrinting.Designer.cs">
+      <DependentUpon>FrmCensorshipPrinting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportView\FrmInnerBarcodePrinting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportView\FrmInnerBarcodePrinting.Designer.cs">
+      <DependentUpon>FrmInnerBarcodePrinting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportView\FrmOutBarcodePrinting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportView\FrmOutBarcodePrinting.Designer.cs">
+      <DependentUpon>FrmOutBarcodePrinting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Task\FrmInOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task\FrmInOverview.Designer.cs" />
+    <Compile Include="Task\FrmTaskTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Task\FrmTaskTrans.Designer.cs" />
+    <Compile Include="Task\Task_Func.cs" />
+    <Compile Include="Warehouse\FrmTempMaterialAlter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\FrmTempMaterialAlter.Designer.cs">
+      <DependentUpon>FrmTempMaterialAlter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\FrmTempMaterialFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\FrmTempMaterialFile.Designer.cs">
+      <DependentUpon>FrmTempMaterialFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\FrmTempMaterialList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\FrmTempMaterialList.Designer.cs">
+      <DependentUpon>FrmTempMaterialList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\FrmTempTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\FrmTempTrans.Designer.cs">
+      <DependentUpon>FrmTempTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\FrmTempTransQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\FrmTempTransQuery.Designer.cs">
+      <DependentUpon>FrmTempTransQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\Warehouse_Func.cs" />
+    <EmbeddedResource Include="Basic\FrmAreaFile.resx">
+      <DependentUpon>FrmAreaFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmAreaList.resx">
+      <DependentUpon>FrmAreaList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmGroupFile.resx">
+      <DependentUpon>FrmGroupFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmGroupMenu.resx">
+      <DependentUpon>FrmGroupMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmHouseFile.resx">
+      <DependentUpon>FrmHouseFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmHouseList.resx">
+      <DependentUpon>FrmHouseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmMenuFile.resx">
+      <DependentUpon>FrmMenuFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmUserFile.resx">
+      <DependentUpon>FrmUserFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmUserList.resx">
+      <DependentUpon>FrmUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmWarehouseFile.resx">
+      <DependentUpon>FrmWarehouseFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmWarehouseList.resx">
+      <DependentUpon>FrmWarehouseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check\FrmCheckAnalyse.resx">
+      <DependentUpon>FrmCheckAnalyse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check\FrmCheckFile.resx">
+      <DependentUpon>FrmCheckFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check\FrmCheckList.resx">
+      <DependentUpon>FrmCheckList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check\FrmCheckOmitAdd.resx">
+      <DependentUpon>FrmCheckOmitAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check\FrmCheckProfitLoss.resx">
+      <DependentUpon>FrmCheckProfitLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check\FrmReCheck.resx">
+      <DependentUpon>FrmReCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FrmBaseDialog.resx">
+      <DependentUpon>FrmBaseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FrmBasic.resx">
+      <DependentUpon>FrmBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastInNotHavePO\Frmmain_FastInNotHavePO.resx">
+      <DependentUpon>Frmmain_FastInNotHavePO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastInNotHavePO\Frmmain_FastInNotHavePOQuery.resx">
+      <DependentUpon>Frmmain_FastInNotHavePOQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastIn\FrmAdd_FastIn.resx">
+      <DependentUpon>FrmAdd_FastIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastIn\Frmmain_FastIn.resx">
+      <DependentUpon>Frmmain_FastIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastIn\FrmQuery_FastIn.resx">
+      <DependentUpon>FrmQuery_FastIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastTask\frmFastInEdit.resx">
+      <DependentUpon>frmFastInEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastTask\frmFastOutEdit.resx">
+      <DependentUpon>frmFastOutEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMainTab.resx">
+      <DependentUpon>FrmMainTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmChangePwd.resx">
+      <DependentUpon>FrmChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmVersionInfo.resx">
+      <DependentUpon>FrmVersionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialRequest\FrmMaterialRequestList.resx">
+      <DependentUpon>FrmMaterialRequestList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form15.resx">
+      <DependentUpon>Form15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmAreaOutBarcodePrint.resx">
+      <DependentUpon>FrmAreaOutBarcodePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmBarcodePrint.resx">
+      <DependentUpon>FrmBarcodePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmInitMaterialPrint.resx">
+      <DependentUpon>FrmInitMaterialPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmMaterialLabelAlter.resx">
+      <DependentUpon>FrmMaterialLabelAlter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmMaterialPrint.resx">
+      <DependentUpon>FrmMaterialPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmAreaPrint.resx">
+      <DependentUpon>FrmAreaPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmCensorshipPrint.resx">
+      <DependentUpon>FrmCensorshipPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmInnerBarcodePrint.resx">
+      <DependentUpon>FrmInnerBarcodePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmNoSourceMaterialPrint.resx">
+      <DependentUpon>FrmNoSourceMaterialPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmOMMaterialPrint.resx">
+      <DependentUpon>FrmOMMaterialPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmOutBarcodePrint.resx">
+      <DependentUpon>FrmOutBarcodePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmOutBarcodeRePrint.resx">
+      <DependentUpon>FrmOutBarcodeRePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmPrinterSet.resx">
+      <DependentUpon>FrmPrinterSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmPrintProductLabelReview.resx">
+      <DependentUpon>FrmPrintProductLabelReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmPrintTesdt.resx">
+      <DependentUpon>FrmPrintTesdt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmProductLabelPrint.resx">
+      <DependentUpon>FrmProductLabelPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmQueryPrintSerialNo.resx">
+      <DependentUpon>FrmQueryPrintSerialNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmRePrintSample.resx">
+      <DependentUpon>FrmRePrintSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmRePrint.resx">
+      <DependentUpon>FrmRePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmStockLabelPrint.resx">
+      <DependentUpon>FrmStockLabelPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmStockPrint.resx">
+      <DependentUpon>FrmStockPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Report1.rdlc" />
+    <EmbeddedResource Include="Print\Report2.rdlc" />
+    <EmbeddedResource Include="Print\Report3.rdlc" />
+    <EmbeddedResource Include="Print\Report4.rdlc" />
+    <EmbeddedResource Include="Print\Report5.rdlc" />
+    <EmbeddedResource Include="Print\Report6.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Quality\FrmQuality.resx">
+      <DependentUpon>FrmQuality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quality\FrmQualityList.resx">
+      <DependentUpon>FrmQualityList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmBarcodeReport.resx">
+      <DependentUpon>FrmBarcodeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmBarcodeTrace.resx">
+      <DependentUpon>FrmBarcodeTrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmMaterialBarcodeReport.resx">
+      <DependentUpon>FrmMaterialBarcodeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmQueryStockSumByWHcode.resx">
+      <DependentUpon>FrmQueryStockSumByWHcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmProductLineQuery.resx">
+      <DependentUpon>FrmProductLineQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmPrintRecordQuery.resx">
+      <DependentUpon>FrmPrintRecordQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmReceiveTransQuery.resx">
+      <DependentUpon>FrmReceiveTransQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmStockDetailQuery.resx">
+      <DependentUpon>FrmStockDetailQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmStockInQuery.resx">
+      <DependentUpon>FrmStockInQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmStockMoveQuery.resx">
+      <DependentUpon>FrmStockMoveQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmStockOutQuery.resx">
+      <DependentUpon>FrmStockOutQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\FrmStockQuery.resx">
+      <DependentUpon>FrmStockQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportView\CensorshipRDLC.rdlc" />
+    <EmbeddedResource Include="ReportView\FrmCensorshipPrinting.resx">
+      <DependentUpon>FrmCensorshipPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportView\FrmInnerBarcodePrinting.resx">
+      <DependentUpon>FrmInnerBarcodePrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportView\FrmOutBarcodePrinting.resx">
+      <DependentUpon>FrmOutBarcodePrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportView\InnerBarcodeRDLC.rdlc" />
+    <EmbeddedResource Include="ReportView\OutBarcodeRDLC.rdlc" />
+    <EmbeddedResource Include="Task\FrmInOverview.resx" />
+    <EmbeddedResource Include="Task\FrmTaskTrans.resx" />
+    <EmbeddedResource Include="Warehouse\FrmTempMaterialAlter.resx">
+      <DependentUpon>FrmTempMaterialAlter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\FrmTempMaterialFile.resx">
+      <DependentUpon>FrmTempMaterialFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\FrmTempMaterialList.resx">
+      <DependentUpon>FrmTempMaterialList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\FrmTempTrans.resx">
+      <DependentUpon>FrmTempTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\FrmTempTransQuery.resx">
+      <DependentUpon>FrmTempTransQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Print\DS_MaterialOuterLabel.xsc">
+      <DependentUpon>DS_MaterialOuterLabel.xsd</DependentUpon>
+    </None>
+    <None Include="Print\DS_MaterialOuterLabel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_MaterialOuterLabel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Print\DS_MaterialOuterLabel.xss">
+      <DependentUpon>DS_MaterialOuterLabel.xsd</DependentUpon>
+    </None>
+    <None Include="Print\DS_ProductLabel.xsc">
+      <DependentUpon>DS_ProductLabel.xsd</DependentUpon>
+    </None>
+    <None Include="Print\DS_ProductLabel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProductLabel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Print\DS_ProductLabel.xss">
+      <DependentUpon>DS_ProductLabel.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\AreaTemplateXLS.xls" />
+    <None Include="Resources\AreaTemplateXLSX.xlsx" />
+    <None Include="Service References\WebService\WebService.wsdl" />
+    <None Include="Service References\WebService\WMS.WebService.AppVersionInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.AreaInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.BarcodeReport_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.BarcodeReport_RowDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.BarcodeTrace_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.Barcode_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.CheckDetailsInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.CheckInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.CheckTransInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.ComboBoxItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.DeliveryReceiveDetail_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.DeliveryReceive_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.DividPage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.HouseInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.ImportPrint_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.InnerBarcode_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.MaterialLabel_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.MenuInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.OverViewDetailInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.OverViewExportInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.OverViewInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.ProductLabel_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.ProfitLossInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.QuanlityExportInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.ReceiveTransInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.SaleBillDetails_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.SaleBillVouch_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.Stock_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.Supplier_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.TaskTransInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.TaskVoucher.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.Task_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.TempMaterial.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.TempMaterialInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.Tray_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.UserGroupInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.UserInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.Vendor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.WarehouseInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="SetupFiles\code128.ttf" />
+    <None Include="SetupFiles\Readme.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLL\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="DLL\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="DLL\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="DLL\Microsoft.SqlServer.Types.dll" />
+    <Content Include="DLL\ThoughtWorks.QRCode.dll" />
+    <Content Include="Resources\ICON.ico" />
+    <None Include="Service References\WebService\WebService.disco" />
+    <None Include="Service References\WebService\configuration91.svcinfo" />
+    <None Include="Service References\WebService\configuration.svcinfo" />
+    <None Include="Service References\WebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\logo.png" />
+    <Content Include="SetupFiles\Config.xml" />
+    <Content Include="SetupFiles\DeleteOldProgram.vbs" />
+    <Content Include="SetupFiles\ReportViewer.exe" />
+    <None Include="Resources\min.png" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\close.png" />
+    <Content Include="ICON.ico" />
+    <None Include="Resources\head.jpg" />
+    <None Include="Resources\Icon.png" />
+    <Content Include="Resources\LoginBackground.jpg" />
+    <None Include="Resources\MainBackground.jpg" />
+    <Content Include="Resources\logo1.png" />
+    <Content Include="Resources\MainTop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChensControl\ChensControl.csproj">
+      <Project>{5490A291-E988-4423-8776-E098D4485940}</Project>
+      <Name>ChensControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExcelLibrary\ExcelLibrary.csproj">
+      <Project>{e3696964-f80f-4767-90dd-4c940d041723}</Project>
+      <Name>ExcelLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrintLibrary\PrintLibrary.csproj">
+      <Project>{7225c42c-baca-447a-9617-64b42f2d3fc7}</Project>
+      <Name>PrintLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1314 @@
+2015年11月25日  13时 19分 42秒  414毫秒   方法：InStock{"lstTaskInfo":[{"ID":8,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511240008","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":0,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001401","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":4,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":1,"QuanlityQty":0,"RemainQty":0,"ShelveQty":0,"ScanQty":3,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420010"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001401","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  13时 19分 42秒  539毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>8</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511240008</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>0</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001401</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>4</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>1</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>0</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>3</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420010</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001401</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+</Task_Model>
+2015年11月25日  13时 21分 41秒  903毫秒   方法：InStock{"lstTaskInfo":[{"ID":8,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511240008","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":0,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001401","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":4,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":1,"QuanlityQty":0,"RemainQty":0,"ShelveQty":0,"ScanQty":1,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420010"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001401","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  13时 21分 41秒  903毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>8</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511240008</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>0</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001401</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>4</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>1</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>0</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>1</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420010</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001401</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+</Task_Model>
+2015年11月25日  13时 26分 25秒  502毫秒   方法：InStock{"lstTaskInfo":[{"ID":8,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511240008","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":0,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001401","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":4,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":1,"QuanlityQty":0,"RemainQty":0,"ShelveQty":0,"ScanQty":1,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420010"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001401","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  13时 26分 25秒  580毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>8</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511240008</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>0</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001401</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>4</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>1</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>0</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>1</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420010</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001401</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+</Task_Model>
+2015年11月25日  13时 38分 56秒  903毫秒   方法：InStock{"lstTaskInfo":[{"ID":8,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511240008","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":0,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001401","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":4,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":1,"QuanlityQty":0,"RemainQty":0,"ShelveQty":0,"ScanQty":1,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420010"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001401","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  13时 38分 56秒  903毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>8</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511240008</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>0</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001401</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>4</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>1</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>0</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>1</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420010</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001401</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+</Task_Model>
+2015年11月25日  13时 45分 42秒  839毫秒   方法：InStock{"lstTaskInfo":[{"ID":8,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511240008","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":0,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001401","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":4,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":1,"QuanlityQty":0,"RemainQty":0,"ShelveQty":0,"ScanQty":1,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420010"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001401","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  13时 45分 42秒  839毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>8</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511240008</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>0</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001401</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>4</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>1</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>0</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>1</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420010</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001401</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+</Task_Model>
+2015年11月25日  13时 47分 27秒  159毫秒   方法：InStock{"lstTaskInfo":[{"ID":8,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511240008","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":0,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001401","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":4,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":1,"QuanlityQty":0,"RemainQty":0,"ShelveQty":0,"ScanQty":1,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420010"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001401","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  13时 47分 27秒  159毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>8</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511240008</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>0</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001401</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>4</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>1</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>0</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>1</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420010</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001401</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+</Task_Model>
+2015年11月25日  13时 53分 11秒  659毫秒   方法：InStock{"lstTaskInfo":[{"ID":8,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511240008","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":0,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001401","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":4,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":1,"QuanlityQty":0,"RemainQty":0,"ShelveQty":0,"ScanQty":1,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420010"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001401","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  13时 53分 11秒  722毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>8</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511240008</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>0</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001401</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>4</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>1</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>0</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>1</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420010</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001401</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+</Task_Model>
+2015年11月25日  14时 01分 51秒  715毫秒   方法：InStock{"lstTaskInfo":[{"ID":8,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511240008","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":0,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001401","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":4,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":1,"QuanlityQty":0,"RemainQty":0,"ShelveQty":0,"ScanQty":1,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420010"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001401","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  14时 01分 51秒  715毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>8</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511240008</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>0</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001401</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>4</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>1</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>0</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>1</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420010</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001401</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+</Task_Model>
+2015年11月25日  14时 03分 16秒  428毫秒   方法：InStock{"lstTaskInfo":[{"ID":8,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511240008","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":0,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001401","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":4,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":1,"QuanlityQty":0,"RemainQty":0,"ShelveQty":0,"ScanQty":1,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420010"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001401","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  14时 03分 16秒  428毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>8</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511240008</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>0</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001401</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>4</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>1</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>0</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>1</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420010</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001401</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+</Task_Model>
+2015年11月25日  14时 12分 45秒  214毫秒   方法：InStock{"lstTaskInfo":[{"ID":8,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511240008","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":0,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001401","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":4,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":1,"QuanlityQty":0,"RemainQty":0,"ShelveQty":0,"ScanQty":1,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420010"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001401","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  14时 12分 45秒  214毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>8</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511240008</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>0</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001401</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>4</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>1</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>0</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>1</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420010</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001401</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+</Task_Model>
+2015年11月25日  23时 21分 33秒  348毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"1900001413","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15112420002"},{"SerialNo":"15112420003"},{"SerialNo":"15112420004"}],"VoucherNo":"1900001413","MaterialDesc":"转子/冷轧","MaterialNo":"u226003701100","QCDateTime":"","RowNo":"","ID":8,"ReviewQty":0.0,"RemainQty":5.0,"RemainPackCount":0.0,"ScanPackCount":0.0,"ScanQty":3.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"CurrentPostQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":5.0,"DeliveryQty":0.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsQualityComp":0,"IsROHS":0,"Task_ID":0,"Status":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201511250012","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":12}]}
+2015年11月25日  23时 21分 33秒  421毫秒   方法：InStock---操作人：管理员<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511250012</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001413</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>8</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>5.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>5.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>3.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420002</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420003</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420004</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001413</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0.0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年11月25日  23时 23分 10秒  456毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"1900001413","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15112420002"},{"SerialNo":"15112420003"},{"SerialNo":"15112420004"}],"VoucherNo":"1900001413","MaterialDesc":"转子/冷轧","MaterialNo":"u226003701100","QCDateTime":"","RowNo":"","ID":8,"ReviewQty":0.0,"RemainQty":5.0,"RemainPackCount":0.0,"ScanPackCount":0.0,"ScanQty":3.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"CurrentPostQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":5.0,"DeliveryQty":0.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsQualityComp":0,"IsROHS":0,"Task_ID":0,"Status":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201511250012","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":12}]}
+2015年11月25日  23时 23分 10秒  458毫秒   方法：InStock---操作人：管理员<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511250012</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001413</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>8</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>5.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>5.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>3.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420002</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420003</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420004</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001413</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0.0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年11月25日  23时 24分 34秒  274毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"1900001413","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15112420002"},{"SerialNo":"15112420003"},{"SerialNo":"15112420004"}],"VoucherNo":"1900001413","MaterialDesc":"转子/冷轧","MaterialNo":"u226003701100","QCDateTime":"","RowNo":"","ID":8,"ReviewQty":0.0,"RemainQty":5.0,"RemainPackCount":0.0,"ScanPackCount":0.0,"ScanQty":3.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"CurrentPostQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":5.0,"DeliveryQty":0.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsQualityComp":0,"IsROHS":0,"Task_ID":0,"Status":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201511250012","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":12}]}
+2015年11月25日  23时 24分 34秒  287毫秒   方法：InStock---操作人：管理员<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511250012</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001413</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>8</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>5.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>5.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>3.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420002</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420003</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420004</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001413</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0.0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年11月25日  23时 28分 23秒  783毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"1900001413","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15112420002"},{"SerialNo":"15112420003"},{"SerialNo":"15112420004"}],"VoucherNo":"1900001413","MaterialDesc":"转子/冷轧","MaterialNo":"u226003701100","QCDateTime":"","RowNo":"","ID":8,"ReviewQty":0.0,"RemainQty":5.0,"RemainPackCount":0.0,"ScanPackCount":0.0,"ScanQty":3.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"CurrentPostQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":5.0,"DeliveryQty":0.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsQualityComp":0,"IsROHS":0,"Task_ID":0,"Status":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201511250012","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":12}]}
+2015年11月25日  23时 28分 23秒  831毫秒   方法：InStock---操作人：管理员<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511250012</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001413</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>8</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>5.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>5.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>3.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420002</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420003</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420004</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001413</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0.0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年11月25日  23时 31分 24秒  144毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"1900001413","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15112420002"},{"SerialNo":"15112420003"},{"SerialNo":"15112420004"}],"VoucherNo":"1900001413","MaterialDesc":"转子/冷轧","MaterialNo":"u226003701100","QCDateTime":"","RowNo":"","ID":8,"ReviewQty":0.0,"RemainQty":5.0,"RemainPackCount":0.0,"ScanPackCount":0.0,"ScanQty":3.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"CurrentPostQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":5.0,"DeliveryQty":0.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsQualityComp":0,"IsROHS":0,"Task_ID":0,"Status":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201511250012","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":12}]}
+2015年11月25日  23时 31分 24秒  146毫秒   方法：InStock---操作人：管理员<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511250012</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001413</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>8</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>5.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>5.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>3.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420002</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420003</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420004</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001413</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0.0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年11月25日  23时 32分 45秒  699毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"1900001413","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15112420002"},{"SerialNo":"15112420003"},{"SerialNo":"15112420004"}],"VoucherNo":"1900001413","MaterialDesc":"转子/冷轧","MaterialNo":"u226003701100","QCDateTime":"","RowNo":"","ID":8,"ReviewQty":0.0,"RemainQty":5.0,"RemainPackCount":0.0,"ScanPackCount":0.0,"ScanQty":3.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"CurrentPostQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":5.0,"DeliveryQty":0.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsQualityComp":0,"IsROHS":0,"Task_ID":0,"Status":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201511250012","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":12}]}
+2015年11月25日  23时 32分 45秒  700毫秒   方法：InStock---操作人：管理员<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511250012</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001413</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>8</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>5.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>5.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>3.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420002</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420003</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420004</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001413</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0.0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年11月25日  23时 53分 59秒  840毫秒   方法：InStock{"lstTaskInfo":[{"ID":12,"VoucherType":40,"VoucherTypeName":null,"TaskType":0,"TaskNo":"201511250012","SupCusName":null,"TaskStatus":2,"StatusName":null,"AuditUserNo":null,"AuditDateTime":null,"TaskIssued":"\/Date(-62135596800000)\/","ReceiveUserNo":null,"ReceiveUserName":null,"CreateDateTime":"\/Date(-62135596800000)\/","IsQuality":1,"Remark":null,"Reason":null,"SupCusNo":null,"CreateUserNo":null,"Receive_ID":0,"DeliveryNo":"1900001413","IsReceivePost":0,"IsShelvePost":0,"MaterialDoc":null,"VoucherNo":null,"ShelvePost":null,"lstTaskDetails":[{"ID":8,"Task_ID":0,"ToAreaNo":null,"MaterialNo":"u226003701100","MaterialDesc":"转子/冷轧","TaskQty":5,"QuanlityQty":0,"RemainQty":5,"ShelveQty":0,"ScanQty":1,"Status":0,"IsQualityComp":0,"QCUserNo":null,"QCDateTime":"\/Date(-62135596800000)\/","KeeperUserNo":null,"OperatorUserNo":null,"CompleteDateTime":"\/Date(-62135596800000)\/","TMaterialNo":null,"TMaterialDesc":null,"OutStockQty":0,"ReviewQty":0,"ReviewUserNo":null,"UnQuanlityQty":0,"UnQuanlityReson":null,"DeliveryQty":0,"lstSerial":[{"SerialNo":"15112420002"}],"Unit":null,"IsROHS":0,"RowNo":"","Plant":null,"PlantName":null,"StorageLoc":null,"VoucherNo":"1900001413","PackCount":0,"ScanPackCount":0,"RemainPackCount":0,"ShelvePackCount":0,"CurrentPostQty":0,"RemainStockQty":0}],"Plant":"","PostStatus":0,"materialDocModel":null,"MoveType":null,"WareHouseNo":"17"}],"Status":"S","Message":null,"taskDetailModel":null}
+2015年11月25日  23时 53分 59秒  918毫秒   方法：InStock---操作人：<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511250012</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00Z</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00Z</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001413</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>8</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>5</TaskQty>
+      <QuanlityQty>0</QuanlityQty>
+      <RemainQty>5</RemainQty>
+      <ShelveQty>0</ShelveQty>
+      <ScanQty>1</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00Z</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00Z</CompleteDateTime>
+      <OutStockQty>0</OutStockQty>
+      <ReviewQty>0</ReviewQty>
+      <UnQuanlityQty>0</UnQuanlityQty>
+      <DeliveryQty>0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420002</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001413</VoucherNo>
+      <PackCount>0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0</RemainPackCount>
+      <ShelvePackCount>0</ShelvePackCount>
+      <CurrentPostQty>0</CurrentPostQty>
+      <RemainStockQty>0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年11月26日  00时 00分 07秒  197毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"1900001413","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15112420003"},{"SerialNo":"15112420004"}],"VoucherNo":"1900001413","MaterialDesc":"转子/冷轧","MaterialNo":"u226003701100","QCDateTime":"","RowNo":"","ID":8,"ReviewQty":0.0,"RemainQty":5.0,"RemainPackCount":0.0,"ScanPackCount":0.0,"ScanQty":2.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"CurrentPostQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":5.0,"DeliveryQty":0.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsQualityComp":0,"IsROHS":0,"Task_ID":0,"Status":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201511250012","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":12}]}
+2015年11月26日  00时 00分 07秒  198毫秒   方法：InStock---操作人：管理员<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511250012</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001413</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>8</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>5.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>5.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>2.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420003</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420004</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001413</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0.0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年11月26日  00时 02分 57秒  540毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"1900001413","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15112420003"},{"SerialNo":"15112420004"}],"VoucherNo":"1900001413","MaterialDesc":"转子/冷轧","MaterialNo":"u226003701100","QCDateTime":"","RowNo":"","ID":8,"ReviewQty":0.0,"RemainQty":5.0,"RemainPackCount":0.0,"ScanPackCount":0,"ScanQty":2.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"CurrentPostQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":5.0,"DeliveryQty":0.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsQualityComp":0,"IsROHS":0,"Task_ID":0,"Status":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201511250012","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":12}]}
+2015年11月26日  00时 02分 57秒  542毫秒   方法：InStock---操作人：管理员<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511250012</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001413</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>8</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>5.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>5.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>2.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420003</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15112420004</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001413</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年11月26日  00时 06分 54秒  343毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"1900001413","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15112420005"}],"VoucherNo":"1900001413","MaterialDesc":"转子/冷轧","MaterialNo":"u226003701100","QCDateTime":"","RowNo":"","ID":8,"ReviewQty":0.0,"RemainQty":2.0,"RemainPackCount":0.0,"CurrentPostQty":0.0,"ScanQty":1.0,"ShelvePackCount":0.0,"ShelveQty":3.0,"DeliveryQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":5.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsROHS":0,"IsQualityComp":0,"Task_ID":0,"Status":0,"ScanPackCount":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201511250012","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":12}]}
+2015年11月26日  00时 06分 54秒  404毫秒   方法：InStock---操作人：管理员<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>12</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201511250012</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>1900001413</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>8</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>u226003701100</MaterialNo>
+      <MaterialDesc>转子/冷轧</MaterialDesc>
+      <TaskQty>5.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>2.0</RemainQty>
+      <ShelveQty>3.0</ShelveQty>
+      <ScanQty>1.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15112420005</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>1900001413</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年12月02日  16时 31分 53秒  505毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"01700000016","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"101905500100"}],"VoucherNo":"01700000016","MaterialDesc":"干式潜水电泵","MaterialNo":"101905500100","QCDateTime":"","RowNo":"","ID":11,"ReviewQty":0.0,"RemainQty":40.0,"RemainPackCount":0.0,"CurrentPostQty":0.0,"ScanQty":40.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"DeliveryQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":40.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsROHS":0,"IsQualityComp":0,"Task_ID":0,"Status":0,"ScanPackCount":0},{"CompleteDateTime":"","lstSerial":[{"SerialNo":"101907500100"}],"VoucherNo":"01700000016","MaterialDesc":"干式潜水电泵","MaterialNo":"101907500100","QCDateTime":"","RowNo":"","ID":12,"ReviewQty":0.0,"RemainQty":40.0,"RemainPackCount":0.0,"CurrentPostQty":0.0,"ScanQty":40.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"DeliveryQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":40.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsROHS":0,"IsQualityComp":0,"Task_ID":0,"Status":0,"ScanPackCount":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201512020015","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":15}]}
+2015年12月02日  16时 32分 44秒  419毫秒   方法：InStock---操作人：demo<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>15</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201512020015</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>01700000016</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>11</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>101905500100</MaterialNo>
+      <MaterialDesc>干式潜水电泵</MaterialDesc>
+      <TaskQty>40.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>40.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>40.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>101905500100</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>01700000016</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+    <TaskDetails_Model>
+      <ID>12</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>101907500100</MaterialNo>
+      <MaterialDesc>干式潜水电泵</MaterialDesc>
+      <TaskQty>40.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>40.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>40.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>101907500100</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>01700000016</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>
+2015年12月02日  18时 00分 33秒  229毫秒   方法：InStock{"Status":"S","lstTaskInfo":[{"CreateDateTime":"","DeliveryNo":"01700000016","lstTaskDetails":[{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15120110096"},{"SerialNo":"15120110097"}],"VoucherNo":"01700000016","MaterialDesc":"干式潜水电泵","MaterialNo":"101905500100","QCDateTime":"","RowNo":"","ID":11,"ReviewQty":0.0,"RemainQty":40.0,"RemainPackCount":0.0,"CurrentPostQty":0.0,"ScanQty":40.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"DeliveryQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":40.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsROHS":0,"IsQualityComp":0,"Task_ID":0,"Status":0,"ScanPackCount":0},{"CompleteDateTime":"","lstSerial":[{"SerialNo":"15120110101"},{"SerialNo":"15120110102"}],"VoucherNo":"01700000016","MaterialDesc":"干式潜水电泵","MaterialNo":"101907500100","QCDateTime":"","RowNo":"","ID":12,"ReviewQty":0.0,"RemainQty":40.0,"RemainPackCount":0.0,"CurrentPostQty":0.0,"ScanQty":40.0,"ShelvePackCount":0.0,"ShelveQty":0.0,"DeliveryQty":0.0,"QuanlityQty":0.0,"PackCount":0.0,"OutStockQty":0.0,"TaskQty":40.0,"RemainStockQty":0.0,"UnQuanlityQty":0.0,"IsROHS":0,"IsQualityComp":0,"Task_ID":0,"Status":0,"ScanPackCount":0}],"WareHouseNo":"17","Plant":"","TaskNo":"201512020015","TaskIssued":"","Receive_ID":0,"TaskStatus":2,"TaskType":0,"PostStatus":0,"VoucherType":40,"IsShelvePost":0,"IsReceivePost":0,"IsQuality":1,"ID":15}]}
+2015年12月02日  18时 00分 33秒  281毫秒   方法：InStock---操作人：demo<?xml version="1.0"?>
+<Task_Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>15</ID>
+  <VoucherType>40</VoucherType>
+  <TaskType>0</TaskType>
+  <TaskNo>201512020015</TaskNo>
+  <TaskStatus>2</TaskStatus>
+  <AuditDateTime xsi:nil="true" />
+  <TaskIssued>0001-01-01T00:00:00</TaskIssued>
+  <CreateDateTime>0001-01-01T00:00:00</CreateDateTime>
+  <IsQuality>1</IsQuality>
+  <Receive_ID>0</Receive_ID>
+  <DeliveryNo>01700000016</DeliveryNo>
+  <IsReceivePost>0</IsReceivePost>
+  <IsShelvePost>0</IsShelvePost>
+  <lstTaskDetails>
+    <TaskDetails_Model>
+      <ID>11</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>101905500100</MaterialNo>
+      <MaterialDesc>干式潜水电泵</MaterialDesc>
+      <TaskQty>40.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>40.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>40.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15120110096</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15120110097</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>01700000016</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+    <TaskDetails_Model>
+      <ID>12</ID>
+      <Task_ID>0</Task_ID>
+      <MaterialNo>101907500100</MaterialNo>
+      <MaterialDesc>干式潜水电泵</MaterialDesc>
+      <TaskQty>40.0</TaskQty>
+      <QuanlityQty>0.0</QuanlityQty>
+      <RemainQty>40.0</RemainQty>
+      <ShelveQty>0.0</ShelveQty>
+      <ScanQty>40.0</ScanQty>
+      <Status>0</Status>
+      <IsQualityComp>0</IsQualityComp>
+      <QCDateTime>0001-01-01T00:00:00</QCDateTime>
+      <CompleteDateTime>0001-01-01T00:00:00</CompleteDateTime>
+      <OutStockQty>0.0</OutStockQty>
+      <ReviewQty>0.0</ReviewQty>
+      <UnQuanlityQty>0.0</UnQuanlityQty>
+      <DeliveryQty>0.0</DeliveryQty>
+      <lstSerial>
+        <TaskSerial_Model>
+          <SerialNo>15120110101</SerialNo>
+        </TaskSerial_Model>
+        <TaskSerial_Model>
+          <SerialNo>15120110102</SerialNo>
+        </TaskSerial_Model>
+      </lstSerial>
+      <IsROHS>0</IsROHS>
+      <RowNo />
+      <VoucherNo>01700000016</VoucherNo>
+      <PackCount>0.0</PackCount>
+      <ScanPackCount>0</ScanPackCount>
+      <RemainPackCount>0.0</RemainPackCount>
+      <ShelvePackCount>0.0</ShelvePackCount>
+      <CurrentPostQty>0.0</CurrentPostQty>
+      <RemainStockQty>0.0</RemainStockQty>
+    </TaskDetails_Model>
+  </lstTaskDetails>
+  <Plant />
+  <PostStatus>0</PostStatus>
+  <WareHouseNo>17</WareHouseNo>
+</Task_Model>

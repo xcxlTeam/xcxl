@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{132FC50B-575B-4BC3-A939-649F87847EBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB, Version=2.6.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLLImport\ADODB.dll</HintPath>
+    </Reference>
+    <Reference Include="COMAdapterForOldAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\COMAdapterForOldAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetAssemblyProtocol, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\DotNetAssemblyProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="IESBSDLMsgType, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\IESBSDLMsgType.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSXML2, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLLImport\Interop.MSXML2.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.U8Login, Version=1.14.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLLImport\Interop.U8Login.dll</HintPath>
+    </Reference>
+    <Reference Include="MOMAdapter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\MOMAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="MOMEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\MOMEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="MOMEngineDAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\MOMEngineDAC.dll</HintPath>
+    </Reference>
+    <Reference Include="MOMProtocol, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\MOMProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="MSCOMProtocol, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\MSCOMProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="securityAndRegister, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\securityAndRegister.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.4489.42329, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U8.MomServiceCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\UFIDA.U8.MomServiceCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U8.U8APIFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\UFIDA.U8.U8APIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U8.U8MOMAPIFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\UFIDA.U8.U8MOMAPIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.AIF.MOM.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\UFSoft.AIF.MOM.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.AIF.MOM.Common.MessageObjectModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\UFSoft.AIF.MOM.Common.MessageObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.U8.Framework.Login.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=19a34671517e8c56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLImport\UFSoft.U8.Framework.Login.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppVersion\AppVersion_Func.cs" />
+    <Compile Include="AppVersion\AppVersion_Model.cs" />
+    <Compile Include="AppVersion\AppVertsion_DB.cs" />
+    <Compile Include="Basic\Area\Area_DB.cs" />
+    <Compile Include="Basic\Area\Area_Func.cs" />
+    <Compile Include="Basic\Area\Area_Model.cs" />
+    <Compile Include="Basic\CheckMaterial\CheckDetails_DB.cs" />
+    <Compile Include="Basic\CheckMaterial\CheckDetails_Func.cs" />
+    <Compile Include="Basic\CheckMaterial\CheckDetails_Model.cs" />
+    <Compile Include="Basic\CheckMaterial\CheckTrans_DB.cs" />
+    <Compile Include="Basic\CheckMaterial\CheckTrans_Func.cs" />
+    <Compile Include="Basic\CheckMaterial\CheckTrans_Model.cs" />
+    <Compile Include="Basic\CheckMaterial\Check_DB.cs" />
+    <Compile Include="Basic\CheckMaterial\Check_Func.cs" />
+    <Compile Include="Basic\CheckMaterial\Check_Model.cs" />
+    <Compile Include="Basic\CheckMaterial\ProfitLoss_DB.cs" />
+    <Compile Include="Basic\CheckMaterial\ProfitLoss_Func.cs" />
+    <Compile Include="Basic\CheckMaterial\ProfitLoss_Model.cs" />
+    <Compile Include="Basic\House\House_DB.cs" />
+    <Compile Include="Basic\House\House_Func.cs" />
+    <Compile Include="Basic\House\House_Model.cs" />
+    <Compile Include="Basic\Menu\Menu_DB.cs" />
+    <Compile Include="Basic\Menu\Menu_Func.cs" />
+    <Compile Include="Basic\Menu\Menu_Model.cs" />
+    <Compile Include="Basic\Receive\ReceiveTrans_Func.cs" />
+    <Compile Include="Basic\Receive\ReceiveTrans_Model.cs" />
+    <Compile Include="Basic\Task\OverViewDetail_Func.cs" />
+    <Compile Include="Basic\Task\OverViewDetail_Model.cs" />
+    <Compile Include="Basic\Task\OverViewExport_Func.cs" />
+    <Compile Include="Basic\Task\OverViewExport_Model.cs" />
+    <Compile Include="Basic\Task\OverView_Func.cs" />
+    <Compile Include="Basic\Task\OverView_Model.cs" />
+    <Compile Include="Basic\Task\TaskTrans_DB.cs" />
+    <Compile Include="Basic\Task\TaskTrans_Func.cs" />
+    <Compile Include="Basic\Task\TaskTrans_Model.cs" />
+    <Compile Include="Basic\TempMaterial\TempMaterial_DB.cs" />
+    <Compile Include="Basic\TempMaterial\TempMaterial_Func.cs" />
+    <Compile Include="Basic\TempMaterial\TempMaterial_Model.cs" />
+    <Compile Include="Basic\UserGroup\UserGroup_DB.cs" />
+    <Compile Include="Basic\UserGroup\UserGroup_Func.cs" />
+    <Compile Include="Basic\UserGroup\UserGroup_Model.cs" />
+    <Compile Include="Basic\User\Login_DB.cs" />
+    <Compile Include="Basic\User\Login_Func.cs" />
+    <Compile Include="Basic\User\User_DB.cs" />
+    <Compile Include="Basic\User\User_Func.cs" />
+    <Compile Include="Basic\User\User_Model.cs" />
+    <Compile Include="Basic\Warehouse\Warehouse_DB.cs" />
+    <Compile Include="Basic\Warehouse\Warehouse_Func.cs" />
+    <Compile Include="Basic\Warehouse\Warehouse_Model.cs" />
+    <Compile Include="Common\Basic_Model.cs" />
+    <Compile Include="Common\Common_DB.cs" />
+    <Compile Include="Common\Common_Func.cs" />
+    <Compile Include="Common\Common_Model.cs" />
+    <Compile Include="Common\Common_Var.cs" />
+    <Compile Include="Common\ObjectExtend.cs" />
+    <Compile Include="DBA\OperationSql.cs" />
+    <Compile Include="DeliveryReceive\DeliveryReceive_DB.cs" />
+    <Compile Include="DeliveryReceive\DeliveryReceive_Func.cs" />
+    <Compile Include="DeliveryReceive\DeliveryReceive_Http.cs" />
+    <Compile Include="DeliveryReceive\DeliveryReceiveDetail_Model.cs" />
+    <Compile Include="DeliveryReceive\DeliveryReceive_Model.cs" />
+    <Compile Include="DeliveryReceive\Dghead.cs" />
+    <Compile Include="DeliveryReceive\InnerBarcode_Model.cs" />
+    <Compile Include="DeliveryReceive\Items.cs" />
+    <Compile Include="DeliveryReceive\OutBarcode_Model.cs" />
+    <Compile Include="FastInNotHavePO\FastInNotHavePO_DB.cs" />
+    <Compile Include="FastInNotHavePO\FastInNotHavePO_Func.cs" />
+    <Compile Include="FastIn\FastIn_DB.cs" />
+    <Compile Include="FastIn\FastIn_Func.cs" />
+    <Compile Include="FastIn\TaskVoucher.cs" />
+    <Compile Include="HTTPUtil\HTTPUtils.cs" />
+    <Compile Include="JSONUtil\JSONHelper.cs" />
+    <Compile Include="JSONUtil\JsonToXml.cs" />
+    <Compile Include="MaterialDocument\MaterialDoc_Model.cs" />
+    <Compile Include="MaterialRequestOutSide\MaterialRequestOutSide_Func.cs" />
+    <Compile Include="MaterialRequestProduct\MaterialRequestProduct_Func.cs" />
+    <Compile Include="MaterialRequest\MaterialRequest_Func.cs" />
+    <Compile Include="Material\Material_Model.cs" />
+    <Compile Include="OutSideReceive\OutSideReceive_DB.cs" />
+    <Compile Include="OutSideReceive\OutSideReceive_Func.cs" />
+    <Compile Include="OutStock\OutStockDetails_Model.cs" />
+    <Compile Include="OutStock\OutStock_DB.cs" />
+    <Compile Include="OutStock\OutStock_Factory.cs" />
+    <Compile Include="OutStock\OutStock_Func.cs" />
+    <Compile Include="OutStock\OutStock_Model.cs" />
+    <Compile Include="OutStock\OutStock_Post.cs" />
+    <Compile Include="PrintBarcode\BarcodeReport_Model.cs" />
+    <Compile Include="PrintBarcode\BarcodeRule.cs" />
+    <Compile Include="PrintBarcode\BarDesign.cs" />
+    <Compile Include="PrintBarcode\MaterialInnerLabel.cs" />
+    <Compile Include="PrintBarcode\MaterialLabel_Model.cs" />
+    <Compile Include="PrintBarcode\MaterialOuterLabel.cs" />
+    <Compile Include="PrintBarcode\PrintRecord_Func.cs" />
+    <Compile Include="PrintBarcode\Barcode_DB.cs" />
+    <Compile Include="PrintBarcode\Barcode_Func.cs" />
+    <Compile Include="PrintBarcode\Barcode_Http.cs" />
+    <Compile Include="PrintBarcode\Barcode_Model.cs" />
+    <Compile Include="PrintBarcode\GenerationQRCode.cs" />
+    <Compile Include="PrintBarcode\InnerBarcode_Model.cs" />
+    <Compile Include="PrintBarcode\ProductLabel_Model.cs" />
+    <Compile Include="PrintBarcode\TrayDetails_Model.cs" />
+    <Compile Include="PrintBarcode\Tray_DB.cs" />
+    <Compile Include="PrintBarcode\Tray_Func.cs" />
+    <Compile Include="PrintBarcode\Tray_Model.cs" />
+    <Compile Include="ProductionReturn\ProductionReturn_Func.cs" />
+    <Compile Include="Production\Production_DB.cs" />
+    <Compile Include="Production\Production_Func.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReceive\PurchaseReceive_DB.cs" />
+    <Compile Include="PurchaseReceive\PurchaseReceive_Func.cs" />
+    <Compile Include="PurchaseReceive\PurchaseReceive_Model.cs" />
+    <Compile Include="Quality\QualityExport_Func.cs" />
+    <Compile Include="Quality\QualityExport_Model.cs" />
+    <Compile Include="ReceiveGoods\ReceiveGoods_DB.cs" />
+    <Compile Include="ReceiveGoods\ReceiveGoods_Func.cs" />
+    <Compile Include="ReceiveGoods\Receive_Factory.cs" />
+    <Compile Include="ReceiveGoods\Receive_Post.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock\SaleBillVouch_Model.cs" />
+    <Compile Include="Stock\StockHead_Model.cs" />
+    <Compile Include="Stock\Stock_DB.cs" />
+    <Compile Include="Stock\Stock_Func.cs" />
+    <Compile Include="Stock\Stock_Model.cs" />
+    <Compile Include="StorageLoc\StorageLocHead_Model.cs" />
+    <Compile Include="StorageLoc\StorageLoc_Func.cs" />
+    <Compile Include="StorageLoc\StorageLoc_Model.cs" />
+    <Compile Include="Suppliers\Supplier_Func.cs" />
+    <Compile Include="Suppliers\Supplier_Model.cs" />
+    <Compile Include="Suppliers\Supplier_U8.cs" />
+    <Compile Include="Task\TaskSerial_Model.cs" />
+    <Compile Include="Task\TaskDetails_Model.cs" />
+    <Compile Include="Task\TaskHead_Model.cs" />
+    <Compile Include="Task\Task_DB.cs" />
+    <Compile Include="Task\Task_Func.cs" />
+    <Compile Include="Task\Task_Model.cs" />
+    <Compile Include="TempMaterial\TempMaterial.cs" />
+    <Compile Include="TempMaterial\TempMaterial_DB.cs" />
+    <Compile Include="TempMaterial\TempMaterial_Func.cs" />
+    <Compile Include="TEST\TestFunc.cs" />
+    <Compile Include="TEST\Test_Model.cs" />
+    <Compile Include="Tool\DataTableToList.cs" />
+    <Compile Include="Tool\MaterialBarcodeDecode.cs" />
+    <Compile Include="Tool\WriteLogMethod.cs" />
+    <Compile Include="Tool\SafeConvert.cs" />
+    <Compile Include="XMLUtil\XmlUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

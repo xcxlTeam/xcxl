@@ -1,0 +1,5 @@
+﻿<Config>
+  <UpdateUrl>http://192.168.0.102/XinJieWebserver/UpdatePC/</UpdateUrl>
+  <AppName>XinJieWMS.exe</AppName>
+</Config>
+

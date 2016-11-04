@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5490A291-E988-4423-8776-E098D4485940}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChensControl</RootNamespace>
+    <AssemblyName>ChensControl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChensButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensCheckComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensDataGridViewNumericUpDownCell.cs" />
+    <Compile Include="ChensDataGridViewNumericUpDownColumn.cs" />
+    <Compile Include="ChensDataGridViewNumericUpDownEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensMenuButton1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChensMenuButton1.Designer.cs">
+      <DependentUpon>ChensMenuButton1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChensMenuButton2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChensMenuButton2.Designer.cs">
+      <DependentUpon>ChensMenuButton2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChensMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChensNavigator.Designer.cs">
+      <DependentUpon>ChensNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChensNumberBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChensPage.Designer.cs">
+      <DependentUpon>ChensPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChensReference.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChensReference.Designer.cs">
+      <DependentUpon>ChensReference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChensRichTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChensRichTextBox.Designer.cs">
+      <DependentUpon>ChensRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChensTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensTestControl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChensTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlCommon.cs" />
+    <Compile Include="DividPage.cs" />
+    <Compile Include="JSModule.cs" />
+    <Compile Include="JSModules.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChensDataGridView.resx">
+      <DependentUpon>ChensDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChensMenuButton1.resx">
+      <DependentUpon>ChensMenuButton1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChensMenuButton2.resx">
+      <DependentUpon>ChensMenuButton2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChensMenuStrip.resx">
+      <DependentUpon>ChensMenuStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChensNavigator.resx">
+      <DependentUpon>ChensNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChensPage.resx">
+      <DependentUpon>ChensPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChensReference.resx">
+      <DependentUpon>ChensReference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChensRichTextBox.resx">
+      <DependentUpon>ChensRichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChensTestControl1.resx">
+      <DependentUpon>ChensTestControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx.png" />
+    <None Include="Resources\xtgl.png" />
+    <None Include="Resources\sh.png" />
+    <None Include="Resources\close_r.png" />
+    <None Include="Resources\close_g.png" />
+    <None Include="Resources\jj.png" />
+    <None Include="Resources\xs.png" />
+    <None Include="Resources\jyfx.png" />
+    <None Include="Resources\jcsz.png" />
+    <None Include="Resources\cw.png" />
+    <None Include="Resources\ck.png" />
+    <None Include="Resources\cg.png" />
+    <None Include="Resources\close1.png" />
+    <None Include="Resources\close.png" />
+    <None Include="ICO\gray-search.png" />
+    <None Include="ICO\grey_search2.png" />
+    <Content Include="ICO\search-yellow.png" />
+    <Content Include="ICO\search.png" />
+    <Content Include="ICO\site-search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
