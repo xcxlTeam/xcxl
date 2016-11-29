@@ -339,6 +339,10 @@
       <Project>{132fc50b-575b-4bc3-a939-649f87847ebd}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ChensControl\ChensControl.csproj">
+      <Project>{5490A291-E988-4423-8776-E098D4485940}</Project>
+      <Name>ChensControl</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

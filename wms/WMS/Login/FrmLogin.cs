@@ -168,7 +168,7 @@ namespace WMS.Login
                 string Namespace = this.GetType().Namespace;
 
                 //Common.Common_Var.SolutionName = Namespace.Split('.')[0];
-                Common.Common_Var.SolutionName = "XinJieWMS";
+                Common.Common_Var.SolutionName = "SCG_WMS";
 
                 Common.OperXml.CheckConfig();
 

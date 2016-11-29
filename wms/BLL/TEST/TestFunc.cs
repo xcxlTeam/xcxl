@@ -4,10 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using UFIDA.U8.U8APIFramework;
-using UFIDA.U8.U8APIFramework.Parameter;
-using UFIDA.U8.U8MOMAPIFramework;
-using U8Login;
 
 namespace BLL.TEST
 {
