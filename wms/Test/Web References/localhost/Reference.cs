@@ -20,15 +20,40 @@ namespace Test.localhost {
     using System.Web.Services.Protocols;
     using System.Xml.Serialization;
     using System.ComponentModel;
+    using System.Data;
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="WebServiceSoap", Namespace="http://tempuri.org/")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(BasicInfo))]
     public partial class WebService : System.Web.Services.Protocols.SoapHttpClientProtocol {
+        
+        private System.Threading.SendOrPostCallback GetOutSideByDeliveryToSRMOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CreateShelveTaskTestOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TestReadDataOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback WriteLogOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TestMaterialOuterLabelOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TestMaterialInnerLabelOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TestProductLabelOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CheckSerialNoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CreateInnerProductBarcodeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CreateOuterProductBarcodeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ImportStockOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback RemoveStockOperationCompleted;
         
         private System.Threading.SendOrPostCallback CreateInitialProductBarcodeOperationCompleted;
         
@@ -125,6 +150,30 @@ namespace Test.localhost {
         private System.Threading.SendOrPostCallback QueryMaterialBarcodeReportOperationCompleted;
         
         private System.Threading.SendOrPostCallback QueryMaterialBarcodeReportRowDetailOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetFastInNotHavePOInfoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback InsetMaterialDetailOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetTempMaterialNameOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ExistsTempMaterialByMaterialNoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetTempMaterialByTempNoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ExistsTempMaterialNoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SaveTempMaterialOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback DeleteTempMaterialByIDOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetTempMaterialByIDOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetTempMaterialListByPageOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetMaterialInfoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetTempMaterialNoOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetTaskMainListByPageOperationCompleted;
         
@@ -272,28 +321,6 @@ namespace Test.localhost {
         
         private System.Threading.SendOrPostCallback GetSupplierInfoForU8OperationCompleted;
         
-        private System.Threading.SendOrPostCallback GetOutSideByDeliveryToSRMOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback CreateShelveTaskTestOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback WriteLogOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback TestMaterialOuterLabelOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback TestMaterialInnerLabelOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback TestProductLabelOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback CheckSerialNoOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback CreateInnerProductBarcodeOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback CreateOuterProductBarcodeOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ImportStockOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback RemoveStockOperationCompleted;
-        
         private System.Threading.SendOrPostCallback HelloWorldOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetComboBoxItemOperationCompleted;
@@ -406,6 +433,30 @@ namespace Test.localhost {
         
         private System.Threading.SendOrPostCallback GetMenuNoOperationCompleted;
         
+        private System.Threading.SendOrPostCallback ExistspCodeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SavePreparationOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback DeletePreparationByIDOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetPreparationByIDOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetPreparationListByPageOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetPreparationListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ExistsbNoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SaveBuildingOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback DeleteBuildingByIDOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetBuildingByIDOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetBuildingListByPageOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetBuildingListOperationCompleted;
+        
         private System.Threading.SendOrPostCallback CheckImportTableOperationCompleted;
         
         private System.Threading.SendOrPostCallback UpLoadSqlOperationCompleted;
@@ -439,30 +490,6 @@ namespace Test.localhost {
         private System.Threading.SendOrPostCallback UpdatePostFastInOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetVoucherByNoOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetFastInNotHavePOInfoOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback InsetMaterialDetailOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetTempMaterialNameOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ExistsTempMaterialByMaterialNoOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetTempMaterialByTempNoOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ExistsTempMaterialNoOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback SaveTempMaterialOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback DeleteTempMaterialByIDOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetTempMaterialByIDOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetTempMaterialListByPageOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetMaterialInfoOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetTempMaterialNoOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -501,6 +528,42 @@ namespace Test.localhost {
                 this.useDefaultCredentialsSetExplicitly = true;
             }
         }
+        
+        /// <remarks/>
+        public event GetOutSideByDeliveryToSRMCompletedEventHandler GetOutSideByDeliveryToSRMCompleted;
+        
+        /// <remarks/>
+        public event CreateShelveTaskTestCompletedEventHandler CreateShelveTaskTestCompleted;
+        
+        /// <remarks/>
+        public event TestReadDataCompletedEventHandler TestReadDataCompleted;
+        
+        /// <remarks/>
+        public event WriteLogCompletedEventHandler WriteLogCompleted;
+        
+        /// <remarks/>
+        public event TestMaterialOuterLabelCompletedEventHandler TestMaterialOuterLabelCompleted;
+        
+        /// <remarks/>
+        public event TestMaterialInnerLabelCompletedEventHandler TestMaterialInnerLabelCompleted;
+        
+        /// <remarks/>
+        public event TestProductLabelCompletedEventHandler TestProductLabelCompleted;
+        
+        /// <remarks/>
+        public event CheckSerialNoCompletedEventHandler CheckSerialNoCompleted;
+        
+        /// <remarks/>
+        public event CreateInnerProductBarcodeCompletedEventHandler CreateInnerProductBarcodeCompleted;
+        
+        /// <remarks/>
+        public event CreateOuterProductBarcodeCompletedEventHandler CreateOuterProductBarcodeCompleted;
+        
+        /// <remarks/>
+        public event ImportStockCompletedEventHandler ImportStockCompleted;
+        
+        /// <remarks/>
+        public event RemoveStockCompletedEventHandler RemoveStockCompleted;
         
         /// <remarks/>
         public event CreateInitialProductBarcodeCompletedEventHandler CreateInitialProductBarcodeCompleted;
@@ -645,6 +708,42 @@ namespace Test.localhost {
         
         /// <remarks/>
         public event QueryMaterialBarcodeReportRowDetailCompletedEventHandler QueryMaterialBarcodeReportRowDetailCompleted;
+        
+        /// <remarks/>
+        public event GetFastInNotHavePOInfoCompletedEventHandler GetFastInNotHavePOInfoCompleted;
+        
+        /// <remarks/>
+        public event InsetMaterialDetailCompletedEventHandler InsetMaterialDetailCompleted;
+        
+        /// <remarks/>
+        public event GetTempMaterialNameCompletedEventHandler GetTempMaterialNameCompleted;
+        
+        /// <remarks/>
+        public event ExistsTempMaterialByMaterialNoCompletedEventHandler ExistsTempMaterialByMaterialNoCompleted;
+        
+        /// <remarks/>
+        public event GetTempMaterialByTempNoCompletedEventHandler GetTempMaterialByTempNoCompleted;
+        
+        /// <remarks/>
+        public event ExistsTempMaterialNoCompletedEventHandler ExistsTempMaterialNoCompleted;
+        
+        /// <remarks/>
+        public event SaveTempMaterialCompletedEventHandler SaveTempMaterialCompleted;
+        
+        /// <remarks/>
+        public event DeleteTempMaterialByIDCompletedEventHandler DeleteTempMaterialByIDCompleted;
+        
+        /// <remarks/>
+        public event GetTempMaterialByIDCompletedEventHandler GetTempMaterialByIDCompleted;
+        
+        /// <remarks/>
+        public event GetTempMaterialListByPageCompletedEventHandler GetTempMaterialListByPageCompleted;
+        
+        /// <remarks/>
+        public event GetMaterialInfoCompletedEventHandler GetMaterialInfoCompleted;
+        
+        /// <remarks/>
+        public event GetTempMaterialNoCompletedEventHandler GetTempMaterialNoCompleted;
         
         /// <remarks/>
         public event GetTaskMainListByPageCompletedEventHandler GetTaskMainListByPageCompleted;
@@ -866,39 +965,6 @@ namespace Test.localhost {
         public event GetSupplierInfoForU8CompletedEventHandler GetSupplierInfoForU8Completed;
         
         /// <remarks/>
-        public event GetOutSideByDeliveryToSRMCompletedEventHandler GetOutSideByDeliveryToSRMCompleted;
-        
-        /// <remarks/>
-        public event CreateShelveTaskTestCompletedEventHandler CreateShelveTaskTestCompleted;
-        
-        /// <remarks/>
-        public event WriteLogCompletedEventHandler WriteLogCompleted;
-        
-        /// <remarks/>
-        public event TestMaterialOuterLabelCompletedEventHandler TestMaterialOuterLabelCompleted;
-        
-        /// <remarks/>
-        public event TestMaterialInnerLabelCompletedEventHandler TestMaterialInnerLabelCompleted;
-        
-        /// <remarks/>
-        public event TestProductLabelCompletedEventHandler TestProductLabelCompleted;
-        
-        /// <remarks/>
-        public event CheckSerialNoCompletedEventHandler CheckSerialNoCompleted;
-        
-        /// <remarks/>
-        public event CreateInnerProductBarcodeCompletedEventHandler CreateInnerProductBarcodeCompleted;
-        
-        /// <remarks/>
-        public event CreateOuterProductBarcodeCompletedEventHandler CreateOuterProductBarcodeCompleted;
-        
-        /// <remarks/>
-        public event ImportStockCompletedEventHandler ImportStockCompleted;
-        
-        /// <remarks/>
-        public event RemoveStockCompletedEventHandler RemoveStockCompleted;
-        
-        /// <remarks/>
         public event HelloWorldCompletedEventHandler HelloWorldCompleted;
         
         /// <remarks/>
@@ -1067,6 +1133,42 @@ namespace Test.localhost {
         public event GetMenuNoCompletedEventHandler GetMenuNoCompleted;
         
         /// <remarks/>
+        public event ExistspCodeCompletedEventHandler ExistspCodeCompleted;
+        
+        /// <remarks/>
+        public event SavePreparationCompletedEventHandler SavePreparationCompleted;
+        
+        /// <remarks/>
+        public event DeletePreparationByIDCompletedEventHandler DeletePreparationByIDCompleted;
+        
+        /// <remarks/>
+        public event GetPreparationByIDCompletedEventHandler GetPreparationByIDCompleted;
+        
+        /// <remarks/>
+        public event GetPreparationListByPageCompletedEventHandler GetPreparationListByPageCompleted;
+        
+        /// <remarks/>
+        public event GetPreparationListCompletedEventHandler GetPreparationListCompleted;
+        
+        /// <remarks/>
+        public event ExistsbNoCompletedEventHandler ExistsbNoCompleted;
+        
+        /// <remarks/>
+        public event SaveBuildingCompletedEventHandler SaveBuildingCompleted;
+        
+        /// <remarks/>
+        public event DeleteBuildingByIDCompletedEventHandler DeleteBuildingByIDCompleted;
+        
+        /// <remarks/>
+        public event GetBuildingByIDCompletedEventHandler GetBuildingByIDCompleted;
+        
+        /// <remarks/>
+        public event GetBuildingListByPageCompletedEventHandler GetBuildingListByPageCompleted;
+        
+        /// <remarks/>
+        public event GetBuildingListCompletedEventHandler GetBuildingListCompleted;
+        
+        /// <remarks/>
         public event CheckImportTableCompletedEventHandler CheckImportTableCompleted;
         
         /// <remarks/>
@@ -1118,40 +1220,407 @@ namespace Test.localhost {
         public event GetVoucherByNoCompletedEventHandler GetVoucherByNoCompleted;
         
         /// <remarks/>
-        public event GetFastInNotHavePOInfoCompletedEventHandler GetFastInNotHavePOInfoCompleted;
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetOutSideByDeliveryToSRM", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetOutSideByDeliveryToSRM(ref DeliveryReceive_Model DeliveryModel, UserInfo userModel, ref string strErrMsg) {
+            object[] results = this.Invoke("GetOutSideByDeliveryToSRM", new object[] {
+                        DeliveryModel,
+                        userModel,
+                        strErrMsg});
+            DeliveryModel = ((DeliveryReceive_Model)(results[1]));
+            strErrMsg = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
         
         /// <remarks/>
-        public event InsetMaterialDetailCompletedEventHandler InsetMaterialDetailCompleted;
+        public void GetOutSideByDeliveryToSRMAsync(DeliveryReceive_Model DeliveryModel, UserInfo userModel, string strErrMsg) {
+            this.GetOutSideByDeliveryToSRMAsync(DeliveryModel, userModel, strErrMsg, null);
+        }
         
         /// <remarks/>
-        public event GetTempMaterialNameCompletedEventHandler GetTempMaterialNameCompleted;
+        public void GetOutSideByDeliveryToSRMAsync(DeliveryReceive_Model DeliveryModel, UserInfo userModel, string strErrMsg, object userState) {
+            if ((this.GetOutSideByDeliveryToSRMOperationCompleted == null)) {
+                this.GetOutSideByDeliveryToSRMOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetOutSideByDeliveryToSRMOperationCompleted);
+            }
+            this.InvokeAsync("GetOutSideByDeliveryToSRM", new object[] {
+                        DeliveryModel,
+                        userModel,
+                        strErrMsg}, this.GetOutSideByDeliveryToSRMOperationCompleted, userState);
+        }
+        
+        private void OnGetOutSideByDeliveryToSRMOperationCompleted(object arg) {
+            if ((this.GetOutSideByDeliveryToSRMCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetOutSideByDeliveryToSRMCompleted(this, new GetOutSideByDeliveryToSRMCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
         
         /// <remarks/>
-        public event ExistsTempMaterialByMaterialNoCompletedEventHandler ExistsTempMaterialByMaterialNoCompleted;
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CreateShelveTaskTest", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool CreateShelveTaskTest(string vouchcode, string vouchtype, string cwhcode, UserInfo userModel, ref string strTaskNo, ref string strErrMsg) {
+            object[] results = this.Invoke("CreateShelveTaskTest", new object[] {
+                        vouchcode,
+                        vouchtype,
+                        cwhcode,
+                        userModel,
+                        strTaskNo,
+                        strErrMsg});
+            strTaskNo = ((string)(results[1]));
+            strErrMsg = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
         
         /// <remarks/>
-        public event GetTempMaterialByTempNoCompletedEventHandler GetTempMaterialByTempNoCompleted;
+        public void CreateShelveTaskTestAsync(string vouchcode, string vouchtype, string cwhcode, UserInfo userModel, string strTaskNo, string strErrMsg) {
+            this.CreateShelveTaskTestAsync(vouchcode, vouchtype, cwhcode, userModel, strTaskNo, strErrMsg, null);
+        }
         
         /// <remarks/>
-        public event ExistsTempMaterialNoCompletedEventHandler ExistsTempMaterialNoCompleted;
+        public void CreateShelveTaskTestAsync(string vouchcode, string vouchtype, string cwhcode, UserInfo userModel, string strTaskNo, string strErrMsg, object userState) {
+            if ((this.CreateShelveTaskTestOperationCompleted == null)) {
+                this.CreateShelveTaskTestOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCreateShelveTaskTestOperationCompleted);
+            }
+            this.InvokeAsync("CreateShelveTaskTest", new object[] {
+                        vouchcode,
+                        vouchtype,
+                        cwhcode,
+                        userModel,
+                        strTaskNo,
+                        strErrMsg}, this.CreateShelveTaskTestOperationCompleted, userState);
+        }
+        
+        private void OnCreateShelveTaskTestOperationCompleted(object arg) {
+            if ((this.CreateShelveTaskTestCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CreateShelveTaskTestCompleted(this, new CreateShelveTaskTestCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
         
         /// <remarks/>
-        public event SaveTempMaterialCompletedEventHandler SaveTempMaterialCompleted;
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TestReadData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool TestReadData(int iNo, out System.Data.DataSet ds) {
+            object[] results = this.Invoke("TestReadData", new object[] {
+                        iNo});
+            ds = ((System.Data.DataSet)(results[1]));
+            return ((bool)(results[0]));
+        }
         
         /// <remarks/>
-        public event DeleteTempMaterialByIDCompletedEventHandler DeleteTempMaterialByIDCompleted;
+        public void TestReadDataAsync(int iNo) {
+            this.TestReadDataAsync(iNo, null);
+        }
         
         /// <remarks/>
-        public event GetTempMaterialByIDCompletedEventHandler GetTempMaterialByIDCompleted;
+        public void TestReadDataAsync(int iNo, object userState) {
+            if ((this.TestReadDataOperationCompleted == null)) {
+                this.TestReadDataOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTestReadDataOperationCompleted);
+            }
+            this.InvokeAsync("TestReadData", new object[] {
+                        iNo}, this.TestReadDataOperationCompleted, userState);
+        }
+        
+        private void OnTestReadDataOperationCompleted(object arg) {
+            if ((this.TestReadDataCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TestReadDataCompleted(this, new TestReadDataCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
         
         /// <remarks/>
-        public event GetTempMaterialListByPageCompletedEventHandler GetTempMaterialListByPageCompleted;
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/WriteLog", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool WriteLog(string strLog) {
+            object[] results = this.Invoke("WriteLog", new object[] {
+                        strLog});
+            return ((bool)(results[0]));
+        }
         
         /// <remarks/>
-        public event GetMaterialInfoCompletedEventHandler GetMaterialInfoCompleted;
+        public void WriteLogAsync(string strLog) {
+            this.WriteLogAsync(strLog, null);
+        }
         
         /// <remarks/>
-        public event GetTempMaterialNoCompletedEventHandler GetTempMaterialNoCompleted;
+        public void WriteLogAsync(string strLog, object userState) {
+            if ((this.WriteLogOperationCompleted == null)) {
+                this.WriteLogOperationCompleted = new System.Threading.SendOrPostCallback(this.OnWriteLogOperationCompleted);
+            }
+            this.InvokeAsync("WriteLog", new object[] {
+                        strLog}, this.WriteLogOperationCompleted, userState);
+        }
+        
+        private void OnWriteLogOperationCompleted(object arg) {
+            if ((this.WriteLogCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.WriteLogCompleted(this, new WriteLogCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TestMaterialOuterLabel", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string TestMaterialOuterLabel(MaterialOuterLabel model, ref string strError) {
+            object[] results = this.Invoke("TestMaterialOuterLabel", new object[] {
+                        model,
+                        strError});
+            strError = ((string)(results[1]));
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TestMaterialOuterLabelAsync(MaterialOuterLabel model, string strError) {
+            this.TestMaterialOuterLabelAsync(model, strError, null);
+        }
+        
+        /// <remarks/>
+        public void TestMaterialOuterLabelAsync(MaterialOuterLabel model, string strError, object userState) {
+            if ((this.TestMaterialOuterLabelOperationCompleted == null)) {
+                this.TestMaterialOuterLabelOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTestMaterialOuterLabelOperationCompleted);
+            }
+            this.InvokeAsync("TestMaterialOuterLabel", new object[] {
+                        model,
+                        strError}, this.TestMaterialOuterLabelOperationCompleted, userState);
+        }
+        
+        private void OnTestMaterialOuterLabelOperationCompleted(object arg) {
+            if ((this.TestMaterialOuterLabelCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TestMaterialOuterLabelCompleted(this, new TestMaterialOuterLabelCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TestMaterialInnerLabel", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string TestMaterialInnerLabel(MaterialInnerLabel model, ref string strError) {
+            object[] results = this.Invoke("TestMaterialInnerLabel", new object[] {
+                        model,
+                        strError});
+            strError = ((string)(results[1]));
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TestMaterialInnerLabelAsync(MaterialInnerLabel model, string strError) {
+            this.TestMaterialInnerLabelAsync(model, strError, null);
+        }
+        
+        /// <remarks/>
+        public void TestMaterialInnerLabelAsync(MaterialInnerLabel model, string strError, object userState) {
+            if ((this.TestMaterialInnerLabelOperationCompleted == null)) {
+                this.TestMaterialInnerLabelOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTestMaterialInnerLabelOperationCompleted);
+            }
+            this.InvokeAsync("TestMaterialInnerLabel", new object[] {
+                        model,
+                        strError}, this.TestMaterialInnerLabelOperationCompleted, userState);
+        }
+        
+        private void OnTestMaterialInnerLabelOperationCompleted(object arg) {
+            if ((this.TestMaterialInnerLabelCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TestMaterialInnerLabelCompleted(this, new TestMaterialInnerLabelCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TestProductLabel", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string TestProductLabel(ProductLabel_Model model, ref string strError) {
+            object[] results = this.Invoke("TestProductLabel", new object[] {
+                        model,
+                        strError});
+            strError = ((string)(results[1]));
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TestProductLabelAsync(ProductLabel_Model model, string strError) {
+            this.TestProductLabelAsync(model, strError, null);
+        }
+        
+        /// <remarks/>
+        public void TestProductLabelAsync(ProductLabel_Model model, string strError, object userState) {
+            if ((this.TestProductLabelOperationCompleted == null)) {
+                this.TestProductLabelOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTestProductLabelOperationCompleted);
+            }
+            this.InvokeAsync("TestProductLabel", new object[] {
+                        model,
+                        strError}, this.TestProductLabelOperationCompleted, userState);
+        }
+        
+        private void OnTestProductLabelOperationCompleted(object arg) {
+            if ((this.TestProductLabelCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TestProductLabelCompleted(this, new TestProductLabelCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckSerialNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool CheckSerialNo(string SerialNo, string BatchNo, ref string strErrMsg) {
+            object[] results = this.Invoke("CheckSerialNo", new object[] {
+                        SerialNo,
+                        BatchNo,
+                        strErrMsg});
+            strErrMsg = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CheckSerialNoAsync(string SerialNo, string BatchNo, string strErrMsg) {
+            this.CheckSerialNoAsync(SerialNo, BatchNo, strErrMsg, null);
+        }
+        
+        /// <remarks/>
+        public void CheckSerialNoAsync(string SerialNo, string BatchNo, string strErrMsg, object userState) {
+            if ((this.CheckSerialNoOperationCompleted == null)) {
+                this.CheckSerialNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckSerialNoOperationCompleted);
+            }
+            this.InvokeAsync("CheckSerialNo", new object[] {
+                        SerialNo,
+                        BatchNo,
+                        strErrMsg}, this.CheckSerialNoOperationCompleted, userState);
+        }
+        
+        private void OnCheckSerialNoOperationCompleted(object arg) {
+            if ((this.CheckSerialNoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CheckSerialNoCompleted(this, new CheckSerialNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CreateInnerProductBarcode", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool CreateInnerProductBarcode(ProductLabel_Model labelModel, int qty, ref ProductLabel_Model[] label_lst, ref string strErrMsg) {
+            object[] results = this.Invoke("CreateInnerProductBarcode", new object[] {
+                        labelModel,
+                        qty,
+                        label_lst,
+                        strErrMsg});
+            label_lst = ((ProductLabel_Model[])(results[1]));
+            strErrMsg = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CreateInnerProductBarcodeAsync(ProductLabel_Model labelModel, int qty, ProductLabel_Model[] label_lst, string strErrMsg) {
+            this.CreateInnerProductBarcodeAsync(labelModel, qty, label_lst, strErrMsg, null);
+        }
+        
+        /// <remarks/>
+        public void CreateInnerProductBarcodeAsync(ProductLabel_Model labelModel, int qty, ProductLabel_Model[] label_lst, string strErrMsg, object userState) {
+            if ((this.CreateInnerProductBarcodeOperationCompleted == null)) {
+                this.CreateInnerProductBarcodeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCreateInnerProductBarcodeOperationCompleted);
+            }
+            this.InvokeAsync("CreateInnerProductBarcode", new object[] {
+                        labelModel,
+                        qty,
+                        label_lst,
+                        strErrMsg}, this.CreateInnerProductBarcodeOperationCompleted, userState);
+        }
+        
+        private void OnCreateInnerProductBarcodeOperationCompleted(object arg) {
+            if ((this.CreateInnerProductBarcodeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CreateInnerProductBarcodeCompleted(this, new CreateInnerProductBarcodeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CreateOuterProductBarcode", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool CreateOuterProductBarcode(ProductLabel_Model labelModel, int qty, ref ProductLabel_Model[] label_lst, ref string strErrMsg) {
+            object[] results = this.Invoke("CreateOuterProductBarcode", new object[] {
+                        labelModel,
+                        qty,
+                        label_lst,
+                        strErrMsg});
+            label_lst = ((ProductLabel_Model[])(results[1]));
+            strErrMsg = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CreateOuterProductBarcodeAsync(ProductLabel_Model labelModel, int qty, ProductLabel_Model[] label_lst, string strErrMsg) {
+            this.CreateOuterProductBarcodeAsync(labelModel, qty, label_lst, strErrMsg, null);
+        }
+        
+        /// <remarks/>
+        public void CreateOuterProductBarcodeAsync(ProductLabel_Model labelModel, int qty, ProductLabel_Model[] label_lst, string strErrMsg, object userState) {
+            if ((this.CreateOuterProductBarcodeOperationCompleted == null)) {
+                this.CreateOuterProductBarcodeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCreateOuterProductBarcodeOperationCompleted);
+            }
+            this.InvokeAsync("CreateOuterProductBarcode", new object[] {
+                        labelModel,
+                        qty,
+                        label_lst,
+                        strErrMsg}, this.CreateOuterProductBarcodeOperationCompleted, userState);
+        }
+        
+        private void OnCreateOuterProductBarcodeOperationCompleted(object arg) {
+            if ((this.CreateOuterProductBarcodeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CreateOuterProductBarcodeCompleted(this, new CreateOuterProductBarcodeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ImportStock", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool ImportStock(Stock_Model[] dt, ref string strErrMsg) {
+            object[] results = this.Invoke("ImportStock", new object[] {
+                        dt,
+                        strErrMsg});
+            strErrMsg = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ImportStockAsync(Stock_Model[] dt, string strErrMsg) {
+            this.ImportStockAsync(dt, strErrMsg, null);
+        }
+        
+        /// <remarks/>
+        public void ImportStockAsync(Stock_Model[] dt, string strErrMsg, object userState) {
+            if ((this.ImportStockOperationCompleted == null)) {
+                this.ImportStockOperationCompleted = new System.Threading.SendOrPostCallback(this.OnImportStockOperationCompleted);
+            }
+            this.InvokeAsync("ImportStock", new object[] {
+                        dt,
+                        strErrMsg}, this.ImportStockOperationCompleted, userState);
+        }
+        
+        private void OnImportStockOperationCompleted(object arg) {
+            if ((this.ImportStockCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ImportStockCompleted(this, new ImportStockCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RemoveStock", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool RemoveStock(Stock_Model[] dt, ref string strErrMsg) {
+            object[] results = this.Invoke("RemoveStock", new object[] {
+                        dt,
+                        strErrMsg});
+            strErrMsg = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void RemoveStockAsync(Stock_Model[] dt, string strErrMsg) {
+            this.RemoveStockAsync(dt, strErrMsg, null);
+        }
+        
+        /// <remarks/>
+        public void RemoveStockAsync(Stock_Model[] dt, string strErrMsg, object userState) {
+            if ((this.RemoveStockOperationCompleted == null)) {
+                this.RemoveStockOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRemoveStockOperationCompleted);
+            }
+            this.InvokeAsync("RemoveStock", new object[] {
+                        dt,
+                        strErrMsg}, this.RemoveStockOperationCompleted, userState);
+        }
+        
+        private void OnRemoveStockOperationCompleted(object arg) {
+            if ((this.RemoveStockCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.RemoveStockCompleted(this, new RemoveStockCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CreateInitialProductBarcode", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -2856,6 +3325,424 @@ namespace Test.localhost {
             if ((this.QueryMaterialBarcodeReportRowDetailCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.QueryMaterialBarcodeReportRowDetailCompleted(this, new QueryMaterialBarcodeReportRowDetailCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetFastInNotHavePOInfo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetFastInNotHavePOInfo(Task_Model taskmo, ref DividPage dividpage, ref Task_Model[] lsttask, ref string strErrMsg) {
+            object[] results = this.Invoke("GetFastInNotHavePOInfo", new object[] {
+                        taskmo,
+                        dividpage,
+                        lsttask,
+                        strErrMsg});
+            dividpage = ((DividPage)(results[1]));
+            lsttask = ((Task_Model[])(results[2]));
+            strErrMsg = ((string)(results[3]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetFastInNotHavePOInfoAsync(Task_Model taskmo, DividPage dividpage, Task_Model[] lsttask, string strErrMsg) {
+            this.GetFastInNotHavePOInfoAsync(taskmo, dividpage, lsttask, strErrMsg, null);
+        }
+        
+        /// <remarks/>
+        public void GetFastInNotHavePOInfoAsync(Task_Model taskmo, DividPage dividpage, Task_Model[] lsttask, string strErrMsg, object userState) {
+            if ((this.GetFastInNotHavePOInfoOperationCompleted == null)) {
+                this.GetFastInNotHavePOInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetFastInNotHavePOInfoOperationCompleted);
+            }
+            this.InvokeAsync("GetFastInNotHavePOInfo", new object[] {
+                        taskmo,
+                        dividpage,
+                        lsttask,
+                        strErrMsg}, this.GetFastInNotHavePOInfoOperationCompleted, userState);
+        }
+        
+        private void OnGetFastInNotHavePOInfoOperationCompleted(object arg) {
+            if ((this.GetFastInNotHavePOInfoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetFastInNotHavePOInfoCompleted(this, new GetFastInNotHavePOInfoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InsetMaterialDetail", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool InsetMaterialDetail(TaskDetails_Model[] tDtails, ref string msg) {
+            object[] results = this.Invoke("InsetMaterialDetail", new object[] {
+                        tDtails,
+                        msg});
+            msg = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void InsetMaterialDetailAsync(TaskDetails_Model[] tDtails, string msg) {
+            this.InsetMaterialDetailAsync(tDtails, msg, null);
+        }
+        
+        /// <remarks/>
+        public void InsetMaterialDetailAsync(TaskDetails_Model[] tDtails, string msg, object userState) {
+            if ((this.InsetMaterialDetailOperationCompleted == null)) {
+                this.InsetMaterialDetailOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsetMaterialDetailOperationCompleted);
+            }
+            this.InvokeAsync("InsetMaterialDetail", new object[] {
+                        tDtails,
+                        msg}, this.InsetMaterialDetailOperationCompleted, userState);
+        }
+        
+        private void OnInsetMaterialDetailOperationCompleted(object arg) {
+            if ((this.InsetMaterialDetailCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.InsetMaterialDetailCompleted(this, new InsetMaterialDetailCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTempMaterialName", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetTempMaterialName(string materialNo, ref string materialDESC) {
+            object[] results = this.Invoke("GetTempMaterialName", new object[] {
+                        materialNo,
+                        materialDESC});
+            materialDESC = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetTempMaterialNameAsync(string materialNo, string materialDESC) {
+            this.GetTempMaterialNameAsync(materialNo, materialDESC, null);
+        }
+        
+        /// <remarks/>
+        public void GetTempMaterialNameAsync(string materialNo, string materialDESC, object userState) {
+            if ((this.GetTempMaterialNameOperationCompleted == null)) {
+                this.GetTempMaterialNameOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTempMaterialNameOperationCompleted);
+            }
+            this.InvokeAsync("GetTempMaterialName", new object[] {
+                        materialNo,
+                        materialDESC}, this.GetTempMaterialNameOperationCompleted, userState);
+        }
+        
+        private void OnGetTempMaterialNameOperationCompleted(object arg) {
+            if ((this.GetTempMaterialNameCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetTempMaterialNameCompleted(this, new GetTempMaterialNameCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ExistsTempMaterialByMaterialNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool ExistsTempMaterialByMaterialNo(string materialNo) {
+            object[] results = this.Invoke("ExistsTempMaterialByMaterialNo", new object[] {
+                        materialNo});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ExistsTempMaterialByMaterialNoAsync(string materialNo) {
+            this.ExistsTempMaterialByMaterialNoAsync(materialNo, null);
+        }
+        
+        /// <remarks/>
+        public void ExistsTempMaterialByMaterialNoAsync(string materialNo, object userState) {
+            if ((this.ExistsTempMaterialByMaterialNoOperationCompleted == null)) {
+                this.ExistsTempMaterialByMaterialNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnExistsTempMaterialByMaterialNoOperationCompleted);
+            }
+            this.InvokeAsync("ExistsTempMaterialByMaterialNo", new object[] {
+                        materialNo}, this.ExistsTempMaterialByMaterialNoOperationCompleted, userState);
+        }
+        
+        private void OnExistsTempMaterialByMaterialNoOperationCompleted(object arg) {
+            if ((this.ExistsTempMaterialByMaterialNoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ExistsTempMaterialByMaterialNoCompleted(this, new ExistsTempMaterialByMaterialNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTempMaterialByTempNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetTempMaterialByTempNo(string strMaterialNo, ref TempMaterial tempmaterial, ref string strErrMsg) {
+            object[] results = this.Invoke("GetTempMaterialByTempNo", new object[] {
+                        strMaterialNo,
+                        tempmaterial,
+                        strErrMsg});
+            tempmaterial = ((TempMaterial)(results[1]));
+            strErrMsg = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetTempMaterialByTempNoAsync(string strMaterialNo, TempMaterial tempmaterial, string strErrMsg) {
+            this.GetTempMaterialByTempNoAsync(strMaterialNo, tempmaterial, strErrMsg, null);
+        }
+        
+        /// <remarks/>
+        public void GetTempMaterialByTempNoAsync(string strMaterialNo, TempMaterial tempmaterial, string strErrMsg, object userState) {
+            if ((this.GetTempMaterialByTempNoOperationCompleted == null)) {
+                this.GetTempMaterialByTempNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTempMaterialByTempNoOperationCompleted);
+            }
+            this.InvokeAsync("GetTempMaterialByTempNo", new object[] {
+                        strMaterialNo,
+                        tempmaterial,
+                        strErrMsg}, this.GetTempMaterialByTempNoOperationCompleted, userState);
+        }
+        
+        private void OnGetTempMaterialByTempNoOperationCompleted(object arg) {
+            if ((this.GetTempMaterialByTempNoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetTempMaterialByTempNoCompleted(this, new GetTempMaterialByTempNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ExistsTempMaterialNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool ExistsTempMaterialNo(TempMaterialInfo model, bool bIncludeDel, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("ExistsTempMaterialNo", new object[] {
+                        model,
+                        bIncludeDel,
+                        user,
+                        strError});
+            strError = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ExistsTempMaterialNoAsync(TempMaterialInfo model, bool bIncludeDel, UserInfo user, string strError) {
+            this.ExistsTempMaterialNoAsync(model, bIncludeDel, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void ExistsTempMaterialNoAsync(TempMaterialInfo model, bool bIncludeDel, UserInfo user, string strError, object userState) {
+            if ((this.ExistsTempMaterialNoOperationCompleted == null)) {
+                this.ExistsTempMaterialNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnExistsTempMaterialNoOperationCompleted);
+            }
+            this.InvokeAsync("ExistsTempMaterialNo", new object[] {
+                        model,
+                        bIncludeDel,
+                        user,
+                        strError}, this.ExistsTempMaterialNoOperationCompleted, userState);
+        }
+        
+        private void OnExistsTempMaterialNoOperationCompleted(object arg) {
+            if ((this.ExistsTempMaterialNoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ExistsTempMaterialNoCompleted(this, new ExistsTempMaterialNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SaveTempMaterial", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool SaveTempMaterial(ref TempMaterialInfo model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("SaveTempMaterial", new object[] {
+                        model,
+                        user,
+                        strError});
+            model = ((TempMaterialInfo)(results[1]));
+            strError = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SaveTempMaterialAsync(TempMaterialInfo model, UserInfo user, string strError) {
+            this.SaveTempMaterialAsync(model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void SaveTempMaterialAsync(TempMaterialInfo model, UserInfo user, string strError, object userState) {
+            if ((this.SaveTempMaterialOperationCompleted == null)) {
+                this.SaveTempMaterialOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSaveTempMaterialOperationCompleted);
+            }
+            this.InvokeAsync("SaveTempMaterial", new object[] {
+                        model,
+                        user,
+                        strError}, this.SaveTempMaterialOperationCompleted, userState);
+        }
+        
+        private void OnSaveTempMaterialOperationCompleted(object arg) {
+            if ((this.SaveTempMaterialCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SaveTempMaterialCompleted(this, new SaveTempMaterialCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DeleteTempMaterialByID", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool DeleteTempMaterialByID(TempMaterialInfo model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("DeleteTempMaterialByID", new object[] {
+                        model,
+                        user,
+                        strError});
+            strError = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void DeleteTempMaterialByIDAsync(TempMaterialInfo model, UserInfo user, string strError) {
+            this.DeleteTempMaterialByIDAsync(model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void DeleteTempMaterialByIDAsync(TempMaterialInfo model, UserInfo user, string strError, object userState) {
+            if ((this.DeleteTempMaterialByIDOperationCompleted == null)) {
+                this.DeleteTempMaterialByIDOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDeleteTempMaterialByIDOperationCompleted);
+            }
+            this.InvokeAsync("DeleteTempMaterialByID", new object[] {
+                        model,
+                        user,
+                        strError}, this.DeleteTempMaterialByIDOperationCompleted, userState);
+        }
+        
+        private void OnDeleteTempMaterialByIDOperationCompleted(object arg) {
+            if ((this.DeleteTempMaterialByIDCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.DeleteTempMaterialByIDCompleted(this, new DeleteTempMaterialByIDCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTempMaterialByID", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetTempMaterialByID(ref TempMaterialInfo model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("GetTempMaterialByID", new object[] {
+                        model,
+                        user,
+                        strError});
+            model = ((TempMaterialInfo)(results[1]));
+            strError = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetTempMaterialByIDAsync(TempMaterialInfo model, UserInfo user, string strError) {
+            this.GetTempMaterialByIDAsync(model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void GetTempMaterialByIDAsync(TempMaterialInfo model, UserInfo user, string strError, object userState) {
+            if ((this.GetTempMaterialByIDOperationCompleted == null)) {
+                this.GetTempMaterialByIDOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTempMaterialByIDOperationCompleted);
+            }
+            this.InvokeAsync("GetTempMaterialByID", new object[] {
+                        model,
+                        user,
+                        strError}, this.GetTempMaterialByIDOperationCompleted, userState);
+        }
+        
+        private void OnGetTempMaterialByIDOperationCompleted(object arg) {
+            if ((this.GetTempMaterialByIDCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetTempMaterialByIDCompleted(this, new GetTempMaterialByIDCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTempMaterialListByPage", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetTempMaterialListByPage(ref TempMaterialInfo[] modelList, TempMaterialInfo model, ref DividPage page, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("GetTempMaterialListByPage", new object[] {
+                        modelList,
+                        model,
+                        page,
+                        user,
+                        strError});
+            modelList = ((TempMaterialInfo[])(results[1]));
+            page = ((DividPage)(results[2]));
+            strError = ((string)(results[3]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetTempMaterialListByPageAsync(TempMaterialInfo[] modelList, TempMaterialInfo model, DividPage page, UserInfo user, string strError) {
+            this.GetTempMaterialListByPageAsync(modelList, model, page, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void GetTempMaterialListByPageAsync(TempMaterialInfo[] modelList, TempMaterialInfo model, DividPage page, UserInfo user, string strError, object userState) {
+            if ((this.GetTempMaterialListByPageOperationCompleted == null)) {
+                this.GetTempMaterialListByPageOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTempMaterialListByPageOperationCompleted);
+            }
+            this.InvokeAsync("GetTempMaterialListByPage", new object[] {
+                        modelList,
+                        model,
+                        page,
+                        user,
+                        strError}, this.GetTempMaterialListByPageOperationCompleted, userState);
+        }
+        
+        private void OnGetTempMaterialListByPageOperationCompleted(object arg) {
+            if ((this.GetTempMaterialListByPageCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetTempMaterialListByPageCompleted(this, new GetTempMaterialListByPageCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetMaterialInfo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetMaterialInfo(ref TempMaterialInfo model, int type, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("GetMaterialInfo", new object[] {
+                        model,
+                        type,
+                        user,
+                        strError});
+            model = ((TempMaterialInfo)(results[1]));
+            strError = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetMaterialInfoAsync(TempMaterialInfo model, int type, UserInfo user, string strError) {
+            this.GetMaterialInfoAsync(model, type, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void GetMaterialInfoAsync(TempMaterialInfo model, int type, UserInfo user, string strError, object userState) {
+            if ((this.GetMaterialInfoOperationCompleted == null)) {
+                this.GetMaterialInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetMaterialInfoOperationCompleted);
+            }
+            this.InvokeAsync("GetMaterialInfo", new object[] {
+                        model,
+                        type,
+                        user,
+                        strError}, this.GetMaterialInfoOperationCompleted, userState);
+        }
+        
+        private void OnGetMaterialInfoOperationCompleted(object arg) {
+            if ((this.GetMaterialInfoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetMaterialInfoCompleted(this, new GetMaterialInfoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTempMaterialNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetTempMaterialNo(ref TempMaterialInfo model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("GetTempMaterialNo", new object[] {
+                        model,
+                        user,
+                        strError});
+            model = ((TempMaterialInfo)(results[1]));
+            strError = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetTempMaterialNoAsync(TempMaterialInfo model, UserInfo user, string strError) {
+            this.GetTempMaterialNoAsync(model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void GetTempMaterialNoAsync(TempMaterialInfo model, UserInfo user, string strError, object userState) {
+            if ((this.GetTempMaterialNoOperationCompleted == null)) {
+                this.GetTempMaterialNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTempMaterialNoOperationCompleted);
+            }
+            this.InvokeAsync("GetTempMaterialNo", new object[] {
+                        model,
+                        user,
+                        strError}, this.GetTempMaterialNoOperationCompleted, userState);
+        }
+        
+        private void OnGetTempMaterialNoOperationCompleted(object arg) {
+            if ((this.GetTempMaterialNoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetTempMaterialNoCompleted(this, new GetTempMaterialNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -5347,379 +6234,6 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetOutSideByDeliveryToSRM", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool GetOutSideByDeliveryToSRM(ref DeliveryReceive_Model DeliveryModel, UserInfo userModel, ref string strErrMsg) {
-            object[] results = this.Invoke("GetOutSideByDeliveryToSRM", new object[] {
-                        DeliveryModel,
-                        userModel,
-                        strErrMsg});
-            DeliveryModel = ((DeliveryReceive_Model)(results[1]));
-            strErrMsg = ((string)(results[2]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetOutSideByDeliveryToSRMAsync(DeliveryReceive_Model DeliveryModel, UserInfo userModel, string strErrMsg) {
-            this.GetOutSideByDeliveryToSRMAsync(DeliveryModel, userModel, strErrMsg, null);
-        }
-        
-        /// <remarks/>
-        public void GetOutSideByDeliveryToSRMAsync(DeliveryReceive_Model DeliveryModel, UserInfo userModel, string strErrMsg, object userState) {
-            if ((this.GetOutSideByDeliveryToSRMOperationCompleted == null)) {
-                this.GetOutSideByDeliveryToSRMOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetOutSideByDeliveryToSRMOperationCompleted);
-            }
-            this.InvokeAsync("GetOutSideByDeliveryToSRM", new object[] {
-                        DeliveryModel,
-                        userModel,
-                        strErrMsg}, this.GetOutSideByDeliveryToSRMOperationCompleted, userState);
-        }
-        
-        private void OnGetOutSideByDeliveryToSRMOperationCompleted(object arg) {
-            if ((this.GetOutSideByDeliveryToSRMCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetOutSideByDeliveryToSRMCompleted(this, new GetOutSideByDeliveryToSRMCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CreateShelveTaskTest", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool CreateShelveTaskTest(string vouchcode, string vouchtype, string cwhcode, UserInfo userModel, ref string strTaskNo, ref string strErrMsg) {
-            object[] results = this.Invoke("CreateShelveTaskTest", new object[] {
-                        vouchcode,
-                        vouchtype,
-                        cwhcode,
-                        userModel,
-                        strTaskNo,
-                        strErrMsg});
-            strTaskNo = ((string)(results[1]));
-            strErrMsg = ((string)(results[2]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void CreateShelveTaskTestAsync(string vouchcode, string vouchtype, string cwhcode, UserInfo userModel, string strTaskNo, string strErrMsg) {
-            this.CreateShelveTaskTestAsync(vouchcode, vouchtype, cwhcode, userModel, strTaskNo, strErrMsg, null);
-        }
-        
-        /// <remarks/>
-        public void CreateShelveTaskTestAsync(string vouchcode, string vouchtype, string cwhcode, UserInfo userModel, string strTaskNo, string strErrMsg, object userState) {
-            if ((this.CreateShelveTaskTestOperationCompleted == null)) {
-                this.CreateShelveTaskTestOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCreateShelveTaskTestOperationCompleted);
-            }
-            this.InvokeAsync("CreateShelveTaskTest", new object[] {
-                        vouchcode,
-                        vouchtype,
-                        cwhcode,
-                        userModel,
-                        strTaskNo,
-                        strErrMsg}, this.CreateShelveTaskTestOperationCompleted, userState);
-        }
-        
-        private void OnCreateShelveTaskTestOperationCompleted(object arg) {
-            if ((this.CreateShelveTaskTestCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CreateShelveTaskTestCompleted(this, new CreateShelveTaskTestCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/WriteLog", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool WriteLog(string strLog) {
-            object[] results = this.Invoke("WriteLog", new object[] {
-                        strLog});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void WriteLogAsync(string strLog) {
-            this.WriteLogAsync(strLog, null);
-        }
-        
-        /// <remarks/>
-        public void WriteLogAsync(string strLog, object userState) {
-            if ((this.WriteLogOperationCompleted == null)) {
-                this.WriteLogOperationCompleted = new System.Threading.SendOrPostCallback(this.OnWriteLogOperationCompleted);
-            }
-            this.InvokeAsync("WriteLog", new object[] {
-                        strLog}, this.WriteLogOperationCompleted, userState);
-        }
-        
-        private void OnWriteLogOperationCompleted(object arg) {
-            if ((this.WriteLogCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.WriteLogCompleted(this, new WriteLogCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TestMaterialOuterLabel", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string TestMaterialOuterLabel(MaterialOuterLabel model, ref string strError) {
-            object[] results = this.Invoke("TestMaterialOuterLabel", new object[] {
-                        model,
-                        strError});
-            strError = ((string)(results[1]));
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void TestMaterialOuterLabelAsync(MaterialOuterLabel model, string strError) {
-            this.TestMaterialOuterLabelAsync(model, strError, null);
-        }
-        
-        /// <remarks/>
-        public void TestMaterialOuterLabelAsync(MaterialOuterLabel model, string strError, object userState) {
-            if ((this.TestMaterialOuterLabelOperationCompleted == null)) {
-                this.TestMaterialOuterLabelOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTestMaterialOuterLabelOperationCompleted);
-            }
-            this.InvokeAsync("TestMaterialOuterLabel", new object[] {
-                        model,
-                        strError}, this.TestMaterialOuterLabelOperationCompleted, userState);
-        }
-        
-        private void OnTestMaterialOuterLabelOperationCompleted(object arg) {
-            if ((this.TestMaterialOuterLabelCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.TestMaterialOuterLabelCompleted(this, new TestMaterialOuterLabelCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TestMaterialInnerLabel", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string TestMaterialInnerLabel(MaterialInnerLabel model, ref string strError) {
-            object[] results = this.Invoke("TestMaterialInnerLabel", new object[] {
-                        model,
-                        strError});
-            strError = ((string)(results[1]));
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void TestMaterialInnerLabelAsync(MaterialInnerLabel model, string strError) {
-            this.TestMaterialInnerLabelAsync(model, strError, null);
-        }
-        
-        /// <remarks/>
-        public void TestMaterialInnerLabelAsync(MaterialInnerLabel model, string strError, object userState) {
-            if ((this.TestMaterialInnerLabelOperationCompleted == null)) {
-                this.TestMaterialInnerLabelOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTestMaterialInnerLabelOperationCompleted);
-            }
-            this.InvokeAsync("TestMaterialInnerLabel", new object[] {
-                        model,
-                        strError}, this.TestMaterialInnerLabelOperationCompleted, userState);
-        }
-        
-        private void OnTestMaterialInnerLabelOperationCompleted(object arg) {
-            if ((this.TestMaterialInnerLabelCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.TestMaterialInnerLabelCompleted(this, new TestMaterialInnerLabelCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TestProductLabel", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string TestProductLabel(ProductLabel_Model model, ref string strError) {
-            object[] results = this.Invoke("TestProductLabel", new object[] {
-                        model,
-                        strError});
-            strError = ((string)(results[1]));
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void TestProductLabelAsync(ProductLabel_Model model, string strError) {
-            this.TestProductLabelAsync(model, strError, null);
-        }
-        
-        /// <remarks/>
-        public void TestProductLabelAsync(ProductLabel_Model model, string strError, object userState) {
-            if ((this.TestProductLabelOperationCompleted == null)) {
-                this.TestProductLabelOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTestProductLabelOperationCompleted);
-            }
-            this.InvokeAsync("TestProductLabel", new object[] {
-                        model,
-                        strError}, this.TestProductLabelOperationCompleted, userState);
-        }
-        
-        private void OnTestProductLabelOperationCompleted(object arg) {
-            if ((this.TestProductLabelCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.TestProductLabelCompleted(this, new TestProductLabelCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckSerialNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool CheckSerialNo(string SerialNo, string BatchNo, ref string strErrMsg) {
-            object[] results = this.Invoke("CheckSerialNo", new object[] {
-                        SerialNo,
-                        BatchNo,
-                        strErrMsg});
-            strErrMsg = ((string)(results[1]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void CheckSerialNoAsync(string SerialNo, string BatchNo, string strErrMsg) {
-            this.CheckSerialNoAsync(SerialNo, BatchNo, strErrMsg, null);
-        }
-        
-        /// <remarks/>
-        public void CheckSerialNoAsync(string SerialNo, string BatchNo, string strErrMsg, object userState) {
-            if ((this.CheckSerialNoOperationCompleted == null)) {
-                this.CheckSerialNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckSerialNoOperationCompleted);
-            }
-            this.InvokeAsync("CheckSerialNo", new object[] {
-                        SerialNo,
-                        BatchNo,
-                        strErrMsg}, this.CheckSerialNoOperationCompleted, userState);
-        }
-        
-        private void OnCheckSerialNoOperationCompleted(object arg) {
-            if ((this.CheckSerialNoCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CheckSerialNoCompleted(this, new CheckSerialNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CreateInnerProductBarcode", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool CreateInnerProductBarcode(ProductLabel_Model labelModel, int qty, ref ProductLabel_Model[] label_lst, ref string strErrMsg) {
-            object[] results = this.Invoke("CreateInnerProductBarcode", new object[] {
-                        labelModel,
-                        qty,
-                        label_lst,
-                        strErrMsg});
-            label_lst = ((ProductLabel_Model[])(results[1]));
-            strErrMsg = ((string)(results[2]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void CreateInnerProductBarcodeAsync(ProductLabel_Model labelModel, int qty, ProductLabel_Model[] label_lst, string strErrMsg) {
-            this.CreateInnerProductBarcodeAsync(labelModel, qty, label_lst, strErrMsg, null);
-        }
-        
-        /// <remarks/>
-        public void CreateInnerProductBarcodeAsync(ProductLabel_Model labelModel, int qty, ProductLabel_Model[] label_lst, string strErrMsg, object userState) {
-            if ((this.CreateInnerProductBarcodeOperationCompleted == null)) {
-                this.CreateInnerProductBarcodeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCreateInnerProductBarcodeOperationCompleted);
-            }
-            this.InvokeAsync("CreateInnerProductBarcode", new object[] {
-                        labelModel,
-                        qty,
-                        label_lst,
-                        strErrMsg}, this.CreateInnerProductBarcodeOperationCompleted, userState);
-        }
-        
-        private void OnCreateInnerProductBarcodeOperationCompleted(object arg) {
-            if ((this.CreateInnerProductBarcodeCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CreateInnerProductBarcodeCompleted(this, new CreateInnerProductBarcodeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CreateOuterProductBarcode", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool CreateOuterProductBarcode(ProductLabel_Model labelModel, int qty, ref ProductLabel_Model[] label_lst, ref string strErrMsg) {
-            object[] results = this.Invoke("CreateOuterProductBarcode", new object[] {
-                        labelModel,
-                        qty,
-                        label_lst,
-                        strErrMsg});
-            label_lst = ((ProductLabel_Model[])(results[1]));
-            strErrMsg = ((string)(results[2]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void CreateOuterProductBarcodeAsync(ProductLabel_Model labelModel, int qty, ProductLabel_Model[] label_lst, string strErrMsg) {
-            this.CreateOuterProductBarcodeAsync(labelModel, qty, label_lst, strErrMsg, null);
-        }
-        
-        /// <remarks/>
-        public void CreateOuterProductBarcodeAsync(ProductLabel_Model labelModel, int qty, ProductLabel_Model[] label_lst, string strErrMsg, object userState) {
-            if ((this.CreateOuterProductBarcodeOperationCompleted == null)) {
-                this.CreateOuterProductBarcodeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCreateOuterProductBarcodeOperationCompleted);
-            }
-            this.InvokeAsync("CreateOuterProductBarcode", new object[] {
-                        labelModel,
-                        qty,
-                        label_lst,
-                        strErrMsg}, this.CreateOuterProductBarcodeOperationCompleted, userState);
-        }
-        
-        private void OnCreateOuterProductBarcodeOperationCompleted(object arg) {
-            if ((this.CreateOuterProductBarcodeCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CreateOuterProductBarcodeCompleted(this, new CreateOuterProductBarcodeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ImportStock", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool ImportStock(Stock_Model[] dt, ref string strErrMsg) {
-            object[] results = this.Invoke("ImportStock", new object[] {
-                        dt,
-                        strErrMsg});
-            strErrMsg = ((string)(results[1]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ImportStockAsync(Stock_Model[] dt, string strErrMsg) {
-            this.ImportStockAsync(dt, strErrMsg, null);
-        }
-        
-        /// <remarks/>
-        public void ImportStockAsync(Stock_Model[] dt, string strErrMsg, object userState) {
-            if ((this.ImportStockOperationCompleted == null)) {
-                this.ImportStockOperationCompleted = new System.Threading.SendOrPostCallback(this.OnImportStockOperationCompleted);
-            }
-            this.InvokeAsync("ImportStock", new object[] {
-                        dt,
-                        strErrMsg}, this.ImportStockOperationCompleted, userState);
-        }
-        
-        private void OnImportStockOperationCompleted(object arg) {
-            if ((this.ImportStockCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ImportStockCompleted(this, new ImportStockCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RemoveStock", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool RemoveStock(Stock_Model[] dt, ref string strErrMsg) {
-            object[] results = this.Invoke("RemoveStock", new object[] {
-                        dt,
-                        strErrMsg});
-            strErrMsg = ((string)(results[1]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void RemoveStockAsync(Stock_Model[] dt, string strErrMsg) {
-            this.RemoveStockAsync(dt, strErrMsg, null);
-        }
-        
-        /// <remarks/>
-        public void RemoveStockAsync(Stock_Model[] dt, string strErrMsg, object userState) {
-            if ((this.RemoveStockOperationCompleted == null)) {
-                this.RemoveStockOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRemoveStockOperationCompleted);
-            }
-            this.InvokeAsync("RemoveStock", new object[] {
-                        dt,
-                        strErrMsg}, this.RemoveStockOperationCompleted, userState);
-        }
-        
-        private void OnRemoveStockOperationCompleted(object arg) {
-            if ((this.RemoveStockCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.RemoveStockCompleted(this, new RemoveStockCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/HelloWorld", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public string HelloWorld() {
             object[] results = this.Invoke("HelloWorld", new object[0]);
@@ -7673,6 +8187,440 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ExistspCode", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool ExistspCode(Preparation model, bool bIncludeDel, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("ExistspCode", new object[] {
+                        model,
+                        bIncludeDel,
+                        user,
+                        strError});
+            strError = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ExistspCodeAsync(Preparation model, bool bIncludeDel, UserInfo user, string strError) {
+            this.ExistspCodeAsync(model, bIncludeDel, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void ExistspCodeAsync(Preparation model, bool bIncludeDel, UserInfo user, string strError, object userState) {
+            if ((this.ExistspCodeOperationCompleted == null)) {
+                this.ExistspCodeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnExistspCodeOperationCompleted);
+            }
+            this.InvokeAsync("ExistspCode", new object[] {
+                        model,
+                        bIncludeDel,
+                        user,
+                        strError}, this.ExistspCodeOperationCompleted, userState);
+        }
+        
+        private void OnExistspCodeOperationCompleted(object arg) {
+            if ((this.ExistspCodeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ExistspCodeCompleted(this, new ExistspCodeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SavePreparation", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool SavePreparation(ref Preparation model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("SavePreparation", new object[] {
+                        model,
+                        user,
+                        strError});
+            model = ((Preparation)(results[1]));
+            strError = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SavePreparationAsync(Preparation model, UserInfo user, string strError) {
+            this.SavePreparationAsync(model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void SavePreparationAsync(Preparation model, UserInfo user, string strError, object userState) {
+            if ((this.SavePreparationOperationCompleted == null)) {
+                this.SavePreparationOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSavePreparationOperationCompleted);
+            }
+            this.InvokeAsync("SavePreparation", new object[] {
+                        model,
+                        user,
+                        strError}, this.SavePreparationOperationCompleted, userState);
+        }
+        
+        private void OnSavePreparationOperationCompleted(object arg) {
+            if ((this.SavePreparationCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SavePreparationCompleted(this, new SavePreparationCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DeletePreparationByID", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool DeletePreparationByID(Preparation model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("DeletePreparationByID", new object[] {
+                        model,
+                        user,
+                        strError});
+            strError = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void DeletePreparationByIDAsync(Preparation model, UserInfo user, string strError) {
+            this.DeletePreparationByIDAsync(model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void DeletePreparationByIDAsync(Preparation model, UserInfo user, string strError, object userState) {
+            if ((this.DeletePreparationByIDOperationCompleted == null)) {
+                this.DeletePreparationByIDOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDeletePreparationByIDOperationCompleted);
+            }
+            this.InvokeAsync("DeletePreparationByID", new object[] {
+                        model,
+                        user,
+                        strError}, this.DeletePreparationByIDOperationCompleted, userState);
+        }
+        
+        private void OnDeletePreparationByIDOperationCompleted(object arg) {
+            if ((this.DeletePreparationByIDCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.DeletePreparationByIDCompleted(this, new DeletePreparationByIDCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetPreparationByID", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetPreparationByID(ref Preparation model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("GetPreparationByID", new object[] {
+                        model,
+                        user,
+                        strError});
+            model = ((Preparation)(results[1]));
+            strError = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetPreparationByIDAsync(Preparation model, UserInfo user, string strError) {
+            this.GetPreparationByIDAsync(model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void GetPreparationByIDAsync(Preparation model, UserInfo user, string strError, object userState) {
+            if ((this.GetPreparationByIDOperationCompleted == null)) {
+                this.GetPreparationByIDOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetPreparationByIDOperationCompleted);
+            }
+            this.InvokeAsync("GetPreparationByID", new object[] {
+                        model,
+                        user,
+                        strError}, this.GetPreparationByIDOperationCompleted, userState);
+        }
+        
+        private void OnGetPreparationByIDOperationCompleted(object arg) {
+            if ((this.GetPreparationByIDCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetPreparationByIDCompleted(this, new GetPreparationByIDCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetPreparationListByPage", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetPreparationListByPage(ref Preparation[] modelList, Preparation model, ref DividPage page, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("GetPreparationListByPage", new object[] {
+                        modelList,
+                        model,
+                        page,
+                        user,
+                        strError});
+            modelList = ((Preparation[])(results[1]));
+            page = ((DividPage)(results[2]));
+            strError = ((string)(results[3]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetPreparationListByPageAsync(Preparation[] modelList, Preparation model, DividPage page, UserInfo user, string strError) {
+            this.GetPreparationListByPageAsync(modelList, model, page, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void GetPreparationListByPageAsync(Preparation[] modelList, Preparation model, DividPage page, UserInfo user, string strError, object userState) {
+            if ((this.GetPreparationListByPageOperationCompleted == null)) {
+                this.GetPreparationListByPageOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetPreparationListByPageOperationCompleted);
+            }
+            this.InvokeAsync("GetPreparationListByPage", new object[] {
+                        modelList,
+                        model,
+                        page,
+                        user,
+                        strError}, this.GetPreparationListByPageOperationCompleted, userState);
+        }
+        
+        private void OnGetPreparationListByPageOperationCompleted(object arg) {
+            if ((this.GetPreparationListByPageCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetPreparationListByPageCompleted(this, new GetPreparationListByPageCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetPreparationList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetPreparationList(ref Preparation[] modelList, Preparation model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("GetPreparationList", new object[] {
+                        modelList,
+                        model,
+                        user,
+                        strError});
+            modelList = ((Preparation[])(results[1]));
+            strError = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetPreparationListAsync(Preparation[] modelList, Preparation model, UserInfo user, string strError) {
+            this.GetPreparationListAsync(modelList, model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void GetPreparationListAsync(Preparation[] modelList, Preparation model, UserInfo user, string strError, object userState) {
+            if ((this.GetPreparationListOperationCompleted == null)) {
+                this.GetPreparationListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetPreparationListOperationCompleted);
+            }
+            this.InvokeAsync("GetPreparationList", new object[] {
+                        modelList,
+                        model,
+                        user,
+                        strError}, this.GetPreparationListOperationCompleted, userState);
+        }
+        
+        private void OnGetPreparationListOperationCompleted(object arg) {
+            if ((this.GetPreparationListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetPreparationListCompleted(this, new GetPreparationListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ExistsbNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool ExistsbNo(Building model, bool bIncludeDel, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("ExistsbNo", new object[] {
+                        model,
+                        bIncludeDel,
+                        user,
+                        strError});
+            strError = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ExistsbNoAsync(Building model, bool bIncludeDel, UserInfo user, string strError) {
+            this.ExistsbNoAsync(model, bIncludeDel, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void ExistsbNoAsync(Building model, bool bIncludeDel, UserInfo user, string strError, object userState) {
+            if ((this.ExistsbNoOperationCompleted == null)) {
+                this.ExistsbNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnExistsbNoOperationCompleted);
+            }
+            this.InvokeAsync("ExistsbNo", new object[] {
+                        model,
+                        bIncludeDel,
+                        user,
+                        strError}, this.ExistsbNoOperationCompleted, userState);
+        }
+        
+        private void OnExistsbNoOperationCompleted(object arg) {
+            if ((this.ExistsbNoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ExistsbNoCompleted(this, new ExistsbNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SaveBuilding", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool SaveBuilding(ref Building model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("SaveBuilding", new object[] {
+                        model,
+                        user,
+                        strError});
+            model = ((Building)(results[1]));
+            strError = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SaveBuildingAsync(Building model, UserInfo user, string strError) {
+            this.SaveBuildingAsync(model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void SaveBuildingAsync(Building model, UserInfo user, string strError, object userState) {
+            if ((this.SaveBuildingOperationCompleted == null)) {
+                this.SaveBuildingOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSaveBuildingOperationCompleted);
+            }
+            this.InvokeAsync("SaveBuilding", new object[] {
+                        model,
+                        user,
+                        strError}, this.SaveBuildingOperationCompleted, userState);
+        }
+        
+        private void OnSaveBuildingOperationCompleted(object arg) {
+            if ((this.SaveBuildingCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SaveBuildingCompleted(this, new SaveBuildingCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DeleteBuildingByID", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool DeleteBuildingByID(Building model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("DeleteBuildingByID", new object[] {
+                        model,
+                        user,
+                        strError});
+            strError = ((string)(results[1]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void DeleteBuildingByIDAsync(Building model, UserInfo user, string strError) {
+            this.DeleteBuildingByIDAsync(model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void DeleteBuildingByIDAsync(Building model, UserInfo user, string strError, object userState) {
+            if ((this.DeleteBuildingByIDOperationCompleted == null)) {
+                this.DeleteBuildingByIDOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDeleteBuildingByIDOperationCompleted);
+            }
+            this.InvokeAsync("DeleteBuildingByID", new object[] {
+                        model,
+                        user,
+                        strError}, this.DeleteBuildingByIDOperationCompleted, userState);
+        }
+        
+        private void OnDeleteBuildingByIDOperationCompleted(object arg) {
+            if ((this.DeleteBuildingByIDCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.DeleteBuildingByIDCompleted(this, new DeleteBuildingByIDCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetBuildingByID", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetBuildingByID(ref Building model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("GetBuildingByID", new object[] {
+                        model,
+                        user,
+                        strError});
+            model = ((Building)(results[1]));
+            strError = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetBuildingByIDAsync(Building model, UserInfo user, string strError) {
+            this.GetBuildingByIDAsync(model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void GetBuildingByIDAsync(Building model, UserInfo user, string strError, object userState) {
+            if ((this.GetBuildingByIDOperationCompleted == null)) {
+                this.GetBuildingByIDOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetBuildingByIDOperationCompleted);
+            }
+            this.InvokeAsync("GetBuildingByID", new object[] {
+                        model,
+                        user,
+                        strError}, this.GetBuildingByIDOperationCompleted, userState);
+        }
+        
+        private void OnGetBuildingByIDOperationCompleted(object arg) {
+            if ((this.GetBuildingByIDCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetBuildingByIDCompleted(this, new GetBuildingByIDCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetBuildingListByPage", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetBuildingListByPage(ref Building[] modelList, Building model, ref DividPage page, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("GetBuildingListByPage", new object[] {
+                        modelList,
+                        model,
+                        page,
+                        user,
+                        strError});
+            modelList = ((Building[])(results[1]));
+            page = ((DividPage)(results[2]));
+            strError = ((string)(results[3]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetBuildingListByPageAsync(Building[] modelList, Building model, DividPage page, UserInfo user, string strError) {
+            this.GetBuildingListByPageAsync(modelList, model, page, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void GetBuildingListByPageAsync(Building[] modelList, Building model, DividPage page, UserInfo user, string strError, object userState) {
+            if ((this.GetBuildingListByPageOperationCompleted == null)) {
+                this.GetBuildingListByPageOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetBuildingListByPageOperationCompleted);
+            }
+            this.InvokeAsync("GetBuildingListByPage", new object[] {
+                        modelList,
+                        model,
+                        page,
+                        user,
+                        strError}, this.GetBuildingListByPageOperationCompleted, userState);
+        }
+        
+        private void OnGetBuildingListByPageOperationCompleted(object arg) {
+            if ((this.GetBuildingListByPageCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetBuildingListByPageCompleted(this, new GetBuildingListByPageCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetBuildingList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool GetBuildingList(ref Building[] modelList, Building model, UserInfo user, ref string strError) {
+            object[] results = this.Invoke("GetBuildingList", new object[] {
+                        modelList,
+                        model,
+                        user,
+                        strError});
+            modelList = ((Building[])(results[1]));
+            strError = ((string)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetBuildingListAsync(Building[] modelList, Building model, UserInfo user, string strError) {
+            this.GetBuildingListAsync(modelList, model, user, strError, null);
+        }
+        
+        /// <remarks/>
+        public void GetBuildingListAsync(Building[] modelList, Building model, UserInfo user, string strError, object userState) {
+            if ((this.GetBuildingListOperationCompleted == null)) {
+                this.GetBuildingListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetBuildingListOperationCompleted);
+            }
+            this.InvokeAsync("GetBuildingList", new object[] {
+                        modelList,
+                        model,
+                        user,
+                        strError}, this.GetBuildingListOperationCompleted, userState);
+        }
+        
+        private void OnGetBuildingListOperationCompleted(object arg) {
+            if ((this.GetBuildingListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetBuildingListCompleted(this, new GetBuildingListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CheckImportTable", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public bool CheckImportTable(int iType, UserInfo user, ref string strError) {
             object[] results = this.Invoke("CheckImportTable", new object[] {
@@ -8293,424 +9241,6 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetFastInNotHavePOInfo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool GetFastInNotHavePOInfo(Task_Model taskmo, ref DividPage dividpage, ref Task_Model[] lsttask, ref string strErrMsg) {
-            object[] results = this.Invoke("GetFastInNotHavePOInfo", new object[] {
-                        taskmo,
-                        dividpage,
-                        lsttask,
-                        strErrMsg});
-            dividpage = ((DividPage)(results[1]));
-            lsttask = ((Task_Model[])(results[2]));
-            strErrMsg = ((string)(results[3]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetFastInNotHavePOInfoAsync(Task_Model taskmo, DividPage dividpage, Task_Model[] lsttask, string strErrMsg) {
-            this.GetFastInNotHavePOInfoAsync(taskmo, dividpage, lsttask, strErrMsg, null);
-        }
-        
-        /// <remarks/>
-        public void GetFastInNotHavePOInfoAsync(Task_Model taskmo, DividPage dividpage, Task_Model[] lsttask, string strErrMsg, object userState) {
-            if ((this.GetFastInNotHavePOInfoOperationCompleted == null)) {
-                this.GetFastInNotHavePOInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetFastInNotHavePOInfoOperationCompleted);
-            }
-            this.InvokeAsync("GetFastInNotHavePOInfo", new object[] {
-                        taskmo,
-                        dividpage,
-                        lsttask,
-                        strErrMsg}, this.GetFastInNotHavePOInfoOperationCompleted, userState);
-        }
-        
-        private void OnGetFastInNotHavePOInfoOperationCompleted(object arg) {
-            if ((this.GetFastInNotHavePOInfoCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetFastInNotHavePOInfoCompleted(this, new GetFastInNotHavePOInfoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InsetMaterialDetail", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool InsetMaterialDetail(TaskDetails_Model[] tDtails, ref string msg) {
-            object[] results = this.Invoke("InsetMaterialDetail", new object[] {
-                        tDtails,
-                        msg});
-            msg = ((string)(results[1]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void InsetMaterialDetailAsync(TaskDetails_Model[] tDtails, string msg) {
-            this.InsetMaterialDetailAsync(tDtails, msg, null);
-        }
-        
-        /// <remarks/>
-        public void InsetMaterialDetailAsync(TaskDetails_Model[] tDtails, string msg, object userState) {
-            if ((this.InsetMaterialDetailOperationCompleted == null)) {
-                this.InsetMaterialDetailOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsetMaterialDetailOperationCompleted);
-            }
-            this.InvokeAsync("InsetMaterialDetail", new object[] {
-                        tDtails,
-                        msg}, this.InsetMaterialDetailOperationCompleted, userState);
-        }
-        
-        private void OnInsetMaterialDetailOperationCompleted(object arg) {
-            if ((this.InsetMaterialDetailCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.InsetMaterialDetailCompleted(this, new InsetMaterialDetailCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTempMaterialName", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool GetTempMaterialName(string materialNo, ref string materialDESC) {
-            object[] results = this.Invoke("GetTempMaterialName", new object[] {
-                        materialNo,
-                        materialDESC});
-            materialDESC = ((string)(results[1]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetTempMaterialNameAsync(string materialNo, string materialDESC) {
-            this.GetTempMaterialNameAsync(materialNo, materialDESC, null);
-        }
-        
-        /// <remarks/>
-        public void GetTempMaterialNameAsync(string materialNo, string materialDESC, object userState) {
-            if ((this.GetTempMaterialNameOperationCompleted == null)) {
-                this.GetTempMaterialNameOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTempMaterialNameOperationCompleted);
-            }
-            this.InvokeAsync("GetTempMaterialName", new object[] {
-                        materialNo,
-                        materialDESC}, this.GetTempMaterialNameOperationCompleted, userState);
-        }
-        
-        private void OnGetTempMaterialNameOperationCompleted(object arg) {
-            if ((this.GetTempMaterialNameCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetTempMaterialNameCompleted(this, new GetTempMaterialNameCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ExistsTempMaterialByMaterialNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool ExistsTempMaterialByMaterialNo(string materialNo) {
-            object[] results = this.Invoke("ExistsTempMaterialByMaterialNo", new object[] {
-                        materialNo});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ExistsTempMaterialByMaterialNoAsync(string materialNo) {
-            this.ExistsTempMaterialByMaterialNoAsync(materialNo, null);
-        }
-        
-        /// <remarks/>
-        public void ExistsTempMaterialByMaterialNoAsync(string materialNo, object userState) {
-            if ((this.ExistsTempMaterialByMaterialNoOperationCompleted == null)) {
-                this.ExistsTempMaterialByMaterialNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnExistsTempMaterialByMaterialNoOperationCompleted);
-            }
-            this.InvokeAsync("ExistsTempMaterialByMaterialNo", new object[] {
-                        materialNo}, this.ExistsTempMaterialByMaterialNoOperationCompleted, userState);
-        }
-        
-        private void OnExistsTempMaterialByMaterialNoOperationCompleted(object arg) {
-            if ((this.ExistsTempMaterialByMaterialNoCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ExistsTempMaterialByMaterialNoCompleted(this, new ExistsTempMaterialByMaterialNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTempMaterialByTempNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool GetTempMaterialByTempNo(string strMaterialNo, ref TempMaterial tempmaterial, ref string strErrMsg) {
-            object[] results = this.Invoke("GetTempMaterialByTempNo", new object[] {
-                        strMaterialNo,
-                        tempmaterial,
-                        strErrMsg});
-            tempmaterial = ((TempMaterial)(results[1]));
-            strErrMsg = ((string)(results[2]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetTempMaterialByTempNoAsync(string strMaterialNo, TempMaterial tempmaterial, string strErrMsg) {
-            this.GetTempMaterialByTempNoAsync(strMaterialNo, tempmaterial, strErrMsg, null);
-        }
-        
-        /// <remarks/>
-        public void GetTempMaterialByTempNoAsync(string strMaterialNo, TempMaterial tempmaterial, string strErrMsg, object userState) {
-            if ((this.GetTempMaterialByTempNoOperationCompleted == null)) {
-                this.GetTempMaterialByTempNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTempMaterialByTempNoOperationCompleted);
-            }
-            this.InvokeAsync("GetTempMaterialByTempNo", new object[] {
-                        strMaterialNo,
-                        tempmaterial,
-                        strErrMsg}, this.GetTempMaterialByTempNoOperationCompleted, userState);
-        }
-        
-        private void OnGetTempMaterialByTempNoOperationCompleted(object arg) {
-            if ((this.GetTempMaterialByTempNoCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetTempMaterialByTempNoCompleted(this, new GetTempMaterialByTempNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ExistsTempMaterialNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool ExistsTempMaterialNo(TempMaterialInfo model, bool bIncludeDel, UserInfo user, ref string strError) {
-            object[] results = this.Invoke("ExistsTempMaterialNo", new object[] {
-                        model,
-                        bIncludeDel,
-                        user,
-                        strError});
-            strError = ((string)(results[1]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ExistsTempMaterialNoAsync(TempMaterialInfo model, bool bIncludeDel, UserInfo user, string strError) {
-            this.ExistsTempMaterialNoAsync(model, bIncludeDel, user, strError, null);
-        }
-        
-        /// <remarks/>
-        public void ExistsTempMaterialNoAsync(TempMaterialInfo model, bool bIncludeDel, UserInfo user, string strError, object userState) {
-            if ((this.ExistsTempMaterialNoOperationCompleted == null)) {
-                this.ExistsTempMaterialNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnExistsTempMaterialNoOperationCompleted);
-            }
-            this.InvokeAsync("ExistsTempMaterialNo", new object[] {
-                        model,
-                        bIncludeDel,
-                        user,
-                        strError}, this.ExistsTempMaterialNoOperationCompleted, userState);
-        }
-        
-        private void OnExistsTempMaterialNoOperationCompleted(object arg) {
-            if ((this.ExistsTempMaterialNoCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ExistsTempMaterialNoCompleted(this, new ExistsTempMaterialNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SaveTempMaterial", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool SaveTempMaterial(ref TempMaterialInfo model, UserInfo user, ref string strError) {
-            object[] results = this.Invoke("SaveTempMaterial", new object[] {
-                        model,
-                        user,
-                        strError});
-            model = ((TempMaterialInfo)(results[1]));
-            strError = ((string)(results[2]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void SaveTempMaterialAsync(TempMaterialInfo model, UserInfo user, string strError) {
-            this.SaveTempMaterialAsync(model, user, strError, null);
-        }
-        
-        /// <remarks/>
-        public void SaveTempMaterialAsync(TempMaterialInfo model, UserInfo user, string strError, object userState) {
-            if ((this.SaveTempMaterialOperationCompleted == null)) {
-                this.SaveTempMaterialOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSaveTempMaterialOperationCompleted);
-            }
-            this.InvokeAsync("SaveTempMaterial", new object[] {
-                        model,
-                        user,
-                        strError}, this.SaveTempMaterialOperationCompleted, userState);
-        }
-        
-        private void OnSaveTempMaterialOperationCompleted(object arg) {
-            if ((this.SaveTempMaterialCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.SaveTempMaterialCompleted(this, new SaveTempMaterialCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DeleteTempMaterialByID", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool DeleteTempMaterialByID(TempMaterialInfo model, UserInfo user, ref string strError) {
-            object[] results = this.Invoke("DeleteTempMaterialByID", new object[] {
-                        model,
-                        user,
-                        strError});
-            strError = ((string)(results[1]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void DeleteTempMaterialByIDAsync(TempMaterialInfo model, UserInfo user, string strError) {
-            this.DeleteTempMaterialByIDAsync(model, user, strError, null);
-        }
-        
-        /// <remarks/>
-        public void DeleteTempMaterialByIDAsync(TempMaterialInfo model, UserInfo user, string strError, object userState) {
-            if ((this.DeleteTempMaterialByIDOperationCompleted == null)) {
-                this.DeleteTempMaterialByIDOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDeleteTempMaterialByIDOperationCompleted);
-            }
-            this.InvokeAsync("DeleteTempMaterialByID", new object[] {
-                        model,
-                        user,
-                        strError}, this.DeleteTempMaterialByIDOperationCompleted, userState);
-        }
-        
-        private void OnDeleteTempMaterialByIDOperationCompleted(object arg) {
-            if ((this.DeleteTempMaterialByIDCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.DeleteTempMaterialByIDCompleted(this, new DeleteTempMaterialByIDCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTempMaterialByID", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool GetTempMaterialByID(ref TempMaterialInfo model, UserInfo user, ref string strError) {
-            object[] results = this.Invoke("GetTempMaterialByID", new object[] {
-                        model,
-                        user,
-                        strError});
-            model = ((TempMaterialInfo)(results[1]));
-            strError = ((string)(results[2]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetTempMaterialByIDAsync(TempMaterialInfo model, UserInfo user, string strError) {
-            this.GetTempMaterialByIDAsync(model, user, strError, null);
-        }
-        
-        /// <remarks/>
-        public void GetTempMaterialByIDAsync(TempMaterialInfo model, UserInfo user, string strError, object userState) {
-            if ((this.GetTempMaterialByIDOperationCompleted == null)) {
-                this.GetTempMaterialByIDOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTempMaterialByIDOperationCompleted);
-            }
-            this.InvokeAsync("GetTempMaterialByID", new object[] {
-                        model,
-                        user,
-                        strError}, this.GetTempMaterialByIDOperationCompleted, userState);
-        }
-        
-        private void OnGetTempMaterialByIDOperationCompleted(object arg) {
-            if ((this.GetTempMaterialByIDCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetTempMaterialByIDCompleted(this, new GetTempMaterialByIDCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTempMaterialListByPage", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool GetTempMaterialListByPage(ref TempMaterialInfo[] modelList, TempMaterialInfo model, ref DividPage page, UserInfo user, ref string strError) {
-            object[] results = this.Invoke("GetTempMaterialListByPage", new object[] {
-                        modelList,
-                        model,
-                        page,
-                        user,
-                        strError});
-            modelList = ((TempMaterialInfo[])(results[1]));
-            page = ((DividPage)(results[2]));
-            strError = ((string)(results[3]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetTempMaterialListByPageAsync(TempMaterialInfo[] modelList, TempMaterialInfo model, DividPage page, UserInfo user, string strError) {
-            this.GetTempMaterialListByPageAsync(modelList, model, page, user, strError, null);
-        }
-        
-        /// <remarks/>
-        public void GetTempMaterialListByPageAsync(TempMaterialInfo[] modelList, TempMaterialInfo model, DividPage page, UserInfo user, string strError, object userState) {
-            if ((this.GetTempMaterialListByPageOperationCompleted == null)) {
-                this.GetTempMaterialListByPageOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTempMaterialListByPageOperationCompleted);
-            }
-            this.InvokeAsync("GetTempMaterialListByPage", new object[] {
-                        modelList,
-                        model,
-                        page,
-                        user,
-                        strError}, this.GetTempMaterialListByPageOperationCompleted, userState);
-        }
-        
-        private void OnGetTempMaterialListByPageOperationCompleted(object arg) {
-            if ((this.GetTempMaterialListByPageCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetTempMaterialListByPageCompleted(this, new GetTempMaterialListByPageCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetMaterialInfo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool GetMaterialInfo(ref TempMaterialInfo model, int type, UserInfo user, ref string strError) {
-            object[] results = this.Invoke("GetMaterialInfo", new object[] {
-                        model,
-                        type,
-                        user,
-                        strError});
-            model = ((TempMaterialInfo)(results[1]));
-            strError = ((string)(results[2]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetMaterialInfoAsync(TempMaterialInfo model, int type, UserInfo user, string strError) {
-            this.GetMaterialInfoAsync(model, type, user, strError, null);
-        }
-        
-        /// <remarks/>
-        public void GetMaterialInfoAsync(TempMaterialInfo model, int type, UserInfo user, string strError, object userState) {
-            if ((this.GetMaterialInfoOperationCompleted == null)) {
-                this.GetMaterialInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetMaterialInfoOperationCompleted);
-            }
-            this.InvokeAsync("GetMaterialInfo", new object[] {
-                        model,
-                        type,
-                        user,
-                        strError}, this.GetMaterialInfoOperationCompleted, userState);
-        }
-        
-        private void OnGetMaterialInfoOperationCompleted(object arg) {
-            if ((this.GetMaterialInfoCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetMaterialInfoCompleted(this, new GetMaterialInfoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetTempMaterialNo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool GetTempMaterialNo(ref TempMaterialInfo model, UserInfo user, ref string strError) {
-            object[] results = this.Invoke("GetTempMaterialNo", new object[] {
-                        model,
-                        user,
-                        strError});
-            model = ((TempMaterialInfo)(results[1]));
-            strError = ((string)(results[2]));
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetTempMaterialNoAsync(TempMaterialInfo model, UserInfo user, string strError) {
-            this.GetTempMaterialNoAsync(model, user, strError, null);
-        }
-        
-        /// <remarks/>
-        public void GetTempMaterialNoAsync(TempMaterialInfo model, UserInfo user, string strError, object userState) {
-            if ((this.GetTempMaterialNoOperationCompleted == null)) {
-                this.GetTempMaterialNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetTempMaterialNoOperationCompleted);
-            }
-            this.InvokeAsync("GetTempMaterialNo", new object[] {
-                        model,
-                        user,
-                        strError}, this.GetTempMaterialNoOperationCompleted, userState);
-        }
-        
-        private void OnGetTempMaterialNoOperationCompleted(object arg) {
-            if ((this.GetTempMaterialNoCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetTempMaterialNoCompleted(this, new GetTempMaterialNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -8730,775 +9260,78 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class Stock_Model {
-        
-        private int stockTypeField;
-        
-        private string barcodeField;
-        
-        private string serialNoField;
-        
-        private string materialNoField;
-        
-        private string materialDescField;
-        
-        private string materialStdField;
-        
-        private string warehouseNoField;
-        
-        private string houseNoField;
-        
-        private string areaNoField;
-        
-        private double qtyField;
-        
-        private string tempMaterialNoField;
-        
-        private string tempMaterialDescField;
-        
-        private string pickAreaNoField;
-        
-        private string celAreaNoField;
-        
-        private string batchNoField;
-        
-        private string snField;
-        
-        private string createrField;
-        
-        private System.DateTime createTimeField;
-        
-        private string voucherNoField;
-        
-        private string strStockTypeField;
-        
-        private string warehouseNameField;
-        
-        private string houseNameField;
-        
-        private string areaNameField;
-        
-        private System.Nullable<System.DateTime> startTimeField;
-        
-        private System.Nullable<System.DateTime> endTimeField;
-        
-        private bool onlyOwnWarehouseField;
-        
-        private string productLineNoField;
-        
-        private double erpQtyField;
-        
-        private double saveQtyField;
-        
-        private double trayQtyField;
-        
-        private double totalQtyField;
-        
-        private string cvencodeField;
-        
-        private string cvennameField;
-        
-        /// <remarks/>
-        public int StockType {
-            get {
-                return this.stockTypeField;
-            }
-            set {
-                this.stockTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Barcode {
-            get {
-                return this.barcodeField;
-            }
-            set {
-                this.barcodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SerialNo {
-            get {
-                return this.serialNoField;
-            }
-            set {
-                this.serialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialNo {
-            get {
-                return this.materialNoField;
-            }
-            set {
-                this.materialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDesc {
-            get {
-                return this.materialDescField;
-            }
-            set {
-                this.materialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialStd {
-            get {
-                return this.materialStdField;
-            }
-            set {
-                this.materialStdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WarehouseNo {
-            get {
-                return this.warehouseNoField;
-            }
-            set {
-                this.warehouseNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HouseNo {
-            get {
-                return this.houseNoField;
-            }
-            set {
-                this.houseNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string AreaNo {
-            get {
-                return this.areaNoField;
-            }
-            set {
-                this.areaNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double Qty {
-            get {
-                return this.qtyField;
-            }
-            set {
-                this.qtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TempMaterialNo {
-            get {
-                return this.tempMaterialNoField;
-            }
-            set {
-                this.tempMaterialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TempMaterialDesc {
-            get {
-                return this.tempMaterialDescField;
-            }
-            set {
-                this.tempMaterialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PickAreaNo {
-            get {
-                return this.pickAreaNoField;
-            }
-            set {
-                this.pickAreaNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CelAreaNo {
-            get {
-                return this.celAreaNoField;
-            }
-            set {
-                this.celAreaNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string BatchNo {
-            get {
-                return this.batchNoField;
-            }
-            set {
-                this.batchNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SN {
-            get {
-                return this.snField;
-            }
-            set {
-                this.snField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Creater {
-            get {
-                return this.createrField;
-            }
-            set {
-                this.createrField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CreateTime {
-            get {
-                return this.createTimeField;
-            }
-            set {
-                this.createTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string VoucherNo {
-            get {
-                return this.voucherNoField;
-            }
-            set {
-                this.voucherNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string StrStockType {
-            get {
-                return this.strStockTypeField;
-            }
-            set {
-                this.strStockTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WarehouseName {
-            get {
-                return this.warehouseNameField;
-            }
-            set {
-                this.warehouseNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HouseName {
-            get {
-                return this.houseNameField;
-            }
-            set {
-                this.houseNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string AreaName {
-            get {
-                return this.areaNameField;
-            }
-            set {
-                this.areaNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> StartTime {
-            get {
-                return this.startTimeField;
-            }
-            set {
-                this.startTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> EndTime {
-            get {
-                return this.endTimeField;
-            }
-            set {
-                this.endTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool OnlyOwnWarehouse {
-            get {
-                return this.onlyOwnWarehouseField;
-            }
-            set {
-                this.onlyOwnWarehouseField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ProductLineNo {
-            get {
-                return this.productLineNoField;
-            }
-            set {
-                this.productLineNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double ErpQty {
-            get {
-                return this.erpQtyField;
-            }
-            set {
-                this.erpQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double SaveQty {
-            get {
-                return this.saveQtyField;
-            }
-            set {
-                this.saveQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double TrayQty {
-            get {
-                return this.trayQtyField;
-            }
-            set {
-                this.trayQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double TotalQty {
-            get {
-                return this.totalQtyField;
-            }
-            set {
-                this.totalQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string cvencode {
-            get {
-                return this.cvencodeField;
-            }
-            set {
-                this.cvencodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string cvenname {
-            get {
-                return this.cvennameField;
-            }
-            set {
-                this.cvennameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class TempMaterial {
-        
-        private string tempMaterialNoField;
-        
-        private string tempMaterialDescField;
-        
-        private string materialNoField;
-        
-        private string materialDescField;
-        
-        /// <remarks/>
-        public string TempMaterialNo {
-            get {
-                return this.tempMaterialNoField;
-            }
-            set {
-                this.tempMaterialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TempMaterialDesc {
-            get {
-                return this.tempMaterialDescField;
-            }
-            set {
-                this.tempMaterialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialNo {
-            get {
-                return this.materialNoField;
-            }
-            set {
-                this.materialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDesc {
-            get {
-                return this.materialDescField;
-            }
-            set {
-                this.materialDescField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class TaskVoucherDetails {
+    public partial class DeliveryReceive_Model {
         
         private int idField;
         
-        private string headIDField;
+        private string deliveryNoField;
         
-        private string materialNoField;
+        private string supNameField;
         
-        private string materialDescField;
-        
-        private decimal qtyField;
-        
-        private string rowNoField;
-        
-        private string factoryField;
-        
-        private string factoryNameField;
-        
-        private string storeField;
-        
-        /// <remarks/>
-        public int ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HeadID {
-            get {
-                return this.headIDField;
-            }
-            set {
-                this.headIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialNo {
-            get {
-                return this.materialNoField;
-            }
-            set {
-                this.materialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDesc {
-            get {
-                return this.materialDescField;
-            }
-            set {
-                this.materialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal Qty {
-            get {
-                return this.qtyField;
-            }
-            set {
-                this.qtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RowNo {
-            get {
-                return this.rowNoField;
-            }
-            set {
-                this.rowNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Factory {
-            get {
-                return this.factoryField;
-            }
-            set {
-                this.factoryField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string FactoryName {
-            get {
-                return this.factoryNameField;
-            }
-            set {
-                this.factoryNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Store {
-            get {
-                return this.storeField;
-            }
-            set {
-                this.storeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class TaskVoucher {
-        
-        private int idField;
-        
-        private string voucherNoField;
-        
-        private string task_IDField;
-        
-        private string factoryField;
-        
-        private string storeField;
-        
-        private TaskVoucherDetails[] bodyField;
-        
-        /// <remarks/>
-        public int ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string VoucherNo {
-            get {
-                return this.voucherNoField;
-            }
-            set {
-                this.voucherNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Task_ID {
-            get {
-                return this.task_IDField;
-            }
-            set {
-                this.task_IDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Factory {
-            get {
-                return this.factoryField;
-            }
-            set {
-                this.factoryField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Store {
-            get {
-                return this.storeField;
-            }
-            set {
-                this.storeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public TaskVoucherDetails[] body {
-            get {
-                return this.bodyField;
-            }
-            set {
-                this.bodyField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class TaskSerial_Model {
-        
-        private string serialNoField;
-        
-        /// <remarks/>
-        public string SerialNo {
-            get {
-                return this.serialNoField;
-            }
-            set {
-                this.serialNoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class TaskDetails_Model {
-        
-        private int idField;
-        
-        private int task_IDField;
-        
-        private string toAreaNoField;
-        
-        private string materialNoField;
-        
-        private string materialDescField;
-        
-        private string materialStdField;
-        
-        private decimal taskQtyField;
-        
-        private decimal quanlityQtyField;
-        
-        private decimal remainQtyField;
-        
-        private decimal shelveQtyField;
-        
-        private decimal scanQtyField;
-        
-        private int statusField;
-        
-        private int isQualityCompField;
-        
-        private string qCUserNoField;
-        
-        private System.DateTime qCDateTimeField;
-        
-        private string keeperUserNoField;
-        
-        private string operatorUserNoField;
-        
-        private System.DateTime completeDateTimeField;
-        
-        private string tMaterialNoField;
-        
-        private string tMaterialDescField;
-        
-        private decimal outStockQtyField;
-        
-        private decimal reviewQtyField;
-        
-        private string reviewUserNoField;
-        
-        private decimal unQuanlityQtyField;
-        
-        private string unQuanlityResonField;
-        
-        private decimal deliveryQtyField;
-        
-        private TaskSerial_Model[] lstSerialField;
-        
-        private string unitField;
-        
-        private int isROHSField;
-        
-        private string rowNoField;
+        private string supCodeField;
         
         private string plantField;
         
         private string plantNameField;
         
-        private string storageLocField;
+        private string operatorField;
+        
+        private System.DateTime createDateField;
+        
+        private DeliveryReceiveDetail_Model[] lstDeliveryDetailField;
+        
+        private MaterialDoc_Model materialDocModelField;
+        
+        private int voucherTypeField;
+        
+        private int isQualityField;
+        
+        private int isReceivePostField;
+        
+        private int isShelvePostField;
+        
+        private string taskNoField;
         
         private string voucherNoField;
         
-        private decimal packCountField;
+        private string materialDocField;
         
-        private int scanPackCountField;
+        private System.Nullable<System.DateTime> startTimeField;
         
-        private decimal remainPackCountField;
+        private System.Nullable<System.DateTime> endTimeField;
         
-        private decimal shelvePackCountField;
+        private System.Nullable<System.DateTime> docDateField;
         
-        private decimal currentPostQtyField;
+        private System.Nullable<System.DateTime> postDateField;
         
-        private decimal remainStockQtyField;
+        private string moveTypeField;
+        
+        private string titelField;
+        
+        private string outSideSupCodeField;
+        
+        private string outSideSupNameField;
+        
+        private string barcodeField;
+        
+        private string materialNoField;
+        
+        private int printedQtyField;
+        
+        private MaterialDoc_Model[] lstMaterialDocField;
+        
+        private string osDeliveryRemarkField;
+        
+        private string pOReamrkField;
+        
+        private string resonField;
+        
+        private System.Nullable<System.DateTime> printTimeField;
         
         /// <remarks/>
         public int ID {
@@ -9511,292 +9344,32 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public int Task_ID {
+        public string DeliveryNo {
             get {
-                return this.task_IDField;
+                return this.deliveryNoField;
             }
             set {
-                this.task_IDField = value;
+                this.deliveryNoField = value;
             }
         }
         
         /// <remarks/>
-        public string ToAreaNo {
+        public string SupName {
             get {
-                return this.toAreaNoField;
+                return this.supNameField;
             }
             set {
-                this.toAreaNoField = value;
+                this.supNameField = value;
             }
         }
         
         /// <remarks/>
-        public string MaterialNo {
+        public string SupCode {
             get {
-                return this.materialNoField;
+                return this.supCodeField;
             }
             set {
-                this.materialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDesc {
-            get {
-                return this.materialDescField;
-            }
-            set {
-                this.materialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialStd {
-            get {
-                return this.materialStdField;
-            }
-            set {
-                this.materialStdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal TaskQty {
-            get {
-                return this.taskQtyField;
-            }
-            set {
-                this.taskQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal QuanlityQty {
-            get {
-                return this.quanlityQtyField;
-            }
-            set {
-                this.quanlityQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal RemainQty {
-            get {
-                return this.remainQtyField;
-            }
-            set {
-                this.remainQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal ShelveQty {
-            get {
-                return this.shelveQtyField;
-            }
-            set {
-                this.shelveQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal ScanQty {
-            get {
-                return this.scanQtyField;
-            }
-            set {
-                this.scanQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int IsQualityComp {
-            get {
-                return this.isQualityCompField;
-            }
-            set {
-                this.isQualityCompField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string QCUserNo {
-            get {
-                return this.qCUserNoField;
-            }
-            set {
-                this.qCUserNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime QCDateTime {
-            get {
-                return this.qCDateTimeField;
-            }
-            set {
-                this.qCDateTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string KeeperUserNo {
-            get {
-                return this.keeperUserNoField;
-            }
-            set {
-                this.keeperUserNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string OperatorUserNo {
-            get {
-                return this.operatorUserNoField;
-            }
-            set {
-                this.operatorUserNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CompleteDateTime {
-            get {
-                return this.completeDateTimeField;
-            }
-            set {
-                this.completeDateTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TMaterialNo {
-            get {
-                return this.tMaterialNoField;
-            }
-            set {
-                this.tMaterialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TMaterialDesc {
-            get {
-                return this.tMaterialDescField;
-            }
-            set {
-                this.tMaterialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal OutStockQty {
-            get {
-                return this.outStockQtyField;
-            }
-            set {
-                this.outStockQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal ReviewQty {
-            get {
-                return this.reviewQtyField;
-            }
-            set {
-                this.reviewQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ReviewUserNo {
-            get {
-                return this.reviewUserNoField;
-            }
-            set {
-                this.reviewUserNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal UnQuanlityQty {
-            get {
-                return this.unQuanlityQtyField;
-            }
-            set {
-                this.unQuanlityQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string UnQuanlityReson {
-            get {
-                return this.unQuanlityResonField;
-            }
-            set {
-                this.unQuanlityResonField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal DeliveryQty {
-            get {
-                return this.deliveryQtyField;
-            }
-            set {
-                this.deliveryQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public TaskSerial_Model[] lstSerial {
-            get {
-                return this.lstSerialField;
-            }
-            set {
-                this.lstSerialField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Unit {
-            get {
-                return this.unitField;
-            }
-            set {
-                this.unitField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int IsROHS {
-            get {
-                return this.isROHSField;
-            }
-            set {
-                this.isROHSField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RowNo {
-            get {
-                return this.rowNoField;
-            }
-            set {
-                this.rowNoField = value;
+                this.supCodeField = value;
             }
         }
         
@@ -9821,165 +9394,42 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public string StorageLoc {
+        public string Operator {
             get {
-                return this.storageLocField;
+                return this.operatorField;
             }
             set {
-                this.storageLocField = value;
+                this.operatorField = value;
             }
         }
         
         /// <remarks/>
-        public string VoucherNo {
+        public System.DateTime CreateDate {
             get {
-                return this.voucherNoField;
+                return this.createDateField;
             }
             set {
-                this.voucherNoField = value;
+                this.createDateField = value;
             }
         }
         
         /// <remarks/>
-        public decimal PackCount {
+        public DeliveryReceiveDetail_Model[] lstDeliveryDetail {
             get {
-                return this.packCountField;
+                return this.lstDeliveryDetailField;
             }
             set {
-                this.packCountField = value;
+                this.lstDeliveryDetailField = value;
             }
         }
         
         /// <remarks/>
-        public int ScanPackCount {
+        public MaterialDoc_Model materialDocModel {
             get {
-                return this.scanPackCountField;
+                return this.materialDocModelField;
             }
             set {
-                this.scanPackCountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal RemainPackCount {
-            get {
-                return this.remainPackCountField;
-            }
-            set {
-                this.remainPackCountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal ShelvePackCount {
-            get {
-                return this.shelvePackCountField;
-            }
-            set {
-                this.shelvePackCountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal CurrentPostQty {
-            get {
-                return this.currentPostQtyField;
-            }
-            set {
-                this.currentPostQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal RemainStockQty {
-            get {
-                return this.remainStockQtyField;
-            }
-            set {
-                this.remainStockQtyField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class Task_Model {
-        
-        private int idField;
-        
-        private int voucherTypeField;
-        
-        private string voucherTypeNameField;
-        
-        private int taskTypeField;
-        
-        private string taskNoField;
-        
-        private string supCusNameField;
-        
-        private int taskStatusField;
-        
-        private string statusNameField;
-        
-        private string auditUserNoField;
-        
-        private System.Nullable<System.DateTime> auditDateTimeField;
-        
-        private System.DateTime taskIssuedField;
-        
-        private string receiveUserNoField;
-        
-        private string receiveUserNameField;
-        
-        private System.DateTime createDateTimeField;
-        
-        private int isQualityField;
-        
-        private string remarkField;
-        
-        private string reasonField;
-        
-        private string supCusNoField;
-        
-        private string createUserNoField;
-        
-        private int receive_IDField;
-        
-        private string deliveryNoField;
-        
-        private int isReceivePostField;
-        
-        private int isShelvePostField;
-        
-        private string materialDocField;
-        
-        private string voucherNoField;
-        
-        private string shelvePostField;
-        
-        private TaskDetails_Model[] lstTaskDetailsField;
-        
-        private string plantField;
-        
-        private int postStatusField;
-        
-        private MaterialDoc_Model materialDocModelField;
-        
-        private string moveTypeField;
-        
-        private string wareHouseNoField;
-        
-        /// <remarks/>
-        public int ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
+                this.materialDocModelField = value;
             }
         }
         
@@ -9994,193 +9444,12 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public string VoucherTypeName {
-            get {
-                return this.voucherTypeNameField;
-            }
-            set {
-                this.voucherTypeNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int TaskType {
-            get {
-                return this.taskTypeField;
-            }
-            set {
-                this.taskTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TaskNo {
-            get {
-                return this.taskNoField;
-            }
-            set {
-                this.taskNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupCusName {
-            get {
-                return this.supCusNameField;
-            }
-            set {
-                this.supCusNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int TaskStatus {
-            get {
-                return this.taskStatusField;
-            }
-            set {
-                this.taskStatusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string StatusName {
-            get {
-                return this.statusNameField;
-            }
-            set {
-                this.statusNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string AuditUserNo {
-            get {
-                return this.auditUserNoField;
-            }
-            set {
-                this.auditUserNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> AuditDateTime {
-            get {
-                return this.auditDateTimeField;
-            }
-            set {
-                this.auditDateTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime TaskIssued {
-            get {
-                return this.taskIssuedField;
-            }
-            set {
-                this.taskIssuedField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ReceiveUserNo {
-            get {
-                return this.receiveUserNoField;
-            }
-            set {
-                this.receiveUserNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ReceiveUserName {
-            get {
-                return this.receiveUserNameField;
-            }
-            set {
-                this.receiveUserNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CreateDateTime {
-            get {
-                return this.createDateTimeField;
-            }
-            set {
-                this.createDateTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
         public int IsQuality {
             get {
                 return this.isQualityField;
             }
             set {
                 this.isQualityField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Remark {
-            get {
-                return this.remarkField;
-            }
-            set {
-                this.remarkField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Reason {
-            get {
-                return this.reasonField;
-            }
-            set {
-                this.reasonField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupCusNo {
-            get {
-                return this.supCusNoField;
-            }
-            set {
-                this.supCusNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CreateUserNo {
-            get {
-                return this.createUserNoField;
-            }
-            set {
-                this.createUserNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Receive_ID {
-            get {
-                return this.receive_IDField;
-            }
-            set {
-                this.receive_IDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string DeliveryNo {
-            get {
-                return this.deliveryNoField;
-            }
-            set {
-                this.deliveryNoField = value;
             }
         }
         
@@ -10205,12 +9474,12 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public string MaterialDoc {
+        public string TaskNo {
             get {
-                return this.materialDocField;
+                return this.taskNoField;
             }
             set {
-                this.materialDocField = value;
+                this.taskNoField = value;
             }
         }
         
@@ -10225,208 +9494,12 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public string ShelvePost {
-            get {
-                return this.shelvePostField;
-            }
-            set {
-                this.shelvePostField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public TaskDetails_Model[] lstTaskDetails {
-            get {
-                return this.lstTaskDetailsField;
-            }
-            set {
-                this.lstTaskDetailsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Plant {
-            get {
-                return this.plantField;
-            }
-            set {
-                this.plantField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int PostStatus {
-            get {
-                return this.postStatusField;
-            }
-            set {
-                this.postStatusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public MaterialDoc_Model materialDocModel {
-            get {
-                return this.materialDocModelField;
-            }
-            set {
-                this.materialDocModelField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MoveType {
-            get {
-                return this.moveTypeField;
-            }
-            set {
-                this.moveTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WareHouseNo {
-            get {
-                return this.wareHouseNoField;
-            }
-            set {
-                this.wareHouseNoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class MaterialDoc_Model {
-        
-        private string materialDocField;
-        
-        private string materialDocDateField;
-        
-        private System.DateTime materialDocPostField;
-        
-        private int materialDocTypeField;
-        
-        /// <remarks/>
         public string MaterialDoc {
             get {
                 return this.materialDocField;
             }
             set {
                 this.materialDocField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDocDate {
-            get {
-                return this.materialDocDateField;
-            }
-            set {
-                this.materialDocDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime MaterialDocPost {
-            get {
-                return this.materialDocPostField;
-            }
-            set {
-                this.materialDocPostField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int MaterialDocType {
-            get {
-                return this.materialDocTypeField;
-            }
-            set {
-                this.materialDocTypeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class QueryConditions {
-        
-        private string materialNoField;
-        
-        private string materialDescField;
-        
-        private string materialStdField;
-        
-        private string productLineNoField;
-        
-        private string voucherNoField;
-        
-        private System.Nullable<System.DateTime> startTimeField;
-        
-        private System.Nullable<System.DateTime> endTimeField;
-        
-        private string cSBVCodeField;
-        
-        private string cCusNameField;
-        
-        private string cSOCodeField;
-        
-        /// <remarks/>
-        public string MaterialNo {
-            get {
-                return this.materialNoField;
-            }
-            set {
-                this.materialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDesc {
-            get {
-                return this.materialDescField;
-            }
-            set {
-                this.materialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialStd {
-            get {
-                return this.materialStdField;
-            }
-            set {
-                this.materialStdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ProductLineNo {
-            get {
-                return this.productLineNoField;
-            }
-            set {
-                this.productLineNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string VoucherNo {
-            get {
-                return this.voucherNoField;
-            }
-            set {
-                this.voucherNoField = value;
             }
         }
         
@@ -10453,284 +9526,64 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public string cSBVCode {
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> DocDate {
             get {
-                return this.cSBVCodeField;
+                return this.docDateField;
             }
             set {
-                this.cSBVCodeField = value;
+                this.docDateField = value;
             }
         }
         
         /// <remarks/>
-        public string cCusName {
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> PostDate {
             get {
-                return this.cCusNameField;
+                return this.postDateField;
             }
             set {
-                this.cCusNameField = value;
+                this.postDateField = value;
             }
         }
         
         /// <remarks/>
-        public string cSOCode {
+        public string MoveType {
             get {
-                return this.cSOCodeField;
+                return this.moveTypeField;
             }
             set {
-                this.cSOCodeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class AppVersionInfo {
-        
-        private int idField;
-        
-        private string appNameField;
-        
-        private string appVersionField;
-        
-        private int versionTypeField;
-        
-        private int versionLevelField;
-        
-        private string versionTitleField;
-        
-        private string versionDescField;
-        
-        private string createrField;
-        
-        private System.DateTime createTimeField;
-        
-        private string localVersionField;
-        
-        private string updateAppNameField;
-        
-        private string updateAppPathField;
-        
-        private string fileNameField;
-        
-        private string updateUrlField;
-        
-        private string strVersionTypeField;
-        
-        private string strVersionLevelField;
-        
-        /// <remarks/>
-        public int ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
+                this.moveTypeField = value;
             }
         }
         
         /// <remarks/>
-        public string AppName {
+        public string Titel {
             get {
-                return this.appNameField;
+                return this.titelField;
             }
             set {
-                this.appNameField = value;
+                this.titelField = value;
             }
         }
         
         /// <remarks/>
-        public string AppVersion {
+        public string OutSideSupCode {
             get {
-                return this.appVersionField;
+                return this.outSideSupCodeField;
             }
             set {
-                this.appVersionField = value;
+                this.outSideSupCodeField = value;
             }
         }
         
         /// <remarks/>
-        public int VersionType {
+        public string OutSideSupName {
             get {
-                return this.versionTypeField;
+                return this.outSideSupNameField;
             }
             set {
-                this.versionTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int VersionLevel {
-            get {
-                return this.versionLevelField;
-            }
-            set {
-                this.versionLevelField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string VersionTitle {
-            get {
-                return this.versionTitleField;
-            }
-            set {
-                this.versionTitleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string VersionDesc {
-            get {
-                return this.versionDescField;
-            }
-            set {
-                this.versionDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Creater {
-            get {
-                return this.createrField;
-            }
-            set {
-                this.createrField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CreateTime {
-            get {
-                return this.createTimeField;
-            }
-            set {
-                this.createTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string LocalVersion {
-            get {
-                return this.localVersionField;
-            }
-            set {
-                this.localVersionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string UpdateAppName {
-            get {
-                return this.updateAppNameField;
-            }
-            set {
-                this.updateAppNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string UpdateAppPath {
-            get {
-                return this.updateAppPathField;
-            }
-            set {
-                this.updateAppPathField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string FileName {
-            get {
-                return this.fileNameField;
-            }
-            set {
-                this.fileNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string UpdateUrl {
-            get {
-                return this.updateUrlField;
-            }
-            set {
-                this.updateUrlField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string StrVersionType {
-            get {
-                return this.strVersionTypeField;
-            }
-            set {
-                this.strVersionTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string StrVersionLevel {
-            get {
-                return this.strVersionLevelField;
-            }
-            set {
-                this.strVersionLevelField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class MaterialInnerLabel {
-        
-        private BarcodeRule barcoderuleField;
-        
-        private string iNVSTDField;
-        
-        private string barcodeField;
-        
-        private string pOCodeField;
-        
-        private string labelTypeField;
-        
-        private string mATERIALNOField;
-        
-        private string mATERIALDESCField;
-        
-        private string sUPCODEField;
-        
-        private string sUPNAMEField;
-        
-        private string printDateField;
-        
-        private string supBatchField;
-        
-        /// <remarks/>
-        public BarcodeRule barcoderule {
-            get {
-                return this.barcoderuleField;
-            }
-            set {
-                this.barcoderuleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string INVSTD {
-            get {
-                return this.iNVSTDField;
-            }
-            set {
-                this.iNVSTDField = value;
+                this.outSideSupNameField = value;
             }
         }
         
@@ -10745,426 +9598,12 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public string POCode {
+        public string MaterialNo {
             get {
-                return this.pOCodeField;
+                return this.materialNoField;
             }
             set {
-                this.pOCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string LabelType {
-            get {
-                return this.labelTypeField;
-            }
-            set {
-                this.labelTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MATERIALNO {
-            get {
-                return this.mATERIALNOField;
-            }
-            set {
-                this.mATERIALNOField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MATERIALDESC {
-            get {
-                return this.mATERIALDESCField;
-            }
-            set {
-                this.mATERIALDESCField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SUPCODE {
-            get {
-                return this.sUPCODEField;
-            }
-            set {
-                this.sUPCODEField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SUPNAME {
-            get {
-                return this.sUPNAMEField;
-            }
-            set {
-                this.sUPNAMEField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PrintDate {
-            get {
-                return this.printDateField;
-            }
-            set {
-                this.printDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupBatch {
-            get {
-                return this.supBatchField;
-            }
-            set {
-                this.supBatchField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class BarcodeRule {
-        
-        private string[] fieldsField;
-        
-        /// <remarks/>
-        public string[] Fields {
-            get {
-                return this.fieldsField;
-            }
-            set {
-                this.fieldsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class MaterialOuterLabel {
-        
-        private BarcodeRule barcoderuleField;
-        
-        private string iNVSTDField;
-        
-        private string barcodeField;
-        
-        private string pOCodeField;
-        
-        private string labelTypeField;
-        
-        private string mATERIALNOField;
-        
-        private string mATERIALDESCField;
-        
-        private string sUPCODEField;
-        
-        private string sUPNAMEField;
-        
-        private string printDateField;
-        
-        private string supBatchField;
-        
-        private string oUTPACKQTYField;
-        
-        private string pACKNOField;
-        
-        /// <remarks/>
-        public BarcodeRule barcoderule {
-            get {
-                return this.barcoderuleField;
-            }
-            set {
-                this.barcoderuleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string INVSTD {
-            get {
-                return this.iNVSTDField;
-            }
-            set {
-                this.iNVSTDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Barcode {
-            get {
-                return this.barcodeField;
-            }
-            set {
-                this.barcodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string POCode {
-            get {
-                return this.pOCodeField;
-            }
-            set {
-                this.pOCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string LabelType {
-            get {
-                return this.labelTypeField;
-            }
-            set {
-                this.labelTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MATERIALNO {
-            get {
-                return this.mATERIALNOField;
-            }
-            set {
-                this.mATERIALNOField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MATERIALDESC {
-            get {
-                return this.mATERIALDESCField;
-            }
-            set {
-                this.mATERIALDESCField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SUPCODE {
-            get {
-                return this.sUPCODEField;
-            }
-            set {
-                this.sUPCODEField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SUPNAME {
-            get {
-                return this.sUPNAMEField;
-            }
-            set {
-                this.sUPNAMEField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PrintDate {
-            get {
-                return this.printDateField;
-            }
-            set {
-                this.printDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupBatch {
-            get {
-                return this.supBatchField;
-            }
-            set {
-                this.supBatchField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string OUTPACKQTY {
-            get {
-                return this.oUTPACKQTYField;
-            }
-            set {
-                this.oUTPACKQTYField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PACKNO {
-            get {
-                return this.pACKNOField;
-            }
-            set {
-                this.pACKNOField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class Supplier_Model {
-        
-        private string supplierCodeField;
-        
-        private string supplierNameField;
-        
-        /// <remarks/>
-        public string SupplierCode {
-            get {
-                return this.supplierCodeField;
-            }
-            set {
-                this.supplierCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupplierName {
-            get {
-                return this.supplierNameField;
-            }
-            set {
-                this.supplierNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class QuanlityExportInfo {
-        
-        private int idField;
-        
-        private string deliveryNoField;
-        
-        private string supplierNoField;
-        
-        private string supplierNameField;
-        
-        private string plantField;
-        
-        private string materialDocField;
-        
-        private System.DateTime createDateField;
-        
-        private int printedQtyField;
-        
-        private System.Nullable<System.DateTime> printTimeField;
-        
-        private string moveTypeField;
-        
-        private string voucherNoField;
-        
-        private string rowNoField;
-        
-        private string materialNoField;
-        
-        private string materialDescField;
-        
-        private decimal receiveQtyField;
-        
-        private string unitField;
-        
-        private string prdVersionField;
-        
-        private decimal qualityQtyField;
-        
-        private decimal unQualityQtyField;
-        
-        private int qualityTypeField;
-        
-        private string strQualityTypeField;
-        
-        private System.Nullable<System.DateTime> startTimeField;
-        
-        private System.Nullable<System.DateTime> endTimeField;
-        
-        /// <remarks/>
-        public int ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string DeliveryNo {
-            get {
-                return this.deliveryNoField;
-            }
-            set {
-                this.deliveryNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupplierNo {
-            get {
-                return this.supplierNoField;
-            }
-            set {
-                this.supplierNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupplierName {
-            get {
-                return this.supplierNameField;
-            }
-            set {
-                this.supplierNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Plant {
-            get {
-                return this.plantField;
-            }
-            set {
-                this.plantField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDoc {
-            get {
-                return this.materialDocField;
-            }
-            set {
-                this.materialDocField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CreateDate {
-            get {
-                return this.createDateField;
-            }
-            set {
-                this.createDateField = value;
+                this.materialNoField = value;
             }
         }
         
@@ -11179,6 +9618,46 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
+        public MaterialDoc_Model[] lstMaterialDoc {
+            get {
+                return this.lstMaterialDocField;
+            }
+            set {
+                this.lstMaterialDocField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string OsDeliveryRemark {
+            get {
+                return this.osDeliveryRemarkField;
+            }
+            set {
+                this.osDeliveryRemarkField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string POReamrk {
+            get {
+                return this.pOReamrkField;
+            }
+            set {
+                this.pOReamrkField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Reson {
+            get {
+                return this.resonField;
+            }
+            set {
+                this.resonField = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public System.Nullable<System.DateTime> PrintTime {
             get {
@@ -11188,575 +9667,10 @@ namespace Test.localhost {
                 this.printTimeField = value;
             }
         }
-        
-        /// <remarks/>
-        public string MoveType {
-            get {
-                return this.moveTypeField;
-            }
-            set {
-                this.moveTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string VoucherNo {
-            get {
-                return this.voucherNoField;
-            }
-            set {
-                this.voucherNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RowNo {
-            get {
-                return this.rowNoField;
-            }
-            set {
-                this.rowNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialNo {
-            get {
-                return this.materialNoField;
-            }
-            set {
-                this.materialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDesc {
-            get {
-                return this.materialDescField;
-            }
-            set {
-                this.materialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal ReceiveQty {
-            get {
-                return this.receiveQtyField;
-            }
-            set {
-                this.receiveQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Unit {
-            get {
-                return this.unitField;
-            }
-            set {
-                this.unitField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PrdVersion {
-            get {
-                return this.prdVersionField;
-            }
-            set {
-                this.prdVersionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal QualityQty {
-            get {
-                return this.qualityQtyField;
-            }
-            set {
-                this.qualityQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal UnQualityQty {
-            get {
-                return this.unQualityQtyField;
-            }
-            set {
-                this.unQualityQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int QualityType {
-            get {
-                return this.qualityTypeField;
-            }
-            set {
-                this.qualityTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string StrQualityType {
-            get {
-                return this.strQualityTypeField;
-            }
-            set {
-                this.strQualityTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> StartTime {
-            get {
-                return this.startTimeField;
-            }
-            set {
-                this.startTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> EndTime {
-            get {
-                return this.endTimeField;
-            }
-            set {
-                this.endTimeField = value;
-            }
-        }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InnerBarcode_Model {
-        
-        private decimal idField;
-        
-        private string innerBarcodeField;
-        
-        private decimal innerQtyField;
-        
-        private decimal printQtyField;
-        
-        private decimal outBox_IDField;
-        
-        private string serialNoField;
-        
-        private string batchNoField;
-        
-        private string outBarcodeField;
-        
-        /// <remarks/>
-        public decimal id {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string InnerBarcode {
-            get {
-                return this.innerBarcodeField;
-            }
-            set {
-                this.innerBarcodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal InnerQty {
-            get {
-                return this.innerQtyField;
-            }
-            set {
-                this.innerQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal PrintQty {
-            get {
-                return this.printQtyField;
-            }
-            set {
-                this.printQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal OutBox_ID {
-            get {
-                return this.outBox_IDField;
-            }
-            set {
-                this.outBox_IDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SerialNo {
-            get {
-                return this.serialNoField;
-            }
-            set {
-                this.serialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string BatchNo {
-            get {
-                return this.batchNoField;
-            }
-            set {
-                this.batchNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string OutBarcode {
-            get {
-                return this.outBarcodeField;
-            }
-            set {
-                this.outBarcodeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class ComboBoxItem {
-        
-        private int idField;
-        
-        private string nameField;
-        
-        /// <remarks/>
-        public int ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class OutBarcode_Model {
-        
-        private int idField;
-        
-        private int innerBox_IdField;
-        
-        private string voucherNoField;
-        
-        private string rowNoField;
-        
-        private string deliveryNoField;
-        
-        private int voucherTypeField;
-        
-        private string materialNoField;
-        
-        private string materialDESCField;
-        
-        private string supplierNoField;
-        
-        private string supplierNameField;
-        
-        private int qtyField;
-        
-        private string batchNoField;
-        
-        private int outPackQtyField;
-        
-        private int noPackField;
-        
-        private int printQtyField;
-        
-        private string outBarCodeField;
-        
-        private string serialNoField;
-        
-        private string prdversionField;
-        
-        private int platedSilverField;
-        
-        private int platedGoldField;
-        
-        private int othersField;
-        
-        private string operatorField;
-        
-        private System.DateTime operationDateField;
-        
-        /// <remarks/>
-        public int Id {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int InnerBox_Id {
-            get {
-                return this.innerBox_IdField;
-            }
-            set {
-                this.innerBox_IdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string VoucherNo {
-            get {
-                return this.voucherNoField;
-            }
-            set {
-                this.voucherNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RowNo {
-            get {
-                return this.rowNoField;
-            }
-            set {
-                this.rowNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string DeliveryNo {
-            get {
-                return this.deliveryNoField;
-            }
-            set {
-                this.deliveryNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int VoucherType {
-            get {
-                return this.voucherTypeField;
-            }
-            set {
-                this.voucherTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialNo {
-            get {
-                return this.materialNoField;
-            }
-            set {
-                this.materialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDESC {
-            get {
-                return this.materialDESCField;
-            }
-            set {
-                this.materialDESCField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupplierNo {
-            get {
-                return this.supplierNoField;
-            }
-            set {
-                this.supplierNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupplierName {
-            get {
-                return this.supplierNameField;
-            }
-            set {
-                this.supplierNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Qty {
-            get {
-                return this.qtyField;
-            }
-            set {
-                this.qtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string BatchNo {
-            get {
-                return this.batchNoField;
-            }
-            set {
-                this.batchNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int OutPackQty {
-            get {
-                return this.outPackQtyField;
-            }
-            set {
-                this.outPackQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int NoPack {
-            get {
-                return this.noPackField;
-            }
-            set {
-                this.noPackField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int PrintQty {
-            get {
-                return this.printQtyField;
-            }
-            set {
-                this.printQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string OutBarCode {
-            get {
-                return this.outBarCodeField;
-            }
-            set {
-                this.outBarCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SerialNo {
-            get {
-                return this.serialNoField;
-            }
-            set {
-                this.serialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Prdversion {
-            get {
-                return this.prdversionField;
-            }
-            set {
-                this.prdversionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int PlatedSilver {
-            get {
-                return this.platedSilverField;
-            }
-            set {
-                this.platedSilverField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int PlatedGold {
-            get {
-                return this.platedGoldField;
-            }
-            set {
-                this.platedGoldField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Others {
-            get {
-                return this.othersField;
-            }
-            set {
-                this.othersField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Operator {
-            get {
-                return this.operatorField;
-            }
-            set {
-                this.operatorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime OperationDate {
-            get {
-                return this.operationDateField;
-            }
-            set {
-                this.operationDateField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12343,81 +10257,61 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class DeliveryReceive_Model {
+    public partial class OutBarcode_Model {
         
         private int idField;
         
-        private string deliveryNoField;
-        
-        private string supNameField;
-        
-        private string supCodeField;
-        
-        private string plantField;
-        
-        private string plantNameField;
-        
-        private string operatorField;
-        
-        private System.DateTime createDateField;
-        
-        private DeliveryReceiveDetail_Model[] lstDeliveryDetailField;
-        
-        private MaterialDoc_Model materialDocModelField;
-        
-        private int voucherTypeField;
-        
-        private int isQualityField;
-        
-        private int isReceivePostField;
-        
-        private int isShelvePostField;
-        
-        private string taskNoField;
+        private int innerBox_IdField;
         
         private string voucherNoField;
         
-        private string materialDocField;
+        private string rowNoField;
         
-        private System.Nullable<System.DateTime> startTimeField;
+        private string deliveryNoField;
         
-        private System.Nullable<System.DateTime> endTimeField;
-        
-        private System.Nullable<System.DateTime> docDateField;
-        
-        private System.Nullable<System.DateTime> postDateField;
-        
-        private string moveTypeField;
-        
-        private string titelField;
-        
-        private string outSideSupCodeField;
-        
-        private string outSideSupNameField;
-        
-        private string barcodeField;
+        private int voucherTypeField;
         
         private string materialNoField;
         
-        private int printedQtyField;
+        private string materialDESCField;
         
-        private MaterialDoc_Model[] lstMaterialDocField;
+        private string supplierNoField;
         
-        private string osDeliveryRemarkField;
+        private string supplierNameField;
         
-        private string pOReamrkField;
+        private int qtyField;
         
-        private string resonField;
+        private string batchNoField;
         
-        private System.Nullable<System.DateTime> printTimeField;
+        private int outPackQtyField;
+        
+        private int noPackField;
+        
+        private int printQtyField;
+        
+        private string outBarCodeField;
+        
+        private string serialNoField;
+        
+        private string prdversionField;
+        
+        private int platedSilverField;
+        
+        private int platedGoldField;
+        
+        private int othersField;
+        
+        private string operatorField;
+        
+        private System.DateTime operationDateField;
         
         /// <remarks/>
-        public int ID {
+        public int Id {
             get {
                 return this.idField;
             }
@@ -12427,142 +10321,12 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public string DeliveryNo {
+        public int InnerBox_Id {
             get {
-                return this.deliveryNoField;
+                return this.innerBox_IdField;
             }
             set {
-                this.deliveryNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupName {
-            get {
-                return this.supNameField;
-            }
-            set {
-                this.supNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupCode {
-            get {
-                return this.supCodeField;
-            }
-            set {
-                this.supCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Plant {
-            get {
-                return this.plantField;
-            }
-            set {
-                this.plantField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PlantName {
-            get {
-                return this.plantNameField;
-            }
-            set {
-                this.plantNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Operator {
-            get {
-                return this.operatorField;
-            }
-            set {
-                this.operatorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CreateDate {
-            get {
-                return this.createDateField;
-            }
-            set {
-                this.createDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public DeliveryReceiveDetail_Model[] lstDeliveryDetail {
-            get {
-                return this.lstDeliveryDetailField;
-            }
-            set {
-                this.lstDeliveryDetailField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public MaterialDoc_Model materialDocModel {
-            get {
-                return this.materialDocModelField;
-            }
-            set {
-                this.materialDocModelField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int VoucherType {
-            get {
-                return this.voucherTypeField;
-            }
-            set {
-                this.voucherTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int IsQuality {
-            get {
-                return this.isQualityField;
-            }
-            set {
-                this.isQualityField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int IsReceivePost {
-            get {
-                return this.isReceivePostField;
-            }
-            set {
-                this.isReceivePostField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int IsShelvePost {
-            get {
-                return this.isShelvePostField;
-            }
-            set {
-                this.isShelvePostField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TaskNo {
-            get {
-                return this.taskNoField;
-            }
-            set {
-                this.taskNoField = value;
+                this.innerBox_IdField = value;
             }
         }
         
@@ -12577,12 +10341,479 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public string MaterialDoc {
+        public string RowNo {
             get {
-                return this.materialDocField;
+                return this.rowNoField;
             }
             set {
-                this.materialDocField = value;
+                this.rowNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string DeliveryNo {
+            get {
+                return this.deliveryNoField;
+            }
+            set {
+                this.deliveryNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int VoucherType {
+            get {
+                return this.voucherTypeField;
+            }
+            set {
+                this.voucherTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialNo {
+            get {
+                return this.materialNoField;
+            }
+            set {
+                this.materialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDESC {
+            get {
+                return this.materialDESCField;
+            }
+            set {
+                this.materialDESCField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SupplierNo {
+            get {
+                return this.supplierNoField;
+            }
+            set {
+                this.supplierNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SupplierName {
+            get {
+                return this.supplierNameField;
+            }
+            set {
+                this.supplierNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Qty {
+            get {
+                return this.qtyField;
+            }
+            set {
+                this.qtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BatchNo {
+            get {
+                return this.batchNoField;
+            }
+            set {
+                this.batchNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int OutPackQty {
+            get {
+                return this.outPackQtyField;
+            }
+            set {
+                this.outPackQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int NoPack {
+            get {
+                return this.noPackField;
+            }
+            set {
+                this.noPackField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int PrintQty {
+            get {
+                return this.printQtyField;
+            }
+            set {
+                this.printQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string OutBarCode {
+            get {
+                return this.outBarCodeField;
+            }
+            set {
+                this.outBarCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SerialNo {
+            get {
+                return this.serialNoField;
+            }
+            set {
+                this.serialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Prdversion {
+            get {
+                return this.prdversionField;
+            }
+            set {
+                this.prdversionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int PlatedSilver {
+            get {
+                return this.platedSilverField;
+            }
+            set {
+                this.platedSilverField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int PlatedGold {
+            get {
+                return this.platedGoldField;
+            }
+            set {
+                this.platedGoldField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Others {
+            get {
+                return this.othersField;
+            }
+            set {
+                this.othersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Operator {
+            get {
+                return this.operatorField;
+            }
+            set {
+                this.operatorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime OperationDate {
+            get {
+                return this.operationDateField;
+            }
+            set {
+                this.operationDateField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class TaskVoucherDetails {
+        
+        private int idField;
+        
+        private string headIDField;
+        
+        private string materialNoField;
+        
+        private string materialDescField;
+        
+        private decimal qtyField;
+        
+        private string rowNoField;
+        
+        private string factoryField;
+        
+        private string factoryNameField;
+        
+        private string storeField;
+        
+        /// <remarks/>
+        public int ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HeadID {
+            get {
+                return this.headIDField;
+            }
+            set {
+                this.headIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialNo {
+            get {
+                return this.materialNoField;
+            }
+            set {
+                this.materialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDesc {
+            get {
+                return this.materialDescField;
+            }
+            set {
+                this.materialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal Qty {
+            get {
+                return this.qtyField;
+            }
+            set {
+                this.qtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RowNo {
+            get {
+                return this.rowNoField;
+            }
+            set {
+                this.rowNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Factory {
+            get {
+                return this.factoryField;
+            }
+            set {
+                this.factoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string FactoryName {
+            get {
+                return this.factoryNameField;
+            }
+            set {
+                this.factoryNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Store {
+            get {
+                return this.storeField;
+            }
+            set {
+                this.storeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class TaskVoucher {
+        
+        private int idField;
+        
+        private string voucherNoField;
+        
+        private string task_IDField;
+        
+        private string factoryField;
+        
+        private string storeField;
+        
+        private TaskVoucherDetails[] bodyField;
+        
+        /// <remarks/>
+        public int ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VoucherNo {
+            get {
+                return this.voucherNoField;
+            }
+            set {
+                this.voucherNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Task_ID {
+            get {
+                return this.task_IDField;
+            }
+            set {
+                this.task_IDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Factory {
+            get {
+                return this.factoryField;
+            }
+            set {
+                this.factoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Store {
+            get {
+                return this.storeField;
+            }
+            set {
+                this.storeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public TaskVoucherDetails[] body {
+            get {
+                return this.bodyField;
+            }
+            set {
+                this.bodyField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class QueryConditions {
+        
+        private string materialNoField;
+        
+        private string materialDescField;
+        
+        private string materialStdField;
+        
+        private string productLineNoField;
+        
+        private string voucherNoField;
+        
+        private System.Nullable<System.DateTime> startTimeField;
+        
+        private System.Nullable<System.DateTime> endTimeField;
+        
+        private string cSBVCodeField;
+        
+        private string cCusNameField;
+        
+        private string cSOCodeField;
+        
+        /// <remarks/>
+        public string MaterialNo {
+            get {
+                return this.materialNoField;
+            }
+            set {
+                this.materialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDesc {
+            get {
+                return this.materialDescField;
+            }
+            set {
+                this.materialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialStd {
+            get {
+                return this.materialStdField;
+            }
+            set {
+                this.materialStdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ProductLineNo {
+            get {
+                return this.productLineNoField;
+            }
+            set {
+                this.productLineNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VoucherNo {
+            get {
+                return this.voucherNoField;
+            }
+            set {
+                this.voucherNoField = value;
             }
         }
         
@@ -12609,84 +10840,391 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> DocDate {
+        public string cSBVCode {
             get {
-                return this.docDateField;
+                return this.cSBVCodeField;
             }
             set {
-                this.docDateField = value;
+                this.cSBVCodeField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> PostDate {
+        public string cCusName {
             get {
-                return this.postDateField;
+                return this.cCusNameField;
             }
             set {
-                this.postDateField = value;
+                this.cCusNameField = value;
             }
         }
         
         /// <remarks/>
-        public string MoveType {
+        public string cSOCode {
             get {
-                return this.moveTypeField;
+                return this.cSOCodeField;
             }
             set {
-                this.moveTypeField = value;
+                this.cSOCodeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class AppVersionInfo {
+        
+        private int idField;
+        
+        private string appNameField;
+        
+        private string appVersionField;
+        
+        private int versionTypeField;
+        
+        private int versionLevelField;
+        
+        private string versionTitleField;
+        
+        private string versionDescField;
+        
+        private string createrField;
+        
+        private System.DateTime createTimeField;
+        
+        private string localVersionField;
+        
+        private string updateAppNameField;
+        
+        private string updateAppPathField;
+        
+        private string fileNameField;
+        
+        private string updateUrlField;
+        
+        private string strVersionTypeField;
+        
+        private string strVersionLevelField;
+        
+        /// <remarks/>
+        public int ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
             }
         }
         
         /// <remarks/>
-        public string Titel {
+        public string AppName {
             get {
-                return this.titelField;
+                return this.appNameField;
             }
             set {
-                this.titelField = value;
+                this.appNameField = value;
             }
         }
         
         /// <remarks/>
-        public string OutSideSupCode {
+        public string AppVersion {
             get {
-                return this.outSideSupCodeField;
+                return this.appVersionField;
             }
             set {
-                this.outSideSupCodeField = value;
+                this.appVersionField = value;
             }
         }
         
         /// <remarks/>
-        public string OutSideSupName {
+        public int VersionType {
             get {
-                return this.outSideSupNameField;
+                return this.versionTypeField;
             }
             set {
-                this.outSideSupNameField = value;
+                this.versionTypeField = value;
             }
         }
         
         /// <remarks/>
-        public string Barcode {
+        public int VersionLevel {
             get {
-                return this.barcodeField;
+                return this.versionLevelField;
             }
             set {
-                this.barcodeField = value;
+                this.versionLevelField = value;
             }
         }
         
         /// <remarks/>
-        public string MaterialNo {
+        public string VersionTitle {
             get {
-                return this.materialNoField;
+                return this.versionTitleField;
             }
             set {
-                this.materialNoField = value;
+                this.versionTitleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VersionDesc {
+            get {
+                return this.versionDescField;
+            }
+            set {
+                this.versionDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Creater {
+            get {
+                return this.createrField;
+            }
+            set {
+                this.createrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime CreateTime {
+            get {
+                return this.createTimeField;
+            }
+            set {
+                this.createTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string LocalVersion {
+            get {
+                return this.localVersionField;
+            }
+            set {
+                this.localVersionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string UpdateAppName {
+            get {
+                return this.updateAppNameField;
+            }
+            set {
+                this.updateAppNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string UpdateAppPath {
+            get {
+                return this.updateAppPathField;
+            }
+            set {
+                this.updateAppPathField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string FileName {
+            get {
+                return this.fileNameField;
+            }
+            set {
+                this.fileNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string UpdateUrl {
+            get {
+                return this.updateUrlField;
+            }
+            set {
+                this.updateUrlField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StrVersionType {
+            get {
+                return this.strVersionTypeField;
+            }
+            set {
+                this.strVersionTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StrVersionLevel {
+            get {
+                return this.strVersionLevelField;
+            }
+            set {
+                this.strVersionLevelField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Supplier_Model {
+        
+        private string supplierCodeField;
+        
+        private string supplierNameField;
+        
+        /// <remarks/>
+        public string SupplierCode {
+            get {
+                return this.supplierCodeField;
+            }
+            set {
+                this.supplierCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SupplierName {
+            get {
+                return this.supplierNameField;
+            }
+            set {
+                this.supplierNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class QuanlityExportInfo {
+        
+        private int idField;
+        
+        private string deliveryNoField;
+        
+        private string supplierNoField;
+        
+        private string supplierNameField;
+        
+        private string plantField;
+        
+        private string materialDocField;
+        
+        private System.DateTime createDateField;
+        
+        private int printedQtyField;
+        
+        private System.Nullable<System.DateTime> printTimeField;
+        
+        private string moveTypeField;
+        
+        private string voucherNoField;
+        
+        private string rowNoField;
+        
+        private string materialNoField;
+        
+        private string materialDescField;
+        
+        private decimal receiveQtyField;
+        
+        private string unitField;
+        
+        private string prdVersionField;
+        
+        private decimal qualityQtyField;
+        
+        private decimal unQualityQtyField;
+        
+        private int qualityTypeField;
+        
+        private string strQualityTypeField;
+        
+        private System.Nullable<System.DateTime> startTimeField;
+        
+        private System.Nullable<System.DateTime> endTimeField;
+        
+        /// <remarks/>
+        public int ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string DeliveryNo {
+            get {
+                return this.deliveryNoField;
+            }
+            set {
+                this.deliveryNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SupplierNo {
+            get {
+                return this.supplierNoField;
+            }
+            set {
+                this.supplierNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SupplierName {
+            get {
+                return this.supplierNameField;
+            }
+            set {
+                this.supplierNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Plant {
+            get {
+                return this.plantField;
+            }
+            set {
+                this.plantField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDoc {
+            get {
+                return this.materialDocField;
+            }
+            set {
+                this.materialDocField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime CreateDate {
+            get {
+                return this.createDateField;
+            }
+            set {
+                this.createDateField = value;
             }
         }
         
@@ -12701,46 +11239,6 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public MaterialDoc_Model[] lstMaterialDoc {
-            get {
-                return this.lstMaterialDocField;
-            }
-            set {
-                this.lstMaterialDocField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string OsDeliveryRemark {
-            get {
-                return this.osDeliveryRemarkField;
-            }
-            set {
-                this.osDeliveryRemarkField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string POReamrk {
-            get {
-                return this.pOReamrkField;
-            }
-            set {
-                this.pOReamrkField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Reson {
-            get {
-                return this.resonField;
-            }
-            set {
-                this.resonField = value;
-            }
-        }
-        
-        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public System.Nullable<System.DateTime> PrintTime {
             get {
@@ -12750,10 +11248,257 @@ namespace Test.localhost {
                 this.printTimeField = value;
             }
         }
+        
+        /// <remarks/>
+        public string MoveType {
+            get {
+                return this.moveTypeField;
+            }
+            set {
+                this.moveTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VoucherNo {
+            get {
+                return this.voucherNoField;
+            }
+            set {
+                this.voucherNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RowNo {
+            get {
+                return this.rowNoField;
+            }
+            set {
+                this.rowNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialNo {
+            get {
+                return this.materialNoField;
+            }
+            set {
+                this.materialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDesc {
+            get {
+                return this.materialDescField;
+            }
+            set {
+                this.materialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal ReceiveQty {
+            get {
+                return this.receiveQtyField;
+            }
+            set {
+                this.receiveQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Unit {
+            get {
+                return this.unitField;
+            }
+            set {
+                this.unitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PrdVersion {
+            get {
+                return this.prdVersionField;
+            }
+            set {
+                this.prdVersionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal QualityQty {
+            get {
+                return this.qualityQtyField;
+            }
+            set {
+                this.qualityQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal UnQualityQty {
+            get {
+                return this.unQualityQtyField;
+            }
+            set {
+                this.unQualityQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int QualityType {
+            get {
+                return this.qualityTypeField;
+            }
+            set {
+                this.qualityTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StrQualityType {
+            get {
+                return this.strQualityTypeField;
+            }
+            set {
+                this.strQualityTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> StartTime {
+            get {
+                return this.startTimeField;
+            }
+            set {
+                this.startTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> EndTime {
+            get {
+                return this.endTimeField;
+            }
+            set {
+                this.endTimeField = value;
+            }
+        }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InnerBarcode_Model {
+        
+        private decimal idField;
+        
+        private string innerBarcodeField;
+        
+        private decimal innerQtyField;
+        
+        private decimal printQtyField;
+        
+        private decimal outBox_IDField;
+        
+        private string serialNoField;
+        
+        private string batchNoField;
+        
+        private string outBarcodeField;
+        
+        /// <remarks/>
+        public decimal id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string InnerBarcode {
+            get {
+                return this.innerBarcodeField;
+            }
+            set {
+                this.innerBarcodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal InnerQty {
+            get {
+                return this.innerQtyField;
+            }
+            set {
+                this.innerQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal PrintQty {
+            get {
+                return this.printQtyField;
+            }
+            set {
+                this.printQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal OutBox_ID {
+            get {
+                return this.outBox_IDField;
+            }
+            set {
+                this.outBox_IDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SerialNo {
+            get {
+                return this.serialNoField;
+            }
+            set {
+                this.serialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BatchNo {
+            get {
+                return this.batchNoField;
+            }
+            set {
+                this.batchNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string OutBarcode {
+            get {
+                return this.outBarcodeField;
+            }
+            set {
+                this.outBarcodeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -13440,7 +12185,1025 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class TempMaterial {
+        
+        private string tempMaterialNoField;
+        
+        private string tempMaterialDescField;
+        
+        private string materialNoField;
+        
+        private string materialDescField;
+        
+        /// <remarks/>
+        public string TempMaterialNo {
+            get {
+                return this.tempMaterialNoField;
+            }
+            set {
+                this.tempMaterialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TempMaterialDesc {
+            get {
+                return this.tempMaterialDescField;
+            }
+            set {
+                this.tempMaterialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialNo {
+            get {
+                return this.materialNoField;
+            }
+            set {
+                this.materialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDesc {
+            get {
+                return this.materialDescField;
+            }
+            set {
+                this.materialDescField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class TaskSerial_Model {
+        
+        private string serialNoField;
+        
+        /// <remarks/>
+        public string SerialNo {
+            get {
+                return this.serialNoField;
+            }
+            set {
+                this.serialNoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class TaskDetails_Model {
+        
+        private int idField;
+        
+        private int task_IDField;
+        
+        private string toAreaNoField;
+        
+        private string materialNoField;
+        
+        private string materialDescField;
+        
+        private string materialStdField;
+        
+        private decimal taskQtyField;
+        
+        private decimal quanlityQtyField;
+        
+        private decimal remainQtyField;
+        
+        private decimal shelveQtyField;
+        
+        private decimal scanQtyField;
+        
+        private int statusField;
+        
+        private int isQualityCompField;
+        
+        private string qCUserNoField;
+        
+        private System.DateTime qCDateTimeField;
+        
+        private string keeperUserNoField;
+        
+        private string operatorUserNoField;
+        
+        private System.DateTime completeDateTimeField;
+        
+        private string tMaterialNoField;
+        
+        private string tMaterialDescField;
+        
+        private decimal outStockQtyField;
+        
+        private decimal reviewQtyField;
+        
+        private string reviewUserNoField;
+        
+        private decimal unQuanlityQtyField;
+        
+        private string unQuanlityResonField;
+        
+        private decimal deliveryQtyField;
+        
+        private TaskSerial_Model[] lstSerialField;
+        
+        private string unitField;
+        
+        private int isROHSField;
+        
+        private string rowNoField;
+        
+        private string plantField;
+        
+        private string plantNameField;
+        
+        private string storageLocField;
+        
+        private string voucherNoField;
+        
+        private decimal packCountField;
+        
+        private int scanPackCountField;
+        
+        private decimal remainPackCountField;
+        
+        private decimal shelvePackCountField;
+        
+        private decimal currentPostQtyField;
+        
+        private decimal remainStockQtyField;
+        
+        /// <remarks/>
+        public int ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Task_ID {
+            get {
+                return this.task_IDField;
+            }
+            set {
+                this.task_IDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ToAreaNo {
+            get {
+                return this.toAreaNoField;
+            }
+            set {
+                this.toAreaNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialNo {
+            get {
+                return this.materialNoField;
+            }
+            set {
+                this.materialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDesc {
+            get {
+                return this.materialDescField;
+            }
+            set {
+                this.materialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialStd {
+            get {
+                return this.materialStdField;
+            }
+            set {
+                this.materialStdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal TaskQty {
+            get {
+                return this.taskQtyField;
+            }
+            set {
+                this.taskQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal QuanlityQty {
+            get {
+                return this.quanlityQtyField;
+            }
+            set {
+                this.quanlityQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal RemainQty {
+            get {
+                return this.remainQtyField;
+            }
+            set {
+                this.remainQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal ShelveQty {
+            get {
+                return this.shelveQtyField;
+            }
+            set {
+                this.shelveQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal ScanQty {
+            get {
+                return this.scanQtyField;
+            }
+            set {
+                this.scanQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IsQualityComp {
+            get {
+                return this.isQualityCompField;
+            }
+            set {
+                this.isQualityCompField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string QCUserNo {
+            get {
+                return this.qCUserNoField;
+            }
+            set {
+                this.qCUserNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime QCDateTime {
+            get {
+                return this.qCDateTimeField;
+            }
+            set {
+                this.qCDateTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string KeeperUserNo {
+            get {
+                return this.keeperUserNoField;
+            }
+            set {
+                this.keeperUserNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string OperatorUserNo {
+            get {
+                return this.operatorUserNoField;
+            }
+            set {
+                this.operatorUserNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime CompleteDateTime {
+            get {
+                return this.completeDateTimeField;
+            }
+            set {
+                this.completeDateTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TMaterialNo {
+            get {
+                return this.tMaterialNoField;
+            }
+            set {
+                this.tMaterialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TMaterialDesc {
+            get {
+                return this.tMaterialDescField;
+            }
+            set {
+                this.tMaterialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal OutStockQty {
+            get {
+                return this.outStockQtyField;
+            }
+            set {
+                this.outStockQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal ReviewQty {
+            get {
+                return this.reviewQtyField;
+            }
+            set {
+                this.reviewQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ReviewUserNo {
+            get {
+                return this.reviewUserNoField;
+            }
+            set {
+                this.reviewUserNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal UnQuanlityQty {
+            get {
+                return this.unQuanlityQtyField;
+            }
+            set {
+                this.unQuanlityQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string UnQuanlityReson {
+            get {
+                return this.unQuanlityResonField;
+            }
+            set {
+                this.unQuanlityResonField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal DeliveryQty {
+            get {
+                return this.deliveryQtyField;
+            }
+            set {
+                this.deliveryQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public TaskSerial_Model[] lstSerial {
+            get {
+                return this.lstSerialField;
+            }
+            set {
+                this.lstSerialField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Unit {
+            get {
+                return this.unitField;
+            }
+            set {
+                this.unitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IsROHS {
+            get {
+                return this.isROHSField;
+            }
+            set {
+                this.isROHSField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RowNo {
+            get {
+                return this.rowNoField;
+            }
+            set {
+                this.rowNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Plant {
+            get {
+                return this.plantField;
+            }
+            set {
+                this.plantField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PlantName {
+            get {
+                return this.plantNameField;
+            }
+            set {
+                this.plantNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StorageLoc {
+            get {
+                return this.storageLocField;
+            }
+            set {
+                this.storageLocField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VoucherNo {
+            get {
+                return this.voucherNoField;
+            }
+            set {
+                this.voucherNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal PackCount {
+            get {
+                return this.packCountField;
+            }
+            set {
+                this.packCountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int ScanPackCount {
+            get {
+                return this.scanPackCountField;
+            }
+            set {
+                this.scanPackCountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal RemainPackCount {
+            get {
+                return this.remainPackCountField;
+            }
+            set {
+                this.remainPackCountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal ShelvePackCount {
+            get {
+                return this.shelvePackCountField;
+            }
+            set {
+                this.shelvePackCountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal CurrentPostQty {
+            get {
+                return this.currentPostQtyField;
+            }
+            set {
+                this.currentPostQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal RemainStockQty {
+            get {
+                return this.remainStockQtyField;
+            }
+            set {
+                this.remainStockQtyField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Task_Model {
+        
+        private int idField;
+        
+        private int voucherTypeField;
+        
+        private string voucherTypeNameField;
+        
+        private int taskTypeField;
+        
+        private string taskNoField;
+        
+        private string supCusNameField;
+        
+        private int taskStatusField;
+        
+        private string statusNameField;
+        
+        private string auditUserNoField;
+        
+        private System.Nullable<System.DateTime> auditDateTimeField;
+        
+        private System.DateTime taskIssuedField;
+        
+        private string receiveUserNoField;
+        
+        private string receiveUserNameField;
+        
+        private System.DateTime createDateTimeField;
+        
+        private int isQualityField;
+        
+        private string remarkField;
+        
+        private string reasonField;
+        
+        private string supCusNoField;
+        
+        private string createUserNoField;
+        
+        private int receive_IDField;
+        
+        private string deliveryNoField;
+        
+        private int isReceivePostField;
+        
+        private int isShelvePostField;
+        
+        private string materialDocField;
+        
+        private string voucherNoField;
+        
+        private string shelvePostField;
+        
+        private TaskDetails_Model[] lstTaskDetailsField;
+        
+        private string plantField;
+        
+        private int postStatusField;
+        
+        private MaterialDoc_Model materialDocModelField;
+        
+        private string moveTypeField;
+        
+        private string wareHouseNoField;
+        
+        /// <remarks/>
+        public int ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int VoucherType {
+            get {
+                return this.voucherTypeField;
+            }
+            set {
+                this.voucherTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VoucherTypeName {
+            get {
+                return this.voucherTypeNameField;
+            }
+            set {
+                this.voucherTypeNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int TaskType {
+            get {
+                return this.taskTypeField;
+            }
+            set {
+                this.taskTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TaskNo {
+            get {
+                return this.taskNoField;
+            }
+            set {
+                this.taskNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SupCusName {
+            get {
+                return this.supCusNameField;
+            }
+            set {
+                this.supCusNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int TaskStatus {
+            get {
+                return this.taskStatusField;
+            }
+            set {
+                this.taskStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StatusName {
+            get {
+                return this.statusNameField;
+            }
+            set {
+                this.statusNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AuditUserNo {
+            get {
+                return this.auditUserNoField;
+            }
+            set {
+                this.auditUserNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> AuditDateTime {
+            get {
+                return this.auditDateTimeField;
+            }
+            set {
+                this.auditDateTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime TaskIssued {
+            get {
+                return this.taskIssuedField;
+            }
+            set {
+                this.taskIssuedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ReceiveUserNo {
+            get {
+                return this.receiveUserNoField;
+            }
+            set {
+                this.receiveUserNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ReceiveUserName {
+            get {
+                return this.receiveUserNameField;
+            }
+            set {
+                this.receiveUserNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime CreateDateTime {
+            get {
+                return this.createDateTimeField;
+            }
+            set {
+                this.createDateTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IsQuality {
+            get {
+                return this.isQualityField;
+            }
+            set {
+                this.isQualityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Remark {
+            get {
+                return this.remarkField;
+            }
+            set {
+                this.remarkField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Reason {
+            get {
+                return this.reasonField;
+            }
+            set {
+                this.reasonField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SupCusNo {
+            get {
+                return this.supCusNoField;
+            }
+            set {
+                this.supCusNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CreateUserNo {
+            get {
+                return this.createUserNoField;
+            }
+            set {
+                this.createUserNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Receive_ID {
+            get {
+                return this.receive_IDField;
+            }
+            set {
+                this.receive_IDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string DeliveryNo {
+            get {
+                return this.deliveryNoField;
+            }
+            set {
+                this.deliveryNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IsReceivePost {
+            get {
+                return this.isReceivePostField;
+            }
+            set {
+                this.isReceivePostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IsShelvePost {
+            get {
+                return this.isShelvePostField;
+            }
+            set {
+                this.isShelvePostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDoc {
+            get {
+                return this.materialDocField;
+            }
+            set {
+                this.materialDocField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VoucherNo {
+            get {
+                return this.voucherNoField;
+            }
+            set {
+                this.voucherNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ShelvePost {
+            get {
+                return this.shelvePostField;
+            }
+            set {
+                this.shelvePostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public TaskDetails_Model[] lstTaskDetails {
+            get {
+                return this.lstTaskDetailsField;
+            }
+            set {
+                this.lstTaskDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Plant {
+            get {
+                return this.plantField;
+            }
+            set {
+                this.plantField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int PostStatus {
+            get {
+                return this.postStatusField;
+            }
+            set {
+                this.postStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public MaterialDoc_Model materialDocModel {
+            get {
+                return this.materialDocModelField;
+            }
+            set {
+                this.materialDocModelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MoveType {
+            get {
+                return this.moveTypeField;
+            }
+            set {
+                this.moveTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WareHouseNo {
+            get {
+                return this.wareHouseNoField;
+            }
+            set {
+                this.wareHouseNoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class MaterialDoc_Model {
+        
+        private string materialDocField;
+        
+        private string materialDocDateField;
+        
+        private System.DateTime materialDocPostField;
+        
+        private int materialDocTypeField;
+        
+        /// <remarks/>
+        public string MaterialDoc {
+            get {
+                return this.materialDocField;
+            }
+            set {
+                this.materialDocField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDocDate {
+            get {
+                return this.materialDocDateField;
+            }
+            set {
+                this.materialDocDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime MaterialDocPost {
+            get {
+                return this.materialDocPostField;
+            }
+            set {
+                this.materialDocPostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int MaterialDocType {
+            get {
+                return this.materialDocTypeField;
+            }
+            set {
+                this.materialDocTypeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -13485,7 +13248,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -13794,7 +13557,28 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class BarcodeRule {
+        
+        private string[] fieldsField;
+        
+        /// <remarks/>
+        public string[] Fields {
+            get {
+                return this.fieldsField;
+            }
+            set {
+                this.fieldsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14091,7 +13875,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14364,7 +14148,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14409,7 +14193,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14490,7 +14274,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14667,7 +14451,1299 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class DividPage {
+        
+        private int recordCountsField;
+        
+        private int currentPageRecordCountsField;
+        
+        private int currentPageShowCountsField;
+        
+        private int currentPageNumberField;
+        
+        private int pagesCountField;
+        
+        /// <remarks/>
+        public int RecordCounts {
+            get {
+                return this.recordCountsField;
+            }
+            set {
+                this.recordCountsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CurrentPageRecordCounts {
+            get {
+                return this.currentPageRecordCountsField;
+            }
+            set {
+                this.currentPageRecordCountsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CurrentPageShowCounts {
+            get {
+                return this.currentPageShowCountsField;
+            }
+            set {
+                this.currentPageShowCountsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CurrentPageNumber {
+            get {
+                return this.currentPageNumberField;
+            }
+            set {
+                this.currentPageNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int PagesCount {
+            get {
+                return this.pagesCountField;
+            }
+            set {
+                this.pagesCountField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class ImportPrint_Model {
+        
+        private string barcodeField;
+        
+        private string materialNoField;
+        
+        private string materialDescField;
+        
+        private string materialStdField;
+        
+        private string warehouseNoField;
+        
+        private string houseNoField;
+        
+        private string areaNoField;
+        
+        private string warehouseNameField;
+        
+        private string houseNameField;
+        
+        private string areaNameField;
+        
+        private string snField;
+        
+        private decimal importQtyField;
+        
+        private decimal printQtyField;
+        
+        private string cvencodeField;
+        
+        private string cvennameField;
+        
+        /// <remarks/>
+        public string Barcode {
+            get {
+                return this.barcodeField;
+            }
+            set {
+                this.barcodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialNo {
+            get {
+                return this.materialNoField;
+            }
+            set {
+                this.materialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDesc {
+            get {
+                return this.materialDescField;
+            }
+            set {
+                this.materialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialStd {
+            get {
+                return this.materialStdField;
+            }
+            set {
+                this.materialStdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WarehouseNo {
+            get {
+                return this.warehouseNoField;
+            }
+            set {
+                this.warehouseNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HouseNo {
+            get {
+                return this.houseNoField;
+            }
+            set {
+                this.houseNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AreaNo {
+            get {
+                return this.areaNoField;
+            }
+            set {
+                this.areaNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WarehouseName {
+            get {
+                return this.warehouseNameField;
+            }
+            set {
+                this.warehouseNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HouseName {
+            get {
+                return this.houseNameField;
+            }
+            set {
+                this.houseNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AreaName {
+            get {
+                return this.areaNameField;
+            }
+            set {
+                this.areaNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SN {
+            get {
+                return this.snField;
+            }
+            set {
+                this.snField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal ImportQty {
+            get {
+                return this.importQtyField;
+            }
+            set {
+                this.importQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal PrintQty {
+            get {
+                return this.printQtyField;
+            }
+            set {
+                this.printQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string cvencode {
+            get {
+                return this.cvencodeField;
+            }
+            set {
+                this.cvencodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string cvenname {
+            get {
+                return this.cvennameField;
+            }
+            set {
+                this.cvennameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Stock_Model {
+        
+        private int stockTypeField;
+        
+        private string barcodeField;
+        
+        private string serialNoField;
+        
+        private string materialNoField;
+        
+        private string materialDescField;
+        
+        private string materialStdField;
+        
+        private string warehouseNoField;
+        
+        private string houseNoField;
+        
+        private string areaNoField;
+        
+        private double qtyField;
+        
+        private string tempMaterialNoField;
+        
+        private string tempMaterialDescField;
+        
+        private string pickAreaNoField;
+        
+        private string celAreaNoField;
+        
+        private string batchNoField;
+        
+        private string snField;
+        
+        private string createrField;
+        
+        private System.DateTime createTimeField;
+        
+        private string voucherNoField;
+        
+        private string strStockTypeField;
+        
+        private string warehouseNameField;
+        
+        private string houseNameField;
+        
+        private string areaNameField;
+        
+        private System.Nullable<System.DateTime> startTimeField;
+        
+        private System.Nullable<System.DateTime> endTimeField;
+        
+        private bool onlyOwnWarehouseField;
+        
+        private string productLineNoField;
+        
+        private double erpQtyField;
+        
+        private double saveQtyField;
+        
+        private double trayQtyField;
+        
+        private double totalQtyField;
+        
+        private string cvencodeField;
+        
+        private string cvennameField;
+        
+        /// <remarks/>
+        public int StockType {
+            get {
+                return this.stockTypeField;
+            }
+            set {
+                this.stockTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Barcode {
+            get {
+                return this.barcodeField;
+            }
+            set {
+                this.barcodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SerialNo {
+            get {
+                return this.serialNoField;
+            }
+            set {
+                this.serialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialNo {
+            get {
+                return this.materialNoField;
+            }
+            set {
+                this.materialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDesc {
+            get {
+                return this.materialDescField;
+            }
+            set {
+                this.materialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialStd {
+            get {
+                return this.materialStdField;
+            }
+            set {
+                this.materialStdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WarehouseNo {
+            get {
+                return this.warehouseNoField;
+            }
+            set {
+                this.warehouseNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HouseNo {
+            get {
+                return this.houseNoField;
+            }
+            set {
+                this.houseNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AreaNo {
+            get {
+                return this.areaNoField;
+            }
+            set {
+                this.areaNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Qty {
+            get {
+                return this.qtyField;
+            }
+            set {
+                this.qtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TempMaterialNo {
+            get {
+                return this.tempMaterialNoField;
+            }
+            set {
+                this.tempMaterialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TempMaterialDesc {
+            get {
+                return this.tempMaterialDescField;
+            }
+            set {
+                this.tempMaterialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PickAreaNo {
+            get {
+                return this.pickAreaNoField;
+            }
+            set {
+                this.pickAreaNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CelAreaNo {
+            get {
+                return this.celAreaNoField;
+            }
+            set {
+                this.celAreaNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BatchNo {
+            get {
+                return this.batchNoField;
+            }
+            set {
+                this.batchNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SN {
+            get {
+                return this.snField;
+            }
+            set {
+                this.snField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Creater {
+            get {
+                return this.createrField;
+            }
+            set {
+                this.createrField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime CreateTime {
+            get {
+                return this.createTimeField;
+            }
+            set {
+                this.createTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VoucherNo {
+            get {
+                return this.voucherNoField;
+            }
+            set {
+                this.voucherNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StrStockType {
+            get {
+                return this.strStockTypeField;
+            }
+            set {
+                this.strStockTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WarehouseName {
+            get {
+                return this.warehouseNameField;
+            }
+            set {
+                this.warehouseNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HouseName {
+            get {
+                return this.houseNameField;
+            }
+            set {
+                this.houseNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AreaName {
+            get {
+                return this.areaNameField;
+            }
+            set {
+                this.areaNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> StartTime {
+            get {
+                return this.startTimeField;
+            }
+            set {
+                this.startTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> EndTime {
+            get {
+                return this.endTimeField;
+            }
+            set {
+                this.endTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool OnlyOwnWarehouse {
+            get {
+                return this.onlyOwnWarehouseField;
+            }
+            set {
+                this.onlyOwnWarehouseField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ProductLineNo {
+            get {
+                return this.productLineNoField;
+            }
+            set {
+                this.productLineNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double ErpQty {
+            get {
+                return this.erpQtyField;
+            }
+            set {
+                this.erpQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double SaveQty {
+            get {
+                return this.saveQtyField;
+            }
+            set {
+                this.saveQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double TrayQty {
+            get {
+                return this.trayQtyField;
+            }
+            set {
+                this.trayQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double TotalQty {
+            get {
+                return this.totalQtyField;
+            }
+            set {
+                this.totalQtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string cvencode {
+            get {
+                return this.cvencodeField;
+            }
+            set {
+                this.cvencodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string cvenname {
+            get {
+                return this.cvennameField;
+            }
+            set {
+                this.cvennameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class ProductLabel_Model {
+        
+        private BarcodeRule barcoderuleField;
+        
+        private string idField;
+        
+        private string labeltypeField;
+        
+        private string materialnoField;
+        
+        private string materialdescField;
+        
+        private string ordercodeField;
+        
+        private string outpackqtyField;
+        
+        private string printdateField;
+        
+        private string barcodeField;
+        
+        private string invstdField;
+        
+        private string cUNameField;
+        
+        private string remarkField;
+        
+        private string packnoField;
+        
+        private string plantnoField;
+        
+        private string pOCodeField;
+        
+        private string sOCodeField;
+        
+        private string contractNoField;
+        
+        private string barcodeExpressField;
+        
+        private string barcodeEndField;
+        
+        private string localeField;
+        
+        private string qrbarcodeField;
+        
+        private string isOuterField;
+        
+        private int iMoSeqField;
+        
+        private string smallQRField;
+        
+        private string prdversionField;
+        
+        private string statusField;
+        
+        /// <remarks/>
+        public BarcodeRule barcoderule {
+            get {
+                return this.barcoderuleField;
+            }
+            set {
+                this.barcoderuleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string labeltype {
+            get {
+                return this.labeltypeField;
+            }
+            set {
+                this.labeltypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string materialno {
+            get {
+                return this.materialnoField;
+            }
+            set {
+                this.materialnoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string materialdesc {
+            get {
+                return this.materialdescField;
+            }
+            set {
+                this.materialdescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ordercode {
+            get {
+                return this.ordercodeField;
+            }
+            set {
+                this.ordercodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string outpackqty {
+            get {
+                return this.outpackqtyField;
+            }
+            set {
+                this.outpackqtyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string printdate {
+            get {
+                return this.printdateField;
+            }
+            set {
+                this.printdateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string barcode {
+            get {
+                return this.barcodeField;
+            }
+            set {
+                this.barcodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string invstd {
+            get {
+                return this.invstdField;
+            }
+            set {
+                this.invstdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CUName {
+            get {
+                return this.cUNameField;
+            }
+            set {
+                this.cUNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Remark {
+            get {
+                return this.remarkField;
+            }
+            set {
+                this.remarkField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string packno {
+            get {
+                return this.packnoField;
+            }
+            set {
+                this.packnoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string plantno {
+            get {
+                return this.plantnoField;
+            }
+            set {
+                this.plantnoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string POCode {
+            get {
+                return this.pOCodeField;
+            }
+            set {
+                this.pOCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SOCode {
+            get {
+                return this.sOCodeField;
+            }
+            set {
+                this.sOCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ContractNo {
+            get {
+                return this.contractNoField;
+            }
+            set {
+                this.contractNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BarcodeExpress {
+            get {
+                return this.barcodeExpressField;
+            }
+            set {
+                this.barcodeExpressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BarcodeEnd {
+            get {
+                return this.barcodeEndField;
+            }
+            set {
+                this.barcodeEndField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Locale {
+            get {
+                return this.localeField;
+            }
+            set {
+                this.localeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string qrbarcode {
+            get {
+                return this.qrbarcodeField;
+            }
+            set {
+                this.qrbarcodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IsOuter {
+            get {
+                return this.isOuterField;
+            }
+            set {
+                this.isOuterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int iMoSeq {
+            get {
+                return this.iMoSeqField;
+            }
+            set {
+                this.iMoSeqField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string smallQR {
+            get {
+                return this.smallQRField;
+            }
+            set {
+                this.smallQRField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string prdversion {
+            get {
+                return this.prdversionField;
+            }
+            set {
+                this.prdversionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class MaterialInnerLabel {
+        
+        private BarcodeRule barcoderuleField;
+        
+        private string iNVSTDField;
+        
+        private string barcodeField;
+        
+        private string pOCodeField;
+        
+        private string labelTypeField;
+        
+        private string mATERIALNOField;
+        
+        private string mATERIALDESCField;
+        
+        private string sUPCODEField;
+        
+        private string sUPNAMEField;
+        
+        private string printDateField;
+        
+        private string supBatchField;
+        
+        /// <remarks/>
+        public BarcodeRule barcoderule {
+            get {
+                return this.barcoderuleField;
+            }
+            set {
+                this.barcoderuleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string INVSTD {
+            get {
+                return this.iNVSTDField;
+            }
+            set {
+                this.iNVSTDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Barcode {
+            get {
+                return this.barcodeField;
+            }
+            set {
+                this.barcodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string POCode {
+            get {
+                return this.pOCodeField;
+            }
+            set {
+                this.pOCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string LabelType {
+            get {
+                return this.labelTypeField;
+            }
+            set {
+                this.labelTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MATERIALNO {
+            get {
+                return this.mATERIALNOField;
+            }
+            set {
+                this.mATERIALNOField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MATERIALDESC {
+            get {
+                return this.mATERIALDESCField;
+            }
+            set {
+                this.mATERIALDESCField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SUPCODE {
+            get {
+                return this.sUPCODEField;
+            }
+            set {
+                this.sUPCODEField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SUPNAME {
+            get {
+                return this.sUPNAMEField;
+            }
+            set {
+                this.sUPNAMEField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PrintDate {
+            get {
+                return this.printDateField;
+            }
+            set {
+                this.printDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SupBatch {
+            get {
+                return this.supBatchField;
+            }
+            set {
+                this.supBatchField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class MaterialOuterLabel {
+        
+        private BarcodeRule barcoderuleField;
+        
+        private string iNVSTDField;
+        
+        private string barcodeField;
+        
+        private string pOCodeField;
+        
+        private string labelTypeField;
+        
+        private string mATERIALNOField;
+        
+        private string mATERIALDESCField;
+        
+        private string sUPCODEField;
+        
+        private string sUPNAMEField;
+        
+        private string printDateField;
+        
+        private string supBatchField;
+        
+        private string oUTPACKQTYField;
+        
+        private string pACKNOField;
+        
+        /// <remarks/>
+        public BarcodeRule barcoderule {
+            get {
+                return this.barcoderuleField;
+            }
+            set {
+                this.barcoderuleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string INVSTD {
+            get {
+                return this.iNVSTDField;
+            }
+            set {
+                this.iNVSTDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Barcode {
+            get {
+                return this.barcodeField;
+            }
+            set {
+                this.barcodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string POCode {
+            get {
+                return this.pOCodeField;
+            }
+            set {
+                this.pOCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string LabelType {
+            get {
+                return this.labelTypeField;
+            }
+            set {
+                this.labelTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MATERIALNO {
+            get {
+                return this.mATERIALNOField;
+            }
+            set {
+                this.mATERIALNOField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MATERIALDESC {
+            get {
+                return this.mATERIALDESCField;
+            }
+            set {
+                this.mATERIALDESCField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SUPCODE {
+            get {
+                return this.sUPCODEField;
+            }
+            set {
+                this.sUPCODEField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SUPNAME {
+            get {
+                return this.sUPNAMEField;
+            }
+            set {
+                this.sUPNAMEField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PrintDate {
+            get {
+                return this.printDateField;
+            }
+            set {
+                this.printDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SupBatch {
+            get {
+                return this.supBatchField;
+            }
+            set {
+                this.supBatchField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string OUTPACKQTY {
+            get {
+                return this.oUTPACKQTYField;
+            }
+            set {
+                this.oUTPACKQTYField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PACKNO {
+            get {
+                return this.pACKNOField;
+            }
+            set {
+                this.pACKNOField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14760,7 +15836,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14817,7 +15893,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -16076,7 +17152,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -16134,7 +17210,7 @@ namespace Test.localhost {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ProfitLossInfo))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -16603,7 +17679,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -16648,21 +17724,23 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TempMaterialInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ReceiveTransInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(TaskTransInfo))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Building))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Preparation))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(HouseInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AreaInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CheckTransInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CheckInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(OverViewDetailInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(OverViewInfo))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TempMaterialInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(WarehouseInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(TreeInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(MenuInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(UserGroupInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(UserInfo))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -16819,197 +17897,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class TempMaterialInfo : BasicInfo {
-        
-        private string tempMaterialNoField;
-        
-        private string tempMaterialDescField;
-        
-        private string materialNoField;
-        
-        private string materialDescField;
-        
-        private string sapMaterialDocField;
-        
-        private string replaceUserField;
-        
-        private System.Nullable<System.DateTime> replaceTimeField;
-        
-        private int tempMaterialStatusField;
-        
-        private string statusField;
-        
-        private string typeField;
-        
-        private Dghead dgheadField;
-        
-        private string messageField;
-        
-        private string strTempMaterialStatusField;
-        
-        private string unitField;
-        
-        private int isRohsField;
-        
-        /// <remarks/>
-        public string TempMaterialNo {
-            get {
-                return this.tempMaterialNoField;
-            }
-            set {
-                this.tempMaterialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TempMaterialDesc {
-            get {
-                return this.tempMaterialDescField;
-            }
-            set {
-                this.tempMaterialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialNo {
-            get {
-                return this.materialNoField;
-            }
-            set {
-                this.materialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDesc {
-            get {
-                return this.materialDescField;
-            }
-            set {
-                this.materialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SapMaterialDoc {
-            get {
-                return this.sapMaterialDocField;
-            }
-            set {
-                this.sapMaterialDocField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ReplaceUser {
-            get {
-                return this.replaceUserField;
-            }
-            set {
-                this.replaceUserField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> ReplaceTime {
-            get {
-                return this.replaceTimeField;
-            }
-            set {
-                this.replaceTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int TempMaterialStatus {
-            get {
-                return this.tempMaterialStatusField;
-            }
-            set {
-                this.tempMaterialStatusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Type {
-            get {
-                return this.typeField;
-            }
-            set {
-                this.typeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Dghead Dghead {
-            get {
-                return this.dgheadField;
-            }
-            set {
-                this.dgheadField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Message {
-            get {
-                return this.messageField;
-            }
-            set {
-                this.messageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string StrTempMaterialStatus {
-            get {
-                return this.strTempMaterialStatusField;
-            }
-            set {
-                this.strTempMaterialStatusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Unit {
-            get {
-                return this.unitField;
-            }
-            set {
-                this.unitField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int IsRohs {
-            get {
-                return this.isRohsField;
-            }
-            set {
-                this.isRohsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -17234,7 +18122,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -17591,7 +18479,109 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Building : BasicInfo {
+        
+        private string bNameField;
+        
+        private string bNoField;
+        
+        private int iGradeField;
+        
+        private Preparation[] lstPField;
+        
+        /// <remarks/>
+        public string bName {
+            get {
+                return this.bNameField;
+            }
+            set {
+                this.bNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string bNo {
+            get {
+                return this.bNoField;
+            }
+            set {
+                this.bNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int iGrade {
+            get {
+                return this.iGradeField;
+            }
+            set {
+                this.iGradeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Preparation[] lstP {
+            get {
+                return this.lstPField;
+            }
+            set {
+                this.lstPField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Preparation : BasicInfo {
+        
+        private string pCodeField;
+        
+        private string pNameField;
+        
+        private int bidField;
+        
+        /// <remarks/>
+        public string pCode {
+            get {
+                return this.pCodeField;
+            }
+            set {
+                this.pCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string pName {
+            get {
+                return this.pNameField;
+            }
+            set {
+                this.pNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int bid {
+            get {
+                return this.bidField;
+            }
+            set {
+                this.bidField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -17864,7 +18854,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18125,7 +19115,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18410,7 +19400,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18709,7 +19699,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19081,7 +20071,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19549,7 +20539,197 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class TempMaterialInfo : BasicInfo {
+        
+        private string tempMaterialNoField;
+        
+        private string tempMaterialDescField;
+        
+        private string materialNoField;
+        
+        private string materialDescField;
+        
+        private string sapMaterialDocField;
+        
+        private string replaceUserField;
+        
+        private System.Nullable<System.DateTime> replaceTimeField;
+        
+        private int tempMaterialStatusField;
+        
+        private string statusField;
+        
+        private string typeField;
+        
+        private Dghead dgheadField;
+        
+        private string messageField;
+        
+        private string strTempMaterialStatusField;
+        
+        private string unitField;
+        
+        private int isRohsField;
+        
+        /// <remarks/>
+        public string TempMaterialNo {
+            get {
+                return this.tempMaterialNoField;
+            }
+            set {
+                this.tempMaterialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TempMaterialDesc {
+            get {
+                return this.tempMaterialDescField;
+            }
+            set {
+                this.tempMaterialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialNo {
+            get {
+                return this.materialNoField;
+            }
+            set {
+                this.materialNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MaterialDesc {
+            get {
+                return this.materialDescField;
+            }
+            set {
+                this.materialDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SapMaterialDoc {
+            get {
+                return this.sapMaterialDocField;
+            }
+            set {
+                this.sapMaterialDocField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ReplaceUser {
+            get {
+                return this.replaceUserField;
+            }
+            set {
+                this.replaceUserField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> ReplaceTime {
+            get {
+                return this.replaceTimeField;
+            }
+            set {
+                this.replaceTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int TempMaterialStatus {
+            get {
+                return this.tempMaterialStatusField;
+            }
+            set {
+                this.tempMaterialStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Dghead Dghead {
+            get {
+                return this.dgheadField;
+            }
+            set {
+                this.dgheadField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Message {
+            get {
+                return this.messageField;
+            }
+            set {
+                this.messageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StrTempMaterialStatus {
+            get {
+                return this.strTempMaterialStatusField;
+            }
+            set {
+                this.strTempMaterialStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Unit {
+            get {
+                return this.unitField;
+            }
+            set {
+                this.unitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IsRohs {
+            get {
+                return this.isRohsField;
+            }
+            set {
+                this.isRohsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19847,7 +21027,7 @@ namespace Test.localhost {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(MenuInfo))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20000,7 +21180,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20225,7 +21405,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20390,7 +21570,7 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20940,335 +22120,19 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class DividPage {
+    public partial class ComboBoxItem {
         
-        private int recordCountsField;
+        private int idField;
         
-        private int currentPageRecordCountsField;
-        
-        private int currentPageShowCountsField;
-        
-        private int currentPageNumberField;
-        
-        private int pagesCountField;
+        private string nameField;
         
         /// <remarks/>
-        public int RecordCounts {
-            get {
-                return this.recordCountsField;
-            }
-            set {
-                this.recordCountsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int CurrentPageRecordCounts {
-            get {
-                return this.currentPageRecordCountsField;
-            }
-            set {
-                this.currentPageRecordCountsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int CurrentPageShowCounts {
-            get {
-                return this.currentPageShowCountsField;
-            }
-            set {
-                this.currentPageShowCountsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int CurrentPageNumber {
-            get {
-                return this.currentPageNumberField;
-            }
-            set {
-                this.currentPageNumberField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int PagesCount {
-            get {
-                return this.pagesCountField;
-            }
-            set {
-                this.pagesCountField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class ImportPrint_Model {
-        
-        private string barcodeField;
-        
-        private string materialNoField;
-        
-        private string materialDescField;
-        
-        private string materialStdField;
-        
-        private string warehouseNoField;
-        
-        private string houseNoField;
-        
-        private string areaNoField;
-        
-        private string warehouseNameField;
-        
-        private string houseNameField;
-        
-        private string areaNameField;
-        
-        private string snField;
-        
-        private decimal importQtyField;
-        
-        private decimal printQtyField;
-        
-        private string cvencodeField;
-        
-        private string cvennameField;
-        
-        /// <remarks/>
-        public string Barcode {
-            get {
-                return this.barcodeField;
-            }
-            set {
-                this.barcodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialNo {
-            get {
-                return this.materialNoField;
-            }
-            set {
-                this.materialNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialDesc {
-            get {
-                return this.materialDescField;
-            }
-            set {
-                this.materialDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MaterialStd {
-            get {
-                return this.materialStdField;
-            }
-            set {
-                this.materialStdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WarehouseNo {
-            get {
-                return this.warehouseNoField;
-            }
-            set {
-                this.warehouseNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HouseNo {
-            get {
-                return this.houseNoField;
-            }
-            set {
-                this.houseNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string AreaNo {
-            get {
-                return this.areaNoField;
-            }
-            set {
-                this.areaNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WarehouseName {
-            get {
-                return this.warehouseNameField;
-            }
-            set {
-                this.warehouseNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HouseName {
-            get {
-                return this.houseNameField;
-            }
-            set {
-                this.houseNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string AreaName {
-            get {
-                return this.areaNameField;
-            }
-            set {
-                this.areaNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SN {
-            get {
-                return this.snField;
-            }
-            set {
-                this.snField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal ImportQty {
-            get {
-                return this.importQtyField;
-            }
-            set {
-                this.importQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal PrintQty {
-            get {
-                return this.printQtyField;
-            }
-            set {
-                this.printQtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string cvencode {
-            get {
-                return this.cvencodeField;
-            }
-            set {
-                this.cvencodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string cvenname {
-            get {
-                return this.cvennameField;
-            }
-            set {
-                this.cvennameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class ProductLabel_Model {
-        
-        private BarcodeRule barcoderuleField;
-        
-        private string idField;
-        
-        private string labeltypeField;
-        
-        private string materialnoField;
-        
-        private string materialdescField;
-        
-        private string ordercodeField;
-        
-        private string outpackqtyField;
-        
-        private string printdateField;
-        
-        private string barcodeField;
-        
-        private string invstdField;
-        
-        private string cUNameField;
-        
-        private string remarkField;
-        
-        private string packnoField;
-        
-        private string plantnoField;
-        
-        private string pOCodeField;
-        
-        private string sOCodeField;
-        
-        private string contractNoField;
-        
-        private string barcodeExpressField;
-        
-        private string barcodeEndField;
-        
-        private string localeField;
-        
-        private string qrbarcodeField;
-        
-        private string isOuterField;
-        
-        private int iMoSeqField;
-        
-        private string smallQRField;
-        
-        private string prdversionField;
-        
-        private string statusField;
-        
-        /// <remarks/>
-        public BarcodeRule barcoderule {
-            get {
-                return this.barcoderuleField;
-            }
-            set {
-                this.barcoderuleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ID {
+        public int ID {
             get {
                 return this.idField;
             }
@@ -21278,252 +22142,454 @@ namespace Test.localhost {
         }
         
         /// <remarks/>
-        public string labeltype {
+        public string Name {
             get {
-                return this.labeltypeField;
+                return this.nameField;
             }
             set {
-                this.labeltypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string materialno {
-            get {
-                return this.materialnoField;
-            }
-            set {
-                this.materialnoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string materialdesc {
-            get {
-                return this.materialdescField;
-            }
-            set {
-                this.materialdescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ordercode {
-            get {
-                return this.ordercodeField;
-            }
-            set {
-                this.ordercodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string outpackqty {
-            get {
-                return this.outpackqtyField;
-            }
-            set {
-                this.outpackqtyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string printdate {
-            get {
-                return this.printdateField;
-            }
-            set {
-                this.printdateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string barcode {
-            get {
-                return this.barcodeField;
-            }
-            set {
-                this.barcodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string invstd {
-            get {
-                return this.invstdField;
-            }
-            set {
-                this.invstdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CUName {
-            get {
-                return this.cUNameField;
-            }
-            set {
-                this.cUNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Remark {
-            get {
-                return this.remarkField;
-            }
-            set {
-                this.remarkField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string packno {
-            get {
-                return this.packnoField;
-            }
-            set {
-                this.packnoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string plantno {
-            get {
-                return this.plantnoField;
-            }
-            set {
-                this.plantnoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string POCode {
-            get {
-                return this.pOCodeField;
-            }
-            set {
-                this.pOCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SOCode {
-            get {
-                return this.sOCodeField;
-            }
-            set {
-                this.sOCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ContractNo {
-            get {
-                return this.contractNoField;
-            }
-            set {
-                this.contractNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string BarcodeExpress {
-            get {
-                return this.barcodeExpressField;
-            }
-            set {
-                this.barcodeExpressField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string BarcodeEnd {
-            get {
-                return this.barcodeEndField;
-            }
-            set {
-                this.barcodeEndField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Locale {
-            get {
-                return this.localeField;
-            }
-            set {
-                this.localeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string qrbarcode {
-            get {
-                return this.qrbarcodeField;
-            }
-            set {
-                this.qrbarcodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string IsOuter {
-            get {
-                return this.isOuterField;
-            }
-            set {
-                this.isOuterField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int iMoSeq {
-            get {
-                return this.iMoSeqField;
-            }
-            set {
-                this.iMoSeqField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string smallQR {
-            get {
-                return this.smallQRField;
-            }
-            set {
-                this.smallQRField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string prdversion {
-            get {
-                return this.prdversionField;
-            }
-            set {
-                this.prdversionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
+                this.nameField = value;
             }
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetOutSideByDeliveryToSRMCompletedEventHandler(object sender, GetOutSideByDeliveryToSRMCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOutSideByDeliveryToSRMCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOutSideByDeliveryToSRMCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public DeliveryReceive_Model DeliveryModel {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DeliveryReceive_Model)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void CreateShelveTaskTestCompletedEventHandler(object sender, CreateShelveTaskTestCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CreateShelveTaskTestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CreateShelveTaskTestCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strTaskNo {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void TestReadDataCompletedEventHandler(object sender, TestReadDataCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TestReadDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TestReadDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet ds {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void WriteLogCompletedEventHandler(object sender, WriteLogCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class WriteLogCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal WriteLogCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void TestMaterialOuterLabelCompletedEventHandler(object sender, TestMaterialOuterLabelCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TestMaterialOuterLabelCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TestMaterialOuterLabelCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void TestMaterialInnerLabelCompletedEventHandler(object sender, TestMaterialInnerLabelCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TestMaterialInnerLabelCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TestMaterialInnerLabelCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void TestProductLabelCompletedEventHandler(object sender, TestProductLabelCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TestProductLabelCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TestProductLabelCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void CheckSerialNoCompletedEventHandler(object sender, CheckSerialNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CheckSerialNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CheckSerialNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void CreateInnerProductBarcodeCompletedEventHandler(object sender, CreateInnerProductBarcodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CreateInnerProductBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CreateInnerProductBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public ProductLabel_Model[] label_lst {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ProductLabel_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void CreateOuterProductBarcodeCompletedEventHandler(object sender, CreateOuterProductBarcodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CreateOuterProductBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CreateOuterProductBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public ProductLabel_Model[] label_lst {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ProductLabel_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ImportStockCompletedEventHandler(object sender, ImportStockCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ImportStockCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ImportStockCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void RemoveStockCompletedEventHandler(object sender, RemoveStockCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class RemoveStockCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal RemoveStockCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void CreateInitialProductBarcodeCompletedEventHandler(object sender, CreateInitialProductBarcodeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CreateInitialProductBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21561,11 +22627,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetplantnoForPrintCompletedEventHandler(object sender, GetplantnoForPrintCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetplantnoForPrintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21603,11 +22669,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetImportPrintStockByPageCompletedEventHandler(object sender, GetImportPrintStockByPageCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetImportPrintStockByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21653,11 +22719,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetSysTimeCompletedEventHandler(object sender, GetSysTimeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetSysTimeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21679,11 +22745,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void RePrintByBarcodeCompletedEventHandler(object sender, RePrintByBarcodeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RePrintByBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21721,11 +22787,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void RePrintChangeSaveCompletedEventHandler(object sender, RePrintChangeSaveCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RePrintChangeSaveCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21755,11 +22821,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void PrintDeleteCompletedEventHandler(object sender, PrintDeleteCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PrintDeleteCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21789,11 +22855,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void CreateInnerProductBarcodeForReadCompletedEventHandler(object sender, CreateInnerProductBarcodeForReadCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CreateInnerProductBarcodeForReadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21831,11 +22897,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void SaveInnerProductBarcodeForReadCompletedEventHandler(object sender, SaveInnerProductBarcodeForReadCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SaveInnerProductBarcodeForReadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21865,11 +22931,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void CreateeOuterProductBarcodeForReadCompletedEventHandler(object sender, CreateeOuterProductBarcodeForReadCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CreateeOuterProductBarcodeForReadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21915,11 +22981,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void SaveOuterProductBarcodeForReadCompletedEventHandler(object sender, SaveOuterProductBarcodeForReadCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SaveOuterProductBarcodeForReadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21949,11 +23015,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void NewCheckSerialNoCompletedEventHandler(object sender, NewCheckSerialNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class NewCheckSerialNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -21983,11 +23049,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void QueryPrintSerialNoCompletedEventHandler(object sender, QueryPrintSerialNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QueryPrintSerialNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22025,11 +23091,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetPrintedProductCountCompletedEventHandler(object sender, GetPrintedProductCountCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetPrintedProductCountCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22067,11 +23133,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void QueryBarcodeDetailsReportCompletedEventHandler(object sender, QueryBarcodeDetailsReportCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QueryBarcodeDetailsReportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22109,11 +23175,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void QueryBarcodeDetailsReportRowDetailCompletedEventHandler(object sender, QueryBarcodeDetailsReportRowDetailCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QueryBarcodeDetailsReportRowDetailCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22151,11 +23217,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetSaleBillVouchCodeByCustomerCompletedEventHandler(object sender, GetSaleBillVouchCodeByCustomerCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetSaleBillVouchCodeByCustomerCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22193,11 +23259,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetSaleBillVouchByCodeCompletedEventHandler(object sender, GetSaleBillVouchByCodeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetSaleBillVouchByCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22235,11 +23301,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetOldSaleBillVouchCompletedEventHandler(object sender, GetOldSaleBillVouchCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetOldSaleBillVouchCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22277,11 +23343,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetSaleBillDetailsForTransCompletedEventHandler(object sender, GetSaleBillDetailsForTransCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetSaleBillDetailsForTransCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22319,11 +23385,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void SaveTempTransCompletedEventHandler(object sender, SaveTempTransCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SaveTempTransCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22353,11 +23419,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void VerifyTempTransCompletedEventHandler(object sender, VerifyTempTransCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VerifyTempTransCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22387,11 +23453,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void DelTempTransCompletedEventHandler(object sender, DelTempTransCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DelTempTransCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22421,11 +23487,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GiveUpTempTransCompletedEventHandler(object sender, GiveUpTempTransCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GiveUpTempTransCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22455,11 +23521,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void QueryTempTransCompletedEventHandler(object sender, QueryTempTransCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QueryTempTransCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22497,11 +23563,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void CreateAutomaticProductBarcodeCompletedEventHandler(object sender, CreateAutomaticProductBarcodeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CreateAutomaticProductBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22531,11 +23597,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void QueryBarcodeTraceReportCompletedEventHandler(object sender, QueryBarcodeTraceReportCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QueryBarcodeTraceReportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22573,11 +23639,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void QueryBarcodeTraceReportRowDetailCompletedEventHandler(object sender, QueryBarcodeTraceReportRowDetailCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QueryBarcodeTraceReportRowDetailCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22615,11 +23681,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetAutomaticProductByBarcodeCompletedEventHandler(object sender, GetAutomaticProductByBarcodeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetAutomaticProductByBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22657,11 +23723,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetPULstForPrintCompletedEventHandler(object sender, GetPULstForPrintCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetPULstForPrintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22691,11 +23757,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void VendorLoginCompletedEventHandler(object sender, VendorLoginCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VendorLoginCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22717,11 +23783,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void VenGetPULstForPrintCompletedEventHandler(object sender, VenGetPULstForPrintCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VenGetPULstForPrintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22751,11 +23817,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void QueryStockSumByWHcodeCompletedEventHandler(object sender, QueryStockSumByWHcodeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QueryStockSumByWHcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22793,11 +23859,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void CreateMaterialBarcodeForPUCompletedEventHandler(object sender, CreateMaterialBarcodeForPUCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CreateMaterialBarcodeForPUCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22835,11 +23901,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void VenQueryPrintLstCompletedEventHandler(object sender, VenQueryPrintLstCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VenQueryPrintLstCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22877,11 +23943,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void VenQueryPrintDetailsCompletedEventHandler(object sender, VenQueryPrintDetailsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VenQueryPrintDetailsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22919,11 +23985,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void VendorChangePWCompletedEventHandler(object sender, VendorChangePWCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VendorChangePWCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22945,11 +24011,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetImportMaterialStockByPageCompletedEventHandler(object sender, GetImportMaterialStockByPageCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetImportMaterialStockByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -22995,11 +24061,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void ImportMaterialStockCompletedEventHandler(object sender, ImportMaterialStockCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ImportMaterialStockCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -23029,11 +24095,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void CreateInitialMaterialBarcodeCompletedEventHandler(object sender, CreateInitialMaterialBarcodeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CreateInitialMaterialBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -23071,11 +24137,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetOMLstForPrintCompletedEventHandler(object sender, GetOMLstForPrintCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetOMLstForPrintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -23105,11 +24171,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void CreateMaterialBarcodeForOMCompletedEventHandler(object sender, CreateMaterialBarcodeForOMCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CreateMaterialBarcodeForOMCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -23147,11 +24213,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetMaterialLabelInfoCompletedEventHandler(object sender, GetMaterialLabelInfoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetMaterialLabelInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -23189,11 +24255,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void CreateMaterialBarcodeForNullCompletedEventHandler(object sender, CreateMaterialBarcodeForNullCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CreateMaterialBarcodeForNullCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -23231,11 +24297,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void CheckbProxyWhBycWhCodeCompletedEventHandler(object sender, CheckbProxyWhBycWhCodeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CheckbProxyWhBycWhCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -23265,11 +24331,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetVendorByCodeCompletedEventHandler(object sender, GetVendorByCodeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetVendorByCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -23307,11 +24373,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void QueryMaterialBarcodeReportCompletedEventHandler(object sender, QueryMaterialBarcodeReportCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QueryMaterialBarcodeReportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -23349,11 +24415,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void QueryMaterialBarcodeReportRowDetailCompletedEventHandler(object sender, QueryMaterialBarcodeReportRowDetailCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class QueryMaterialBarcodeReportRowDetailCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -23391,5837 +24457,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetTaskMainListByPageCompletedEventHandler(object sender, GetTaskMainListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetTaskMainListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetTaskMainListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public OverViewInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((OverViewInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetTaskDetailListByPageCompletedEventHandler(object sender, GetTaskDetailListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetTaskDetailListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetTaskDetailListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public OverViewDetailInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((OverViewDetailInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetOverViewExportListByPageCompletedEventHandler(object sender, GetOverViewExportListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetOverViewExportListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetOverViewExportListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public OverViewExportInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((OverViewExportInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetProductionInfoForPrintCompletedEventHandler(object sender, GetProductionInfoForPrintCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetProductionInfoForPrintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetProductionInfoForPrintCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model[] lstBarcode {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetFastInInfoForPrintCompletedEventHandler(object sender, GetFastInInfoForPrintCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetFastInInfoForPrintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetFastInInfoForPrintCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model[] lstBarcode {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveOutBarcodeCompletedEventHandler(object sender, SaveOutBarcodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveOutBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveOutBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void PrintQualityCompletedEventHandler(object sender, PrintQualityCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class PrintQualityCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal PrintQualityCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void PrintBarcodeCompletedEventHandler(object sender, PrintBarcodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class PrintBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal PrintBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetPrintRecordListByPageCompletedEventHandler(object sender, GetPrintRecordListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetPrintRecordListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetPrintRecordListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetStockBarcodeListByPageCompletedEventHandler(object sender, GetStockBarcodeListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetStockBarcodeListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetStockBarcodeListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveCheckCompletedEventHandler(object sender, SaveCheckCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveCheckCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveCheckCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void DeleteCheckByIDCompletedEventHandler(object sender, DeleteCheckByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class DeleteCheckByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal DeleteCheckByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckByIDCompletedEventHandler(object sender, GetCheckByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckListByPageCompletedEventHandler(object sender, GetCheckListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckDetailsByIDCompletedEventHandler(object sender, GetCheckDetailsByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckDetailsByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckDetailsByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckDetailsInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckDetailsInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckDetailsListByPageCompletedEventHandler(object sender, GetCheckDetailsListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckDetailsListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckDetailsListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckDetailsInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckDetailsInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckDetailsSelectListByPageCompletedEventHandler(object sender, GetCheckDetailsSelectListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckDetailsSelectListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckDetailsSelectListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckDetailsInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckDetailsInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveCheckTransCompletedEventHandler(object sender, SaveCheckTransCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveCheckTransCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveCheckTransCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckTransInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckTransInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckListForAndroidCompletedEventHandler(object sender, GetCheckListForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckListForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckListForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveCheckTransScanCompletedEventHandler(object sender, SaveCheckTransScanCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveCheckTransScanCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveCheckTransScanCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveCheckOmitAddCompletedEventHandler(object sender, SaveCheckOmitAddCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveCheckOmitAddCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveCheckOmitAddCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveCheckTransForAndroidCompletedEventHandler(object sender, SaveCheckTransForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveCheckTransForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveCheckTransForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveCheckTransListForAndroidCompletedEventHandler(object sender, SaveCheckTransListForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveCheckTransListForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveCheckTransListForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckTransListByPageCompletedEventHandler(object sender, GetCheckTransListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckTransListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckTransListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckTransInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckTransInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UpdateCheckStatusByIDCompletedEventHandler(object sender, UpdateCheckStatusByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpdateCheckStatusByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpdateCheckStatusByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckScanTransForAndroidCompletedEventHandler(object sender, GetCheckScanTransForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckScanTransForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckScanTransForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ProfitLossAnalyseCompletedEventHandler(object sender, ProfitLossAnalyseCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ProfitLossAnalyseCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ProfitLossAnalyseCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckDetailsInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckDetailsInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void VerifyCheckStockChangeCompletedEventHandler(object sender, VerifyCheckStockChangeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class VerifyCheckStockChangeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal VerifyCheckStockChangeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ProfitLossDealCompletedEventHandler(object sender, ProfitLossDealCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ProfitLossDealCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ProfitLossDealCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckAnalyseListByPageCompletedEventHandler(object sender, GetCheckAnalyseListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckAnalyseListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckAnalyseListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckDetailsInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckDetailsInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetBarcodeInfoForAndroidCompletedEventHandler(object sender, GetBarcodeInfoForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetBarcodeInfoForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetBarcodeInfoForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckBarcodeInfoCompletedEventHandler(object sender, GetCheckBarcodeInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckBarcodeInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckBarcodeInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public Barcode_Model Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckAreaForAndroidCompletedEventHandler(object sender, GetCheckAreaForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckAreaForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckAreaForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCheckBarcodeForAndroidCompletedEventHandler(object sender, GetCheckBarcodeForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCheckBarcodeForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCheckBarcodeForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetProfitLossListByPageCompletedEventHandler(object sender, GetProfitLossListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetProfitLossListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetProfitLossListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public ProfitLossInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((ProfitLossInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ReCheckByCheckCompletedEventHandler(object sender, ReCheckByCheckCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ReCheckByCheckCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ReCheckByCheckCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public CheckInfo reCheck {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CheckInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetDeliveryInfoToSRMCompletedEventHandler(object sender, GetDeliveryInfoToSRMCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetDeliveryInfoToSRMCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetDeliveryInfoToSRMCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public DeliveryReceive_Model DeliveryModel {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DeliveryReceive_Model)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetOutBarcodeListByBarcodeCompletedEventHandler(object sender, GetOutBarcodeListByBarcodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetOutBarcodeListByBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetOutBarcodeListByBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model[] lstOutBarcode {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetOutBarcodeListByPageCompletedEventHandler(object sender, GetOutBarcodeListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetOutBarcodeListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetOutBarcodeListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void CreateBarcodeInfoCompletedEventHandler(object sender, CreateBarcodeInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CreateBarcodeInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CreateBarcodeInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model[] lstBarcode {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetOutBarcodeInfoCompletedEventHandler(object sender, GetOutBarcodeInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetOutBarcodeInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetOutBarcodeInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model[] lstBarcode {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model[])(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetOutbarcodeByIDCompletedEventHandler(object sender, GetOutbarcodeByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetOutbarcodeByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetOutbarcodeByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetInnerBarcodeInfoByOutBarcodeIdCompletedEventHandler(object sender, GetInnerBarcodeInfoByOutBarcodeIdCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetInnerBarcodeInfoByOutBarcodeIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetInnerBarcodeInfoByOutBarcodeIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Barcode_Model innerBarcode {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Barcode_Model)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetTrayInfoByTrayIDCompletedEventHandler(object sender, GetTrayInfoByTrayIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetTrayInfoByTrayIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetTrayInfoByTrayIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Tray_Model tray {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Tray_Model)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UpdateTrayInfoCompletedEventHandler(object sender, UpdateTrayInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpdateTrayInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpdateTrayInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UpdateTrayInfoForOutCompletedEventHandler(object sender, UpdateTrayInfoForOutCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpdateTrayInfoForOutCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpdateTrayInfoForOutCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UpdateTrayInfoTestCompletedEventHandler(object sender, UpdateTrayInfoTestCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpdateTrayInfoTestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpdateTrayInfoTestCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetDeliveryInfoForAndroidCompletedEventHandler(object sender, GetDeliveryInfoForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetDeliveryInfoForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetDeliveryInfoForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetInnerBarcodeListByOutBarcodeListCompletedEventHandler(object sender, GetInnerBarcodeListByOutBarcodeListCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetInnerBarcodeListByOutBarcodeListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetInnerBarcodeListByOutBarcodeListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public InnerBarcode_Model[] lstInnerBarcode {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((InnerBarcode_Model[])(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetBarCodeInfoCompletedEventHandler(object sender, GetBarCodeInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetBarCodeInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetBarCodeInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetBarCodeInfoForRefuseArrivalCompletedEventHandler(object sender, GetBarCodeInfoForRefuseArrivalCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetBarCodeInfoForRefuseArrivalCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetBarCodeInfoForRefuseArrivalCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetWarehouseInfoCompletedEventHandler(object sender, GetWarehouseInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetWarehouseInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetWarehouseInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void PostReceiveGoodsInfoCompletedEventHandler(object sender, PostReceiveGoodsInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class PostReceiveGoodsInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal PostReceiveGoodsInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ResetBarCodeCompletedEventHandler(object sender, ResetBarCodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ResetBarCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ResetBarCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetTaskInfoCompletedEventHandler(object sender, GetTaskInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetTaskInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetTaskInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetQulitiedTaskDetailsInfoCompletedEventHandler(object sender, GetQulitiedTaskDetailsInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetQulitiedTaskDetailsInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetQulitiedTaskDetailsInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetProductTransTaskInfoCompletedEventHandler(object sender, GetProductTransTaskInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetProductTransTaskInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetProductTransTaskInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void CreateQuanlityReturnVoucherCompletedEventHandler(object sender, CreateQuanlityReturnVoucherCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CreateQuanlityReturnVoucherCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CreateQuanlityReturnVoucherCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void InStockCompletedEventHandler(object sender, InStockCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class InStockCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal InStockCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void CheckBarCodeIsInStockCompletedEventHandler(object sender, CheckBarCodeIsInStockCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CheckBarCodeIsInStockCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CheckBarCodeIsInStockCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void LockTaskOperUserCompletedEventHandler(object sender, LockTaskOperUserCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class LockTaskOperUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal LockTaskOperUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UnLockTaskOperUserCompletedEventHandler(object sender, UnLockTaskOperUserCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UnLockTaskOperUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UnLockTaskOperUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void CheckAreaCompletedEventHandler(object sender, CheckAreaCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CheckAreaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CheckAreaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveQualityDetailInfoCompletedEventHandler(object sender, SaveQualityDetailInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveQualityDetailInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveQualityDetailInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetQualityListByPageCompletedEventHandler(object sender, GetQualityListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetQualityListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetQualityListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public DeliveryReceive_Model[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DeliveryReceive_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetQualityDetailInfoCompletedEventHandler(object sender, GetQualityDetailInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetQualityDetailInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetQualityDetailInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public DeliveryReceiveDetail_Model[] lstDeliveryDetailInfo {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DeliveryReceiveDetail_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetQualityDetailListByPageCompletedEventHandler(object sender, GetQualityDetailListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetQualityDetailListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetQualityDetailListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public DeliveryReceiveDetail_Model[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DeliveryReceiveDetail_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetQualityExportListByPageCompletedEventHandler(object sender, GetQualityExportListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetQualityExportListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetQualityExportListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public QuanlityExportInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((QuanlityExportInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetStockInfoCompletedEventHandler(object sender, GetStockInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetStockInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetStockInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetStockInfoDistrCompletedEventHandler(object sender, GetStockInfoDistrCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetStockInfoDistrCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetStockInfoDistrCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetStockInfoByBarcodeCompletedEventHandler(object sender, GetStockInfoByBarcodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetStockInfoByBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetStockInfoByBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetStockByAreaNoCompletedEventHandler(object sender, GetStockByAreaNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetStockByAreaNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetStockByAreaNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetSupplierInfoForU8CompletedEventHandler(object sender, GetSupplierInfoForU8CompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetSupplierInfoForU8CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetSupplierInfoForU8CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Supplier_Model SupplierInfo {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Supplier_Model)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetOutSideByDeliveryToSRMCompletedEventHandler(object sender, GetOutSideByDeliveryToSRMCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetOutSideByDeliveryToSRMCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetOutSideByDeliveryToSRMCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public DeliveryReceive_Model DeliveryModel {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DeliveryReceive_Model)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void CreateShelveTaskTestCompletedEventHandler(object sender, CreateShelveTaskTestCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CreateShelveTaskTestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CreateShelveTaskTestCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strTaskNo {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void WriteLogCompletedEventHandler(object sender, WriteLogCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class WriteLogCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal WriteLogCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void TestMaterialOuterLabelCompletedEventHandler(object sender, TestMaterialOuterLabelCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class TestMaterialOuterLabelCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal TestMaterialOuterLabelCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void TestMaterialInnerLabelCompletedEventHandler(object sender, TestMaterialInnerLabelCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class TestMaterialInnerLabelCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal TestMaterialInnerLabelCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void TestProductLabelCompletedEventHandler(object sender, TestProductLabelCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class TestProductLabelCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal TestProductLabelCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void CheckSerialNoCompletedEventHandler(object sender, CheckSerialNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CheckSerialNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CheckSerialNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void CreateInnerProductBarcodeCompletedEventHandler(object sender, CreateInnerProductBarcodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CreateInnerProductBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CreateInnerProductBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public ProductLabel_Model[] label_lst {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((ProductLabel_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void CreateOuterProductBarcodeCompletedEventHandler(object sender, CreateOuterProductBarcodeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CreateOuterProductBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CreateOuterProductBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public ProductLabel_Model[] label_lst {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((ProductLabel_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ImportStockCompletedEventHandler(object sender, ImportStockCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ImportStockCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ImportStockCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void RemoveStockCompletedEventHandler(object sender, RemoveStockCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class RemoveStockCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal RemoveStockCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void HelloWorldCompletedEventHandler(object sender, HelloWorldCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class HelloWorldCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal HelloWorldCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetComboBoxItemCompletedEventHandler(object sender, GetComboBoxItemCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetComboBoxItemCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetComboBoxItemCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public ComboBoxItem[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((ComboBoxItem[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetComboBoxItemByKeyCompletedEventHandler(object sender, GetComboBoxItemByKeyCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetComboBoxItemByKeyCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetComboBoxItemByKeyCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public ComboBoxItem[] comboxBoxItemList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((ComboBoxItem[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void VerifyVersionCompletedEventHandler(object sender, VerifyVersionCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class VerifyVersionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal VerifyVersionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void VerifyAppVersionCompletedEventHandler(object sender, VerifyAppVersionCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class VerifyAppVersionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal VerifyAppVersionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public AppVersionInfo appversion {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((AppVersionInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetAppVersionByVersionCompletedEventHandler(object sender, GetAppVersionByVersionCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetAppVersionByVersionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetAppVersionByVersionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public AppVersionInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((AppVersionInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UserLoginCompletedEventHandler(object sender, UserLoginCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UserLoginCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UserLoginCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public UserInfo user {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((UserInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UpdateLoginTimeCompletedEventHandler(object sender, UpdateLoginTimeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpdateLoginTimeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpdateLoginTimeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public UserInfo user {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((UserInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ChangeUserPasswordCompletedEventHandler(object sender, ChangeUserPasswordCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ChangeUserPasswordCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ChangeUserPasswordCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ClearLoginTimeCompletedEventHandler(object sender, ClearLoginTimeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ClearLoginTimeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ClearLoginTimeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UserLoginForAndroidCompletedEventHandler(object sender, UserLoginForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UserLoginForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UserLoginForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UpdateLoginTimeForAndroidCompletedEventHandler(object sender, UpdateLoginTimeForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpdateLoginTimeForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpdateLoginTimeForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ChangeUserPasswordForAndroidCompletedEventHandler(object sender, ChangeUserPasswordForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ChangeUserPasswordForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ChangeUserPasswordForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ClearLoginTimeForAndroidCompletedEventHandler(object sender, ClearLoginTimeForAndroidCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ClearLoginTimeForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ClearLoginTimeForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ExistsUserNoCompletedEventHandler(object sender, ExistsUserNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ExistsUserNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ExistsUserNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveUserCompletedEventHandler(object sender, SaveUserCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public UserInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((UserInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void DeleteUserByIDCompletedEventHandler(object sender, DeleteUserByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class DeleteUserByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal DeleteUserByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetUserByIDCompletedEventHandler(object sender, GetUserByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetUserByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetUserByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public UserInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((UserInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetUserListByPageCompletedEventHandler(object sender, GetUserListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetUserListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetUserListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public UserInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((UserInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetMenuListByUserCompletedEventHandler(object sender, GetMenuListByUserCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetMenuListByUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetMenuListByUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public MenuInfo[] menuList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((MenuInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetUserGroupListByUserCompletedEventHandler(object sender, GetUserGroupListByUserCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetUserGroupListByUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetUserGroupListByUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public UserGroupInfo[] usergroupList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((UserGroupInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetWarehouseListByUserCompletedEventHandler(object sender, GetWarehouseListByUserCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetWarehouseListByUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetWarehouseListByUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public WarehouseInfo[] warehouseList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((WarehouseInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ExistsWarehouseNoCompletedEventHandler(object sender, ExistsWarehouseNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ExistsWarehouseNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ExistsWarehouseNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveWarehouseCompletedEventHandler(object sender, SaveWarehouseCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveWarehouseCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveWarehouseCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public WarehouseInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((WarehouseInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void DeleteWarehouseByIDCompletedEventHandler(object sender, DeleteWarehouseByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class DeleteWarehouseByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal DeleteWarehouseByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetWarehouseByIDCompletedEventHandler(object sender, GetWarehouseByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetWarehouseByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetWarehouseByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public WarehouseInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((WarehouseInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetWarehouseListByPageCompletedEventHandler(object sender, GetWarehouseListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetWarehouseListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetWarehouseListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public WarehouseInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((WarehouseInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetWarehouseListCompletedEventHandler(object sender, GetWarehouseListCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetWarehouseListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetWarehouseListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public WarehouseInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((WarehouseInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ExistsHouseNoCompletedEventHandler(object sender, ExistsHouseNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ExistsHouseNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ExistsHouseNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveHouseCompletedEventHandler(object sender, SaveHouseCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveHouseCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveHouseCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public HouseInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((HouseInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void DeleteHouseByIDCompletedEventHandler(object sender, DeleteHouseByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class DeleteHouseByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal DeleteHouseByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetHouseByIDCompletedEventHandler(object sender, GetHouseByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetHouseByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetHouseByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public HouseInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((HouseInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetHouseListByPageCompletedEventHandler(object sender, GetHouseListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetHouseListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetHouseListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public HouseInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((HouseInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetHouseListCompletedEventHandler(object sender, GetHouseListCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetHouseListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetHouseListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public HouseInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((HouseInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ExistsAreaNoCompletedEventHandler(object sender, ExistsAreaNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ExistsAreaNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ExistsAreaNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetAreaInfoCompletedEventHandler(object sender, GetAreaInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetAreaInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetAreaInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetAreaInfoByAreaNoCompletedEventHandler(object sender, GetAreaInfoByAreaNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetAreaInfoByAreaNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetAreaInfoByAreaNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public AreaInfo Info {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((AreaInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveAreaCompletedEventHandler(object sender, SaveAreaCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveAreaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveAreaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public AreaInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((AreaInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void DeleteAreaByIDCompletedEventHandler(object sender, DeleteAreaByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class DeleteAreaByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal DeleteAreaByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetAreaByIDCompletedEventHandler(object sender, GetAreaByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetAreaByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetAreaByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public AreaInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((AreaInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetAreaListByPageCompletedEventHandler(object sender, GetAreaListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetAreaListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetAreaListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public AreaInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((AreaInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetAreaListCompletedEventHandler(object sender, GetAreaListCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetAreaListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetAreaListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public AreaInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((AreaInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ExistsUserGroupNoCompletedEventHandler(object sender, ExistsUserGroupNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ExistsUserGroupNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ExistsUserGroupNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveUserGroupCompletedEventHandler(object sender, SaveUserGroupCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveUserGroupCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveUserGroupCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public UserGroupInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((UserGroupInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void DeleteUserGroupByIDCompletedEventHandler(object sender, DeleteUserGroupByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class DeleteUserGroupByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal DeleteUserGroupByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetUserGroupByIDCompletedEventHandler(object sender, GetUserGroupByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetUserGroupByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetUserGroupByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public UserGroupInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((UserGroupInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetUserGroupListByPageCompletedEventHandler(object sender, GetUserGroupListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetUserGroupListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetUserGroupListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public UserGroupInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((UserGroupInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetMenuListByUserGroupCompletedEventHandler(object sender, GetMenuListByUserGroupCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetMenuListByUserGroupCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetMenuListByUserGroupCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public MenuInfo[] menuList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((MenuInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveUserGroupMenuToDBCompletedEventHandler(object sender, SaveUserGroupMenuToDBCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveUserGroupMenuToDBCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveUserGroupMenuToDBCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetParentMenuByMenuCompletedEventHandler(object sender, GetParentMenuByMenuCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetParentMenuByMenuCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetParentMenuByMenuCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public ComboBoxItem[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((ComboBoxItem[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void ExistsMenuNoCompletedEventHandler(object sender, ExistsMenuNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ExistsMenuNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ExistsMenuNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveMenuCompletedEventHandler(object sender, SaveMenuCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveMenuCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveMenuCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public MenuInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((MenuInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void DeleteMenuByIDCompletedEventHandler(object sender, DeleteMenuByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class DeleteMenuByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal DeleteMenuByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetMenuByIDCompletedEventHandler(object sender, GetMenuByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetMenuByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetMenuByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public MenuInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((MenuInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetMenuListByPageCompletedEventHandler(object sender, GetMenuListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetMenuListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetMenuListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public MenuInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((MenuInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetMenuNoCompletedEventHandler(object sender, GetMenuNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetMenuNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetMenuNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public MenuInfo model {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((MenuInfo)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void CheckImportTableCompletedEventHandler(object sender, CheckImportTableCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CheckImportTableCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CheckImportTableCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UpLoadSqlCompletedEventHandler(object sender, UpLoadSqlCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpLoadSqlCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpLoadSqlCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetTaskTransListByPageCompletedEventHandler(object sender, GetTaskTransListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetTaskTransListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetTaskTransListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public TaskTransInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((TaskTransInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetReceiveTransListByPageCompletedEventHandler(object sender, GetReceiveTransListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetReceiveTransListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetReceiveTransListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public ReceiveTransInfo[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((ReceiveTransInfo[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetStockListByPageCompletedEventHandler(object sender, GetStockListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetStockListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetStockListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Stock_Model[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Stock_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCapacityForWMSCompletedEventHandler(object sender, GetCapacityForWMSCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCapacityForWMSCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCapacityForWMSCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Stock_Model[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Stock_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetCapacityByProductLineNoCompletedEventHandler(object sender, GetCapacityByProductLineNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetCapacityByProductLineNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetCapacityByProductLineNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetStockDetailListByPageCompletedEventHandler(object sender, GetStockDetailListByPageCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetStockDetailListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetStockDetailListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Stock_Model[] modelList {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Stock_Model[])(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage page {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strError {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void QueryFastInListCompletedEventHandler(object sender, QueryFastInListCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class QueryFastInListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal QueryFastInListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public DividPage dividpage {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((DividPage)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public Task_Model[] lsttask {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Task_Model[])(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetNewTASKNOCompletedEventHandler(object sender, GetNewTASKNOCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetNewTASKNOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetNewTASKNOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string TASKNO {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SaveFastInCompletedEventHandler(object sender, SaveFastInCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SaveFastInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SaveFastInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void SavePostFastInCompletedEventHandler(object sender, SavePostFastInCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class SavePostFastInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal SavePostFastInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void DeleteFastInCompletedEventHandler(object sender, DeleteFastInCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class DeleteFastInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal DeleteFastInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetFastInByIDCompletedEventHandler(object sender, GetFastInByIDCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetFastInByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetFastInByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public Task_Model head {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((Task_Model)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public TaskVoucher tv {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((TaskVoucher)(this.results[2]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[3]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UpdateFastInCompletedEventHandler(object sender, UpdateFastInCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpdateFastInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpdateFastInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void UpdatePostFastInCompletedEventHandler(object sender, UpdatePostFastInCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class UpdatePostFastInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal UpdatePostFastInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    public delegate void GetVoucherByNoCompletedEventHandler(object sender, GetVoucherByNoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetVoucherByNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetVoucherByNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public TaskVoucher tv {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((TaskVoucher)(this.results[1]));
-            }
-        }
-        
-        /// <remarks/>
-        public string strErrMsg {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[2]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetFastInNotHavePOInfoCompletedEventHandler(object sender, GetFastInNotHavePOInfoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetFastInNotHavePOInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29267,11 +24507,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void InsetMaterialDetailCompletedEventHandler(object sender, InsetMaterialDetailCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InsetMaterialDetailCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29301,11 +24541,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetTempMaterialNameCompletedEventHandler(object sender, GetTempMaterialNameCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetTempMaterialNameCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29335,11 +24575,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void ExistsTempMaterialByMaterialNoCompletedEventHandler(object sender, ExistsTempMaterialByMaterialNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ExistsTempMaterialByMaterialNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29361,11 +24601,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetTempMaterialByTempNoCompletedEventHandler(object sender, GetTempMaterialByTempNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetTempMaterialByTempNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29403,11 +24643,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void ExistsTempMaterialNoCompletedEventHandler(object sender, ExistsTempMaterialNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ExistsTempMaterialNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29437,11 +24677,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void SaveTempMaterialCompletedEventHandler(object sender, SaveTempMaterialCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SaveTempMaterialCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29479,11 +24719,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void DeleteTempMaterialByIDCompletedEventHandler(object sender, DeleteTempMaterialByIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class DeleteTempMaterialByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29513,11 +24753,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetTempMaterialByIDCompletedEventHandler(object sender, GetTempMaterialByIDCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetTempMaterialByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29555,11 +24795,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetTempMaterialListByPageCompletedEventHandler(object sender, GetTempMaterialListByPageCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetTempMaterialListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29605,11 +24845,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetMaterialInfoCompletedEventHandler(object sender, GetMaterialInfoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetMaterialInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29647,11 +24887,11 @@ namespace Test.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void GetTempMaterialNoCompletedEventHandler(object sender, GetTempMaterialNoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1038.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetTempMaterialNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -29681,6 +24921,5922 @@ namespace Test.localhost {
         
         /// <remarks/>
         public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetTaskMainListByPageCompletedEventHandler(object sender, GetTaskMainListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetTaskMainListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetTaskMainListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public OverViewInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((OverViewInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetTaskDetailListByPageCompletedEventHandler(object sender, GetTaskDetailListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetTaskDetailListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetTaskDetailListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public OverViewDetailInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((OverViewDetailInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetOverViewExportListByPageCompletedEventHandler(object sender, GetOverViewExportListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOverViewExportListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOverViewExportListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public OverViewExportInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((OverViewExportInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetProductionInfoForPrintCompletedEventHandler(object sender, GetProductionInfoForPrintCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetProductionInfoForPrintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetProductionInfoForPrintCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model[] lstBarcode {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetFastInInfoForPrintCompletedEventHandler(object sender, GetFastInInfoForPrintCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetFastInInfoForPrintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetFastInInfoForPrintCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model[] lstBarcode {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveOutBarcodeCompletedEventHandler(object sender, SaveOutBarcodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveOutBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveOutBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void PrintQualityCompletedEventHandler(object sender, PrintQualityCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class PrintQualityCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal PrintQualityCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void PrintBarcodeCompletedEventHandler(object sender, PrintBarcodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class PrintBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal PrintBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetPrintRecordListByPageCompletedEventHandler(object sender, GetPrintRecordListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetPrintRecordListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetPrintRecordListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetStockBarcodeListByPageCompletedEventHandler(object sender, GetStockBarcodeListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetStockBarcodeListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetStockBarcodeListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveCheckCompletedEventHandler(object sender, SaveCheckCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveCheckCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveCheckCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DeleteCheckByIDCompletedEventHandler(object sender, DeleteCheckByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DeleteCheckByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DeleteCheckByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckByIDCompletedEventHandler(object sender, GetCheckByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckListByPageCompletedEventHandler(object sender, GetCheckListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckDetailsByIDCompletedEventHandler(object sender, GetCheckDetailsByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckDetailsByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckDetailsByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckDetailsInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckDetailsInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckDetailsListByPageCompletedEventHandler(object sender, GetCheckDetailsListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckDetailsListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckDetailsListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckDetailsInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckDetailsInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckDetailsSelectListByPageCompletedEventHandler(object sender, GetCheckDetailsSelectListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckDetailsSelectListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckDetailsSelectListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckDetailsInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckDetailsInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveCheckTransCompletedEventHandler(object sender, SaveCheckTransCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveCheckTransCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveCheckTransCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckTransInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckTransInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckListForAndroidCompletedEventHandler(object sender, GetCheckListForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckListForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckListForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveCheckTransScanCompletedEventHandler(object sender, SaveCheckTransScanCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveCheckTransScanCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveCheckTransScanCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveCheckOmitAddCompletedEventHandler(object sender, SaveCheckOmitAddCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveCheckOmitAddCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveCheckOmitAddCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveCheckTransForAndroidCompletedEventHandler(object sender, SaveCheckTransForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveCheckTransForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveCheckTransForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveCheckTransListForAndroidCompletedEventHandler(object sender, SaveCheckTransListForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveCheckTransListForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveCheckTransListForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckTransListByPageCompletedEventHandler(object sender, GetCheckTransListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckTransListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckTransListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckTransInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckTransInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UpdateCheckStatusByIDCompletedEventHandler(object sender, UpdateCheckStatusByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdateCheckStatusByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdateCheckStatusByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckScanTransForAndroidCompletedEventHandler(object sender, GetCheckScanTransForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckScanTransForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckScanTransForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ProfitLossAnalyseCompletedEventHandler(object sender, ProfitLossAnalyseCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ProfitLossAnalyseCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ProfitLossAnalyseCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckDetailsInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckDetailsInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void VerifyCheckStockChangeCompletedEventHandler(object sender, VerifyCheckStockChangeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class VerifyCheckStockChangeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal VerifyCheckStockChangeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ProfitLossDealCompletedEventHandler(object sender, ProfitLossDealCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ProfitLossDealCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ProfitLossDealCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckAnalyseListByPageCompletedEventHandler(object sender, GetCheckAnalyseListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckAnalyseListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckAnalyseListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckDetailsInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckDetailsInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetBarcodeInfoForAndroidCompletedEventHandler(object sender, GetBarcodeInfoForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBarcodeInfoForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBarcodeInfoForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckBarcodeInfoCompletedEventHandler(object sender, GetCheckBarcodeInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckBarcodeInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckBarcodeInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Barcode_Model Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckAreaForAndroidCompletedEventHandler(object sender, GetCheckAreaForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckAreaForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckAreaForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCheckBarcodeForAndroidCompletedEventHandler(object sender, GetCheckBarcodeForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCheckBarcodeForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCheckBarcodeForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetProfitLossListByPageCompletedEventHandler(object sender, GetProfitLossListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetProfitLossListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetProfitLossListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public ProfitLossInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ProfitLossInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ReCheckByCheckCompletedEventHandler(object sender, ReCheckByCheckCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ReCheckByCheckCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ReCheckByCheckCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public CheckInfo reCheck {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CheckInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetDeliveryInfoToSRMCompletedEventHandler(object sender, GetDeliveryInfoToSRMCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetDeliveryInfoToSRMCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetDeliveryInfoToSRMCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public DeliveryReceive_Model DeliveryModel {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DeliveryReceive_Model)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetOutBarcodeListByBarcodeCompletedEventHandler(object sender, GetOutBarcodeListByBarcodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOutBarcodeListByBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOutBarcodeListByBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model[] lstOutBarcode {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetOutBarcodeListByPageCompletedEventHandler(object sender, GetOutBarcodeListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOutBarcodeListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOutBarcodeListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void CreateBarcodeInfoCompletedEventHandler(object sender, CreateBarcodeInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CreateBarcodeInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CreateBarcodeInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model[] lstBarcode {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetOutBarcodeInfoCompletedEventHandler(object sender, GetOutBarcodeInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOutBarcodeInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOutBarcodeInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model[] lstBarcode {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model[])(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetOutbarcodeByIDCompletedEventHandler(object sender, GetOutbarcodeByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOutbarcodeByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOutbarcodeByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetInnerBarcodeInfoByOutBarcodeIdCompletedEventHandler(object sender, GetInnerBarcodeInfoByOutBarcodeIdCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetInnerBarcodeInfoByOutBarcodeIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetInnerBarcodeInfoByOutBarcodeIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Barcode_Model innerBarcode {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Barcode_Model)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetTrayInfoByTrayIDCompletedEventHandler(object sender, GetTrayInfoByTrayIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetTrayInfoByTrayIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetTrayInfoByTrayIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Tray_Model tray {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Tray_Model)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UpdateTrayInfoCompletedEventHandler(object sender, UpdateTrayInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdateTrayInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdateTrayInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UpdateTrayInfoForOutCompletedEventHandler(object sender, UpdateTrayInfoForOutCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdateTrayInfoForOutCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdateTrayInfoForOutCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UpdateTrayInfoTestCompletedEventHandler(object sender, UpdateTrayInfoTestCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdateTrayInfoTestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdateTrayInfoTestCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetDeliveryInfoForAndroidCompletedEventHandler(object sender, GetDeliveryInfoForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetDeliveryInfoForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetDeliveryInfoForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetInnerBarcodeListByOutBarcodeListCompletedEventHandler(object sender, GetInnerBarcodeListByOutBarcodeListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetInnerBarcodeListByOutBarcodeListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetInnerBarcodeListByOutBarcodeListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public InnerBarcode_Model[] lstInnerBarcode {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InnerBarcode_Model[])(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetBarCodeInfoCompletedEventHandler(object sender, GetBarCodeInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBarCodeInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBarCodeInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetBarCodeInfoForRefuseArrivalCompletedEventHandler(object sender, GetBarCodeInfoForRefuseArrivalCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBarCodeInfoForRefuseArrivalCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBarCodeInfoForRefuseArrivalCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetWarehouseInfoCompletedEventHandler(object sender, GetWarehouseInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetWarehouseInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetWarehouseInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void PostReceiveGoodsInfoCompletedEventHandler(object sender, PostReceiveGoodsInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class PostReceiveGoodsInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal PostReceiveGoodsInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ResetBarCodeCompletedEventHandler(object sender, ResetBarCodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ResetBarCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ResetBarCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetTaskInfoCompletedEventHandler(object sender, GetTaskInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetTaskInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetTaskInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetQulitiedTaskDetailsInfoCompletedEventHandler(object sender, GetQulitiedTaskDetailsInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetQulitiedTaskDetailsInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetQulitiedTaskDetailsInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetProductTransTaskInfoCompletedEventHandler(object sender, GetProductTransTaskInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetProductTransTaskInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetProductTransTaskInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void CreateQuanlityReturnVoucherCompletedEventHandler(object sender, CreateQuanlityReturnVoucherCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CreateQuanlityReturnVoucherCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CreateQuanlityReturnVoucherCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void InStockCompletedEventHandler(object sender, InStockCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class InStockCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal InStockCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void CheckBarCodeIsInStockCompletedEventHandler(object sender, CheckBarCodeIsInStockCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CheckBarCodeIsInStockCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CheckBarCodeIsInStockCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void LockTaskOperUserCompletedEventHandler(object sender, LockTaskOperUserCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class LockTaskOperUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal LockTaskOperUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UnLockTaskOperUserCompletedEventHandler(object sender, UnLockTaskOperUserCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UnLockTaskOperUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UnLockTaskOperUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void CheckAreaCompletedEventHandler(object sender, CheckAreaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CheckAreaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CheckAreaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveQualityDetailInfoCompletedEventHandler(object sender, SaveQualityDetailInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveQualityDetailInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveQualityDetailInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetQualityListByPageCompletedEventHandler(object sender, GetQualityListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetQualityListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetQualityListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public DeliveryReceive_Model[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DeliveryReceive_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetQualityDetailInfoCompletedEventHandler(object sender, GetQualityDetailInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetQualityDetailInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetQualityDetailInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public DeliveryReceiveDetail_Model[] lstDeliveryDetailInfo {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DeliveryReceiveDetail_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetQualityDetailListByPageCompletedEventHandler(object sender, GetQualityDetailListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetQualityDetailListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetQualityDetailListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public DeliveryReceiveDetail_Model[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DeliveryReceiveDetail_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetQualityExportListByPageCompletedEventHandler(object sender, GetQualityExportListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetQualityExportListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetQualityExportListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public QuanlityExportInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((QuanlityExportInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetStockInfoCompletedEventHandler(object sender, GetStockInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetStockInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetStockInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetStockInfoDistrCompletedEventHandler(object sender, GetStockInfoDistrCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetStockInfoDistrCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetStockInfoDistrCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetStockInfoByBarcodeCompletedEventHandler(object sender, GetStockInfoByBarcodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetStockInfoByBarcodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetStockInfoByBarcodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetStockByAreaNoCompletedEventHandler(object sender, GetStockByAreaNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetStockByAreaNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetStockByAreaNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetSupplierInfoForU8CompletedEventHandler(object sender, GetSupplierInfoForU8CompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetSupplierInfoForU8CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetSupplierInfoForU8CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Supplier_Model SupplierInfo {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Supplier_Model)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void HelloWorldCompletedEventHandler(object sender, HelloWorldCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class HelloWorldCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal HelloWorldCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetComboBoxItemCompletedEventHandler(object sender, GetComboBoxItemCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetComboBoxItemCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetComboBoxItemCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ComboBoxItem[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ComboBoxItem[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetComboBoxItemByKeyCompletedEventHandler(object sender, GetComboBoxItemByKeyCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetComboBoxItemByKeyCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetComboBoxItemByKeyCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public ComboBoxItem[] comboxBoxItemList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ComboBoxItem[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void VerifyVersionCompletedEventHandler(object sender, VerifyVersionCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class VerifyVersionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal VerifyVersionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void VerifyAppVersionCompletedEventHandler(object sender, VerifyAppVersionCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class VerifyAppVersionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal VerifyAppVersionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public AppVersionInfo appversion {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AppVersionInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetAppVersionByVersionCompletedEventHandler(object sender, GetAppVersionByVersionCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAppVersionByVersionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAppVersionByVersionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public AppVersionInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AppVersionInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UserLoginCompletedEventHandler(object sender, UserLoginCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UserLoginCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UserLoginCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public UserInfo user {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((UserInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UpdateLoginTimeCompletedEventHandler(object sender, UpdateLoginTimeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdateLoginTimeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdateLoginTimeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public UserInfo user {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((UserInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ChangeUserPasswordCompletedEventHandler(object sender, ChangeUserPasswordCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ChangeUserPasswordCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ChangeUserPasswordCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ClearLoginTimeCompletedEventHandler(object sender, ClearLoginTimeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ClearLoginTimeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ClearLoginTimeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UserLoginForAndroidCompletedEventHandler(object sender, UserLoginForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UserLoginForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UserLoginForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UpdateLoginTimeForAndroidCompletedEventHandler(object sender, UpdateLoginTimeForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdateLoginTimeForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdateLoginTimeForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ChangeUserPasswordForAndroidCompletedEventHandler(object sender, ChangeUserPasswordForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ChangeUserPasswordForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ChangeUserPasswordForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ClearLoginTimeForAndroidCompletedEventHandler(object sender, ClearLoginTimeForAndroidCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ClearLoginTimeForAndroidCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ClearLoginTimeForAndroidCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ExistsUserNoCompletedEventHandler(object sender, ExistsUserNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ExistsUserNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ExistsUserNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveUserCompletedEventHandler(object sender, SaveUserCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public UserInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((UserInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DeleteUserByIDCompletedEventHandler(object sender, DeleteUserByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DeleteUserByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DeleteUserByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetUserByIDCompletedEventHandler(object sender, GetUserByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetUserByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetUserByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public UserInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((UserInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetUserListByPageCompletedEventHandler(object sender, GetUserListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetUserListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetUserListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public UserInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((UserInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetMenuListByUserCompletedEventHandler(object sender, GetMenuListByUserCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetMenuListByUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetMenuListByUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public MenuInfo[] menuList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((MenuInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetUserGroupListByUserCompletedEventHandler(object sender, GetUserGroupListByUserCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetUserGroupListByUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetUserGroupListByUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public UserGroupInfo[] usergroupList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((UserGroupInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetWarehouseListByUserCompletedEventHandler(object sender, GetWarehouseListByUserCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetWarehouseListByUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetWarehouseListByUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public WarehouseInfo[] warehouseList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((WarehouseInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ExistsWarehouseNoCompletedEventHandler(object sender, ExistsWarehouseNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ExistsWarehouseNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ExistsWarehouseNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveWarehouseCompletedEventHandler(object sender, SaveWarehouseCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveWarehouseCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveWarehouseCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public WarehouseInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((WarehouseInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DeleteWarehouseByIDCompletedEventHandler(object sender, DeleteWarehouseByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DeleteWarehouseByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DeleteWarehouseByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetWarehouseByIDCompletedEventHandler(object sender, GetWarehouseByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetWarehouseByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetWarehouseByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public WarehouseInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((WarehouseInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetWarehouseListByPageCompletedEventHandler(object sender, GetWarehouseListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetWarehouseListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetWarehouseListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public WarehouseInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((WarehouseInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetWarehouseListCompletedEventHandler(object sender, GetWarehouseListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetWarehouseListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetWarehouseListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public WarehouseInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((WarehouseInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ExistsHouseNoCompletedEventHandler(object sender, ExistsHouseNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ExistsHouseNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ExistsHouseNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveHouseCompletedEventHandler(object sender, SaveHouseCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveHouseCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveHouseCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public HouseInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((HouseInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DeleteHouseByIDCompletedEventHandler(object sender, DeleteHouseByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DeleteHouseByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DeleteHouseByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetHouseByIDCompletedEventHandler(object sender, GetHouseByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetHouseByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetHouseByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public HouseInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((HouseInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetHouseListByPageCompletedEventHandler(object sender, GetHouseListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetHouseListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetHouseListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public HouseInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((HouseInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetHouseListCompletedEventHandler(object sender, GetHouseListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetHouseListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetHouseListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public HouseInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((HouseInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ExistsAreaNoCompletedEventHandler(object sender, ExistsAreaNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ExistsAreaNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ExistsAreaNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetAreaInfoCompletedEventHandler(object sender, GetAreaInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAreaInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAreaInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetAreaInfoByAreaNoCompletedEventHandler(object sender, GetAreaInfoByAreaNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAreaInfoByAreaNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAreaInfoByAreaNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public AreaInfo Info {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AreaInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveAreaCompletedEventHandler(object sender, SaveAreaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveAreaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveAreaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public AreaInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AreaInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DeleteAreaByIDCompletedEventHandler(object sender, DeleteAreaByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DeleteAreaByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DeleteAreaByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetAreaByIDCompletedEventHandler(object sender, GetAreaByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAreaByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAreaByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public AreaInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AreaInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetAreaListByPageCompletedEventHandler(object sender, GetAreaListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAreaListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAreaListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public AreaInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AreaInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetAreaListCompletedEventHandler(object sender, GetAreaListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAreaListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAreaListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public AreaInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AreaInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ExistsUserGroupNoCompletedEventHandler(object sender, ExistsUserGroupNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ExistsUserGroupNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ExistsUserGroupNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveUserGroupCompletedEventHandler(object sender, SaveUserGroupCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveUserGroupCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveUserGroupCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public UserGroupInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((UserGroupInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DeleteUserGroupByIDCompletedEventHandler(object sender, DeleteUserGroupByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DeleteUserGroupByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DeleteUserGroupByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetUserGroupByIDCompletedEventHandler(object sender, GetUserGroupByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetUserGroupByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetUserGroupByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public UserGroupInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((UserGroupInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetUserGroupListByPageCompletedEventHandler(object sender, GetUserGroupListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetUserGroupListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetUserGroupListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public UserGroupInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((UserGroupInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetMenuListByUserGroupCompletedEventHandler(object sender, GetMenuListByUserGroupCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetMenuListByUserGroupCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetMenuListByUserGroupCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public MenuInfo[] menuList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((MenuInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveUserGroupMenuToDBCompletedEventHandler(object sender, SaveUserGroupMenuToDBCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveUserGroupMenuToDBCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveUserGroupMenuToDBCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetParentMenuByMenuCompletedEventHandler(object sender, GetParentMenuByMenuCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetParentMenuByMenuCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetParentMenuByMenuCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ComboBoxItem[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ComboBoxItem[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ExistsMenuNoCompletedEventHandler(object sender, ExistsMenuNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ExistsMenuNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ExistsMenuNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveMenuCompletedEventHandler(object sender, SaveMenuCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveMenuCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveMenuCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public MenuInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((MenuInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DeleteMenuByIDCompletedEventHandler(object sender, DeleteMenuByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DeleteMenuByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DeleteMenuByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetMenuByIDCompletedEventHandler(object sender, GetMenuByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetMenuByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetMenuByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public MenuInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((MenuInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetMenuListByPageCompletedEventHandler(object sender, GetMenuListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetMenuListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetMenuListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public MenuInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((MenuInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetMenuNoCompletedEventHandler(object sender, GetMenuNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetMenuNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetMenuNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public MenuInfo model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((MenuInfo)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ExistspCodeCompletedEventHandler(object sender, ExistspCodeCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ExistspCodeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ExistspCodeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SavePreparationCompletedEventHandler(object sender, SavePreparationCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SavePreparationCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SavePreparationCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Preparation model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Preparation)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DeletePreparationByIDCompletedEventHandler(object sender, DeletePreparationByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DeletePreparationByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DeletePreparationByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetPreparationByIDCompletedEventHandler(object sender, GetPreparationByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetPreparationByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetPreparationByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Preparation model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Preparation)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetPreparationListByPageCompletedEventHandler(object sender, GetPreparationListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetPreparationListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetPreparationListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Preparation[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Preparation[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetPreparationListCompletedEventHandler(object sender, GetPreparationListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetPreparationListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetPreparationListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Preparation[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Preparation[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ExistsbNoCompletedEventHandler(object sender, ExistsbNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ExistsbNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ExistsbNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveBuildingCompletedEventHandler(object sender, SaveBuildingCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveBuildingCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveBuildingCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Building model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Building)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DeleteBuildingByIDCompletedEventHandler(object sender, DeleteBuildingByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DeleteBuildingByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DeleteBuildingByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetBuildingByIDCompletedEventHandler(object sender, GetBuildingByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBuildingByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBuildingByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Building model {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Building)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetBuildingListByPageCompletedEventHandler(object sender, GetBuildingListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBuildingListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBuildingListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Building[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Building[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetBuildingListCompletedEventHandler(object sender, GetBuildingListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetBuildingListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetBuildingListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Building[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Building[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void CheckImportTableCompletedEventHandler(object sender, CheckImportTableCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CheckImportTableCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CheckImportTableCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UpLoadSqlCompletedEventHandler(object sender, UpLoadSqlCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpLoadSqlCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpLoadSqlCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetTaskTransListByPageCompletedEventHandler(object sender, GetTaskTransListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetTaskTransListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetTaskTransListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public TaskTransInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((TaskTransInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetReceiveTransListByPageCompletedEventHandler(object sender, GetReceiveTransListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetReceiveTransListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetReceiveTransListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public ReceiveTransInfo[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ReceiveTransInfo[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetStockListByPageCompletedEventHandler(object sender, GetStockListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetStockListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetStockListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Stock_Model[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Stock_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCapacityForWMSCompletedEventHandler(object sender, GetCapacityForWMSCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCapacityForWMSCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCapacityForWMSCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Stock_Model[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Stock_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetCapacityByProductLineNoCompletedEventHandler(object sender, GetCapacityByProductLineNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetCapacityByProductLineNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetCapacityByProductLineNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetStockDetailListByPageCompletedEventHandler(object sender, GetStockDetailListByPageCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetStockDetailListByPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetStockDetailListByPageCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Stock_Model[] modelList {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Stock_Model[])(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage page {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strError {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void QueryFastInListCompletedEventHandler(object sender, QueryFastInListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class QueryFastInListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal QueryFastInListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public DividPage dividpage {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((DividPage)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public Task_Model[] lsttask {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Task_Model[])(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetNewTASKNOCompletedEventHandler(object sender, GetNewTASKNOCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetNewTASKNOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetNewTASKNOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string TASKNO {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[2]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SaveFastInCompletedEventHandler(object sender, SaveFastInCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SaveFastInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SaveFastInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void SavePostFastInCompletedEventHandler(object sender, SavePostFastInCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SavePostFastInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SavePostFastInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DeleteFastInCompletedEventHandler(object sender, DeleteFastInCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DeleteFastInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DeleteFastInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetFastInByIDCompletedEventHandler(object sender, GetFastInByIDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetFastInByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetFastInByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public Task_Model head {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Task_Model)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public TaskVoucher tv {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((TaskVoucher)(this.results[2]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[3]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UpdateFastInCompletedEventHandler(object sender, UpdateFastInCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdateFastInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdateFastInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void UpdatePostFastInCompletedEventHandler(object sender, UpdatePostFastInCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UpdatePostFastInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UpdatePostFastInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void GetVoucherByNoCompletedEventHandler(object sender, GetVoucherByNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetVoucherByNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetVoucherByNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public TaskVoucher tv {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((TaskVoucher)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((string)(this.results[2]));

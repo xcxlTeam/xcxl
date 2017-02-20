@@ -46,9 +46,11 @@
             this.chensLabel2 = new ChensControl.ChensLabel();
             this.chensGroupBox2 = new ChensControl.ChensGroupBox();
             this.chensDataGridView1 = new ChensControl.ChensDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chensTextBox1 = new ChensControl.ChensTextBox();
+            this.chensLabel4 = new ChensControl.ChensLabel();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +90,8 @@
             // 
             // chensGroupBox1
             // 
+            this.chensGroupBox1.Controls.Add(this.chensTextBox1);
+            this.chensGroupBox1.Controls.Add(this.chensLabel4);
             this.chensGroupBox1.Controls.Add(this.chensButton1);
             this.chensGroupBox1.Controls.Add(this.btnSearch);
             this.chensGroupBox1.Controls.Add(this.txtBATCHNO);
@@ -241,9 +245,9 @@
             this.chensDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.chensDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.chensDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
             this.Column3,
+            this.Column2,
+            this.Column1,
             this.Column4,
             this.Column5,
             this.Column7,
@@ -265,11 +269,33 @@
             this.chensDataGridView1.Size = new System.Drawing.Size(986, 341);
             this.chensDataGridView1.TabIndex = 0;
             // 
-            // Column1
+            // chensTextBox1
             // 
-            this.Column1.HeaderText = "货位编号";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.chensTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.chensTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.chensTextBox1.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chensTextBox1.HotTrack = false;
+            this.chensTextBox1.Location = new System.Drawing.Point(541, 22);
+            this.chensTextBox1.Name = "chensTextBox1";
+            this.chensTextBox1.Size = new System.Drawing.Size(150, 23);
+            this.chensTextBox1.TabIndex = 34;
+            this.chensTextBox1.TextEnabled = false;
+            // 
+            // chensLabel4
+            // 
+            this.chensLabel4.AutoSize = true;
+            this.chensLabel4.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chensLabel4.Location = new System.Drawing.Point(479, 24);
+            this.chensLabel4.Name = "chensLabel4";
+            this.chensLabel4.Size = new System.Drawing.Size(56, 17);
+            this.chensLabel4.TabIndex = 35;
+            this.chensLabel4.Text = "仓库编号";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "仓库编号";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column2
             // 
@@ -277,11 +303,11 @@
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
-            // Column3
+            // Column1
             // 
-            this.Column3.HeaderText = "仓库编号";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            this.Column1.HeaderText = "货位编号";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column4
             // 
@@ -356,9 +382,11 @@
         private ChensControl.ChensButton btnSearch;
         private ChensControl.ChensGroupBox chensGroupBox2;
         private ChensControl.ChensDataGridView chensDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private ChensControl.ChensTextBox chensTextBox1;
+        private ChensControl.ChensLabel chensLabel4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;

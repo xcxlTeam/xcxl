@@ -62,6 +62,10 @@
             this.chensLabel3 = new ChensControl.ChensLabel();
             this.txtMaterialNo = new ChensControl.ChensTextBox();
             this.chensLabel2 = new ChensControl.ChensLabel();
+            this.chensTextBox4 = new ChensControl.ChensTextBox();
+            this.chensLabel10 = new ChensControl.ChensLabel();
+            this.chensTextBox5 = new ChensControl.ChensTextBox();
+            this.chensLabel11 = new ChensControl.ChensLabel();
             this.msMain.SuspendLayout();
             this.gbBottom.SuspendLayout();
             this.SuspendLayout();
@@ -96,6 +100,10 @@
             // gbBottom
             // 
             this.gbBottom.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gbBottom.Controls.Add(this.chensTextBox4);
+            this.gbBottom.Controls.Add(this.chensLabel10);
+            this.gbBottom.Controls.Add(this.chensTextBox5);
+            this.gbBottom.Controls.Add(this.chensLabel11);
             this.gbBottom.Controls.Add(this.chensTextBox3);
             this.gbBottom.Controls.Add(this.chensLabel9);
             this.gbBottom.Controls.Add(this.checkBox2);
@@ -178,7 +186,7 @@
             this.chensComboBox2.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.chensComboBox2.FormattingEnabled = true;
             this.chensComboBox2.HotTrack = false;
-            this.chensComboBox2.Location = new System.Drawing.Point(99, 371);
+            this.chensComboBox2.Location = new System.Drawing.Point(99, 410);
             this.chensComboBox2.Name = "chensComboBox2";
             this.chensComboBox2.Size = new System.Drawing.Size(112, 25);
             this.chensComboBox2.TabIndex = 62;
@@ -192,7 +200,7 @@
             this.chensComboBox1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.chensComboBox1.FormattingEnabled = true;
             this.chensComboBox1.HotTrack = false;
-            this.chensComboBox1.Location = new System.Drawing.Point(99, 339);
+            this.chensComboBox1.Location = new System.Drawing.Point(99, 378);
             this.chensComboBox1.Name = "chensComboBox1";
             this.chensComboBox1.Size = new System.Drawing.Size(112, 25);
             this.chensComboBox1.TabIndex = 61;
@@ -202,7 +210,7 @@
             this.chensCheckBox2.AutoSize = true;
             this.chensCheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chensCheckBox2.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.chensCheckBox2.Location = new System.Drawing.Point(45, 372);
+            this.chensCheckBox2.Location = new System.Drawing.Point(45, 411);
             this.chensCheckBox2.Name = "chensCheckBox2";
             this.chensCheckBox2.Size = new System.Drawing.Size(48, 21);
             this.chensCheckBox2.TabIndex = 60;
@@ -215,7 +223,7 @@
             this.chensCheckBox1.AutoSize = true;
             this.chensCheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chensCheckBox1.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.chensCheckBox1.Location = new System.Drawing.Point(45, 340);
+            this.chensCheckBox1.Location = new System.Drawing.Point(45, 379);
             this.chensCheckBox1.Name = "chensCheckBox1";
             this.chensCheckBox1.Size = new System.Drawing.Size(48, 21);
             this.chensCheckBox1.TabIndex = 59;
@@ -251,7 +259,7 @@
             this.txtPackQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPackQty.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.txtPackQty.HotTrack = false;
-            this.txtPackQty.Location = new System.Drawing.Point(99, 256);
+            this.txtPackQty.Location = new System.Drawing.Point(99, 295);
             this.txtPackQty.Name = "txtPackQty";
             this.txtPackQty.Size = new System.Drawing.Size(150, 23);
             this.txtPackQty.TabIndex = 45;
@@ -259,7 +267,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(358, 226);
+            this.textBox1.Location = new System.Drawing.Point(358, 265);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(138, 23);
             this.textBox1.TabIndex = 56;
@@ -268,7 +276,7 @@
             // 
             this.chensLabel5.AutoSize = true;
             this.chensLabel5.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.chensLabel5.Location = new System.Drawing.Point(25, 262);
+            this.chensLabel5.Location = new System.Drawing.Point(25, 301);
             this.chensLabel5.Name = "chensLabel5";
             this.chensLabel5.Size = new System.Drawing.Size(32, 17);
             this.chensLabel5.TabIndex = 46;
@@ -277,7 +285,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(284, 229);
+            this.label1.Location = new System.Drawing.Point(284, 268);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 17);
             this.label1.TabIndex = 55;
@@ -285,7 +293,7 @@
             // 
             // txtCurrentSum
             // 
-            this.txtCurrentSum.Location = new System.Drawing.Point(99, 223);
+            this.txtCurrentSum.Location = new System.Drawing.Point(99, 262);
             this.txtCurrentSum.Name = "txtCurrentSum";
             this.txtCurrentSum.Size = new System.Drawing.Size(150, 23);
             this.txtCurrentSum.TabIndex = 52;
@@ -293,7 +301,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(25, 226);
+            this.label11.Location = new System.Drawing.Point(25, 265);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(56, 17);
             this.label11.TabIndex = 51;
@@ -305,7 +313,7 @@
             this.txtCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCount.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.txtCount.HotTrack = false;
-            this.txtCount.Location = new System.Drawing.Point(99, 295);
+            this.txtCount.Location = new System.Drawing.Point(99, 334);
             this.txtCount.Name = "txtCount";
             this.txtCount.Size = new System.Drawing.Size(150, 23);
             this.txtCount.TabIndex = 50;
@@ -315,7 +323,7 @@
             // 
             this.lblReserveUser.AutoSize = true;
             this.lblReserveUser.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.lblReserveUser.Location = new System.Drawing.Point(25, 298);
+            this.lblReserveUser.Location = new System.Drawing.Point(25, 337);
             this.lblReserveUser.Name = "lblReserveUser";
             this.lblReserveUser.Size = new System.Drawing.Size(32, 17);
             this.lblReserveUser.TabIndex = 49;
@@ -327,7 +335,7 @@
             this.chensTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.chensTextBox1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.chensTextBox1.HotTrack = false;
-            this.chensTextBox1.Location = new System.Drawing.Point(358, 262);
+            this.chensTextBox1.Location = new System.Drawing.Point(358, 301);
             this.chensTextBox1.Name = "chensTextBox1";
             this.chensTextBox1.Size = new System.Drawing.Size(138, 23);
             this.chensTextBox1.TabIndex = 47;
@@ -337,7 +345,7 @@
             // 
             this.chensLabel8.AutoSize = true;
             this.chensLabel8.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.chensLabel8.Location = new System.Drawing.Point(284, 259);
+            this.chensLabel8.Location = new System.Drawing.Point(284, 298);
             this.chensLabel8.Name = "chensLabel8";
             this.chensLabel8.Size = new System.Drawing.Size(56, 17);
             this.chensLabel8.TabIndex = 48;
@@ -470,6 +478,50 @@
             this.chensLabel2.TabIndex = 1;
             this.chensLabel2.Text = "物料编号";
             // 
+            // chensTextBox4
+            // 
+            this.chensTextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.chensTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.chensTextBox4.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chensTextBox4.HotTrack = false;
+            this.chensTextBox4.Location = new System.Drawing.Point(99, 223);
+            this.chensTextBox4.Name = "chensTextBox4";
+            this.chensTextBox4.Size = new System.Drawing.Size(150, 23);
+            this.chensTextBox4.TabIndex = 66;
+            this.chensTextBox4.TextEnabled = false;
+            // 
+            // chensLabel10
+            // 
+            this.chensLabel10.AutoSize = true;
+            this.chensLabel10.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chensLabel10.Location = new System.Drawing.Point(25, 225);
+            this.chensLabel10.Name = "chensLabel10";
+            this.chensLabel10.Size = new System.Drawing.Size(44, 17);
+            this.chensLabel10.TabIndex = 69;
+            this.chensLabel10.Text = "过敏原";
+            // 
+            // chensTextBox5
+            // 
+            this.chensTextBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.chensTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.chensTextBox5.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chensTextBox5.HotTrack = false;
+            this.chensTextBox5.Location = new System.Drawing.Point(370, 223);
+            this.chensTextBox5.Name = "chensTextBox5";
+            this.chensTextBox5.Size = new System.Drawing.Size(138, 23);
+            this.chensTextBox5.TabIndex = 67;
+            this.chensTextBox5.TextEnabled = false;
+            // 
+            // chensLabel11
+            // 
+            this.chensLabel11.AutoSize = true;
+            this.chensLabel11.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chensLabel11.Location = new System.Drawing.Point(284, 227);
+            this.chensLabel11.Name = "chensLabel11";
+            this.chensLabel11.Size = new System.Drawing.Size(80, 17);
+            this.chensLabel11.TabIndex = 68;
+            this.chensLabel11.Text = "物料属性代码";
+            // 
             // Form11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -524,5 +576,9 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private ChensControl.ChensTextBox chensTextBox3;
         private ChensControl.ChensLabel chensLabel9;
+        private ChensControl.ChensTextBox chensTextBox4;
+        private ChensControl.ChensLabel chensLabel10;
+        private ChensControl.ChensTextBox chensTextBox5;
+        private ChensControl.ChensLabel chensLabel11;
     }
 }

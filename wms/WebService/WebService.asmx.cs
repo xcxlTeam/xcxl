@@ -23,6 +23,7 @@ using BLL.Quality;
 using BLL.OutStock;
 using BLL.Supplier;
 using BLL.Check;
+using BLL.Basic.P2B;
 
 namespace WebService
 {
@@ -446,6 +447,96 @@ namespace WebService
         {
             Menu_Func func = new Menu_Func();
             return func.GetMenuNo(ref model, user, ref strError);
+        }
+        #endregion
+
+        #region 制法设置
+
+        [WebMethod]
+        public bool ExistspCode(Preparation model, bool bIncludeDel, UserInfo user, ref string strError)
+        {
+            Preparation_Func func = new Preparation_Func();
+            return func.ExistspCode(model, bIncludeDel, user, ref strError);
+        }
+
+        [WebMethod]
+        public bool SavePreparation(ref Preparation model, UserInfo user, ref string strError)
+        {
+            Preparation_Func func = new Preparation_Func();
+            return func.SavePreparation(ref model, user, ref strError);
+        }
+
+        [WebMethod]
+        public bool DeletePreparationByID(Preparation model, UserInfo user, ref string strError)
+        {
+            Preparation_Func func = new Preparation_Func();
+            return func.DeletePreparationByID(model, user, ref strError);
+        }
+
+        [WebMethod]
+        public bool GetPreparationByID(ref Preparation model, UserInfo user, ref string strError)
+        {
+            Preparation_Func func = new Preparation_Func();
+            return func.GetPreparationByID(ref model, user, ref strError);
+        }
+
+        [WebMethod]
+        public bool GetPreparationListByPage(ref List<Preparation> modelList, Preparation model, ref DividPage page, UserInfo user, ref string strError)
+        {
+            Preparation_Func func = new Preparation_Func();
+            return func.GetPreparationListByPage(ref modelList, model, ref page, user, ref strError);
+        }
+
+        [WebMethod]
+        public bool GetPreparationList(ref List<Preparation> modelList, Preparation model, UserInfo user, ref string strError)
+        {
+            Preparation_Func func = new Preparation_Func();
+            return func.GetPreparationList(ref modelList, model, user, ref strError);
+        }
+        #endregion
+
+        #region 建筑设置
+
+        [WebMethod]
+        public bool ExistsbNo(Building model, bool bIncludeDel, UserInfo user, ref string strError)
+        {
+            Building_Func func = new Building_Func();
+            return func.ExistsbNo(model, bIncludeDel, user, ref strError);
+        }
+
+        [WebMethod]
+        public bool SaveBuilding(ref Building model, UserInfo user, ref string strError)
+        {
+            Building_Func func = new Building_Func();
+            return func.SaveBuilding(ref model, user, ref strError);
+        }
+
+        [WebMethod]
+        public bool DeleteBuildingByID(Building model, UserInfo user, ref string strError)
+        {
+            Building_Func func = new Building_Func();
+            return func.DeleteBuildingByID(model, user, ref strError);
+        }
+
+        [WebMethod]
+        public bool GetBuildingByID(ref Building model, UserInfo user, ref string strError)
+        {
+            Building_Func func = new Building_Func();
+            return func.GetBuildingByID(ref model, user, ref strError);
+        }
+
+        [WebMethod]
+        public bool GetBuildingListByPage(ref List<Building> modelList, Building model, ref DividPage page, UserInfo user, ref string strError)
+        {
+            Building_Func func = new Building_Func();
+            return func.GetBuildingListByPage(ref modelList, model, ref page, user, ref strError);
+        }
+
+        [WebMethod]
+        public bool GetBuildingList(ref List<Building> modelList, Building model, UserInfo user, ref string strError)
+        {
+            Building_Func func = new Building_Func();
+            return func.GetBuildingList(ref modelList, model, user, ref strError);
         }
         #endregion
 
@@ -1362,6 +1453,13 @@ namespace WebService
             OutStock_DB osb = new OutStock_DB();
             return osb.CreateUnShelveTask(vouchcode, vouchtype, cwhcode, userModel, ref strTaskNo, ref strErrMsg);
 
+        }
+
+        [WebMethod]
+        public bool TestReadData(int iNo, out System.Data.DataSet ds)
+        {
+            BLL.TEST.TestFunc tf = new BLL.TEST.TestFunc();
+            return tf.TestReadData(iNo,out ds);
         }
 
         //[WebMethod]

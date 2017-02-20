@@ -29,17 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.msMain = new ChensControl.ChensMenuStrip();
             this.tsmiSaveClose = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiCancel = new System.Windows.Forms.ToolStripMenuItem();
             this.bsMain = new System.Windows.Forms.BindingSource(this.components);
             this.gbBottom = new System.Windows.Forms.GroupBox();
             this.dgvList = new ChensControl.ChensDataGridView();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbMiddle = new System.Windows.Forms.GroupBox();
+            this.chensLabel15 = new ChensControl.ChensLabel();
+            this.chensDateTimePicker2 = new ChensControl.ChensDateTimePicker();
             this.chensLabel14 = new ChensControl.ChensLabel();
             this.chensTextBox3 = new ChensControl.ChensTextBox();
             this.chensTextBox2 = new ChensControl.ChensTextBox();
@@ -47,10 +55,12 @@
             this.txtBQty = new ChensControl.ChensTextBox();
             this.txtBMaterialDesc = new ChensControl.ChensTextBox();
             this.txtBMaterialNo = new ChensControl.ChensTextBox();
+            this.chensLabel9 = new ChensControl.ChensLabel();
             this.btnDel = new ChensControl.ChensButton();
             this.btnUpd = new ChensControl.ChensButton();
             this.btnAdd = new ChensControl.ChensButton();
             this.chensLabel12 = new ChensControl.ChensLabel();
+            this.txtRemarks = new ChensControl.ChensTextBox();
             this.chensLabel11 = new ChensControl.ChensLabel();
             this.chensLabel10 = new ChensControl.ChensLabel();
             this.gbHeader = new System.Windows.Forms.GroupBox();
@@ -61,25 +71,16 @@
             this.chensDateTimePicker1 = new ChensControl.ChensDateTimePicker();
             this.txtReason = new ChensControl.ChensTextBox();
             this.txtMaterialDoc = new ChensControl.ChensTextBox();
-            this.chensLabel9 = new ChensControl.ChensLabel();
             this.chensLabel8 = new ChensControl.ChensLabel();
             this.chensLabel7 = new ChensControl.ChensLabel();
             this.chensLabel6 = new ChensControl.ChensLabel();
-            this.txtRemarks = new ChensControl.ChensTextBox();
             this.chensLabel5 = new ChensControl.ChensLabel();
             this.txtVoucherNo = new ChensControl.ChensTextBox();
             this.chensLabel4 = new ChensControl.ChensLabel();
             this.cbbStorageLoc = new ChensControl.ChensComboBox();
             this.txtTaskNo = new ChensControl.ChensTextBox();
             this.chensLabel1 = new ChensControl.ChensLabel();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chensLabel15 = new ChensControl.ChensLabel();
-            this.chensDateTimePicker2 = new ChensControl.ChensDateTimePicker();
+            this.打印ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsMain)).BeginInit();
             this.gbBottom.SuspendLayout();
@@ -94,6 +95,7 @@
             this.msMain.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.msMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSaveClose,
+            this.打印ToolStripMenuItem,
             this.tsmiCancel});
             this.msMain.Location = new System.Drawing.Point(0, 0);
             this.msMain.Name = "msMain";
@@ -105,8 +107,8 @@
             // 
             this.tsmiSaveClose.Name = "tsmiSaveClose";
             this.tsmiSaveClose.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.tsmiSaveClose.Size = new System.Drawing.Size(80, 21);
-            this.tsmiSaveClose.Text = "保存并关闭";
+            this.tsmiSaveClose.Size = new System.Drawing.Size(44, 21);
+            this.tsmiSaveClose.Text = "保存";
             // 
             // tsmiCancel
             // 
@@ -130,19 +132,19 @@
             // 
             this.dgvList.AllowUserToAddRows = false;
             this.dgvList.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            this.dgvList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvList.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
@@ -159,21 +161,56 @@
             this.dgvList.Location = new System.Drawing.Point(3, 19);
             this.dgvList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvList.Name = "dgvList";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("微软雅黑", 9F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvList.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvList.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvList.RowHeadersVisible = false;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            this.dgvList.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            this.dgvList.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvList.RowTemplate.Height = 23;
             this.dgvList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvList.Size = new System.Drawing.Size(986, 515);
             this.dgvList.TabIndex = 3;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "行号";
+            this.Column5.Name = "Column5";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "MaterialNo";
+            this.Column4.HeaderText = "物料编号";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column4.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "批次";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "数量";
+            this.Column3.Name = "Column3";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "中文名称";
+            this.Column1.Name = "Column1";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "英文名称";
+            this.Column6.Name = "Column6";
             // 
             // gbMiddle
             // 
@@ -201,6 +238,23 @@
             this.gbMiddle.TabIndex = 8;
             this.gbMiddle.TabStop = false;
             this.gbMiddle.Text = "物料信息";
+            // 
+            // chensLabel15
+            // 
+            this.chensLabel15.AutoSize = true;
+            this.chensLabel15.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chensLabel15.Location = new System.Drawing.Point(559, 25);
+            this.chensLabel15.Name = "chensLabel15";
+            this.chensLabel15.Size = new System.Drawing.Size(56, 17);
+            this.chensLabel15.TabIndex = 31;
+            this.chensLabel15.Text = "生产日期";
+            // 
+            // chensDateTimePicker2
+            // 
+            this.chensDateTimePicker2.Location = new System.Drawing.Point(539, 45);
+            this.chensDateTimePicker2.Name = "chensDateTimePicker2";
+            this.chensDateTimePicker2.Size = new System.Drawing.Size(114, 23);
+            this.chensDateTimePicker2.TabIndex = 30;
             // 
             // chensLabel14
             // 
@@ -288,6 +342,16 @@
             this.txtBMaterialNo.TabIndex = 17;
             this.txtBMaterialNo.TextEnabled = true;
             // 
+            // chensLabel9
+            // 
+            this.chensLabel9.AutoSize = true;
+            this.chensLabel9.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chensLabel9.Location = new System.Drawing.Point(669, 25);
+            this.chensLabel9.Name = "chensLabel9";
+            this.chensLabel9.Size = new System.Drawing.Size(32, 17);
+            this.chensLabel9.TabIndex = 14;
+            this.chensLabel9.Text = "备注";
+            // 
             // btnDel
             // 
             this.btnDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(174)))), ((int)(((byte)(253)))));
@@ -336,6 +400,19 @@
             this.chensLabel12.Size = new System.Drawing.Size(32, 17);
             this.chensLabel12.TabIndex = 2;
             this.chensLabel12.Text = "数量";
+            // 
+            // txtRemarks
+            // 
+            this.txtRemarks.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.txtRemarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemarks.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsMain, "Remark", true));
+            this.txtRemarks.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.txtRemarks.HotTrack = false;
+            this.txtRemarks.Location = new System.Drawing.Point(659, 45);
+            this.txtRemarks.Name = "txtRemarks";
+            this.txtRemarks.Size = new System.Drawing.Size(78, 23);
+            this.txtRemarks.TabIndex = 16;
+            this.txtRemarks.TextEnabled = false;
             // 
             // chensLabel11
             // 
@@ -466,16 +543,6 @@
             this.txtMaterialDoc.TabIndex = 8;
             this.txtMaterialDoc.TextEnabled = false;
             // 
-            // chensLabel9
-            // 
-            this.chensLabel9.AutoSize = true;
-            this.chensLabel9.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.chensLabel9.Location = new System.Drawing.Point(669, 25);
-            this.chensLabel9.Name = "chensLabel9";
-            this.chensLabel9.Size = new System.Drawing.Size(32, 17);
-            this.chensLabel9.TabIndex = 14;
-            this.chensLabel9.Text = "备注";
-            // 
             // chensLabel8
             // 
             this.chensLabel8.AutoSize = true;
@@ -505,19 +572,6 @@
             this.chensLabel6.Size = new System.Drawing.Size(44, 17);
             this.chensLabel6.TabIndex = 11;
             this.chensLabel6.Text = "制单人";
-            // 
-            // txtRemarks
-            // 
-            this.txtRemarks.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtRemarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRemarks.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsMain, "Remark", true));
-            this.txtRemarks.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.txtRemarks.HotTrack = false;
-            this.txtRemarks.Location = new System.Drawing.Point(659, 45);
-            this.txtRemarks.Name = "txtRemarks";
-            this.txtRemarks.Size = new System.Drawing.Size(78, 23);
-            this.txtRemarks.TabIndex = 16;
-            this.txtRemarks.TextEnabled = false;
             // 
             // chensLabel5
             // 
@@ -592,57 +646,11 @@
             this.chensLabel1.TabIndex = 0;
             this.chensLabel1.Text = "入库单号";
             // 
-            // Column5
+            // 打印ToolStripMenuItem
             // 
-            this.Column5.HeaderText = "行号";
-            this.Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "MaterialNo";
-            this.Column4.HeaderText = "物料编号";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column4.Width = 150;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "批次";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "数量";
-            this.Column3.Name = "Column3";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "中文名称";
-            this.Column1.Name = "Column1";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "英文名称";
-            this.Column6.Name = "Column6";
-            // 
-            // chensLabel15
-            // 
-            this.chensLabel15.AutoSize = true;
-            this.chensLabel15.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.chensLabel15.Location = new System.Drawing.Point(559, 25);
-            this.chensLabel15.Name = "chensLabel15";
-            this.chensLabel15.Size = new System.Drawing.Size(56, 17);
-            this.chensLabel15.TabIndex = 31;
-            this.chensLabel15.Text = "生产日期";
-            // 
-            // chensDateTimePicker2
-            // 
-            this.chensDateTimePicker2.Location = new System.Drawing.Point(539, 45);
-            this.chensDateTimePicker2.Name = "chensDateTimePicker2";
-            this.chensDateTimePicker2.Size = new System.Drawing.Size(114, 23);
-            this.chensDateTimePicker2.TabIndex = 30;
+            this.打印ToolStripMenuItem.Name = "打印ToolStripMenuItem";
+            this.打印ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.打印ToolStripMenuItem.Text = "打印";
             // 
             // frmFastInEdit
             // 
@@ -718,5 +726,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private ChensControl.ChensLabel chensLabel15;
         private ChensControl.ChensDateTimePicker chensDateTimePicker2;
+        private System.Windows.Forms.ToolStripMenuItem 打印ToolStripMenuItem;
     }
 }

@@ -35,10 +35,6 @@ namespace BLL.Basic.User
                 {
                     model.Modifyer = user.UserNo;
                 }
-                if(!model.Password.Equals("不要加密或更新"))
-                {
-
-                }
 
                 return _db.SaveUser(ref model);
             }

@@ -31,6 +31,7 @@ namespace WMS
                     Application.EnableVisualStyles();
                     Application.SetCompatibleTextRenderingDefault(false);
                     Application.Run(new Login.FrmLogin());
+
                 }
             }
             catch (Exception ex)

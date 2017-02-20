@@ -618,27 +618,6 @@ namespace Test
             MessageBox.Show("ad");
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            localhost.UserInfo userInfo = new localhost.UserInfo();
-            userInfo.LoginTime = DateTime.Now;
-            string strError="";
-            localWebTest.UpdateLoginTime(ref userInfo, ref strError);
-            MessageBox.Show("ad");
-        }
-
-        private void button23_Click(object sender, EventArgs e)
-        {
-            localhost.UserInfo userInfo = new localhost.UserInfo();
-            userInfo.ID = 1;
-            userInfo.LoginIP = "192.168.2.105";
-            userInfo.LoginDevice = "shew";
-            userInfo.LoginTime = DateTime.Now;
-            string strError = "";
-            localWebTest.ClearLoginTime(userInfo,userInfo, ref strError);
-            MessageBox.Show("ad");
-        }
-
 
     }
 }

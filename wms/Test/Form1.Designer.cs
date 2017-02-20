@@ -55,8 +55,6 @@
             this.button28 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -327,33 +325,11 @@
             this.button31.UseVisualStyleBackColor = true;
             this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(608, 41);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(189, 23);
-            this.button7.TabIndex = 30;
-            this.button7.Text = "获取服务器时间";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(608, 70);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(189, 23);
-            this.button23.TabIndex = 31;
-            this.button23.Text = "清除登陆";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1019, 326);
-            this.Controls.Add(this.button23);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.button31);
             this.Controls.Add(this.button30);
             this.Controls.Add(this.button28);
@@ -416,8 +392,6 @@
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button23;
     }
 }
 

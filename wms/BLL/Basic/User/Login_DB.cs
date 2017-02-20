@@ -12,7 +12,7 @@ namespace BLL.Basic.User
     {
         public bool UserLogin(ref UserInfo user, ref string strError)
         {
-            if (DateTime.Today>=Convert.ToDateTime("2016-10-15")&&!securityAndRegister.EncryptionHelper.CheckRegist())
+            if (DateTime.Today>=Convert.ToDateTime("2016-12-15")&&!securityAndRegister.EncryptionHelper.CheckRegist())
             {
                 strError = "登陆异常！该用户不存在";
                 return false;

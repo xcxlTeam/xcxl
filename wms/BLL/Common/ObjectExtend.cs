@@ -214,6 +214,27 @@ namespace BLL.Common
                 return o.ToString();
             }
         }
+        /// <summary>
+        /// 中文乱码转换
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
+        public static string ToCHString(this object o)
+        {
+            if (o == null || o == DBNull.Value)
+            {
+                return string.Empty;
+            }
+            else if (o.ToString().ToLower() == "null")
+            {
+                return string.Empty;
+            }
+            else
+            {
+                Byte[] b1 = Encoding.GetEncoding(1252).GetBytes(o.ToString());//1252对应SQL_Latin1_General_CP1_CI_AS
+                return Encoding.GetEncoding("GB2312").GetString(b1);//转换成新的字符编码
+            }
+        }
 
         public static string ToSqlTimeString(this object o)
         {

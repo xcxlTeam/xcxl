@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.chensMenuStrip1 = new ChensControl.ChensMenuStrip();
             this.生成下架任务ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.打印报废拣货单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,8 +85,8 @@
             // 打印报废拣货单ToolStripMenuItem
             // 
             this.打印报废拣货单ToolStripMenuItem.Name = "打印报废拣货单ToolStripMenuItem";
-            this.打印报废拣货单ToolStripMenuItem.Size = new System.Drawing.Size(104, 21);
-            this.打印报废拣货单ToolStripMenuItem.Text = "打印报废拣货单";
+            this.打印报废拣货单ToolStripMenuItem.Size = new System.Drawing.Size(140, 21);
+            this.打印报废拣货单ToolStripMenuItem.Text = "打印不合格转库拣货单";
             // 
             // 设置打印机ToolStripMenuItem
             // 
@@ -151,8 +151,8 @@
             // 
             // chensDataGridView2
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.chensDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.chensDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.chensDataGridView2.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.chensDataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.chensDataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -169,8 +169,8 @@
             this.chensDataGridView2.Location = new System.Drawing.Point(3, 60);
             this.chensDataGridView2.Name = "chensDataGridView2";
             this.chensDataGridView2.RowHeadersVisible = false;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            this.chensDataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            this.chensDataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.chensDataGridView2.RowTemplate.Height = 23;
             this.chensDataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.chensDataGridView2.Size = new System.Drawing.Size(986, 49);
@@ -226,8 +226,8 @@
             // 
             this.chensDataGridView1.AllowUserToAddRows = false;
             this.chensDataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            this.chensDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.chensDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.chensDataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.chensDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.chensDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -249,8 +249,8 @@
             this.chensDataGridView1.Name = "chensDataGridView1";
             this.chensDataGridView1.ReadOnly = true;
             this.chensDataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            this.chensDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            this.chensDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.chensDataGridView1.RowTemplate.Height = 23;
             this.chensDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.chensDataGridView1.Size = new System.Drawing.Size(986, 376);

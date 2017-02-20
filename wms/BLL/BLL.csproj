@@ -152,6 +152,12 @@
     <Compile Include="Basic\Menu\Menu_DB.cs" />
     <Compile Include="Basic\Menu\Menu_Func.cs" />
     <Compile Include="Basic\Menu\Menu_Model.cs" />
+    <Compile Include="Basic\P2B\Building.cs" />
+    <Compile Include="Basic\P2B\Building_DB.cs" />
+    <Compile Include="Basic\P2B\Building_Func.cs" />
+    <Compile Include="Basic\P2B\Preparation.cs" />
+    <Compile Include="Basic\P2B\Preparation_DB.cs" />
+    <Compile Include="Basic\P2B\Preparation_Func.cs" />
     <Compile Include="Basic\Receive\ReceiveTrans_Func.cs" />
     <Compile Include="Basic\Receive\ReceiveTrans_Model.cs" />
     <Compile Include="Basic\Task\OverViewDetail_Func.cs" />
@@ -205,6 +211,7 @@
     <Compile Include="MaterialRequestOutSide\MaterialRequestOutSide_Func.cs" />
     <Compile Include="MaterialRequestProduct\MaterialRequestProduct_Func.cs" />
     <Compile Include="MaterialRequest\MaterialRequest_Func.cs" />
+    <Compile Include="Voucher\Inventory.cs" />
     <Compile Include="Material\Material_Model.cs" />
     <Compile Include="OutSideReceive\OutSideReceive_DB.cs" />
     <Compile Include="OutSideReceive\OutSideReceive_Func.cs" />
@@ -276,6 +283,13 @@
     <Compile Include="Tool\MaterialBarcodeDecode.cs" />
     <Compile Include="Tool\WriteLogMethod.cs" />
     <Compile Include="Tool\SafeConvert.cs" />
+    <Compile Include="Voucher\Prod.cs" />
+    <Compile Include="Voucher\ReadAPI_DB.cs" />
+    <Compile Include="Voucher\ReadReceipt_Func.cs" />
+    <Compile Include="Voucher\ReadInventory_Func.cs" />
+    <Compile Include="Voucher\ReadProd_Func.cs" />
+    <Compile Include="Voucher\Receipt.cs" />
+    <Compile Include="Voucher\Transfer.cs" />
     <Compile Include="XMLUtil\XmlUtil.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -316,13 +316,12 @@ namespace WMS.Basic
             bsUser.EndEdit();
 
             _user.PinYin = PinYinConvert.Get(_user.UserName);
-            if (_user.Password == _back.Password)
+            //if (_user.Password == _back.Password)
+            if (_user.ID == 0 || _user.Password != _back.Password)
             {
-                //_user.Password = Basic_Func.JiaMi(_user.Password);
-                //_user.RePassword = Basic_Func.JiaMi(_user.RePassword);
+                _user.Password = Basic_Func.JiaMi(_user.Password);
+                _user.RePassword = Basic_Func.JiaMi(_user.RePassword);
 
-                _user.Password = "不要加密或更新";
-                _user.RePassword = "不要加密或更新";
             }
             _user.IsReceive = _user.BIsReceive.ToInt32();
             _user.IsQuality = _user.BIsQuality.ToInt32();

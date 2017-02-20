@@ -168,7 +168,7 @@ namespace WMS.Login
                 string Namespace = this.GetType().Namespace;
 
                 //Common.Common_Var.SolutionName = Namespace.Split('.')[0];
-                Common.Common_Var.SolutionName = "SCG_WMS";
+                Common.Common_Var.SolutionName = "WMS";
 
                 Common.OperXml.CheckConfig();
 
@@ -396,9 +396,9 @@ namespace WMS.Login
                 string strError = string.Empty;
                 UserInfo user = new UserInfo();
                 user.UserNo = txtAccount.Text.Trim();
-                //user.Password = Basic.Basic_Func.JiaMi(txtPassword.Text.Trim());
+                user.Password = Basic.Basic_Func.JiaMi(txtPassword.Text.Trim());
                 //UFSoft.U8.Framework.Login.UI.clsLogin netLogin = new UFSoft.U8.Framework.Login.UI.clsLogin();
-                user.Password = txtPassword.Text.Trim();// netLogin.EnPassWord(txtPassword.Text.Trim());
+                //user.Password = txtPassword.Text.Trim();// netLogin.EnPassWord(txtPassword.Text.Trim());
 
                 user.LoginIP = string.Format("PC:{0}", MacAddress);
                 user.LoginDevice = IPHelper.GetUserName();

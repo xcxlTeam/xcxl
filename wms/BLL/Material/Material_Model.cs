@@ -24,5 +24,6 @@ namespace BLL.Material
         public string MaterialKeeperNo { get; set; }
 
         public string MaterialLeeperName { get; set; }
+
     }
 }

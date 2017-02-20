@@ -54,17 +54,17 @@
             this.chensLabel1 = new ChensControl.ChensLabel();
             this.chensGroupBox2 = new ChensControl.ChensGroupBox();
             this.chensDataGridView1 = new ChensControl.ChensDataGridView();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chensGroupBox3 = new ChensControl.ChensGroupBox();
             this.chensDataGridView3 = new ChensControl.ChensDataGridView();
             this.Column9 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chensMenuStrip1.SuspendLayout();
             this.chensGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chensDataGridView2)).BeginInit();
@@ -201,7 +201,7 @@
             this.chensTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.chensTextBox1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.chensTextBox1.HotTrack = false;
-            this.chensTextBox1.Location = new System.Drawing.Point(71, 25);
+            this.chensTextBox1.Location = new System.Drawing.Point(85, 25);
             this.chensTextBox1.Name = "chensTextBox1";
             this.chensTextBox1.Size = new System.Drawing.Size(112, 23);
             this.chensTextBox1.TabIndex = 36;
@@ -274,9 +274,9 @@
             this.chensLabel1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.chensLabel1.Location = new System.Drawing.Point(9, 27);
             this.chensLabel1.Name = "chensLabel1";
-            this.chensLabel1.Size = new System.Drawing.Size(56, 17);
+            this.chensLabel1.Size = new System.Drawing.Size(68, 17);
             this.chensLabel1.TabIndex = 0;
-            this.chensLabel1.Text = "生产单号";
+            this.chensLabel1.Text = "作业指示书";
             // 
             // chensGroupBox2
             // 
@@ -320,6 +320,36 @@
             this.chensDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.chensDataGridView1.Size = new System.Drawing.Size(986, 376);
             this.chensDataGridView1.TabIndex = 0;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "物料编号";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "批次";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "物料数量";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "中文名称";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "英文名称";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
             // 
             // chensGroupBox3
             // 
@@ -369,14 +399,14 @@
             // 
             // Column10
             // 
-            this.Column10.HeaderText = "订单号";
+            this.Column10.HeaderText = "作业指示书";
             this.Column10.Name = "Column10";
             this.Column10.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column11
             // 
-            this.Column11.HeaderText = "订单行号";
+            this.Column11.HeaderText = "行号";
             this.Column11.Name = "Column11";
             this.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -387,36 +417,6 @@
             this.Column12.Name = "Column12";
             this.Column12.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "物料编号";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "批次";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "物料数量";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "中文名称";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "英文名称";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
             // 
             // Form7
             // 
@@ -466,10 +466,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private ChensControl.ChensGroupBox chensGroupBox3;
         private ChensControl.ChensDataGridView chensDataGridView3;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private ChensControl.ChensLabel chensLabel4;
         private ChensControl.ChensComboBox chensComboBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
@@ -477,5 +473,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
     }
 }

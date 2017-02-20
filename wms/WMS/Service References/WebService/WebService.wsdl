@@ -2,168 +2,163 @@
 <wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
-      <s:element name="CreateInitialProductBarcode">
+      <s:element name="GetOutSideByDeliveryToSRM">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="stockmodel" type="tns:Stock_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="labelModel" type="tns:ProductLabel_Model" />
-            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
-            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeliveryModel" type="tns:DeliveryReceive_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="userModel" type="tns:UserInfo" />
             <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:complexType name="Stock_Model">
+      <s:complexType name="DeliveryReceive_Model">
         <s:sequence>
-          <s:element minOccurs="1" maxOccurs="1" name="StockType" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialStd" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="WarehouseNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="HouseNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="AreaNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="Qty" type="s:double" />
-          <s:element minOccurs="0" maxOccurs="1" name="TempMaterialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="TempMaterialDesc" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="PickAreaNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="CelAreaNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="BatchNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SN" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Creater" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Plant" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PlantName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Operator" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstDeliveryDetail" type="tns:ArrayOfDeliveryReceiveDetail_Model" />
+          <s:element minOccurs="0" maxOccurs="1" name="materialDocModel" type="tns:MaterialDoc_Model" />
+          <s:element minOccurs="1" maxOccurs="1" name="VoucherType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsQuality" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsReceivePost" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsShelvePost" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaskNo" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="StrStockType" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="WarehouseName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="HouseName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="AreaName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialDoc" type="s:string" />
           <s:element minOccurs="1" maxOccurs="1" name="StartTime" nillable="true" type="s:dateTime" />
           <s:element minOccurs="1" maxOccurs="1" name="EndTime" nillable="true" type="s:dateTime" />
-          <s:element minOccurs="1" maxOccurs="1" name="OnlyOwnWarehouse" type="s:boolean" />
-          <s:element minOccurs="0" maxOccurs="1" name="ProductLineNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="ErpQty" type="s:double" />
-          <s:element minOccurs="1" maxOccurs="1" name="SaveQty" type="s:double" />
-          <s:element minOccurs="1" maxOccurs="1" name="TrayQty" type="s:double" />
-          <s:element minOccurs="1" maxOccurs="1" name="TotalQty" type="s:double" />
-          <s:element minOccurs="0" maxOccurs="1" name="cvencode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="cvenname" type="s:string" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ProductLabel_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="1" name="barcoderule" type="tns:BarcodeRule" />
-          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="labeltype" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="materialno" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="materialdesc" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="ordercode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="outpackqty" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="printdate" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="barcode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="invstd" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="CUName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="packno" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="plantno" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="POCode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SOCode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="ContractNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="BarcodeExpress" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="BarcodeEnd" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Locale" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="qrbarcode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="IsOuter" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="iMoSeq" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="smallQR" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="prdversion" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="BarcodeRule">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="1" name="Fields" type="tns:ArrayOfString" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ArrayOfString">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ArrayOfProductLabel_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductLabel_Model" nillable="true" type="tns:ProductLabel_Model" />
-        </s:sequence>
-      </s:complexType>
-      <s:element name="CreateInitialProductBarcodeResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="CreateInitialProductBarcodeResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetplantnoForPrint">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="cInvCode" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="plantno" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetplantnoForPrintResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetplantnoForPrintResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="plantno" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetImportPrintStockByPage">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfImportPrint_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Stock_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="page" type="tns:DividPage" />
-            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:complexType name="ArrayOfImportPrint_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="ImportPrint_Model" nillable="true" type="tns:ImportPrint_Model" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ImportPrint_Model">
-        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DocDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="PostDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="MoveType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Titel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutSideSupCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutSideSupName" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrintedQty" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstMaterialDoc" type="tns:ArrayOfMaterialDoc_Model" />
+          <s:element minOccurs="0" maxOccurs="1" name="OsDeliveryRemark" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="POReamrk" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reson" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrintTime" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDeliveryReceiveDetail_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DeliveryReceiveDetail_Model" nillable="true" type="tns:DeliveryReceiveDetail_Model" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DeliveryReceiveDetail_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Comba" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RowNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="MaterialStd" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="WarehouseNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="HouseNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="AreaNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="WarehouseName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="HouseName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="AreaName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SN" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="ImportQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="PrintQty" type="s:decimal" />
-          <s:element minOccurs="0" maxOccurs="1" name="cvencode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="cvenname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClaimArriveTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentlyDeliveryNum" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClaimDeliveryNum" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReadyDeliveryNum" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="WaitDeliveryNum" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="InRoadDeliveryNum" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReceiveTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorrespondDepartment" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WorkCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JingxinName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Plant" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PlantName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrdVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StorageLoc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReceiveQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsUrgent" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PackCount" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrdReturnReason" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstOutBarCode" type="tns:ArrayOfOutBarcode_Model" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsROHS" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrackNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReserveNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="QualityQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentQualityQty" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnQualityQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentUnQualityQty" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="OKSelect" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="QualityType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentPostQty" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="StrROHS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReserveRowNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderNum" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OldReceiveQty" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstCmb" type="tns:ArrayOfComboBoxItem" />
+          <s:element minOccurs="1" maxOccurs="1" name="RowNumber" type="s:int" />
         </s:sequence>
       </s:complexType>
-      <s:complexType name="DividPage">
+      <s:complexType name="ArrayOfOutBarcode_Model">
         <s:sequence>
-          <s:element minOccurs="1" maxOccurs="1" name="RecordCounts" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="CurrentPageRecordCounts" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="CurrentPageShowCounts" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="CurrentPageNumber" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="PagesCount" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OutBarcode_Model" nillable="true" type="tns:OutBarcode_Model" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OutBarcode_Model">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="InnerBox_Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RowNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="VoucherType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialDESC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupplierNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupplierName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Qty" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BatchNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OutPackQty" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NoPack" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrintQty" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutBarCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Prdversion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PlatedSilver" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PlatedGold" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Others" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Operator" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OperationDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfComboBoxItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ComboBoxItem" nillable="true" type="tns:ComboBoxItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ComboBoxItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MaterialDoc_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialDoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialDocDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaterialDocPost" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaterialDocType" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMaterialDoc_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MaterialDoc_Model" nillable="true" type="tns:MaterialDoc_Model" />
         </s:sequence>
       </s:complexType>
       <s:complexType name="UserInfo">
@@ -355,6 +350,400 @@
       <s:complexType name="ArrayOfWarehouseInfo">
         <s:sequence>
           <s:element minOccurs="0" maxOccurs="unbounded" name="WarehouseInfo" nillable="true" type="tns:WarehouseInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetOutSideByDeliveryToSRMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetOutSideByDeliveryToSRMResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeliveryModel" type="tns:DeliveryReceive_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateShelveTaskTest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vouchcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vouchtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cwhcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userModel" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTaskNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateShelveTaskTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateShelveTaskTestResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTaskNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestReadData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestReadDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TestReadDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteLogResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestMaterialOuterLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:MaterialOuterLabel" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MaterialOuterLabel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="barcoderule" type="tns:BarcodeRule" />
+          <s:element minOccurs="0" maxOccurs="1" name="INVSTD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="POCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LabelType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MATERIALNO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MATERIALDESC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SUPCODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SUPNAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrintDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupBatch" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OUTPACKQTY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PACKNO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BarcodeRule">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Fields" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TestMaterialOuterLabelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestMaterialOuterLabelResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestMaterialInnerLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:MaterialInnerLabel" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MaterialInnerLabel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="barcoderule" type="tns:BarcodeRule" />
+          <s:element minOccurs="0" maxOccurs="1" name="INVSTD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="POCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LabelType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MATERIALNO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MATERIALDESC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SUPCODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SUPNAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrintDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupBatch" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TestMaterialInnerLabelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestMaterialInnerLabelResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestProductLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:ProductLabel_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductLabel_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="barcoderule" type="tns:BarcodeRule" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="labeltype" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="materialno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="materialdesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ordercode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="outpackqty" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="printdate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="barcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="invstd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CUName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="packno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="plantno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="POCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SOCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContractNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BarcodeExpress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BarcodeEnd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Locale" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="qrbarcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsOuter" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="iMoSeq" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="smallQR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="prdversion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TestProductLabelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestProductLabelResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckSerialNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BatchNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckSerialNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckSerialNoResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateInnerProductBarcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="labelModel" type="tns:ProductLabel_Model" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProductLabel_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductLabel_Model" nillable="true" type="tns:ProductLabel_Model" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateInnerProductBarcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateInnerProductBarcodeResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOuterProductBarcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="labelModel" type="tns:ProductLabel_Model" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOuterProductBarcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateOuterProductBarcodeResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportStock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dt" type="tns:ArrayOfStock_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStock_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Stock_Model" nillable="true" type="tns:Stock_Model" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Stock_Model">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StockType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialStd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WarehouseNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HouseNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AreaNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Qty" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="TempMaterialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TempMaterialDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PickAreaNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CelAreaNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BatchNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Creater" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StrStockType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WarehouseName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HouseName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AreaName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="OnlyOwnWarehouse" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductLineNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErpQty" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaveQty" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TrayQty" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalQty" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="cvencode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cvenname" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ImportStockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ImportStockResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveStock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dt" type="tns:ArrayOfStock_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveStockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveStockResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateInitialProductBarcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stockmodel" type="tns:Stock_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="labelModel" type="tns:ProductLabel_Model" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateInitialProductBarcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateInitialProductBarcodeResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetplantnoForPrint">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cInvCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="plantno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetplantnoForPrintResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetplantnoForPrintResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="plantno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetImportPrintStockByPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfImportPrint_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Stock_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="page" type="tns:DividPage" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfImportPrint_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ImportPrint_Model" nillable="true" type="tns:ImportPrint_Model" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ImportPrint_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialStd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WarehouseNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HouseNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AreaNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WarehouseName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HouseName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AreaName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SN" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ImportQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrintQty" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="cvencode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cvenname" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DividPage">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RecordCounts" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentPageRecordCounts" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentPageShowCounts" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentPageNumber" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PagesCount" type="s:int" />
         </s:sequence>
       </s:complexType>
       <s:element name="GetImportPrintStockByPageResponse">
@@ -1033,11 +1422,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:complexType name="ArrayOfStock_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="Stock_Model" nillable="true" type="tns:Stock_Model" />
-        </s:sequence>
-      </s:complexType>
       <s:element name="CreateMaterialBarcodeForPU">
         <s:complexType>
           <s:sequence>
@@ -1325,6 +1709,355 @@
             <s:element minOccurs="1" maxOccurs="1" name="QueryMaterialBarcodeReportRowDetailResult" type="s:boolean" />
             <s:element minOccurs="0" maxOccurs="1" name="lst" type="tns:ArrayOfBarcodeReport_RowDetail" />
             <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFastInNotHavePOInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="taskmo" type="tns:Task_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="dividpage" type="tns:DividPage" />
+            <s:element minOccurs="0" maxOccurs="1" name="lsttask" type="tns:ArrayOfTask_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Task_Model">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VoucherType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherTypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TaskType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaskNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupCusName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TaskStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuditUserNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AuditDateTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TaskIssued" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReceiveUserNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReceiveUserName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsQuality" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupCusNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreateUserNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Receive_ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsReceivePost" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsShelvePost" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialDoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShelvePost" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstTaskDetails" type="tns:ArrayOfTaskDetails_Model" />
+          <s:element minOccurs="0" maxOccurs="1" name="Plant" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PostStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="materialDocModel" type="tns:MaterialDoc_Model" />
+          <s:element minOccurs="0" maxOccurs="1" name="MoveType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WareHouseNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTaskDetails_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TaskDetails_Model" nillable="true" type="tns:TaskDetails_Model" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TaskDetails_Model">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Task_ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToAreaNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialStd" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TaskQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="QuanlityQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="RemainQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShelveQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScanQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsQualityComp" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="QCUserNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="QCDateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="KeeperUserNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorUserNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CompleteDateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TMaterialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TMaterialDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OutStockQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReviewQty" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReviewUserNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnQuanlityQty" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="UnQuanlityReson" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeliveryQty" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstSerial" type="tns:ArrayOfTaskSerial_Model" />
+          <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsROHS" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RowNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Plant" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PlantName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StorageLoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PackCount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ScanPackCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RemainPackCount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShelvePackCount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentPostQty" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="RemainStockQty" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTaskSerial_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TaskSerial_Model" nillable="true" type="tns:TaskSerial_Model" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TaskSerial_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTask_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Task_Model" nillable="true" type="tns:Task_Model" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetFastInNotHavePOInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFastInNotHavePOInfoResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="dividpage" type="tns:DividPage" />
+            <s:element minOccurs="0" maxOccurs="1" name="lsttask" type="tns:ArrayOfTask_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsetMaterialDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tDtails" type="tns:ArrayOfTaskDetails_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsetMaterialDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsetMaterialDetailResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTempMaterialName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="materialNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialDESC" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTempMaterialNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTempMaterialNameResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialDESC" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExistsTempMaterialByMaterialNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="materialNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExistsTempMaterialByMaterialNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExistsTempMaterialByMaterialNoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTempMaterialByTempNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaterialNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tempmaterial" type="tns:TempMaterial" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TempMaterial">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TempMaterialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TempMaterialDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTempMaterialByTempNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTempMaterialByTempNoResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="tempmaterial" type="tns:TempMaterial" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExistsTempMaterialNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="bIncludeDel" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TempMaterialInfo">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BasicInfo">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="TempMaterialNo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TempMaterialDesc" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SapMaterialDoc" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ReplaceUser" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ReplaceTime" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="TempMaterialStatus" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Dghead" type="tns:Dghead" />
+              <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="StrTempMaterialStatus" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsRohs" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ExistsTempMaterialNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExistsTempMaterialNoResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveTempMaterial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveTempMaterialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveTempMaterialResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTempMaterialByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTempMaterialByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteTempMaterialByIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTempMaterialByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTempMaterialByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTempMaterialByIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTempMaterialListByPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfTempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="page" type="tns:DividPage" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTempMaterialInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TempMaterialInfo" nillable="true" type="tns:TempMaterialInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTempMaterialListByPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTempMaterialListByPageResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfTempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="page" type="tns:DividPage" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMaterialInfoResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTempMaterialNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTempMaterialNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTempMaterialNoResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -1750,156 +2483,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:complexType name="DeliveryReceive_Model">
-        <s:sequence>
-          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="DeliveryNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SupName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SupCode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Plant" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="PlantName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Operator" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="CreateDate" type="s:dateTime" />
-          <s:element minOccurs="0" maxOccurs="1" name="lstDeliveryDetail" type="tns:ArrayOfDeliveryReceiveDetail_Model" />
-          <s:element minOccurs="0" maxOccurs="1" name="materialDocModel" type="tns:MaterialDoc_Model" />
-          <s:element minOccurs="1" maxOccurs="1" name="VoucherType" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="IsQuality" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="IsReceivePost" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="IsShelvePost" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="TaskNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialDoc" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="StartTime" nillable="true" type="s:dateTime" />
-          <s:element minOccurs="1" maxOccurs="1" name="EndTime" nillable="true" type="s:dateTime" />
-          <s:element minOccurs="1" maxOccurs="1" name="DocDate" nillable="true" type="s:dateTime" />
-          <s:element minOccurs="1" maxOccurs="1" name="PostDate" nillable="true" type="s:dateTime" />
-          <s:element minOccurs="0" maxOccurs="1" name="MoveType" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Titel" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="OutSideSupCode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="OutSideSupName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="PrintedQty" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="lstMaterialDoc" type="tns:ArrayOfMaterialDoc_Model" />
-          <s:element minOccurs="0" maxOccurs="1" name="OsDeliveryRemark" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="POReamrk" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Reson" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="PrintTime" nillable="true" type="s:dateTime" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ArrayOfDeliveryReceiveDetail_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="DeliveryReceiveDetail_Model" nillable="true" type="tns:DeliveryReceiveDetail_Model" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="DeliveryReceiveDetail_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="1" name="Comba" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="DeliveryNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="CreateTime" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="RowNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialStd" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="ClaimArriveTime" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="CurrentlyDeliveryNum" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="ClaimDeliveryNum" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="ReadyDeliveryNum" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="WaitDeliveryNum" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="InRoadDeliveryNum" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="ReceiveTime" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="DeliveryAddress" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="CorrespondDepartment" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="WorkCode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="JingxinName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Plant" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="PlantName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="PrdVersion" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="StorageLoc" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="ReceiveQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="IsUrgent" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="PackCount" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="PrdReturnReason" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="lstOutBarCode" type="tns:ArrayOfOutBarcode_Model" />
-          <s:element minOccurs="1" maxOccurs="1" name="IsROHS" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="TrackNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="ReserveNumber" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="QualityQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="CurrentQualityQty" nillable="true" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="UnQualityQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="CurrentUnQualityQty" nillable="true" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="OKSelect" type="s:boolean" />
-          <s:element minOccurs="0" maxOccurs="1" name="QualityType" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="CurrentPostQty" type="s:decimal" />
-          <s:element minOccurs="0" maxOccurs="1" name="StrROHS" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="ReserveRowNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="OrderNum" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="OldReceiveQty" type="s:decimal" />
-          <s:element minOccurs="0" maxOccurs="1" name="lstCmb" type="tns:ArrayOfComboBoxItem" />
-          <s:element minOccurs="1" maxOccurs="1" name="RowNumber" type="s:int" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ArrayOfOutBarcode_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="OutBarcode_Model" nillable="true" type="tns:OutBarcode_Model" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="OutBarcode_Model">
-        <s:sequence>
-          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="InnerBox_Id" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="RowNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="DeliveryNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="VoucherType" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialDESC" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SupplierNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SupplierName" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="Qty" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="BatchNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="OutPackQty" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="NoPack" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="PrintQty" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="OutBarCode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Prdversion" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="PlatedSilver" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="PlatedGold" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="Others" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="Operator" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="OperationDate" type="s:dateTime" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ArrayOfComboBoxItem">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="ComboBoxItem" nillable="true" type="tns:ComboBoxItem" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ComboBoxItem">
-        <s:sequence>
-          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="MaterialDoc_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialDoc" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialDocDate" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="MaterialDocPost" type="s:dateTime" />
-          <s:element minOccurs="1" maxOccurs="1" name="MaterialDocType" type="s:int" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ArrayOfMaterialDoc_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="MaterialDoc_Model" nillable="true" type="tns:MaterialDoc_Model" />
-        </s:sequence>
-      </s:complexType>
       <s:element name="PrintQualityResponse">
         <s:complexType>
           <s:sequence>
@@ -3250,226 +3833,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="GetOutSideByDeliveryToSRM">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="DeliveryModel" type="tns:DeliveryReceive_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="userModel" type="tns:UserInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetOutSideByDeliveryToSRMResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetOutSideByDeliveryToSRMResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="DeliveryModel" type="tns:DeliveryReceive_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CreateShelveTaskTest">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="vouchcode" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="vouchtype" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="cwhcode" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="userModel" type="tns:UserInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strTaskNo" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CreateShelveTaskTestResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="CreateShelveTaskTestResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="strTaskNo" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="WriteLog">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="strLog" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="WriteLogResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="WriteLogResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TestMaterialOuterLabel">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:MaterialOuterLabel" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:complexType name="MaterialOuterLabel">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="1" name="barcoderule" type="tns:BarcodeRule" />
-          <s:element minOccurs="0" maxOccurs="1" name="INVSTD" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="POCode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="LabelType" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MATERIALNO" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MATERIALDESC" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SUPCODE" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SUPNAME" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="PrintDate" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SupBatch" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="OUTPACKQTY" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="PACKNO" type="s:string" />
-        </s:sequence>
-      </s:complexType>
-      <s:element name="TestMaterialOuterLabelResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="TestMaterialOuterLabelResult" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TestMaterialInnerLabel">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:MaterialInnerLabel" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:complexType name="MaterialInnerLabel">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="1" name="barcoderule" type="tns:BarcodeRule" />
-          <s:element minOccurs="0" maxOccurs="1" name="INVSTD" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Barcode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="POCode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="LabelType" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MATERIALNO" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MATERIALDESC" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SUPCODE" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SUPNAME" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="PrintDate" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SupBatch" type="s:string" />
-        </s:sequence>
-      </s:complexType>
-      <s:element name="TestMaterialInnerLabelResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="TestMaterialInnerLabelResult" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TestProductLabel">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:ProductLabel_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TestProductLabelResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="TestProductLabelResult" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CheckSerialNo">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="BatchNo" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CheckSerialNoResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="CheckSerialNoResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CreateInnerProductBarcode">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="labelModel" type="tns:ProductLabel_Model" />
-            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
-            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CreateInnerProductBarcodeResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="CreateInnerProductBarcodeResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CreateOuterProductBarcode">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="labelModel" type="tns:ProductLabel_Model" />
-            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:int" />
-            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CreateOuterProductBarcodeResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="CreateOuterProductBarcodeResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="label_lst" type="tns:ArrayOfProductLabel_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ImportStock">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="dt" type="tns:ArrayOfStock_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ImportStockResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="ImportStockResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="RemoveStock">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="dt" type="tns:ArrayOfStock_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="RemoveStockResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="RemoveStockResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
       <s:element name="HelloWorld">
         <s:complexType />
       </s:element>
@@ -4523,6 +4886,261 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="ExistspCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Preparation" />
+            <s:element minOccurs="1" maxOccurs="1" name="bIncludeDel" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Preparation">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BasicInfo">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="pCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="pName" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="bid" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ExistspCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExistspCodeResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SavePreparation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Preparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SavePreparationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SavePreparationResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Preparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePreparationByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Preparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePreparationByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeletePreparationByIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreparationByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Preparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreparationByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPreparationByIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Preparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreparationListByPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfPreparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Preparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="page" type="tns:DividPage" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPreparation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Preparation" nillable="true" type="tns:Preparation" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPreparationListByPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPreparationListByPageResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfPreparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="page" type="tns:DividPage" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreparationList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfPreparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Preparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreparationListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPreparationListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfPreparation" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExistsbNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Building" />
+            <s:element minOccurs="1" maxOccurs="1" name="bIncludeDel" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Building">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BasicInfo">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="bName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="bNo" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="iGrade" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="lstP" type="tns:ArrayOfPreparation" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ExistsbNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExistsbNoResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveBuilding">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Building" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveBuildingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveBuildingResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Building" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteBuildingByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Building" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteBuildingByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteBuildingByIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBuildingByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Building" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBuildingByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetBuildingByIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Building" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBuildingListByPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfBuilding" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Building" />
+            <s:element minOccurs="0" maxOccurs="1" name="page" type="tns:DividPage" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBuilding">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Building" nillable="true" type="tns:Building" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBuildingListByPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetBuildingListByPageResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfBuilding" />
+            <s:element minOccurs="0" maxOccurs="1" name="page" type="tns:DividPage" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBuildingList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfBuilding" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Building" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBuildingListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetBuildingListResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfBuilding" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="CheckImportTable">
         <s:complexType>
           <s:sequence>
@@ -4773,106 +5391,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:complexType name="Task_Model">
-        <s:sequence>
-          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="VoucherType" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="VoucherTypeName" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="TaskType" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="TaskNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SupCusName" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="TaskStatus" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="StatusName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="AuditUserNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="AuditDateTime" nillable="true" type="s:dateTime" />
-          <s:element minOccurs="1" maxOccurs="1" name="TaskIssued" type="s:dateTime" />
-          <s:element minOccurs="0" maxOccurs="1" name="ReceiveUserNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="ReceiveUserName" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="CreateDateTime" type="s:dateTime" />
-          <s:element minOccurs="1" maxOccurs="1" name="IsQuality" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SupCusNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="CreateUserNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="Receive_ID" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="DeliveryNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="IsReceivePost" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="IsShelvePost" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialDoc" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="ShelvePost" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="lstTaskDetails" type="tns:ArrayOfTaskDetails_Model" />
-          <s:element minOccurs="0" maxOccurs="1" name="Plant" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="PostStatus" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="materialDocModel" type="tns:MaterialDoc_Model" />
-          <s:element minOccurs="0" maxOccurs="1" name="MoveType" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="WareHouseNo" type="s:string" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ArrayOfTaskDetails_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="TaskDetails_Model" nillable="true" type="tns:TaskDetails_Model" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="TaskDetails_Model">
-        <s:sequence>
-          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="Task_ID" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="ToAreaNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialStd" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="TaskQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="QuanlityQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="RemainQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="ShelveQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="ScanQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="IsQualityComp" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="QCUserNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="QCDateTime" type="s:dateTime" />
-          <s:element minOccurs="0" maxOccurs="1" name="KeeperUserNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="OperatorUserNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="CompleteDateTime" type="s:dateTime" />
-          <s:element minOccurs="0" maxOccurs="1" name="TMaterialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="TMaterialDesc" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="OutStockQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="ReviewQty" type="s:decimal" />
-          <s:element minOccurs="0" maxOccurs="1" name="ReviewUserNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="UnQuanlityQty" type="s:decimal" />
-          <s:element minOccurs="0" maxOccurs="1" name="UnQuanlityReson" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="DeliveryQty" type="s:decimal" />
-          <s:element minOccurs="0" maxOccurs="1" name="lstSerial" type="tns:ArrayOfTaskSerial_Model" />
-          <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="IsROHS" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="RowNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Plant" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="PlantName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="StorageLoc" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="PackCount" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="ScanPackCount" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="RemainPackCount" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="ShelvePackCount" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="CurrentPostQty" type="s:decimal" />
-          <s:element minOccurs="1" maxOccurs="1" name="RemainStockQty" type="s:decimal" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ArrayOfTaskSerial_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="TaskSerial_Model" nillable="true" type="tns:TaskSerial_Model" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="TaskSerial_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
-        </s:sequence>
-      </s:complexType>
-      <s:complexType name="ArrayOfTask_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="Task_Model" nillable="true" type="tns:Task_Model" />
-        </s:sequence>
-      </s:complexType>
       <s:element name="QueryFastInListResponse">
         <s:complexType>
           <s:sequence>
@@ -5055,257 +5573,80 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="GetFastInNotHavePOInfo">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="taskmo" type="tns:Task_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="dividpage" type="tns:DividPage" />
-            <s:element minOccurs="0" maxOccurs="1" name="lsttask" type="tns:ArrayOfTask_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetFastInNotHavePOInfoResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetFastInNotHavePOInfoResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="dividpage" type="tns:DividPage" />
-            <s:element minOccurs="0" maxOccurs="1" name="lsttask" type="tns:ArrayOfTask_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="InsetMaterialDetail">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="tDtails" type="tns:ArrayOfTaskDetails_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="InsetMaterialDetailResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="InsetMaterialDetailResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTempMaterialName">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="materialNo" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="materialDESC" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTempMaterialNameResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetTempMaterialNameResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="materialDESC" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ExistsTempMaterialByMaterialNo">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="materialNo" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ExistsTempMaterialByMaterialNoResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="ExistsTempMaterialByMaterialNoResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTempMaterialByTempNo">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="strMaterialNo" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="tempmaterial" type="tns:TempMaterial" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:complexType name="TempMaterial">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="1" name="TempMaterialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="TempMaterialDesc" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
-        </s:sequence>
-      </s:complexType>
-      <s:element name="GetTempMaterialByTempNoResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetTempMaterialByTempNoResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="tempmaterial" type="tns:TempMaterial" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ExistsTempMaterialNo">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="1" maxOccurs="1" name="bIncludeDel" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:complexType name="TempMaterialInfo">
-        <s:complexContent mixed="false">
-          <s:extension base="tns:BasicInfo">
-            <s:sequence>
-              <s:element minOccurs="0" maxOccurs="1" name="TempMaterialNo" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="TempMaterialDesc" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="MaterialNo" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="MaterialDesc" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="SapMaterialDoc" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="ReplaceUser" type="s:string" />
-              <s:element minOccurs="1" maxOccurs="1" name="ReplaceTime" nillable="true" type="s:dateTime" />
-              <s:element minOccurs="1" maxOccurs="1" name="TempMaterialStatus" type="s:int" />
-              <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="Dghead" type="tns:Dghead" />
-              <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="StrTempMaterialStatus" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
-              <s:element minOccurs="1" maxOccurs="1" name="IsRohs" type="s:int" />
-            </s:sequence>
-          </s:extension>
-        </s:complexContent>
-      </s:complexType>
-      <s:element name="ExistsTempMaterialNoResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="ExistsTempMaterialNoResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="SaveTempMaterial">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="SaveTempMaterialResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="SaveTempMaterialResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="DeleteTempMaterialByID">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="DeleteTempMaterialByIDResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="DeleteTempMaterialByIDResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTempMaterialByID">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTempMaterialByIDResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetTempMaterialByIDResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTempMaterialListByPage">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfTempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="page" type="tns:DividPage" />
-            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:complexType name="ArrayOfTempMaterialInfo">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="TempMaterialInfo" nillable="true" type="tns:TempMaterialInfo" />
-        </s:sequence>
-      </s:complexType>
-      <s:element name="GetTempMaterialListByPageResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetTempMaterialListByPageResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfTempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="page" type="tns:DividPage" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetMaterialInfo">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
-            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetMaterialInfoResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetMaterialInfoResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTempMaterialNo">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetTempMaterialNoResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetTempMaterialNoResult" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:TempMaterialInfo" />
-            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
     </s:schema>
   </wsdl:types>
+  <wsdl:message name="GetOutSideByDeliveryToSRMSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOutSideByDeliveryToSRM" />
+  </wsdl:message>
+  <wsdl:message name="GetOutSideByDeliveryToSRMSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOutSideByDeliveryToSRMResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateShelveTaskTestSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateShelveTaskTest" />
+  </wsdl:message>
+  <wsdl:message name="CreateShelveTaskTestSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateShelveTaskTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestReadDataSoapIn">
+    <wsdl:part name="parameters" element="tns:TestReadData" />
+  </wsdl:message>
+  <wsdl:message name="TestReadDataSoapOut">
+    <wsdl:part name="parameters" element="tns:TestReadDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteLogSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteLog" />
+  </wsdl:message>
+  <wsdl:message name="WriteLogSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestMaterialOuterLabelSoapIn">
+    <wsdl:part name="parameters" element="tns:TestMaterialOuterLabel" />
+  </wsdl:message>
+  <wsdl:message name="TestMaterialOuterLabelSoapOut">
+    <wsdl:part name="parameters" element="tns:TestMaterialOuterLabelResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestMaterialInnerLabelSoapIn">
+    <wsdl:part name="parameters" element="tns:TestMaterialInnerLabel" />
+  </wsdl:message>
+  <wsdl:message name="TestMaterialInnerLabelSoapOut">
+    <wsdl:part name="parameters" element="tns:TestMaterialInnerLabelResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestProductLabelSoapIn">
+    <wsdl:part name="parameters" element="tns:TestProductLabel" />
+  </wsdl:message>
+  <wsdl:message name="TestProductLabelSoapOut">
+    <wsdl:part name="parameters" element="tns:TestProductLabelResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckSerialNoSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckSerialNo" />
+  </wsdl:message>
+  <wsdl:message name="CheckSerialNoSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckSerialNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateInnerProductBarcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateInnerProductBarcode" />
+  </wsdl:message>
+  <wsdl:message name="CreateInnerProductBarcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateInnerProductBarcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateOuterProductBarcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateOuterProductBarcode" />
+  </wsdl:message>
+  <wsdl:message name="CreateOuterProductBarcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateOuterProductBarcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportStockSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportStock" />
+  </wsdl:message>
+  <wsdl:message name="ImportStockSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveStockSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveStock" />
+  </wsdl:message>
+  <wsdl:message name="RemoveStockSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveStockResponse" />
+  </wsdl:message>
   <wsdl:message name="CreateInitialProductBarcodeSoapIn">
     <wsdl:part name="parameters" element="tns:CreateInitialProductBarcode" />
   </wsdl:message>
@@ -5593,6 +5934,78 @@
   </wsdl:message>
   <wsdl:message name="QueryMaterialBarcodeReportRowDetailSoapOut">
     <wsdl:part name="parameters" element="tns:QueryMaterialBarcodeReportRowDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFastInNotHavePOInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFastInNotHavePOInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetFastInNotHavePOInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFastInNotHavePOInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsetMaterialDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:InsetMaterialDetail" />
+  </wsdl:message>
+  <wsdl:message name="InsetMaterialDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:InsetMaterialDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTempMaterialNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTempMaterialName" />
+  </wsdl:message>
+  <wsdl:message name="GetTempMaterialNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTempMaterialNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExistsTempMaterialByMaterialNoSoapIn">
+    <wsdl:part name="parameters" element="tns:ExistsTempMaterialByMaterialNo" />
+  </wsdl:message>
+  <wsdl:message name="ExistsTempMaterialByMaterialNoSoapOut">
+    <wsdl:part name="parameters" element="tns:ExistsTempMaterialByMaterialNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTempMaterialByTempNoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTempMaterialByTempNo" />
+  </wsdl:message>
+  <wsdl:message name="GetTempMaterialByTempNoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTempMaterialByTempNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExistsTempMaterialNoSoapIn">
+    <wsdl:part name="parameters" element="tns:ExistsTempMaterialNo" />
+  </wsdl:message>
+  <wsdl:message name="ExistsTempMaterialNoSoapOut">
+    <wsdl:part name="parameters" element="tns:ExistsTempMaterialNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveTempMaterialSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveTempMaterial" />
+  </wsdl:message>
+  <wsdl:message name="SaveTempMaterialSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveTempMaterialResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTempMaterialByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteTempMaterialByID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTempMaterialByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteTempMaterialByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTempMaterialByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTempMaterialByID" />
+  </wsdl:message>
+  <wsdl:message name="GetTempMaterialByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTempMaterialByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTempMaterialListByPageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTempMaterialListByPage" />
+  </wsdl:message>
+  <wsdl:message name="GetTempMaterialListByPageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTempMaterialListByPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMaterialInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMaterialInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTempMaterialNoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTempMaterialNo" />
+  </wsdl:message>
+  <wsdl:message name="GetTempMaterialNoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTempMaterialNoResponse" />
   </wsdl:message>
   <wsdl:message name="GetTaskMainListByPageSoapIn">
     <wsdl:part name="parameters" element="tns:GetTaskMainListByPage" />
@@ -6032,72 +6445,6 @@
   <wsdl:message name="GetSupplierInfoForU8SoapOut">
     <wsdl:part name="parameters" element="tns:GetSupplierInfoForU8Response" />
   </wsdl:message>
-  <wsdl:message name="GetOutSideByDeliveryToSRMSoapIn">
-    <wsdl:part name="parameters" element="tns:GetOutSideByDeliveryToSRM" />
-  </wsdl:message>
-  <wsdl:message name="GetOutSideByDeliveryToSRMSoapOut">
-    <wsdl:part name="parameters" element="tns:GetOutSideByDeliveryToSRMResponse" />
-  </wsdl:message>
-  <wsdl:message name="CreateShelveTaskTestSoapIn">
-    <wsdl:part name="parameters" element="tns:CreateShelveTaskTest" />
-  </wsdl:message>
-  <wsdl:message name="CreateShelveTaskTestSoapOut">
-    <wsdl:part name="parameters" element="tns:CreateShelveTaskTestResponse" />
-  </wsdl:message>
-  <wsdl:message name="WriteLogSoapIn">
-    <wsdl:part name="parameters" element="tns:WriteLog" />
-  </wsdl:message>
-  <wsdl:message name="WriteLogSoapOut">
-    <wsdl:part name="parameters" element="tns:WriteLogResponse" />
-  </wsdl:message>
-  <wsdl:message name="TestMaterialOuterLabelSoapIn">
-    <wsdl:part name="parameters" element="tns:TestMaterialOuterLabel" />
-  </wsdl:message>
-  <wsdl:message name="TestMaterialOuterLabelSoapOut">
-    <wsdl:part name="parameters" element="tns:TestMaterialOuterLabelResponse" />
-  </wsdl:message>
-  <wsdl:message name="TestMaterialInnerLabelSoapIn">
-    <wsdl:part name="parameters" element="tns:TestMaterialInnerLabel" />
-  </wsdl:message>
-  <wsdl:message name="TestMaterialInnerLabelSoapOut">
-    <wsdl:part name="parameters" element="tns:TestMaterialInnerLabelResponse" />
-  </wsdl:message>
-  <wsdl:message name="TestProductLabelSoapIn">
-    <wsdl:part name="parameters" element="tns:TestProductLabel" />
-  </wsdl:message>
-  <wsdl:message name="TestProductLabelSoapOut">
-    <wsdl:part name="parameters" element="tns:TestProductLabelResponse" />
-  </wsdl:message>
-  <wsdl:message name="CheckSerialNoSoapIn">
-    <wsdl:part name="parameters" element="tns:CheckSerialNo" />
-  </wsdl:message>
-  <wsdl:message name="CheckSerialNoSoapOut">
-    <wsdl:part name="parameters" element="tns:CheckSerialNoResponse" />
-  </wsdl:message>
-  <wsdl:message name="CreateInnerProductBarcodeSoapIn">
-    <wsdl:part name="parameters" element="tns:CreateInnerProductBarcode" />
-  </wsdl:message>
-  <wsdl:message name="CreateInnerProductBarcodeSoapOut">
-    <wsdl:part name="parameters" element="tns:CreateInnerProductBarcodeResponse" />
-  </wsdl:message>
-  <wsdl:message name="CreateOuterProductBarcodeSoapIn">
-    <wsdl:part name="parameters" element="tns:CreateOuterProductBarcode" />
-  </wsdl:message>
-  <wsdl:message name="CreateOuterProductBarcodeSoapOut">
-    <wsdl:part name="parameters" element="tns:CreateOuterProductBarcodeResponse" />
-  </wsdl:message>
-  <wsdl:message name="ImportStockSoapIn">
-    <wsdl:part name="parameters" element="tns:ImportStock" />
-  </wsdl:message>
-  <wsdl:message name="ImportStockSoapOut">
-    <wsdl:part name="parameters" element="tns:ImportStockResponse" />
-  </wsdl:message>
-  <wsdl:message name="RemoveStockSoapIn">
-    <wsdl:part name="parameters" element="tns:RemoveStock" />
-  </wsdl:message>
-  <wsdl:message name="RemoveStockSoapOut">
-    <wsdl:part name="parameters" element="tns:RemoveStockResponse" />
-  </wsdl:message>
   <wsdl:message name="HelloWorldSoapIn">
     <wsdl:part name="parameters" element="tns:HelloWorld" />
   </wsdl:message>
@@ -6434,6 +6781,78 @@
   <wsdl:message name="GetMenuNoSoapOut">
     <wsdl:part name="parameters" element="tns:GetMenuNoResponse" />
   </wsdl:message>
+  <wsdl:message name="ExistspCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:ExistspCode" />
+  </wsdl:message>
+  <wsdl:message name="ExistspCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:ExistspCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SavePreparationSoapIn">
+    <wsdl:part name="parameters" element="tns:SavePreparation" />
+  </wsdl:message>
+  <wsdl:message name="SavePreparationSoapOut">
+    <wsdl:part name="parameters" element="tns:SavePreparationResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePreparationByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePreparationByID" />
+  </wsdl:message>
+  <wsdl:message name="DeletePreparationByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePreparationByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPreparationByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPreparationByID" />
+  </wsdl:message>
+  <wsdl:message name="GetPreparationByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPreparationByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPreparationListByPageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPreparationListByPage" />
+  </wsdl:message>
+  <wsdl:message name="GetPreparationListByPageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPreparationListByPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPreparationListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPreparationList" />
+  </wsdl:message>
+  <wsdl:message name="GetPreparationListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPreparationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExistsbNoSoapIn">
+    <wsdl:part name="parameters" element="tns:ExistsbNo" />
+  </wsdl:message>
+  <wsdl:message name="ExistsbNoSoapOut">
+    <wsdl:part name="parameters" element="tns:ExistsbNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveBuildingSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveBuilding" />
+  </wsdl:message>
+  <wsdl:message name="SaveBuildingSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveBuildingResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteBuildingByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteBuildingByID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteBuildingByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteBuildingByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBuildingByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBuildingByID" />
+  </wsdl:message>
+  <wsdl:message name="GetBuildingByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBuildingByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBuildingListByPageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBuildingListByPage" />
+  </wsdl:message>
+  <wsdl:message name="GetBuildingListByPageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBuildingListByPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBuildingListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBuildingList" />
+  </wsdl:message>
+  <wsdl:message name="GetBuildingListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBuildingListResponse" />
+  </wsdl:message>
   <wsdl:message name="CheckImportTableSoapIn">
     <wsdl:part name="parameters" element="tns:CheckImportTable" />
   </wsdl:message>
@@ -6536,79 +6955,55 @@
   <wsdl:message name="GetVoucherByNoSoapOut">
     <wsdl:part name="parameters" element="tns:GetVoucherByNoResponse" />
   </wsdl:message>
-  <wsdl:message name="GetFastInNotHavePOInfoSoapIn">
-    <wsdl:part name="parameters" element="tns:GetFastInNotHavePOInfo" />
-  </wsdl:message>
-  <wsdl:message name="GetFastInNotHavePOInfoSoapOut">
-    <wsdl:part name="parameters" element="tns:GetFastInNotHavePOInfoResponse" />
-  </wsdl:message>
-  <wsdl:message name="InsetMaterialDetailSoapIn">
-    <wsdl:part name="parameters" element="tns:InsetMaterialDetail" />
-  </wsdl:message>
-  <wsdl:message name="InsetMaterialDetailSoapOut">
-    <wsdl:part name="parameters" element="tns:InsetMaterialDetailResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetTempMaterialNameSoapIn">
-    <wsdl:part name="parameters" element="tns:GetTempMaterialName" />
-  </wsdl:message>
-  <wsdl:message name="GetTempMaterialNameSoapOut">
-    <wsdl:part name="parameters" element="tns:GetTempMaterialNameResponse" />
-  </wsdl:message>
-  <wsdl:message name="ExistsTempMaterialByMaterialNoSoapIn">
-    <wsdl:part name="parameters" element="tns:ExistsTempMaterialByMaterialNo" />
-  </wsdl:message>
-  <wsdl:message name="ExistsTempMaterialByMaterialNoSoapOut">
-    <wsdl:part name="parameters" element="tns:ExistsTempMaterialByMaterialNoResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetTempMaterialByTempNoSoapIn">
-    <wsdl:part name="parameters" element="tns:GetTempMaterialByTempNo" />
-  </wsdl:message>
-  <wsdl:message name="GetTempMaterialByTempNoSoapOut">
-    <wsdl:part name="parameters" element="tns:GetTempMaterialByTempNoResponse" />
-  </wsdl:message>
-  <wsdl:message name="ExistsTempMaterialNoSoapIn">
-    <wsdl:part name="parameters" element="tns:ExistsTempMaterialNo" />
-  </wsdl:message>
-  <wsdl:message name="ExistsTempMaterialNoSoapOut">
-    <wsdl:part name="parameters" element="tns:ExistsTempMaterialNoResponse" />
-  </wsdl:message>
-  <wsdl:message name="SaveTempMaterialSoapIn">
-    <wsdl:part name="parameters" element="tns:SaveTempMaterial" />
-  </wsdl:message>
-  <wsdl:message name="SaveTempMaterialSoapOut">
-    <wsdl:part name="parameters" element="tns:SaveTempMaterialResponse" />
-  </wsdl:message>
-  <wsdl:message name="DeleteTempMaterialByIDSoapIn">
-    <wsdl:part name="parameters" element="tns:DeleteTempMaterialByID" />
-  </wsdl:message>
-  <wsdl:message name="DeleteTempMaterialByIDSoapOut">
-    <wsdl:part name="parameters" element="tns:DeleteTempMaterialByIDResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetTempMaterialByIDSoapIn">
-    <wsdl:part name="parameters" element="tns:GetTempMaterialByID" />
-  </wsdl:message>
-  <wsdl:message name="GetTempMaterialByIDSoapOut">
-    <wsdl:part name="parameters" element="tns:GetTempMaterialByIDResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetTempMaterialListByPageSoapIn">
-    <wsdl:part name="parameters" element="tns:GetTempMaterialListByPage" />
-  </wsdl:message>
-  <wsdl:message name="GetTempMaterialListByPageSoapOut">
-    <wsdl:part name="parameters" element="tns:GetTempMaterialListByPageResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetMaterialInfoSoapIn">
-    <wsdl:part name="parameters" element="tns:GetMaterialInfo" />
-  </wsdl:message>
-  <wsdl:message name="GetMaterialInfoSoapOut">
-    <wsdl:part name="parameters" element="tns:GetMaterialInfoResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetTempMaterialNoSoapIn">
-    <wsdl:part name="parameters" element="tns:GetTempMaterialNo" />
-  </wsdl:message>
-  <wsdl:message name="GetTempMaterialNoSoapOut">
-    <wsdl:part name="parameters" element="tns:GetTempMaterialNoResponse" />
-  </wsdl:message>
   <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="GetOutSideByDeliveryToSRM">
+      <wsdl:input message="tns:GetOutSideByDeliveryToSRMSoapIn" />
+      <wsdl:output message="tns:GetOutSideByDeliveryToSRMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateShelveTaskTest">
+      <wsdl:input message="tns:CreateShelveTaskTestSoapIn" />
+      <wsdl:output message="tns:CreateShelveTaskTestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestReadData">
+      <wsdl:input message="tns:TestReadDataSoapIn" />
+      <wsdl:output message="tns:TestReadDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteLog">
+      <wsdl:input message="tns:WriteLogSoapIn" />
+      <wsdl:output message="tns:WriteLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestMaterialOuterLabel">
+      <wsdl:input message="tns:TestMaterialOuterLabelSoapIn" />
+      <wsdl:output message="tns:TestMaterialOuterLabelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestMaterialInnerLabel">
+      <wsdl:input message="tns:TestMaterialInnerLabelSoapIn" />
+      <wsdl:output message="tns:TestMaterialInnerLabelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestProductLabel">
+      <wsdl:input message="tns:TestProductLabelSoapIn" />
+      <wsdl:output message="tns:TestProductLabelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckSerialNo">
+      <wsdl:input message="tns:CheckSerialNoSoapIn" />
+      <wsdl:output message="tns:CheckSerialNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateInnerProductBarcode">
+      <wsdl:input message="tns:CreateInnerProductBarcodeSoapIn" />
+      <wsdl:output message="tns:CreateInnerProductBarcodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOuterProductBarcode">
+      <wsdl:input message="tns:CreateOuterProductBarcodeSoapIn" />
+      <wsdl:output message="tns:CreateOuterProductBarcodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportStock">
+      <wsdl:input message="tns:ImportStockSoapIn" />
+      <wsdl:output message="tns:ImportStockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveStock">
+      <wsdl:input message="tns:RemoveStockSoapIn" />
+      <wsdl:output message="tns:RemoveStockSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="CreateInitialProductBarcode">
       <wsdl:input message="tns:CreateInitialProductBarcodeSoapIn" />
       <wsdl:output message="tns:CreateInitialProductBarcodeSoapOut" />
@@ -6800,6 +7195,54 @@
     <wsdl:operation name="QueryMaterialBarcodeReportRowDetail">
       <wsdl:input message="tns:QueryMaterialBarcodeReportRowDetailSoapIn" />
       <wsdl:output message="tns:QueryMaterialBarcodeReportRowDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFastInNotHavePOInfo">
+      <wsdl:input message="tns:GetFastInNotHavePOInfoSoapIn" />
+      <wsdl:output message="tns:GetFastInNotHavePOInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsetMaterialDetail">
+      <wsdl:input message="tns:InsetMaterialDetailSoapIn" />
+      <wsdl:output message="tns:InsetMaterialDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialName">
+      <wsdl:input message="tns:GetTempMaterialNameSoapIn" />
+      <wsdl:output message="tns:GetTempMaterialNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExistsTempMaterialByMaterialNo">
+      <wsdl:input message="tns:ExistsTempMaterialByMaterialNoSoapIn" />
+      <wsdl:output message="tns:ExistsTempMaterialByMaterialNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialByTempNo">
+      <wsdl:input message="tns:GetTempMaterialByTempNoSoapIn" />
+      <wsdl:output message="tns:GetTempMaterialByTempNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExistsTempMaterialNo">
+      <wsdl:input message="tns:ExistsTempMaterialNoSoapIn" />
+      <wsdl:output message="tns:ExistsTempMaterialNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveTempMaterial">
+      <wsdl:input message="tns:SaveTempMaterialSoapIn" />
+      <wsdl:output message="tns:SaveTempMaterialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTempMaterialByID">
+      <wsdl:input message="tns:DeleteTempMaterialByIDSoapIn" />
+      <wsdl:output message="tns:DeleteTempMaterialByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialByID">
+      <wsdl:input message="tns:GetTempMaterialByIDSoapIn" />
+      <wsdl:output message="tns:GetTempMaterialByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialListByPage">
+      <wsdl:input message="tns:GetTempMaterialListByPageSoapIn" />
+      <wsdl:output message="tns:GetTempMaterialListByPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialInfo">
+      <wsdl:input message="tns:GetMaterialInfoSoapIn" />
+      <wsdl:output message="tns:GetMaterialInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialNo">
+      <wsdl:input message="tns:GetTempMaterialNoSoapIn" />
+      <wsdl:output message="tns:GetTempMaterialNoSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="GetTaskMainListByPage">
       <wsdl:input message="tns:GetTaskMainListByPageSoapIn" />
@@ -7094,50 +7537,6 @@
       <wsdl:input message="tns:GetSupplierInfoForU8SoapIn" />
       <wsdl:output message="tns:GetSupplierInfoForU8SoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="GetOutSideByDeliveryToSRM">
-      <wsdl:input message="tns:GetOutSideByDeliveryToSRMSoapIn" />
-      <wsdl:output message="tns:GetOutSideByDeliveryToSRMSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="CreateShelveTaskTest">
-      <wsdl:input message="tns:CreateShelveTaskTestSoapIn" />
-      <wsdl:output message="tns:CreateShelveTaskTestSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="WriteLog">
-      <wsdl:input message="tns:WriteLogSoapIn" />
-      <wsdl:output message="tns:WriteLogSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="TestMaterialOuterLabel">
-      <wsdl:input message="tns:TestMaterialOuterLabelSoapIn" />
-      <wsdl:output message="tns:TestMaterialOuterLabelSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="TestMaterialInnerLabel">
-      <wsdl:input message="tns:TestMaterialInnerLabelSoapIn" />
-      <wsdl:output message="tns:TestMaterialInnerLabelSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="TestProductLabel">
-      <wsdl:input message="tns:TestProductLabelSoapIn" />
-      <wsdl:output message="tns:TestProductLabelSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="CheckSerialNo">
-      <wsdl:input message="tns:CheckSerialNoSoapIn" />
-      <wsdl:output message="tns:CheckSerialNoSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="CreateInnerProductBarcode">
-      <wsdl:input message="tns:CreateInnerProductBarcodeSoapIn" />
-      <wsdl:output message="tns:CreateInnerProductBarcodeSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="CreateOuterProductBarcode">
-      <wsdl:input message="tns:CreateOuterProductBarcodeSoapIn" />
-      <wsdl:output message="tns:CreateOuterProductBarcodeSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="ImportStock">
-      <wsdl:input message="tns:ImportStockSoapIn" />
-      <wsdl:output message="tns:ImportStockSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="RemoveStock">
-      <wsdl:input message="tns:RemoveStockSoapIn" />
-      <wsdl:output message="tns:RemoveStockSoapOut" />
-    </wsdl:operation>
     <wsdl:operation name="HelloWorld">
       <wsdl:input message="tns:HelloWorldSoapIn" />
       <wsdl:output message="tns:HelloWorldSoapOut" />
@@ -7363,6 +7762,54 @@
       <wsdl:input message="tns:GetMenuNoSoapIn" />
       <wsdl:output message="tns:GetMenuNoSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="ExistspCode">
+      <wsdl:input message="tns:ExistspCodeSoapIn" />
+      <wsdl:output message="tns:ExistspCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePreparation">
+      <wsdl:input message="tns:SavePreparationSoapIn" />
+      <wsdl:output message="tns:SavePreparationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePreparationByID">
+      <wsdl:input message="tns:DeletePreparationByIDSoapIn" />
+      <wsdl:output message="tns:DeletePreparationByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreparationByID">
+      <wsdl:input message="tns:GetPreparationByIDSoapIn" />
+      <wsdl:output message="tns:GetPreparationByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreparationListByPage">
+      <wsdl:input message="tns:GetPreparationListByPageSoapIn" />
+      <wsdl:output message="tns:GetPreparationListByPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreparationList">
+      <wsdl:input message="tns:GetPreparationListSoapIn" />
+      <wsdl:output message="tns:GetPreparationListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExistsbNo">
+      <wsdl:input message="tns:ExistsbNoSoapIn" />
+      <wsdl:output message="tns:ExistsbNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBuilding">
+      <wsdl:input message="tns:SaveBuildingSoapIn" />
+      <wsdl:output message="tns:SaveBuildingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBuildingByID">
+      <wsdl:input message="tns:DeleteBuildingByIDSoapIn" />
+      <wsdl:output message="tns:DeleteBuildingByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingByID">
+      <wsdl:input message="tns:GetBuildingByIDSoapIn" />
+      <wsdl:output message="tns:GetBuildingByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingListByPage">
+      <wsdl:input message="tns:GetBuildingListByPageSoapIn" />
+      <wsdl:output message="tns:GetBuildingListByPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingList">
+      <wsdl:input message="tns:GetBuildingListSoapIn" />
+      <wsdl:output message="tns:GetBuildingListSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="CheckImportTable">
       <wsdl:input message="tns:CheckImportTableSoapIn" />
       <wsdl:output message="tns:CheckImportTableSoapOut" />
@@ -7431,57 +7878,117 @@
       <wsdl:input message="tns:GetVoucherByNoSoapIn" />
       <wsdl:output message="tns:GetVoucherByNoSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="GetFastInNotHavePOInfo">
-      <wsdl:input message="tns:GetFastInNotHavePOInfoSoapIn" />
-      <wsdl:output message="tns:GetFastInNotHavePOInfoSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="InsetMaterialDetail">
-      <wsdl:input message="tns:InsetMaterialDetailSoapIn" />
-      <wsdl:output message="tns:InsetMaterialDetailSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialName">
-      <wsdl:input message="tns:GetTempMaterialNameSoapIn" />
-      <wsdl:output message="tns:GetTempMaterialNameSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="ExistsTempMaterialByMaterialNo">
-      <wsdl:input message="tns:ExistsTempMaterialByMaterialNoSoapIn" />
-      <wsdl:output message="tns:ExistsTempMaterialByMaterialNoSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialByTempNo">
-      <wsdl:input message="tns:GetTempMaterialByTempNoSoapIn" />
-      <wsdl:output message="tns:GetTempMaterialByTempNoSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="ExistsTempMaterialNo">
-      <wsdl:input message="tns:ExistsTempMaterialNoSoapIn" />
-      <wsdl:output message="tns:ExistsTempMaterialNoSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="SaveTempMaterial">
-      <wsdl:input message="tns:SaveTempMaterialSoapIn" />
-      <wsdl:output message="tns:SaveTempMaterialSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="DeleteTempMaterialByID">
-      <wsdl:input message="tns:DeleteTempMaterialByIDSoapIn" />
-      <wsdl:output message="tns:DeleteTempMaterialByIDSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialByID">
-      <wsdl:input message="tns:GetTempMaterialByIDSoapIn" />
-      <wsdl:output message="tns:GetTempMaterialByIDSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialListByPage">
-      <wsdl:input message="tns:GetTempMaterialListByPageSoapIn" />
-      <wsdl:output message="tns:GetTempMaterialListByPageSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetMaterialInfo">
-      <wsdl:input message="tns:GetMaterialInfoSoapIn" />
-      <wsdl:output message="tns:GetMaterialInfoSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialNo">
-      <wsdl:input message="tns:GetTempMaterialNoSoapIn" />
-      <wsdl:output message="tns:GetTempMaterialNoSoapOut" />
-    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetOutSideByDeliveryToSRM">
+      <soap:operation soapAction="http://tempuri.org/GetOutSideByDeliveryToSRM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateShelveTaskTest">
+      <soap:operation soapAction="http://tempuri.org/CreateShelveTaskTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestReadData">
+      <soap:operation soapAction="http://tempuri.org/TestReadData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteLog">
+      <soap:operation soapAction="http://tempuri.org/WriteLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestMaterialOuterLabel">
+      <soap:operation soapAction="http://tempuri.org/TestMaterialOuterLabel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestMaterialInnerLabel">
+      <soap:operation soapAction="http://tempuri.org/TestMaterialInnerLabel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestProductLabel">
+      <soap:operation soapAction="http://tempuri.org/TestProductLabel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckSerialNo">
+      <soap:operation soapAction="http://tempuri.org/CheckSerialNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateInnerProductBarcode">
+      <soap:operation soapAction="http://tempuri.org/CreateInnerProductBarcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOuterProductBarcode">
+      <soap:operation soapAction="http://tempuri.org/CreateOuterProductBarcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportStock">
+      <soap:operation soapAction="http://tempuri.org/ImportStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveStock">
+      <soap:operation soapAction="http://tempuri.org/RemoveStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="CreateInitialProductBarcode">
       <soap:operation soapAction="http://tempuri.org/CreateInitialProductBarcode" style="document" />
       <wsdl:input>
@@ -7907,6 +8414,114 @@
     </wsdl:operation>
     <wsdl:operation name="QueryMaterialBarcodeReportRowDetail">
       <soap:operation soapAction="http://tempuri.org/QueryMaterialBarcodeReportRowDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFastInNotHavePOInfo">
+      <soap:operation soapAction="http://tempuri.org/GetFastInNotHavePOInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsetMaterialDetail">
+      <soap:operation soapAction="http://tempuri.org/InsetMaterialDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialName">
+      <soap:operation soapAction="http://tempuri.org/GetTempMaterialName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistsTempMaterialByMaterialNo">
+      <soap:operation soapAction="http://tempuri.org/ExistsTempMaterialByMaterialNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialByTempNo">
+      <soap:operation soapAction="http://tempuri.org/GetTempMaterialByTempNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistsTempMaterialNo">
+      <soap:operation soapAction="http://tempuri.org/ExistsTempMaterialNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTempMaterial">
+      <soap:operation soapAction="http://tempuri.org/SaveTempMaterial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTempMaterialByID">
+      <soap:operation soapAction="http://tempuri.org/DeleteTempMaterialByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialByID">
+      <soap:operation soapAction="http://tempuri.org/GetTempMaterialByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialListByPage">
+      <soap:operation soapAction="http://tempuri.org/GetTempMaterialListByPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialInfo">
+      <soap:operation soapAction="http://tempuri.org/GetMaterialInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialNo">
+      <soap:operation soapAction="http://tempuri.org/GetTempMaterialNo" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -8571,105 +9186,6 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetOutSideByDeliveryToSRM">
-      <soap:operation soapAction="http://tempuri.org/GetOutSideByDeliveryToSRM" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="CreateShelveTaskTest">
-      <soap:operation soapAction="http://tempuri.org/CreateShelveTaskTest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="WriteLog">
-      <soap:operation soapAction="http://tempuri.org/WriteLog" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TestMaterialOuterLabel">
-      <soap:operation soapAction="http://tempuri.org/TestMaterialOuterLabel" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TestMaterialInnerLabel">
-      <soap:operation soapAction="http://tempuri.org/TestMaterialInnerLabel" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TestProductLabel">
-      <soap:operation soapAction="http://tempuri.org/TestProductLabel" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="CheckSerialNo">
-      <soap:operation soapAction="http://tempuri.org/CheckSerialNo" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="CreateInnerProductBarcode">
-      <soap:operation soapAction="http://tempuri.org/CreateInnerProductBarcode" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="CreateOuterProductBarcode">
-      <soap:operation soapAction="http://tempuri.org/CreateOuterProductBarcode" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ImportStock">
-      <soap:operation soapAction="http://tempuri.org/ImportStock" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="RemoveStock">
-      <soap:operation soapAction="http://tempuri.org/RemoveStock" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="HelloWorld">
       <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
       <wsdl:input>
@@ -9174,6 +9690,114 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="ExistspCode">
+      <soap:operation soapAction="http://tempuri.org/ExistspCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePreparation">
+      <soap:operation soapAction="http://tempuri.org/SavePreparation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePreparationByID">
+      <soap:operation soapAction="http://tempuri.org/DeletePreparationByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreparationByID">
+      <soap:operation soapAction="http://tempuri.org/GetPreparationByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreparationListByPage">
+      <soap:operation soapAction="http://tempuri.org/GetPreparationListByPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreparationList">
+      <soap:operation soapAction="http://tempuri.org/GetPreparationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistsbNo">
+      <soap:operation soapAction="http://tempuri.org/ExistsbNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBuilding">
+      <soap:operation soapAction="http://tempuri.org/SaveBuilding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBuildingByID">
+      <soap:operation soapAction="http://tempuri.org/DeleteBuildingByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingByID">
+      <soap:operation soapAction="http://tempuri.org/GetBuildingByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingListByPage">
+      <soap:operation soapAction="http://tempuri.org/GetBuildingListByPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingList">
+      <soap:operation soapAction="http://tempuri.org/GetBuildingList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="CheckImportTable">
       <soap:operation soapAction="http://tempuri.org/CheckImportTable" style="document" />
       <wsdl:input>
@@ -9327,117 +9951,117 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetFastInNotHavePOInfo">
-      <soap:operation soapAction="http://tempuri.org/GetFastInNotHavePOInfo" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="InsetMaterialDetail">
-      <soap:operation soapAction="http://tempuri.org/InsetMaterialDetail" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialName">
-      <soap:operation soapAction="http://tempuri.org/GetTempMaterialName" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ExistsTempMaterialByMaterialNo">
-      <soap:operation soapAction="http://tempuri.org/ExistsTempMaterialByMaterialNo" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialByTempNo">
-      <soap:operation soapAction="http://tempuri.org/GetTempMaterialByTempNo" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ExistsTempMaterialNo">
-      <soap:operation soapAction="http://tempuri.org/ExistsTempMaterialNo" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="SaveTempMaterial">
-      <soap:operation soapAction="http://tempuri.org/SaveTempMaterial" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="DeleteTempMaterialByID">
-      <soap:operation soapAction="http://tempuri.org/DeleteTempMaterialByID" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialByID">
-      <soap:operation soapAction="http://tempuri.org/GetTempMaterialByID" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialListByPage">
-      <soap:operation soapAction="http://tempuri.org/GetTempMaterialListByPage" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetMaterialInfo">
-      <soap:operation soapAction="http://tempuri.org/GetMaterialInfo" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialNo">
-      <soap:operation soapAction="http://tempuri.org/GetTempMaterialNo" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetOutSideByDeliveryToSRM">
+      <soap12:operation soapAction="http://tempuri.org/GetOutSideByDeliveryToSRM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateShelveTaskTest">
+      <soap12:operation soapAction="http://tempuri.org/CreateShelveTaskTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestReadData">
+      <soap12:operation soapAction="http://tempuri.org/TestReadData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteLog">
+      <soap12:operation soapAction="http://tempuri.org/WriteLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestMaterialOuterLabel">
+      <soap12:operation soapAction="http://tempuri.org/TestMaterialOuterLabel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestMaterialInnerLabel">
+      <soap12:operation soapAction="http://tempuri.org/TestMaterialInnerLabel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestProductLabel">
+      <soap12:operation soapAction="http://tempuri.org/TestProductLabel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckSerialNo">
+      <soap12:operation soapAction="http://tempuri.org/CheckSerialNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateInnerProductBarcode">
+      <soap12:operation soapAction="http://tempuri.org/CreateInnerProductBarcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOuterProductBarcode">
+      <soap12:operation soapAction="http://tempuri.org/CreateOuterProductBarcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportStock">
+      <soap12:operation soapAction="http://tempuri.org/ImportStock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveStock">
+      <soap12:operation soapAction="http://tempuri.org/RemoveStock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="CreateInitialProductBarcode">
       <soap12:operation soapAction="http://tempuri.org/CreateInitialProductBarcode" style="document" />
       <wsdl:input>
@@ -9863,6 +10487,114 @@
     </wsdl:operation>
     <wsdl:operation name="QueryMaterialBarcodeReportRowDetail">
       <soap12:operation soapAction="http://tempuri.org/QueryMaterialBarcodeReportRowDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFastInNotHavePOInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetFastInNotHavePOInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsetMaterialDetail">
+      <soap12:operation soapAction="http://tempuri.org/InsetMaterialDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialName">
+      <soap12:operation soapAction="http://tempuri.org/GetTempMaterialName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistsTempMaterialByMaterialNo">
+      <soap12:operation soapAction="http://tempuri.org/ExistsTempMaterialByMaterialNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialByTempNo">
+      <soap12:operation soapAction="http://tempuri.org/GetTempMaterialByTempNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistsTempMaterialNo">
+      <soap12:operation soapAction="http://tempuri.org/ExistsTempMaterialNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTempMaterial">
+      <soap12:operation soapAction="http://tempuri.org/SaveTempMaterial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTempMaterialByID">
+      <soap12:operation soapAction="http://tempuri.org/DeleteTempMaterialByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialByID">
+      <soap12:operation soapAction="http://tempuri.org/GetTempMaterialByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialListByPage">
+      <soap12:operation soapAction="http://tempuri.org/GetTempMaterialListByPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetMaterialInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempMaterialNo">
+      <soap12:operation soapAction="http://tempuri.org/GetTempMaterialNo" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -10527,105 +11259,6 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetOutSideByDeliveryToSRM">
-      <soap12:operation soapAction="http://tempuri.org/GetOutSideByDeliveryToSRM" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="CreateShelveTaskTest">
-      <soap12:operation soapAction="http://tempuri.org/CreateShelveTaskTest" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="WriteLog">
-      <soap12:operation soapAction="http://tempuri.org/WriteLog" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TestMaterialOuterLabel">
-      <soap12:operation soapAction="http://tempuri.org/TestMaterialOuterLabel" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TestMaterialInnerLabel">
-      <soap12:operation soapAction="http://tempuri.org/TestMaterialInnerLabel" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TestProductLabel">
-      <soap12:operation soapAction="http://tempuri.org/TestProductLabel" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="CheckSerialNo">
-      <soap12:operation soapAction="http://tempuri.org/CheckSerialNo" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="CreateInnerProductBarcode">
-      <soap12:operation soapAction="http://tempuri.org/CreateInnerProductBarcode" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="CreateOuterProductBarcode">
-      <soap12:operation soapAction="http://tempuri.org/CreateOuterProductBarcode" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ImportStock">
-      <soap12:operation soapAction="http://tempuri.org/ImportStock" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="RemoveStock">
-      <soap12:operation soapAction="http://tempuri.org/RemoveStock" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="HelloWorld">
       <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
       <wsdl:input>
@@ -11130,6 +11763,114 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="ExistspCode">
+      <soap12:operation soapAction="http://tempuri.org/ExistspCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePreparation">
+      <soap12:operation soapAction="http://tempuri.org/SavePreparation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePreparationByID">
+      <soap12:operation soapAction="http://tempuri.org/DeletePreparationByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreparationByID">
+      <soap12:operation soapAction="http://tempuri.org/GetPreparationByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreparationListByPage">
+      <soap12:operation soapAction="http://tempuri.org/GetPreparationListByPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreparationList">
+      <soap12:operation soapAction="http://tempuri.org/GetPreparationList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistsbNo">
+      <soap12:operation soapAction="http://tempuri.org/ExistsbNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBuilding">
+      <soap12:operation soapAction="http://tempuri.org/SaveBuilding" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBuildingByID">
+      <soap12:operation soapAction="http://tempuri.org/DeleteBuildingByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingByID">
+      <soap12:operation soapAction="http://tempuri.org/GetBuildingByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingListByPage">
+      <soap12:operation soapAction="http://tempuri.org/GetBuildingListByPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildingList">
+      <soap12:operation soapAction="http://tempuri.org/GetBuildingList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="CheckImportTable">
       <soap12:operation soapAction="http://tempuri.org/CheckImportTable" style="document" />
       <wsdl:input>
@@ -11276,114 +12017,6 @@
     </wsdl:operation>
     <wsdl:operation name="GetVoucherByNo">
       <soap12:operation soapAction="http://tempuri.org/GetVoucherByNo" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetFastInNotHavePOInfo">
-      <soap12:operation soapAction="http://tempuri.org/GetFastInNotHavePOInfo" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="InsetMaterialDetail">
-      <soap12:operation soapAction="http://tempuri.org/InsetMaterialDetail" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialName">
-      <soap12:operation soapAction="http://tempuri.org/GetTempMaterialName" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ExistsTempMaterialByMaterialNo">
-      <soap12:operation soapAction="http://tempuri.org/ExistsTempMaterialByMaterialNo" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialByTempNo">
-      <soap12:operation soapAction="http://tempuri.org/GetTempMaterialByTempNo" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ExistsTempMaterialNo">
-      <soap12:operation soapAction="http://tempuri.org/ExistsTempMaterialNo" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="SaveTempMaterial">
-      <soap12:operation soapAction="http://tempuri.org/SaveTempMaterial" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="DeleteTempMaterialByID">
-      <soap12:operation soapAction="http://tempuri.org/DeleteTempMaterialByID" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialByID">
-      <soap12:operation soapAction="http://tempuri.org/GetTempMaterialByID" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialListByPage">
-      <soap12:operation soapAction="http://tempuri.org/GetTempMaterialListByPage" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetMaterialInfo">
-      <soap12:operation soapAction="http://tempuri.org/GetMaterialInfo" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetTempMaterialNo">
-      <soap12:operation soapAction="http://tempuri.org/GetTempMaterialNo" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
