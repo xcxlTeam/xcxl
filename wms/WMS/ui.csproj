@@ -594,6 +594,24 @@
     </Compile>
     <Compile Include="Print\Print_Func.cs" />
     <Compile Include="Print\Print_Var.cs" />
+    <Compile Include="Product\FrmErrWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FrmErrWork.Designer.cs">
+      <DependentUpon>FrmErrWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FrmWorkBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FrmWorkBase.Designer.cs">
+      <DependentUpon>FrmWorkBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FrmWorkLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FrmWorkLine.Designer.cs">
+      <DependentUpon>FrmWorkLine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quality\FrmQuality.cs">
@@ -961,6 +979,12 @@
     <EmbeddedResource Include="Print\Report4.rdlc" />
     <EmbeddedResource Include="Print\Report5.rdlc" />
     <EmbeddedResource Include="Print\Report6.rdlc" />
+    <EmbeddedResource Include="Product\FrmErrWork.resx">
+      <DependentUpon>FrmErrWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FrmWorkLine.resx">
+      <DependentUpon>FrmWorkLine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -1282,9 +1306,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Product\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
