@@ -807,6 +807,55 @@ where cSource=N'销售' and csbvcode = '" + dsbvcode + "'";
                 return false;
             }
         }
+        /// <summary>
+        /// 获取物料总库存
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="strArrayMaterialNo"></param>
+        /// <param name="strErrMsg"></param>
+        /// <returns></returns>
+        public bool QueryStockSumForTransfer(out List<StockHead_Model> list, string strArrayMaterialNo, out string strErrMsg)
+        {
+            string strMaterialNo = "";
+            string[] ArrayMaterialNo = strArrayMaterialNo.Split(',');
+            foreach (var item in ArrayMaterialNo)
+            {
+                if (string.IsNullOrEmpty(strMaterialNo))
+                {
+                    strMaterialNo = "N'" + item + "'";
+                }
+                else
+                    strMaterialNo += (",N'" + item + "'");
+            }
+            try
+            {
+                string sql = @"select materialno, materialdesc,materialstd,SUM(iquantity) as sumqty,sum(inum) as sumnum from T_CURRENTSTOCK where warehouseno IN ('01','04') AND MATERIALNO IN ("+strMaterialNo+") group by materialno,materialdesc,materialstd,warehouseno";
+                list = new List<StockHead_Model>();
+                using (SqlDataReader dr = OperationSql.ExecuteReader(System.Data.CommandType.Text, sql))
+                {
+                    while (dr.Read())
+                    {
+                        StockHead_Model model = new StockHead_Model();
+                        model.MaterialNo = dr["materialno"].ToDBString();
+                        model.MaterialDesc = dr["materialdesc"].ToDBString();
+                        model.MaterialCHDesc = dr["MaterialCHDesc"].ToCHString();
+                        model.iQuantity = dr["sumqty"].ToDecimal();
+                        model.iNum = dr["sumnum"].ToInt32();
+                        model.WarehouseNo = dr["WarehouseNo"].ToDBString();
+                        list.Add(model);
+                    }
+                }
+                strErrMsg = "";
+                return true;
+            }
+            catch (Exception ex)
+            {
+                list = null;
+                strErrMsg = ex.Message;
+                return false;
+            }
+        }
+
 
         public bool SaveCheckOmitAdd(string strBarcode, Basic.Area.AreaInfo areaInfo,ref string strErrMsg)
         {

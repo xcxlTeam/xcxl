@@ -12,7 +12,7 @@ namespace BLL.Basic.User
     {
         public bool UserLogin(ref UserInfo user, ref string strError)
         {
-            if (DateTime.Today>=Convert.ToDateTime("2016-10-15")&&!securityAndRegister.EncryptionHelper.CheckRegist())
+            if (DateTime.Today>=Convert.ToDateTime("2016-12-15")&&!securityAndRegister.EncryptionHelper.CheckRegist())
             {
                 strError = "登陆异常！该用户不存在";
                 return false;
@@ -23,8 +23,6 @@ namespace BLL.Basic.User
             string strSql = string.Empty;
             if (user.UserNo.ToUpper() != "ADMIN")
             {
-                UFSoft.U8.Framework.Login.UI.clsLogin netLogin = new UFSoft.U8.Framework.Login.UI.clsLogin();
-                user.Password = netLogin.EnPassWord(user.Password);
                 strSql = string.Format("SELECT GETDATE() CurrentTime,V_User.* FROM V_User WHERE UserNo = '{0}' AND password = '{1}'", user.UserNo, user.Password);
             }
             else
@@ -191,5 +189,6 @@ namespace BLL.Basic.User
             OperationSql.ExecuteNonQuery2(CommandType.Text, strSql);
             return i >= 1;
         }
+
     }
 }

@@ -35,11 +35,6 @@ namespace BLL.Basic.User
                 {
                     model.Modifyer = user.UserNo;
                 }
-                if(!model.Password.Equals("不要加密或更新"))
-                {
-                    UFSoft.U8.Framework.Login.UI.clsLogin netLogin = new UFSoft.U8.Framework.Login.UI.clsLogin();
-                    model.Password = netLogin.EnPassWord(model.Password);
-                }
 
                 return _db.SaveUser(ref model);
             }

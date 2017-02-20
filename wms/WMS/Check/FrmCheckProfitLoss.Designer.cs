@@ -52,6 +52,7 @@
             this.colSerialNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaterialNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaterialDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colBatchNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAccountQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -113,6 +114,7 @@
             this.colSerialNo,
             this.colMaterialNo,
             this.colMaterialDesc,
+            this.Column1,
             this.colBatchNo,
             this.colSN,
             this.colAccountQty,
@@ -269,20 +271,25 @@
             // colMaterialDesc
             // 
             this.colMaterialDesc.DataPropertyName = "MaterialDesc";
-            this.colMaterialDesc.HeaderText = "物料描述";
+            this.colMaterialDesc.HeaderText = "中文名称";
             this.colMaterialDesc.Name = "colMaterialDesc";
             this.colMaterialDesc.Width = 200;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "英文名称";
+            this.Column1.Name = "Column1";
             // 
             // colBatchNo
             // 
             this.colBatchNo.DataPropertyName = "BatchNo";
-            this.colBatchNo.HeaderText = "生产批次";
+            this.colBatchNo.HeaderText = "批号";
             this.colBatchNo.Name = "colBatchNo";
             // 
             // colSN
             // 
             this.colSN.DataPropertyName = "SN";
-            this.colSN.HeaderText = "来料批次";
+            this.colSN.HeaderText = "原厂批号";
             this.colSN.Name = "colSN";
             // 
             // colAccountQty
@@ -346,6 +353,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colSerialNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaterialNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaterialDesc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colBatchNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSN;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAccountQty;

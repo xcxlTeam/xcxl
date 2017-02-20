@@ -167,7 +167,7 @@ namespace BLL.Basic.User
         #endregion
 
         #region Android
-        //UFSoft.U8.Framework.Login.UI.clsLogin netLogin = new UFSoft.U8.Framework.Login.UI.clsLogin();
+
         public string UserLoginForAndroid(string strUserJson)
         {
             UserInfo user = new UserInfo();
@@ -177,7 +177,6 @@ namespace BLL.Basic.User
                 user = JSONHelper.JsonToObject<UserInfo>(strUserJson);
                 string password = user.Password;
                 //user.Password = JiaMi(user.Password);
-                //user.Password = netLogin.EnPassWord(user.Password);
 
                 bool bResult = _db.UserLogin(ref user, ref strError);
 
@@ -185,16 +184,6 @@ namespace BLL.Basic.User
 
                 if (bResult)
                 {
-                    //#region U8APILogin
-                    //U8DAL.U8API.U8APICommon co = U8DAL.U8API.U8APICommon.GetU8APICommon();
-                    //strError = co.errMsg;
-                    //if (!string.IsNullOrEmpty(strError))
-                    //{
-                    //    user.Status = "E";
-                    //    user.Message = strError;
-                    //    return JSONHelper.ObjectToJson(user);
-                    //} 
-                    //#endregion
 
                     if (!string.IsNullOrEmpty(user.LoginIP))
                     {

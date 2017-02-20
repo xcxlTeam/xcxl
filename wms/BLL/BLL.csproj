@@ -82,16 +82,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLLImport\IESBSDLMsgType.dll</HintPath>
     </Reference>
-    <Reference Include="Interop.MSXML2, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>DLLImport\Interop.MSXML2.dll</HintPath>
-    </Reference>
-    <Reference Include="Interop.U8Login, Version=1.14.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>DLLImport\Interop.U8Login.dll</HintPath>
-    </Reference>
     <Reference Include="MOMAdapter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLLImport\MOMAdapter.dll</HintPath>
@@ -114,7 +104,7 @@
     </Reference>
     <Reference Include="securityAndRegister, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLLImport\securityAndRegister.dll</HintPath>
+      <HintPath>bin\Debug\securityAndRegister.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -135,30 +125,6 @@
     <Reference Include="ThoughtWorks.QRCode, Version=1.0.4489.42329, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLLImport\ThoughtWorks.QRCode.dll</HintPath>
-    </Reference>
-    <Reference Include="UFIDA.U8.MomServiceCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLLImport\UFIDA.U8.MomServiceCommon.dll</HintPath>
-    </Reference>
-    <Reference Include="UFIDA.U8.U8APIFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLLImport\UFIDA.U8.U8APIFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="UFIDA.U8.U8MOMAPIFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLLImport\UFIDA.U8.U8MOMAPIFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="UFSoft.AIF.MOM.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLLImport\UFSoft.AIF.MOM.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="UFSoft.AIF.MOM.Common.MessageObjectModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLLImport\UFSoft.AIF.MOM.Common.MessageObjectModel.dll</HintPath>
-    </Reference>
-    <Reference Include="UFSoft.U8.Framework.Login.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=19a34671517e8c56, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLLImport\UFSoft.U8.Framework.Login.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +152,12 @@
     <Compile Include="Basic\Menu\Menu_DB.cs" />
     <Compile Include="Basic\Menu\Menu_Func.cs" />
     <Compile Include="Basic\Menu\Menu_Model.cs" />
+    <Compile Include="Basic\P2B\Building.cs" />
+    <Compile Include="Basic\P2B\Building_DB.cs" />
+    <Compile Include="Basic\P2B\Building_Func.cs" />
+    <Compile Include="Basic\P2B\Preparation.cs" />
+    <Compile Include="Basic\P2B\Preparation_DB.cs" />
+    <Compile Include="Basic\P2B\Preparation_Func.cs" />
     <Compile Include="Basic\Receive\ReceiveTrans_Func.cs" />
     <Compile Include="Basic\Receive\ReceiveTrans_Model.cs" />
     <Compile Include="Basic\Task\OverViewDetail_Func.cs" />
@@ -239,6 +211,7 @@
     <Compile Include="MaterialRequestOutSide\MaterialRequestOutSide_Func.cs" />
     <Compile Include="MaterialRequestProduct\MaterialRequestProduct_Func.cs" />
     <Compile Include="MaterialRequest\MaterialRequest_Func.cs" />
+    <Compile Include="Voucher\Inventory.cs" />
     <Compile Include="Material\Material_Model.cs" />
     <Compile Include="OutSideReceive\OutSideReceive_DB.cs" />
     <Compile Include="OutSideReceive\OutSideReceive_Func.cs" />
@@ -310,6 +283,13 @@
     <Compile Include="Tool\MaterialBarcodeDecode.cs" />
     <Compile Include="Tool\WriteLogMethod.cs" />
     <Compile Include="Tool\SafeConvert.cs" />
+    <Compile Include="Voucher\Prod.cs" />
+    <Compile Include="Voucher\ReadAPI_DB.cs" />
+    <Compile Include="Voucher\ReadReceipt_Func.cs" />
+    <Compile Include="Voucher\ReadInventory_Func.cs" />
+    <Compile Include="Voucher\ReadProd_Func.cs" />
+    <Compile Include="Voucher\Receipt.cs" />
+    <Compile Include="Voucher\Transfer.cs" />
     <Compile Include="XMLUtil\XmlUtil.cs" />
   </ItemGroup>
   <ItemGroup>

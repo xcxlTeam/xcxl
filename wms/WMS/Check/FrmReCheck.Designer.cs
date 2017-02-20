@@ -33,8 +33,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             ChensControl.DividPage dividPage1 = new ChensControl.DividPage();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.msMain = new ChensControl.ChensMenuStrip();
             this.tsmiSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiReCheck = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,6 +52,7 @@
             this.gbBottom = new ChensControl.ChensGroupBox();
             this.cbxSelectAll = new System.Windows.Forms.CheckBox();
             this.dgvList = new ChensControl.ChensDataGridView();
+            this.pageList = new ChensControl.ChensPage();
             this.colSelect = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.colEdit = new System.Windows.Forms.DataGridViewLinkColumn();
             this.colCheckNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,12 +68,13 @@
             this.colScanHouseNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colScanAreaNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaterialNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaterialDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAccountQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colScanQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colStrProfitLoss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDifferenceQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pageList = new ChensControl.ChensPage();
             this.msMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsCheck)).BeginInit();
@@ -160,9 +162,9 @@
             this.lblDifferenceQty.ForeColor = System.Drawing.Color.Red;
             this.lblDifferenceQty.Location = new System.Drawing.Point(571, 18);
             this.lblDifferenceQty.Name = "lblDifferenceQty";
-            this.lblDifferenceQty.Size = new System.Drawing.Size(80, 26);
+            this.lblDifferenceQty.Size = new System.Drawing.Size(44, 26);
             this.lblDifferenceQty.TabIndex = 6;
-            this.lblDifferenceQty.Text = "-10000";
+            this.lblDifferenceQty.Text = "-10";
             this.lblDifferenceQty.TextChanged += new System.EventHandler(this.lblDifferenceQty_TextChanged);
             // 
             // lblStrCheckType
@@ -172,9 +174,9 @@
             this.lblStrCheckType.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblStrCheckType.Location = new System.Drawing.Point(329, 20);
             this.lblStrCheckType.Name = "lblStrCheckType";
-            this.lblStrCheckType.Size = new System.Drawing.Size(74, 22);
+            this.lblStrCheckType.Size = new System.Drawing.Size(58, 22);
             this.lblStrCheckType.TabIndex = 5;
-            this.lblStrCheckType.Text = "按保管员";
+            this.lblStrCheckType.Text = "按仓库";
             // 
             // lblCheckNo
             // 
@@ -185,7 +187,7 @@
             this.lblCheckNo.Name = "lblCheckNo";
             this.lblCheckNo.Size = new System.Drawing.Size(136, 22);
             this.lblCheckNo.TabIndex = 4;
-            this.lblCheckNo.Text = "P201501XXXXX";
+            this.lblCheckNo.Text = "P201701XXXXX";
             // 
             // chensLabel3
             // 
@@ -281,6 +283,8 @@
             this.colScanHouseNo,
             this.colScanAreaNo,
             this.colMaterialNo,
+            this.Column1,
+            this.Column2,
             this.colMaterialDesc,
             this.colAccountQty,
             this.colScanQty,
@@ -311,6 +315,27 @@
             this.dgvList.TabIndex = 2;
             this.dgvList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvList_CellContentClick);
             this.dgvList.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dgvList_Scroll);
+            // 
+            // pageList
+            // 
+            this.pageList.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pageList.CurrentPageNumber = 0;
+            dividPage1.CurrentPageNumber = 0;
+            dividPage1.CurrentPageRecordCounts = 0;
+            dividPage1.CurrentPageShowCounts = 10;
+            dividPage1.DefaultPageShowCounts = 10;
+            dividPage1.PagesCount = 0;
+            dividPage1.RecordCounts = 0;
+            this.pageList.dDividPage = dividPage1;
+            this.pageList.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pageList.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pageList.Location = new System.Drawing.Point(3, 628);
+            this.pageList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pageList.Name = "pageList";
+            this.pageList.Size = new System.Drawing.Size(986, 20);
+            this.pageList.TabIndex = 1;
+            this.pageList.Visible = false;
+            this.pageList.ChensPageChange += new ChensControl.ChensPage.PageChangeHandle(this.pageList_ChensPageChange);
             // 
             // colSelect
             // 
@@ -423,8 +448,17 @@
             this.colMaterialNo.DataPropertyName = "MaterialNo";
             this.colMaterialNo.HeaderText = "物料编号";
             this.colMaterialNo.Name = "colMaterialNo";
-            this.colMaterialNo.Visible = false;
             this.colMaterialNo.Width = 150;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "批号";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "序列号";
+            this.Column2.Name = "Column2";
             // 
             // colMaterialDesc
             // 
@@ -457,27 +491,6 @@
             this.colDifferenceQty.DataPropertyName = "DifferenceQty";
             this.colDifferenceQty.HeaderText = "盈亏数量";
             this.colDifferenceQty.Name = "colDifferenceQty";
-            // 
-            // pageList
-            // 
-            this.pageList.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pageList.CurrentPageNumber = 0;
-            dividPage1.CurrentPageNumber = 0;
-            dividPage1.CurrentPageRecordCounts = 0;
-            dividPage1.CurrentPageShowCounts = 10;
-            dividPage1.DefaultPageShowCounts = 10;
-            dividPage1.PagesCount = 0;
-            dividPage1.RecordCounts = 0;
-            this.pageList.dDividPage = dividPage1;
-            this.pageList.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pageList.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.pageList.Location = new System.Drawing.Point(3, 628);
-            this.pageList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pageList.Name = "pageList";
-            this.pageList.Size = new System.Drawing.Size(986, 20);
-            this.pageList.TabIndex = 1;
-            this.pageList.Visible = false;
-            this.pageList.ChensPageChange += new ChensControl.ChensPage.PageChangeHandle(this.pageList_ChensPageChange);
             // 
             // FrmReCheck
             // 
@@ -523,6 +536,7 @@
         private ChensControl.ChensGroupBox gbBottom;
         private ChensControl.ChensDataGridView dgvList;
         private ChensControl.ChensPage pageList;
+        private System.Windows.Forms.CheckBox cbxSelectAll;
         private System.Windows.Forms.DataGridViewCheckBoxColumn colSelect;
         private System.Windows.Forms.DataGridViewLinkColumn colEdit;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCheckNo;
@@ -538,11 +552,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colScanHouseNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colScanAreaNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaterialNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaterialDesc;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAccountQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn colScanQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStrProfitLoss;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDifferenceQty;
-        private System.Windows.Forms.CheckBox cbxSelectAll;
     }
 }

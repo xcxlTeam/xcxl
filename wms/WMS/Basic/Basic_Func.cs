@@ -351,5 +351,79 @@ namespace WMS.Basic
             return WMSWebService.service.GetParentMenuByMenu(menu);
         }
         #endregion
+
+        #region 制法设置
+
+        public static bool ExistspCode(Preparation model, ref string strError)
+        {
+            return WMSWebService.service.ExistspCode(model, false, Common_Var.CurrentUser, ref strError);
+        }
+
+
+        public static bool SavePreparation(ref Preparation model, ref string strError)
+        {
+            return WMSWebService.service.SavePreparation(ref model, Common_Var.CurrentUser, ref strError);
+        }
+
+
+        public static bool DeletePreparationByID(Preparation model, ref string strError)
+        {
+            return WMSWebService.service.DeletePreparationByID(model, Common_Var.CurrentUser, ref strError);
+        }
+
+
+        public static bool GetPreparationByID(ref Preparation model, ref string strError)
+        {
+            return WMSWebService.service.GetPreparationByID(ref model, Common_Var.CurrentUser, ref strError);
+        }
+
+
+        public static bool GetPreparationListByPage(ref List<Preparation> modelList, Preparation model, ref DividPage page, ref string strError)
+        {
+            return WMSWebService.service.GetPreparationListByPage(ref modelList, model, ref page, Common_Var.CurrentUser, ref strError);
+        }
+
+        public static bool GetPreparationList(ref List<Preparation> modelList, Preparation model, ref string strError)
+        {
+            return WMSWebService.service.GetPreparationList(ref modelList, model, Common_Var.CurrentUser, ref strError);
+        }
+        #endregion
+
+        #region 建筑设置
+
+        public static bool ExistsbNo(Building model, ref string strError)
+        {
+            return WMSWebService.service.ExistsbNo(model, false, Common_Var.CurrentUser, ref strError);
+        }
+
+
+        public static bool SaveBuilding(ref Building model, ref string strError)
+        {
+            return WMSWebService.service.SaveBuilding(ref model, Common_Var.CurrentUser, ref strError);
+        }
+
+
+        public static bool DeleteBuildingByID(Building model, ref string strError)
+        {
+            return WMSWebService.service.DeleteBuildingByID(model, Common_Var.CurrentUser, ref strError);
+        }
+
+
+        public static bool GetBuildingByID(ref Building model, ref string strError)
+        {
+            return WMSWebService.service.GetBuildingByID(ref model, Common_Var.CurrentUser, ref strError);
+        }
+
+
+        public static bool GetBuildingListByPage(ref List<Building> modelList, Building model, ref DividPage page, ref string strError)
+        {
+            return WMSWebService.service.GetBuildingListByPage(ref modelList, model, ref page, Common_Var.CurrentUser, ref strError);
+        }
+
+        public static bool GetBuildingList(ref List<Building> modelList, Building model, ref string strError)
+        {
+            return WMSWebService.service.GetBuildingList(ref modelList, model, Common_Var.CurrentUser, ref strError);
+        }
+        #endregion
     }
 }

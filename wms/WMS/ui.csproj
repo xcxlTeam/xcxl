@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WMS</RootNamespace>
-    <AssemblyName>SCG_WMS</AssemblyName>
+    <AssemblyName>WMS</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
@@ -182,6 +182,18 @@
     <Compile Include="Basic\FrmMenuFile.Designer.cs">
       <DependentUpon>FrmMenuFile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Basic\FrmP2B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmP2B.Designer.cs">
+      <DependentUpon>FrmP2B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmP2BFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmP2BFile.Designer.cs">
+      <DependentUpon>FrmP2BFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Basic\FrmUserFile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,11 +305,23 @@
     <Compile Include="FastIn\FrmQuery_FastIn.Designer.cs">
       <DependentUpon>FrmQuery_FastIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="FastTask\Form99.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastTask\Form99.designer.cs">
+      <DependentUpon>Form99.cs</DependentUpon>
+    </Compile>
     <Compile Include="FastTask\frmFastInEdit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FastTask\frmFastInEdit.Designer.cs">
       <DependentUpon>frmFastInEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastTask\frmScrapFastOutEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastTask\frmScrapFastOutEdit.Designer.cs">
+      <DependentUpon>frmScrapFastOutEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="FastTask\frmFastOutEdit.cs">
       <SubType>Form</SubType>
@@ -342,6 +366,7 @@
     <Compile Include="Print\BarCode128.cs" />
     <Compile Include="Print\DS_MaterialOuterLabel.cs">
       <DependentUpon>DS_MaterialOuterLabel.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Print\DS_MaterialOuterLabel.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -350,6 +375,7 @@
     </Compile>
     <Compile Include="Print\DS_ProductLabel.cs">
       <DependentUpon>DS_ProductLabel.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Print\DS_ProductLabel.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -385,6 +411,12 @@
     </Compile>
     <Compile Include="Print\Form15.Designer.cs">
       <DependentUpon>Form15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Form16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Form16.Designer.cs">
+      <DependentUpon>Form16.cs</DependentUpon>
     </Compile>
     <Compile Include="Print\Form2.cs">
       <SubType>Form</SubType>
@@ -530,7 +562,9 @@
     <Compile Include="Print\FrmProductLabelPrint.Designer.cs">
       <DependentUpon>FrmProductLabelPrint.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\FrmQueryPrintSerialNo.cs" />
+    <Compile Include="Print\FrmQueryPrintSerialNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Print\FrmQueryPrintSerialNo.Designer.cs">
       <DependentUpon>FrmQueryPrintSerialNo.cs</DependentUpon>
     </Compile>
@@ -732,6 +766,12 @@
     <EmbeddedResource Include="Basic\FrmMenuFile.resx">
       <DependentUpon>FrmMenuFile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmP2B.resx">
+      <DependentUpon>FrmP2B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmP2BFile.resx">
+      <DependentUpon>FrmP2BFile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Basic\FrmUserFile.resx">
       <DependentUpon>FrmUserFile.cs</DependentUpon>
     </EmbeddedResource>
@@ -783,8 +823,14 @@
     <EmbeddedResource Include="FastIn\FrmQuery_FastIn.resx">
       <DependentUpon>FrmQuery_FastIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FastTask\Form99.resx">
+      <DependentUpon>Form99.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FastTask\frmFastInEdit.resx">
       <DependentUpon>frmFastInEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastTask\frmScrapFastOutEdit.resx">
+      <DependentUpon>frmScrapFastOutEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FastTask\frmFastOutEdit.resx">
       <DependentUpon>frmFastOutEdit.cs</DependentUpon>
@@ -818,6 +864,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Print\Form15.resx">
       <DependentUpon>Form15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Form16.resx">
+      <DependentUpon>Form16.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Print\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -1016,6 +1065,7 @@
     <None Include="Print\DS_ProductLabel.xss">
       <DependentUpon>DS_ProductLabel.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -1047,6 +1097,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\WebService\WMS.WebService.Barcode_Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.Building.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\WebService\WMS.WebService.CheckDetailsInfo.datasource">
@@ -1092,6 +1145,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\WebService\WMS.WebService.OverViewInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.Preparation.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\WebService\WMS.WebService.ProductLabel_Model.datasource">
@@ -1225,6 +1281,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Product\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

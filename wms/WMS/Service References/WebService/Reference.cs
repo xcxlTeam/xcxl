@@ -15,101 +15,99 @@ namespace WMS.WebService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Stock_Model", Namespace="http://tempuri.org/")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="DeliveryReceive_Model", Namespace="http://tempuri.org/")]
     [System.SerializableAttribute()]
-    public partial class Stock_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class DeliveryReceive_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private int StockTypeField;
+        private int IDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BarcodeField;
+        private string DeliveryNoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SerialNoField;
+        private string SupNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialNoField;
+        private string SupCodeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDescField;
+        private string PlantField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialStdField;
+        private string PlantNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string WarehouseNoField;
+        private string OperatorField;
+        
+        private System.DateTime CreateDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string HouseNoField;
+        private System.Collections.Generic.List<WMS.WebService.DeliveryReceiveDetail_Model> lstDeliveryDetailField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AreaNoField;
+        private WMS.WebService.MaterialDoc_Model materialDocModelField;
         
-        private double QtyField;
+        private int VoucherTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TempMaterialNoField;
+        private int IsQualityField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TempMaterialDescField;
+        private int IsReceivePostField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PickAreaNoField;
+        private int IsShelvePostField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CelAreaNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BatchNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SNField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreaterField;
-        
-        private System.DateTime CreateTimeField;
+        private string TaskNoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string VoucherNoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrStockTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string WarehouseNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string HouseNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AreaNameField;
+        private string MaterialDocField;
         
         private System.Nullable<System.DateTime> StartTimeField;
         
         private System.Nullable<System.DateTime> EndTimeField;
         
-        private bool OnlyOwnWarehouseField;
+        private System.Nullable<System.DateTime> DocDateField;
+        
+        private System.Nullable<System.DateTime> PostDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ProductLineNoField;
-        
-        private double ErpQtyField;
-        
-        private double SaveQtyField;
-        
-        private double TrayQtyField;
-        
-        private double TotalQtyField;
+        private string MoveTypeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string cvencodeField;
+        private string TitelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string cvennameField;
+        private string OutSideSupCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OutSideSupNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BarcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialNoField;
+        
+        private int PrintedQtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Collections.Generic.List<WMS.WebService.MaterialDoc_Model> lstMaterialDocField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OsDeliveryRemarkField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string POReamrkField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ResonField;
+        
+        private System.Nullable<System.DateTime> PrintTimeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -122,240 +120,201 @@ namespace WMS.WebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int StockType {
+        public int ID {
             get {
-                return this.StockTypeField;
+                return this.IDField;
             }
             set {
-                if ((this.StockTypeField.Equals(value) != true)) {
-                    this.StockTypeField = value;
-                    this.RaisePropertyChanged("StockType");
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string Barcode {
+        public string DeliveryNo {
             get {
-                return this.BarcodeField;
+                return this.DeliveryNoField;
             }
             set {
-                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
-                    this.BarcodeField = value;
-                    this.RaisePropertyChanged("Barcode");
+                if ((object.ReferenceEquals(this.DeliveryNoField, value) != true)) {
+                    this.DeliveryNoField = value;
+                    this.RaisePropertyChanged("DeliveryNo");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string SerialNo {
+        public string SupName {
             get {
-                return this.SerialNoField;
+                return this.SupNameField;
             }
             set {
-                if ((object.ReferenceEquals(this.SerialNoField, value) != true)) {
-                    this.SerialNoField = value;
-                    this.RaisePropertyChanged("SerialNo");
+                if ((object.ReferenceEquals(this.SupNameField, value) != true)) {
+                    this.SupNameField = value;
+                    this.RaisePropertyChanged("SupName");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string MaterialNo {
+        public string SupCode {
             get {
-                return this.MaterialNoField;
+                return this.SupCodeField;
             }
             set {
-                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
-                    this.MaterialNoField = value;
-                    this.RaisePropertyChanged("MaterialNo");
+                if ((object.ReferenceEquals(this.SupCodeField, value) != true)) {
+                    this.SupCodeField = value;
+                    this.RaisePropertyChanged("SupCode");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string MaterialDesc {
+        public string Plant {
             get {
-                return this.MaterialDescField;
+                return this.PlantField;
             }
             set {
-                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
-                    this.MaterialDescField = value;
-                    this.RaisePropertyChanged("MaterialDesc");
+                if ((object.ReferenceEquals(this.PlantField, value) != true)) {
+                    this.PlantField = value;
+                    this.RaisePropertyChanged("Plant");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string MaterialStd {
+        public string PlantName {
             get {
-                return this.MaterialStdField;
+                return this.PlantNameField;
             }
             set {
-                if ((object.ReferenceEquals(this.MaterialStdField, value) != true)) {
-                    this.MaterialStdField = value;
-                    this.RaisePropertyChanged("MaterialStd");
+                if ((object.ReferenceEquals(this.PlantNameField, value) != true)) {
+                    this.PlantNameField = value;
+                    this.RaisePropertyChanged("PlantName");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string WarehouseNo {
+        public string Operator {
             get {
-                return this.WarehouseNoField;
+                return this.OperatorField;
             }
             set {
-                if ((object.ReferenceEquals(this.WarehouseNoField, value) != true)) {
-                    this.WarehouseNoField = value;
-                    this.RaisePropertyChanged("WarehouseNo");
+                if ((object.ReferenceEquals(this.OperatorField, value) != true)) {
+                    this.OperatorField = value;
+                    this.RaisePropertyChanged("Operator");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string HouseNo {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
+        public System.DateTime CreateDate {
             get {
-                return this.HouseNoField;
+                return this.CreateDateField;
             }
             set {
-                if ((object.ReferenceEquals(this.HouseNoField, value) != true)) {
-                    this.HouseNoField = value;
-                    this.RaisePropertyChanged("HouseNo");
+                if ((this.CreateDateField.Equals(value) != true)) {
+                    this.CreateDateField = value;
+                    this.RaisePropertyChanged("CreateDate");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string AreaNo {
+        public System.Collections.Generic.List<WMS.WebService.DeliveryReceiveDetail_Model> lstDeliveryDetail {
             get {
-                return this.AreaNoField;
+                return this.lstDeliveryDetailField;
             }
             set {
-                if ((object.ReferenceEquals(this.AreaNoField, value) != true)) {
-                    this.AreaNoField = value;
-                    this.RaisePropertyChanged("AreaNo");
+                if ((object.ReferenceEquals(this.lstDeliveryDetailField, value) != true)) {
+                    this.lstDeliveryDetailField = value;
+                    this.RaisePropertyChanged("lstDeliveryDetail");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=9)]
-        public double Qty {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public WMS.WebService.MaterialDoc_Model materialDocModel {
             get {
-                return this.QtyField;
+                return this.materialDocModelField;
             }
             set {
-                if ((this.QtyField.Equals(value) != true)) {
-                    this.QtyField = value;
-                    this.RaisePropertyChanged("Qty");
+                if ((object.ReferenceEquals(this.materialDocModelField, value) != true)) {
+                    this.materialDocModelField = value;
+                    this.RaisePropertyChanged("materialDocModel");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public string TempMaterialNo {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=10)]
+        public int VoucherType {
             get {
-                return this.TempMaterialNoField;
+                return this.VoucherTypeField;
             }
             set {
-                if ((object.ReferenceEquals(this.TempMaterialNoField, value) != true)) {
-                    this.TempMaterialNoField = value;
-                    this.RaisePropertyChanged("TempMaterialNo");
+                if ((this.VoucherTypeField.Equals(value) != true)) {
+                    this.VoucherTypeField = value;
+                    this.RaisePropertyChanged("VoucherType");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
-        public string TempMaterialDesc {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
+        public int IsQuality {
             get {
-                return this.TempMaterialDescField;
+                return this.IsQualityField;
             }
             set {
-                if ((object.ReferenceEquals(this.TempMaterialDescField, value) != true)) {
-                    this.TempMaterialDescField = value;
-                    this.RaisePropertyChanged("TempMaterialDesc");
+                if ((this.IsQualityField.Equals(value) != true)) {
+                    this.IsQualityField = value;
+                    this.RaisePropertyChanged("IsQuality");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
-        public string PickAreaNo {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=12)]
+        public int IsReceivePost {
             get {
-                return this.PickAreaNoField;
+                return this.IsReceivePostField;
             }
             set {
-                if ((object.ReferenceEquals(this.PickAreaNoField, value) != true)) {
-                    this.PickAreaNoField = value;
-                    this.RaisePropertyChanged("PickAreaNo");
+                if ((this.IsReceivePostField.Equals(value) != true)) {
+                    this.IsReceivePostField = value;
+                    this.RaisePropertyChanged("IsReceivePost");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
-        public string CelAreaNo {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=13)]
+        public int IsShelvePost {
             get {
-                return this.CelAreaNoField;
+                return this.IsShelvePostField;
             }
             set {
-                if ((object.ReferenceEquals(this.CelAreaNoField, value) != true)) {
-                    this.CelAreaNoField = value;
-                    this.RaisePropertyChanged("CelAreaNo");
+                if ((this.IsShelvePostField.Equals(value) != true)) {
+                    this.IsShelvePostField = value;
+                    this.RaisePropertyChanged("IsShelvePost");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
-        public string BatchNo {
+        public string TaskNo {
             get {
-                return this.BatchNoField;
+                return this.TaskNoField;
             }
             set {
-                if ((object.ReferenceEquals(this.BatchNoField, value) != true)) {
-                    this.BatchNoField = value;
-                    this.RaisePropertyChanged("BatchNo");
+                if ((object.ReferenceEquals(this.TaskNoField, value) != true)) {
+                    this.TaskNoField = value;
+                    this.RaisePropertyChanged("TaskNo");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
-        public string SN {
-            get {
-                return this.SNField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SNField, value) != true)) {
-                    this.SNField = value;
-                    this.RaisePropertyChanged("SN");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
-        public string Creater {
-            get {
-                return this.CreaterField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreaterField, value) != true)) {
-                    this.CreaterField = value;
-                    this.RaisePropertyChanged("Creater");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=17)]
-        public System.DateTime CreateTime {
-            get {
-                return this.CreateTimeField;
-            }
-            set {
-                if ((this.CreateTimeField.Equals(value) != true)) {
-                    this.CreateTimeField = value;
-                    this.RaisePropertyChanged("CreateTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
         public string VoucherNo {
             get {
                 return this.VoucherNoField;
@@ -368,59 +327,20 @@ namespace WMS.WebService {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
-        public string StrStockType {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
+        public string MaterialDoc {
             get {
-                return this.StrStockTypeField;
+                return this.MaterialDocField;
             }
             set {
-                if ((object.ReferenceEquals(this.StrStockTypeField, value) != true)) {
-                    this.StrStockTypeField = value;
-                    this.RaisePropertyChanged("StrStockType");
+                if ((object.ReferenceEquals(this.MaterialDocField, value) != true)) {
+                    this.MaterialDocField = value;
+                    this.RaisePropertyChanged("MaterialDoc");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
-        public string WarehouseName {
-            get {
-                return this.WarehouseNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.WarehouseNameField, value) != true)) {
-                    this.WarehouseNameField = value;
-                    this.RaisePropertyChanged("WarehouseName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
-        public string HouseName {
-            get {
-                return this.HouseNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.HouseNameField, value) != true)) {
-                    this.HouseNameField = value;
-                    this.RaisePropertyChanged("HouseName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=22)]
-        public string AreaName {
-            get {
-                return this.AreaNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AreaNameField, value) != true)) {
-                    this.AreaNameField = value;
-                    this.RaisePropertyChanged("AreaName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=23)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=17)]
         public System.Nullable<System.DateTime> StartTime {
             get {
                 return this.StartTimeField;
@@ -433,7 +353,7 @@ namespace WMS.WebService {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=24)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=18)]
         public System.Nullable<System.DateTime> EndTime {
             get {
                 return this.EndTimeField;
@@ -446,679 +366,85 @@ namespace WMS.WebService {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=25)]
-        public bool OnlyOwnWarehouse {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=19)]
+        public System.Nullable<System.DateTime> DocDate {
             get {
-                return this.OnlyOwnWarehouseField;
+                return this.DocDateField;
             }
             set {
-                if ((this.OnlyOwnWarehouseField.Equals(value) != true)) {
-                    this.OnlyOwnWarehouseField = value;
-                    this.RaisePropertyChanged("OnlyOwnWarehouse");
+                if ((this.DocDateField.Equals(value) != true)) {
+                    this.DocDateField = value;
+                    this.RaisePropertyChanged("DocDate");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=26)]
-        public string ProductLineNo {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=20)]
+        public System.Nullable<System.DateTime> PostDate {
             get {
-                return this.ProductLineNoField;
+                return this.PostDateField;
             }
             set {
-                if ((object.ReferenceEquals(this.ProductLineNoField, value) != true)) {
-                    this.ProductLineNoField = value;
-                    this.RaisePropertyChanged("ProductLineNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=27)]
-        public double ErpQty {
-            get {
-                return this.ErpQtyField;
-            }
-            set {
-                if ((this.ErpQtyField.Equals(value) != true)) {
-                    this.ErpQtyField = value;
-                    this.RaisePropertyChanged("ErpQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=28)]
-        public double SaveQty {
-            get {
-                return this.SaveQtyField;
-            }
-            set {
-                if ((this.SaveQtyField.Equals(value) != true)) {
-                    this.SaveQtyField = value;
-                    this.RaisePropertyChanged("SaveQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=29)]
-        public double TrayQty {
-            get {
-                return this.TrayQtyField;
-            }
-            set {
-                if ((this.TrayQtyField.Equals(value) != true)) {
-                    this.TrayQtyField = value;
-                    this.RaisePropertyChanged("TrayQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=30)]
-        public double TotalQty {
-            get {
-                return this.TotalQtyField;
-            }
-            set {
-                if ((this.TotalQtyField.Equals(value) != true)) {
-                    this.TotalQtyField = value;
-                    this.RaisePropertyChanged("TotalQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=31)]
-        public string cvencode {
-            get {
-                return this.cvencodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.cvencodeField, value) != true)) {
-                    this.cvencodeField = value;
-                    this.RaisePropertyChanged("cvencode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=32)]
-        public string cvenname {
-            get {
-                return this.cvennameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.cvennameField, value) != true)) {
-                    this.cvennameField = value;
-                    this.RaisePropertyChanged("cvenname");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ProductLabel_Model", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class ProductLabel_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WMS.WebService.BarcodeRule barcoderuleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string labeltypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string materialnoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string materialdescField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ordercodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string outpackqtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string printdateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string barcodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string invstdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CUNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RemarkField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string packnoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string plantnoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string POCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SOCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ContractNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BarcodeExpressField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BarcodeEndField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string LocaleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string qrbarcodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string IsOuterField;
-        
-        private int iMoSeqField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string smallQRField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string prdversionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string statusField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public WMS.WebService.BarcodeRule barcoderule {
-            get {
-                return this.barcoderuleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.barcoderuleField, value) != true)) {
-                    this.barcoderuleField = value;
-                    this.RaisePropertyChanged("barcoderule");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.IDField, value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string labeltype {
-            get {
-                return this.labeltypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.labeltypeField, value) != true)) {
-                    this.labeltypeField = value;
-                    this.RaisePropertyChanged("labeltype");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string materialno {
-            get {
-                return this.materialnoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.materialnoField, value) != true)) {
-                    this.materialnoField = value;
-                    this.RaisePropertyChanged("materialno");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string materialdesc {
-            get {
-                return this.materialdescField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.materialdescField, value) != true)) {
-                    this.materialdescField = value;
-                    this.RaisePropertyChanged("materialdesc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string ordercode {
-            get {
-                return this.ordercodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ordercodeField, value) != true)) {
-                    this.ordercodeField = value;
-                    this.RaisePropertyChanged("ordercode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string outpackqty {
-            get {
-                return this.outpackqtyField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.outpackqtyField, value) != true)) {
-                    this.outpackqtyField = value;
-                    this.RaisePropertyChanged("outpackqty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string printdate {
-            get {
-                return this.printdateField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.printdateField, value) != true)) {
-                    this.printdateField = value;
-                    this.RaisePropertyChanged("printdate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string barcode {
-            get {
-                return this.barcodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.barcodeField, value) != true)) {
-                    this.barcodeField = value;
-                    this.RaisePropertyChanged("barcode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string invstd {
-            get {
-                return this.invstdField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.invstdField, value) != true)) {
-                    this.invstdField = value;
-                    this.RaisePropertyChanged("invstd");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public string CUName {
-            get {
-                return this.CUNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CUNameField, value) != true)) {
-                    this.CUNameField = value;
-                    this.RaisePropertyChanged("CUName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
-        public string Remark {
-            get {
-                return this.RemarkField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
-                    this.RemarkField = value;
-                    this.RaisePropertyChanged("Remark");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
-        public string packno {
-            get {
-                return this.packnoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.packnoField, value) != true)) {
-                    this.packnoField = value;
-                    this.RaisePropertyChanged("packno");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
-        public string plantno {
-            get {
-                return this.plantnoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.plantnoField, value) != true)) {
-                    this.plantnoField = value;
-                    this.RaisePropertyChanged("plantno");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
-        public string POCode {
-            get {
-                return this.POCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.POCodeField, value) != true)) {
-                    this.POCodeField = value;
-                    this.RaisePropertyChanged("POCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
-        public string SOCode {
-            get {
-                return this.SOCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SOCodeField, value) != true)) {
-                    this.SOCodeField = value;
-                    this.RaisePropertyChanged("SOCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
-        public string ContractNo {
-            get {
-                return this.ContractNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ContractNoField, value) != true)) {
-                    this.ContractNoField = value;
-                    this.RaisePropertyChanged("ContractNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=17)]
-        public string BarcodeExpress {
-            get {
-                return this.BarcodeExpressField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BarcodeExpressField, value) != true)) {
-                    this.BarcodeExpressField = value;
-                    this.RaisePropertyChanged("BarcodeExpress");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
-        public string BarcodeEnd {
-            get {
-                return this.BarcodeEndField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BarcodeEndField, value) != true)) {
-                    this.BarcodeEndField = value;
-                    this.RaisePropertyChanged("BarcodeEnd");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
-        public string Locale {
-            get {
-                return this.LocaleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LocaleField, value) != true)) {
-                    this.LocaleField = value;
-                    this.RaisePropertyChanged("Locale");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
-        public string qrbarcode {
-            get {
-                return this.qrbarcodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.qrbarcodeField, value) != true)) {
-                    this.qrbarcodeField = value;
-                    this.RaisePropertyChanged("qrbarcode");
+                if ((this.PostDateField.Equals(value) != true)) {
+                    this.PostDateField = value;
+                    this.RaisePropertyChanged("PostDate");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
-        public string IsOuter {
+        public string MoveType {
             get {
-                return this.IsOuterField;
+                return this.MoveTypeField;
             }
             set {
-                if ((object.ReferenceEquals(this.IsOuterField, value) != true)) {
-                    this.IsOuterField = value;
-                    this.RaisePropertyChanged("IsOuter");
+                if ((object.ReferenceEquals(this.MoveTypeField, value) != true)) {
+                    this.MoveTypeField = value;
+                    this.RaisePropertyChanged("MoveType");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=22)]
-        public int iMoSeq {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=22)]
+        public string Titel {
             get {
-                return this.iMoSeqField;
+                return this.TitelField;
             }
             set {
-                if ((this.iMoSeqField.Equals(value) != true)) {
-                    this.iMoSeqField = value;
-                    this.RaisePropertyChanged("iMoSeq");
+                if ((object.ReferenceEquals(this.TitelField, value) != true)) {
+                    this.TitelField = value;
+                    this.RaisePropertyChanged("Titel");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=23)]
-        public string smallQR {
+        public string OutSideSupCode {
             get {
-                return this.smallQRField;
+                return this.OutSideSupCodeField;
             }
             set {
-                if ((object.ReferenceEquals(this.smallQRField, value) != true)) {
-                    this.smallQRField = value;
-                    this.RaisePropertyChanged("smallQR");
+                if ((object.ReferenceEquals(this.OutSideSupCodeField, value) != true)) {
+                    this.OutSideSupCodeField = value;
+                    this.RaisePropertyChanged("OutSideSupCode");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=24)]
-        public string prdversion {
+        public string OutSideSupName {
             get {
-                return this.prdversionField;
+                return this.OutSideSupNameField;
             }
             set {
-                if ((object.ReferenceEquals(this.prdversionField, value) != true)) {
-                    this.prdversionField = value;
-                    this.RaisePropertyChanged("prdversion");
+                if ((object.ReferenceEquals(this.OutSideSupNameField, value) != true)) {
+                    this.OutSideSupNameField = value;
+                    this.RaisePropertyChanged("OutSideSupName");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=25)]
-        public string status {
-            get {
-                return this.statusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.statusField, value) != true)) {
-                    this.statusField = value;
-                    this.RaisePropertyChanged("status");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="BarcodeRule", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class BarcodeRule : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WMS.WebService.ArrayOfString FieldsField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public WMS.WebService.ArrayOfString Fields {
-            get {
-                return this.FieldsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FieldsField, value) != true)) {
-                    this.FieldsField = value;
-                    this.RaisePropertyChanged("Fields");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.CollectionDataContractAttribute(Name="ArrayOfString", Namespace="http://tempuri.org/", ItemName="string")]
-    [System.SerializableAttribute()]
-    public class ArrayOfString : System.Collections.Generic.List<string> {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ImportPrint_Model", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class ImportPrint_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BarcodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDescField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialStdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string WarehouseNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string HouseNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AreaNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string WarehouseNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string HouseNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AreaNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SNField;
-        
-        private decimal ImportQtyField;
-        
-        private decimal PrintQtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string cvencodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string cvennameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
         public string Barcode {
             get {
                 return this.BarcodeField;
@@ -1131,7 +457,7 @@ namespace WMS.WebService {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=26)]
         public string MaterialNo {
             get {
                 return this.MaterialNoField;
@@ -1144,171 +470,80 @@ namespace WMS.WebService {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string MaterialDesc {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=27)]
+        public int PrintedQty {
             get {
-                return this.MaterialDescField;
+                return this.PrintedQtyField;
             }
             set {
-                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
-                    this.MaterialDescField = value;
-                    this.RaisePropertyChanged("MaterialDesc");
+                if ((this.PrintedQtyField.Equals(value) != true)) {
+                    this.PrintedQtyField = value;
+                    this.RaisePropertyChanged("PrintedQty");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string MaterialStd {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=28)]
+        public System.Collections.Generic.List<WMS.WebService.MaterialDoc_Model> lstMaterialDoc {
             get {
-                return this.MaterialStdField;
+                return this.lstMaterialDocField;
             }
             set {
-                if ((object.ReferenceEquals(this.MaterialStdField, value) != true)) {
-                    this.MaterialStdField = value;
-                    this.RaisePropertyChanged("MaterialStd");
+                if ((object.ReferenceEquals(this.lstMaterialDocField, value) != true)) {
+                    this.lstMaterialDocField = value;
+                    this.RaisePropertyChanged("lstMaterialDoc");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string WarehouseNo {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=29)]
+        public string OsDeliveryRemark {
             get {
-                return this.WarehouseNoField;
+                return this.OsDeliveryRemarkField;
             }
             set {
-                if ((object.ReferenceEquals(this.WarehouseNoField, value) != true)) {
-                    this.WarehouseNoField = value;
-                    this.RaisePropertyChanged("WarehouseNo");
+                if ((object.ReferenceEquals(this.OsDeliveryRemarkField, value) != true)) {
+                    this.OsDeliveryRemarkField = value;
+                    this.RaisePropertyChanged("OsDeliveryRemark");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string HouseNo {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=30)]
+        public string POReamrk {
             get {
-                return this.HouseNoField;
+                return this.POReamrkField;
             }
             set {
-                if ((object.ReferenceEquals(this.HouseNoField, value) != true)) {
-                    this.HouseNoField = value;
-                    this.RaisePropertyChanged("HouseNo");
+                if ((object.ReferenceEquals(this.POReamrkField, value) != true)) {
+                    this.POReamrkField = value;
+                    this.RaisePropertyChanged("POReamrk");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string AreaNo {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=31)]
+        public string Reson {
             get {
-                return this.AreaNoField;
+                return this.ResonField;
             }
             set {
-                if ((object.ReferenceEquals(this.AreaNoField, value) != true)) {
-                    this.AreaNoField = value;
-                    this.RaisePropertyChanged("AreaNo");
+                if ((object.ReferenceEquals(this.ResonField, value) != true)) {
+                    this.ResonField = value;
+                    this.RaisePropertyChanged("Reson");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string WarehouseName {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=32)]
+        public System.Nullable<System.DateTime> PrintTime {
             get {
-                return this.WarehouseNameField;
+                return this.PrintTimeField;
             }
             set {
-                if ((object.ReferenceEquals(this.WarehouseNameField, value) != true)) {
-                    this.WarehouseNameField = value;
-                    this.RaisePropertyChanged("WarehouseName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string HouseName {
-            get {
-                return this.HouseNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.HouseNameField, value) != true)) {
-                    this.HouseNameField = value;
-                    this.RaisePropertyChanged("HouseName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string AreaName {
-            get {
-                return this.AreaNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AreaNameField, value) != true)) {
-                    this.AreaNameField = value;
-                    this.RaisePropertyChanged("AreaName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public string SN {
-            get {
-                return this.SNField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SNField, value) != true)) {
-                    this.SNField = value;
-                    this.RaisePropertyChanged("SN");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
-        public decimal ImportQty {
-            get {
-                return this.ImportQtyField;
-            }
-            set {
-                if ((this.ImportQtyField.Equals(value) != true)) {
-                    this.ImportQtyField = value;
-                    this.RaisePropertyChanged("ImportQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=12)]
-        public decimal PrintQty {
-            get {
-                return this.PrintQtyField;
-            }
-            set {
-                if ((this.PrintQtyField.Equals(value) != true)) {
-                    this.PrintQtyField = value;
-                    this.RaisePropertyChanged("PrintQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
-        public string cvencode {
-            get {
-                return this.cvencodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.cvencodeField, value) != true)) {
-                    this.cvencodeField = value;
-                    this.RaisePropertyChanged("cvencode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
-        public string cvenname {
-            get {
-                return this.cvennameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.cvennameField, value) != true)) {
-                    this.cvennameField = value;
-                    this.RaisePropertyChanged("cvenname");
+                if ((this.PrintTimeField.Equals(value) != true)) {
+                    this.PrintTimeField = value;
+                    this.RaisePropertyChanged("PrintTime");
                 }
             }
         }
@@ -1325,22 +560,940 @@ namespace WMS.WebService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DividPage", Namespace="http://tempuri.org/")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="MaterialDoc_Model", Namespace="http://tempuri.org/")]
     [System.SerializableAttribute()]
-    public partial class DividPage : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class MaterialDoc_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private int RecordCountsField;
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDocField;
         
-        private int CurrentPageRecordCountsField;
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDocDateField;
         
-        private int CurrentPageShowCountsField;
+        private System.DateTime MaterialDocPostField;
         
-        private int CurrentPageNumberField;
+        private int MaterialDocTypeField;
         
-        private int PagesCountField;
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MaterialDoc {
+            get {
+                return this.MaterialDocField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDocField, value) != true)) {
+                    this.MaterialDocField = value;
+                    this.RaisePropertyChanged("MaterialDoc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MaterialDocDate {
+            get {
+                return this.MaterialDocDateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDocDateField, value) != true)) {
+                    this.MaterialDocDateField = value;
+                    this.RaisePropertyChanged("MaterialDocDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.DateTime MaterialDocPost {
+            get {
+                return this.MaterialDocPostField;
+            }
+            set {
+                if ((this.MaterialDocPostField.Equals(value) != true)) {
+                    this.MaterialDocPostField = value;
+                    this.RaisePropertyChanged("MaterialDocPost");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int MaterialDocType {
+            get {
+                return this.MaterialDocTypeField;
+            }
+            set {
+                if ((this.MaterialDocTypeField.Equals(value) != true)) {
+                    this.MaterialDocTypeField = value;
+                    this.RaisePropertyChanged("MaterialDocType");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="DeliveryReceiveDetail_Model", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class DeliveryReceiveDetail_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CombaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DeliveryNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreateTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RowNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VoucherNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDescField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialStdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ClaimArriveTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UnitField;
+        
+        private int CurrentlyDeliveryNumField;
+        
+        private int ClaimDeliveryNumField;
+        
+        private int ReadyDeliveryNumField;
+        
+        private int WaitDeliveryNumField;
+        
+        private int InRoadDeliveryNumField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ReceiveTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DeliveryAddressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CorrespondDepartmentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WorkCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string JingxinNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PlantField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PlantNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PrdVersionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StorageLocField;
+        
+        private decimal ReceiveQtyField;
+        
+        private int IsUrgentField;
+        
+        private int PackCountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PrdReturnReasonField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BarcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SerialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Collections.Generic.List<WMS.WebService.OutBarcode_Model> lstOutBarCodeField;
+        
+        private int IsROHSField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TrackNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ReserveNumberField;
+        
+        private decimal QualityQtyField;
+        
+        private System.Nullable<decimal> CurrentQualityQtyField;
+        
+        private decimal UnQualityQtyField;
+        
+        private System.Nullable<decimal> CurrentUnQualityQtyField;
+        
+        private bool OKSelectField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string QualityTypeField;
+        
+        private int IDField;
+        
+        private decimal CurrentPostQtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrROHSField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ReserveRowNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OrderNumField;
+        
+        private decimal OldReceiveQtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Collections.Generic.List<WMS.WebService.ComboBoxItem> lstCmbField;
+        
+        private int RowNumberField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Comba {
+            get {
+                return this.CombaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CombaField, value) != true)) {
+                    this.CombaField = value;
+                    this.RaisePropertyChanged("Comba");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string DeliveryNo {
+            get {
+                return this.DeliveryNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DeliveryNoField, value) != true)) {
+                    this.DeliveryNoField = value;
+                    this.RaisePropertyChanged("DeliveryNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string CreateTime {
+            get {
+                return this.CreateTimeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreateTimeField, value) != true)) {
+                    this.CreateTimeField = value;
+                    this.RaisePropertyChanged("CreateTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string RowNo {
+            get {
+                return this.RowNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RowNoField, value) != true)) {
+                    this.RowNoField = value;
+                    this.RaisePropertyChanged("RowNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string VoucherNo {
+            get {
+                return this.VoucherNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
+                    this.VoucherNoField = value;
+                    this.RaisePropertyChanged("VoucherNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string MaterialNo {
+            get {
+                return this.MaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
+                    this.MaterialNoField = value;
+                    this.RaisePropertyChanged("MaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string MaterialDesc {
+            get {
+                return this.MaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
+                    this.MaterialDescField = value;
+                    this.RaisePropertyChanged("MaterialDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string MaterialStd {
+            get {
+                return this.MaterialStdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialStdField, value) != true)) {
+                    this.MaterialStdField = value;
+                    this.RaisePropertyChanged("MaterialStd");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string ClaimArriveTime {
+            get {
+                return this.ClaimArriveTimeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ClaimArriveTimeField, value) != true)) {
+                    this.ClaimArriveTimeField = value;
+                    this.RaisePropertyChanged("ClaimArriveTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string Unit {
+            get {
+                return this.UnitField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
+                    this.UnitField = value;
+                    this.RaisePropertyChanged("Unit");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=10)]
+        public int CurrentlyDeliveryNum {
+            get {
+                return this.CurrentlyDeliveryNumField;
+            }
+            set {
+                if ((this.CurrentlyDeliveryNumField.Equals(value) != true)) {
+                    this.CurrentlyDeliveryNumField = value;
+                    this.RaisePropertyChanged("CurrentlyDeliveryNum");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
+        public int ClaimDeliveryNum {
+            get {
+                return this.ClaimDeliveryNumField;
+            }
+            set {
+                if ((this.ClaimDeliveryNumField.Equals(value) != true)) {
+                    this.ClaimDeliveryNumField = value;
+                    this.RaisePropertyChanged("ClaimDeliveryNum");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=12)]
+        public int ReadyDeliveryNum {
+            get {
+                return this.ReadyDeliveryNumField;
+            }
+            set {
+                if ((this.ReadyDeliveryNumField.Equals(value) != true)) {
+                    this.ReadyDeliveryNumField = value;
+                    this.RaisePropertyChanged("ReadyDeliveryNum");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=13)]
+        public int WaitDeliveryNum {
+            get {
+                return this.WaitDeliveryNumField;
+            }
+            set {
+                if ((this.WaitDeliveryNumField.Equals(value) != true)) {
+                    this.WaitDeliveryNumField = value;
+                    this.RaisePropertyChanged("WaitDeliveryNum");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
+        public int InRoadDeliveryNum {
+            get {
+                return this.InRoadDeliveryNumField;
+            }
+            set {
+                if ((this.InRoadDeliveryNumField.Equals(value) != true)) {
+                    this.InRoadDeliveryNumField = value;
+                    this.RaisePropertyChanged("InRoadDeliveryNum");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
+        public string ReceiveTime {
+            get {
+                return this.ReceiveTimeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReceiveTimeField, value) != true)) {
+                    this.ReceiveTimeField = value;
+                    this.RaisePropertyChanged("ReceiveTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
+        public string DeliveryAddress {
+            get {
+                return this.DeliveryAddressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DeliveryAddressField, value) != true)) {
+                    this.DeliveryAddressField = value;
+                    this.RaisePropertyChanged("DeliveryAddress");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=17)]
+        public string CorrespondDepartment {
+            get {
+                return this.CorrespondDepartmentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CorrespondDepartmentField, value) != true)) {
+                    this.CorrespondDepartmentField = value;
+                    this.RaisePropertyChanged("CorrespondDepartment");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
+        public string WorkCode {
+            get {
+                return this.WorkCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WorkCodeField, value) != true)) {
+                    this.WorkCodeField = value;
+                    this.RaisePropertyChanged("WorkCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
+        public string JingxinName {
+            get {
+                return this.JingxinNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.JingxinNameField, value) != true)) {
+                    this.JingxinNameField = value;
+                    this.RaisePropertyChanged("JingxinName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
+        public string Plant {
+            get {
+                return this.PlantField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PlantField, value) != true)) {
+                    this.PlantField = value;
+                    this.RaisePropertyChanged("Plant");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
+        public string PlantName {
+            get {
+                return this.PlantNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PlantNameField, value) != true)) {
+                    this.PlantNameField = value;
+                    this.RaisePropertyChanged("PlantName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=22)]
+        public string PrdVersion {
+            get {
+                return this.PrdVersionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PrdVersionField, value) != true)) {
+                    this.PrdVersionField = value;
+                    this.RaisePropertyChanged("PrdVersion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=23)]
+        public string StorageLoc {
+            get {
+                return this.StorageLocField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StorageLocField, value) != true)) {
+                    this.StorageLocField = value;
+                    this.RaisePropertyChanged("StorageLoc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=24)]
+        public decimal ReceiveQty {
+            get {
+                return this.ReceiveQtyField;
+            }
+            set {
+                if ((this.ReceiveQtyField.Equals(value) != true)) {
+                    this.ReceiveQtyField = value;
+                    this.RaisePropertyChanged("ReceiveQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=25)]
+        public int IsUrgent {
+            get {
+                return this.IsUrgentField;
+            }
+            set {
+                if ((this.IsUrgentField.Equals(value) != true)) {
+                    this.IsUrgentField = value;
+                    this.RaisePropertyChanged("IsUrgent");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=26)]
+        public int PackCount {
+            get {
+                return this.PackCountField;
+            }
+            set {
+                if ((this.PackCountField.Equals(value) != true)) {
+                    this.PackCountField = value;
+                    this.RaisePropertyChanged("PackCount");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=27)]
+        public string PrdReturnReason {
+            get {
+                return this.PrdReturnReasonField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PrdReturnReasonField, value) != true)) {
+                    this.PrdReturnReasonField = value;
+                    this.RaisePropertyChanged("PrdReturnReason");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=28)]
+        public string Barcode {
+            get {
+                return this.BarcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
+                    this.BarcodeField = value;
+                    this.RaisePropertyChanged("Barcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=29)]
+        public string SerialNo {
+            get {
+                return this.SerialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SerialNoField, value) != true)) {
+                    this.SerialNoField = value;
+                    this.RaisePropertyChanged("SerialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=30)]
+        public System.Collections.Generic.List<WMS.WebService.OutBarcode_Model> lstOutBarCode {
+            get {
+                return this.lstOutBarCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.lstOutBarCodeField, value) != true)) {
+                    this.lstOutBarCodeField = value;
+                    this.RaisePropertyChanged("lstOutBarCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=31)]
+        public int IsROHS {
+            get {
+                return this.IsROHSField;
+            }
+            set {
+                if ((this.IsROHSField.Equals(value) != true)) {
+                    this.IsROHSField = value;
+                    this.RaisePropertyChanged("IsROHS");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=32)]
+        public string TrackNo {
+            get {
+                return this.TrackNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TrackNoField, value) != true)) {
+                    this.TrackNoField = value;
+                    this.RaisePropertyChanged("TrackNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=33)]
+        public string ReserveNumber {
+            get {
+                return this.ReserveNumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReserveNumberField, value) != true)) {
+                    this.ReserveNumberField = value;
+                    this.RaisePropertyChanged("ReserveNumber");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=34)]
+        public decimal QualityQty {
+            get {
+                return this.QualityQtyField;
+            }
+            set {
+                if ((this.QualityQtyField.Equals(value) != true)) {
+                    this.QualityQtyField = value;
+                    this.RaisePropertyChanged("QualityQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=35)]
+        public System.Nullable<decimal> CurrentQualityQty {
+            get {
+                return this.CurrentQualityQtyField;
+            }
+            set {
+                if ((this.CurrentQualityQtyField.Equals(value) != true)) {
+                    this.CurrentQualityQtyField = value;
+                    this.RaisePropertyChanged("CurrentQualityQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=36)]
+        public decimal UnQualityQty {
+            get {
+                return this.UnQualityQtyField;
+            }
+            set {
+                if ((this.UnQualityQtyField.Equals(value) != true)) {
+                    this.UnQualityQtyField = value;
+                    this.RaisePropertyChanged("UnQualityQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=37)]
+        public System.Nullable<decimal> CurrentUnQualityQty {
+            get {
+                return this.CurrentUnQualityQtyField;
+            }
+            set {
+                if ((this.CurrentUnQualityQtyField.Equals(value) != true)) {
+                    this.CurrentUnQualityQtyField = value;
+                    this.RaisePropertyChanged("CurrentUnQualityQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=38)]
+        public bool OKSelect {
+            get {
+                return this.OKSelectField;
+            }
+            set {
+                if ((this.OKSelectField.Equals(value) != true)) {
+                    this.OKSelectField = value;
+                    this.RaisePropertyChanged("OKSelect");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=39)]
+        public string QualityType {
+            get {
+                return this.QualityTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.QualityTypeField, value) != true)) {
+                    this.QualityTypeField = value;
+                    this.RaisePropertyChanged("QualityType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=40)]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=41)]
+        public decimal CurrentPostQty {
+            get {
+                return this.CurrentPostQtyField;
+            }
+            set {
+                if ((this.CurrentPostQtyField.Equals(value) != true)) {
+                    this.CurrentPostQtyField = value;
+                    this.RaisePropertyChanged("CurrentPostQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=42)]
+        public string StrROHS {
+            get {
+                return this.StrROHSField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrROHSField, value) != true)) {
+                    this.StrROHSField = value;
+                    this.RaisePropertyChanged("StrROHS");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=43)]
+        public string ReserveRowNo {
+            get {
+                return this.ReserveRowNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReserveRowNoField, value) != true)) {
+                    this.ReserveRowNoField = value;
+                    this.RaisePropertyChanged("ReserveRowNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=44)]
+        public string OrderNum {
+            get {
+                return this.OrderNumField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OrderNumField, value) != true)) {
+                    this.OrderNumField = value;
+                    this.RaisePropertyChanged("OrderNum");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=45)]
+        public decimal OldReceiveQty {
+            get {
+                return this.OldReceiveQtyField;
+            }
+            set {
+                if ((this.OldReceiveQtyField.Equals(value) != true)) {
+                    this.OldReceiveQtyField = value;
+                    this.RaisePropertyChanged("OldReceiveQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=46)]
+        public System.Collections.Generic.List<WMS.WebService.ComboBoxItem> lstCmb {
+            get {
+                return this.lstCmbField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.lstCmbField, value) != true)) {
+                    this.lstCmbField = value;
+                    this.RaisePropertyChanged("lstCmb");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=47)]
+        public int RowNumber {
+            get {
+                return this.RowNumberField;
+            }
+            set {
+                if ((this.RowNumberField.Equals(value) != true)) {
+                    this.RowNumberField = value;
+                    this.RaisePropertyChanged("RowNumber");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="OutBarcode_Model", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class OutBarcode_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int IdField;
+        
+        private int InnerBox_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VoucherNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RowNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DeliveryNoField;
+        
+        private int VoucherTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDESCField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SupplierNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SupplierNameField;
+        
+        private int QtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BatchNoField;
+        
+        private int OutPackQtyField;
+        
+        private int NoPackField;
+        
+        private int PrintQtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OutBarCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SerialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PrdversionField;
+        
+        private int PlatedSilverField;
+        
+        private int PlatedGoldField;
+        
+        private int OthersField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OperatorField;
+        
+        private System.DateTime OperationDateField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1353,66 +1506,360 @@ namespace WMS.WebService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int RecordCounts {
+        public int Id {
             get {
-                return this.RecordCountsField;
+                return this.IdField;
             }
             set {
-                if ((this.RecordCountsField.Equals(value) != true)) {
-                    this.RecordCountsField = value;
-                    this.RaisePropertyChanged("RecordCounts");
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=1)]
-        public int CurrentPageRecordCounts {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int InnerBox_Id {
             get {
-                return this.CurrentPageRecordCountsField;
+                return this.InnerBox_IdField;
             }
             set {
-                if ((this.CurrentPageRecordCountsField.Equals(value) != true)) {
-                    this.CurrentPageRecordCountsField = value;
-                    this.RaisePropertyChanged("CurrentPageRecordCounts");
+                if ((this.InnerBox_IdField.Equals(value) != true)) {
+                    this.InnerBox_IdField = value;
+                    this.RaisePropertyChanged("InnerBox_Id");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
-        public int CurrentPageShowCounts {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string VoucherNo {
             get {
-                return this.CurrentPageShowCountsField;
+                return this.VoucherNoField;
             }
             set {
-                if ((this.CurrentPageShowCountsField.Equals(value) != true)) {
-                    this.CurrentPageShowCountsField = value;
-                    this.RaisePropertyChanged("CurrentPageShowCounts");
+                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
+                    this.VoucherNoField = value;
+                    this.RaisePropertyChanged("VoucherNo");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
-        public int CurrentPageNumber {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string RowNo {
             get {
-                return this.CurrentPageNumberField;
+                return this.RowNoField;
             }
             set {
-                if ((this.CurrentPageNumberField.Equals(value) != true)) {
-                    this.CurrentPageNumberField = value;
-                    this.RaisePropertyChanged("CurrentPageNumber");
+                if ((object.ReferenceEquals(this.RowNoField, value) != true)) {
+                    this.RowNoField = value;
+                    this.RaisePropertyChanged("RowNo");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
-        public int PagesCount {
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string DeliveryNo {
             get {
-                return this.PagesCountField;
+                return this.DeliveryNoField;
             }
             set {
-                if ((this.PagesCountField.Equals(value) != true)) {
-                    this.PagesCountField = value;
-                    this.RaisePropertyChanged("PagesCount");
+                if ((object.ReferenceEquals(this.DeliveryNoField, value) != true)) {
+                    this.DeliveryNoField = value;
+                    this.RaisePropertyChanged("DeliveryNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
+        public int VoucherType {
+            get {
+                return this.VoucherTypeField;
+            }
+            set {
+                if ((this.VoucherTypeField.Equals(value) != true)) {
+                    this.VoucherTypeField = value;
+                    this.RaisePropertyChanged("VoucherType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string MaterialNo {
+            get {
+                return this.MaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
+                    this.MaterialNoField = value;
+                    this.RaisePropertyChanged("MaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string MaterialDESC {
+            get {
+                return this.MaterialDESCField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDESCField, value) != true)) {
+                    this.MaterialDESCField = value;
+                    this.RaisePropertyChanged("MaterialDESC");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string SupplierNo {
+            get {
+                return this.SupplierNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SupplierNoField, value) != true)) {
+                    this.SupplierNoField = value;
+                    this.RaisePropertyChanged("SupplierNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string SupplierName {
+            get {
+                return this.SupplierNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SupplierNameField, value) != true)) {
+                    this.SupplierNameField = value;
+                    this.RaisePropertyChanged("SupplierName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=10)]
+        public int Qty {
+            get {
+                return this.QtyField;
+            }
+            set {
+                if ((this.QtyField.Equals(value) != true)) {
+                    this.QtyField = value;
+                    this.RaisePropertyChanged("Qty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        public string BatchNo {
+            get {
+                return this.BatchNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BatchNoField, value) != true)) {
+                    this.BatchNoField = value;
+                    this.RaisePropertyChanged("BatchNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=12)]
+        public int OutPackQty {
+            get {
+                return this.OutPackQtyField;
+            }
+            set {
+                if ((this.OutPackQtyField.Equals(value) != true)) {
+                    this.OutPackQtyField = value;
+                    this.RaisePropertyChanged("OutPackQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=13)]
+        public int NoPack {
+            get {
+                return this.NoPackField;
+            }
+            set {
+                if ((this.NoPackField.Equals(value) != true)) {
+                    this.NoPackField = value;
+                    this.RaisePropertyChanged("NoPack");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
+        public int PrintQty {
+            get {
+                return this.PrintQtyField;
+            }
+            set {
+                if ((this.PrintQtyField.Equals(value) != true)) {
+                    this.PrintQtyField = value;
+                    this.RaisePropertyChanged("PrintQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
+        public string OutBarCode {
+            get {
+                return this.OutBarCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OutBarCodeField, value) != true)) {
+                    this.OutBarCodeField = value;
+                    this.RaisePropertyChanged("OutBarCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
+        public string SerialNo {
+            get {
+                return this.SerialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SerialNoField, value) != true)) {
+                    this.SerialNoField = value;
+                    this.RaisePropertyChanged("SerialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=17)]
+        public string Prdversion {
+            get {
+                return this.PrdversionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PrdversionField, value) != true)) {
+                    this.PrdversionField = value;
+                    this.RaisePropertyChanged("Prdversion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=18)]
+        public int PlatedSilver {
+            get {
+                return this.PlatedSilverField;
+            }
+            set {
+                if ((this.PlatedSilverField.Equals(value) != true)) {
+                    this.PlatedSilverField = value;
+                    this.RaisePropertyChanged("PlatedSilver");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=19)]
+        public int PlatedGold {
+            get {
+                return this.PlatedGoldField;
+            }
+            set {
+                if ((this.PlatedGoldField.Equals(value) != true)) {
+                    this.PlatedGoldField = value;
+                    this.RaisePropertyChanged("PlatedGold");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=20)]
+        public int Others {
+            get {
+                return this.OthersField;
+            }
+            set {
+                if ((this.OthersField.Equals(value) != true)) {
+                    this.OthersField = value;
+                    this.RaisePropertyChanged("Others");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
+        public string Operator {
+            get {
+                return this.OperatorField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OperatorField, value) != true)) {
+                    this.OperatorField = value;
+                    this.RaisePropertyChanged("Operator");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=22)]
+        public System.DateTime OperationDate {
+            get {
+                return this.OperationDateField;
+            }
+            set {
+                if ((this.OperationDateField.Equals(value) != true)) {
+                    this.OperationDateField = value;
+                    this.RaisePropertyChanged("OperationDate");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ComboBoxItem", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class ComboBoxItem : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
                 }
             }
         }
@@ -1435,15 +1882,17 @@ namespace WMS.WebService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.TreeInfo))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.MenuInfo))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.UserGroupInfo))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.TempMaterialInfo))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.OverViewInfo))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.OverViewDetailInfo))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.CheckInfo))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.CheckTransInfo))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.AreaInfo))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.HouseInfo))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.Preparation))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.Building))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.TaskTransInfo))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.ReceiveTransInfo))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.TempMaterialInfo))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(WMS.WebService.UserInfo))]
     public partial class BasicInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -2725,6 +3174,250 @@ namespace WMS.WebService {
                 if ((this.BIsCheckedField.Equals(value) != true)) {
                     this.BIsCheckedField = value;
                     this.RaisePropertyChanged("BIsChecked");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TempMaterialInfo", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class TempMaterialInfo : WMS.WebService.BasicInfo {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TempMaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TempMaterialDescField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDescField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SapMaterialDocField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ReplaceUserField;
+        
+        private System.Nullable<System.DateTime> ReplaceTimeField;
+        
+        private int TempMaterialStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WMS.WebService.Dghead DgheadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MessageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrTempMaterialStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UnitField;
+        
+        private int IsRohsField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string TempMaterialNo {
+            get {
+                return this.TempMaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TempMaterialNoField, value) != true)) {
+                    this.TempMaterialNoField = value;
+                    this.RaisePropertyChanged("TempMaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string TempMaterialDesc {
+            get {
+                return this.TempMaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TempMaterialDescField, value) != true)) {
+                    this.TempMaterialDescField = value;
+                    this.RaisePropertyChanged("TempMaterialDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string MaterialNo {
+            get {
+                return this.MaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
+                    this.MaterialNoField = value;
+                    this.RaisePropertyChanged("MaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string MaterialDesc {
+            get {
+                return this.MaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
+                    this.MaterialDescField = value;
+                    this.RaisePropertyChanged("MaterialDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string SapMaterialDoc {
+            get {
+                return this.SapMaterialDocField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SapMaterialDocField, value) != true)) {
+                    this.SapMaterialDocField = value;
+                    this.RaisePropertyChanged("SapMaterialDoc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string ReplaceUser {
+            get {
+                return this.ReplaceUserField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReplaceUserField, value) != true)) {
+                    this.ReplaceUserField = value;
+                    this.RaisePropertyChanged("ReplaceUser");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
+        public System.Nullable<System.DateTime> ReplaceTime {
+            get {
+                return this.ReplaceTimeField;
+            }
+            set {
+                if ((this.ReplaceTimeField.Equals(value) != true)) {
+                    this.ReplaceTimeField = value;
+                    this.RaisePropertyChanged("ReplaceTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
+        public int TempMaterialStatus {
+            get {
+                return this.TempMaterialStatusField;
+            }
+            set {
+                if ((this.TempMaterialStatusField.Equals(value) != true)) {
+                    this.TempMaterialStatusField = value;
+                    this.RaisePropertyChanged("TempMaterialStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string Status {
+            get {
+                return this.StatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StatusField, value) != true)) {
+                    this.StatusField = value;
+                    this.RaisePropertyChanged("Status");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string Type {
+            get {
+                return this.TypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TypeField, value) != true)) {
+                    this.TypeField = value;
+                    this.RaisePropertyChanged("Type");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public WMS.WebService.Dghead Dghead {
+            get {
+                return this.DgheadField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DgheadField, value) != true)) {
+                    this.DgheadField = value;
+                    this.RaisePropertyChanged("Dghead");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        public string Message {
+            get {
+                return this.MessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
+        public string StrTempMaterialStatus {
+            get {
+                return this.StrTempMaterialStatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrTempMaterialStatusField, value) != true)) {
+                    this.StrTempMaterialStatusField = value;
+                    this.RaisePropertyChanged("StrTempMaterialStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
+        public string Unit {
+            get {
+                return this.UnitField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
+                    this.UnitField = value;
+                    this.RaisePropertyChanged("Unit");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
+        public int IsRohs {
+            get {
+                return this.IsRohsField;
+            }
+            set {
+                if ((this.IsRohsField.Equals(value) != true)) {
+                    this.IsRohsField = value;
+                    this.RaisePropertyChanged("IsRohs");
                 }
             }
         }
@@ -5248,6 +5941,130 @@ namespace WMS.WebService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Preparation", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class Preparation : WMS.WebService.BasicInfo {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string pCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string pNameField;
+        
+        private int bidField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string pCode {
+            get {
+                return this.pCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.pCodeField, value) != true)) {
+                    this.pCodeField = value;
+                    this.RaisePropertyChanged("pCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string pName {
+            get {
+                return this.pNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.pNameField, value) != true)) {
+                    this.pNameField = value;
+                    this.RaisePropertyChanged("pName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
+        public int bid {
+            get {
+                return this.bidField;
+            }
+            set {
+                if ((this.bidField.Equals(value) != true)) {
+                    this.bidField = value;
+                    this.RaisePropertyChanged("bid");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Building", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class Building : WMS.WebService.BasicInfo {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string bNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string bNoField;
+        
+        private int iGradeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Collections.Generic.List<WMS.WebService.Preparation> lstPField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string bName {
+            get {
+                return this.bNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.bNameField, value) != true)) {
+                    this.bNameField = value;
+                    this.RaisePropertyChanged("bName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string bNo {
+            get {
+                return this.bNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.bNoField, value) != true)) {
+                    this.bNoField = value;
+                    this.RaisePropertyChanged("bNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int iGrade {
+            get {
+                return this.iGradeField;
+            }
+            set {
+                if ((this.iGradeField.Equals(value) != true)) {
+                    this.iGradeField = value;
+                    this.RaisePropertyChanged("iGrade");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public System.Collections.Generic.List<WMS.WebService.Preparation> lstP {
+            get {
+                return this.lstPField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.lstPField, value) != true)) {
+                    this.lstPField = value;
+                    this.RaisePropertyChanged("lstP");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="TaskTransInfo", Namespace="http://tempuri.org/")]
     [System.SerializableAttribute()]
     public partial class TaskTransInfo : WMS.WebService.BasicInfo {
@@ -5997,250 +6814,6 @@ namespace WMS.WebService {
                 if ((object.ReferenceEquals(this.SNField, value) != true)) {
                     this.SNField = value;
                     this.RaisePropertyChanged("SN");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TempMaterialInfo", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class TempMaterialInfo : WMS.WebService.BasicInfo {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TempMaterialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TempMaterialDescField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDescField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SapMaterialDocField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ReplaceUserField;
-        
-        private System.Nullable<System.DateTime> ReplaceTimeField;
-        
-        private int TempMaterialStatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WMS.WebService.Dghead DgheadField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MessageField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrTempMaterialStatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UnitField;
-        
-        private int IsRohsField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string TempMaterialNo {
-            get {
-                return this.TempMaterialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TempMaterialNoField, value) != true)) {
-                    this.TempMaterialNoField = value;
-                    this.RaisePropertyChanged("TempMaterialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string TempMaterialDesc {
-            get {
-                return this.TempMaterialDescField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TempMaterialDescField, value) != true)) {
-                    this.TempMaterialDescField = value;
-                    this.RaisePropertyChanged("TempMaterialDesc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string MaterialNo {
-            get {
-                return this.MaterialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
-                    this.MaterialNoField = value;
-                    this.RaisePropertyChanged("MaterialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string MaterialDesc {
-            get {
-                return this.MaterialDescField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
-                    this.MaterialDescField = value;
-                    this.RaisePropertyChanged("MaterialDesc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string SapMaterialDoc {
-            get {
-                return this.SapMaterialDocField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SapMaterialDocField, value) != true)) {
-                    this.SapMaterialDocField = value;
-                    this.RaisePropertyChanged("SapMaterialDoc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string ReplaceUser {
-            get {
-                return this.ReplaceUserField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ReplaceUserField, value) != true)) {
-                    this.ReplaceUserField = value;
-                    this.RaisePropertyChanged("ReplaceUser");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
-        public System.Nullable<System.DateTime> ReplaceTime {
-            get {
-                return this.ReplaceTimeField;
-            }
-            set {
-                if ((this.ReplaceTimeField.Equals(value) != true)) {
-                    this.ReplaceTimeField = value;
-                    this.RaisePropertyChanged("ReplaceTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
-        public int TempMaterialStatus {
-            get {
-                return this.TempMaterialStatusField;
-            }
-            set {
-                if ((this.TempMaterialStatusField.Equals(value) != true)) {
-                    this.TempMaterialStatusField = value;
-                    this.RaisePropertyChanged("TempMaterialStatus");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string Status {
-            get {
-                return this.StatusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StatusField, value) != true)) {
-                    this.StatusField = value;
-                    this.RaisePropertyChanged("Status");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string Type {
-            get {
-                return this.TypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TypeField, value) != true)) {
-                    this.TypeField = value;
-                    this.RaisePropertyChanged("Type");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public WMS.WebService.Dghead Dghead {
-            get {
-                return this.DgheadField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DgheadField, value) != true)) {
-                    this.DgheadField = value;
-                    this.RaisePropertyChanged("Dghead");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
-        public string Message {
-            get {
-                return this.MessageField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
-                    this.MessageField = value;
-                    this.RaisePropertyChanged("Message");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
-        public string StrTempMaterialStatus {
-            get {
-                return this.StrTempMaterialStatusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrTempMaterialStatusField, value) != true)) {
-                    this.StrTempMaterialStatusField = value;
-                    this.RaisePropertyChanged("StrTempMaterialStatus");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
-        public string Unit {
-            get {
-                return this.UnitField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
-                    this.UnitField = value;
-                    this.RaisePropertyChanged("Unit");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
-        public int IsRohs {
-            get {
-                return this.IsRohsField;
-            }
-            set {
-                if ((this.IsRohsField.Equals(value) != true)) {
-                    this.IsRohsField = value;
-                    this.RaisePropertyChanged("IsRohs");
                 }
             }
         }
@@ -9615,6 +10188,1862 @@ namespace WMS.WebService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.CollectionDataContractAttribute(Name="ArrayOfString", Namespace="http://tempuri.org/", ItemName="string")]
+    [System.SerializableAttribute()]
+    public class ArrayOfString : System.Collections.Generic.List<string> {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="MaterialOuterLabel", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class MaterialOuterLabel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WMS.WebService.BarcodeRule barcoderuleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string INVSTDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BarcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string POCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LabelTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MATERIALNOField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MATERIALDESCField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SUPCODEField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SUPNAMEField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PrintDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SupBatchField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OUTPACKQTYField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PACKNOField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public WMS.WebService.BarcodeRule barcoderule {
+            get {
+                return this.barcoderuleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.barcoderuleField, value) != true)) {
+                    this.barcoderuleField = value;
+                    this.RaisePropertyChanged("barcoderule");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string INVSTD {
+            get {
+                return this.INVSTDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.INVSTDField, value) != true)) {
+                    this.INVSTDField = value;
+                    this.RaisePropertyChanged("INVSTD");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string Barcode {
+            get {
+                return this.BarcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
+                    this.BarcodeField = value;
+                    this.RaisePropertyChanged("Barcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string POCode {
+            get {
+                return this.POCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.POCodeField, value) != true)) {
+                    this.POCodeField = value;
+                    this.RaisePropertyChanged("POCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string LabelType {
+            get {
+                return this.LabelTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LabelTypeField, value) != true)) {
+                    this.LabelTypeField = value;
+                    this.RaisePropertyChanged("LabelType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string MATERIALNO {
+            get {
+                return this.MATERIALNOField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MATERIALNOField, value) != true)) {
+                    this.MATERIALNOField = value;
+                    this.RaisePropertyChanged("MATERIALNO");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string MATERIALDESC {
+            get {
+                return this.MATERIALDESCField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MATERIALDESCField, value) != true)) {
+                    this.MATERIALDESCField = value;
+                    this.RaisePropertyChanged("MATERIALDESC");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string SUPCODE {
+            get {
+                return this.SUPCODEField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SUPCODEField, value) != true)) {
+                    this.SUPCODEField = value;
+                    this.RaisePropertyChanged("SUPCODE");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string SUPNAME {
+            get {
+                return this.SUPNAMEField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SUPNAMEField, value) != true)) {
+                    this.SUPNAMEField = value;
+                    this.RaisePropertyChanged("SUPNAME");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string PrintDate {
+            get {
+                return this.PrintDateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PrintDateField, value) != true)) {
+                    this.PrintDateField = value;
+                    this.RaisePropertyChanged("PrintDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string SupBatch {
+            get {
+                return this.SupBatchField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SupBatchField, value) != true)) {
+                    this.SupBatchField = value;
+                    this.RaisePropertyChanged("SupBatch");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        public string OUTPACKQTY {
+            get {
+                return this.OUTPACKQTYField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OUTPACKQTYField, value) != true)) {
+                    this.OUTPACKQTYField = value;
+                    this.RaisePropertyChanged("OUTPACKQTY");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
+        public string PACKNO {
+            get {
+                return this.PACKNOField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PACKNOField, value) != true)) {
+                    this.PACKNOField = value;
+                    this.RaisePropertyChanged("PACKNO");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="BarcodeRule", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class BarcodeRule : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WMS.WebService.ArrayOfString FieldsField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public WMS.WebService.ArrayOfString Fields {
+            get {
+                return this.FieldsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FieldsField, value) != true)) {
+                    this.FieldsField = value;
+                    this.RaisePropertyChanged("Fields");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="MaterialInnerLabel", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class MaterialInnerLabel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WMS.WebService.BarcodeRule barcoderuleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string INVSTDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BarcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string POCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LabelTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MATERIALNOField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MATERIALDESCField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SUPCODEField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SUPNAMEField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PrintDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SupBatchField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public WMS.WebService.BarcodeRule barcoderule {
+            get {
+                return this.barcoderuleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.barcoderuleField, value) != true)) {
+                    this.barcoderuleField = value;
+                    this.RaisePropertyChanged("barcoderule");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string INVSTD {
+            get {
+                return this.INVSTDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.INVSTDField, value) != true)) {
+                    this.INVSTDField = value;
+                    this.RaisePropertyChanged("INVSTD");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string Barcode {
+            get {
+                return this.BarcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
+                    this.BarcodeField = value;
+                    this.RaisePropertyChanged("Barcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string POCode {
+            get {
+                return this.POCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.POCodeField, value) != true)) {
+                    this.POCodeField = value;
+                    this.RaisePropertyChanged("POCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string LabelType {
+            get {
+                return this.LabelTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LabelTypeField, value) != true)) {
+                    this.LabelTypeField = value;
+                    this.RaisePropertyChanged("LabelType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string MATERIALNO {
+            get {
+                return this.MATERIALNOField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MATERIALNOField, value) != true)) {
+                    this.MATERIALNOField = value;
+                    this.RaisePropertyChanged("MATERIALNO");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string MATERIALDESC {
+            get {
+                return this.MATERIALDESCField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MATERIALDESCField, value) != true)) {
+                    this.MATERIALDESCField = value;
+                    this.RaisePropertyChanged("MATERIALDESC");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string SUPCODE {
+            get {
+                return this.SUPCODEField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SUPCODEField, value) != true)) {
+                    this.SUPCODEField = value;
+                    this.RaisePropertyChanged("SUPCODE");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string SUPNAME {
+            get {
+                return this.SUPNAMEField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SUPNAMEField, value) != true)) {
+                    this.SUPNAMEField = value;
+                    this.RaisePropertyChanged("SUPNAME");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string PrintDate {
+            get {
+                return this.PrintDateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PrintDateField, value) != true)) {
+                    this.PrintDateField = value;
+                    this.RaisePropertyChanged("PrintDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string SupBatch {
+            get {
+                return this.SupBatchField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SupBatchField, value) != true)) {
+                    this.SupBatchField = value;
+                    this.RaisePropertyChanged("SupBatch");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ProductLabel_Model", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class ProductLabel_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WMS.WebService.BarcodeRule barcoderuleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string labeltypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string materialnoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string materialdescField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ordercodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string outpackqtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string printdateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string barcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string invstdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CUNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RemarkField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string packnoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string plantnoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string POCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SOCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ContractNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BarcodeExpressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BarcodeEndField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LocaleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string qrbarcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IsOuterField;
+        
+        private int iMoSeqField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string smallQRField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string prdversionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string statusField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public WMS.WebService.BarcodeRule barcoderule {
+            get {
+                return this.barcoderuleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.barcoderuleField, value) != true)) {
+                    this.barcoderuleField = value;
+                    this.RaisePropertyChanged("barcoderule");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IDField, value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string labeltype {
+            get {
+                return this.labeltypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.labeltypeField, value) != true)) {
+                    this.labeltypeField = value;
+                    this.RaisePropertyChanged("labeltype");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string materialno {
+            get {
+                return this.materialnoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.materialnoField, value) != true)) {
+                    this.materialnoField = value;
+                    this.RaisePropertyChanged("materialno");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string materialdesc {
+            get {
+                return this.materialdescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.materialdescField, value) != true)) {
+                    this.materialdescField = value;
+                    this.RaisePropertyChanged("materialdesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string ordercode {
+            get {
+                return this.ordercodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ordercodeField, value) != true)) {
+                    this.ordercodeField = value;
+                    this.RaisePropertyChanged("ordercode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string outpackqty {
+            get {
+                return this.outpackqtyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.outpackqtyField, value) != true)) {
+                    this.outpackqtyField = value;
+                    this.RaisePropertyChanged("outpackqty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string printdate {
+            get {
+                return this.printdateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.printdateField, value) != true)) {
+                    this.printdateField = value;
+                    this.RaisePropertyChanged("printdate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string barcode {
+            get {
+                return this.barcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.barcodeField, value) != true)) {
+                    this.barcodeField = value;
+                    this.RaisePropertyChanged("barcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string invstd {
+            get {
+                return this.invstdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.invstdField, value) != true)) {
+                    this.invstdField = value;
+                    this.RaisePropertyChanged("invstd");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string CUName {
+            get {
+                return this.CUNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CUNameField, value) != true)) {
+                    this.CUNameField = value;
+                    this.RaisePropertyChanged("CUName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        public string Remark {
+            get {
+                return this.RemarkField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
+                    this.RemarkField = value;
+                    this.RaisePropertyChanged("Remark");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
+        public string packno {
+            get {
+                return this.packnoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.packnoField, value) != true)) {
+                    this.packnoField = value;
+                    this.RaisePropertyChanged("packno");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
+        public string plantno {
+            get {
+                return this.plantnoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.plantnoField, value) != true)) {
+                    this.plantnoField = value;
+                    this.RaisePropertyChanged("plantno");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
+        public string POCode {
+            get {
+                return this.POCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.POCodeField, value) != true)) {
+                    this.POCodeField = value;
+                    this.RaisePropertyChanged("POCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
+        public string SOCode {
+            get {
+                return this.SOCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SOCodeField, value) != true)) {
+                    this.SOCodeField = value;
+                    this.RaisePropertyChanged("SOCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
+        public string ContractNo {
+            get {
+                return this.ContractNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ContractNoField, value) != true)) {
+                    this.ContractNoField = value;
+                    this.RaisePropertyChanged("ContractNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=17)]
+        public string BarcodeExpress {
+            get {
+                return this.BarcodeExpressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BarcodeExpressField, value) != true)) {
+                    this.BarcodeExpressField = value;
+                    this.RaisePropertyChanged("BarcodeExpress");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
+        public string BarcodeEnd {
+            get {
+                return this.BarcodeEndField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BarcodeEndField, value) != true)) {
+                    this.BarcodeEndField = value;
+                    this.RaisePropertyChanged("BarcodeEnd");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
+        public string Locale {
+            get {
+                return this.LocaleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LocaleField, value) != true)) {
+                    this.LocaleField = value;
+                    this.RaisePropertyChanged("Locale");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
+        public string qrbarcode {
+            get {
+                return this.qrbarcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.qrbarcodeField, value) != true)) {
+                    this.qrbarcodeField = value;
+                    this.RaisePropertyChanged("qrbarcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
+        public string IsOuter {
+            get {
+                return this.IsOuterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IsOuterField, value) != true)) {
+                    this.IsOuterField = value;
+                    this.RaisePropertyChanged("IsOuter");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=22)]
+        public int iMoSeq {
+            get {
+                return this.iMoSeqField;
+            }
+            set {
+                if ((this.iMoSeqField.Equals(value) != true)) {
+                    this.iMoSeqField = value;
+                    this.RaisePropertyChanged("iMoSeq");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=23)]
+        public string smallQR {
+            get {
+                return this.smallQRField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.smallQRField, value) != true)) {
+                    this.smallQRField = value;
+                    this.RaisePropertyChanged("smallQR");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=24)]
+        public string prdversion {
+            get {
+                return this.prdversionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.prdversionField, value) != true)) {
+                    this.prdversionField = value;
+                    this.RaisePropertyChanged("prdversion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=25)]
+        public string status {
+            get {
+                return this.statusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.statusField, value) != true)) {
+                    this.statusField = value;
+                    this.RaisePropertyChanged("status");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Stock_Model", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class Stock_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int StockTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BarcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SerialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDescField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialStdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WarehouseNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string HouseNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaNoField;
+        
+        private double QtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TempMaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TempMaterialDescField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PickAreaNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CelAreaNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BatchNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SNField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreaterField;
+        
+        private System.DateTime CreateTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VoucherNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrStockTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WarehouseNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string HouseNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaNameField;
+        
+        private System.Nullable<System.DateTime> StartTimeField;
+        
+        private System.Nullable<System.DateTime> EndTimeField;
+        
+        private bool OnlyOwnWarehouseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ProductLineNoField;
+        
+        private double ErpQtyField;
+        
+        private double SaveQtyField;
+        
+        private double TrayQtyField;
+        
+        private double TotalQtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cvencodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cvennameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int StockType {
+            get {
+                return this.StockTypeField;
+            }
+            set {
+                if ((this.StockTypeField.Equals(value) != true)) {
+                    this.StockTypeField = value;
+                    this.RaisePropertyChanged("StockType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string Barcode {
+            get {
+                return this.BarcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
+                    this.BarcodeField = value;
+                    this.RaisePropertyChanged("Barcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string SerialNo {
+            get {
+                return this.SerialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SerialNoField, value) != true)) {
+                    this.SerialNoField = value;
+                    this.RaisePropertyChanged("SerialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string MaterialNo {
+            get {
+                return this.MaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
+                    this.MaterialNoField = value;
+                    this.RaisePropertyChanged("MaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string MaterialDesc {
+            get {
+                return this.MaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
+                    this.MaterialDescField = value;
+                    this.RaisePropertyChanged("MaterialDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string MaterialStd {
+            get {
+                return this.MaterialStdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialStdField, value) != true)) {
+                    this.MaterialStdField = value;
+                    this.RaisePropertyChanged("MaterialStd");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string WarehouseNo {
+            get {
+                return this.WarehouseNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WarehouseNoField, value) != true)) {
+                    this.WarehouseNoField = value;
+                    this.RaisePropertyChanged("WarehouseNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string HouseNo {
+            get {
+                return this.HouseNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HouseNoField, value) != true)) {
+                    this.HouseNoField = value;
+                    this.RaisePropertyChanged("HouseNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string AreaNo {
+            get {
+                return this.AreaNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaNoField, value) != true)) {
+                    this.AreaNoField = value;
+                    this.RaisePropertyChanged("AreaNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=9)]
+        public double Qty {
+            get {
+                return this.QtyField;
+            }
+            set {
+                if ((this.QtyField.Equals(value) != true)) {
+                    this.QtyField = value;
+                    this.RaisePropertyChanged("Qty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string TempMaterialNo {
+            get {
+                return this.TempMaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TempMaterialNoField, value) != true)) {
+                    this.TempMaterialNoField = value;
+                    this.RaisePropertyChanged("TempMaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        public string TempMaterialDesc {
+            get {
+                return this.TempMaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TempMaterialDescField, value) != true)) {
+                    this.TempMaterialDescField = value;
+                    this.RaisePropertyChanged("TempMaterialDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
+        public string PickAreaNo {
+            get {
+                return this.PickAreaNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PickAreaNoField, value) != true)) {
+                    this.PickAreaNoField = value;
+                    this.RaisePropertyChanged("PickAreaNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
+        public string CelAreaNo {
+            get {
+                return this.CelAreaNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CelAreaNoField, value) != true)) {
+                    this.CelAreaNoField = value;
+                    this.RaisePropertyChanged("CelAreaNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
+        public string BatchNo {
+            get {
+                return this.BatchNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BatchNoField, value) != true)) {
+                    this.BatchNoField = value;
+                    this.RaisePropertyChanged("BatchNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
+        public string SN {
+            get {
+                return this.SNField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SNField, value) != true)) {
+                    this.SNField = value;
+                    this.RaisePropertyChanged("SN");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
+        public string Creater {
+            get {
+                return this.CreaterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreaterField, value) != true)) {
+                    this.CreaterField = value;
+                    this.RaisePropertyChanged("Creater");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=17)]
+        public System.DateTime CreateTime {
+            get {
+                return this.CreateTimeField;
+            }
+            set {
+                if ((this.CreateTimeField.Equals(value) != true)) {
+                    this.CreateTimeField = value;
+                    this.RaisePropertyChanged("CreateTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
+        public string VoucherNo {
+            get {
+                return this.VoucherNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
+                    this.VoucherNoField = value;
+                    this.RaisePropertyChanged("VoucherNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
+        public string StrStockType {
+            get {
+                return this.StrStockTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrStockTypeField, value) != true)) {
+                    this.StrStockTypeField = value;
+                    this.RaisePropertyChanged("StrStockType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
+        public string WarehouseName {
+            get {
+                return this.WarehouseNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WarehouseNameField, value) != true)) {
+                    this.WarehouseNameField = value;
+                    this.RaisePropertyChanged("WarehouseName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
+        public string HouseName {
+            get {
+                return this.HouseNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HouseNameField, value) != true)) {
+                    this.HouseNameField = value;
+                    this.RaisePropertyChanged("HouseName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=22)]
+        public string AreaName {
+            get {
+                return this.AreaNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaNameField, value) != true)) {
+                    this.AreaNameField = value;
+                    this.RaisePropertyChanged("AreaName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=23)]
+        public System.Nullable<System.DateTime> StartTime {
+            get {
+                return this.StartTimeField;
+            }
+            set {
+                if ((this.StartTimeField.Equals(value) != true)) {
+                    this.StartTimeField = value;
+                    this.RaisePropertyChanged("StartTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=24)]
+        public System.Nullable<System.DateTime> EndTime {
+            get {
+                return this.EndTimeField;
+            }
+            set {
+                if ((this.EndTimeField.Equals(value) != true)) {
+                    this.EndTimeField = value;
+                    this.RaisePropertyChanged("EndTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=25)]
+        public bool OnlyOwnWarehouse {
+            get {
+                return this.OnlyOwnWarehouseField;
+            }
+            set {
+                if ((this.OnlyOwnWarehouseField.Equals(value) != true)) {
+                    this.OnlyOwnWarehouseField = value;
+                    this.RaisePropertyChanged("OnlyOwnWarehouse");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=26)]
+        public string ProductLineNo {
+            get {
+                return this.ProductLineNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProductLineNoField, value) != true)) {
+                    this.ProductLineNoField = value;
+                    this.RaisePropertyChanged("ProductLineNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=27)]
+        public double ErpQty {
+            get {
+                return this.ErpQtyField;
+            }
+            set {
+                if ((this.ErpQtyField.Equals(value) != true)) {
+                    this.ErpQtyField = value;
+                    this.RaisePropertyChanged("ErpQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=28)]
+        public double SaveQty {
+            get {
+                return this.SaveQtyField;
+            }
+            set {
+                if ((this.SaveQtyField.Equals(value) != true)) {
+                    this.SaveQtyField = value;
+                    this.RaisePropertyChanged("SaveQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=29)]
+        public double TrayQty {
+            get {
+                return this.TrayQtyField;
+            }
+            set {
+                if ((this.TrayQtyField.Equals(value) != true)) {
+                    this.TrayQtyField = value;
+                    this.RaisePropertyChanged("TrayQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=30)]
+        public double TotalQty {
+            get {
+                return this.TotalQtyField;
+            }
+            set {
+                if ((this.TotalQtyField.Equals(value) != true)) {
+                    this.TotalQtyField = value;
+                    this.RaisePropertyChanged("TotalQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=31)]
+        public string cvencode {
+            get {
+                return this.cvencodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cvencodeField, value) != true)) {
+                    this.cvencodeField = value;
+                    this.RaisePropertyChanged("cvencode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=32)]
+        public string cvenname {
+            get {
+                return this.cvennameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cvennameField, value) != true)) {
+                    this.cvennameField = value;
+                    this.RaisePropertyChanged("cvenname");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ImportPrint_Model", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class ImportPrint_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BarcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDescField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialStdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WarehouseNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string HouseNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WarehouseNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string HouseNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AreaNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SNField;
+        
+        private decimal ImportQtyField;
+        
+        private decimal PrintQtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cvencodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cvennameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Barcode {
+            get {
+                return this.BarcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
+                    this.BarcodeField = value;
+                    this.RaisePropertyChanged("Barcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MaterialNo {
+            get {
+                return this.MaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
+                    this.MaterialNoField = value;
+                    this.RaisePropertyChanged("MaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string MaterialDesc {
+            get {
+                return this.MaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
+                    this.MaterialDescField = value;
+                    this.RaisePropertyChanged("MaterialDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string MaterialStd {
+            get {
+                return this.MaterialStdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialStdField, value) != true)) {
+                    this.MaterialStdField = value;
+                    this.RaisePropertyChanged("MaterialStd");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string WarehouseNo {
+            get {
+                return this.WarehouseNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WarehouseNoField, value) != true)) {
+                    this.WarehouseNoField = value;
+                    this.RaisePropertyChanged("WarehouseNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string HouseNo {
+            get {
+                return this.HouseNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HouseNoField, value) != true)) {
+                    this.HouseNoField = value;
+                    this.RaisePropertyChanged("HouseNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string AreaNo {
+            get {
+                return this.AreaNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaNoField, value) != true)) {
+                    this.AreaNoField = value;
+                    this.RaisePropertyChanged("AreaNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string WarehouseName {
+            get {
+                return this.WarehouseNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WarehouseNameField, value) != true)) {
+                    this.WarehouseNameField = value;
+                    this.RaisePropertyChanged("WarehouseName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string HouseName {
+            get {
+                return this.HouseNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HouseNameField, value) != true)) {
+                    this.HouseNameField = value;
+                    this.RaisePropertyChanged("HouseName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string AreaName {
+            get {
+                return this.AreaNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AreaNameField, value) != true)) {
+                    this.AreaNameField = value;
+                    this.RaisePropertyChanged("AreaName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string SN {
+            get {
+                return this.SNField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SNField, value) != true)) {
+                    this.SNField = value;
+                    this.RaisePropertyChanged("SN");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
+        public decimal ImportQty {
+            get {
+                return this.ImportQtyField;
+            }
+            set {
+                if ((this.ImportQtyField.Equals(value) != true)) {
+                    this.ImportQtyField = value;
+                    this.RaisePropertyChanged("ImportQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=12)]
+        public decimal PrintQty {
+            get {
+                return this.PrintQtyField;
+            }
+            set {
+                if ((this.PrintQtyField.Equals(value) != true)) {
+                    this.PrintQtyField = value;
+                    this.RaisePropertyChanged("PrintQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
+        public string cvencode {
+            get {
+                return this.cvencodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cvencodeField, value) != true)) {
+                    this.cvencodeField = value;
+                    this.RaisePropertyChanged("cvencode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
+        public string cvenname {
+            get {
+                return this.cvennameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cvennameField, value) != true)) {
+                    this.cvennameField = value;
+                    this.RaisePropertyChanged("cvenname");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="DividPage", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class DividPage : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int RecordCountsField;
+        
+        private int CurrentPageRecordCountsField;
+        
+        private int CurrentPageShowCountsField;
+        
+        private int CurrentPageNumberField;
+        
+        private int PagesCountField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int RecordCounts {
+            get {
+                return this.RecordCountsField;
+            }
+            set {
+                if ((this.RecordCountsField.Equals(value) != true)) {
+                    this.RecordCountsField = value;
+                    this.RaisePropertyChanged("RecordCounts");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=1)]
+        public int CurrentPageRecordCounts {
+            get {
+                return this.CurrentPageRecordCountsField;
+            }
+            set {
+                if ((this.CurrentPageRecordCountsField.Equals(value) != true)) {
+                    this.CurrentPageRecordCountsField = value;
+                    this.RaisePropertyChanged("CurrentPageRecordCounts");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
+        public int CurrentPageShowCounts {
+            get {
+                return this.CurrentPageShowCountsField;
+            }
+            set {
+                if ((this.CurrentPageShowCountsField.Equals(value) != true)) {
+                    this.CurrentPageShowCountsField = value;
+                    this.RaisePropertyChanged("CurrentPageShowCounts");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        public int CurrentPageNumber {
+            get {
+                return this.CurrentPageNumberField;
+            }
+            set {
+                if ((this.CurrentPageNumberField.Equals(value) != true)) {
+                    this.CurrentPageNumberField = value;
+                    this.RaisePropertyChanged("CurrentPageNumber");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public int PagesCount {
+            get {
+                return this.PagesCountField;
+            }
+            set {
+                if ((this.PagesCountField.Equals(value) != true)) {
+                    this.PagesCountField = value;
+                    this.RaisePropertyChanged("PagesCount");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="BarcodeReport_Model", Namespace="http://tempuri.org/")]
     [System.SerializableAttribute()]
     public partial class BarcodeReport_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -11349,4279 +13778,6 @@ namespace WMS.WebService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="OverViewExportInfo", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class OverViewExportInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private int VoucherTypeField;
-        
-        private int TaskTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TaskNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DeliveryNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupCusNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupCusNameField;
-        
-        private int TaskStatusField;
-        
-        private System.Nullable<System.DateTime> TaskIssuedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ReceiveUserNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ReceiveUserNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PlantField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PlantNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RemarkField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ReasonField;
-        
-        private int IsShelvePostField;
-        
-        private int IsQualityField;
-        
-        private int IsReceivePostField;
-        
-        private int PostStatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrVoucherTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrTaskTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrIsQualityField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrIsShelvePostField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrIsReceivePostField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrTaskStatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrPostStatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDocField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string WarehouseCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string WarehouseNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreateUserNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreateUserNameField;
-        
-        private System.Nullable<System.DateTime> CreateDateTimeField;
-        
-        private int IDField;
-        
-        private int Task_IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ToAreaNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RowNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string VoucherNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDescField;
-        
-        private decimal TaskQtyField;
-        
-        private decimal QualityQtyField;
-        
-        private decimal RemainQtyField;
-        
-        private decimal ShelveQtyField;
-        
-        private decimal UnQualityQtyField;
-        
-        private decimal PostQtyField;
-        
-        private int StatusField;
-        
-        private int IsQualityCompField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OperatorUserNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OperatorUserNameField;
-        
-        private System.Nullable<System.DateTime> OperatorDateTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UnitField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrStatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrIsQualityCompField;
-        
-        private System.Nullable<System.DateTime> CompleteDateTimeField;
-        
-        private int WarehouseIDField;
-        
-        private System.Nullable<System.DateTime> StartTimeField;
-        
-        private System.Nullable<System.DateTime> EndTimeField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int VoucherType {
-            get {
-                return this.VoucherTypeField;
-            }
-            set {
-                if ((this.VoucherTypeField.Equals(value) != true)) {
-                    this.VoucherTypeField = value;
-                    this.RaisePropertyChanged("VoucherType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=1)]
-        public int TaskType {
-            get {
-                return this.TaskTypeField;
-            }
-            set {
-                if ((this.TaskTypeField.Equals(value) != true)) {
-                    this.TaskTypeField = value;
-                    this.RaisePropertyChanged("TaskType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string TaskNo {
-            get {
-                return this.TaskNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TaskNoField, value) != true)) {
-                    this.TaskNoField = value;
-                    this.RaisePropertyChanged("TaskNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string DeliveryNo {
-            get {
-                return this.DeliveryNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DeliveryNoField, value) != true)) {
-                    this.DeliveryNoField = value;
-                    this.RaisePropertyChanged("DeliveryNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string SupCusNo {
-            get {
-                return this.SupCusNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupCusNoField, value) != true)) {
-                    this.SupCusNoField = value;
-                    this.RaisePropertyChanged("SupCusNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string SupCusName {
-            get {
-                return this.SupCusNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupCusNameField, value) != true)) {
-                    this.SupCusNameField = value;
-                    this.RaisePropertyChanged("SupCusName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
-        public int TaskStatus {
-            get {
-                return this.TaskStatusField;
-            }
-            set {
-                if ((this.TaskStatusField.Equals(value) != true)) {
-                    this.TaskStatusField = value;
-                    this.RaisePropertyChanged("TaskStatus");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
-        public System.Nullable<System.DateTime> TaskIssued {
-            get {
-                return this.TaskIssuedField;
-            }
-            set {
-                if ((this.TaskIssuedField.Equals(value) != true)) {
-                    this.TaskIssuedField = value;
-                    this.RaisePropertyChanged("TaskIssued");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string ReceiveUserNo {
-            get {
-                return this.ReceiveUserNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ReceiveUserNoField, value) != true)) {
-                    this.ReceiveUserNoField = value;
-                    this.RaisePropertyChanged("ReceiveUserNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string ReceiveUserName {
-            get {
-                return this.ReceiveUserNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ReceiveUserNameField, value) != true)) {
-                    this.ReceiveUserNameField = value;
-                    this.RaisePropertyChanged("ReceiveUserName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public string Plant {
-            get {
-                return this.PlantField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PlantField, value) != true)) {
-                    this.PlantField = value;
-                    this.RaisePropertyChanged("Plant");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
-        public string PlantName {
-            get {
-                return this.PlantNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PlantNameField, value) != true)) {
-                    this.PlantNameField = value;
-                    this.RaisePropertyChanged("PlantName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
-        public string Remark {
-            get {
-                return this.RemarkField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
-                    this.RemarkField = value;
-                    this.RaisePropertyChanged("Remark");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
-        public string Reason {
-            get {
-                return this.ReasonField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ReasonField, value) != true)) {
-                    this.ReasonField = value;
-                    this.RaisePropertyChanged("Reason");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
-        public int IsShelvePost {
-            get {
-                return this.IsShelvePostField;
-            }
-            set {
-                if ((this.IsShelvePostField.Equals(value) != true)) {
-                    this.IsShelvePostField = value;
-                    this.RaisePropertyChanged("IsShelvePost");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=15)]
-        public int IsQuality {
-            get {
-                return this.IsQualityField;
-            }
-            set {
-                if ((this.IsQualityField.Equals(value) != true)) {
-                    this.IsQualityField = value;
-                    this.RaisePropertyChanged("IsQuality");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=16)]
-        public int IsReceivePost {
-            get {
-                return this.IsReceivePostField;
-            }
-            set {
-                if ((this.IsReceivePostField.Equals(value) != true)) {
-                    this.IsReceivePostField = value;
-                    this.RaisePropertyChanged("IsReceivePost");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=17)]
-        public int PostStatus {
-            get {
-                return this.PostStatusField;
-            }
-            set {
-                if ((this.PostStatusField.Equals(value) != true)) {
-                    this.PostStatusField = value;
-                    this.RaisePropertyChanged("PostStatus");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
-        public string StrVoucherType {
-            get {
-                return this.StrVoucherTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrVoucherTypeField, value) != true)) {
-                    this.StrVoucherTypeField = value;
-                    this.RaisePropertyChanged("StrVoucherType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
-        public string StrTaskType {
-            get {
-                return this.StrTaskTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrTaskTypeField, value) != true)) {
-                    this.StrTaskTypeField = value;
-                    this.RaisePropertyChanged("StrTaskType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
-        public string StrIsQuality {
-            get {
-                return this.StrIsQualityField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrIsQualityField, value) != true)) {
-                    this.StrIsQualityField = value;
-                    this.RaisePropertyChanged("StrIsQuality");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
-        public string StrIsShelvePost {
-            get {
-                return this.StrIsShelvePostField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrIsShelvePostField, value) != true)) {
-                    this.StrIsShelvePostField = value;
-                    this.RaisePropertyChanged("StrIsShelvePost");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=22)]
-        public string StrIsReceivePost {
-            get {
-                return this.StrIsReceivePostField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrIsReceivePostField, value) != true)) {
-                    this.StrIsReceivePostField = value;
-                    this.RaisePropertyChanged("StrIsReceivePost");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=23)]
-        public string StrTaskStatus {
-            get {
-                return this.StrTaskStatusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrTaskStatusField, value) != true)) {
-                    this.StrTaskStatusField = value;
-                    this.RaisePropertyChanged("StrTaskStatus");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=24)]
-        public string StrPostStatus {
-            get {
-                return this.StrPostStatusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrPostStatusField, value) != true)) {
-                    this.StrPostStatusField = value;
-                    this.RaisePropertyChanged("StrPostStatus");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=25)]
-        public string MaterialDoc {
-            get {
-                return this.MaterialDocField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDocField, value) != true)) {
-                    this.MaterialDocField = value;
-                    this.RaisePropertyChanged("MaterialDoc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=26)]
-        public string WarehouseCode {
-            get {
-                return this.WarehouseCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.WarehouseCodeField, value) != true)) {
-                    this.WarehouseCodeField = value;
-                    this.RaisePropertyChanged("WarehouseCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=27)]
-        public string WarehouseName {
-            get {
-                return this.WarehouseNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.WarehouseNameField, value) != true)) {
-                    this.WarehouseNameField = value;
-                    this.RaisePropertyChanged("WarehouseName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=28)]
-        public string CreateUserNo {
-            get {
-                return this.CreateUserNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreateUserNoField, value) != true)) {
-                    this.CreateUserNoField = value;
-                    this.RaisePropertyChanged("CreateUserNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=29)]
-        public string CreateUserName {
-            get {
-                return this.CreateUserNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreateUserNameField, value) != true)) {
-                    this.CreateUserNameField = value;
-                    this.RaisePropertyChanged("CreateUserName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=30)]
-        public System.Nullable<System.DateTime> CreateDateTime {
-            get {
-                return this.CreateDateTimeField;
-            }
-            set {
-                if ((this.CreateDateTimeField.Equals(value) != true)) {
-                    this.CreateDateTimeField = value;
-                    this.RaisePropertyChanged("CreateDateTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=31)]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=32)]
-        public int Task_ID {
-            get {
-                return this.Task_IDField;
-            }
-            set {
-                if ((this.Task_IDField.Equals(value) != true)) {
-                    this.Task_IDField = value;
-                    this.RaisePropertyChanged("Task_ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=33)]
-        public string ToAreaNo {
-            get {
-                return this.ToAreaNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ToAreaNoField, value) != true)) {
-                    this.ToAreaNoField = value;
-                    this.RaisePropertyChanged("ToAreaNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=34)]
-        public string RowNo {
-            get {
-                return this.RowNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RowNoField, value) != true)) {
-                    this.RowNoField = value;
-                    this.RaisePropertyChanged("RowNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=35)]
-        public string VoucherNo {
-            get {
-                return this.VoucherNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
-                    this.VoucherNoField = value;
-                    this.RaisePropertyChanged("VoucherNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=36)]
-        public string MaterialNo {
-            get {
-                return this.MaterialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
-                    this.MaterialNoField = value;
-                    this.RaisePropertyChanged("MaterialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=37)]
-        public string MaterialDesc {
-            get {
-                return this.MaterialDescField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
-                    this.MaterialDescField = value;
-                    this.RaisePropertyChanged("MaterialDesc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=38)]
-        public decimal TaskQty {
-            get {
-                return this.TaskQtyField;
-            }
-            set {
-                if ((this.TaskQtyField.Equals(value) != true)) {
-                    this.TaskQtyField = value;
-                    this.RaisePropertyChanged("TaskQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=39)]
-        public decimal QualityQty {
-            get {
-                return this.QualityQtyField;
-            }
-            set {
-                if ((this.QualityQtyField.Equals(value) != true)) {
-                    this.QualityQtyField = value;
-                    this.RaisePropertyChanged("QualityQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=40)]
-        public decimal RemainQty {
-            get {
-                return this.RemainQtyField;
-            }
-            set {
-                if ((this.RemainQtyField.Equals(value) != true)) {
-                    this.RemainQtyField = value;
-                    this.RaisePropertyChanged("RemainQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=41)]
-        public decimal ShelveQty {
-            get {
-                return this.ShelveQtyField;
-            }
-            set {
-                if ((this.ShelveQtyField.Equals(value) != true)) {
-                    this.ShelveQtyField = value;
-                    this.RaisePropertyChanged("ShelveQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=42)]
-        public decimal UnQualityQty {
-            get {
-                return this.UnQualityQtyField;
-            }
-            set {
-                if ((this.UnQualityQtyField.Equals(value) != true)) {
-                    this.UnQualityQtyField = value;
-                    this.RaisePropertyChanged("UnQualityQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=43)]
-        public decimal PostQty {
-            get {
-                return this.PostQtyField;
-            }
-            set {
-                if ((this.PostQtyField.Equals(value) != true)) {
-                    this.PostQtyField = value;
-                    this.RaisePropertyChanged("PostQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=44)]
-        public int Status {
-            get {
-                return this.StatusField;
-            }
-            set {
-                if ((this.StatusField.Equals(value) != true)) {
-                    this.StatusField = value;
-                    this.RaisePropertyChanged("Status");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=45)]
-        public int IsQualityComp {
-            get {
-                return this.IsQualityCompField;
-            }
-            set {
-                if ((this.IsQualityCompField.Equals(value) != true)) {
-                    this.IsQualityCompField = value;
-                    this.RaisePropertyChanged("IsQualityComp");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=46)]
-        public string OperatorUserNo {
-            get {
-                return this.OperatorUserNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OperatorUserNoField, value) != true)) {
-                    this.OperatorUserNoField = value;
-                    this.RaisePropertyChanged("OperatorUserNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=47)]
-        public string OperatorUserName {
-            get {
-                return this.OperatorUserNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OperatorUserNameField, value) != true)) {
-                    this.OperatorUserNameField = value;
-                    this.RaisePropertyChanged("OperatorUserName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=48)]
-        public System.Nullable<System.DateTime> OperatorDateTime {
-            get {
-                return this.OperatorDateTimeField;
-            }
-            set {
-                if ((this.OperatorDateTimeField.Equals(value) != true)) {
-                    this.OperatorDateTimeField = value;
-                    this.RaisePropertyChanged("OperatorDateTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=49)]
-        public string Unit {
-            get {
-                return this.UnitField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
-                    this.UnitField = value;
-                    this.RaisePropertyChanged("Unit");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=50)]
-        public string StrStatus {
-            get {
-                return this.StrStatusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrStatusField, value) != true)) {
-                    this.StrStatusField = value;
-                    this.RaisePropertyChanged("StrStatus");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=51)]
-        public string StrIsQualityComp {
-            get {
-                return this.StrIsQualityCompField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrIsQualityCompField, value) != true)) {
-                    this.StrIsQualityCompField = value;
-                    this.RaisePropertyChanged("StrIsQualityComp");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=52)]
-        public System.Nullable<System.DateTime> CompleteDateTime {
-            get {
-                return this.CompleteDateTimeField;
-            }
-            set {
-                if ((this.CompleteDateTimeField.Equals(value) != true)) {
-                    this.CompleteDateTimeField = value;
-                    this.RaisePropertyChanged("CompleteDateTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=53)]
-        public int WarehouseID {
-            get {
-                return this.WarehouseIDField;
-            }
-            set {
-                if ((this.WarehouseIDField.Equals(value) != true)) {
-                    this.WarehouseIDField = value;
-                    this.RaisePropertyChanged("WarehouseID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=54)]
-        public System.Nullable<System.DateTime> StartTime {
-            get {
-                return this.StartTimeField;
-            }
-            set {
-                if ((this.StartTimeField.Equals(value) != true)) {
-                    this.StartTimeField = value;
-                    this.RaisePropertyChanged("StartTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=55)]
-        public System.Nullable<System.DateTime> EndTime {
-            get {
-                return this.EndTimeField;
-            }
-            set {
-                if ((this.EndTimeField.Equals(value) != true)) {
-                    this.EndTimeField = value;
-                    this.RaisePropertyChanged("EndTime");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DeliveryReceive_Model", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class DeliveryReceive_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DeliveryNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PlantField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PlantNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OperatorField;
-        
-        private System.DateTime CreateDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Collections.Generic.List<WMS.WebService.DeliveryReceiveDetail_Model> lstDeliveryDetailField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WMS.WebService.MaterialDoc_Model materialDocModelField;
-        
-        private int VoucherTypeField;
-        
-        private int IsQualityField;
-        
-        private int IsReceivePostField;
-        
-        private int IsShelvePostField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TaskNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string VoucherNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDocField;
-        
-        private System.Nullable<System.DateTime> StartTimeField;
-        
-        private System.Nullable<System.DateTime> EndTimeField;
-        
-        private System.Nullable<System.DateTime> DocDateField;
-        
-        private System.Nullable<System.DateTime> PostDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MoveTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TitelField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OutSideSupCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OutSideSupNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BarcodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialNoField;
-        
-        private int PrintedQtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Collections.Generic.List<WMS.WebService.MaterialDoc_Model> lstMaterialDocField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OsDeliveryRemarkField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string POReamrkField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ResonField;
-        
-        private System.Nullable<System.DateTime> PrintTimeField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string DeliveryNo {
-            get {
-                return this.DeliveryNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DeliveryNoField, value) != true)) {
-                    this.DeliveryNoField = value;
-                    this.RaisePropertyChanged("DeliveryNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string SupName {
-            get {
-                return this.SupNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupNameField, value) != true)) {
-                    this.SupNameField = value;
-                    this.RaisePropertyChanged("SupName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string SupCode {
-            get {
-                return this.SupCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupCodeField, value) != true)) {
-                    this.SupCodeField = value;
-                    this.RaisePropertyChanged("SupCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string Plant {
-            get {
-                return this.PlantField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PlantField, value) != true)) {
-                    this.PlantField = value;
-                    this.RaisePropertyChanged("Plant");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string PlantName {
-            get {
-                return this.PlantNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PlantNameField, value) != true)) {
-                    this.PlantNameField = value;
-                    this.RaisePropertyChanged("PlantName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string Operator {
-            get {
-                return this.OperatorField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OperatorField, value) != true)) {
-                    this.OperatorField = value;
-                    this.RaisePropertyChanged("Operator");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
-        public System.DateTime CreateDate {
-            get {
-                return this.CreateDateField;
-            }
-            set {
-                if ((this.CreateDateField.Equals(value) != true)) {
-                    this.CreateDateField = value;
-                    this.RaisePropertyChanged("CreateDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public System.Collections.Generic.List<WMS.WebService.DeliveryReceiveDetail_Model> lstDeliveryDetail {
-            get {
-                return this.lstDeliveryDetailField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.lstDeliveryDetailField, value) != true)) {
-                    this.lstDeliveryDetailField = value;
-                    this.RaisePropertyChanged("lstDeliveryDetail");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public WMS.WebService.MaterialDoc_Model materialDocModel {
-            get {
-                return this.materialDocModelField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.materialDocModelField, value) != true)) {
-                    this.materialDocModelField = value;
-                    this.RaisePropertyChanged("materialDocModel");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=10)]
-        public int VoucherType {
-            get {
-                return this.VoucherTypeField;
-            }
-            set {
-                if ((this.VoucherTypeField.Equals(value) != true)) {
-                    this.VoucherTypeField = value;
-                    this.RaisePropertyChanged("VoucherType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
-        public int IsQuality {
-            get {
-                return this.IsQualityField;
-            }
-            set {
-                if ((this.IsQualityField.Equals(value) != true)) {
-                    this.IsQualityField = value;
-                    this.RaisePropertyChanged("IsQuality");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=12)]
-        public int IsReceivePost {
-            get {
-                return this.IsReceivePostField;
-            }
-            set {
-                if ((this.IsReceivePostField.Equals(value) != true)) {
-                    this.IsReceivePostField = value;
-                    this.RaisePropertyChanged("IsReceivePost");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=13)]
-        public int IsShelvePost {
-            get {
-                return this.IsShelvePostField;
-            }
-            set {
-                if ((this.IsShelvePostField.Equals(value) != true)) {
-                    this.IsShelvePostField = value;
-                    this.RaisePropertyChanged("IsShelvePost");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
-        public string TaskNo {
-            get {
-                return this.TaskNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TaskNoField, value) != true)) {
-                    this.TaskNoField = value;
-                    this.RaisePropertyChanged("TaskNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
-        public string VoucherNo {
-            get {
-                return this.VoucherNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
-                    this.VoucherNoField = value;
-                    this.RaisePropertyChanged("VoucherNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
-        public string MaterialDoc {
-            get {
-                return this.MaterialDocField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDocField, value) != true)) {
-                    this.MaterialDocField = value;
-                    this.RaisePropertyChanged("MaterialDoc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=17)]
-        public System.Nullable<System.DateTime> StartTime {
-            get {
-                return this.StartTimeField;
-            }
-            set {
-                if ((this.StartTimeField.Equals(value) != true)) {
-                    this.StartTimeField = value;
-                    this.RaisePropertyChanged("StartTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=18)]
-        public System.Nullable<System.DateTime> EndTime {
-            get {
-                return this.EndTimeField;
-            }
-            set {
-                if ((this.EndTimeField.Equals(value) != true)) {
-                    this.EndTimeField = value;
-                    this.RaisePropertyChanged("EndTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=19)]
-        public System.Nullable<System.DateTime> DocDate {
-            get {
-                return this.DocDateField;
-            }
-            set {
-                if ((this.DocDateField.Equals(value) != true)) {
-                    this.DocDateField = value;
-                    this.RaisePropertyChanged("DocDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=20)]
-        public System.Nullable<System.DateTime> PostDate {
-            get {
-                return this.PostDateField;
-            }
-            set {
-                if ((this.PostDateField.Equals(value) != true)) {
-                    this.PostDateField = value;
-                    this.RaisePropertyChanged("PostDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
-        public string MoveType {
-            get {
-                return this.MoveTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MoveTypeField, value) != true)) {
-                    this.MoveTypeField = value;
-                    this.RaisePropertyChanged("MoveType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=22)]
-        public string Titel {
-            get {
-                return this.TitelField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TitelField, value) != true)) {
-                    this.TitelField = value;
-                    this.RaisePropertyChanged("Titel");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=23)]
-        public string OutSideSupCode {
-            get {
-                return this.OutSideSupCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OutSideSupCodeField, value) != true)) {
-                    this.OutSideSupCodeField = value;
-                    this.RaisePropertyChanged("OutSideSupCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=24)]
-        public string OutSideSupName {
-            get {
-                return this.OutSideSupNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OutSideSupNameField, value) != true)) {
-                    this.OutSideSupNameField = value;
-                    this.RaisePropertyChanged("OutSideSupName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=25)]
-        public string Barcode {
-            get {
-                return this.BarcodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
-                    this.BarcodeField = value;
-                    this.RaisePropertyChanged("Barcode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=26)]
-        public string MaterialNo {
-            get {
-                return this.MaterialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
-                    this.MaterialNoField = value;
-                    this.RaisePropertyChanged("MaterialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=27)]
-        public int PrintedQty {
-            get {
-                return this.PrintedQtyField;
-            }
-            set {
-                if ((this.PrintedQtyField.Equals(value) != true)) {
-                    this.PrintedQtyField = value;
-                    this.RaisePropertyChanged("PrintedQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=28)]
-        public System.Collections.Generic.List<WMS.WebService.MaterialDoc_Model> lstMaterialDoc {
-            get {
-                return this.lstMaterialDocField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.lstMaterialDocField, value) != true)) {
-                    this.lstMaterialDocField = value;
-                    this.RaisePropertyChanged("lstMaterialDoc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=29)]
-        public string OsDeliveryRemark {
-            get {
-                return this.OsDeliveryRemarkField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OsDeliveryRemarkField, value) != true)) {
-                    this.OsDeliveryRemarkField = value;
-                    this.RaisePropertyChanged("OsDeliveryRemark");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=30)]
-        public string POReamrk {
-            get {
-                return this.POReamrkField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.POReamrkField, value) != true)) {
-                    this.POReamrkField = value;
-                    this.RaisePropertyChanged("POReamrk");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=31)]
-        public string Reson {
-            get {
-                return this.ResonField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ResonField, value) != true)) {
-                    this.ResonField = value;
-                    this.RaisePropertyChanged("Reson");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=32)]
-        public System.Nullable<System.DateTime> PrintTime {
-            get {
-                return this.PrintTimeField;
-            }
-            set {
-                if ((this.PrintTimeField.Equals(value) != true)) {
-                    this.PrintTimeField = value;
-                    this.RaisePropertyChanged("PrintTime");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="MaterialDoc_Model", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class MaterialDoc_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDocField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDocDateField;
-        
-        private System.DateTime MaterialDocPostField;
-        
-        private int MaterialDocTypeField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string MaterialDoc {
-            get {
-                return this.MaterialDocField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDocField, value) != true)) {
-                    this.MaterialDocField = value;
-                    this.RaisePropertyChanged("MaterialDoc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string MaterialDocDate {
-            get {
-                return this.MaterialDocDateField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDocDateField, value) != true)) {
-                    this.MaterialDocDateField = value;
-                    this.RaisePropertyChanged("MaterialDocDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.DateTime MaterialDocPost {
-            get {
-                return this.MaterialDocPostField;
-            }
-            set {
-                if ((this.MaterialDocPostField.Equals(value) != true)) {
-                    this.MaterialDocPostField = value;
-                    this.RaisePropertyChanged("MaterialDocPost");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int MaterialDocType {
-            get {
-                return this.MaterialDocTypeField;
-            }
-            set {
-                if ((this.MaterialDocTypeField.Equals(value) != true)) {
-                    this.MaterialDocTypeField = value;
-                    this.RaisePropertyChanged("MaterialDocType");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DeliveryReceiveDetail_Model", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class DeliveryReceiveDetail_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CombaField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DeliveryNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreateTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RowNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string VoucherNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDescField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialStdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ClaimArriveTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UnitField;
-        
-        private int CurrentlyDeliveryNumField;
-        
-        private int ClaimDeliveryNumField;
-        
-        private int ReadyDeliveryNumField;
-        
-        private int WaitDeliveryNumField;
-        
-        private int InRoadDeliveryNumField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ReceiveTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DeliveryAddressField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CorrespondDepartmentField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string WorkCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string JingxinNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PlantField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PlantNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PrdVersionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StorageLocField;
-        
-        private decimal ReceiveQtyField;
-        
-        private int IsUrgentField;
-        
-        private int PackCountField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PrdReturnReasonField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BarcodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SerialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Collections.Generic.List<WMS.WebService.OutBarcode_Model> lstOutBarCodeField;
-        
-        private int IsROHSField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TrackNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ReserveNumberField;
-        
-        private decimal QualityQtyField;
-        
-        private System.Nullable<decimal> CurrentQualityQtyField;
-        
-        private decimal UnQualityQtyField;
-        
-        private System.Nullable<decimal> CurrentUnQualityQtyField;
-        
-        private bool OKSelectField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string QualityTypeField;
-        
-        private int IDField;
-        
-        private decimal CurrentPostQtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrROHSField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ReserveRowNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OrderNumField;
-        
-        private decimal OldReceiveQtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Collections.Generic.List<WMS.WebService.ComboBoxItem> lstCmbField;
-        
-        private int RowNumberField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string Comba {
-            get {
-                return this.CombaField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CombaField, value) != true)) {
-                    this.CombaField = value;
-                    this.RaisePropertyChanged("Comba");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string DeliveryNo {
-            get {
-                return this.DeliveryNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DeliveryNoField, value) != true)) {
-                    this.DeliveryNoField = value;
-                    this.RaisePropertyChanged("DeliveryNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string CreateTime {
-            get {
-                return this.CreateTimeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreateTimeField, value) != true)) {
-                    this.CreateTimeField = value;
-                    this.RaisePropertyChanged("CreateTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string RowNo {
-            get {
-                return this.RowNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RowNoField, value) != true)) {
-                    this.RowNoField = value;
-                    this.RaisePropertyChanged("RowNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string VoucherNo {
-            get {
-                return this.VoucherNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
-                    this.VoucherNoField = value;
-                    this.RaisePropertyChanged("VoucherNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string MaterialNo {
-            get {
-                return this.MaterialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
-                    this.MaterialNoField = value;
-                    this.RaisePropertyChanged("MaterialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string MaterialDesc {
-            get {
-                return this.MaterialDescField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
-                    this.MaterialDescField = value;
-                    this.RaisePropertyChanged("MaterialDesc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string MaterialStd {
-            get {
-                return this.MaterialStdField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialStdField, value) != true)) {
-                    this.MaterialStdField = value;
-                    this.RaisePropertyChanged("MaterialStd");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string ClaimArriveTime {
-            get {
-                return this.ClaimArriveTimeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ClaimArriveTimeField, value) != true)) {
-                    this.ClaimArriveTimeField = value;
-                    this.RaisePropertyChanged("ClaimArriveTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string Unit {
-            get {
-                return this.UnitField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
-                    this.UnitField = value;
-                    this.RaisePropertyChanged("Unit");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=10)]
-        public int CurrentlyDeliveryNum {
-            get {
-                return this.CurrentlyDeliveryNumField;
-            }
-            set {
-                if ((this.CurrentlyDeliveryNumField.Equals(value) != true)) {
-                    this.CurrentlyDeliveryNumField = value;
-                    this.RaisePropertyChanged("CurrentlyDeliveryNum");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
-        public int ClaimDeliveryNum {
-            get {
-                return this.ClaimDeliveryNumField;
-            }
-            set {
-                if ((this.ClaimDeliveryNumField.Equals(value) != true)) {
-                    this.ClaimDeliveryNumField = value;
-                    this.RaisePropertyChanged("ClaimDeliveryNum");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=12)]
-        public int ReadyDeliveryNum {
-            get {
-                return this.ReadyDeliveryNumField;
-            }
-            set {
-                if ((this.ReadyDeliveryNumField.Equals(value) != true)) {
-                    this.ReadyDeliveryNumField = value;
-                    this.RaisePropertyChanged("ReadyDeliveryNum");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=13)]
-        public int WaitDeliveryNum {
-            get {
-                return this.WaitDeliveryNumField;
-            }
-            set {
-                if ((this.WaitDeliveryNumField.Equals(value) != true)) {
-                    this.WaitDeliveryNumField = value;
-                    this.RaisePropertyChanged("WaitDeliveryNum");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
-        public int InRoadDeliveryNum {
-            get {
-                return this.InRoadDeliveryNumField;
-            }
-            set {
-                if ((this.InRoadDeliveryNumField.Equals(value) != true)) {
-                    this.InRoadDeliveryNumField = value;
-                    this.RaisePropertyChanged("InRoadDeliveryNum");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
-        public string ReceiveTime {
-            get {
-                return this.ReceiveTimeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ReceiveTimeField, value) != true)) {
-                    this.ReceiveTimeField = value;
-                    this.RaisePropertyChanged("ReceiveTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
-        public string DeliveryAddress {
-            get {
-                return this.DeliveryAddressField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DeliveryAddressField, value) != true)) {
-                    this.DeliveryAddressField = value;
-                    this.RaisePropertyChanged("DeliveryAddress");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=17)]
-        public string CorrespondDepartment {
-            get {
-                return this.CorrespondDepartmentField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CorrespondDepartmentField, value) != true)) {
-                    this.CorrespondDepartmentField = value;
-                    this.RaisePropertyChanged("CorrespondDepartment");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
-        public string WorkCode {
-            get {
-                return this.WorkCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.WorkCodeField, value) != true)) {
-                    this.WorkCodeField = value;
-                    this.RaisePropertyChanged("WorkCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
-        public string JingxinName {
-            get {
-                return this.JingxinNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.JingxinNameField, value) != true)) {
-                    this.JingxinNameField = value;
-                    this.RaisePropertyChanged("JingxinName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
-        public string Plant {
-            get {
-                return this.PlantField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PlantField, value) != true)) {
-                    this.PlantField = value;
-                    this.RaisePropertyChanged("Plant");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
-        public string PlantName {
-            get {
-                return this.PlantNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PlantNameField, value) != true)) {
-                    this.PlantNameField = value;
-                    this.RaisePropertyChanged("PlantName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=22)]
-        public string PrdVersion {
-            get {
-                return this.PrdVersionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PrdVersionField, value) != true)) {
-                    this.PrdVersionField = value;
-                    this.RaisePropertyChanged("PrdVersion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=23)]
-        public string StorageLoc {
-            get {
-                return this.StorageLocField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StorageLocField, value) != true)) {
-                    this.StorageLocField = value;
-                    this.RaisePropertyChanged("StorageLoc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=24)]
-        public decimal ReceiveQty {
-            get {
-                return this.ReceiveQtyField;
-            }
-            set {
-                if ((this.ReceiveQtyField.Equals(value) != true)) {
-                    this.ReceiveQtyField = value;
-                    this.RaisePropertyChanged("ReceiveQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=25)]
-        public int IsUrgent {
-            get {
-                return this.IsUrgentField;
-            }
-            set {
-                if ((this.IsUrgentField.Equals(value) != true)) {
-                    this.IsUrgentField = value;
-                    this.RaisePropertyChanged("IsUrgent");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=26)]
-        public int PackCount {
-            get {
-                return this.PackCountField;
-            }
-            set {
-                if ((this.PackCountField.Equals(value) != true)) {
-                    this.PackCountField = value;
-                    this.RaisePropertyChanged("PackCount");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=27)]
-        public string PrdReturnReason {
-            get {
-                return this.PrdReturnReasonField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PrdReturnReasonField, value) != true)) {
-                    this.PrdReturnReasonField = value;
-                    this.RaisePropertyChanged("PrdReturnReason");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=28)]
-        public string Barcode {
-            get {
-                return this.BarcodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
-                    this.BarcodeField = value;
-                    this.RaisePropertyChanged("Barcode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=29)]
-        public string SerialNo {
-            get {
-                return this.SerialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SerialNoField, value) != true)) {
-                    this.SerialNoField = value;
-                    this.RaisePropertyChanged("SerialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=30)]
-        public System.Collections.Generic.List<WMS.WebService.OutBarcode_Model> lstOutBarCode {
-            get {
-                return this.lstOutBarCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.lstOutBarCodeField, value) != true)) {
-                    this.lstOutBarCodeField = value;
-                    this.RaisePropertyChanged("lstOutBarCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=31)]
-        public int IsROHS {
-            get {
-                return this.IsROHSField;
-            }
-            set {
-                if ((this.IsROHSField.Equals(value) != true)) {
-                    this.IsROHSField = value;
-                    this.RaisePropertyChanged("IsROHS");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=32)]
-        public string TrackNo {
-            get {
-                return this.TrackNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TrackNoField, value) != true)) {
-                    this.TrackNoField = value;
-                    this.RaisePropertyChanged("TrackNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=33)]
-        public string ReserveNumber {
-            get {
-                return this.ReserveNumberField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ReserveNumberField, value) != true)) {
-                    this.ReserveNumberField = value;
-                    this.RaisePropertyChanged("ReserveNumber");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=34)]
-        public decimal QualityQty {
-            get {
-                return this.QualityQtyField;
-            }
-            set {
-                if ((this.QualityQtyField.Equals(value) != true)) {
-                    this.QualityQtyField = value;
-                    this.RaisePropertyChanged("QualityQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=35)]
-        public System.Nullable<decimal> CurrentQualityQty {
-            get {
-                return this.CurrentQualityQtyField;
-            }
-            set {
-                if ((this.CurrentQualityQtyField.Equals(value) != true)) {
-                    this.CurrentQualityQtyField = value;
-                    this.RaisePropertyChanged("CurrentQualityQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=36)]
-        public decimal UnQualityQty {
-            get {
-                return this.UnQualityQtyField;
-            }
-            set {
-                if ((this.UnQualityQtyField.Equals(value) != true)) {
-                    this.UnQualityQtyField = value;
-                    this.RaisePropertyChanged("UnQualityQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=37)]
-        public System.Nullable<decimal> CurrentUnQualityQty {
-            get {
-                return this.CurrentUnQualityQtyField;
-            }
-            set {
-                if ((this.CurrentUnQualityQtyField.Equals(value) != true)) {
-                    this.CurrentUnQualityQtyField = value;
-                    this.RaisePropertyChanged("CurrentUnQualityQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=38)]
-        public bool OKSelect {
-            get {
-                return this.OKSelectField;
-            }
-            set {
-                if ((this.OKSelectField.Equals(value) != true)) {
-                    this.OKSelectField = value;
-                    this.RaisePropertyChanged("OKSelect");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=39)]
-        public string QualityType {
-            get {
-                return this.QualityTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.QualityTypeField, value) != true)) {
-                    this.QualityTypeField = value;
-                    this.RaisePropertyChanged("QualityType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=40)]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=41)]
-        public decimal CurrentPostQty {
-            get {
-                return this.CurrentPostQtyField;
-            }
-            set {
-                if ((this.CurrentPostQtyField.Equals(value) != true)) {
-                    this.CurrentPostQtyField = value;
-                    this.RaisePropertyChanged("CurrentPostQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=42)]
-        public string StrROHS {
-            get {
-                return this.StrROHSField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrROHSField, value) != true)) {
-                    this.StrROHSField = value;
-                    this.RaisePropertyChanged("StrROHS");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=43)]
-        public string ReserveRowNo {
-            get {
-                return this.ReserveRowNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ReserveRowNoField, value) != true)) {
-                    this.ReserveRowNoField = value;
-                    this.RaisePropertyChanged("ReserveRowNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=44)]
-        public string OrderNum {
-            get {
-                return this.OrderNumField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OrderNumField, value) != true)) {
-                    this.OrderNumField = value;
-                    this.RaisePropertyChanged("OrderNum");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=45)]
-        public decimal OldReceiveQty {
-            get {
-                return this.OldReceiveQtyField;
-            }
-            set {
-                if ((this.OldReceiveQtyField.Equals(value) != true)) {
-                    this.OldReceiveQtyField = value;
-                    this.RaisePropertyChanged("OldReceiveQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=46)]
-        public System.Collections.Generic.List<WMS.WebService.ComboBoxItem> lstCmb {
-            get {
-                return this.lstCmbField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.lstCmbField, value) != true)) {
-                    this.lstCmbField = value;
-                    this.RaisePropertyChanged("lstCmb");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=47)]
-        public int RowNumber {
-            get {
-                return this.RowNumberField;
-            }
-            set {
-                if ((this.RowNumberField.Equals(value) != true)) {
-                    this.RowNumberField = value;
-                    this.RaisePropertyChanged("RowNumber");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="OutBarcode_Model", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class OutBarcode_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private int IdField;
-        
-        private int InnerBox_IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string VoucherNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RowNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DeliveryNoField;
-        
-        private int VoucherTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDESCField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupplierNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupplierNameField;
-        
-        private int QtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BatchNoField;
-        
-        private int OutPackQtyField;
-        
-        private int NoPackField;
-        
-        private int PrintQtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OutBarCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SerialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PrdversionField;
-        
-        private int PlatedSilverField;
-        
-        private int PlatedGoldField;
-        
-        private int OthersField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OperatorField;
-        
-        private System.DateTime OperationDateField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int InnerBox_Id {
-            get {
-                return this.InnerBox_IdField;
-            }
-            set {
-                if ((this.InnerBox_IdField.Equals(value) != true)) {
-                    this.InnerBox_IdField = value;
-                    this.RaisePropertyChanged("InnerBox_Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string VoucherNo {
-            get {
-                return this.VoucherNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
-                    this.VoucherNoField = value;
-                    this.RaisePropertyChanged("VoucherNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string RowNo {
-            get {
-                return this.RowNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RowNoField, value) != true)) {
-                    this.RowNoField = value;
-                    this.RaisePropertyChanged("RowNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string DeliveryNo {
-            get {
-                return this.DeliveryNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DeliveryNoField, value) != true)) {
-                    this.DeliveryNoField = value;
-                    this.RaisePropertyChanged("DeliveryNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
-        public int VoucherType {
-            get {
-                return this.VoucherTypeField;
-            }
-            set {
-                if ((this.VoucherTypeField.Equals(value) != true)) {
-                    this.VoucherTypeField = value;
-                    this.RaisePropertyChanged("VoucherType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string MaterialNo {
-            get {
-                return this.MaterialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
-                    this.MaterialNoField = value;
-                    this.RaisePropertyChanged("MaterialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string MaterialDESC {
-            get {
-                return this.MaterialDESCField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDESCField, value) != true)) {
-                    this.MaterialDESCField = value;
-                    this.RaisePropertyChanged("MaterialDESC");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string SupplierNo {
-            get {
-                return this.SupplierNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupplierNoField, value) != true)) {
-                    this.SupplierNoField = value;
-                    this.RaisePropertyChanged("SupplierNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string SupplierName {
-            get {
-                return this.SupplierNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupplierNameField, value) != true)) {
-                    this.SupplierNameField = value;
-                    this.RaisePropertyChanged("SupplierName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=10)]
-        public int Qty {
-            get {
-                return this.QtyField;
-            }
-            set {
-                if ((this.QtyField.Equals(value) != true)) {
-                    this.QtyField = value;
-                    this.RaisePropertyChanged("Qty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
-        public string BatchNo {
-            get {
-                return this.BatchNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BatchNoField, value) != true)) {
-                    this.BatchNoField = value;
-                    this.RaisePropertyChanged("BatchNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=12)]
-        public int OutPackQty {
-            get {
-                return this.OutPackQtyField;
-            }
-            set {
-                if ((this.OutPackQtyField.Equals(value) != true)) {
-                    this.OutPackQtyField = value;
-                    this.RaisePropertyChanged("OutPackQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=13)]
-        public int NoPack {
-            get {
-                return this.NoPackField;
-            }
-            set {
-                if ((this.NoPackField.Equals(value) != true)) {
-                    this.NoPackField = value;
-                    this.RaisePropertyChanged("NoPack");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
-        public int PrintQty {
-            get {
-                return this.PrintQtyField;
-            }
-            set {
-                if ((this.PrintQtyField.Equals(value) != true)) {
-                    this.PrintQtyField = value;
-                    this.RaisePropertyChanged("PrintQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
-        public string OutBarCode {
-            get {
-                return this.OutBarCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OutBarCodeField, value) != true)) {
-                    this.OutBarCodeField = value;
-                    this.RaisePropertyChanged("OutBarCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
-        public string SerialNo {
-            get {
-                return this.SerialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SerialNoField, value) != true)) {
-                    this.SerialNoField = value;
-                    this.RaisePropertyChanged("SerialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=17)]
-        public string Prdversion {
-            get {
-                return this.PrdversionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PrdversionField, value) != true)) {
-                    this.PrdversionField = value;
-                    this.RaisePropertyChanged("Prdversion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=18)]
-        public int PlatedSilver {
-            get {
-                return this.PlatedSilverField;
-            }
-            set {
-                if ((this.PlatedSilverField.Equals(value) != true)) {
-                    this.PlatedSilverField = value;
-                    this.RaisePropertyChanged("PlatedSilver");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=19)]
-        public int PlatedGold {
-            get {
-                return this.PlatedGoldField;
-            }
-            set {
-                if ((this.PlatedGoldField.Equals(value) != true)) {
-                    this.PlatedGoldField = value;
-                    this.RaisePropertyChanged("PlatedGold");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=20)]
-        public int Others {
-            get {
-                return this.OthersField;
-            }
-            set {
-                if ((this.OthersField.Equals(value) != true)) {
-                    this.OthersField = value;
-                    this.RaisePropertyChanged("Others");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
-        public string Operator {
-            get {
-                return this.OperatorField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OperatorField, value) != true)) {
-                    this.OperatorField = value;
-                    this.RaisePropertyChanged("Operator");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=22)]
-        public System.DateTime OperationDate {
-            get {
-                return this.OperationDateField;
-            }
-            set {
-                if ((this.OperationDateField.Equals(value) != true)) {
-                    this.OperationDateField = value;
-                    this.RaisePropertyChanged("OperationDate");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ComboBoxItem", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class ComboBoxItem : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="InnerBarcode_Model", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class InnerBarcode_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private decimal idField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string InnerBarcodeField;
-        
-        private decimal InnerQtyField;
-        
-        private decimal PrintQtyField;
-        
-        private decimal OutBox_IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SerialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BatchNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OutBarcodeField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public decimal id {
-            get {
-                return this.idField;
-            }
-            set {
-                if ((this.idField.Equals(value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string InnerBarcode {
-            get {
-                return this.InnerBarcodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.InnerBarcodeField, value) != true)) {
-                    this.InnerBarcodeField = value;
-                    this.RaisePropertyChanged("InnerBarcode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
-        public decimal InnerQty {
-            get {
-                return this.InnerQtyField;
-            }
-            set {
-                if ((this.InnerQtyField.Equals(value) != true)) {
-                    this.InnerQtyField = value;
-                    this.RaisePropertyChanged("InnerQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
-        public decimal PrintQty {
-            get {
-                return this.PrintQtyField;
-            }
-            set {
-                if ((this.PrintQtyField.Equals(value) != true)) {
-                    this.PrintQtyField = value;
-                    this.RaisePropertyChanged("PrintQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
-        public decimal OutBox_ID {
-            get {
-                return this.OutBox_IDField;
-            }
-            set {
-                if ((this.OutBox_IDField.Equals(value) != true)) {
-                    this.OutBox_IDField = value;
-                    this.RaisePropertyChanged("OutBox_ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string SerialNo {
-            get {
-                return this.SerialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SerialNoField, value) != true)) {
-                    this.SerialNoField = value;
-                    this.RaisePropertyChanged("SerialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string BatchNo {
-            get {
-                return this.BatchNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BatchNoField, value) != true)) {
-                    this.BatchNoField = value;
-                    this.RaisePropertyChanged("BatchNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string OutBarcode {
-            get {
-                return this.OutBarcodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OutBarcodeField, value) != true)) {
-                    this.OutBarcodeField = value;
-                    this.RaisePropertyChanged("OutBarcode");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="QuanlityExportInfo", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class QuanlityExportInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DeliveryNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupplierNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupplierNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PlantField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDocField;
-        
-        private System.DateTime CreateDateField;
-        
-        private int PrintedQtyField;
-        
-        private System.Nullable<System.DateTime> PrintTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MoveTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string VoucherNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RowNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDescField;
-        
-        private decimal ReceiveQtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UnitField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PrdVersionField;
-        
-        private decimal QualityQtyField;
-        
-        private decimal UnQualityQtyField;
-        
-        private int QualityTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrQualityTypeField;
-        
-        private System.Nullable<System.DateTime> StartTimeField;
-        
-        private System.Nullable<System.DateTime> EndTimeField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string DeliveryNo {
-            get {
-                return this.DeliveryNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DeliveryNoField, value) != true)) {
-                    this.DeliveryNoField = value;
-                    this.RaisePropertyChanged("DeliveryNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string SupplierNo {
-            get {
-                return this.SupplierNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupplierNoField, value) != true)) {
-                    this.SupplierNoField = value;
-                    this.RaisePropertyChanged("SupplierNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string SupplierName {
-            get {
-                return this.SupplierNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupplierNameField, value) != true)) {
-                    this.SupplierNameField = value;
-                    this.RaisePropertyChanged("SupplierName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string Plant {
-            get {
-                return this.PlantField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PlantField, value) != true)) {
-                    this.PlantField = value;
-                    this.RaisePropertyChanged("Plant");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string MaterialDoc {
-            get {
-                return this.MaterialDocField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDocField, value) != true)) {
-                    this.MaterialDocField = value;
-                    this.RaisePropertyChanged("MaterialDoc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
-        public System.DateTime CreateDate {
-            get {
-                return this.CreateDateField;
-            }
-            set {
-                if ((this.CreateDateField.Equals(value) != true)) {
-                    this.CreateDateField = value;
-                    this.RaisePropertyChanged("CreateDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
-        public int PrintedQty {
-            get {
-                return this.PrintedQtyField;
-            }
-            set {
-                if ((this.PrintedQtyField.Equals(value) != true)) {
-                    this.PrintedQtyField = value;
-                    this.RaisePropertyChanged("PrintedQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=8)]
-        public System.Nullable<System.DateTime> PrintTime {
-            get {
-                return this.PrintTimeField;
-            }
-            set {
-                if ((this.PrintTimeField.Equals(value) != true)) {
-                    this.PrintTimeField = value;
-                    this.RaisePropertyChanged("PrintTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string MoveType {
-            get {
-                return this.MoveTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MoveTypeField, value) != true)) {
-                    this.MoveTypeField = value;
-                    this.RaisePropertyChanged("MoveType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public string VoucherNo {
-            get {
-                return this.VoucherNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
-                    this.VoucherNoField = value;
-                    this.RaisePropertyChanged("VoucherNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
-        public string RowNo {
-            get {
-                return this.RowNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RowNoField, value) != true)) {
-                    this.RowNoField = value;
-                    this.RaisePropertyChanged("RowNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
-        public string MaterialNo {
-            get {
-                return this.MaterialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
-                    this.MaterialNoField = value;
-                    this.RaisePropertyChanged("MaterialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
-        public string MaterialDesc {
-            get {
-                return this.MaterialDescField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
-                    this.MaterialDescField = value;
-                    this.RaisePropertyChanged("MaterialDesc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
-        public decimal ReceiveQty {
-            get {
-                return this.ReceiveQtyField;
-            }
-            set {
-                if ((this.ReceiveQtyField.Equals(value) != true)) {
-                    this.ReceiveQtyField = value;
-                    this.RaisePropertyChanged("ReceiveQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
-        public string Unit {
-            get {
-                return this.UnitField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
-                    this.UnitField = value;
-                    this.RaisePropertyChanged("Unit");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
-        public string PrdVersion {
-            get {
-                return this.PrdVersionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PrdVersionField, value) != true)) {
-                    this.PrdVersionField = value;
-                    this.RaisePropertyChanged("PrdVersion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=17)]
-        public decimal QualityQty {
-            get {
-                return this.QualityQtyField;
-            }
-            set {
-                if ((this.QualityQtyField.Equals(value) != true)) {
-                    this.QualityQtyField = value;
-                    this.RaisePropertyChanged("QualityQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=18)]
-        public decimal UnQualityQty {
-            get {
-                return this.UnQualityQtyField;
-            }
-            set {
-                if ((this.UnQualityQtyField.Equals(value) != true)) {
-                    this.UnQualityQtyField = value;
-                    this.RaisePropertyChanged("UnQualityQty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=19)]
-        public int QualityType {
-            get {
-                return this.QualityTypeField;
-            }
-            set {
-                if ((this.QualityTypeField.Equals(value) != true)) {
-                    this.QualityTypeField = value;
-                    this.RaisePropertyChanged("QualityType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
-        public string StrQualityType {
-            get {
-                return this.StrQualityTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrQualityTypeField, value) != true)) {
-                    this.StrQualityTypeField = value;
-                    this.RaisePropertyChanged("StrQualityType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=21)]
-        public System.Nullable<System.DateTime> StartTime {
-            get {
-                return this.StartTimeField;
-            }
-            set {
-                if ((this.StartTimeField.Equals(value) != true)) {
-                    this.StartTimeField = value;
-                    this.RaisePropertyChanged("StartTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=22)]
-        public System.Nullable<System.DateTime> EndTime {
-            get {
-                return this.EndTimeField;
-            }
-            set {
-                if ((this.EndTimeField.Equals(value) != true)) {
-                    this.EndTimeField = value;
-                    this.RaisePropertyChanged("EndTime");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Supplier_Model", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class Supplier_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupplierCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupplierNameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string SupplierCode {
-            get {
-                return this.SupplierCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupplierCodeField, value) != true)) {
-                    this.SupplierCodeField = value;
-                    this.RaisePropertyChanged("SupplierCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string SupplierName {
-            get {
-                return this.SupplierNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupplierNameField, value) != true)) {
-                    this.SupplierNameField = value;
-                    this.RaisePropertyChanged("SupplierName");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="MaterialOuterLabel", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class MaterialOuterLabel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WMS.WebService.BarcodeRule barcoderuleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string INVSTDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BarcodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string POCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string LabelTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MATERIALNOField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MATERIALDESCField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SUPCODEField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SUPNAMEField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PrintDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupBatchField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OUTPACKQTYField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PACKNOField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public WMS.WebService.BarcodeRule barcoderule {
-            get {
-                return this.barcoderuleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.barcoderuleField, value) != true)) {
-                    this.barcoderuleField = value;
-                    this.RaisePropertyChanged("barcoderule");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string INVSTD {
-            get {
-                return this.INVSTDField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.INVSTDField, value) != true)) {
-                    this.INVSTDField = value;
-                    this.RaisePropertyChanged("INVSTD");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string Barcode {
-            get {
-                return this.BarcodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
-                    this.BarcodeField = value;
-                    this.RaisePropertyChanged("Barcode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string POCode {
-            get {
-                return this.POCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.POCodeField, value) != true)) {
-                    this.POCodeField = value;
-                    this.RaisePropertyChanged("POCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string LabelType {
-            get {
-                return this.LabelTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LabelTypeField, value) != true)) {
-                    this.LabelTypeField = value;
-                    this.RaisePropertyChanged("LabelType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string MATERIALNO {
-            get {
-                return this.MATERIALNOField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MATERIALNOField, value) != true)) {
-                    this.MATERIALNOField = value;
-                    this.RaisePropertyChanged("MATERIALNO");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string MATERIALDESC {
-            get {
-                return this.MATERIALDESCField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MATERIALDESCField, value) != true)) {
-                    this.MATERIALDESCField = value;
-                    this.RaisePropertyChanged("MATERIALDESC");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string SUPCODE {
-            get {
-                return this.SUPCODEField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SUPCODEField, value) != true)) {
-                    this.SUPCODEField = value;
-                    this.RaisePropertyChanged("SUPCODE");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string SUPNAME {
-            get {
-                return this.SUPNAMEField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SUPNAMEField, value) != true)) {
-                    this.SUPNAMEField = value;
-                    this.RaisePropertyChanged("SUPNAME");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string PrintDate {
-            get {
-                return this.PrintDateField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PrintDateField, value) != true)) {
-                    this.PrintDateField = value;
-                    this.RaisePropertyChanged("PrintDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public string SupBatch {
-            get {
-                return this.SupBatchField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupBatchField, value) != true)) {
-                    this.SupBatchField = value;
-                    this.RaisePropertyChanged("SupBatch");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
-        public string OUTPACKQTY {
-            get {
-                return this.OUTPACKQTYField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OUTPACKQTYField, value) != true)) {
-                    this.OUTPACKQTYField = value;
-                    this.RaisePropertyChanged("OUTPACKQTY");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
-        public string PACKNO {
-            get {
-                return this.PACKNOField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PACKNOField, value) != true)) {
-                    this.PACKNOField = value;
-                    this.RaisePropertyChanged("PACKNO");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="MaterialInnerLabel", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class MaterialInnerLabel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WMS.WebService.BarcodeRule barcoderuleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string INVSTDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BarcodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string POCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string LabelTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MATERIALNOField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MATERIALDESCField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SUPCODEField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SUPNAMEField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PrintDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SupBatchField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public WMS.WebService.BarcodeRule barcoderule {
-            get {
-                return this.barcoderuleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.barcoderuleField, value) != true)) {
-                    this.barcoderuleField = value;
-                    this.RaisePropertyChanged("barcoderule");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string INVSTD {
-            get {
-                return this.INVSTDField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.INVSTDField, value) != true)) {
-                    this.INVSTDField = value;
-                    this.RaisePropertyChanged("INVSTD");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string Barcode {
-            get {
-                return this.BarcodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
-                    this.BarcodeField = value;
-                    this.RaisePropertyChanged("Barcode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string POCode {
-            get {
-                return this.POCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.POCodeField, value) != true)) {
-                    this.POCodeField = value;
-                    this.RaisePropertyChanged("POCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string LabelType {
-            get {
-                return this.LabelTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LabelTypeField, value) != true)) {
-                    this.LabelTypeField = value;
-                    this.RaisePropertyChanged("LabelType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string MATERIALNO {
-            get {
-                return this.MATERIALNOField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MATERIALNOField, value) != true)) {
-                    this.MATERIALNOField = value;
-                    this.RaisePropertyChanged("MATERIALNO");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string MATERIALDESC {
-            get {
-                return this.MATERIALDESCField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MATERIALDESCField, value) != true)) {
-                    this.MATERIALDESCField = value;
-                    this.RaisePropertyChanged("MATERIALDESC");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string SUPCODE {
-            get {
-                return this.SUPCODEField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SUPCODEField, value) != true)) {
-                    this.SUPCODEField = value;
-                    this.RaisePropertyChanged("SUPCODE");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string SUPNAME {
-            get {
-                return this.SUPNAMEField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SUPNAMEField, value) != true)) {
-                    this.SUPNAMEField = value;
-                    this.RaisePropertyChanged("SUPNAME");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string PrintDate {
-            get {
-                return this.PrintDateField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PrintDateField, value) != true)) {
-                    this.PrintDateField = value;
-                    this.RaisePropertyChanged("PrintDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public string SupBatch {
-            get {
-                return this.SupBatchField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SupBatchField, value) != true)) {
-                    this.SupBatchField = value;
-                    this.RaisePropertyChanged("SupBatch");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="AppVersionInfo", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class AppVersionInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AppNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AppVersionField;
-        
-        private int VersionTypeField;
-        
-        private int VersionLevelField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string VersionTitleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string VersionDescField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreaterField;
-        
-        private System.DateTime CreateTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string LocalVersionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UpdateAppNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UpdateAppPathField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string FileNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UpdateUrlField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrVersionTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StrVersionLevelField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string AppName {
-            get {
-                return this.AppNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AppNameField, value) != true)) {
-                    this.AppNameField = value;
-                    this.RaisePropertyChanged("AppName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string AppVersion {
-            get {
-                return this.AppVersionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AppVersionField, value) != true)) {
-                    this.AppVersionField = value;
-                    this.RaisePropertyChanged("AppVersion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
-        public int VersionType {
-            get {
-                return this.VersionTypeField;
-            }
-            set {
-                if ((this.VersionTypeField.Equals(value) != true)) {
-                    this.VersionTypeField = value;
-                    this.RaisePropertyChanged("VersionType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
-        public int VersionLevel {
-            get {
-                return this.VersionLevelField;
-            }
-            set {
-                if ((this.VersionLevelField.Equals(value) != true)) {
-                    this.VersionLevelField = value;
-                    this.RaisePropertyChanged("VersionLevel");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string VersionTitle {
-            get {
-                return this.VersionTitleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.VersionTitleField, value) != true)) {
-                    this.VersionTitleField = value;
-                    this.RaisePropertyChanged("VersionTitle");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string VersionDesc {
-            get {
-                return this.VersionDescField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.VersionDescField, value) != true)) {
-                    this.VersionDescField = value;
-                    this.RaisePropertyChanged("VersionDesc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string Creater {
-            get {
-                return this.CreaterField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreaterField, value) != true)) {
-                    this.CreaterField = value;
-                    this.RaisePropertyChanged("Creater");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=8)]
-        public System.DateTime CreateTime {
-            get {
-                return this.CreateTimeField;
-            }
-            set {
-                if ((this.CreateTimeField.Equals(value) != true)) {
-                    this.CreateTimeField = value;
-                    this.RaisePropertyChanged("CreateTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string LocalVersion {
-            get {
-                return this.LocalVersionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LocalVersionField, value) != true)) {
-                    this.LocalVersionField = value;
-                    this.RaisePropertyChanged("LocalVersion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
-        public string UpdateAppName {
-            get {
-                return this.UpdateAppNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UpdateAppNameField, value) != true)) {
-                    this.UpdateAppNameField = value;
-                    this.RaisePropertyChanged("UpdateAppName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
-        public string UpdateAppPath {
-            get {
-                return this.UpdateAppPathField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UpdateAppPathField, value) != true)) {
-                    this.UpdateAppPathField = value;
-                    this.RaisePropertyChanged("UpdateAppPath");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
-        public string FileName {
-            get {
-                return this.FileNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FileNameField, value) != true)) {
-                    this.FileNameField = value;
-                    this.RaisePropertyChanged("FileName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
-        public string UpdateUrl {
-            get {
-                return this.UpdateUrlField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UpdateUrlField, value) != true)) {
-                    this.UpdateUrlField = value;
-                    this.RaisePropertyChanged("UpdateUrl");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
-        public string StrVersionType {
-            get {
-                return this.StrVersionTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrVersionTypeField, value) != true)) {
-                    this.StrVersionTypeField = value;
-                    this.RaisePropertyChanged("StrVersionType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
-        public string StrVersionLevel {
-            get {
-                return this.StrVersionLevelField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StrVersionLevelField, value) != true)) {
-                    this.StrVersionLevelField = value;
-                    this.RaisePropertyChanged("StrVersionLevel");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="QueryConditions", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class QueryConditions : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDescField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialStdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ProductLineNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string VoucherNoField;
-        
-        private System.Nullable<System.DateTime> StartTimeField;
-        
-        private System.Nullable<System.DateTime> EndTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string cSBVCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string cCusNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string cSOCodeField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string MaterialNo {
-            get {
-                return this.MaterialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
-                    this.MaterialNoField = value;
-                    this.RaisePropertyChanged("MaterialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string MaterialDesc {
-            get {
-                return this.MaterialDescField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
-                    this.MaterialDescField = value;
-                    this.RaisePropertyChanged("MaterialDesc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string MaterialStd {
-            get {
-                return this.MaterialStdField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialStdField, value) != true)) {
-                    this.MaterialStdField = value;
-                    this.RaisePropertyChanged("MaterialStd");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string ProductLineNo {
-            get {
-                return this.ProductLineNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ProductLineNoField, value) != true)) {
-                    this.ProductLineNoField = value;
-                    this.RaisePropertyChanged("ProductLineNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string VoucherNo {
-            get {
-                return this.VoucherNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
-                    this.VoucherNoField = value;
-                    this.RaisePropertyChanged("VoucherNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
-        public System.Nullable<System.DateTime> StartTime {
-            get {
-                return this.StartTimeField;
-            }
-            set {
-                if ((this.StartTimeField.Equals(value) != true)) {
-                    this.StartTimeField = value;
-                    this.RaisePropertyChanged("StartTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
-        public System.Nullable<System.DateTime> EndTime {
-            get {
-                return this.EndTimeField;
-            }
-            set {
-                if ((this.EndTimeField.Equals(value) != true)) {
-                    this.EndTimeField = value;
-                    this.RaisePropertyChanged("EndTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string cSBVCode {
-            get {
-                return this.cSBVCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.cSBVCodeField, value) != true)) {
-                    this.cSBVCodeField = value;
-                    this.RaisePropertyChanged("cSBVCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
-        public string cCusName {
-            get {
-                return this.cCusNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.cCusNameField, value) != true)) {
-                    this.cCusNameField = value;
-                    this.RaisePropertyChanged("cCusName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
-        public string cSOCode {
-            get {
-                return this.cSOCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.cSOCodeField, value) != true)) {
-                    this.cSOCodeField = value;
-                    this.RaisePropertyChanged("cSOCode");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Task_Model", Namespace="http://tempuri.org/")]
     [System.SerializableAttribute()]
     public partial class Task_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -16843,6 +14999,2069 @@ namespace WMS.WebService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TempMaterial", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class TempMaterial : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TempMaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TempMaterialDescField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDescField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string TempMaterialNo {
+            get {
+                return this.TempMaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TempMaterialNoField, value) != true)) {
+                    this.TempMaterialNoField = value;
+                    this.RaisePropertyChanged("TempMaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string TempMaterialDesc {
+            get {
+                return this.TempMaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TempMaterialDescField, value) != true)) {
+                    this.TempMaterialDescField = value;
+                    this.RaisePropertyChanged("TempMaterialDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string MaterialNo {
+            get {
+                return this.MaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
+                    this.MaterialNoField = value;
+                    this.RaisePropertyChanged("MaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string MaterialDesc {
+            get {
+                return this.MaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
+                    this.MaterialDescField = value;
+                    this.RaisePropertyChanged("MaterialDesc");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="OverViewExportInfo", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class OverViewExportInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int VoucherTypeField;
+        
+        private int TaskTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TaskNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DeliveryNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SupCusNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SupCusNameField;
+        
+        private int TaskStatusField;
+        
+        private System.Nullable<System.DateTime> TaskIssuedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ReceiveUserNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ReceiveUserNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PlantField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PlantNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RemarkField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ReasonField;
+        
+        private int IsShelvePostField;
+        
+        private int IsQualityField;
+        
+        private int IsReceivePostField;
+        
+        private int PostStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrVoucherTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrTaskTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrIsQualityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrIsShelvePostField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrIsReceivePostField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrTaskStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrPostStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDocField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WarehouseCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WarehouseNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreateUserNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreateUserNameField;
+        
+        private System.Nullable<System.DateTime> CreateDateTimeField;
+        
+        private int IDField;
+        
+        private int Task_IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ToAreaNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RowNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VoucherNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDescField;
+        
+        private decimal TaskQtyField;
+        
+        private decimal QualityQtyField;
+        
+        private decimal RemainQtyField;
+        
+        private decimal ShelveQtyField;
+        
+        private decimal UnQualityQtyField;
+        
+        private decimal PostQtyField;
+        
+        private int StatusField;
+        
+        private int IsQualityCompField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OperatorUserNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OperatorUserNameField;
+        
+        private System.Nullable<System.DateTime> OperatorDateTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UnitField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrIsQualityCompField;
+        
+        private System.Nullable<System.DateTime> CompleteDateTimeField;
+        
+        private int WarehouseIDField;
+        
+        private System.Nullable<System.DateTime> StartTimeField;
+        
+        private System.Nullable<System.DateTime> EndTimeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int VoucherType {
+            get {
+                return this.VoucherTypeField;
+            }
+            set {
+                if ((this.VoucherTypeField.Equals(value) != true)) {
+                    this.VoucherTypeField = value;
+                    this.RaisePropertyChanged("VoucherType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=1)]
+        public int TaskType {
+            get {
+                return this.TaskTypeField;
+            }
+            set {
+                if ((this.TaskTypeField.Equals(value) != true)) {
+                    this.TaskTypeField = value;
+                    this.RaisePropertyChanged("TaskType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string TaskNo {
+            get {
+                return this.TaskNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TaskNoField, value) != true)) {
+                    this.TaskNoField = value;
+                    this.RaisePropertyChanged("TaskNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string DeliveryNo {
+            get {
+                return this.DeliveryNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DeliveryNoField, value) != true)) {
+                    this.DeliveryNoField = value;
+                    this.RaisePropertyChanged("DeliveryNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string SupCusNo {
+            get {
+                return this.SupCusNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SupCusNoField, value) != true)) {
+                    this.SupCusNoField = value;
+                    this.RaisePropertyChanged("SupCusNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string SupCusName {
+            get {
+                return this.SupCusNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SupCusNameField, value) != true)) {
+                    this.SupCusNameField = value;
+                    this.RaisePropertyChanged("SupCusName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
+        public int TaskStatus {
+            get {
+                return this.TaskStatusField;
+            }
+            set {
+                if ((this.TaskStatusField.Equals(value) != true)) {
+                    this.TaskStatusField = value;
+                    this.RaisePropertyChanged("TaskStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
+        public System.Nullable<System.DateTime> TaskIssued {
+            get {
+                return this.TaskIssuedField;
+            }
+            set {
+                if ((this.TaskIssuedField.Equals(value) != true)) {
+                    this.TaskIssuedField = value;
+                    this.RaisePropertyChanged("TaskIssued");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string ReceiveUserNo {
+            get {
+                return this.ReceiveUserNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReceiveUserNoField, value) != true)) {
+                    this.ReceiveUserNoField = value;
+                    this.RaisePropertyChanged("ReceiveUserNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string ReceiveUserName {
+            get {
+                return this.ReceiveUserNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReceiveUserNameField, value) != true)) {
+                    this.ReceiveUserNameField = value;
+                    this.RaisePropertyChanged("ReceiveUserName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string Plant {
+            get {
+                return this.PlantField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PlantField, value) != true)) {
+                    this.PlantField = value;
+                    this.RaisePropertyChanged("Plant");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        public string PlantName {
+            get {
+                return this.PlantNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PlantNameField, value) != true)) {
+                    this.PlantNameField = value;
+                    this.RaisePropertyChanged("PlantName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
+        public string Remark {
+            get {
+                return this.RemarkField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
+                    this.RemarkField = value;
+                    this.RaisePropertyChanged("Remark");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
+        public string Reason {
+            get {
+                return this.ReasonField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReasonField, value) != true)) {
+                    this.ReasonField = value;
+                    this.RaisePropertyChanged("Reason");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
+        public int IsShelvePost {
+            get {
+                return this.IsShelvePostField;
+            }
+            set {
+                if ((this.IsShelvePostField.Equals(value) != true)) {
+                    this.IsShelvePostField = value;
+                    this.RaisePropertyChanged("IsShelvePost");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=15)]
+        public int IsQuality {
+            get {
+                return this.IsQualityField;
+            }
+            set {
+                if ((this.IsQualityField.Equals(value) != true)) {
+                    this.IsQualityField = value;
+                    this.RaisePropertyChanged("IsQuality");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=16)]
+        public int IsReceivePost {
+            get {
+                return this.IsReceivePostField;
+            }
+            set {
+                if ((this.IsReceivePostField.Equals(value) != true)) {
+                    this.IsReceivePostField = value;
+                    this.RaisePropertyChanged("IsReceivePost");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=17)]
+        public int PostStatus {
+            get {
+                return this.PostStatusField;
+            }
+            set {
+                if ((this.PostStatusField.Equals(value) != true)) {
+                    this.PostStatusField = value;
+                    this.RaisePropertyChanged("PostStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
+        public string StrVoucherType {
+            get {
+                return this.StrVoucherTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrVoucherTypeField, value) != true)) {
+                    this.StrVoucherTypeField = value;
+                    this.RaisePropertyChanged("StrVoucherType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=19)]
+        public string StrTaskType {
+            get {
+                return this.StrTaskTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrTaskTypeField, value) != true)) {
+                    this.StrTaskTypeField = value;
+                    this.RaisePropertyChanged("StrTaskType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
+        public string StrIsQuality {
+            get {
+                return this.StrIsQualityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrIsQualityField, value) != true)) {
+                    this.StrIsQualityField = value;
+                    this.RaisePropertyChanged("StrIsQuality");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=21)]
+        public string StrIsShelvePost {
+            get {
+                return this.StrIsShelvePostField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrIsShelvePostField, value) != true)) {
+                    this.StrIsShelvePostField = value;
+                    this.RaisePropertyChanged("StrIsShelvePost");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=22)]
+        public string StrIsReceivePost {
+            get {
+                return this.StrIsReceivePostField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrIsReceivePostField, value) != true)) {
+                    this.StrIsReceivePostField = value;
+                    this.RaisePropertyChanged("StrIsReceivePost");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=23)]
+        public string StrTaskStatus {
+            get {
+                return this.StrTaskStatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrTaskStatusField, value) != true)) {
+                    this.StrTaskStatusField = value;
+                    this.RaisePropertyChanged("StrTaskStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=24)]
+        public string StrPostStatus {
+            get {
+                return this.StrPostStatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrPostStatusField, value) != true)) {
+                    this.StrPostStatusField = value;
+                    this.RaisePropertyChanged("StrPostStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=25)]
+        public string MaterialDoc {
+            get {
+                return this.MaterialDocField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDocField, value) != true)) {
+                    this.MaterialDocField = value;
+                    this.RaisePropertyChanged("MaterialDoc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=26)]
+        public string WarehouseCode {
+            get {
+                return this.WarehouseCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WarehouseCodeField, value) != true)) {
+                    this.WarehouseCodeField = value;
+                    this.RaisePropertyChanged("WarehouseCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=27)]
+        public string WarehouseName {
+            get {
+                return this.WarehouseNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WarehouseNameField, value) != true)) {
+                    this.WarehouseNameField = value;
+                    this.RaisePropertyChanged("WarehouseName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=28)]
+        public string CreateUserNo {
+            get {
+                return this.CreateUserNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreateUserNoField, value) != true)) {
+                    this.CreateUserNoField = value;
+                    this.RaisePropertyChanged("CreateUserNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=29)]
+        public string CreateUserName {
+            get {
+                return this.CreateUserNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreateUserNameField, value) != true)) {
+                    this.CreateUserNameField = value;
+                    this.RaisePropertyChanged("CreateUserName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=30)]
+        public System.Nullable<System.DateTime> CreateDateTime {
+            get {
+                return this.CreateDateTimeField;
+            }
+            set {
+                if ((this.CreateDateTimeField.Equals(value) != true)) {
+                    this.CreateDateTimeField = value;
+                    this.RaisePropertyChanged("CreateDateTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=31)]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=32)]
+        public int Task_ID {
+            get {
+                return this.Task_IDField;
+            }
+            set {
+                if ((this.Task_IDField.Equals(value) != true)) {
+                    this.Task_IDField = value;
+                    this.RaisePropertyChanged("Task_ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=33)]
+        public string ToAreaNo {
+            get {
+                return this.ToAreaNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ToAreaNoField, value) != true)) {
+                    this.ToAreaNoField = value;
+                    this.RaisePropertyChanged("ToAreaNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=34)]
+        public string RowNo {
+            get {
+                return this.RowNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RowNoField, value) != true)) {
+                    this.RowNoField = value;
+                    this.RaisePropertyChanged("RowNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=35)]
+        public string VoucherNo {
+            get {
+                return this.VoucherNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
+                    this.VoucherNoField = value;
+                    this.RaisePropertyChanged("VoucherNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=36)]
+        public string MaterialNo {
+            get {
+                return this.MaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
+                    this.MaterialNoField = value;
+                    this.RaisePropertyChanged("MaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=37)]
+        public string MaterialDesc {
+            get {
+                return this.MaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
+                    this.MaterialDescField = value;
+                    this.RaisePropertyChanged("MaterialDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=38)]
+        public decimal TaskQty {
+            get {
+                return this.TaskQtyField;
+            }
+            set {
+                if ((this.TaskQtyField.Equals(value) != true)) {
+                    this.TaskQtyField = value;
+                    this.RaisePropertyChanged("TaskQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=39)]
+        public decimal QualityQty {
+            get {
+                return this.QualityQtyField;
+            }
+            set {
+                if ((this.QualityQtyField.Equals(value) != true)) {
+                    this.QualityQtyField = value;
+                    this.RaisePropertyChanged("QualityQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=40)]
+        public decimal RemainQty {
+            get {
+                return this.RemainQtyField;
+            }
+            set {
+                if ((this.RemainQtyField.Equals(value) != true)) {
+                    this.RemainQtyField = value;
+                    this.RaisePropertyChanged("RemainQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=41)]
+        public decimal ShelveQty {
+            get {
+                return this.ShelveQtyField;
+            }
+            set {
+                if ((this.ShelveQtyField.Equals(value) != true)) {
+                    this.ShelveQtyField = value;
+                    this.RaisePropertyChanged("ShelveQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=42)]
+        public decimal UnQualityQty {
+            get {
+                return this.UnQualityQtyField;
+            }
+            set {
+                if ((this.UnQualityQtyField.Equals(value) != true)) {
+                    this.UnQualityQtyField = value;
+                    this.RaisePropertyChanged("UnQualityQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=43)]
+        public decimal PostQty {
+            get {
+                return this.PostQtyField;
+            }
+            set {
+                if ((this.PostQtyField.Equals(value) != true)) {
+                    this.PostQtyField = value;
+                    this.RaisePropertyChanged("PostQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=44)]
+        public int Status {
+            get {
+                return this.StatusField;
+            }
+            set {
+                if ((this.StatusField.Equals(value) != true)) {
+                    this.StatusField = value;
+                    this.RaisePropertyChanged("Status");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=45)]
+        public int IsQualityComp {
+            get {
+                return this.IsQualityCompField;
+            }
+            set {
+                if ((this.IsQualityCompField.Equals(value) != true)) {
+                    this.IsQualityCompField = value;
+                    this.RaisePropertyChanged("IsQualityComp");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=46)]
+        public string OperatorUserNo {
+            get {
+                return this.OperatorUserNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OperatorUserNoField, value) != true)) {
+                    this.OperatorUserNoField = value;
+                    this.RaisePropertyChanged("OperatorUserNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=47)]
+        public string OperatorUserName {
+            get {
+                return this.OperatorUserNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OperatorUserNameField, value) != true)) {
+                    this.OperatorUserNameField = value;
+                    this.RaisePropertyChanged("OperatorUserName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=48)]
+        public System.Nullable<System.DateTime> OperatorDateTime {
+            get {
+                return this.OperatorDateTimeField;
+            }
+            set {
+                if ((this.OperatorDateTimeField.Equals(value) != true)) {
+                    this.OperatorDateTimeField = value;
+                    this.RaisePropertyChanged("OperatorDateTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=49)]
+        public string Unit {
+            get {
+                return this.UnitField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
+                    this.UnitField = value;
+                    this.RaisePropertyChanged("Unit");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=50)]
+        public string StrStatus {
+            get {
+                return this.StrStatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrStatusField, value) != true)) {
+                    this.StrStatusField = value;
+                    this.RaisePropertyChanged("StrStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=51)]
+        public string StrIsQualityComp {
+            get {
+                return this.StrIsQualityCompField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrIsQualityCompField, value) != true)) {
+                    this.StrIsQualityCompField = value;
+                    this.RaisePropertyChanged("StrIsQualityComp");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=52)]
+        public System.Nullable<System.DateTime> CompleteDateTime {
+            get {
+                return this.CompleteDateTimeField;
+            }
+            set {
+                if ((this.CompleteDateTimeField.Equals(value) != true)) {
+                    this.CompleteDateTimeField = value;
+                    this.RaisePropertyChanged("CompleteDateTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=53)]
+        public int WarehouseID {
+            get {
+                return this.WarehouseIDField;
+            }
+            set {
+                if ((this.WarehouseIDField.Equals(value) != true)) {
+                    this.WarehouseIDField = value;
+                    this.RaisePropertyChanged("WarehouseID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=54)]
+        public System.Nullable<System.DateTime> StartTime {
+            get {
+                return this.StartTimeField;
+            }
+            set {
+                if ((this.StartTimeField.Equals(value) != true)) {
+                    this.StartTimeField = value;
+                    this.RaisePropertyChanged("StartTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=55)]
+        public System.Nullable<System.DateTime> EndTime {
+            get {
+                return this.EndTimeField;
+            }
+            set {
+                if ((this.EndTimeField.Equals(value) != true)) {
+                    this.EndTimeField = value;
+                    this.RaisePropertyChanged("EndTime");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="InnerBarcode_Model", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class InnerBarcode_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private decimal idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string InnerBarcodeField;
+        
+        private decimal InnerQtyField;
+        
+        private decimal PrintQtyField;
+        
+        private decimal OutBox_IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SerialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BatchNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OutBarcodeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public decimal id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((this.idField.Equals(value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string InnerBarcode {
+            get {
+                return this.InnerBarcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.InnerBarcodeField, value) != true)) {
+                    this.InnerBarcodeField = value;
+                    this.RaisePropertyChanged("InnerBarcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
+        public decimal InnerQty {
+            get {
+                return this.InnerQtyField;
+            }
+            set {
+                if ((this.InnerQtyField.Equals(value) != true)) {
+                    this.InnerQtyField = value;
+                    this.RaisePropertyChanged("InnerQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        public decimal PrintQty {
+            get {
+                return this.PrintQtyField;
+            }
+            set {
+                if ((this.PrintQtyField.Equals(value) != true)) {
+                    this.PrintQtyField = value;
+                    this.RaisePropertyChanged("PrintQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public decimal OutBox_ID {
+            get {
+                return this.OutBox_IDField;
+            }
+            set {
+                if ((this.OutBox_IDField.Equals(value) != true)) {
+                    this.OutBox_IDField = value;
+                    this.RaisePropertyChanged("OutBox_ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string SerialNo {
+            get {
+                return this.SerialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SerialNoField, value) != true)) {
+                    this.SerialNoField = value;
+                    this.RaisePropertyChanged("SerialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string BatchNo {
+            get {
+                return this.BatchNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BatchNoField, value) != true)) {
+                    this.BatchNoField = value;
+                    this.RaisePropertyChanged("BatchNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string OutBarcode {
+            get {
+                return this.OutBarcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OutBarcodeField, value) != true)) {
+                    this.OutBarcodeField = value;
+                    this.RaisePropertyChanged("OutBarcode");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="QuanlityExportInfo", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class QuanlityExportInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DeliveryNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SupplierNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SupplierNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PlantField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDocField;
+        
+        private System.DateTime CreateDateField;
+        
+        private int PrintedQtyField;
+        
+        private System.Nullable<System.DateTime> PrintTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MoveTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VoucherNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RowNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDescField;
+        
+        private decimal ReceiveQtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UnitField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PrdVersionField;
+        
+        private decimal QualityQtyField;
+        
+        private decimal UnQualityQtyField;
+        
+        private int QualityTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrQualityTypeField;
+        
+        private System.Nullable<System.DateTime> StartTimeField;
+        
+        private System.Nullable<System.DateTime> EndTimeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string DeliveryNo {
+            get {
+                return this.DeliveryNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DeliveryNoField, value) != true)) {
+                    this.DeliveryNoField = value;
+                    this.RaisePropertyChanged("DeliveryNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string SupplierNo {
+            get {
+                return this.SupplierNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SupplierNoField, value) != true)) {
+                    this.SupplierNoField = value;
+                    this.RaisePropertyChanged("SupplierNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string SupplierName {
+            get {
+                return this.SupplierNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SupplierNameField, value) != true)) {
+                    this.SupplierNameField = value;
+                    this.RaisePropertyChanged("SupplierName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string Plant {
+            get {
+                return this.PlantField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PlantField, value) != true)) {
+                    this.PlantField = value;
+                    this.RaisePropertyChanged("Plant");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string MaterialDoc {
+            get {
+                return this.MaterialDocField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDocField, value) != true)) {
+                    this.MaterialDocField = value;
+                    this.RaisePropertyChanged("MaterialDoc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
+        public System.DateTime CreateDate {
+            get {
+                return this.CreateDateField;
+            }
+            set {
+                if ((this.CreateDateField.Equals(value) != true)) {
+                    this.CreateDateField = value;
+                    this.RaisePropertyChanged("CreateDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
+        public int PrintedQty {
+            get {
+                return this.PrintedQtyField;
+            }
+            set {
+                if ((this.PrintedQtyField.Equals(value) != true)) {
+                    this.PrintedQtyField = value;
+                    this.RaisePropertyChanged("PrintedQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=8)]
+        public System.Nullable<System.DateTime> PrintTime {
+            get {
+                return this.PrintTimeField;
+            }
+            set {
+                if ((this.PrintTimeField.Equals(value) != true)) {
+                    this.PrintTimeField = value;
+                    this.RaisePropertyChanged("PrintTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string MoveType {
+            get {
+                return this.MoveTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MoveTypeField, value) != true)) {
+                    this.MoveTypeField = value;
+                    this.RaisePropertyChanged("MoveType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string VoucherNo {
+            get {
+                return this.VoucherNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
+                    this.VoucherNoField = value;
+                    this.RaisePropertyChanged("VoucherNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        public string RowNo {
+            get {
+                return this.RowNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RowNoField, value) != true)) {
+                    this.RowNoField = value;
+                    this.RaisePropertyChanged("RowNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
+        public string MaterialNo {
+            get {
+                return this.MaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
+                    this.MaterialNoField = value;
+                    this.RaisePropertyChanged("MaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
+        public string MaterialDesc {
+            get {
+                return this.MaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
+                    this.MaterialDescField = value;
+                    this.RaisePropertyChanged("MaterialDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=14)]
+        public decimal ReceiveQty {
+            get {
+                return this.ReceiveQtyField;
+            }
+            set {
+                if ((this.ReceiveQtyField.Equals(value) != true)) {
+                    this.ReceiveQtyField = value;
+                    this.RaisePropertyChanged("ReceiveQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
+        public string Unit {
+            get {
+                return this.UnitField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
+                    this.UnitField = value;
+                    this.RaisePropertyChanged("Unit");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
+        public string PrdVersion {
+            get {
+                return this.PrdVersionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PrdVersionField, value) != true)) {
+                    this.PrdVersionField = value;
+                    this.RaisePropertyChanged("PrdVersion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=17)]
+        public decimal QualityQty {
+            get {
+                return this.QualityQtyField;
+            }
+            set {
+                if ((this.QualityQtyField.Equals(value) != true)) {
+                    this.QualityQtyField = value;
+                    this.RaisePropertyChanged("QualityQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=18)]
+        public decimal UnQualityQty {
+            get {
+                return this.UnQualityQtyField;
+            }
+            set {
+                if ((this.UnQualityQtyField.Equals(value) != true)) {
+                    this.UnQualityQtyField = value;
+                    this.RaisePropertyChanged("UnQualityQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=19)]
+        public int QualityType {
+            get {
+                return this.QualityTypeField;
+            }
+            set {
+                if ((this.QualityTypeField.Equals(value) != true)) {
+                    this.QualityTypeField = value;
+                    this.RaisePropertyChanged("QualityType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=20)]
+        public string StrQualityType {
+            get {
+                return this.StrQualityTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrQualityTypeField, value) != true)) {
+                    this.StrQualityTypeField = value;
+                    this.RaisePropertyChanged("StrQualityType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=21)]
+        public System.Nullable<System.DateTime> StartTime {
+            get {
+                return this.StartTimeField;
+            }
+            set {
+                if ((this.StartTimeField.Equals(value) != true)) {
+                    this.StartTimeField = value;
+                    this.RaisePropertyChanged("StartTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=22)]
+        public System.Nullable<System.DateTime> EndTime {
+            get {
+                return this.EndTimeField;
+            }
+            set {
+                if ((this.EndTimeField.Equals(value) != true)) {
+                    this.EndTimeField = value;
+                    this.RaisePropertyChanged("EndTime");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Supplier_Model", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class Supplier_Model : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SupplierCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SupplierNameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string SupplierCode {
+            get {
+                return this.SupplierCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SupplierCodeField, value) != true)) {
+                    this.SupplierCodeField = value;
+                    this.RaisePropertyChanged("SupplierCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string SupplierName {
+            get {
+                return this.SupplierNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SupplierNameField, value) != true)) {
+                    this.SupplierNameField = value;
+                    this.RaisePropertyChanged("SupplierName");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="AppVersionInfo", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class AppVersionInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AppNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AppVersionField;
+        
+        private int VersionTypeField;
+        
+        private int VersionLevelField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VersionTitleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VersionDescField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreaterField;
+        
+        private System.DateTime CreateTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LocalVersionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UpdateAppNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UpdateAppPathField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FileNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UpdateUrlField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrVersionTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StrVersionLevelField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string AppName {
+            get {
+                return this.AppNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AppNameField, value) != true)) {
+                    this.AppNameField = value;
+                    this.RaisePropertyChanged("AppName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string AppVersion {
+            get {
+                return this.AppVersionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AppVersionField, value) != true)) {
+                    this.AppVersionField = value;
+                    this.RaisePropertyChanged("AppVersion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        public int VersionType {
+            get {
+                return this.VersionTypeField;
+            }
+            set {
+                if ((this.VersionTypeField.Equals(value) != true)) {
+                    this.VersionTypeField = value;
+                    this.RaisePropertyChanged("VersionType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public int VersionLevel {
+            get {
+                return this.VersionLevelField;
+            }
+            set {
+                if ((this.VersionLevelField.Equals(value) != true)) {
+                    this.VersionLevelField = value;
+                    this.RaisePropertyChanged("VersionLevel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string VersionTitle {
+            get {
+                return this.VersionTitleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.VersionTitleField, value) != true)) {
+                    this.VersionTitleField = value;
+                    this.RaisePropertyChanged("VersionTitle");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string VersionDesc {
+            get {
+                return this.VersionDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.VersionDescField, value) != true)) {
+                    this.VersionDescField = value;
+                    this.RaisePropertyChanged("VersionDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string Creater {
+            get {
+                return this.CreaterField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreaterField, value) != true)) {
+                    this.CreaterField = value;
+                    this.RaisePropertyChanged("Creater");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=8)]
+        public System.DateTime CreateTime {
+            get {
+                return this.CreateTimeField;
+            }
+            set {
+                if ((this.CreateTimeField.Equals(value) != true)) {
+                    this.CreateTimeField = value;
+                    this.RaisePropertyChanged("CreateTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string LocalVersion {
+            get {
+                return this.LocalVersionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LocalVersionField, value) != true)) {
+                    this.LocalVersionField = value;
+                    this.RaisePropertyChanged("LocalVersion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string UpdateAppName {
+            get {
+                return this.UpdateAppNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UpdateAppNameField, value) != true)) {
+                    this.UpdateAppNameField = value;
+                    this.RaisePropertyChanged("UpdateAppName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        public string UpdateAppPath {
+            get {
+                return this.UpdateAppPathField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UpdateAppPathField, value) != true)) {
+                    this.UpdateAppPathField = value;
+                    this.RaisePropertyChanged("UpdateAppPath");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
+        public string FileName {
+            get {
+                return this.FileNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FileNameField, value) != true)) {
+                    this.FileNameField = value;
+                    this.RaisePropertyChanged("FileName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
+        public string UpdateUrl {
+            get {
+                return this.UpdateUrlField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UpdateUrlField, value) != true)) {
+                    this.UpdateUrlField = value;
+                    this.RaisePropertyChanged("UpdateUrl");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
+        public string StrVersionType {
+            get {
+                return this.StrVersionTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrVersionTypeField, value) != true)) {
+                    this.StrVersionTypeField = value;
+                    this.RaisePropertyChanged("StrVersionType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
+        public string StrVersionLevel {
+            get {
+                return this.StrVersionLevelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StrVersionLevelField, value) != true)) {
+                    this.StrVersionLevelField = value;
+                    this.RaisePropertyChanged("StrVersionLevel");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="QueryConditions", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class QueryConditions : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialDescField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialStdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ProductLineNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VoucherNoField;
+        
+        private System.Nullable<System.DateTime> StartTimeField;
+        
+        private System.Nullable<System.DateTime> EndTimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cSBVCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cCusNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cSOCodeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MaterialNo {
+            get {
+                return this.MaterialNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
+                    this.MaterialNoField = value;
+                    this.RaisePropertyChanged("MaterialNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string MaterialDesc {
+            get {
+                return this.MaterialDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
+                    this.MaterialDescField = value;
+                    this.RaisePropertyChanged("MaterialDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string MaterialStd {
+            get {
+                return this.MaterialStdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialStdField, value) != true)) {
+                    this.MaterialStdField = value;
+                    this.RaisePropertyChanged("MaterialStd");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string ProductLineNo {
+            get {
+                return this.ProductLineNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProductLineNoField, value) != true)) {
+                    this.ProductLineNoField = value;
+                    this.RaisePropertyChanged("ProductLineNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string VoucherNo {
+            get {
+                return this.VoucherNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.VoucherNoField, value) != true)) {
+                    this.VoucherNoField = value;
+                    this.RaisePropertyChanged("VoucherNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
+        public System.Nullable<System.DateTime> StartTime {
+            get {
+                return this.StartTimeField;
+            }
+            set {
+                if ((this.StartTimeField.Equals(value) != true)) {
+                    this.StartTimeField = value;
+                    this.RaisePropertyChanged("StartTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=6)]
+        public System.Nullable<System.DateTime> EndTime {
+            get {
+                return this.EndTimeField;
+            }
+            set {
+                if ((this.EndTimeField.Equals(value) != true)) {
+                    this.EndTimeField = value;
+                    this.RaisePropertyChanged("EndTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string cSBVCode {
+            get {
+                return this.cSBVCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cSBVCodeField, value) != true)) {
+                    this.cSBVCodeField = value;
+                    this.RaisePropertyChanged("cSBVCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string cCusName {
+            get {
+                return this.cCusNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cCusNameField, value) != true)) {
+                    this.cCusNameField = value;
+                    this.RaisePropertyChanged("cCusName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string cSOCode {
+            get {
+                return this.cSOCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cSOCodeField, value) != true)) {
+                    this.cSOCodeField = value;
+                    this.RaisePropertyChanged("cSOCode");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="TaskVoucher", Namespace="http://tempuri.org/")]
     [System.SerializableAttribute()]
     public partial class TaskVoucher : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -17136,102 +17355,56 @@ namespace WMS.WebService {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TempMaterial", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class TempMaterial : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TempMaterialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TempMaterialDescField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialDescField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public string TempMaterialNo {
-            get {
-                return this.TempMaterialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TempMaterialNoField, value) != true)) {
-                    this.TempMaterialNoField = value;
-                    this.RaisePropertyChanged("TempMaterialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string TempMaterialDesc {
-            get {
-                return this.TempMaterialDescField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TempMaterialDescField, value) != true)) {
-                    this.TempMaterialDescField = value;
-                    this.RaisePropertyChanged("TempMaterialDesc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string MaterialNo {
-            get {
-                return this.MaterialNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialNoField, value) != true)) {
-                    this.MaterialNoField = value;
-                    this.RaisePropertyChanged("MaterialNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string MaterialDesc {
-            get {
-                return this.MaterialDescField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialDescField, value) != true)) {
-                    this.MaterialDescField = value;
-                    this.RaisePropertyChanged("MaterialDesc");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WebService.WebServiceSoap")]
     public interface WebServiceSoap {
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 DeliveryModel 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetOutSideByDeliveryToSRM", ReplyAction="*")]
+        WMS.WebService.GetOutSideByDeliveryToSRMResponse GetOutSideByDeliveryToSRM(WMS.WebService.GetOutSideByDeliveryToSRMRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 vouchcode 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateShelveTaskTest", ReplyAction="*")]
+        WMS.WebService.CreateShelveTaskTestResponse CreateShelveTaskTest(WMS.WebService.CreateShelveTaskTestRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestReadData", ReplyAction="*")]
+        bool TestReadData(int iNo);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 strLog 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/WriteLog", ReplyAction="*")]
+        WMS.WebService.WriteLogResponse WriteLog(WMS.WebService.WriteLogRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestMaterialOuterLabel", ReplyAction="*")]
+        WMS.WebService.TestMaterialOuterLabelResponse TestMaterialOuterLabel(WMS.WebService.TestMaterialOuterLabelRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestMaterialInnerLabel", ReplyAction="*")]
+        WMS.WebService.TestMaterialInnerLabelResponse TestMaterialInnerLabel(WMS.WebService.TestMaterialInnerLabelRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestProductLabel", ReplyAction="*")]
+        WMS.WebService.TestProductLabelResponse TestProductLabel(WMS.WebService.TestProductLabelRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 SerialNo 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CheckSerialNo", ReplyAction="*")]
+        WMS.WebService.CheckSerialNoResponse CheckSerialNo(WMS.WebService.CheckSerialNoRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 labelModel 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateInnerProductBarcode", ReplyAction="*")]
+        WMS.WebService.CreateInnerProductBarcodeResponse CreateInnerProductBarcode(WMS.WebService.CreateInnerProductBarcodeRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 labelModel 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateOuterProductBarcode", ReplyAction="*")]
+        WMS.WebService.CreateOuterProductBarcodeResponse CreateOuterProductBarcode(WMS.WebService.CreateOuterProductBarcodeRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 dt 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ImportStock", ReplyAction="*")]
+        WMS.WebService.ImportStockResponse ImportStock(WMS.WebService.ImportStockRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 dt 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/RemoveStock", ReplyAction="*")]
+        WMS.WebService.RemoveStockResponse RemoveStock(WMS.WebService.RemoveStockRequest request);
         
         // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 stockmodel 以后生成的消息协定未标记为 nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateInitialProductBarcode", ReplyAction="*")]
@@ -17423,6 +17596,54 @@ namespace WMS.WebService {
         // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 row 以后生成的消息协定未标记为 nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/QueryMaterialBarcodeReportRowDetail", ReplyAction="*")]
         WMS.WebService.QueryMaterialBarcodeReportRowDetailResponse QueryMaterialBarcodeReportRowDetail(WMS.WebService.QueryMaterialBarcodeReportRowDetailRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 taskmo 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetFastInNotHavePOInfo", ReplyAction="*")]
+        WMS.WebService.GetFastInNotHavePOInfoResponse GetFastInNotHavePOInfo(WMS.WebService.GetFastInNotHavePOInfoRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 tDtails 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InsetMaterialDetail", ReplyAction="*")]
+        WMS.WebService.InsetMaterialDetailResponse InsetMaterialDetail(WMS.WebService.InsetMaterialDetailRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 materialNo 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTempMaterialName", ReplyAction="*")]
+        WMS.WebService.GetTempMaterialNameResponse GetTempMaterialName(WMS.WebService.GetTempMaterialNameRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 materialNo 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ExistsTempMaterialByMaterialNo", ReplyAction="*")]
+        WMS.WebService.ExistsTempMaterialByMaterialNoResponse ExistsTempMaterialByMaterialNo(WMS.WebService.ExistsTempMaterialByMaterialNoRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 strMaterialNo 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTempMaterialByTempNo", ReplyAction="*")]
+        WMS.WebService.GetTempMaterialByTempNoResponse GetTempMaterialByTempNo(WMS.WebService.GetTempMaterialByTempNoRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ExistsTempMaterialNo", ReplyAction="*")]
+        WMS.WebService.ExistsTempMaterialNoResponse ExistsTempMaterialNo(WMS.WebService.ExistsTempMaterialNoRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SaveTempMaterial", ReplyAction="*")]
+        WMS.WebService.SaveTempMaterialResponse SaveTempMaterial(WMS.WebService.SaveTempMaterialRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteTempMaterialByID", ReplyAction="*")]
+        WMS.WebService.DeleteTempMaterialByIDResponse DeleteTempMaterialByID(WMS.WebService.DeleteTempMaterialByIDRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTempMaterialByID", ReplyAction="*")]
+        WMS.WebService.GetTempMaterialByIDResponse GetTempMaterialByID(WMS.WebService.GetTempMaterialByIDRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 modelList 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTempMaterialListByPage", ReplyAction="*")]
+        WMS.WebService.GetTempMaterialListByPageResponse GetTempMaterialListByPage(WMS.WebService.GetTempMaterialListByPageRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetMaterialInfo", ReplyAction="*")]
+        WMS.WebService.GetMaterialInfoResponse GetMaterialInfo(WMS.WebService.GetMaterialInfoRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTempMaterialNo", ReplyAction="*")]
+        WMS.WebService.GetTempMaterialNoResponse GetTempMaterialNo(WMS.WebService.GetTempMaterialNoRequest request);
         
         // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 modelList 以后生成的消息协定未标记为 nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTaskMainListByPage", ReplyAction="*")]
@@ -17716,50 +17937,6 @@ namespace WMS.WebService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetSupplierInfoForU8", ReplyAction="*")]
         WMS.WebService.GetSupplierInfoForU8Response GetSupplierInfoForU8(WMS.WebService.GetSupplierInfoForU8Request request);
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 DeliveryModel 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetOutSideByDeliveryToSRM", ReplyAction="*")]
-        WMS.WebService.GetOutSideByDeliveryToSRMResponse GetOutSideByDeliveryToSRM(WMS.WebService.GetOutSideByDeliveryToSRMRequest request);
-        
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 vouchcode 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateShelveTaskTest", ReplyAction="*")]
-        WMS.WebService.CreateShelveTaskTestResponse CreateShelveTaskTest(WMS.WebService.CreateShelveTaskTestRequest request);
-        
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 strLog 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/WriteLog", ReplyAction="*")]
-        WMS.WebService.WriteLogResponse WriteLog(WMS.WebService.WriteLogRequest request);
-        
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestMaterialOuterLabel", ReplyAction="*")]
-        WMS.WebService.TestMaterialOuterLabelResponse TestMaterialOuterLabel(WMS.WebService.TestMaterialOuterLabelRequest request);
-        
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestMaterialInnerLabel", ReplyAction="*")]
-        WMS.WebService.TestMaterialInnerLabelResponse TestMaterialInnerLabel(WMS.WebService.TestMaterialInnerLabelRequest request);
-        
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestProductLabel", ReplyAction="*")]
-        WMS.WebService.TestProductLabelResponse TestProductLabel(WMS.WebService.TestProductLabelRequest request);
-        
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 SerialNo 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CheckSerialNo", ReplyAction="*")]
-        WMS.WebService.CheckSerialNoResponse CheckSerialNo(WMS.WebService.CheckSerialNoRequest request);
-        
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 labelModel 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateInnerProductBarcode", ReplyAction="*")]
-        WMS.WebService.CreateInnerProductBarcodeResponse CreateInnerProductBarcode(WMS.WebService.CreateInnerProductBarcodeRequest request);
-        
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 labelModel 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateOuterProductBarcode", ReplyAction="*")]
-        WMS.WebService.CreateOuterProductBarcodeResponse CreateOuterProductBarcode(WMS.WebService.CreateOuterProductBarcodeRequest request);
-        
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 dt 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ImportStock", ReplyAction="*")]
-        WMS.WebService.ImportStockResponse ImportStock(WMS.WebService.ImportStockRequest request);
-        
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 dt 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/RemoveStock", ReplyAction="*")]
-        WMS.WebService.RemoveStockResponse RemoveStock(WMS.WebService.RemoveStockRequest request);
-        
         // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 HelloWorldResult 以后生成的消息协定未标记为 nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
         WMS.WebService.HelloWorldResponse HelloWorld(WMS.WebService.HelloWorldRequest request);
@@ -17984,6 +18161,54 @@ namespace WMS.WebService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetMenuNo", ReplyAction="*")]
         WMS.WebService.GetMenuNoResponse GetMenuNo(WMS.WebService.GetMenuNoRequest request);
         
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ExistspCode", ReplyAction="*")]
+        WMS.WebService.ExistspCodeResponse ExistspCode(WMS.WebService.ExistspCodeRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SavePreparation", ReplyAction="*")]
+        WMS.WebService.SavePreparationResponse SavePreparation(WMS.WebService.SavePreparationRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeletePreparationByID", ReplyAction="*")]
+        WMS.WebService.DeletePreparationByIDResponse DeletePreparationByID(WMS.WebService.DeletePreparationByIDRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetPreparationByID", ReplyAction="*")]
+        WMS.WebService.GetPreparationByIDResponse GetPreparationByID(WMS.WebService.GetPreparationByIDRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 modelList 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetPreparationListByPage", ReplyAction="*")]
+        WMS.WebService.GetPreparationListByPageResponse GetPreparationListByPage(WMS.WebService.GetPreparationListByPageRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 modelList 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetPreparationList", ReplyAction="*")]
+        WMS.WebService.GetPreparationListResponse GetPreparationList(WMS.WebService.GetPreparationListRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ExistsbNo", ReplyAction="*")]
+        WMS.WebService.ExistsbNoResponse ExistsbNo(WMS.WebService.ExistsbNoRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SaveBuilding", ReplyAction="*")]
+        WMS.WebService.SaveBuildingResponse SaveBuilding(WMS.WebService.SaveBuildingRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteBuildingByID", ReplyAction="*")]
+        WMS.WebService.DeleteBuildingByIDResponse DeleteBuildingByID(WMS.WebService.DeleteBuildingByIDRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetBuildingByID", ReplyAction="*")]
+        WMS.WebService.GetBuildingByIDResponse GetBuildingByID(WMS.WebService.GetBuildingByIDRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 modelList 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetBuildingListByPage", ReplyAction="*")]
+        WMS.WebService.GetBuildingListByPageResponse GetBuildingListByPage(WMS.WebService.GetBuildingListByPageRequest request);
+        
+        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 modelList 以后生成的消息协定未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetBuildingList", ReplyAction="*")]
+        WMS.WebService.GetBuildingListResponse GetBuildingList(WMS.WebService.GetBuildingListRequest request);
+        
         // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 user 以后生成的消息协定未标记为 nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CheckImportTable", ReplyAction="*")]
         WMS.WebService.CheckImportTableResponse CheckImportTable(WMS.WebService.CheckImportTableRequest request);
@@ -18051,54 +18276,890 @@ namespace WMS.WebService {
         // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 NO 以后生成的消息协定未标记为 nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetVoucherByNo", ReplyAction="*")]
         WMS.WebService.GetVoucherByNoResponse GetVoucherByNo(WMS.WebService.GetVoucherByNoRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetOutSideByDeliveryToSRMRequest {
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 taskmo 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetFastInNotHavePOInfo", ReplyAction="*")]
-        WMS.WebService.GetFastInNotHavePOInfoResponse GetFastInNotHavePOInfo(WMS.WebService.GetFastInNotHavePOInfoRequest request);
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetOutSideByDeliveryToSRM", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetOutSideByDeliveryToSRMRequestBody Body;
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 tDtails 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InsetMaterialDetail", ReplyAction="*")]
-        WMS.WebService.InsetMaterialDetailResponse InsetMaterialDetail(WMS.WebService.InsetMaterialDetailRequest request);
+        public GetOutSideByDeliveryToSRMRequest() {
+        }
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 materialNo 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTempMaterialName", ReplyAction="*")]
-        WMS.WebService.GetTempMaterialNameResponse GetTempMaterialName(WMS.WebService.GetTempMaterialNameRequest request);
+        public GetOutSideByDeliveryToSRMRequest(WMS.WebService.GetOutSideByDeliveryToSRMRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetOutSideByDeliveryToSRMRequestBody {
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 materialNo 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ExistsTempMaterialByMaterialNo", ReplyAction="*")]
-        WMS.WebService.ExistsTempMaterialByMaterialNoResponse ExistsTempMaterialByMaterialNo(WMS.WebService.ExistsTempMaterialByMaterialNoRequest request);
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.DeliveryReceive_Model DeliveryModel;
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 strMaterialNo 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTempMaterialByTempNo", ReplyAction="*")]
-        WMS.WebService.GetTempMaterialByTempNoResponse GetTempMaterialByTempNo(WMS.WebService.GetTempMaterialByTempNoRequest request);
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo userModel;
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ExistsTempMaterialNo", ReplyAction="*")]
-        WMS.WebService.ExistsTempMaterialNoResponse ExistsTempMaterialNo(WMS.WebService.ExistsTempMaterialNoRequest request);
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strErrMsg;
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SaveTempMaterial", ReplyAction="*")]
-        WMS.WebService.SaveTempMaterialResponse SaveTempMaterial(WMS.WebService.SaveTempMaterialRequest request);
+        public GetOutSideByDeliveryToSRMRequestBody() {
+        }
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteTempMaterialByID", ReplyAction="*")]
-        WMS.WebService.DeleteTempMaterialByIDResponse DeleteTempMaterialByID(WMS.WebService.DeleteTempMaterialByIDRequest request);
+        public GetOutSideByDeliveryToSRMRequestBody(WMS.WebService.DeliveryReceive_Model DeliveryModel, WMS.WebService.UserInfo userModel, string strErrMsg) {
+            this.DeliveryModel = DeliveryModel;
+            this.userModel = userModel;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetOutSideByDeliveryToSRMResponse {
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTempMaterialByID", ReplyAction="*")]
-        WMS.WebService.GetTempMaterialByIDResponse GetTempMaterialByID(WMS.WebService.GetTempMaterialByIDRequest request);
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetOutSideByDeliveryToSRMResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetOutSideByDeliveryToSRMResponseBody Body;
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 modelList 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTempMaterialListByPage", ReplyAction="*")]
-        WMS.WebService.GetTempMaterialListByPageResponse GetTempMaterialListByPage(WMS.WebService.GetTempMaterialListByPageRequest request);
+        public GetOutSideByDeliveryToSRMResponse() {
+        }
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetMaterialInfo", ReplyAction="*")]
-        WMS.WebService.GetMaterialInfoResponse GetMaterialInfo(WMS.WebService.GetMaterialInfoRequest request);
+        public GetOutSideByDeliveryToSRMResponse(WMS.WebService.GetOutSideByDeliveryToSRMResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetOutSideByDeliveryToSRMResponseBody {
         
-        // CODEGEN: 命名空间 http://tempuri.org/ 的元素名称 model 以后生成的消息协定未标记为 nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetTempMaterialNo", ReplyAction="*")]
-        WMS.WebService.GetTempMaterialNoResponse GetTempMaterialNo(WMS.WebService.GetTempMaterialNoRequest request);
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetOutSideByDeliveryToSRMResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.DeliveryReceive_Model DeliveryModel;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strErrMsg;
+        
+        public GetOutSideByDeliveryToSRMResponseBody() {
+        }
+        
+        public GetOutSideByDeliveryToSRMResponseBody(bool GetOutSideByDeliveryToSRMResult, WMS.WebService.DeliveryReceive_Model DeliveryModel, string strErrMsg) {
+            this.GetOutSideByDeliveryToSRMResult = GetOutSideByDeliveryToSRMResult;
+            this.DeliveryModel = DeliveryModel;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CreateShelveTaskTestRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateShelveTaskTest", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.CreateShelveTaskTestRequestBody Body;
+        
+        public CreateShelveTaskTestRequest() {
+        }
+        
+        public CreateShelveTaskTestRequest(WMS.WebService.CreateShelveTaskTestRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreateShelveTaskTestRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string vouchcode;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string vouchtype;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string cwhcode;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public WMS.WebService.UserInfo userModel;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string strTaskNo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string strErrMsg;
+        
+        public CreateShelveTaskTestRequestBody() {
+        }
+        
+        public CreateShelveTaskTestRequestBody(string vouchcode, string vouchtype, string cwhcode, WMS.WebService.UserInfo userModel, string strTaskNo, string strErrMsg) {
+            this.vouchcode = vouchcode;
+            this.vouchtype = vouchtype;
+            this.cwhcode = cwhcode;
+            this.userModel = userModel;
+            this.strTaskNo = strTaskNo;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CreateShelveTaskTestResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateShelveTaskTestResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.CreateShelveTaskTestResponseBody Body;
+        
+        public CreateShelveTaskTestResponse() {
+        }
+        
+        public CreateShelveTaskTestResponse(WMS.WebService.CreateShelveTaskTestResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreateShelveTaskTestResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool CreateShelveTaskTestResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strTaskNo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strErrMsg;
+        
+        public CreateShelveTaskTestResponseBody() {
+        }
+        
+        public CreateShelveTaskTestResponseBody(bool CreateShelveTaskTestResult, string strTaskNo, string strErrMsg) {
+            this.CreateShelveTaskTestResult = CreateShelveTaskTestResult;
+            this.strTaskNo = strTaskNo;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class WriteLogRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="WriteLog", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.WriteLogRequestBody Body;
+        
+        public WriteLogRequest() {
+        }
+        
+        public WriteLogRequest(WMS.WebService.WriteLogRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class WriteLogRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string strLog;
+        
+        public WriteLogRequestBody() {
+        }
+        
+        public WriteLogRequestBody(string strLog) {
+            this.strLog = strLog;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class WriteLogResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="WriteLogResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.WriteLogResponseBody Body;
+        
+        public WriteLogResponse() {
+        }
+        
+        public WriteLogResponse(WMS.WebService.WriteLogResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class WriteLogResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool WriteLogResult;
+        
+        public WriteLogResponseBody() {
+        }
+        
+        public WriteLogResponseBody(bool WriteLogResult) {
+            this.WriteLogResult = WriteLogResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class TestMaterialOuterLabelRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestMaterialOuterLabel", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.TestMaterialOuterLabelRequestBody Body;
+        
+        public TestMaterialOuterLabelRequest() {
+        }
+        
+        public TestMaterialOuterLabelRequest(WMS.WebService.TestMaterialOuterLabelRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class TestMaterialOuterLabelRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.MaterialOuterLabel model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public TestMaterialOuterLabelRequestBody() {
+        }
+        
+        public TestMaterialOuterLabelRequestBody(WMS.WebService.MaterialOuterLabel model, string strError) {
+            this.model = model;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class TestMaterialOuterLabelResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestMaterialOuterLabelResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.TestMaterialOuterLabelResponseBody Body;
+        
+        public TestMaterialOuterLabelResponse() {
+        }
+        
+        public TestMaterialOuterLabelResponse(WMS.WebService.TestMaterialOuterLabelResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class TestMaterialOuterLabelResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string TestMaterialOuterLabelResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public TestMaterialOuterLabelResponseBody() {
+        }
+        
+        public TestMaterialOuterLabelResponseBody(string TestMaterialOuterLabelResult, string strError) {
+            this.TestMaterialOuterLabelResult = TestMaterialOuterLabelResult;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class TestMaterialInnerLabelRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestMaterialInnerLabel", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.TestMaterialInnerLabelRequestBody Body;
+        
+        public TestMaterialInnerLabelRequest() {
+        }
+        
+        public TestMaterialInnerLabelRequest(WMS.WebService.TestMaterialInnerLabelRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class TestMaterialInnerLabelRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.MaterialInnerLabel model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public TestMaterialInnerLabelRequestBody() {
+        }
+        
+        public TestMaterialInnerLabelRequestBody(WMS.WebService.MaterialInnerLabel model, string strError) {
+            this.model = model;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class TestMaterialInnerLabelResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestMaterialInnerLabelResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.TestMaterialInnerLabelResponseBody Body;
+        
+        public TestMaterialInnerLabelResponse() {
+        }
+        
+        public TestMaterialInnerLabelResponse(WMS.WebService.TestMaterialInnerLabelResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class TestMaterialInnerLabelResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string TestMaterialInnerLabelResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public TestMaterialInnerLabelResponseBody() {
+        }
+        
+        public TestMaterialInnerLabelResponseBody(string TestMaterialInnerLabelResult, string strError) {
+            this.TestMaterialInnerLabelResult = TestMaterialInnerLabelResult;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class TestProductLabelRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestProductLabel", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.TestProductLabelRequestBody Body;
+        
+        public TestProductLabelRequest() {
+        }
+        
+        public TestProductLabelRequest(WMS.WebService.TestProductLabelRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class TestProductLabelRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.ProductLabel_Model model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public TestProductLabelRequestBody() {
+        }
+        
+        public TestProductLabelRequestBody(WMS.WebService.ProductLabel_Model model, string strError) {
+            this.model = model;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class TestProductLabelResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestProductLabelResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.TestProductLabelResponseBody Body;
+        
+        public TestProductLabelResponse() {
+        }
+        
+        public TestProductLabelResponse(WMS.WebService.TestProductLabelResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class TestProductLabelResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string TestProductLabelResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public TestProductLabelResponseBody() {
+        }
+        
+        public TestProductLabelResponseBody(string TestProductLabelResult, string strError) {
+            this.TestProductLabelResult = TestProductLabelResult;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CheckSerialNoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CheckSerialNo", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.CheckSerialNoRequestBody Body;
+        
+        public CheckSerialNoRequest() {
+        }
+        
+        public CheckSerialNoRequest(WMS.WebService.CheckSerialNoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CheckSerialNoRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string SerialNo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string BatchNo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strErrMsg;
+        
+        public CheckSerialNoRequestBody() {
+        }
+        
+        public CheckSerialNoRequestBody(string SerialNo, string BatchNo, string strErrMsg) {
+            this.SerialNo = SerialNo;
+            this.BatchNo = BatchNo;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CheckSerialNoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CheckSerialNoResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.CheckSerialNoResponseBody Body;
+        
+        public CheckSerialNoResponse() {
+        }
+        
+        public CheckSerialNoResponse(WMS.WebService.CheckSerialNoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CheckSerialNoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool CheckSerialNoResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strErrMsg;
+        
+        public CheckSerialNoResponseBody() {
+        }
+        
+        public CheckSerialNoResponseBody(bool CheckSerialNoResult, string strErrMsg) {
+            this.CheckSerialNoResult = CheckSerialNoResult;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CreateInnerProductBarcodeRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateInnerProductBarcode", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.CreateInnerProductBarcodeRequestBody Body;
+        
+        public CreateInnerProductBarcodeRequest() {
+        }
+        
+        public CreateInnerProductBarcodeRequest(WMS.WebService.CreateInnerProductBarcodeRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreateInnerProductBarcodeRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.ProductLabel_Model labelModel;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int qty;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strErrMsg;
+        
+        public CreateInnerProductBarcodeRequestBody() {
+        }
+        
+        public CreateInnerProductBarcodeRequestBody(WMS.WebService.ProductLabel_Model labelModel, int qty, System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, string strErrMsg) {
+            this.labelModel = labelModel;
+            this.qty = qty;
+            this.label_lst = label_lst;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CreateInnerProductBarcodeResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateInnerProductBarcodeResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.CreateInnerProductBarcodeResponseBody Body;
+        
+        public CreateInnerProductBarcodeResponse() {
+        }
+        
+        public CreateInnerProductBarcodeResponse(WMS.WebService.CreateInnerProductBarcodeResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreateInnerProductBarcodeResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool CreateInnerProductBarcodeResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strErrMsg;
+        
+        public CreateInnerProductBarcodeResponseBody() {
+        }
+        
+        public CreateInnerProductBarcodeResponseBody(bool CreateInnerProductBarcodeResult, System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, string strErrMsg) {
+            this.CreateInnerProductBarcodeResult = CreateInnerProductBarcodeResult;
+            this.label_lst = label_lst;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CreateOuterProductBarcodeRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateOuterProductBarcode", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.CreateOuterProductBarcodeRequestBody Body;
+        
+        public CreateOuterProductBarcodeRequest() {
+        }
+        
+        public CreateOuterProductBarcodeRequest(WMS.WebService.CreateOuterProductBarcodeRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreateOuterProductBarcodeRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.ProductLabel_Model labelModel;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int qty;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strErrMsg;
+        
+        public CreateOuterProductBarcodeRequestBody() {
+        }
+        
+        public CreateOuterProductBarcodeRequestBody(WMS.WebService.ProductLabel_Model labelModel, int qty, System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, string strErrMsg) {
+            this.labelModel = labelModel;
+            this.qty = qty;
+            this.label_lst = label_lst;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CreateOuterProductBarcodeResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateOuterProductBarcodeResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.CreateOuterProductBarcodeResponseBody Body;
+        
+        public CreateOuterProductBarcodeResponse() {
+        }
+        
+        public CreateOuterProductBarcodeResponse(WMS.WebService.CreateOuterProductBarcodeResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreateOuterProductBarcodeResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool CreateOuterProductBarcodeResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strErrMsg;
+        
+        public CreateOuterProductBarcodeResponseBody() {
+        }
+        
+        public CreateOuterProductBarcodeResponseBody(bool CreateOuterProductBarcodeResult, System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, string strErrMsg) {
+            this.CreateOuterProductBarcodeResult = CreateOuterProductBarcodeResult;
+            this.label_lst = label_lst;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ImportStockRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ImportStock", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.ImportStockRequestBody Body;
+        
+        public ImportStockRequest() {
+        }
+        
+        public ImportStockRequest(WMS.WebService.ImportStockRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ImportStockRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public System.Collections.Generic.List<WMS.WebService.Stock_Model> dt;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strErrMsg;
+        
+        public ImportStockRequestBody() {
+        }
+        
+        public ImportStockRequestBody(System.Collections.Generic.List<WMS.WebService.Stock_Model> dt, string strErrMsg) {
+            this.dt = dt;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ImportStockResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ImportStockResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.ImportStockResponseBody Body;
+        
+        public ImportStockResponse() {
+        }
+        
+        public ImportStockResponse(WMS.WebService.ImportStockResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ImportStockResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool ImportStockResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strErrMsg;
+        
+        public ImportStockResponseBody() {
+        }
+        
+        public ImportStockResponseBody(bool ImportStockResult, string strErrMsg) {
+            this.ImportStockResult = ImportStockResult;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class RemoveStockRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="RemoveStock", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.RemoveStockRequestBody Body;
+        
+        public RemoveStockRequest() {
+        }
+        
+        public RemoveStockRequest(WMS.WebService.RemoveStockRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class RemoveStockRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public System.Collections.Generic.List<WMS.WebService.Stock_Model> dt;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strErrMsg;
+        
+        public RemoveStockRequestBody() {
+        }
+        
+        public RemoveStockRequestBody(System.Collections.Generic.List<WMS.WebService.Stock_Model> dt, string strErrMsg) {
+            this.dt = dt;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class RemoveStockResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="RemoveStockResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.RemoveStockResponseBody Body;
+        
+        public RemoveStockResponse() {
+        }
+        
+        public RemoveStockResponse(WMS.WebService.RemoveStockResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class RemoveStockResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool RemoveStockResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strErrMsg;
+        
+        public RemoveStockResponseBody() {
+        }
+        
+        public RemoveStockResponseBody(bool RemoveStockResult, string strErrMsg) {
+            this.RemoveStockResult = RemoveStockResult;
+            this.strErrMsg = strErrMsg;
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -22082,6 +23143,1002 @@ namespace WMS.WebService {
             this.QueryMaterialBarcodeReportRowDetailResult = QueryMaterialBarcodeReportRowDetailResult;
             this.lst = lst;
             this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetFastInNotHavePOInfoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetFastInNotHavePOInfo", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetFastInNotHavePOInfoRequestBody Body;
+        
+        public GetFastInNotHavePOInfoRequest() {
+        }
+        
+        public GetFastInNotHavePOInfoRequest(WMS.WebService.GetFastInNotHavePOInfoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetFastInNotHavePOInfoRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.Task_Model taskmo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.DividPage dividpage;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public System.Collections.Generic.List<WMS.WebService.Task_Model> lsttask;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strErrMsg;
+        
+        public GetFastInNotHavePOInfoRequestBody() {
+        }
+        
+        public GetFastInNotHavePOInfoRequestBody(WMS.WebService.Task_Model taskmo, WMS.WebService.DividPage dividpage, System.Collections.Generic.List<WMS.WebService.Task_Model> lsttask, string strErrMsg) {
+            this.taskmo = taskmo;
+            this.dividpage = dividpage;
+            this.lsttask = lsttask;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetFastInNotHavePOInfoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetFastInNotHavePOInfoResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetFastInNotHavePOInfoResponseBody Body;
+        
+        public GetFastInNotHavePOInfoResponse() {
+        }
+        
+        public GetFastInNotHavePOInfoResponse(WMS.WebService.GetFastInNotHavePOInfoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetFastInNotHavePOInfoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetFastInNotHavePOInfoResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.DividPage dividpage;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public System.Collections.Generic.List<WMS.WebService.Task_Model> lsttask;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strErrMsg;
+        
+        public GetFastInNotHavePOInfoResponseBody() {
+        }
+        
+        public GetFastInNotHavePOInfoResponseBody(bool GetFastInNotHavePOInfoResult, WMS.WebService.DividPage dividpage, System.Collections.Generic.List<WMS.WebService.Task_Model> lsttask, string strErrMsg) {
+            this.GetFastInNotHavePOInfoResult = GetFastInNotHavePOInfoResult;
+            this.dividpage = dividpage;
+            this.lsttask = lsttask;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InsetMaterialDetailRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsetMaterialDetail", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.InsetMaterialDetailRequestBody Body;
+        
+        public InsetMaterialDetailRequest() {
+        }
+        
+        public InsetMaterialDetailRequest(WMS.WebService.InsetMaterialDetailRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class InsetMaterialDetailRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public System.Collections.Generic.List<WMS.WebService.TaskDetails_Model> tDtails;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string msg;
+        
+        public InsetMaterialDetailRequestBody() {
+        }
+        
+        public InsetMaterialDetailRequestBody(System.Collections.Generic.List<WMS.WebService.TaskDetails_Model> tDtails, string msg) {
+            this.tDtails = tDtails;
+            this.msg = msg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InsetMaterialDetailResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsetMaterialDetailResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.InsetMaterialDetailResponseBody Body;
+        
+        public InsetMaterialDetailResponse() {
+        }
+        
+        public InsetMaterialDetailResponse(WMS.WebService.InsetMaterialDetailResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class InsetMaterialDetailResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool InsetMaterialDetailResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string msg;
+        
+        public InsetMaterialDetailResponseBody() {
+        }
+        
+        public InsetMaterialDetailResponseBody(bool InsetMaterialDetailResult, string msg) {
+            this.InsetMaterialDetailResult = InsetMaterialDetailResult;
+            this.msg = msg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTempMaterialNameRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialName", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetTempMaterialNameRequestBody Body;
+        
+        public GetTempMaterialNameRequest() {
+        }
+        
+        public GetTempMaterialNameRequest(WMS.WebService.GetTempMaterialNameRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTempMaterialNameRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string materialNo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string materialDESC;
+        
+        public GetTempMaterialNameRequestBody() {
+        }
+        
+        public GetTempMaterialNameRequestBody(string materialNo, string materialDESC) {
+            this.materialNo = materialNo;
+            this.materialDESC = materialDESC;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTempMaterialNameResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialNameResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetTempMaterialNameResponseBody Body;
+        
+        public GetTempMaterialNameResponse() {
+        }
+        
+        public GetTempMaterialNameResponse(WMS.WebService.GetTempMaterialNameResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTempMaterialNameResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetTempMaterialNameResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string materialDESC;
+        
+        public GetTempMaterialNameResponseBody() {
+        }
+        
+        public GetTempMaterialNameResponseBody(bool GetTempMaterialNameResult, string materialDESC) {
+            this.GetTempMaterialNameResult = GetTempMaterialNameResult;
+            this.materialDESC = materialDESC;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ExistsTempMaterialByMaterialNoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistsTempMaterialByMaterialNo", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.ExistsTempMaterialByMaterialNoRequestBody Body;
+        
+        public ExistsTempMaterialByMaterialNoRequest() {
+        }
+        
+        public ExistsTempMaterialByMaterialNoRequest(WMS.WebService.ExistsTempMaterialByMaterialNoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ExistsTempMaterialByMaterialNoRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string materialNo;
+        
+        public ExistsTempMaterialByMaterialNoRequestBody() {
+        }
+        
+        public ExistsTempMaterialByMaterialNoRequestBody(string materialNo) {
+            this.materialNo = materialNo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ExistsTempMaterialByMaterialNoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistsTempMaterialByMaterialNoResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.ExistsTempMaterialByMaterialNoResponseBody Body;
+        
+        public ExistsTempMaterialByMaterialNoResponse() {
+        }
+        
+        public ExistsTempMaterialByMaterialNoResponse(WMS.WebService.ExistsTempMaterialByMaterialNoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ExistsTempMaterialByMaterialNoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool ExistsTempMaterialByMaterialNoResult;
+        
+        public ExistsTempMaterialByMaterialNoResponseBody() {
+        }
+        
+        public ExistsTempMaterialByMaterialNoResponseBody(bool ExistsTempMaterialByMaterialNoResult) {
+            this.ExistsTempMaterialByMaterialNoResult = ExistsTempMaterialByMaterialNoResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTempMaterialByTempNoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialByTempNo", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetTempMaterialByTempNoRequestBody Body;
+        
+        public GetTempMaterialByTempNoRequest() {
+        }
+        
+        public GetTempMaterialByTempNoRequest(WMS.WebService.GetTempMaterialByTempNoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTempMaterialByTempNoRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string strMaterialNo;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.TempMaterial tempmaterial;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strErrMsg;
+        
+        public GetTempMaterialByTempNoRequestBody() {
+        }
+        
+        public GetTempMaterialByTempNoRequestBody(string strMaterialNo, WMS.WebService.TempMaterial tempmaterial, string strErrMsg) {
+            this.strMaterialNo = strMaterialNo;
+            this.tempmaterial = tempmaterial;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTempMaterialByTempNoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialByTempNoResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetTempMaterialByTempNoResponseBody Body;
+        
+        public GetTempMaterialByTempNoResponse() {
+        }
+        
+        public GetTempMaterialByTempNoResponse(WMS.WebService.GetTempMaterialByTempNoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTempMaterialByTempNoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetTempMaterialByTempNoResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.TempMaterial tempmaterial;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strErrMsg;
+        
+        public GetTempMaterialByTempNoResponseBody() {
+        }
+        
+        public GetTempMaterialByTempNoResponseBody(bool GetTempMaterialByTempNoResult, WMS.WebService.TempMaterial tempmaterial, string strErrMsg) {
+            this.GetTempMaterialByTempNoResult = GetTempMaterialByTempNoResult;
+            this.tempmaterial = tempmaterial;
+            this.strErrMsg = strErrMsg;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ExistsTempMaterialNoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistsTempMaterialNo", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.ExistsTempMaterialNoRequestBody Body;
+        
+        public ExistsTempMaterialNoRequest() {
+        }
+        
+        public ExistsTempMaterialNoRequest(WMS.WebService.ExistsTempMaterialNoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ExistsTempMaterialNoRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public bool bIncludeDel;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strError;
+        
+        public ExistsTempMaterialNoRequestBody() {
+        }
+        
+        public ExistsTempMaterialNoRequestBody(WMS.WebService.TempMaterialInfo model, bool bIncludeDel, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.bIncludeDel = bIncludeDel;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ExistsTempMaterialNoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistsTempMaterialNoResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.ExistsTempMaterialNoResponseBody Body;
+        
+        public ExistsTempMaterialNoResponse() {
+        }
+        
+        public ExistsTempMaterialNoResponse(WMS.WebService.ExistsTempMaterialNoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ExistsTempMaterialNoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool ExistsTempMaterialNoResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public ExistsTempMaterialNoResponseBody() {
+        }
+        
+        public ExistsTempMaterialNoResponseBody(bool ExistsTempMaterialNoResult, string strError) {
+            this.ExistsTempMaterialNoResult = ExistsTempMaterialNoResult;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class SaveTempMaterialRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="SaveTempMaterial", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.SaveTempMaterialRequestBody Body;
+        
+        public SaveTempMaterialRequest() {
+        }
+        
+        public SaveTempMaterialRequest(WMS.WebService.SaveTempMaterialRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class SaveTempMaterialRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public SaveTempMaterialRequestBody() {
+        }
+        
+        public SaveTempMaterialRequestBody(WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class SaveTempMaterialResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="SaveTempMaterialResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.SaveTempMaterialResponseBody Body;
+        
+        public SaveTempMaterialResponse() {
+        }
+        
+        public SaveTempMaterialResponse(WMS.WebService.SaveTempMaterialResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class SaveTempMaterialResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool SaveTempMaterialResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public SaveTempMaterialResponseBody() {
+        }
+        
+        public SaveTempMaterialResponseBody(bool SaveTempMaterialResult, WMS.WebService.TempMaterialInfo model, string strError) {
+            this.SaveTempMaterialResult = SaveTempMaterialResult;
+            this.model = model;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteTempMaterialByIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteTempMaterialByID", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.DeleteTempMaterialByIDRequestBody Body;
+        
+        public DeleteTempMaterialByIDRequest() {
+        }
+        
+        public DeleteTempMaterialByIDRequest(WMS.WebService.DeleteTempMaterialByIDRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeleteTempMaterialByIDRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public DeleteTempMaterialByIDRequestBody() {
+        }
+        
+        public DeleteTempMaterialByIDRequestBody(WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteTempMaterialByIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteTempMaterialByIDResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.DeleteTempMaterialByIDResponseBody Body;
+        
+        public DeleteTempMaterialByIDResponse() {
+        }
+        
+        public DeleteTempMaterialByIDResponse(WMS.WebService.DeleteTempMaterialByIDResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeleteTempMaterialByIDResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool DeleteTempMaterialByIDResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public DeleteTempMaterialByIDResponseBody() {
+        }
+        
+        public DeleteTempMaterialByIDResponseBody(bool DeleteTempMaterialByIDResult, string strError) {
+            this.DeleteTempMaterialByIDResult = DeleteTempMaterialByIDResult;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTempMaterialByIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialByID", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetTempMaterialByIDRequestBody Body;
+        
+        public GetTempMaterialByIDRequest() {
+        }
+        
+        public GetTempMaterialByIDRequest(WMS.WebService.GetTempMaterialByIDRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTempMaterialByIDRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetTempMaterialByIDRequestBody() {
+        }
+        
+        public GetTempMaterialByIDRequestBody(WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTempMaterialByIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialByIDResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetTempMaterialByIDResponseBody Body;
+        
+        public GetTempMaterialByIDResponse() {
+        }
+        
+        public GetTempMaterialByIDResponse(WMS.WebService.GetTempMaterialByIDResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTempMaterialByIDResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetTempMaterialByIDResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetTempMaterialByIDResponseBody() {
+        }
+        
+        public GetTempMaterialByIDResponseBody(bool GetTempMaterialByIDResult, WMS.WebService.TempMaterialInfo model, string strError) {
+            this.GetTempMaterialByIDResult = GetTempMaterialByIDResult;
+            this.model = model;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTempMaterialListByPageRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialListByPage", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetTempMaterialListByPageRequestBody Body;
+        
+        public GetTempMaterialListByPageRequest() {
+        }
+        
+        public GetTempMaterialListByPageRequest(WMS.WebService.GetTempMaterialListByPageRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTempMaterialListByPageRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public System.Collections.Generic.List<WMS.WebService.TempMaterialInfo> modelList;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.DividPage page;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string strError;
+        
+        public GetTempMaterialListByPageRequestBody() {
+        }
+        
+        public GetTempMaterialListByPageRequestBody(System.Collections.Generic.List<WMS.WebService.TempMaterialInfo> modelList, WMS.WebService.TempMaterialInfo model, WMS.WebService.DividPage page, WMS.WebService.UserInfo user, string strError) {
+            this.modelList = modelList;
+            this.model = model;
+            this.page = page;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTempMaterialListByPageResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialListByPageResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetTempMaterialListByPageResponseBody Body;
+        
+        public GetTempMaterialListByPageResponse() {
+        }
+        
+        public GetTempMaterialListByPageResponse(WMS.WebService.GetTempMaterialListByPageResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTempMaterialListByPageResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetTempMaterialListByPageResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public System.Collections.Generic.List<WMS.WebService.TempMaterialInfo> modelList;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.DividPage page;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strError;
+        
+        public GetTempMaterialListByPageResponseBody() {
+        }
+        
+        public GetTempMaterialListByPageResponseBody(bool GetTempMaterialListByPageResult, System.Collections.Generic.List<WMS.WebService.TempMaterialInfo> modelList, WMS.WebService.DividPage page, string strError) {
+            this.GetTempMaterialListByPageResult = GetTempMaterialListByPageResult;
+            this.modelList = modelList;
+            this.page = page;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetMaterialInfoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetMaterialInfo", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetMaterialInfoRequestBody Body;
+        
+        public GetMaterialInfoRequest() {
+        }
+        
+        public GetMaterialInfoRequest(WMS.WebService.GetMaterialInfoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetMaterialInfoRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int type;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strError;
+        
+        public GetMaterialInfoRequestBody() {
+        }
+        
+        public GetMaterialInfoRequestBody(WMS.WebService.TempMaterialInfo model, int type, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.type = type;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetMaterialInfoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetMaterialInfoResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetMaterialInfoResponseBody Body;
+        
+        public GetMaterialInfoResponse() {
+        }
+        
+        public GetMaterialInfoResponse(WMS.WebService.GetMaterialInfoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetMaterialInfoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetMaterialInfoResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetMaterialInfoResponseBody() {
+        }
+        
+        public GetMaterialInfoResponseBody(bool GetMaterialInfoResult, WMS.WebService.TempMaterialInfo model, string strError) {
+            this.GetMaterialInfoResult = GetMaterialInfoResult;
+            this.model = model;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTempMaterialNoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialNo", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetTempMaterialNoRequestBody Body;
+        
+        public GetTempMaterialNoRequest() {
+        }
+        
+        public GetTempMaterialNoRequest(WMS.WebService.GetTempMaterialNoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTempMaterialNoRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetTempMaterialNoRequestBody() {
+        }
+        
+        public GetTempMaterialNoRequestBody(WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetTempMaterialNoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialNoResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetTempMaterialNoResponseBody Body;
+        
+        public GetTempMaterialNoResponse() {
+        }
+        
+        public GetTempMaterialNoResponse(WMS.WebService.GetTempMaterialNoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetTempMaterialNoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetTempMaterialNoResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.TempMaterialInfo model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetTempMaterialNoResponseBody() {
+        }
+        
+        public GetTempMaterialNoResponseBody(bool GetTempMaterialNoResult, WMS.WebService.TempMaterialInfo model, string strError) {
+            this.GetTempMaterialNoResult = GetTempMaterialNoResult;
+            this.model = model;
+            this.strError = strError;
         }
     }
     
@@ -27969,890 +30026,6 @@ namespace WMS.WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetOutSideByDeliveryToSRMRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetOutSideByDeliveryToSRM", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetOutSideByDeliveryToSRMRequestBody Body;
-        
-        public GetOutSideByDeliveryToSRMRequest() {
-        }
-        
-        public GetOutSideByDeliveryToSRMRequest(WMS.WebService.GetOutSideByDeliveryToSRMRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetOutSideByDeliveryToSRMRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.DeliveryReceive_Model DeliveryModel;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.UserInfo userModel;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strErrMsg;
-        
-        public GetOutSideByDeliveryToSRMRequestBody() {
-        }
-        
-        public GetOutSideByDeliveryToSRMRequestBody(WMS.WebService.DeliveryReceive_Model DeliveryModel, WMS.WebService.UserInfo userModel, string strErrMsg) {
-            this.DeliveryModel = DeliveryModel;
-            this.userModel = userModel;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetOutSideByDeliveryToSRMResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetOutSideByDeliveryToSRMResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetOutSideByDeliveryToSRMResponseBody Body;
-        
-        public GetOutSideByDeliveryToSRMResponse() {
-        }
-        
-        public GetOutSideByDeliveryToSRMResponse(WMS.WebService.GetOutSideByDeliveryToSRMResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetOutSideByDeliveryToSRMResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool GetOutSideByDeliveryToSRMResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.DeliveryReceive_Model DeliveryModel;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strErrMsg;
-        
-        public GetOutSideByDeliveryToSRMResponseBody() {
-        }
-        
-        public GetOutSideByDeliveryToSRMResponseBody(bool GetOutSideByDeliveryToSRMResult, WMS.WebService.DeliveryReceive_Model DeliveryModel, string strErrMsg) {
-            this.GetOutSideByDeliveryToSRMResult = GetOutSideByDeliveryToSRMResult;
-            this.DeliveryModel = DeliveryModel;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CreateShelveTaskTestRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateShelveTaskTest", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.CreateShelveTaskTestRequestBody Body;
-        
-        public CreateShelveTaskTestRequest() {
-        }
-        
-        public CreateShelveTaskTestRequest(WMS.WebService.CreateShelveTaskTestRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CreateShelveTaskTestRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string vouchcode;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string vouchtype;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string cwhcode;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public WMS.WebService.UserInfo userModel;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string strTaskNo;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string strErrMsg;
-        
-        public CreateShelveTaskTestRequestBody() {
-        }
-        
-        public CreateShelveTaskTestRequestBody(string vouchcode, string vouchtype, string cwhcode, WMS.WebService.UserInfo userModel, string strTaskNo, string strErrMsg) {
-            this.vouchcode = vouchcode;
-            this.vouchtype = vouchtype;
-            this.cwhcode = cwhcode;
-            this.userModel = userModel;
-            this.strTaskNo = strTaskNo;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CreateShelveTaskTestResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateShelveTaskTestResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.CreateShelveTaskTestResponseBody Body;
-        
-        public CreateShelveTaskTestResponse() {
-        }
-        
-        public CreateShelveTaskTestResponse(WMS.WebService.CreateShelveTaskTestResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CreateShelveTaskTestResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool CreateShelveTaskTestResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strTaskNo;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strErrMsg;
-        
-        public CreateShelveTaskTestResponseBody() {
-        }
-        
-        public CreateShelveTaskTestResponseBody(bool CreateShelveTaskTestResult, string strTaskNo, string strErrMsg) {
-            this.CreateShelveTaskTestResult = CreateShelveTaskTestResult;
-            this.strTaskNo = strTaskNo;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class WriteLogRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="WriteLog", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.WriteLogRequestBody Body;
-        
-        public WriteLogRequest() {
-        }
-        
-        public WriteLogRequest(WMS.WebService.WriteLogRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class WriteLogRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string strLog;
-        
-        public WriteLogRequestBody() {
-        }
-        
-        public WriteLogRequestBody(string strLog) {
-            this.strLog = strLog;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class WriteLogResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="WriteLogResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.WriteLogResponseBody Body;
-        
-        public WriteLogResponse() {
-        }
-        
-        public WriteLogResponse(WMS.WebService.WriteLogResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class WriteLogResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool WriteLogResult;
-        
-        public WriteLogResponseBody() {
-        }
-        
-        public WriteLogResponseBody(bool WriteLogResult) {
-            this.WriteLogResult = WriteLogResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class TestMaterialOuterLabelRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestMaterialOuterLabel", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.TestMaterialOuterLabelRequestBody Body;
-        
-        public TestMaterialOuterLabelRequest() {
-        }
-        
-        public TestMaterialOuterLabelRequest(WMS.WebService.TestMaterialOuterLabelRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class TestMaterialOuterLabelRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.MaterialOuterLabel model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strError;
-        
-        public TestMaterialOuterLabelRequestBody() {
-        }
-        
-        public TestMaterialOuterLabelRequestBody(WMS.WebService.MaterialOuterLabel model, string strError) {
-            this.model = model;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class TestMaterialOuterLabelResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestMaterialOuterLabelResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.TestMaterialOuterLabelResponseBody Body;
-        
-        public TestMaterialOuterLabelResponse() {
-        }
-        
-        public TestMaterialOuterLabelResponse(WMS.WebService.TestMaterialOuterLabelResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class TestMaterialOuterLabelResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string TestMaterialOuterLabelResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strError;
-        
-        public TestMaterialOuterLabelResponseBody() {
-        }
-        
-        public TestMaterialOuterLabelResponseBody(string TestMaterialOuterLabelResult, string strError) {
-            this.TestMaterialOuterLabelResult = TestMaterialOuterLabelResult;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class TestMaterialInnerLabelRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestMaterialInnerLabel", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.TestMaterialInnerLabelRequestBody Body;
-        
-        public TestMaterialInnerLabelRequest() {
-        }
-        
-        public TestMaterialInnerLabelRequest(WMS.WebService.TestMaterialInnerLabelRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class TestMaterialInnerLabelRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.MaterialInnerLabel model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strError;
-        
-        public TestMaterialInnerLabelRequestBody() {
-        }
-        
-        public TestMaterialInnerLabelRequestBody(WMS.WebService.MaterialInnerLabel model, string strError) {
-            this.model = model;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class TestMaterialInnerLabelResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestMaterialInnerLabelResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.TestMaterialInnerLabelResponseBody Body;
-        
-        public TestMaterialInnerLabelResponse() {
-        }
-        
-        public TestMaterialInnerLabelResponse(WMS.WebService.TestMaterialInnerLabelResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class TestMaterialInnerLabelResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string TestMaterialInnerLabelResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strError;
-        
-        public TestMaterialInnerLabelResponseBody() {
-        }
-        
-        public TestMaterialInnerLabelResponseBody(string TestMaterialInnerLabelResult, string strError) {
-            this.TestMaterialInnerLabelResult = TestMaterialInnerLabelResult;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class TestProductLabelRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestProductLabel", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.TestProductLabelRequestBody Body;
-        
-        public TestProductLabelRequest() {
-        }
-        
-        public TestProductLabelRequest(WMS.WebService.TestProductLabelRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class TestProductLabelRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.ProductLabel_Model model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strError;
-        
-        public TestProductLabelRequestBody() {
-        }
-        
-        public TestProductLabelRequestBody(WMS.WebService.ProductLabel_Model model, string strError) {
-            this.model = model;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class TestProductLabelResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="TestProductLabelResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.TestProductLabelResponseBody Body;
-        
-        public TestProductLabelResponse() {
-        }
-        
-        public TestProductLabelResponse(WMS.WebService.TestProductLabelResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class TestProductLabelResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string TestProductLabelResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strError;
-        
-        public TestProductLabelResponseBody() {
-        }
-        
-        public TestProductLabelResponseBody(string TestProductLabelResult, string strError) {
-            this.TestProductLabelResult = TestProductLabelResult;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CheckSerialNoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CheckSerialNo", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.CheckSerialNoRequestBody Body;
-        
-        public CheckSerialNoRequest() {
-        }
-        
-        public CheckSerialNoRequest(WMS.WebService.CheckSerialNoRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CheckSerialNoRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string SerialNo;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string BatchNo;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strErrMsg;
-        
-        public CheckSerialNoRequestBody() {
-        }
-        
-        public CheckSerialNoRequestBody(string SerialNo, string BatchNo, string strErrMsg) {
-            this.SerialNo = SerialNo;
-            this.BatchNo = BatchNo;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CheckSerialNoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CheckSerialNoResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.CheckSerialNoResponseBody Body;
-        
-        public CheckSerialNoResponse() {
-        }
-        
-        public CheckSerialNoResponse(WMS.WebService.CheckSerialNoResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CheckSerialNoResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool CheckSerialNoResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strErrMsg;
-        
-        public CheckSerialNoResponseBody() {
-        }
-        
-        public CheckSerialNoResponseBody(bool CheckSerialNoResult, string strErrMsg) {
-            this.CheckSerialNoResult = CheckSerialNoResult;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CreateInnerProductBarcodeRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateInnerProductBarcode", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.CreateInnerProductBarcodeRequestBody Body;
-        
-        public CreateInnerProductBarcodeRequest() {
-        }
-        
-        public CreateInnerProductBarcodeRequest(WMS.WebService.CreateInnerProductBarcodeRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CreateInnerProductBarcodeRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.ProductLabel_Model labelModel;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public int qty;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string strErrMsg;
-        
-        public CreateInnerProductBarcodeRequestBody() {
-        }
-        
-        public CreateInnerProductBarcodeRequestBody(WMS.WebService.ProductLabel_Model labelModel, int qty, System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, string strErrMsg) {
-            this.labelModel = labelModel;
-            this.qty = qty;
-            this.label_lst = label_lst;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CreateInnerProductBarcodeResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateInnerProductBarcodeResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.CreateInnerProductBarcodeResponseBody Body;
-        
-        public CreateInnerProductBarcodeResponse() {
-        }
-        
-        public CreateInnerProductBarcodeResponse(WMS.WebService.CreateInnerProductBarcodeResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CreateInnerProductBarcodeResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool CreateInnerProductBarcodeResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strErrMsg;
-        
-        public CreateInnerProductBarcodeResponseBody() {
-        }
-        
-        public CreateInnerProductBarcodeResponseBody(bool CreateInnerProductBarcodeResult, System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, string strErrMsg) {
-            this.CreateInnerProductBarcodeResult = CreateInnerProductBarcodeResult;
-            this.label_lst = label_lst;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CreateOuterProductBarcodeRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateOuterProductBarcode", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.CreateOuterProductBarcodeRequestBody Body;
-        
-        public CreateOuterProductBarcodeRequest() {
-        }
-        
-        public CreateOuterProductBarcodeRequest(WMS.WebService.CreateOuterProductBarcodeRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CreateOuterProductBarcodeRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.ProductLabel_Model labelModel;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public int qty;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string strErrMsg;
-        
-        public CreateOuterProductBarcodeRequestBody() {
-        }
-        
-        public CreateOuterProductBarcodeRequestBody(WMS.WebService.ProductLabel_Model labelModel, int qty, System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, string strErrMsg) {
-            this.labelModel = labelModel;
-            this.qty = qty;
-            this.label_lst = label_lst;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CreateOuterProductBarcodeResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateOuterProductBarcodeResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.CreateOuterProductBarcodeResponseBody Body;
-        
-        public CreateOuterProductBarcodeResponse() {
-        }
-        
-        public CreateOuterProductBarcodeResponse(WMS.WebService.CreateOuterProductBarcodeResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CreateOuterProductBarcodeResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool CreateOuterProductBarcodeResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strErrMsg;
-        
-        public CreateOuterProductBarcodeResponseBody() {
-        }
-        
-        public CreateOuterProductBarcodeResponseBody(bool CreateOuterProductBarcodeResult, System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, string strErrMsg) {
-            this.CreateOuterProductBarcodeResult = CreateOuterProductBarcodeResult;
-            this.label_lst = label_lst;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class ImportStockRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="ImportStock", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.ImportStockRequestBody Body;
-        
-        public ImportStockRequest() {
-        }
-        
-        public ImportStockRequest(WMS.WebService.ImportStockRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class ImportStockRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public System.Collections.Generic.List<WMS.WebService.Stock_Model> dt;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strErrMsg;
-        
-        public ImportStockRequestBody() {
-        }
-        
-        public ImportStockRequestBody(System.Collections.Generic.List<WMS.WebService.Stock_Model> dt, string strErrMsg) {
-            this.dt = dt;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class ImportStockResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="ImportStockResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.ImportStockResponseBody Body;
-        
-        public ImportStockResponse() {
-        }
-        
-        public ImportStockResponse(WMS.WebService.ImportStockResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class ImportStockResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool ImportStockResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strErrMsg;
-        
-        public ImportStockResponseBody() {
-        }
-        
-        public ImportStockResponseBody(bool ImportStockResult, string strErrMsg) {
-            this.ImportStockResult = ImportStockResult;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class RemoveStockRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="RemoveStock", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.RemoveStockRequestBody Body;
-        
-        public RemoveStockRequest() {
-        }
-        
-        public RemoveStockRequest(WMS.WebService.RemoveStockRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class RemoveStockRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public System.Collections.Generic.List<WMS.WebService.Stock_Model> dt;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strErrMsg;
-        
-        public RemoveStockRequestBody() {
-        }
-        
-        public RemoveStockRequestBody(System.Collections.Generic.List<WMS.WebService.Stock_Model> dt, string strErrMsg) {
-            this.dt = dt;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class RemoveStockResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="RemoveStockResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.RemoveStockResponseBody Body;
-        
-        public RemoveStockResponse() {
-        }
-        
-        public RemoveStockResponse(WMS.WebService.RemoveStockResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class RemoveStockResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool RemoveStockResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strErrMsg;
-        
-        public RemoveStockResponseBody() {
-        }
-        
-        public RemoveStockResponseBody(bool RemoveStockResult, string strErrMsg) {
-            this.RemoveStockResult = RemoveStockResult;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class HelloWorldRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorld", Namespace="http://tempuri.org/", Order=0)]
@@ -33486,6 +34659,1038 @@ namespace WMS.WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ExistspCodeRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistspCode", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.ExistspCodeRequestBody Body;
+        
+        public ExistspCodeRequest() {
+        }
+        
+        public ExistspCodeRequest(WMS.WebService.ExistspCodeRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ExistspCodeRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.Preparation model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public bool bIncludeDel;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strError;
+        
+        public ExistspCodeRequestBody() {
+        }
+        
+        public ExistspCodeRequestBody(WMS.WebService.Preparation model, bool bIncludeDel, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.bIncludeDel = bIncludeDel;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ExistspCodeResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistspCodeResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.ExistspCodeResponseBody Body;
+        
+        public ExistspCodeResponse() {
+        }
+        
+        public ExistspCodeResponse(WMS.WebService.ExistspCodeResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ExistspCodeResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool ExistspCodeResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public ExistspCodeResponseBody() {
+        }
+        
+        public ExistspCodeResponseBody(bool ExistspCodeResult, string strError) {
+            this.ExistspCodeResult = ExistspCodeResult;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class SavePreparationRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="SavePreparation", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.SavePreparationRequestBody Body;
+        
+        public SavePreparationRequest() {
+        }
+        
+        public SavePreparationRequest(WMS.WebService.SavePreparationRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class SavePreparationRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.Preparation model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public SavePreparationRequestBody() {
+        }
+        
+        public SavePreparationRequestBody(WMS.WebService.Preparation model, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class SavePreparationResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="SavePreparationResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.SavePreparationResponseBody Body;
+        
+        public SavePreparationResponse() {
+        }
+        
+        public SavePreparationResponse(WMS.WebService.SavePreparationResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class SavePreparationResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool SavePreparationResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.Preparation model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public SavePreparationResponseBody() {
+        }
+        
+        public SavePreparationResponseBody(bool SavePreparationResult, WMS.WebService.Preparation model, string strError) {
+            this.SavePreparationResult = SavePreparationResult;
+            this.model = model;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeletePreparationByIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeletePreparationByID", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.DeletePreparationByIDRequestBody Body;
+        
+        public DeletePreparationByIDRequest() {
+        }
+        
+        public DeletePreparationByIDRequest(WMS.WebService.DeletePreparationByIDRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeletePreparationByIDRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.Preparation model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public DeletePreparationByIDRequestBody() {
+        }
+        
+        public DeletePreparationByIDRequestBody(WMS.WebService.Preparation model, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeletePreparationByIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeletePreparationByIDResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.DeletePreparationByIDResponseBody Body;
+        
+        public DeletePreparationByIDResponse() {
+        }
+        
+        public DeletePreparationByIDResponse(WMS.WebService.DeletePreparationByIDResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeletePreparationByIDResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool DeletePreparationByIDResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public DeletePreparationByIDResponseBody() {
+        }
+        
+        public DeletePreparationByIDResponseBody(bool DeletePreparationByIDResult, string strError) {
+            this.DeletePreparationByIDResult = DeletePreparationByIDResult;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetPreparationByIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPreparationByID", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetPreparationByIDRequestBody Body;
+        
+        public GetPreparationByIDRequest() {
+        }
+        
+        public GetPreparationByIDRequest(WMS.WebService.GetPreparationByIDRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetPreparationByIDRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.Preparation model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetPreparationByIDRequestBody() {
+        }
+        
+        public GetPreparationByIDRequestBody(WMS.WebService.Preparation model, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetPreparationByIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPreparationByIDResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetPreparationByIDResponseBody Body;
+        
+        public GetPreparationByIDResponse() {
+        }
+        
+        public GetPreparationByIDResponse(WMS.WebService.GetPreparationByIDResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetPreparationByIDResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetPreparationByIDResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.Preparation model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetPreparationByIDResponseBody() {
+        }
+        
+        public GetPreparationByIDResponseBody(bool GetPreparationByIDResult, WMS.WebService.Preparation model, string strError) {
+            this.GetPreparationByIDResult = GetPreparationByIDResult;
+            this.model = model;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetPreparationListByPageRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPreparationListByPage", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetPreparationListByPageRequestBody Body;
+        
+        public GetPreparationListByPageRequest() {
+        }
+        
+        public GetPreparationListByPageRequest(WMS.WebService.GetPreparationListByPageRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetPreparationListByPageRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public System.Collections.Generic.List<WMS.WebService.Preparation> modelList;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.Preparation model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.DividPage page;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string strError;
+        
+        public GetPreparationListByPageRequestBody() {
+        }
+        
+        public GetPreparationListByPageRequestBody(System.Collections.Generic.List<WMS.WebService.Preparation> modelList, WMS.WebService.Preparation model, WMS.WebService.DividPage page, WMS.WebService.UserInfo user, string strError) {
+            this.modelList = modelList;
+            this.model = model;
+            this.page = page;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetPreparationListByPageResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPreparationListByPageResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetPreparationListByPageResponseBody Body;
+        
+        public GetPreparationListByPageResponse() {
+        }
+        
+        public GetPreparationListByPageResponse(WMS.WebService.GetPreparationListByPageResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetPreparationListByPageResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetPreparationListByPageResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public System.Collections.Generic.List<WMS.WebService.Preparation> modelList;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.DividPage page;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strError;
+        
+        public GetPreparationListByPageResponseBody() {
+        }
+        
+        public GetPreparationListByPageResponseBody(bool GetPreparationListByPageResult, System.Collections.Generic.List<WMS.WebService.Preparation> modelList, WMS.WebService.DividPage page, string strError) {
+            this.GetPreparationListByPageResult = GetPreparationListByPageResult;
+            this.modelList = modelList;
+            this.page = page;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetPreparationListRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPreparationList", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetPreparationListRequestBody Body;
+        
+        public GetPreparationListRequest() {
+        }
+        
+        public GetPreparationListRequest(WMS.WebService.GetPreparationListRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetPreparationListRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public System.Collections.Generic.List<WMS.WebService.Preparation> modelList;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.Preparation model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strError;
+        
+        public GetPreparationListRequestBody() {
+        }
+        
+        public GetPreparationListRequestBody(System.Collections.Generic.List<WMS.WebService.Preparation> modelList, WMS.WebService.Preparation model, WMS.WebService.UserInfo user, string strError) {
+            this.modelList = modelList;
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetPreparationListResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetPreparationListResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetPreparationListResponseBody Body;
+        
+        public GetPreparationListResponse() {
+        }
+        
+        public GetPreparationListResponse(WMS.WebService.GetPreparationListResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetPreparationListResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetPreparationListResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public System.Collections.Generic.List<WMS.WebService.Preparation> modelList;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetPreparationListResponseBody() {
+        }
+        
+        public GetPreparationListResponseBody(bool GetPreparationListResult, System.Collections.Generic.List<WMS.WebService.Preparation> modelList, string strError) {
+            this.GetPreparationListResult = GetPreparationListResult;
+            this.modelList = modelList;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ExistsbNoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistsbNo", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.ExistsbNoRequestBody Body;
+        
+        public ExistsbNoRequest() {
+        }
+        
+        public ExistsbNoRequest(WMS.WebService.ExistsbNoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ExistsbNoRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.Building model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public bool bIncludeDel;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strError;
+        
+        public ExistsbNoRequestBody() {
+        }
+        
+        public ExistsbNoRequestBody(WMS.WebService.Building model, bool bIncludeDel, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.bIncludeDel = bIncludeDel;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ExistsbNoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistsbNoResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.ExistsbNoResponseBody Body;
+        
+        public ExistsbNoResponse() {
+        }
+        
+        public ExistsbNoResponse(WMS.WebService.ExistsbNoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ExistsbNoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool ExistsbNoResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public ExistsbNoResponseBody() {
+        }
+        
+        public ExistsbNoResponseBody(bool ExistsbNoResult, string strError) {
+            this.ExistsbNoResult = ExistsbNoResult;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class SaveBuildingRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="SaveBuilding", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.SaveBuildingRequestBody Body;
+        
+        public SaveBuildingRequest() {
+        }
+        
+        public SaveBuildingRequest(WMS.WebService.SaveBuildingRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class SaveBuildingRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.Building model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public SaveBuildingRequestBody() {
+        }
+        
+        public SaveBuildingRequestBody(WMS.WebService.Building model, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class SaveBuildingResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="SaveBuildingResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.SaveBuildingResponseBody Body;
+        
+        public SaveBuildingResponse() {
+        }
+        
+        public SaveBuildingResponse(WMS.WebService.SaveBuildingResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class SaveBuildingResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool SaveBuildingResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.Building model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public SaveBuildingResponseBody() {
+        }
+        
+        public SaveBuildingResponseBody(bool SaveBuildingResult, WMS.WebService.Building model, string strError) {
+            this.SaveBuildingResult = SaveBuildingResult;
+            this.model = model;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteBuildingByIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteBuildingByID", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.DeleteBuildingByIDRequestBody Body;
+        
+        public DeleteBuildingByIDRequest() {
+        }
+        
+        public DeleteBuildingByIDRequest(WMS.WebService.DeleteBuildingByIDRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeleteBuildingByIDRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.Building model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public DeleteBuildingByIDRequestBody() {
+        }
+        
+        public DeleteBuildingByIDRequestBody(WMS.WebService.Building model, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteBuildingByIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteBuildingByIDResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.DeleteBuildingByIDResponseBody Body;
+        
+        public DeleteBuildingByIDResponse() {
+        }
+        
+        public DeleteBuildingByIDResponse(WMS.WebService.DeleteBuildingByIDResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeleteBuildingByIDResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool DeleteBuildingByIDResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string strError;
+        
+        public DeleteBuildingByIDResponseBody() {
+        }
+        
+        public DeleteBuildingByIDResponseBody(bool DeleteBuildingByIDResult, string strError) {
+            this.DeleteBuildingByIDResult = DeleteBuildingByIDResult;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetBuildingByIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetBuildingByID", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetBuildingByIDRequestBody Body;
+        
+        public GetBuildingByIDRequest() {
+        }
+        
+        public GetBuildingByIDRequest(WMS.WebService.GetBuildingByIDRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetBuildingByIDRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public WMS.WebService.Building model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetBuildingByIDRequestBody() {
+        }
+        
+        public GetBuildingByIDRequestBody(WMS.WebService.Building model, WMS.WebService.UserInfo user, string strError) {
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetBuildingByIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetBuildingByIDResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetBuildingByIDResponseBody Body;
+        
+        public GetBuildingByIDResponse() {
+        }
+        
+        public GetBuildingByIDResponse(WMS.WebService.GetBuildingByIDResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetBuildingByIDResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetBuildingByIDResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.Building model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetBuildingByIDResponseBody() {
+        }
+        
+        public GetBuildingByIDResponseBody(bool GetBuildingByIDResult, WMS.WebService.Building model, string strError) {
+            this.GetBuildingByIDResult = GetBuildingByIDResult;
+            this.model = model;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetBuildingListByPageRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetBuildingListByPage", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetBuildingListByPageRequestBody Body;
+        
+        public GetBuildingListByPageRequest() {
+        }
+        
+        public GetBuildingListByPageRequest(WMS.WebService.GetBuildingListByPageRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetBuildingListByPageRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public System.Collections.Generic.List<WMS.WebService.Building> modelList;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.Building model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.DividPage page;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string strError;
+        
+        public GetBuildingListByPageRequestBody() {
+        }
+        
+        public GetBuildingListByPageRequestBody(System.Collections.Generic.List<WMS.WebService.Building> modelList, WMS.WebService.Building model, WMS.WebService.DividPage page, WMS.WebService.UserInfo user, string strError) {
+            this.modelList = modelList;
+            this.model = model;
+            this.page = page;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetBuildingListByPageResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetBuildingListByPageResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetBuildingListByPageResponseBody Body;
+        
+        public GetBuildingListByPageResponse() {
+        }
+        
+        public GetBuildingListByPageResponse(WMS.WebService.GetBuildingListByPageResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetBuildingListByPageResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetBuildingListByPageResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public System.Collections.Generic.List<WMS.WebService.Building> modelList;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.DividPage page;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strError;
+        
+        public GetBuildingListByPageResponseBody() {
+        }
+        
+        public GetBuildingListByPageResponseBody(bool GetBuildingListByPageResult, System.Collections.Generic.List<WMS.WebService.Building> modelList, WMS.WebService.DividPage page, string strError) {
+            this.GetBuildingListByPageResult = GetBuildingListByPageResult;
+            this.modelList = modelList;
+            this.page = page;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetBuildingListRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetBuildingList", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetBuildingListRequestBody Body;
+        
+        public GetBuildingListRequest() {
+        }
+        
+        public GetBuildingListRequest(WMS.WebService.GetBuildingListRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetBuildingListRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public System.Collections.Generic.List<WMS.WebService.Building> modelList;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public WMS.WebService.Building model;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public WMS.WebService.UserInfo user;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string strError;
+        
+        public GetBuildingListRequestBody() {
+        }
+        
+        public GetBuildingListRequestBody(System.Collections.Generic.List<WMS.WebService.Building> modelList, WMS.WebService.Building model, WMS.WebService.UserInfo user, string strError) {
+            this.modelList = modelList;
+            this.model = model;
+            this.user = user;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetBuildingListResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetBuildingListResponse", Namespace="http://tempuri.org/", Order=0)]
+        public WMS.WebService.GetBuildingListResponseBody Body;
+        
+        public GetBuildingListResponse() {
+        }
+        
+        public GetBuildingListResponse(WMS.WebService.GetBuildingListResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetBuildingListResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool GetBuildingListResult;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public System.Collections.Generic.List<WMS.WebService.Building> modelList;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string strError;
+        
+        public GetBuildingListResponseBody() {
+        }
+        
+        public GetBuildingListResponseBody(bool GetBuildingListResult, System.Collections.Generic.List<WMS.WebService.Building> modelList, string strError) {
+            this.GetBuildingListResult = GetBuildingListResult;
+            this.modelList = modelList;
+            this.strError = strError;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class CheckImportTableRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CheckImportTable", Namespace="http://tempuri.org/", Order=0)]
@@ -34954,1002 +37159,6 @@ namespace WMS.WebService {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetFastInNotHavePOInfoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetFastInNotHavePOInfo", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetFastInNotHavePOInfoRequestBody Body;
-        
-        public GetFastInNotHavePOInfoRequest() {
-        }
-        
-        public GetFastInNotHavePOInfoRequest(WMS.WebService.GetFastInNotHavePOInfoRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetFastInNotHavePOInfoRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.Task_Model taskmo;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.DividPage dividpage;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public System.Collections.Generic.List<WMS.WebService.Task_Model> lsttask;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string strErrMsg;
-        
-        public GetFastInNotHavePOInfoRequestBody() {
-        }
-        
-        public GetFastInNotHavePOInfoRequestBody(WMS.WebService.Task_Model taskmo, WMS.WebService.DividPage dividpage, System.Collections.Generic.List<WMS.WebService.Task_Model> lsttask, string strErrMsg) {
-            this.taskmo = taskmo;
-            this.dividpage = dividpage;
-            this.lsttask = lsttask;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetFastInNotHavePOInfoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetFastInNotHavePOInfoResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetFastInNotHavePOInfoResponseBody Body;
-        
-        public GetFastInNotHavePOInfoResponse() {
-        }
-        
-        public GetFastInNotHavePOInfoResponse(WMS.WebService.GetFastInNotHavePOInfoResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetFastInNotHavePOInfoResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool GetFastInNotHavePOInfoResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.DividPage dividpage;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public System.Collections.Generic.List<WMS.WebService.Task_Model> lsttask;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string strErrMsg;
-        
-        public GetFastInNotHavePOInfoResponseBody() {
-        }
-        
-        public GetFastInNotHavePOInfoResponseBody(bool GetFastInNotHavePOInfoResult, WMS.WebService.DividPage dividpage, System.Collections.Generic.List<WMS.WebService.Task_Model> lsttask, string strErrMsg) {
-            this.GetFastInNotHavePOInfoResult = GetFastInNotHavePOInfoResult;
-            this.dividpage = dividpage;
-            this.lsttask = lsttask;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class InsetMaterialDetailRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsetMaterialDetail", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.InsetMaterialDetailRequestBody Body;
-        
-        public InsetMaterialDetailRequest() {
-        }
-        
-        public InsetMaterialDetailRequest(WMS.WebService.InsetMaterialDetailRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class InsetMaterialDetailRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public System.Collections.Generic.List<WMS.WebService.TaskDetails_Model> tDtails;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string msg;
-        
-        public InsetMaterialDetailRequestBody() {
-        }
-        
-        public InsetMaterialDetailRequestBody(System.Collections.Generic.List<WMS.WebService.TaskDetails_Model> tDtails, string msg) {
-            this.tDtails = tDtails;
-            this.msg = msg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class InsetMaterialDetailResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsetMaterialDetailResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.InsetMaterialDetailResponseBody Body;
-        
-        public InsetMaterialDetailResponse() {
-        }
-        
-        public InsetMaterialDetailResponse(WMS.WebService.InsetMaterialDetailResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class InsetMaterialDetailResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool InsetMaterialDetailResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string msg;
-        
-        public InsetMaterialDetailResponseBody() {
-        }
-        
-        public InsetMaterialDetailResponseBody(bool InsetMaterialDetailResult, string msg) {
-            this.InsetMaterialDetailResult = InsetMaterialDetailResult;
-            this.msg = msg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetTempMaterialNameRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialName", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetTempMaterialNameRequestBody Body;
-        
-        public GetTempMaterialNameRequest() {
-        }
-        
-        public GetTempMaterialNameRequest(WMS.WebService.GetTempMaterialNameRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetTempMaterialNameRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string materialNo;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string materialDESC;
-        
-        public GetTempMaterialNameRequestBody() {
-        }
-        
-        public GetTempMaterialNameRequestBody(string materialNo, string materialDESC) {
-            this.materialNo = materialNo;
-            this.materialDESC = materialDESC;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetTempMaterialNameResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialNameResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetTempMaterialNameResponseBody Body;
-        
-        public GetTempMaterialNameResponse() {
-        }
-        
-        public GetTempMaterialNameResponse(WMS.WebService.GetTempMaterialNameResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetTempMaterialNameResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool GetTempMaterialNameResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string materialDESC;
-        
-        public GetTempMaterialNameResponseBody() {
-        }
-        
-        public GetTempMaterialNameResponseBody(bool GetTempMaterialNameResult, string materialDESC) {
-            this.GetTempMaterialNameResult = GetTempMaterialNameResult;
-            this.materialDESC = materialDESC;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class ExistsTempMaterialByMaterialNoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistsTempMaterialByMaterialNo", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.ExistsTempMaterialByMaterialNoRequestBody Body;
-        
-        public ExistsTempMaterialByMaterialNoRequest() {
-        }
-        
-        public ExistsTempMaterialByMaterialNoRequest(WMS.WebService.ExistsTempMaterialByMaterialNoRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class ExistsTempMaterialByMaterialNoRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string materialNo;
-        
-        public ExistsTempMaterialByMaterialNoRequestBody() {
-        }
-        
-        public ExistsTempMaterialByMaterialNoRequestBody(string materialNo) {
-            this.materialNo = materialNo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class ExistsTempMaterialByMaterialNoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistsTempMaterialByMaterialNoResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.ExistsTempMaterialByMaterialNoResponseBody Body;
-        
-        public ExistsTempMaterialByMaterialNoResponse() {
-        }
-        
-        public ExistsTempMaterialByMaterialNoResponse(WMS.WebService.ExistsTempMaterialByMaterialNoResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class ExistsTempMaterialByMaterialNoResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool ExistsTempMaterialByMaterialNoResult;
-        
-        public ExistsTempMaterialByMaterialNoResponseBody() {
-        }
-        
-        public ExistsTempMaterialByMaterialNoResponseBody(bool ExistsTempMaterialByMaterialNoResult) {
-            this.ExistsTempMaterialByMaterialNoResult = ExistsTempMaterialByMaterialNoResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetTempMaterialByTempNoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialByTempNo", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetTempMaterialByTempNoRequestBody Body;
-        
-        public GetTempMaterialByTempNoRequest() {
-        }
-        
-        public GetTempMaterialByTempNoRequest(WMS.WebService.GetTempMaterialByTempNoRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetTempMaterialByTempNoRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string strMaterialNo;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.TempMaterial tempmaterial;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strErrMsg;
-        
-        public GetTempMaterialByTempNoRequestBody() {
-        }
-        
-        public GetTempMaterialByTempNoRequestBody(string strMaterialNo, WMS.WebService.TempMaterial tempmaterial, string strErrMsg) {
-            this.strMaterialNo = strMaterialNo;
-            this.tempmaterial = tempmaterial;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetTempMaterialByTempNoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialByTempNoResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetTempMaterialByTempNoResponseBody Body;
-        
-        public GetTempMaterialByTempNoResponse() {
-        }
-        
-        public GetTempMaterialByTempNoResponse(WMS.WebService.GetTempMaterialByTempNoResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetTempMaterialByTempNoResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool GetTempMaterialByTempNoResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.TempMaterial tempmaterial;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strErrMsg;
-        
-        public GetTempMaterialByTempNoResponseBody() {
-        }
-        
-        public GetTempMaterialByTempNoResponseBody(bool GetTempMaterialByTempNoResult, WMS.WebService.TempMaterial tempmaterial, string strErrMsg) {
-            this.GetTempMaterialByTempNoResult = GetTempMaterialByTempNoResult;
-            this.tempmaterial = tempmaterial;
-            this.strErrMsg = strErrMsg;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class ExistsTempMaterialNoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistsTempMaterialNo", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.ExistsTempMaterialNoRequestBody Body;
-        
-        public ExistsTempMaterialNoRequest() {
-        }
-        
-        public ExistsTempMaterialNoRequest(WMS.WebService.ExistsTempMaterialNoRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class ExistsTempMaterialNoRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public bool bIncludeDel;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public WMS.WebService.UserInfo user;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string strError;
-        
-        public ExistsTempMaterialNoRequestBody() {
-        }
-        
-        public ExistsTempMaterialNoRequestBody(WMS.WebService.TempMaterialInfo model, bool bIncludeDel, WMS.WebService.UserInfo user, string strError) {
-            this.model = model;
-            this.bIncludeDel = bIncludeDel;
-            this.user = user;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class ExistsTempMaterialNoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="ExistsTempMaterialNoResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.ExistsTempMaterialNoResponseBody Body;
-        
-        public ExistsTempMaterialNoResponse() {
-        }
-        
-        public ExistsTempMaterialNoResponse(WMS.WebService.ExistsTempMaterialNoResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class ExistsTempMaterialNoResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool ExistsTempMaterialNoResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strError;
-        
-        public ExistsTempMaterialNoResponseBody() {
-        }
-        
-        public ExistsTempMaterialNoResponseBody(bool ExistsTempMaterialNoResult, string strError) {
-            this.ExistsTempMaterialNoResult = ExistsTempMaterialNoResult;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class SaveTempMaterialRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="SaveTempMaterial", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.SaveTempMaterialRequestBody Body;
-        
-        public SaveTempMaterialRequest() {
-        }
-        
-        public SaveTempMaterialRequest(WMS.WebService.SaveTempMaterialRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class SaveTempMaterialRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.UserInfo user;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strError;
-        
-        public SaveTempMaterialRequestBody() {
-        }
-        
-        public SaveTempMaterialRequestBody(WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, string strError) {
-            this.model = model;
-            this.user = user;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class SaveTempMaterialResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="SaveTempMaterialResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.SaveTempMaterialResponseBody Body;
-        
-        public SaveTempMaterialResponse() {
-        }
-        
-        public SaveTempMaterialResponse(WMS.WebService.SaveTempMaterialResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class SaveTempMaterialResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool SaveTempMaterialResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strError;
-        
-        public SaveTempMaterialResponseBody() {
-        }
-        
-        public SaveTempMaterialResponseBody(bool SaveTempMaterialResult, WMS.WebService.TempMaterialInfo model, string strError) {
-            this.SaveTempMaterialResult = SaveTempMaterialResult;
-            this.model = model;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class DeleteTempMaterialByIDRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteTempMaterialByID", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.DeleteTempMaterialByIDRequestBody Body;
-        
-        public DeleteTempMaterialByIDRequest() {
-        }
-        
-        public DeleteTempMaterialByIDRequest(WMS.WebService.DeleteTempMaterialByIDRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class DeleteTempMaterialByIDRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.UserInfo user;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strError;
-        
-        public DeleteTempMaterialByIDRequestBody() {
-        }
-        
-        public DeleteTempMaterialByIDRequestBody(WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, string strError) {
-            this.model = model;
-            this.user = user;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class DeleteTempMaterialByIDResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteTempMaterialByIDResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.DeleteTempMaterialByIDResponseBody Body;
-        
-        public DeleteTempMaterialByIDResponse() {
-        }
-        
-        public DeleteTempMaterialByIDResponse(WMS.WebService.DeleteTempMaterialByIDResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class DeleteTempMaterialByIDResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool DeleteTempMaterialByIDResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string strError;
-        
-        public DeleteTempMaterialByIDResponseBody() {
-        }
-        
-        public DeleteTempMaterialByIDResponseBody(bool DeleteTempMaterialByIDResult, string strError) {
-            this.DeleteTempMaterialByIDResult = DeleteTempMaterialByIDResult;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetTempMaterialByIDRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialByID", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetTempMaterialByIDRequestBody Body;
-        
-        public GetTempMaterialByIDRequest() {
-        }
-        
-        public GetTempMaterialByIDRequest(WMS.WebService.GetTempMaterialByIDRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetTempMaterialByIDRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.UserInfo user;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strError;
-        
-        public GetTempMaterialByIDRequestBody() {
-        }
-        
-        public GetTempMaterialByIDRequestBody(WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, string strError) {
-            this.model = model;
-            this.user = user;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetTempMaterialByIDResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialByIDResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetTempMaterialByIDResponseBody Body;
-        
-        public GetTempMaterialByIDResponse() {
-        }
-        
-        public GetTempMaterialByIDResponse(WMS.WebService.GetTempMaterialByIDResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetTempMaterialByIDResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool GetTempMaterialByIDResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strError;
-        
-        public GetTempMaterialByIDResponseBody() {
-        }
-        
-        public GetTempMaterialByIDResponseBody(bool GetTempMaterialByIDResult, WMS.WebService.TempMaterialInfo model, string strError) {
-            this.GetTempMaterialByIDResult = GetTempMaterialByIDResult;
-            this.model = model;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetTempMaterialListByPageRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialListByPage", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetTempMaterialListByPageRequestBody Body;
-        
-        public GetTempMaterialListByPageRequest() {
-        }
-        
-        public GetTempMaterialListByPageRequest(WMS.WebService.GetTempMaterialListByPageRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetTempMaterialListByPageRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public System.Collections.Generic.List<WMS.WebService.TempMaterialInfo> modelList;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public WMS.WebService.DividPage page;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public WMS.WebService.UserInfo user;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string strError;
-        
-        public GetTempMaterialListByPageRequestBody() {
-        }
-        
-        public GetTempMaterialListByPageRequestBody(System.Collections.Generic.List<WMS.WebService.TempMaterialInfo> modelList, WMS.WebService.TempMaterialInfo model, WMS.WebService.DividPage page, WMS.WebService.UserInfo user, string strError) {
-            this.modelList = modelList;
-            this.model = model;
-            this.page = page;
-            this.user = user;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetTempMaterialListByPageResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialListByPageResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetTempMaterialListByPageResponseBody Body;
-        
-        public GetTempMaterialListByPageResponse() {
-        }
-        
-        public GetTempMaterialListByPageResponse(WMS.WebService.GetTempMaterialListByPageResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetTempMaterialListByPageResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool GetTempMaterialListByPageResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public System.Collections.Generic.List<WMS.WebService.TempMaterialInfo> modelList;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public WMS.WebService.DividPage page;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string strError;
-        
-        public GetTempMaterialListByPageResponseBody() {
-        }
-        
-        public GetTempMaterialListByPageResponseBody(bool GetTempMaterialListByPageResult, System.Collections.Generic.List<WMS.WebService.TempMaterialInfo> modelList, WMS.WebService.DividPage page, string strError) {
-            this.GetTempMaterialListByPageResult = GetTempMaterialListByPageResult;
-            this.modelList = modelList;
-            this.page = page;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetMaterialInfoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetMaterialInfo", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetMaterialInfoRequestBody Body;
-        
-        public GetMaterialInfoRequest() {
-        }
-        
-        public GetMaterialInfoRequest(WMS.WebService.GetMaterialInfoRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetMaterialInfoRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public int type;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public WMS.WebService.UserInfo user;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public string strError;
-        
-        public GetMaterialInfoRequestBody() {
-        }
-        
-        public GetMaterialInfoRequestBody(WMS.WebService.TempMaterialInfo model, int type, WMS.WebService.UserInfo user, string strError) {
-            this.model = model;
-            this.type = type;
-            this.user = user;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetMaterialInfoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetMaterialInfoResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetMaterialInfoResponseBody Body;
-        
-        public GetMaterialInfoResponse() {
-        }
-        
-        public GetMaterialInfoResponse(WMS.WebService.GetMaterialInfoResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetMaterialInfoResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool GetMaterialInfoResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strError;
-        
-        public GetMaterialInfoResponseBody() {
-        }
-        
-        public GetMaterialInfoResponseBody(bool GetMaterialInfoResult, WMS.WebService.TempMaterialInfo model, string strError) {
-            this.GetMaterialInfoResult = GetMaterialInfoResult;
-            this.model = model;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetTempMaterialNoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialNo", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetTempMaterialNoRequestBody Body;
-        
-        public GetTempMaterialNoRequest() {
-        }
-        
-        public GetTempMaterialNoRequest(WMS.WebService.GetTempMaterialNoRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetTempMaterialNoRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.UserInfo user;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strError;
-        
-        public GetTempMaterialNoRequestBody() {
-        }
-        
-        public GetTempMaterialNoRequestBody(WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, string strError) {
-            this.model = model;
-            this.user = user;
-            this.strError = strError;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class GetTempMaterialNoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetTempMaterialNoResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WMS.WebService.GetTempMaterialNoResponseBody Body;
-        
-        public GetTempMaterialNoResponse() {
-        }
-        
-        public GetTempMaterialNoResponse(WMS.WebService.GetTempMaterialNoResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class GetTempMaterialNoResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool GetTempMaterialNoResult;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public WMS.WebService.TempMaterialInfo model;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string strError;
-        
-        public GetTempMaterialNoResponseBody() {
-        }
-        
-        public GetTempMaterialNoResponseBody(bool GetTempMaterialNoResult, WMS.WebService.TempMaterialInfo model, string strError) {
-            this.GetTempMaterialNoResult = GetTempMaterialNoResult;
-            this.model = model;
-            this.strError = strError;
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface WebServiceSoapChannel : WMS.WebService.WebServiceSoap, System.ServiceModel.IClientChannel {
     }
@@ -35975,6 +37184,187 @@ namespace WMS.WebService {
         
         public WebServiceSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetOutSideByDeliveryToSRMResponse WMS.WebService.WebServiceSoap.GetOutSideByDeliveryToSRM(WMS.WebService.GetOutSideByDeliveryToSRMRequest request) {
+            return base.Channel.GetOutSideByDeliveryToSRM(request);
+        }
+        
+        public bool GetOutSideByDeliveryToSRM(ref WMS.WebService.DeliveryReceive_Model DeliveryModel, WMS.WebService.UserInfo userModel, ref string strErrMsg) {
+            WMS.WebService.GetOutSideByDeliveryToSRMRequest inValue = new WMS.WebService.GetOutSideByDeliveryToSRMRequest();
+            inValue.Body = new WMS.WebService.GetOutSideByDeliveryToSRMRequestBody();
+            inValue.Body.DeliveryModel = DeliveryModel;
+            inValue.Body.userModel = userModel;
+            inValue.Body.strErrMsg = strErrMsg;
+            WMS.WebService.GetOutSideByDeliveryToSRMResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetOutSideByDeliveryToSRM(inValue);
+            DeliveryModel = retVal.Body.DeliveryModel;
+            strErrMsg = retVal.Body.strErrMsg;
+            return retVal.Body.GetOutSideByDeliveryToSRMResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.CreateShelveTaskTestResponse WMS.WebService.WebServiceSoap.CreateShelveTaskTest(WMS.WebService.CreateShelveTaskTestRequest request) {
+            return base.Channel.CreateShelveTaskTest(request);
+        }
+        
+        public bool CreateShelveTaskTest(string vouchcode, string vouchtype, string cwhcode, WMS.WebService.UserInfo userModel, ref string strTaskNo, ref string strErrMsg) {
+            WMS.WebService.CreateShelveTaskTestRequest inValue = new WMS.WebService.CreateShelveTaskTestRequest();
+            inValue.Body = new WMS.WebService.CreateShelveTaskTestRequestBody();
+            inValue.Body.vouchcode = vouchcode;
+            inValue.Body.vouchtype = vouchtype;
+            inValue.Body.cwhcode = cwhcode;
+            inValue.Body.userModel = userModel;
+            inValue.Body.strTaskNo = strTaskNo;
+            inValue.Body.strErrMsg = strErrMsg;
+            WMS.WebService.CreateShelveTaskTestResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).CreateShelveTaskTest(inValue);
+            strTaskNo = retVal.Body.strTaskNo;
+            strErrMsg = retVal.Body.strErrMsg;
+            return retVal.Body.CreateShelveTaskTestResult;
+        }
+        
+        public bool TestReadData(int iNo) {
+            return base.Channel.TestReadData(iNo);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.WriteLogResponse WMS.WebService.WebServiceSoap.WriteLog(WMS.WebService.WriteLogRequest request) {
+            return base.Channel.WriteLog(request);
+        }
+        
+        public bool WriteLog(string strLog) {
+            WMS.WebService.WriteLogRequest inValue = new WMS.WebService.WriteLogRequest();
+            inValue.Body = new WMS.WebService.WriteLogRequestBody();
+            inValue.Body.strLog = strLog;
+            WMS.WebService.WriteLogResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).WriteLog(inValue);
+            return retVal.Body.WriteLogResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.TestMaterialOuterLabelResponse WMS.WebService.WebServiceSoap.TestMaterialOuterLabel(WMS.WebService.TestMaterialOuterLabelRequest request) {
+            return base.Channel.TestMaterialOuterLabel(request);
+        }
+        
+        public string TestMaterialOuterLabel(WMS.WebService.MaterialOuterLabel model, ref string strError) {
+            WMS.WebService.TestMaterialOuterLabelRequest inValue = new WMS.WebService.TestMaterialOuterLabelRequest();
+            inValue.Body = new WMS.WebService.TestMaterialOuterLabelRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.strError = strError;
+            WMS.WebService.TestMaterialOuterLabelResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).TestMaterialOuterLabel(inValue);
+            strError = retVal.Body.strError;
+            return retVal.Body.TestMaterialOuterLabelResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.TestMaterialInnerLabelResponse WMS.WebService.WebServiceSoap.TestMaterialInnerLabel(WMS.WebService.TestMaterialInnerLabelRequest request) {
+            return base.Channel.TestMaterialInnerLabel(request);
+        }
+        
+        public string TestMaterialInnerLabel(WMS.WebService.MaterialInnerLabel model, ref string strError) {
+            WMS.WebService.TestMaterialInnerLabelRequest inValue = new WMS.WebService.TestMaterialInnerLabelRequest();
+            inValue.Body = new WMS.WebService.TestMaterialInnerLabelRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.strError = strError;
+            WMS.WebService.TestMaterialInnerLabelResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).TestMaterialInnerLabel(inValue);
+            strError = retVal.Body.strError;
+            return retVal.Body.TestMaterialInnerLabelResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.TestProductLabelResponse WMS.WebService.WebServiceSoap.TestProductLabel(WMS.WebService.TestProductLabelRequest request) {
+            return base.Channel.TestProductLabel(request);
+        }
+        
+        public string TestProductLabel(WMS.WebService.ProductLabel_Model model, ref string strError) {
+            WMS.WebService.TestProductLabelRequest inValue = new WMS.WebService.TestProductLabelRequest();
+            inValue.Body = new WMS.WebService.TestProductLabelRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.strError = strError;
+            WMS.WebService.TestProductLabelResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).TestProductLabel(inValue);
+            strError = retVal.Body.strError;
+            return retVal.Body.TestProductLabelResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.CheckSerialNoResponse WMS.WebService.WebServiceSoap.CheckSerialNo(WMS.WebService.CheckSerialNoRequest request) {
+            return base.Channel.CheckSerialNo(request);
+        }
+        
+        public bool CheckSerialNo(string SerialNo, string BatchNo, ref string strErrMsg) {
+            WMS.WebService.CheckSerialNoRequest inValue = new WMS.WebService.CheckSerialNoRequest();
+            inValue.Body = new WMS.WebService.CheckSerialNoRequestBody();
+            inValue.Body.SerialNo = SerialNo;
+            inValue.Body.BatchNo = BatchNo;
+            inValue.Body.strErrMsg = strErrMsg;
+            WMS.WebService.CheckSerialNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).CheckSerialNo(inValue);
+            strErrMsg = retVal.Body.strErrMsg;
+            return retVal.Body.CheckSerialNoResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.CreateInnerProductBarcodeResponse WMS.WebService.WebServiceSoap.CreateInnerProductBarcode(WMS.WebService.CreateInnerProductBarcodeRequest request) {
+            return base.Channel.CreateInnerProductBarcode(request);
+        }
+        
+        public bool CreateInnerProductBarcode(WMS.WebService.ProductLabel_Model labelModel, int qty, ref System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, ref string strErrMsg) {
+            WMS.WebService.CreateInnerProductBarcodeRequest inValue = new WMS.WebService.CreateInnerProductBarcodeRequest();
+            inValue.Body = new WMS.WebService.CreateInnerProductBarcodeRequestBody();
+            inValue.Body.labelModel = labelModel;
+            inValue.Body.qty = qty;
+            inValue.Body.label_lst = label_lst;
+            inValue.Body.strErrMsg = strErrMsg;
+            WMS.WebService.CreateInnerProductBarcodeResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).CreateInnerProductBarcode(inValue);
+            label_lst = retVal.Body.label_lst;
+            strErrMsg = retVal.Body.strErrMsg;
+            return retVal.Body.CreateInnerProductBarcodeResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.CreateOuterProductBarcodeResponse WMS.WebService.WebServiceSoap.CreateOuterProductBarcode(WMS.WebService.CreateOuterProductBarcodeRequest request) {
+            return base.Channel.CreateOuterProductBarcode(request);
+        }
+        
+        public bool CreateOuterProductBarcode(WMS.WebService.ProductLabel_Model labelModel, int qty, ref System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, ref string strErrMsg) {
+            WMS.WebService.CreateOuterProductBarcodeRequest inValue = new WMS.WebService.CreateOuterProductBarcodeRequest();
+            inValue.Body = new WMS.WebService.CreateOuterProductBarcodeRequestBody();
+            inValue.Body.labelModel = labelModel;
+            inValue.Body.qty = qty;
+            inValue.Body.label_lst = label_lst;
+            inValue.Body.strErrMsg = strErrMsg;
+            WMS.WebService.CreateOuterProductBarcodeResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).CreateOuterProductBarcode(inValue);
+            label_lst = retVal.Body.label_lst;
+            strErrMsg = retVal.Body.strErrMsg;
+            return retVal.Body.CreateOuterProductBarcodeResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.ImportStockResponse WMS.WebService.WebServiceSoap.ImportStock(WMS.WebService.ImportStockRequest request) {
+            return base.Channel.ImportStock(request);
+        }
+        
+        public bool ImportStock(System.Collections.Generic.List<WMS.WebService.Stock_Model> dt, ref string strErrMsg) {
+            WMS.WebService.ImportStockRequest inValue = new WMS.WebService.ImportStockRequest();
+            inValue.Body = new WMS.WebService.ImportStockRequestBody();
+            inValue.Body.dt = dt;
+            inValue.Body.strErrMsg = strErrMsg;
+            WMS.WebService.ImportStockResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).ImportStock(inValue);
+            strErrMsg = retVal.Body.strErrMsg;
+            return retVal.Body.ImportStockResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.RemoveStockResponse WMS.WebService.WebServiceSoap.RemoveStock(WMS.WebService.RemoveStockRequest request) {
+            return base.Channel.RemoveStock(request);
+        }
+        
+        public bool RemoveStock(System.Collections.Generic.List<WMS.WebService.Stock_Model> dt, ref string strErrMsg) {
+            WMS.WebService.RemoveStockRequest inValue = new WMS.WebService.RemoveStockRequest();
+            inValue.Body = new WMS.WebService.RemoveStockRequestBody();
+            inValue.Body.dt = dt;
+            inValue.Body.strErrMsg = strErrMsg;
+            WMS.WebService.RemoveStockResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).RemoveStock(inValue);
+            strErrMsg = retVal.Body.strErrMsg;
+            return retVal.Body.RemoveStockResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -36787,6 +38177,207 @@ namespace WMS.WebService {
             lst = retVal.Body.lst;
             strErrMsg = retVal.Body.strErrMsg;
             return retVal.Body.QueryMaterialBarcodeReportRowDetailResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetFastInNotHavePOInfoResponse WMS.WebService.WebServiceSoap.GetFastInNotHavePOInfo(WMS.WebService.GetFastInNotHavePOInfoRequest request) {
+            return base.Channel.GetFastInNotHavePOInfo(request);
+        }
+        
+        public bool GetFastInNotHavePOInfo(WMS.WebService.Task_Model taskmo, ref WMS.WebService.DividPage dividpage, ref System.Collections.Generic.List<WMS.WebService.Task_Model> lsttask, ref string strErrMsg) {
+            WMS.WebService.GetFastInNotHavePOInfoRequest inValue = new WMS.WebService.GetFastInNotHavePOInfoRequest();
+            inValue.Body = new WMS.WebService.GetFastInNotHavePOInfoRequestBody();
+            inValue.Body.taskmo = taskmo;
+            inValue.Body.dividpage = dividpage;
+            inValue.Body.lsttask = lsttask;
+            inValue.Body.strErrMsg = strErrMsg;
+            WMS.WebService.GetFastInNotHavePOInfoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetFastInNotHavePOInfo(inValue);
+            dividpage = retVal.Body.dividpage;
+            lsttask = retVal.Body.lsttask;
+            strErrMsg = retVal.Body.strErrMsg;
+            return retVal.Body.GetFastInNotHavePOInfoResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.InsetMaterialDetailResponse WMS.WebService.WebServiceSoap.InsetMaterialDetail(WMS.WebService.InsetMaterialDetailRequest request) {
+            return base.Channel.InsetMaterialDetail(request);
+        }
+        
+        public bool InsetMaterialDetail(System.Collections.Generic.List<WMS.WebService.TaskDetails_Model> tDtails, ref string msg) {
+            WMS.WebService.InsetMaterialDetailRequest inValue = new WMS.WebService.InsetMaterialDetailRequest();
+            inValue.Body = new WMS.WebService.InsetMaterialDetailRequestBody();
+            inValue.Body.tDtails = tDtails;
+            inValue.Body.msg = msg;
+            WMS.WebService.InsetMaterialDetailResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).InsetMaterialDetail(inValue);
+            msg = retVal.Body.msg;
+            return retVal.Body.InsetMaterialDetailResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetTempMaterialNameResponse WMS.WebService.WebServiceSoap.GetTempMaterialName(WMS.WebService.GetTempMaterialNameRequest request) {
+            return base.Channel.GetTempMaterialName(request);
+        }
+        
+        public bool GetTempMaterialName(string materialNo, ref string materialDESC) {
+            WMS.WebService.GetTempMaterialNameRequest inValue = new WMS.WebService.GetTempMaterialNameRequest();
+            inValue.Body = new WMS.WebService.GetTempMaterialNameRequestBody();
+            inValue.Body.materialNo = materialNo;
+            inValue.Body.materialDESC = materialDESC;
+            WMS.WebService.GetTempMaterialNameResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetTempMaterialName(inValue);
+            materialDESC = retVal.Body.materialDESC;
+            return retVal.Body.GetTempMaterialNameResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.ExistsTempMaterialByMaterialNoResponse WMS.WebService.WebServiceSoap.ExistsTempMaterialByMaterialNo(WMS.WebService.ExistsTempMaterialByMaterialNoRequest request) {
+            return base.Channel.ExistsTempMaterialByMaterialNo(request);
+        }
+        
+        public bool ExistsTempMaterialByMaterialNo(string materialNo) {
+            WMS.WebService.ExistsTempMaterialByMaterialNoRequest inValue = new WMS.WebService.ExistsTempMaterialByMaterialNoRequest();
+            inValue.Body = new WMS.WebService.ExistsTempMaterialByMaterialNoRequestBody();
+            inValue.Body.materialNo = materialNo;
+            WMS.WebService.ExistsTempMaterialByMaterialNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).ExistsTempMaterialByMaterialNo(inValue);
+            return retVal.Body.ExistsTempMaterialByMaterialNoResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetTempMaterialByTempNoResponse WMS.WebService.WebServiceSoap.GetTempMaterialByTempNo(WMS.WebService.GetTempMaterialByTempNoRequest request) {
+            return base.Channel.GetTempMaterialByTempNo(request);
+        }
+        
+        public bool GetTempMaterialByTempNo(string strMaterialNo, ref WMS.WebService.TempMaterial tempmaterial, ref string strErrMsg) {
+            WMS.WebService.GetTempMaterialByTempNoRequest inValue = new WMS.WebService.GetTempMaterialByTempNoRequest();
+            inValue.Body = new WMS.WebService.GetTempMaterialByTempNoRequestBody();
+            inValue.Body.strMaterialNo = strMaterialNo;
+            inValue.Body.tempmaterial = tempmaterial;
+            inValue.Body.strErrMsg = strErrMsg;
+            WMS.WebService.GetTempMaterialByTempNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetTempMaterialByTempNo(inValue);
+            tempmaterial = retVal.Body.tempmaterial;
+            strErrMsg = retVal.Body.strErrMsg;
+            return retVal.Body.GetTempMaterialByTempNoResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.ExistsTempMaterialNoResponse WMS.WebService.WebServiceSoap.ExistsTempMaterialNo(WMS.WebService.ExistsTempMaterialNoRequest request) {
+            return base.Channel.ExistsTempMaterialNo(request);
+        }
+        
+        public bool ExistsTempMaterialNo(WMS.WebService.TempMaterialInfo model, bool bIncludeDel, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.ExistsTempMaterialNoRequest inValue = new WMS.WebService.ExistsTempMaterialNoRequest();
+            inValue.Body = new WMS.WebService.ExistsTempMaterialNoRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.bIncludeDel = bIncludeDel;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.ExistsTempMaterialNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).ExistsTempMaterialNo(inValue);
+            strError = retVal.Body.strError;
+            return retVal.Body.ExistsTempMaterialNoResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.SaveTempMaterialResponse WMS.WebService.WebServiceSoap.SaveTempMaterial(WMS.WebService.SaveTempMaterialRequest request) {
+            return base.Channel.SaveTempMaterial(request);
+        }
+        
+        public bool SaveTempMaterial(ref WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.SaveTempMaterialRequest inValue = new WMS.WebService.SaveTempMaterialRequest();
+            inValue.Body = new WMS.WebService.SaveTempMaterialRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.SaveTempMaterialResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).SaveTempMaterial(inValue);
+            model = retVal.Body.model;
+            strError = retVal.Body.strError;
+            return retVal.Body.SaveTempMaterialResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.DeleteTempMaterialByIDResponse WMS.WebService.WebServiceSoap.DeleteTempMaterialByID(WMS.WebService.DeleteTempMaterialByIDRequest request) {
+            return base.Channel.DeleteTempMaterialByID(request);
+        }
+        
+        public bool DeleteTempMaterialByID(WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.DeleteTempMaterialByIDRequest inValue = new WMS.WebService.DeleteTempMaterialByIDRequest();
+            inValue.Body = new WMS.WebService.DeleteTempMaterialByIDRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.DeleteTempMaterialByIDResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).DeleteTempMaterialByID(inValue);
+            strError = retVal.Body.strError;
+            return retVal.Body.DeleteTempMaterialByIDResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetTempMaterialByIDResponse WMS.WebService.WebServiceSoap.GetTempMaterialByID(WMS.WebService.GetTempMaterialByIDRequest request) {
+            return base.Channel.GetTempMaterialByID(request);
+        }
+        
+        public bool GetTempMaterialByID(ref WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.GetTempMaterialByIDRequest inValue = new WMS.WebService.GetTempMaterialByIDRequest();
+            inValue.Body = new WMS.WebService.GetTempMaterialByIDRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.GetTempMaterialByIDResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetTempMaterialByID(inValue);
+            model = retVal.Body.model;
+            strError = retVal.Body.strError;
+            return retVal.Body.GetTempMaterialByIDResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetTempMaterialListByPageResponse WMS.WebService.WebServiceSoap.GetTempMaterialListByPage(WMS.WebService.GetTempMaterialListByPageRequest request) {
+            return base.Channel.GetTempMaterialListByPage(request);
+        }
+        
+        public bool GetTempMaterialListByPage(ref System.Collections.Generic.List<WMS.WebService.TempMaterialInfo> modelList, WMS.WebService.TempMaterialInfo model, ref WMS.WebService.DividPage page, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.GetTempMaterialListByPageRequest inValue = new WMS.WebService.GetTempMaterialListByPageRequest();
+            inValue.Body = new WMS.WebService.GetTempMaterialListByPageRequestBody();
+            inValue.Body.modelList = modelList;
+            inValue.Body.model = model;
+            inValue.Body.page = page;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.GetTempMaterialListByPageResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetTempMaterialListByPage(inValue);
+            modelList = retVal.Body.modelList;
+            page = retVal.Body.page;
+            strError = retVal.Body.strError;
+            return retVal.Body.GetTempMaterialListByPageResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetMaterialInfoResponse WMS.WebService.WebServiceSoap.GetMaterialInfo(WMS.WebService.GetMaterialInfoRequest request) {
+            return base.Channel.GetMaterialInfo(request);
+        }
+        
+        public bool GetMaterialInfo(ref WMS.WebService.TempMaterialInfo model, int type, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.GetMaterialInfoRequest inValue = new WMS.WebService.GetMaterialInfoRequest();
+            inValue.Body = new WMS.WebService.GetMaterialInfoRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.type = type;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.GetMaterialInfoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetMaterialInfo(inValue);
+            model = retVal.Body.model;
+            strError = retVal.Body.strError;
+            return retVal.Body.GetMaterialInfoResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetTempMaterialNoResponse WMS.WebService.WebServiceSoap.GetTempMaterialNo(WMS.WebService.GetTempMaterialNoRequest request) {
+            return base.Channel.GetTempMaterialNo(request);
+        }
+        
+        public bool GetTempMaterialNo(ref WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.GetTempMaterialNoRequest inValue = new WMS.WebService.GetTempMaterialNoRequest();
+            inValue.Body = new WMS.WebService.GetTempMaterialNoRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.GetTempMaterialNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetTempMaterialNo(inValue);
+            model = retVal.Body.model;
+            strError = retVal.Body.strError;
+            return retVal.Body.GetTempMaterialNoResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -37968,183 +39559,6 @@ namespace WMS.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.GetOutSideByDeliveryToSRMResponse WMS.WebService.WebServiceSoap.GetOutSideByDeliveryToSRM(WMS.WebService.GetOutSideByDeliveryToSRMRequest request) {
-            return base.Channel.GetOutSideByDeliveryToSRM(request);
-        }
-        
-        public bool GetOutSideByDeliveryToSRM(ref WMS.WebService.DeliveryReceive_Model DeliveryModel, WMS.WebService.UserInfo userModel, ref string strErrMsg) {
-            WMS.WebService.GetOutSideByDeliveryToSRMRequest inValue = new WMS.WebService.GetOutSideByDeliveryToSRMRequest();
-            inValue.Body = new WMS.WebService.GetOutSideByDeliveryToSRMRequestBody();
-            inValue.Body.DeliveryModel = DeliveryModel;
-            inValue.Body.userModel = userModel;
-            inValue.Body.strErrMsg = strErrMsg;
-            WMS.WebService.GetOutSideByDeliveryToSRMResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetOutSideByDeliveryToSRM(inValue);
-            DeliveryModel = retVal.Body.DeliveryModel;
-            strErrMsg = retVal.Body.strErrMsg;
-            return retVal.Body.GetOutSideByDeliveryToSRMResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.CreateShelveTaskTestResponse WMS.WebService.WebServiceSoap.CreateShelveTaskTest(WMS.WebService.CreateShelveTaskTestRequest request) {
-            return base.Channel.CreateShelveTaskTest(request);
-        }
-        
-        public bool CreateShelveTaskTest(string vouchcode, string vouchtype, string cwhcode, WMS.WebService.UserInfo userModel, ref string strTaskNo, ref string strErrMsg) {
-            WMS.WebService.CreateShelveTaskTestRequest inValue = new WMS.WebService.CreateShelveTaskTestRequest();
-            inValue.Body = new WMS.WebService.CreateShelveTaskTestRequestBody();
-            inValue.Body.vouchcode = vouchcode;
-            inValue.Body.vouchtype = vouchtype;
-            inValue.Body.cwhcode = cwhcode;
-            inValue.Body.userModel = userModel;
-            inValue.Body.strTaskNo = strTaskNo;
-            inValue.Body.strErrMsg = strErrMsg;
-            WMS.WebService.CreateShelveTaskTestResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).CreateShelveTaskTest(inValue);
-            strTaskNo = retVal.Body.strTaskNo;
-            strErrMsg = retVal.Body.strErrMsg;
-            return retVal.Body.CreateShelveTaskTestResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.WriteLogResponse WMS.WebService.WebServiceSoap.WriteLog(WMS.WebService.WriteLogRequest request) {
-            return base.Channel.WriteLog(request);
-        }
-        
-        public bool WriteLog(string strLog) {
-            WMS.WebService.WriteLogRequest inValue = new WMS.WebService.WriteLogRequest();
-            inValue.Body = new WMS.WebService.WriteLogRequestBody();
-            inValue.Body.strLog = strLog;
-            WMS.WebService.WriteLogResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).WriteLog(inValue);
-            return retVal.Body.WriteLogResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.TestMaterialOuterLabelResponse WMS.WebService.WebServiceSoap.TestMaterialOuterLabel(WMS.WebService.TestMaterialOuterLabelRequest request) {
-            return base.Channel.TestMaterialOuterLabel(request);
-        }
-        
-        public string TestMaterialOuterLabel(WMS.WebService.MaterialOuterLabel model, ref string strError) {
-            WMS.WebService.TestMaterialOuterLabelRequest inValue = new WMS.WebService.TestMaterialOuterLabelRequest();
-            inValue.Body = new WMS.WebService.TestMaterialOuterLabelRequestBody();
-            inValue.Body.model = model;
-            inValue.Body.strError = strError;
-            WMS.WebService.TestMaterialOuterLabelResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).TestMaterialOuterLabel(inValue);
-            strError = retVal.Body.strError;
-            return retVal.Body.TestMaterialOuterLabelResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.TestMaterialInnerLabelResponse WMS.WebService.WebServiceSoap.TestMaterialInnerLabel(WMS.WebService.TestMaterialInnerLabelRequest request) {
-            return base.Channel.TestMaterialInnerLabel(request);
-        }
-        
-        public string TestMaterialInnerLabel(WMS.WebService.MaterialInnerLabel model, ref string strError) {
-            WMS.WebService.TestMaterialInnerLabelRequest inValue = new WMS.WebService.TestMaterialInnerLabelRequest();
-            inValue.Body = new WMS.WebService.TestMaterialInnerLabelRequestBody();
-            inValue.Body.model = model;
-            inValue.Body.strError = strError;
-            WMS.WebService.TestMaterialInnerLabelResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).TestMaterialInnerLabel(inValue);
-            strError = retVal.Body.strError;
-            return retVal.Body.TestMaterialInnerLabelResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.TestProductLabelResponse WMS.WebService.WebServiceSoap.TestProductLabel(WMS.WebService.TestProductLabelRequest request) {
-            return base.Channel.TestProductLabel(request);
-        }
-        
-        public string TestProductLabel(WMS.WebService.ProductLabel_Model model, ref string strError) {
-            WMS.WebService.TestProductLabelRequest inValue = new WMS.WebService.TestProductLabelRequest();
-            inValue.Body = new WMS.WebService.TestProductLabelRequestBody();
-            inValue.Body.model = model;
-            inValue.Body.strError = strError;
-            WMS.WebService.TestProductLabelResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).TestProductLabel(inValue);
-            strError = retVal.Body.strError;
-            return retVal.Body.TestProductLabelResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.CheckSerialNoResponse WMS.WebService.WebServiceSoap.CheckSerialNo(WMS.WebService.CheckSerialNoRequest request) {
-            return base.Channel.CheckSerialNo(request);
-        }
-        
-        public bool CheckSerialNo(string SerialNo, string BatchNo, ref string strErrMsg) {
-            WMS.WebService.CheckSerialNoRequest inValue = new WMS.WebService.CheckSerialNoRequest();
-            inValue.Body = new WMS.WebService.CheckSerialNoRequestBody();
-            inValue.Body.SerialNo = SerialNo;
-            inValue.Body.BatchNo = BatchNo;
-            inValue.Body.strErrMsg = strErrMsg;
-            WMS.WebService.CheckSerialNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).CheckSerialNo(inValue);
-            strErrMsg = retVal.Body.strErrMsg;
-            return retVal.Body.CheckSerialNoResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.CreateInnerProductBarcodeResponse WMS.WebService.WebServiceSoap.CreateInnerProductBarcode(WMS.WebService.CreateInnerProductBarcodeRequest request) {
-            return base.Channel.CreateInnerProductBarcode(request);
-        }
-        
-        public bool CreateInnerProductBarcode(WMS.WebService.ProductLabel_Model labelModel, int qty, ref System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, ref string strErrMsg) {
-            WMS.WebService.CreateInnerProductBarcodeRequest inValue = new WMS.WebService.CreateInnerProductBarcodeRequest();
-            inValue.Body = new WMS.WebService.CreateInnerProductBarcodeRequestBody();
-            inValue.Body.labelModel = labelModel;
-            inValue.Body.qty = qty;
-            inValue.Body.label_lst = label_lst;
-            inValue.Body.strErrMsg = strErrMsg;
-            WMS.WebService.CreateInnerProductBarcodeResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).CreateInnerProductBarcode(inValue);
-            label_lst = retVal.Body.label_lst;
-            strErrMsg = retVal.Body.strErrMsg;
-            return retVal.Body.CreateInnerProductBarcodeResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.CreateOuterProductBarcodeResponse WMS.WebService.WebServiceSoap.CreateOuterProductBarcode(WMS.WebService.CreateOuterProductBarcodeRequest request) {
-            return base.Channel.CreateOuterProductBarcode(request);
-        }
-        
-        public bool CreateOuterProductBarcode(WMS.WebService.ProductLabel_Model labelModel, int qty, ref System.Collections.Generic.List<WMS.WebService.ProductLabel_Model> label_lst, ref string strErrMsg) {
-            WMS.WebService.CreateOuterProductBarcodeRequest inValue = new WMS.WebService.CreateOuterProductBarcodeRequest();
-            inValue.Body = new WMS.WebService.CreateOuterProductBarcodeRequestBody();
-            inValue.Body.labelModel = labelModel;
-            inValue.Body.qty = qty;
-            inValue.Body.label_lst = label_lst;
-            inValue.Body.strErrMsg = strErrMsg;
-            WMS.WebService.CreateOuterProductBarcodeResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).CreateOuterProductBarcode(inValue);
-            label_lst = retVal.Body.label_lst;
-            strErrMsg = retVal.Body.strErrMsg;
-            return retVal.Body.CreateOuterProductBarcodeResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.ImportStockResponse WMS.WebService.WebServiceSoap.ImportStock(WMS.WebService.ImportStockRequest request) {
-            return base.Channel.ImportStock(request);
-        }
-        
-        public bool ImportStock(System.Collections.Generic.List<WMS.WebService.Stock_Model> dt, ref string strErrMsg) {
-            WMS.WebService.ImportStockRequest inValue = new WMS.WebService.ImportStockRequest();
-            inValue.Body = new WMS.WebService.ImportStockRequestBody();
-            inValue.Body.dt = dt;
-            inValue.Body.strErrMsg = strErrMsg;
-            WMS.WebService.ImportStockResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).ImportStock(inValue);
-            strErrMsg = retVal.Body.strErrMsg;
-            return retVal.Body.ImportStockResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.RemoveStockResponse WMS.WebService.WebServiceSoap.RemoveStock(WMS.WebService.RemoveStockRequest request) {
-            return base.Channel.RemoveStock(request);
-        }
-        
-        public bool RemoveStock(System.Collections.Generic.List<WMS.WebService.Stock_Model> dt, ref string strErrMsg) {
-            WMS.WebService.RemoveStockRequest inValue = new WMS.WebService.RemoveStockRequest();
-            inValue.Body = new WMS.WebService.RemoveStockRequestBody();
-            inValue.Body.dt = dt;
-            inValue.Body.strErrMsg = strErrMsg;
-            WMS.WebService.RemoveStockResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).RemoveStock(inValue);
-            strErrMsg = retVal.Body.strErrMsg;
-            return retVal.Body.RemoveStockResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         WMS.WebService.HelloWorldResponse WMS.WebService.WebServiceSoap.HelloWorld(WMS.WebService.HelloWorldRequest request) {
             return base.Channel.HelloWorld(request);
         }
@@ -39080,6 +40494,216 @@ namespace WMS.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.ExistspCodeResponse WMS.WebService.WebServiceSoap.ExistspCode(WMS.WebService.ExistspCodeRequest request) {
+            return base.Channel.ExistspCode(request);
+        }
+        
+        public bool ExistspCode(WMS.WebService.Preparation model, bool bIncludeDel, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.ExistspCodeRequest inValue = new WMS.WebService.ExistspCodeRequest();
+            inValue.Body = new WMS.WebService.ExistspCodeRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.bIncludeDel = bIncludeDel;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.ExistspCodeResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).ExistspCode(inValue);
+            strError = retVal.Body.strError;
+            return retVal.Body.ExistspCodeResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.SavePreparationResponse WMS.WebService.WebServiceSoap.SavePreparation(WMS.WebService.SavePreparationRequest request) {
+            return base.Channel.SavePreparation(request);
+        }
+        
+        public bool SavePreparation(ref WMS.WebService.Preparation model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.SavePreparationRequest inValue = new WMS.WebService.SavePreparationRequest();
+            inValue.Body = new WMS.WebService.SavePreparationRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.SavePreparationResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).SavePreparation(inValue);
+            model = retVal.Body.model;
+            strError = retVal.Body.strError;
+            return retVal.Body.SavePreparationResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.DeletePreparationByIDResponse WMS.WebService.WebServiceSoap.DeletePreparationByID(WMS.WebService.DeletePreparationByIDRequest request) {
+            return base.Channel.DeletePreparationByID(request);
+        }
+        
+        public bool DeletePreparationByID(WMS.WebService.Preparation model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.DeletePreparationByIDRequest inValue = new WMS.WebService.DeletePreparationByIDRequest();
+            inValue.Body = new WMS.WebService.DeletePreparationByIDRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.DeletePreparationByIDResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).DeletePreparationByID(inValue);
+            strError = retVal.Body.strError;
+            return retVal.Body.DeletePreparationByIDResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetPreparationByIDResponse WMS.WebService.WebServiceSoap.GetPreparationByID(WMS.WebService.GetPreparationByIDRequest request) {
+            return base.Channel.GetPreparationByID(request);
+        }
+        
+        public bool GetPreparationByID(ref WMS.WebService.Preparation model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.GetPreparationByIDRequest inValue = new WMS.WebService.GetPreparationByIDRequest();
+            inValue.Body = new WMS.WebService.GetPreparationByIDRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.GetPreparationByIDResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetPreparationByID(inValue);
+            model = retVal.Body.model;
+            strError = retVal.Body.strError;
+            return retVal.Body.GetPreparationByIDResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetPreparationListByPageResponse WMS.WebService.WebServiceSoap.GetPreparationListByPage(WMS.WebService.GetPreparationListByPageRequest request) {
+            return base.Channel.GetPreparationListByPage(request);
+        }
+        
+        public bool GetPreparationListByPage(ref System.Collections.Generic.List<WMS.WebService.Preparation> modelList, WMS.WebService.Preparation model, ref WMS.WebService.DividPage page, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.GetPreparationListByPageRequest inValue = new WMS.WebService.GetPreparationListByPageRequest();
+            inValue.Body = new WMS.WebService.GetPreparationListByPageRequestBody();
+            inValue.Body.modelList = modelList;
+            inValue.Body.model = model;
+            inValue.Body.page = page;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.GetPreparationListByPageResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetPreparationListByPage(inValue);
+            modelList = retVal.Body.modelList;
+            page = retVal.Body.page;
+            strError = retVal.Body.strError;
+            return retVal.Body.GetPreparationListByPageResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetPreparationListResponse WMS.WebService.WebServiceSoap.GetPreparationList(WMS.WebService.GetPreparationListRequest request) {
+            return base.Channel.GetPreparationList(request);
+        }
+        
+        public bool GetPreparationList(ref System.Collections.Generic.List<WMS.WebService.Preparation> modelList, WMS.WebService.Preparation model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.GetPreparationListRequest inValue = new WMS.WebService.GetPreparationListRequest();
+            inValue.Body = new WMS.WebService.GetPreparationListRequestBody();
+            inValue.Body.modelList = modelList;
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.GetPreparationListResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetPreparationList(inValue);
+            modelList = retVal.Body.modelList;
+            strError = retVal.Body.strError;
+            return retVal.Body.GetPreparationListResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.ExistsbNoResponse WMS.WebService.WebServiceSoap.ExistsbNo(WMS.WebService.ExistsbNoRequest request) {
+            return base.Channel.ExistsbNo(request);
+        }
+        
+        public bool ExistsbNo(WMS.WebService.Building model, bool bIncludeDel, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.ExistsbNoRequest inValue = new WMS.WebService.ExistsbNoRequest();
+            inValue.Body = new WMS.WebService.ExistsbNoRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.bIncludeDel = bIncludeDel;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.ExistsbNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).ExistsbNo(inValue);
+            strError = retVal.Body.strError;
+            return retVal.Body.ExistsbNoResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.SaveBuildingResponse WMS.WebService.WebServiceSoap.SaveBuilding(WMS.WebService.SaveBuildingRequest request) {
+            return base.Channel.SaveBuilding(request);
+        }
+        
+        public bool SaveBuilding(ref WMS.WebService.Building model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.SaveBuildingRequest inValue = new WMS.WebService.SaveBuildingRequest();
+            inValue.Body = new WMS.WebService.SaveBuildingRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.SaveBuildingResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).SaveBuilding(inValue);
+            model = retVal.Body.model;
+            strError = retVal.Body.strError;
+            return retVal.Body.SaveBuildingResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.DeleteBuildingByIDResponse WMS.WebService.WebServiceSoap.DeleteBuildingByID(WMS.WebService.DeleteBuildingByIDRequest request) {
+            return base.Channel.DeleteBuildingByID(request);
+        }
+        
+        public bool DeleteBuildingByID(WMS.WebService.Building model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.DeleteBuildingByIDRequest inValue = new WMS.WebService.DeleteBuildingByIDRequest();
+            inValue.Body = new WMS.WebService.DeleteBuildingByIDRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.DeleteBuildingByIDResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).DeleteBuildingByID(inValue);
+            strError = retVal.Body.strError;
+            return retVal.Body.DeleteBuildingByIDResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetBuildingByIDResponse WMS.WebService.WebServiceSoap.GetBuildingByID(WMS.WebService.GetBuildingByIDRequest request) {
+            return base.Channel.GetBuildingByID(request);
+        }
+        
+        public bool GetBuildingByID(ref WMS.WebService.Building model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.GetBuildingByIDRequest inValue = new WMS.WebService.GetBuildingByIDRequest();
+            inValue.Body = new WMS.WebService.GetBuildingByIDRequestBody();
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.GetBuildingByIDResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetBuildingByID(inValue);
+            model = retVal.Body.model;
+            strError = retVal.Body.strError;
+            return retVal.Body.GetBuildingByIDResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetBuildingListByPageResponse WMS.WebService.WebServiceSoap.GetBuildingListByPage(WMS.WebService.GetBuildingListByPageRequest request) {
+            return base.Channel.GetBuildingListByPage(request);
+        }
+        
+        public bool GetBuildingListByPage(ref System.Collections.Generic.List<WMS.WebService.Building> modelList, WMS.WebService.Building model, ref WMS.WebService.DividPage page, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.GetBuildingListByPageRequest inValue = new WMS.WebService.GetBuildingListByPageRequest();
+            inValue.Body = new WMS.WebService.GetBuildingListByPageRequestBody();
+            inValue.Body.modelList = modelList;
+            inValue.Body.model = model;
+            inValue.Body.page = page;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.GetBuildingListByPageResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetBuildingListByPage(inValue);
+            modelList = retVal.Body.modelList;
+            page = retVal.Body.page;
+            strError = retVal.Body.strError;
+            return retVal.Body.GetBuildingListByPageResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WMS.WebService.GetBuildingListResponse WMS.WebService.WebServiceSoap.GetBuildingList(WMS.WebService.GetBuildingListRequest request) {
+            return base.Channel.GetBuildingList(request);
+        }
+        
+        public bool GetBuildingList(ref System.Collections.Generic.List<WMS.WebService.Building> modelList, WMS.WebService.Building model, WMS.WebService.UserInfo user, ref string strError) {
+            WMS.WebService.GetBuildingListRequest inValue = new WMS.WebService.GetBuildingListRequest();
+            inValue.Body = new WMS.WebService.GetBuildingListRequestBody();
+            inValue.Body.modelList = modelList;
+            inValue.Body.model = model;
+            inValue.Body.user = user;
+            inValue.Body.strError = strError;
+            WMS.WebService.GetBuildingListResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetBuildingList(inValue);
+            modelList = retVal.Body.modelList;
+            strError = retVal.Body.strError;
+            return retVal.Body.GetBuildingListResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         WMS.WebService.CheckImportTableResponse WMS.WebService.WebServiceSoap.CheckImportTable(WMS.WebService.CheckImportTableRequest request) {
             return base.Channel.CheckImportTable(request);
         }
@@ -39377,207 +41001,6 @@ namespace WMS.WebService {
             tv = retVal.Body.tv;
             strErrMsg = retVal.Body.strErrMsg;
             return retVal.Body.GetVoucherByNoResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.GetFastInNotHavePOInfoResponse WMS.WebService.WebServiceSoap.GetFastInNotHavePOInfo(WMS.WebService.GetFastInNotHavePOInfoRequest request) {
-            return base.Channel.GetFastInNotHavePOInfo(request);
-        }
-        
-        public bool GetFastInNotHavePOInfo(WMS.WebService.Task_Model taskmo, ref WMS.WebService.DividPage dividpage, ref System.Collections.Generic.List<WMS.WebService.Task_Model> lsttask, ref string strErrMsg) {
-            WMS.WebService.GetFastInNotHavePOInfoRequest inValue = new WMS.WebService.GetFastInNotHavePOInfoRequest();
-            inValue.Body = new WMS.WebService.GetFastInNotHavePOInfoRequestBody();
-            inValue.Body.taskmo = taskmo;
-            inValue.Body.dividpage = dividpage;
-            inValue.Body.lsttask = lsttask;
-            inValue.Body.strErrMsg = strErrMsg;
-            WMS.WebService.GetFastInNotHavePOInfoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetFastInNotHavePOInfo(inValue);
-            dividpage = retVal.Body.dividpage;
-            lsttask = retVal.Body.lsttask;
-            strErrMsg = retVal.Body.strErrMsg;
-            return retVal.Body.GetFastInNotHavePOInfoResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.InsetMaterialDetailResponse WMS.WebService.WebServiceSoap.InsetMaterialDetail(WMS.WebService.InsetMaterialDetailRequest request) {
-            return base.Channel.InsetMaterialDetail(request);
-        }
-        
-        public bool InsetMaterialDetail(System.Collections.Generic.List<WMS.WebService.TaskDetails_Model> tDtails, ref string msg) {
-            WMS.WebService.InsetMaterialDetailRequest inValue = new WMS.WebService.InsetMaterialDetailRequest();
-            inValue.Body = new WMS.WebService.InsetMaterialDetailRequestBody();
-            inValue.Body.tDtails = tDtails;
-            inValue.Body.msg = msg;
-            WMS.WebService.InsetMaterialDetailResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).InsetMaterialDetail(inValue);
-            msg = retVal.Body.msg;
-            return retVal.Body.InsetMaterialDetailResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.GetTempMaterialNameResponse WMS.WebService.WebServiceSoap.GetTempMaterialName(WMS.WebService.GetTempMaterialNameRequest request) {
-            return base.Channel.GetTempMaterialName(request);
-        }
-        
-        public bool GetTempMaterialName(string materialNo, ref string materialDESC) {
-            WMS.WebService.GetTempMaterialNameRequest inValue = new WMS.WebService.GetTempMaterialNameRequest();
-            inValue.Body = new WMS.WebService.GetTempMaterialNameRequestBody();
-            inValue.Body.materialNo = materialNo;
-            inValue.Body.materialDESC = materialDESC;
-            WMS.WebService.GetTempMaterialNameResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetTempMaterialName(inValue);
-            materialDESC = retVal.Body.materialDESC;
-            return retVal.Body.GetTempMaterialNameResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.ExistsTempMaterialByMaterialNoResponse WMS.WebService.WebServiceSoap.ExistsTempMaterialByMaterialNo(WMS.WebService.ExistsTempMaterialByMaterialNoRequest request) {
-            return base.Channel.ExistsTempMaterialByMaterialNo(request);
-        }
-        
-        public bool ExistsTempMaterialByMaterialNo(string materialNo) {
-            WMS.WebService.ExistsTempMaterialByMaterialNoRequest inValue = new WMS.WebService.ExistsTempMaterialByMaterialNoRequest();
-            inValue.Body = new WMS.WebService.ExistsTempMaterialByMaterialNoRequestBody();
-            inValue.Body.materialNo = materialNo;
-            WMS.WebService.ExistsTempMaterialByMaterialNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).ExistsTempMaterialByMaterialNo(inValue);
-            return retVal.Body.ExistsTempMaterialByMaterialNoResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.GetTempMaterialByTempNoResponse WMS.WebService.WebServiceSoap.GetTempMaterialByTempNo(WMS.WebService.GetTempMaterialByTempNoRequest request) {
-            return base.Channel.GetTempMaterialByTempNo(request);
-        }
-        
-        public bool GetTempMaterialByTempNo(string strMaterialNo, ref WMS.WebService.TempMaterial tempmaterial, ref string strErrMsg) {
-            WMS.WebService.GetTempMaterialByTempNoRequest inValue = new WMS.WebService.GetTempMaterialByTempNoRequest();
-            inValue.Body = new WMS.WebService.GetTempMaterialByTempNoRequestBody();
-            inValue.Body.strMaterialNo = strMaterialNo;
-            inValue.Body.tempmaterial = tempmaterial;
-            inValue.Body.strErrMsg = strErrMsg;
-            WMS.WebService.GetTempMaterialByTempNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetTempMaterialByTempNo(inValue);
-            tempmaterial = retVal.Body.tempmaterial;
-            strErrMsg = retVal.Body.strErrMsg;
-            return retVal.Body.GetTempMaterialByTempNoResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.ExistsTempMaterialNoResponse WMS.WebService.WebServiceSoap.ExistsTempMaterialNo(WMS.WebService.ExistsTempMaterialNoRequest request) {
-            return base.Channel.ExistsTempMaterialNo(request);
-        }
-        
-        public bool ExistsTempMaterialNo(WMS.WebService.TempMaterialInfo model, bool bIncludeDel, WMS.WebService.UserInfo user, ref string strError) {
-            WMS.WebService.ExistsTempMaterialNoRequest inValue = new WMS.WebService.ExistsTempMaterialNoRequest();
-            inValue.Body = new WMS.WebService.ExistsTempMaterialNoRequestBody();
-            inValue.Body.model = model;
-            inValue.Body.bIncludeDel = bIncludeDel;
-            inValue.Body.user = user;
-            inValue.Body.strError = strError;
-            WMS.WebService.ExistsTempMaterialNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).ExistsTempMaterialNo(inValue);
-            strError = retVal.Body.strError;
-            return retVal.Body.ExistsTempMaterialNoResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.SaveTempMaterialResponse WMS.WebService.WebServiceSoap.SaveTempMaterial(WMS.WebService.SaveTempMaterialRequest request) {
-            return base.Channel.SaveTempMaterial(request);
-        }
-        
-        public bool SaveTempMaterial(ref WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, ref string strError) {
-            WMS.WebService.SaveTempMaterialRequest inValue = new WMS.WebService.SaveTempMaterialRequest();
-            inValue.Body = new WMS.WebService.SaveTempMaterialRequestBody();
-            inValue.Body.model = model;
-            inValue.Body.user = user;
-            inValue.Body.strError = strError;
-            WMS.WebService.SaveTempMaterialResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).SaveTempMaterial(inValue);
-            model = retVal.Body.model;
-            strError = retVal.Body.strError;
-            return retVal.Body.SaveTempMaterialResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.DeleteTempMaterialByIDResponse WMS.WebService.WebServiceSoap.DeleteTempMaterialByID(WMS.WebService.DeleteTempMaterialByIDRequest request) {
-            return base.Channel.DeleteTempMaterialByID(request);
-        }
-        
-        public bool DeleteTempMaterialByID(WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, ref string strError) {
-            WMS.WebService.DeleteTempMaterialByIDRequest inValue = new WMS.WebService.DeleteTempMaterialByIDRequest();
-            inValue.Body = new WMS.WebService.DeleteTempMaterialByIDRequestBody();
-            inValue.Body.model = model;
-            inValue.Body.user = user;
-            inValue.Body.strError = strError;
-            WMS.WebService.DeleteTempMaterialByIDResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).DeleteTempMaterialByID(inValue);
-            strError = retVal.Body.strError;
-            return retVal.Body.DeleteTempMaterialByIDResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.GetTempMaterialByIDResponse WMS.WebService.WebServiceSoap.GetTempMaterialByID(WMS.WebService.GetTempMaterialByIDRequest request) {
-            return base.Channel.GetTempMaterialByID(request);
-        }
-        
-        public bool GetTempMaterialByID(ref WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, ref string strError) {
-            WMS.WebService.GetTempMaterialByIDRequest inValue = new WMS.WebService.GetTempMaterialByIDRequest();
-            inValue.Body = new WMS.WebService.GetTempMaterialByIDRequestBody();
-            inValue.Body.model = model;
-            inValue.Body.user = user;
-            inValue.Body.strError = strError;
-            WMS.WebService.GetTempMaterialByIDResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetTempMaterialByID(inValue);
-            model = retVal.Body.model;
-            strError = retVal.Body.strError;
-            return retVal.Body.GetTempMaterialByIDResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.GetTempMaterialListByPageResponse WMS.WebService.WebServiceSoap.GetTempMaterialListByPage(WMS.WebService.GetTempMaterialListByPageRequest request) {
-            return base.Channel.GetTempMaterialListByPage(request);
-        }
-        
-        public bool GetTempMaterialListByPage(ref System.Collections.Generic.List<WMS.WebService.TempMaterialInfo> modelList, WMS.WebService.TempMaterialInfo model, ref WMS.WebService.DividPage page, WMS.WebService.UserInfo user, ref string strError) {
-            WMS.WebService.GetTempMaterialListByPageRequest inValue = new WMS.WebService.GetTempMaterialListByPageRequest();
-            inValue.Body = new WMS.WebService.GetTempMaterialListByPageRequestBody();
-            inValue.Body.modelList = modelList;
-            inValue.Body.model = model;
-            inValue.Body.page = page;
-            inValue.Body.user = user;
-            inValue.Body.strError = strError;
-            WMS.WebService.GetTempMaterialListByPageResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetTempMaterialListByPage(inValue);
-            modelList = retVal.Body.modelList;
-            page = retVal.Body.page;
-            strError = retVal.Body.strError;
-            return retVal.Body.GetTempMaterialListByPageResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.GetMaterialInfoResponse WMS.WebService.WebServiceSoap.GetMaterialInfo(WMS.WebService.GetMaterialInfoRequest request) {
-            return base.Channel.GetMaterialInfo(request);
-        }
-        
-        public bool GetMaterialInfo(ref WMS.WebService.TempMaterialInfo model, int type, WMS.WebService.UserInfo user, ref string strError) {
-            WMS.WebService.GetMaterialInfoRequest inValue = new WMS.WebService.GetMaterialInfoRequest();
-            inValue.Body = new WMS.WebService.GetMaterialInfoRequestBody();
-            inValue.Body.model = model;
-            inValue.Body.type = type;
-            inValue.Body.user = user;
-            inValue.Body.strError = strError;
-            WMS.WebService.GetMaterialInfoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetMaterialInfo(inValue);
-            model = retVal.Body.model;
-            strError = retVal.Body.strError;
-            return retVal.Body.GetMaterialInfoResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WMS.WebService.GetTempMaterialNoResponse WMS.WebService.WebServiceSoap.GetTempMaterialNo(WMS.WebService.GetTempMaterialNoRequest request) {
-            return base.Channel.GetTempMaterialNo(request);
-        }
-        
-        public bool GetTempMaterialNo(ref WMS.WebService.TempMaterialInfo model, WMS.WebService.UserInfo user, ref string strError) {
-            WMS.WebService.GetTempMaterialNoRequest inValue = new WMS.WebService.GetTempMaterialNoRequest();
-            inValue.Body = new WMS.WebService.GetTempMaterialNoRequestBody();
-            inValue.Body.model = model;
-            inValue.Body.user = user;
-            inValue.Body.strError = strError;
-            WMS.WebService.GetTempMaterialNoResponse retVal = ((WMS.WebService.WebServiceSoap)(this)).GetTempMaterialNo(inValue);
-            model = retVal.Body.model;
-            strError = retVal.Body.strError;
-            return retVal.Body.GetTempMaterialNoResult;
         }
     }
 }
