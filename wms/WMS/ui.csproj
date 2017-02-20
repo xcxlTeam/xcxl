@@ -188,6 +188,12 @@
     <Compile Include="Basic\FrmP2B.Designer.cs">
       <DependentUpon>FrmP2B.cs</DependentUpon>
     </Compile>
+    <Compile Include="Basic\FrmP2BFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmP2BFile.Designer.cs">
+      <DependentUpon>FrmP2BFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Basic\FrmUserFile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -762,6 +768,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Basic\FrmP2B.resx">
       <DependentUpon>FrmP2B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmP2BFile.resx">
+      <DependentUpon>FrmP2BFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Basic\FrmUserFile.resx">
       <DependentUpon>FrmUserFile.cs</DependentUpon>
