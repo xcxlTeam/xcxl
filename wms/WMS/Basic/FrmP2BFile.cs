@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace WMS.Basic
 {
-    public partial class FrmP2BFile : Form
+    public partial class FrmP2BFile : Common.FrmBaseDialog
     {
         public FrmP2BFile()
         {
