@@ -24,6 +24,7 @@ using BLL.OutStock;
 using BLL.Supplier;
 using BLL.Check;
 using BLL.Basic.P2B;
+using BLL.Voucher;
 
 namespace WebService
 {
@@ -1150,6 +1151,15 @@ namespace WebService
         }
         #endregion
 
+        #region 根据采购单号获取信息
+        [WebMethod(Description = "根据采购单获取数据，PDA用")]
+        public string GetReciptInfoForPDA(string strPoNo, string strUserJson)
+        {
+            ReadReceipt_Func drFunc = new ReadReceipt_Func();
+            return drFunc.GetReceiptByPoNbr(strPoNo, strUserJson);
+        }
+        #endregion
+
 
         [WebMethod]
         public bool GetInnerBarcodeListByOutBarcodeList(List<Barcode_Model> lstBarcode, ref List<BLL.PrintBarcode.InnerBarcode_Model> lstInnerBarcode)
@@ -1213,6 +1223,13 @@ namespace WebService
         {
             Barcode_Func UF = new Barcode_Func();
             return UF.ResetBarCode(strArraySerialNo, strUserJson);
+        }
+
+        [WebMethod]
+        public string PostReciptInfo(string strReceiveJson, string strUserJson)
+        {
+            ReadReceipt_Func RF = new ReadReceipt_Func();
+            return RF.PostReciptInfo(strReceiveJson, strUserJson);
         }
 
         #endregion
@@ -1460,6 +1477,13 @@ namespace WebService
         {
             BLL.TEST.TestFunc tf = new BLL.TEST.TestFunc();
             return tf.TestReadData(iNo,out ds);
+        }
+
+        [WebMethod]
+        public bool TestReceipt(ref string strErrMsg, out  System.Data.DataSet ds)
+        {
+            BLL.TEST.TestFunc tf = new BLL.TEST.TestFunc();
+            return tf.TestReceipt(ref strErrMsg,out ds);
         }
 
         //[WebMethod]

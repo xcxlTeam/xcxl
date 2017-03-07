@@ -405,7 +405,7 @@ namespace BLL.Stock
             {
                 list = new List<string>();
                 string strSql = "select csbvcode from SaleBillVouchZT where ccusname like '%" + ccusname + "%' and cSource=N'销售' and ivouchstate='Opening' and iverifystate=0 and isnull(bReturnFlag,0)<>1 ";
-                using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(System.Data.CommandType.Text, strSql))
+                using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(System.Data.CommandType.Text, strSql))
                 {
                     while (dr.Read())
                     {
@@ -439,7 +439,7 @@ where cSource=N'销售' and csbvcode='" + code + "'";
                 model.csbvcode = code;
                 model.details = new List<SaleBillDetails_Model>();
 
-                using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(System.Data.CommandType.Text, strSql))
+                using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(System.Data.CommandType.Text, strSql))
                 {
                     while (dr.Read())
                     {
@@ -529,7 +529,7 @@ where cSource=N'销售' and csbvcode = '" + SM.ssbvcode + "' and SaleBillVouchZW
                 list = new List<SaleBillDetails_Model>();
                 string strSql = @"select cSOCode,iRowNo,iQuantity from SO_SODetails
 where dbclosedate is null and cInvCode = '" + detail.cinvcode + "' and cSOCode != '" + detail.ssocode + "'";
-                using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(System.Data.CommandType.Text, strSql))
+                using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(System.Data.CommandType.Text, strSql))
                 {
                     while (dr.Read())
                     {

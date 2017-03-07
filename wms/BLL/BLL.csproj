@@ -288,7 +288,9 @@
     <Compile Include="Voucher\ReadReceipt_Func.cs" />
     <Compile Include="Voucher\ReadInventory_Func.cs" />
     <Compile Include="Voucher\ReadProd_Func.cs" />
-    <Compile Include="Voucher\Receipt.cs" />
+    <Compile Include="Voucher\ReceiptDetails.cs" />
+    <Compile Include="Voucher\ReciptHead.cs" />
+    <Compile Include="Voucher\Recipt_DB.cs" />
     <Compile Include="Voucher\Transfer.cs" />
     <Compile Include="XMLUtil\XmlUtil.cs" />
   </ItemGroup>

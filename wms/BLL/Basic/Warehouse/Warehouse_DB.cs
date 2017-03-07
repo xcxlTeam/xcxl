@@ -160,7 +160,7 @@ namespace BLL.Basic.Warehouse
             string strSql = string.Empty;
             strSql = string.Format("SELECT cwhcode,cwhname FROM Warehouse WHERE cwhcode = '{0}'", model.WarehouseNo);
 
-            return OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null);
+            return OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null);
         }
 
         internal SqlDataReader GetWarehouseListByUserID(UserInfo User, bool IncludNoCheck)

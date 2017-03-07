@@ -19,21 +19,21 @@ internal abstract class OperationSql
     // 哈希表用来存储缓存的参数信息，哈希表可以存储任意类型的参数。
     private static Hashtable parmCache = Hashtable.Synchronized(new Hashtable());
 
-    #region U8连接字符串
-    private static string _U8ConnStr;
+    #region ERP连接字符串
+    private static string _ERPConnStr;
     /// <summary>
     /// U8连接字符串
     /// </summary>
-    public static string U8ConnStr
+    public static string ERPConnStr
     {
         get
         {
-            if (string.IsNullOrEmpty(_U8ConnStr))
+            if (string.IsNullOrEmpty(_ERPConnStr))
             {
-                _U8ConnStr = "user id=" + GetU8BaseInfo().sqlUser + ";password=" + GetU8BaseInfo().sqlPassword + ";data source='" + GetU8BaseInfo().DBService
-                        + "';persist security info=True;initial catalog=UFDATA_" + GetU8BaseInfo().accID + "_" + GetU8BaseInfo().year;
+                _ERPConnStr = "user id=" + GetU8BaseInfo().sqlUser + ";password=" + GetU8BaseInfo().sqlPassword + ";data source='" + GetU8BaseInfo().DBService
+                        + "';persist security info=True;initial catalog=OGCTESTApplication";
             }
-            return _U8ConnStr;
+            return _ERPConnStr;
         }
     }
 
@@ -108,7 +108,7 @@ internal abstract class OperationSql
         //SqlDataAdapter adp = new SqlDataAdapter();
         errMsg = "";
         int res;
-        conn.ConnectionString = U8ConnStr;
+        conn.ConnectionString = ERPConnStr;
         try
         {
             conn.Open();
@@ -210,7 +210,7 @@ internal abstract class OperationSql
         SqlCommand cmd = new SqlCommand();
         SqlConnection conn = new SqlConnection();
         errMsg = "";
-        conn.ConnectionString = U8ConnStr;
+        conn.ConnectionString = ERPConnStr;
         retBool = false;
         try
         {
@@ -335,7 +335,7 @@ internal abstract class OperationSql
         SqlConnection conn = new SqlConnection();
         retString = "";
         errMsg = "";
-        conn.ConnectionString = U8ConnStr;
+        conn.ConnectionString = ERPConnStr;
         try
         {
             conn.Open();
@@ -426,7 +426,7 @@ internal abstract class OperationSql
         SqlCommand cmd = new SqlCommand();
         SqlConnection conn = new SqlConnection();
         SqlDataAdapter adp = new SqlDataAdapter();
-        conn.ConnectionString = U8ConnStr;
+        conn.ConnectionString = ERPConnStr;
         try
         {
             conn.Open();
@@ -536,7 +536,7 @@ internal abstract class OperationSql
     {
         SqlCommand cmd = new SqlCommand();
 
-        using (SqlConnection conn = new SqlConnection(U8ConnStr))
+        using (SqlConnection conn = new SqlConnection(ERPConnStr))
         {
             //通过PrePareCommand方法将参数逐个加入到SqlCommand的参数集合中
             PrepareCommand(cmd, conn, null, cmdType, cmdText, commandParameters);
@@ -572,7 +572,7 @@ internal abstract class OperationSql
 
         SqlCommand cmd = new SqlCommand();
 
-        using (SqlConnection conn = new SqlConnection(U8ConnStr))
+        using (SqlConnection conn = new SqlConnection(ERPConnStr))
         {
             //通过PrePareCommand方法将参数逐个加入到SqlCommand的参数集合中
             PrepareCommand2(cmd, conn, null, cmdType, cmdText, commandParameters);
@@ -611,7 +611,7 @@ internal abstract class OperationSql
 
         SqlCommand cmd = new SqlCommand();
 
-        using (SqlConnection conn = new SqlConnection(U8ConnStr))
+        using (SqlConnection conn = new SqlConnection(ERPConnStr))
         {
             //通过PrePareCommand方法将参数逐个加入到SqlCommand的参数集合中 
             PrepareCommand(cmd, conn, null, cmdType, cmdText, commandParameters);
@@ -857,10 +857,10 @@ internal abstract class OperationSql
     /// <param name="commandText">存储过程的名字或者 T-SQL 语句</param>
     /// <param name="commandParameters">以数组形式提供SqlCommand命令中用到的参数列表</param>
     /// <returns>返回一个包含结果的SqlDataReader</returns>
-    public static SqlDataReader ExecuteReaderForU8(CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+    public static SqlDataReader ExecuteReaderForERP(CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
     {
         SqlCommand cmd = new SqlCommand();
-        SqlConnection conn = new SqlConnection(U8ConnStr);
+        SqlConnection conn = new SqlConnection(ERPConnStr);
 
         // 在这里使用try/catch处理是因为如果方法出现异常，则SqlDataReader就不存在，
         //CommandBehavior.CloseConnection的语句就不会执行，触发的异常由catch捕获。
@@ -924,7 +924,7 @@ internal abstract class OperationSql
     {
         SqlCommand cmd = new SqlCommand();
 
-        using (SqlConnection connection = new SqlConnection(U8ConnStr))
+        using (SqlConnection connection = new SqlConnection(ERPConnStr))
         {
             PrepareCommand(cmd, connection, null, cmdType, cmdText, commandParameters);
             object val = cmd.ExecuteScalar();
