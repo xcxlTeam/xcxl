@@ -9,7 +9,7 @@ using BLL.Basic.User;
 
 namespace BLL.Voucher
 {
-    public class Recipt_DB
+    public class Receipt_DB
     {
         public bool PostReceipt(ref ReceiptHead model,UserInfo user, ref string strError)
         {
@@ -38,10 +38,15 @@ namespace BLL.Voucher
                         model.BatNbr = ds.Tables[0].Rows[0][0].ToDBString();
                         model.RcptNbr = ds.Tables[0].Rows[0][1].ToDBString();
                     }
-                } 
+                }
+                else
+                {
+                    strError = "未收到ERP存储过程返回数据!";
+                    return false;
+                }
                 #endregion
-                //if(!SaveReceipt(ref model,user))
-                //    return false;
+                if (!SaveReceipt(ref model, user))
+                    return false;
                 return true;
             }
             catch (Exception ex)
@@ -62,14 +67,13 @@ namespace BLL.Voucher
             OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "Proc_SaveRecipt", param);
 
             string ErrorMsg = param[2].Value.ToDBString();
-            if (ErrorMsg.StartsWith("执行错误"))
+            if (ErrorMsg.StartsWith("execution error"))
             {
                 throw new Exception(ErrorMsg);
             }
             else
             {
-                throw new Exception(ErrorMsg);
-                //return true;
+                return true;
             }
         }
 
@@ -115,8 +119,8 @@ namespace BLL.Voucher
            ,[OldbatchCode]
            ,[Producttime])
      VALUES
-           ('{0}','{1}','{2}',{3},{4},{5},'{6}',{7},'{8}',getdate())", item.PoNbr,item.LineRef,item.InvtID,item.iQty,item.NetWt,
-                                                                 item.StdTareWt,item.cBatch, item.batchQty, item.VendBatch);
+           ('{0}','{1}','{2}',{3},{4},{5},'{6}',{7},'{8}','{9}')", item.PoNbr,item.LineRef,item.InvtID,item.iQty,item.NetWt,
+                                                                 item.StdTareWt,item.cBatch, item.batchQty, item.VendBatch,item.ProductionDate);
                     cmd.CommandText = sql;
                     if (cmd.ExecuteNonQuery() < 1)
                     {
@@ -143,6 +147,76 @@ namespace BLL.Voucher
                 conn.Close();
             }
         }
+
+        public bool UploadTempReturnReceipt(ref ReceiptHead model)
+        {
+            string strError = string.Empty;
+            SqlCommand cmd = new SqlCommand();
+            SqlConnection conn = new SqlConnection();
+            SqlDataAdapter adp = new SqlDataAdapter();
+            conn.ConnectionString = OperationSql.ERPConnStr;
+
+            string sql = null;
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                strError = ex.Message;
+                model.Status = "E";
+                model.Message = strError;
+                return false;
+            }
+            SqlTransaction myTran;
+            myTran = conn.BeginTransaction();
+            cmd.Connection = conn;
+            cmd.Transaction = myTran;
+            DataSet result = new DataSet();
+
+            try
+            {
+                foreach (var item in model.lstDetails)
+                {
+                    sql = string.Format(@"INSERT INTO [Mes_PurchaseReturn]
+           ([ReceiptType]
+           ,[OrderState]
+           ,[OrderNum]
+           ,[RowNum]
+           ,[Invcode]
+           ,[RtNum]
+           ,[VbatchCode]
+           ,[VbatchNum])
+     VALUES
+           ('{0}','{1}','{2}',{3},{4},{5},'{6}',{7})", model.ReceiptType, model.OrderState, item.PoNbr, item.LineRef,item.InvtID,
+                                                                 item.iQty, item.cBatch, item.batchQty);
+                    cmd.CommandText = sql;
+                    if (cmd.ExecuteNonQuery() < 1)
+                    {
+                        strError = "数据保存失败!";
+                        model.Status = "E";
+                        model.Message = strError;
+                        myTran.Rollback();
+                        return false;
+                    }
+                }
+                myTran.Commit();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                strError = ex.Message;
+                model.Status = "E";
+                model.Message = strError;
+                myTran.Rollback();
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
 
         private SqlParameter[] GetParameterFromModel(ReceiptHead model,UserInfo user)
         {

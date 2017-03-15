@@ -38,6 +38,8 @@
             this.当天使用现场物料清单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chensGroupBox1 = new ChensControl.ChensGroupBox();
             this.chensDataGridView1 = new ChensControl.ChensDataGridView();
+            this.chensGroupBox2 = new ChensControl.ChensGroupBox();
+            this.chensButton2 = new ChensControl.ChensButton();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,8 +49,6 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chensGroupBox2 = new ChensControl.ChensGroupBox();
-            this.chensButton2 = new ChensControl.ChensButton();
             this.chensMenuStrip1.SuspendLayout();
             this.chensGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chensDataGridView1)).BeginInit();
@@ -148,6 +148,31 @@
             this.chensDataGridView1.Size = new System.Drawing.Size(986, 343);
             this.chensDataGridView1.TabIndex = 0;
             // 
+            // chensGroupBox2
+            // 
+            this.chensGroupBox2.Controls.Add(this.chensButton2);
+            this.chensGroupBox2.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chensGroupBox2.Location = new System.Drawing.Point(3, 33);
+            this.chensGroupBox2.Name = "chensGroupBox2";
+            this.chensGroupBox2.Size = new System.Drawing.Size(986, 60);
+            this.chensGroupBox2.TabIndex = 2;
+            this.chensGroupBox2.TabStop = false;
+            this.chensGroupBox2.Text = "查询条件";
+            // 
+            // chensButton2
+            // 
+            this.chensButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(174)))), ((int)(((byte)(253)))));
+            this.chensButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chensButton2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.chensButton2.ForeColor = System.Drawing.Color.White;
+            this.chensButton2.Location = new System.Drawing.Point(405, 15);
+            this.chensButton2.Name = "chensButton2";
+            this.chensButton2.Size = new System.Drawing.Size(82, 32);
+            this.chensButton2.TabIndex = 4;
+            this.chensButton2.Text = "刷新";
+            this.chensButton2.UseVisualStyleBackColor = false;
+            this.chensButton2.Click += new System.EventHandler(this.chensButton2_Click);
+            // 
             // Column2
             // 
             this.Column2.HeaderText = "物料编号";
@@ -186,7 +211,7 @@
             // 
             // Column7
             // 
-            this.Column7.HeaderText = "制法";
+            this.Column7.HeaderText = "建筑编号";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
@@ -201,31 +226,6 @@
             this.Column6.HeaderText = "操作类型";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
-            // 
-            // chensGroupBox2
-            // 
-            this.chensGroupBox2.Controls.Add(this.chensButton2);
-            this.chensGroupBox2.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.chensGroupBox2.Location = new System.Drawing.Point(3, 33);
-            this.chensGroupBox2.Name = "chensGroupBox2";
-            this.chensGroupBox2.Size = new System.Drawing.Size(986, 60);
-            this.chensGroupBox2.TabIndex = 2;
-            this.chensGroupBox2.TabStop = false;
-            this.chensGroupBox2.Text = "查询条件";
-            // 
-            // chensButton2
-            // 
-            this.chensButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(174)))), ((int)(((byte)(253)))));
-            this.chensButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chensButton2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.chensButton2.ForeColor = System.Drawing.Color.White;
-            this.chensButton2.Location = new System.Drawing.Point(405, 15);
-            this.chensButton2.Name = "chensButton2";
-            this.chensButton2.Size = new System.Drawing.Size(82, 32);
-            this.chensButton2.TabIndex = 4;
-            this.chensButton2.Text = "刷新";
-            this.chensButton2.UseVisualStyleBackColor = false;
-            this.chensButton2.Click += new System.EventHandler(this.chensButton2_Click);
             // 
             // Form1
             // 
@@ -257,6 +257,9 @@
         private ChensControl.ChensDataGridView chensDataGridView1;
         private ChensControl.ChensGroupBox chensGroupBox2;
         private ChensControl.ChensButton chensButton2;
+        private System.Windows.Forms.ToolStripMenuItem 拣货单生成ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 当天使用现场物料清单ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 停工单设置ToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -266,8 +269,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.ToolStripMenuItem 拣货单生成ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 当天使用现场物料清单ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 停工单设置ToolStripMenuItem;
     }
 }

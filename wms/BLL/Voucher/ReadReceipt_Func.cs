@@ -19,7 +19,7 @@ namespace BLL.Voucher
             model.Name = dr["Name"].ToCHString();
             model.Phone = dr["Phone"].ToDBString();
             model.PoNbr = dr["PoNbr"].ToDBString();
-            model.PromDate = dr["PromDate"].ToDateTime();
+            model.PromDate = dr["PromDate"].ToDBString();
             model.QtyOrd = dr["QtyOrd"].ToDecimal();
             model.QtyRcvd = dr["QtyRcvd"].ToDecimal();
             model.VendID = dr["VendID"].ToInt32();
@@ -74,6 +74,10 @@ namespace BLL.Voucher
                         }
                         model.lstDetails.Add(GetModelFromDataReader(dr));
                     }
+                    if (model==null)
+                    {
+                        throw new Exception("未找到数据！");
+                    }
                     bSucc = true;
                     return GetReturnJson(bSucc, model, strError);
                 }
@@ -81,6 +85,7 @@ namespace BLL.Voucher
             catch (Exception ex)
             {
                 strError = ex.Message;
+                bSucc = false;
                 model=new ReceiptHead();
                 return GetReturnJson(bSucc, model, strError);
             }
@@ -95,7 +100,7 @@ namespace BLL.Voucher
             string strErrMsg = string.Empty;
             string strPostAndTask = string.Empty;
             ReceiptHead DeliveryInfo = new ReceiptHead();
-            Recipt_DB DRD = new Recipt_DB();
+            Receipt_DB DRD = new Receipt_DB();
             UserInfo userModel = new UserInfo();
 
             try

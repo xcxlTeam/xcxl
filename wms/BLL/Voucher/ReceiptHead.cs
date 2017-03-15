@@ -39,6 +39,7 @@ namespace BLL.Voucher
         public string BatNbr { get; set; }
 
         public string RcptNbr { get; set; }
+       
 
         public List<ReceiptDetails> lstDetails { get; set; }
 
@@ -49,7 +50,17 @@ namespace BLL.Voucher
         /// <summary>
         /// 失败消息
         /// </summary>
-        public String Message { get; set; } 
+        public String Message { get; set; }
+
+        /// <summary>
+        /// 订单状态
+        /// </summary>
+        public string OrderState { get; set; }
+        /// <summary>
+        /// 退货类型
+        /// </summary>
+        public string ReceiptType { get; set; }
+
     }
 
 }

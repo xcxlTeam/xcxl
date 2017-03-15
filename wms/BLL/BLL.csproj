@@ -283,14 +283,15 @@
     <Compile Include="Tool\MaterialBarcodeDecode.cs" />
     <Compile Include="Tool\WriteLogMethod.cs" />
     <Compile Include="Tool\SafeConvert.cs" />
-    <Compile Include="Voucher\Prod.cs" />
+    <Compile Include="Voucher\ProdDetails.cs" />
+    <Compile Include="Voucher\ProdHead.cs" />
     <Compile Include="Voucher\ReadAPI_DB.cs" />
     <Compile Include="Voucher\ReadReceipt_Func.cs" />
     <Compile Include="Voucher\ReadInventory_Func.cs" />
     <Compile Include="Voucher\ReadProd_Func.cs" />
     <Compile Include="Voucher\ReceiptDetails.cs" />
-    <Compile Include="Voucher\ReciptHead.cs" />
-    <Compile Include="Voucher\Recipt_DB.cs" />
+    <Compile Include="Voucher\ReceiptHead.cs" />
+    <Compile Include="Voucher\Receipt_DB.cs" />
     <Compile Include="Voucher\Transfer.cs" />
     <Compile Include="XMLUtil\XmlUtil.cs" />
   </ItemGroup>

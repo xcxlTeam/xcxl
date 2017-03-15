@@ -94,9 +94,9 @@ namespace BLL.TEST
 
                 //strError = param[0].Value.ToDBString();
 
-                
-                string sql = "xMES_sp_Receipt";   //存储过程名称myproc  
-                SqlDataAdapter da = new SqlDataAdapter(sql, OperationSql.connectionString);
+
+                string sql = "xMES_sp_Return";   //存储过程名称myproc  
+                SqlDataAdapter da = new SqlDataAdapter(sql, OperationSql.ERPConnStr);
                 //设置命令对象类型           
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
                 //填充数据  
