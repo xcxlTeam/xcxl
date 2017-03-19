@@ -57,5 +57,12 @@ namespace WMS.Warehouse
         }
 
         #endregion
+
+        #region 物料需求计算
+        public static bool GetAllotData(List<ProdHead> lstProd, ref ProdHead model, ref string strError)
+        {
+            return WMSWebService.service.GetAllotData(lstProd,ref model, Common_Var.CurrentUser, ref strError);
+        } 
+        #endregion
     }
 }

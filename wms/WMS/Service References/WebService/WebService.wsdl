@@ -2,6 +2,59 @@
 <wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetStockInfoByBarcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strBarCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserJson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStockInfoByBarcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStockInfoByBarcodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStockByAreaNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strAreaNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserJson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStockByAreaNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStockByAreaNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSupplierInfoForU8">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierInfo" type="tns:Supplier_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Supplier_Model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupplierCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupplierName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSupplierInfoForU8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSupplierInfoForU8Result" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierInfo" type="tns:Supplier_Model" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="GetOutSideByDeliveryToSRM">
         <s:complexType>
           <s:sequence>
@@ -379,20 +432,6 @@
             <s:element minOccurs="1" maxOccurs="1" name="CreateShelveTaskTestResult" type="s:boolean" />
             <s:element minOccurs="0" maxOccurs="1" name="strTaskNo" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TestReadData">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="iNo" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TestReadDataResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="TestReadDataResult" type="s:boolean" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -2061,6 +2100,103 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="GetAllotData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:ArrayOfProdHead" />
+            <s:element minOccurs="0" maxOccurs="1" name="prod" type="tns:ProdHead" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProdHead">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProdHead" nillable="true" type="tns:ProdHead" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProdHead">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProdOrdID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PInvtID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="QtytoProd" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="LotSerNbr" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProdDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShipDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SiteID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WhseLoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SONbr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProdMgrID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BuildingNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstDetails" type="tns:ArrayOfProdDetails" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProdDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProdDetails" nillable="true" type="tns:ProdDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProdDetails">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Inventory">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="EndDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProdOrdID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PInvtID" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="QtytoProd" type="s:decimal" />
+              <s:element minOccurs="0" maxOccurs="1" name="LotSerNbr" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ProdDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ShipDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="SiteID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WhseLoc" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Remark2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SONbr" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MInvtID" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="QtyReq" type="s:decimal" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProdMgrID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BuildingNo" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="CurrentStock" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="WorkshopCurrentStock" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="iGrade" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="iOperate" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="dTransfer" type="s:decimal" />
+              <s:element minOccurs="0" maxOccurs="1" name="sOperate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="sInvType" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Inventory">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Allergic" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SceneMaterial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvtType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShelfLife" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvtID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CHDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descr" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StdGrossWt" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NetWt" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="StdTareWt" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="StkUnit" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllotDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAllotDataResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="prod" type="tns:ProdHead" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="GetTaskMainListByPage">
         <s:complexType>
           <s:sequence>
@@ -3374,6 +3510,21 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="GetReciptInfoForPDA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strPoNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserJson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReciptInfoForPDAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReciptInfoForPDAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="GetInnerBarcodeListByOutBarcodeList">
         <s:complexType>
           <s:sequence>
@@ -3476,6 +3627,21 @@
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="ResetBarCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostReciptInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strReceiveJson" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserJson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostReciptInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostReciptInfoResult" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -3777,59 +3943,6 @@
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="GetStockInfoDistrResult" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetStockInfoByBarcode">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="strBarCode" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="strUserJson" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetStockInfoByBarcodeResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetStockInfoByBarcodeResult" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetStockByAreaNo">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="strAreaNo" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="strUserJson" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetStockByAreaNoResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetStockByAreaNoResult" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetSupplierInfoForU8">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SupplierInfo" type="tns:Supplier_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:complexType name="Supplier_Model">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="1" name="SupplierCode" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="SupplierName" type="s:string" />
-        </s:sequence>
-      </s:complexType>
-      <s:element name="GetSupplierInfoForU8Response">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetSupplierInfoForU8Result" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="SupplierInfo" type="tns:Supplier_Model" />
-            <s:element minOccurs="0" maxOccurs="1" name="strErrMsg" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -5575,6 +5688,24 @@
       </s:element>
     </s:schema>
   </wsdl:types>
+  <wsdl:message name="GetStockInfoByBarcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStockInfoByBarcode" />
+  </wsdl:message>
+  <wsdl:message name="GetStockInfoByBarcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStockInfoByBarcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStockByAreaNoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStockByAreaNo" />
+  </wsdl:message>
+  <wsdl:message name="GetStockByAreaNoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStockByAreaNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSupplierInfoForU8SoapIn">
+    <wsdl:part name="parameters" element="tns:GetSupplierInfoForU8" />
+  </wsdl:message>
+  <wsdl:message name="GetSupplierInfoForU8SoapOut">
+    <wsdl:part name="parameters" element="tns:GetSupplierInfoForU8Response" />
+  </wsdl:message>
   <wsdl:message name="GetOutSideByDeliveryToSRMSoapIn">
     <wsdl:part name="parameters" element="tns:GetOutSideByDeliveryToSRM" />
   </wsdl:message>
@@ -5586,12 +5717,6 @@
   </wsdl:message>
   <wsdl:message name="CreateShelveTaskTestSoapOut">
     <wsdl:part name="parameters" element="tns:CreateShelveTaskTestResponse" />
-  </wsdl:message>
-  <wsdl:message name="TestReadDataSoapIn">
-    <wsdl:part name="parameters" element="tns:TestReadData" />
-  </wsdl:message>
-  <wsdl:message name="TestReadDataSoapOut">
-    <wsdl:part name="parameters" element="tns:TestReadDataResponse" />
   </wsdl:message>
   <wsdl:message name="WriteLogSoapIn">
     <wsdl:part name="parameters" element="tns:WriteLog" />
@@ -6007,6 +6132,12 @@
   <wsdl:message name="GetTempMaterialNoSoapOut">
     <wsdl:part name="parameters" element="tns:GetTempMaterialNoResponse" />
   </wsdl:message>
+  <wsdl:message name="GetAllotDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllotData" />
+  </wsdl:message>
+  <wsdl:message name="GetAllotDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllotDataResponse" />
+  </wsdl:message>
   <wsdl:message name="GetTaskMainListByPageSoapIn">
     <wsdl:part name="parameters" element="tns:GetTaskMainListByPage" />
   </wsdl:message>
@@ -6295,6 +6426,12 @@
   <wsdl:message name="GetDeliveryInfoForAndroidSoapOut">
     <wsdl:part name="parameters" element="tns:GetDeliveryInfoForAndroidResponse" />
   </wsdl:message>
+  <wsdl:message name="GetReciptInfoForPDASoapIn">
+    <wsdl:part name="parameters" element="tns:GetReciptInfoForPDA" />
+  </wsdl:message>
+  <wsdl:message name="GetReciptInfoForPDASoapOut">
+    <wsdl:part name="parameters" element="tns:GetReciptInfoForPDAResponse" />
+  </wsdl:message>
   <wsdl:message name="GetInnerBarcodeListByOutBarcodeListSoapIn">
     <wsdl:part name="parameters" element="tns:GetInnerBarcodeListByOutBarcodeList" />
   </wsdl:message>
@@ -6330,6 +6467,12 @@
   </wsdl:message>
   <wsdl:message name="ResetBarCodeSoapOut">
     <wsdl:part name="parameters" element="tns:ResetBarCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostReciptInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:PostReciptInfo" />
+  </wsdl:message>
+  <wsdl:message name="PostReciptInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:PostReciptInfoResponse" />
   </wsdl:message>
   <wsdl:message name="GetTaskInfoSoapIn">
     <wsdl:part name="parameters" element="tns:GetTaskInfo" />
@@ -6426,24 +6569,6 @@
   </wsdl:message>
   <wsdl:message name="GetStockInfoDistrSoapOut">
     <wsdl:part name="parameters" element="tns:GetStockInfoDistrResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetStockInfoByBarcodeSoapIn">
-    <wsdl:part name="parameters" element="tns:GetStockInfoByBarcode" />
-  </wsdl:message>
-  <wsdl:message name="GetStockInfoByBarcodeSoapOut">
-    <wsdl:part name="parameters" element="tns:GetStockInfoByBarcodeResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetStockByAreaNoSoapIn">
-    <wsdl:part name="parameters" element="tns:GetStockByAreaNo" />
-  </wsdl:message>
-  <wsdl:message name="GetStockByAreaNoSoapOut">
-    <wsdl:part name="parameters" element="tns:GetStockByAreaNoResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetSupplierInfoForU8SoapIn">
-    <wsdl:part name="parameters" element="tns:GetSupplierInfoForU8" />
-  </wsdl:message>
-  <wsdl:message name="GetSupplierInfoForU8SoapOut">
-    <wsdl:part name="parameters" element="tns:GetSupplierInfoForU8Response" />
   </wsdl:message>
   <wsdl:message name="HelloWorldSoapIn">
     <wsdl:part name="parameters" element="tns:HelloWorld" />
@@ -6956,6 +7081,18 @@
     <wsdl:part name="parameters" element="tns:GetVoucherByNoResponse" />
   </wsdl:message>
   <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="GetStockInfoByBarcode">
+      <wsdl:input message="tns:GetStockInfoByBarcodeSoapIn" />
+      <wsdl:output message="tns:GetStockInfoByBarcodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStockByAreaNo">
+      <wsdl:input message="tns:GetStockByAreaNoSoapIn" />
+      <wsdl:output message="tns:GetStockByAreaNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierInfoForU8">
+      <wsdl:input message="tns:GetSupplierInfoForU8SoapIn" />
+      <wsdl:output message="tns:GetSupplierInfoForU8SoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="GetOutSideByDeliveryToSRM">
       <wsdl:input message="tns:GetOutSideByDeliveryToSRMSoapIn" />
       <wsdl:output message="tns:GetOutSideByDeliveryToSRMSoapOut" />
@@ -6963,10 +7100,6 @@
     <wsdl:operation name="CreateShelveTaskTest">
       <wsdl:input message="tns:CreateShelveTaskTestSoapIn" />
       <wsdl:output message="tns:CreateShelveTaskTestSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="TestReadData">
-      <wsdl:input message="tns:TestReadDataSoapIn" />
-      <wsdl:output message="tns:TestReadDataSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="WriteLog">
       <wsdl:input message="tns:WriteLogSoapIn" />
@@ -7244,6 +7377,10 @@
       <wsdl:input message="tns:GetTempMaterialNoSoapIn" />
       <wsdl:output message="tns:GetTempMaterialNoSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="GetAllotData">
+      <wsdl:input message="tns:GetAllotDataSoapIn" />
+      <wsdl:output message="tns:GetAllotDataSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="GetTaskMainListByPage">
       <wsdl:input message="tns:GetTaskMainListByPageSoapIn" />
       <wsdl:output message="tns:GetTaskMainListByPageSoapOut" />
@@ -7437,6 +7574,11 @@
       <wsdl:input message="tns:GetDeliveryInfoForAndroidSoapIn" />
       <wsdl:output message="tns:GetDeliveryInfoForAndroidSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="GetReciptInfoForPDA">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据采购单获取数据，PDA用</wsdl:documentation>
+      <wsdl:input message="tns:GetReciptInfoForPDASoapIn" />
+      <wsdl:output message="tns:GetReciptInfoForPDASoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="GetInnerBarcodeListByOutBarcodeList">
       <wsdl:input message="tns:GetInnerBarcodeListByOutBarcodeListSoapIn" />
       <wsdl:output message="tns:GetInnerBarcodeListByOutBarcodeListSoapOut" />
@@ -7460,6 +7602,10 @@
     <wsdl:operation name="ResetBarCode">
       <wsdl:input message="tns:ResetBarCodeSoapIn" />
       <wsdl:output message="tns:ResetBarCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostReciptInfo">
+      <wsdl:input message="tns:PostReciptInfoSoapIn" />
+      <wsdl:output message="tns:PostReciptInfoSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="GetTaskInfo">
       <wsdl:input message="tns:GetTaskInfoSoapIn" />
@@ -7524,18 +7670,6 @@
     <wsdl:operation name="GetStockInfoDistr">
       <wsdl:input message="tns:GetStockInfoDistrSoapIn" />
       <wsdl:output message="tns:GetStockInfoDistrSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetStockInfoByBarcode">
-      <wsdl:input message="tns:GetStockInfoByBarcodeSoapIn" />
-      <wsdl:output message="tns:GetStockInfoByBarcodeSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetStockByAreaNo">
-      <wsdl:input message="tns:GetStockByAreaNoSoapIn" />
-      <wsdl:output message="tns:GetStockByAreaNoSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetSupplierInfoForU8">
-      <wsdl:input message="tns:GetSupplierInfoForU8SoapIn" />
-      <wsdl:output message="tns:GetSupplierInfoForU8SoapOut" />
     </wsdl:operation>
     <wsdl:operation name="HelloWorld">
       <wsdl:input message="tns:HelloWorldSoapIn" />
@@ -7881,6 +8015,33 @@
   </wsdl:portType>
   <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStockInfoByBarcode">
+      <soap:operation soapAction="http://tempuri.org/GetStockInfoByBarcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStockByAreaNo">
+      <soap:operation soapAction="http://tempuri.org/GetStockByAreaNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierInfoForU8">
+      <soap:operation soapAction="http://tempuri.org/GetSupplierInfoForU8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetOutSideByDeliveryToSRM">
       <soap:operation soapAction="http://tempuri.org/GetOutSideByDeliveryToSRM" style="document" />
       <wsdl:input>
@@ -7892,15 +8053,6 @@
     </wsdl:operation>
     <wsdl:operation name="CreateShelveTaskTest">
       <soap:operation soapAction="http://tempuri.org/CreateShelveTaskTest" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TestReadData">
-      <soap:operation soapAction="http://tempuri.org/TestReadData" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -8529,6 +8681,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetAllotData">
+      <soap:operation soapAction="http://tempuri.org/GetAllotData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetTaskMainListByPage">
       <soap:operation soapAction="http://tempuri.org/GetTaskMainListByPage" style="document" />
       <wsdl:input>
@@ -8961,6 +9122,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetReciptInfoForPDA">
+      <soap:operation soapAction="http://tempuri.org/GetReciptInfoForPDA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetInnerBarcodeListByOutBarcodeList">
       <soap:operation soapAction="http://tempuri.org/GetInnerBarcodeListByOutBarcodeList" style="document" />
       <wsdl:input>
@@ -9008,6 +9178,15 @@
     </wsdl:operation>
     <wsdl:operation name="ResetBarCode">
       <soap:operation soapAction="http://tempuri.org/ResetBarCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostReciptInfo">
+      <soap:operation soapAction="http://tempuri.org/PostReciptInfo" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -9152,33 +9331,6 @@
     </wsdl:operation>
     <wsdl:operation name="GetStockInfoDistr">
       <soap:operation soapAction="http://tempuri.org/GetStockInfoDistr" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetStockInfoByBarcode">
-      <soap:operation soapAction="http://tempuri.org/GetStockInfoByBarcode" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetStockByAreaNo">
-      <soap:operation soapAction="http://tempuri.org/GetStockByAreaNo" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetSupplierInfoForU8">
-      <soap:operation soapAction="http://tempuri.org/GetSupplierInfoForU8" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -9954,6 +10106,33 @@
   </wsdl:binding>
   <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStockInfoByBarcode">
+      <soap12:operation soapAction="http://tempuri.org/GetStockInfoByBarcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStockByAreaNo">
+      <soap12:operation soapAction="http://tempuri.org/GetStockByAreaNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierInfoForU8">
+      <soap12:operation soapAction="http://tempuri.org/GetSupplierInfoForU8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetOutSideByDeliveryToSRM">
       <soap12:operation soapAction="http://tempuri.org/GetOutSideByDeliveryToSRM" style="document" />
       <wsdl:input>
@@ -9965,15 +10144,6 @@
     </wsdl:operation>
     <wsdl:operation name="CreateShelveTaskTest">
       <soap12:operation soapAction="http://tempuri.org/CreateShelveTaskTest" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TestReadData">
-      <soap12:operation soapAction="http://tempuri.org/TestReadData" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -10602,6 +10772,15 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetAllotData">
+      <soap12:operation soapAction="http://tempuri.org/GetAllotData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetTaskMainListByPage">
       <soap12:operation soapAction="http://tempuri.org/GetTaskMainListByPage" style="document" />
       <wsdl:input>
@@ -11034,6 +11213,15 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetReciptInfoForPDA">
+      <soap12:operation soapAction="http://tempuri.org/GetReciptInfoForPDA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetInnerBarcodeListByOutBarcodeList">
       <soap12:operation soapAction="http://tempuri.org/GetInnerBarcodeListByOutBarcodeList" style="document" />
       <wsdl:input>
@@ -11081,6 +11269,15 @@
     </wsdl:operation>
     <wsdl:operation name="ResetBarCode">
       <soap12:operation soapAction="http://tempuri.org/ResetBarCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostReciptInfo">
+      <soap12:operation soapAction="http://tempuri.org/PostReciptInfo" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -11225,33 +11422,6 @@
     </wsdl:operation>
     <wsdl:operation name="GetStockInfoDistr">
       <soap12:operation soapAction="http://tempuri.org/GetStockInfoDistr" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetStockInfoByBarcode">
-      <soap12:operation soapAction="http://tempuri.org/GetStockInfoByBarcode" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetStockByAreaNo">
-      <soap12:operation soapAction="http://tempuri.org/GetStockByAreaNo" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetSupplierInfoForU8">
-      <soap12:operation soapAction="http://tempuri.org/GetSupplierInfoForU8" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

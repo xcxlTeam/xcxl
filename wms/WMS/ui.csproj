@@ -132,10 +132,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\ThoughtWorks.QRCode.dll</HintPath>
     </Reference>
-    <Reference Include="UFSoft.U8.Framework.Login.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=19a34671517e8c56, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLL\UFSoft.U8.Framework.Login.UI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basic\Basic_Func.cs" />
@@ -382,11 +378,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_ProductLabel.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Print\Form1.cs">
+    <Compile Include="Warehouse\FrmAllot.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Print\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Warehouse\FrmAllot.Designer.cs">
+      <DependentUpon>FrmAllot.cs</DependentUpon>
     </Compile>
     <Compile Include="Print\Form12.cs">
       <SubType>Form</SubType>
@@ -868,8 +864,8 @@
     <EmbeddedResource Include="MaterialRequest\FrmMaterialRequestList.resx">
       <DependentUpon>FrmMaterialRequestList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Print\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Warehouse\FrmAllot.resx">
+      <DependentUpon>FrmAllot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Print\Form12.resx">
       <DependentUpon>Form12.cs</DependentUpon>
@@ -1172,6 +1168,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\WebService\WMS.WebService.Preparation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebService\WMS.WebService.ProdHead.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\WebService\WMS.WebService.ProductLabel_Model.datasource">

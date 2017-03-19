@@ -106,6 +106,18 @@ namespace BLL.Voucher
         /// 物料类型：现场物料|必返品|普通料
         /// </summary>
         public string sInvType { get; set; }
+        /// <summary>
+        /// 车间仓库编号
+        /// </summary>
+        public string WorkShopNo { get; set; }
+        /// <summary>
+        /// 物料需求计算子表ID
+        /// </summary>
+        public int AllotDetailID { get; set; }
+        /// <summary>
+        /// 物料需求计算行号
+        /// </summary>
+        public int AllotRowNo { get; set; } 
         #endregion
 
     }

@@ -233,7 +233,7 @@ namespace BLL.Voucher
             param[i++].Direction = ParameterDirection.Output;
 
             i = 0;
-            param[i++].Size = 3000;
+            param[i++].Size = 30000;
             param[i++].Size = 20;
             param[i++].Size = 1000;
 

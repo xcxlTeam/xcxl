@@ -203,6 +203,8 @@ namespace BLL.Basic.P2B
            model.iGrade = dr["iGrade"].ToInt32();
            model.Modifyer = dr["MODIFYER"].ToDBString();
            model.ModifyTime = dr["MODIFYTIME"].ToDateTimeNull();
+           model.WareHouseNo = dr["WareHouseNo"].ToDBString();
+
 
            return model;
        }

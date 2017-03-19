@@ -24,5 +24,9 @@ namespace BLL.Basic.P2B
         /// 包含制法
         /// </summary>
         public List<Preparation> lstP { get; set; }
+        /// <summary>
+        /// 对应仓库编号
+        /// </summary>
+        public string WareHouseNo { get; set; }
     }
 }

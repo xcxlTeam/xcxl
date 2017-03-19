@@ -85,6 +85,26 @@ namespace BLL.Voucher
         public String Message { get; set; }
 
 
+        #region 物料需求计算用
+        /// <summary>
+        /// 物料需求计算主表ID
+        /// </summary>
+        public int AllotID { get; set; }
+        /// <summary>
+        /// 物料需求计算单号
+        /// </summary>
+        public string AllotNo { get; set; }
+        /// <summary>
+        /// 物料需求计算用户编号
+        /// </summary>
+        public string AllotUserNo { get; set; }
+        /// <summary>
+        /// 物料需求计算日期
+        /// </summary>
+        public DateTime AllotDate { get; set; }
+        #endregion
+
+
 
     }
 }

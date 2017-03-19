@@ -25,6 +25,8 @@ namespace BLL.Basic.P2B
                new SqlParameter("@v_CreateTime", model.CreateTime.ToSqlValue()),
                new SqlParameter("@v_Modifyer", model.Modifyer.ToSqlValue()),
                new SqlParameter("@v_ModifyTime", model.ModifyTime.ToSqlValue()),
+               new SqlParameter("@v_warehouseno", model.WareHouseNo.ToSqlValue()),
+
               };
             i = 0;
             param[i++].Direction = ParameterDirection.Output;
@@ -36,6 +38,8 @@ namespace BLL.Basic.P2B
             param[i++].Direction = ParameterDirection.Output;
             param[i++].Direction = ParameterDirection.Input;
             param[i++].Direction = ParameterDirection.Output;
+            param[i++].Direction = ParameterDirection.Input;
+
 
             i = 0;
             param[i++].Size = 1000;
@@ -47,6 +51,8 @@ namespace BLL.Basic.P2B
             param[i++].Size = 18;
             param[i++].Size = 18;
             param[i++].Size = 18;
+            param[i++].Size = 20;
+
 
             return param;
         }
@@ -64,7 +70,7 @@ namespace BLL.Basic.P2B
             OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "Proc_ExistsbNo", param);
 
             string ErrorMsg = param[0].Value.ToDBString();
-            if (ErrorMsg.StartsWith("执行错误"))
+            if (ErrorMsg.StartsWith("execution error"))
             {
                 throw new Exception(ErrorMsg);
             }
@@ -81,7 +87,7 @@ namespace BLL.Basic.P2B
             OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "Proc_SaveBuilding", param);
 
             string ErrorMsg = param[0].Value.ToDBString();
-            if (ErrorMsg.StartsWith("执行错误"))
+            if (ErrorMsg.StartsWith("execution error"))
             {
                 throw new Exception(ErrorMsg);
             }
@@ -107,7 +113,7 @@ namespace BLL.Basic.P2B
             OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "Proc_DeleteBuildingByID", param);
 
             string ErrorMsg = param[0].Value.ToDBString();
-            if (ErrorMsg.StartsWith("执行错误"))
+            if (ErrorMsg.StartsWith("execution error"))
             {
                 throw new Exception(ErrorMsg);
             }

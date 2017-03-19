@@ -7,6 +7,7 @@ using BLL.Common;
 using BLL.Basic.P2B;
 using BLL.Basic.User;
 using BLL.Stock;
+using System.Data;
 
 namespace BLL.Voucher
 {
@@ -111,9 +112,10 @@ namespace BLL.Voucher
             }
         }
 
-        void calcData(List<ProdHead> lstProd, UserInfo user)
+        public bool calcData(List<ProdHead> lstProd, ref ProdHead prod, UserInfo user, ref string strError)
         {
-            string strError = string.Empty;
+            prod = new ProdHead();
+            strError = string.Empty;
 
             #region 制法及建筑获取
             Building_Func bf = new Building_Func();
@@ -152,13 +154,16 @@ namespace BLL.Voucher
             {
                 lstMinvtID = lstMinvtID.Union<string>(item.lstDetails.Select(s => s.MInvtID).Distinct().ToList()).ToList();
             }
+            string workShopNo=string.Empty;
             foreach (var item in lstMetaData)
             {
                 item.BuildingNo = lstB.FirstOrDefault(s => s.lstP.Exists(x => x.pCode.Equals(item.ProdMgrID))).bNo;
+                workShopNo = lstB.FirstOrDefault(s => s.lstP.Exists(x => x.pCode.Equals(item.ProdMgrID))).WareHouseNo;
                 foreach (var detail in item.lstDetails)
                 {
                     detail.ProdMgrID = item.ProdMgrID;
                     detail.BuildingNo = item.BuildingNo;
+                    detail.WorkShopNo = workShopNo;
                     detail.iGrade = lstB.FirstOrDefault(s => s.bNo.Equals(detail.BuildingNo)).iGrade;
                 }
                 lstMetaDetails.AddRange(item.lstDetails);
@@ -197,13 +202,14 @@ namespace BLL.Voucher
                     bFound = false;
                     sr = new StockReader();
                     sr.InvtID = item.InvtID;
-                    sr.workshopStock = lstStockSum.FirstOrDefault(model => model.MaterialNo == item.InvtID && model.WarehouseNo == item.BuildingNo).iQuantity;
+                    sr.workshopStock = lstStockSum.FirstOrDefault(model => model.MaterialNo == item.InvtID && model.WarehouseNo == item.WorkShopNo).iQuantity;
                     sr.currentStock = lstStockSum.FirstOrDefault(model => model.MaterialNo == item.InvtID && model.WarehouseNo == "01").iQuantity;
                 }
                 if (bFound)//获取当前料车间库存
                 {
-                    sr.workshopStock = lstStockSum.FirstOrDefault(model => model.MaterialNo == item.InvtID && model.WarehouseNo == item.BuildingNo).iQuantity;
+                    sr.workshopStock = lstStockSum.FirstOrDefault(model => model.MaterialNo == item.InvtID && model.WarehouseNo == item.WorkShopNo).iQuantity;
                 }
+                item.CurrentStock = sr.currentStock;
                 if (item.SceneMaterial.Trim().Equals("1"))//现场物料，不用返还
                 {
                     item.sInvType = "现场物料";
@@ -284,8 +290,43 @@ namespace BLL.Voucher
                     lstReader.Add(sr);
             }
 
+            prod.lstDetails = lstGroupDetails;
 
+            SqlParameter[] param = new SqlParameter[]{
+               new SqlParameter("data_xml", SqlDbType.Xml),
+               new SqlParameter("strUserNo", SqlDbType.NVarChar),
+               new SqlParameter("strErrMsg",SqlDbType.NVarChar,1000),    
+              };
+            param[0].Direction = ParameterDirection.Input;
+            param[1].Direction = ParameterDirection.Input;
+            param[2].Direction = ParameterDirection.Output;
+            param[0].Size = 3000;
+            param[1].Size = 20;
+            param[2].Size = 1000;
+            param[0].Value = XMLUtil.XmlUtil.Serializer(typeof(ProdHead), prod);
+            param[1].Value = user.UserNo;
+            OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "Proc_SaveTransfer", param);
 
+            string ErrorMsg = param[2].Value.ToDBString();
+            if (ErrorMsg.StartsWith("execution error"))
+            {
+                throw new Exception(ErrorMsg);
+            }
+            prod = (ProdHead)XMLUtil.XmlUtil.Deserialize(typeof(ProdHead), param[0].Value.ToString());
+
+            return true;
+
+        }
+        /// <summary>
+        /// 获取最近一次的计算数据
+        /// </summary>
+        /// <param name="prod"></param>
+        /// <param name="user"></param>
+        /// <param name="strError"></param>
+        /// <returns></returns>
+        public bool GetLast(ref ProdHead prod,ref UserInfo user , ref string strError)
+        {
+            return false;
         }
         /// <summary>
         /// 根据物料代码判断是否必返料

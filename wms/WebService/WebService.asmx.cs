@@ -768,6 +768,15 @@ namespace WebService
 
         #endregion
 
+        #region 物料需求计算
+        [WebMethod]
+        public bool GetAllotData(List<ProdHead> model, ref ProdHead prod, UserInfo user, ref string strError)
+        {
+            ReadProd_Func func = new ReadProd_Func();
+            return func.calcData(model, ref prod, user, ref strError);
+        }
+        #endregion
+
         #endregion
 
         #region 任务看板
@@ -1472,19 +1481,19 @@ namespace WebService
 
         }
 
-        [WebMethod]
-        public bool TestReadData(int iNo, out System.Data.DataSet ds)
-        {
-            BLL.TEST.TestFunc tf = new BLL.TEST.TestFunc();
-            return tf.TestReadData(iNo,out ds);
-        }
+        //[WebMethod]
+        //public bool TestReadData(int iNo, out System.Data.DataSet ds)
+        //{
+        //    BLL.TEST.TestFunc tf = new BLL.TEST.TestFunc();
+        //    return tf.TestReadData(iNo,out ds);
+        //}
 
-        [WebMethod]
-        public bool TestReceipt(ref string strErrMsg, out  System.Data.DataSet ds)
-        {
-            BLL.TEST.TestFunc tf = new BLL.TEST.TestFunc();
-            return tf.TestReceipt(ref strErrMsg,out ds);
-        }
+        //[WebMethod]
+        //public bool TestReceipt(ref string strErrMsg, out  System.Data.DataSet ds)
+        //{
+        //    BLL.TEST.TestFunc tf = new BLL.TEST.TestFunc();
+        //    return tf.TestReceipt(ref strErrMsg,out ds);
+        //}
 
         //[WebMethod]
         //public bool PostReceiveUnQualityReturnToSAP(ref DeliveryReceive_Model DeliveryInfo, UserInfo userModel, ref string strErrMsg)
