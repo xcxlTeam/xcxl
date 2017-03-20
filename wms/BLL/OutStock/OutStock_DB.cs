@@ -52,7 +52,7 @@ namespace BLL.OutStock
 
                             //TODO:取单据表头
                             sql = string.Format("select cCode as MaterialDoc,CONVERT(varchar(100), dDate, 23) as MaterialDocDate,cast(cVouchType as int) as MaterialDocType from rdrecord10 where cCode='{0}'", vouchcode);
-                            OperationSql.GetDatasetForU8(sql, out result, out strErrMsg);
+                            OperationSql.GetDatasetForERP(sql, out result, out strErrMsg);
                             if (!string.IsNullOrEmpty(strErrMsg))
                                 return false;
                             List<MaterialDoc_Model> lstMaterialDoc = TOOL.DataTableToList.DataSetToList<MaterialDoc_Model>(result.Tables[0]);
@@ -69,7 +69,7 @@ rds.iQuantity OutStockQty, rd.cWhCode StorageLoc
 join rdrecords10 rds on rd.ID = rds.ID
 join inventory i on rds.cInvCode = i.cInvCode
  where rd.cCode='{0}'", vouchcode);
-                            OperationSql.GetDatasetForU8(sql, out result, out strErrMsg);
+                            OperationSql.GetDatasetForERP(sql, out result, out strErrMsg);
                             if (!string.IsNullOrEmpty(strErrMsg))
                                 return false;
                             osm.lstOutStockDetails = TOOL.DataTableToList.DataSetToList<OutStockDetails_Model>(result.Tables[0]);

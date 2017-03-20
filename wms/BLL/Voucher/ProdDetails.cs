@@ -85,7 +85,7 @@ namespace BLL.Voucher
         /// <summary>
         /// 车间库库存
         /// </summary>
-        public decimal WorkshopCurrentStock { get; set; }
+        public decimal WorkshopStock { get; set; }
         /// <summary>
         /// 建筑优先级
         /// </summary>

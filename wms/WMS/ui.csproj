@@ -190,6 +190,12 @@
     <Compile Include="Basic\FrmP2BFile.Designer.cs">
       <DependentUpon>FrmP2BFile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Basic\FrmSpecialMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmSpecialMaterial.Designer.cs">
+      <DependentUpon>FrmSpecialMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Basic\FrmUserFile.cs">
       <SubType>Form</SubType>
     </Compile>

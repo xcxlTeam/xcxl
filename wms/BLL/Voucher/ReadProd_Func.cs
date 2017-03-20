@@ -6,8 +6,10 @@ using System.Text;
 using BLL.Common;
 using BLL.Basic.P2B;
 using BLL.Basic.User;
+using BLL.Basic.MustReturnMaterial;
 using BLL.Stock;
 using System.Data;
+using System.Reflection;
 
 namespace BLL.Voucher
 {
@@ -63,6 +65,37 @@ namespace BLL.Voucher
             model.Remark2 = dr["Remark2"].ToCHString();
             model.SONbr = dr["SONbr"].ToDBString();
             model.ProdMgrID = prodMgrID;
+
+            return model;
+        }
+
+        private ProdHead GetAllotMainFromDataReader(SqlDataReader dr)
+        {
+            ProdHead model = new ProdHead();
+            model.AllotID = dr["ID"].ToInt32();
+            model.AllotNo = dr["AllotNo"].ToDBString();
+            model.AllotDate = dr["dTime"].ToDateTime();
+
+            return model;
+        }
+
+        private ProdDetails GetAllotDetailsFromDataReader(SqlDataReader dr)
+        {
+            ProdDetails model = new ProdDetails();
+
+            model.InvtID = dr["cInvCode"].ToDBString();
+            model.QtyReq = dr["QtyReq"].ToDecimal();
+            model.dTransfer = dr["QtyTransfer"].ToDecimal();
+            model.CHDesc = dr["CHDesc"].ToCHString();
+            model.Descr = dr["Descr"].ToDBString();
+            model.sInvType = dr["sInvType"].ToDBString();
+            model.WorkShopNo = dr["WorkShopNo"].ToDBString();
+            model.AllotRowNo = dr["RowNo"].ToInt32();
+            model.AllotDetailID = dr["AllotDetailID"].ToInt32();
+            model.iOperate = dr["iOperate"].ToInt32();
+            model.sOperate = dr["sOperate"].ToDBString();
+            model.WorkShopNo = dr["WorkShopNo"].ToDBString();
+            model.WorkshopStock = dr["WorkshopStock"].ToDecimal();
 
             return model;
         }
@@ -154,7 +187,7 @@ namespace BLL.Voucher
             {
                 lstMinvtID = lstMinvtID.Union<string>(item.lstDetails.Select(s => s.MInvtID).Distinct().ToList()).ToList();
             }
-            string workShopNo=string.Empty;
+            string workShopNo = string.Empty;
             foreach (var item in lstMetaData)
             {
                 item.BuildingNo = lstB.FirstOrDefault(s => s.lstP.Exists(x => x.pCode.Equals(item.ProdMgrID))).bNo;
@@ -210,6 +243,7 @@ namespace BLL.Voucher
                     sr.workshopStock = lstStockSum.FirstOrDefault(model => model.MaterialNo == item.InvtID && model.WarehouseNo == item.WorkShopNo).iQuantity;
                 }
                 item.CurrentStock = sr.currentStock;
+                item.WorkshopStock = sr.workshopStock;
                 if (item.SceneMaterial.Trim().Equals("1"))//现场物料，不用返还
                 {
                     item.sInvType = "现场物料";
@@ -292,6 +326,18 @@ namespace BLL.Voucher
 
             prod.lstDetails = lstGroupDetails;
 
+            #region 给实体类赋伪值，防止部分需要回定属性不被序列化
+            prod.AllotNo = "0000";
+            prod.AllotID = 0;
+            prod.AllotDate = DateTime.MaxValue;
+            prod.AllotUserNo = "NO ONE";
+            foreach (var item in prod.lstDetails)
+            {
+                item.AllotDetailID = 0;
+                item.AllotRowNo = 0;
+            }
+            #endregion
+
             SqlParameter[] param = new SqlParameter[]{
                new SqlParameter("data_xml", SqlDbType.Xml),
                new SqlParameter("strUserNo", SqlDbType.NVarChar),
@@ -324,9 +370,33 @@ namespace BLL.Voucher
         /// <param name="user"></param>
         /// <param name="strError"></param>
         /// <returns></returns>
-        public bool GetLast(ref ProdHead prod,ref UserInfo user , ref string strError)
+        public bool GetLast(ref ProdHead prod, ref UserInfo user, ref string strError)
         {
-            return false;
+            Prod_DB db = new Prod_DB();
+            using (SqlDataReader dr = db.GetLastProdHead())
+            {
+                if (dr.Read())
+                {
+                    prod = GetAllotMainFromDataReader(dr);
+                }
+            }
+            if (prod == null || prod.AllotID == 0)
+            {
+                return false;
+            }
+            prod.lstDetails = new List<ProdDetails>();
+            using (SqlDataReader dr = db.GetLastProdDetails())
+            {
+
+                while (dr.Read())
+                {
+                    ProdDetails model = GetAllotDetailsFromDataReader(dr);
+                    prod.lstDetails.Add(model);
+                }
+            }
+            if (prod.lstDetails.Count == 0)
+                return false;
+            return true;
         }
         /// <summary>
         /// 根据物料代码判断是否必返料
@@ -335,11 +405,28 @@ namespace BLL.Voucher
         /// <returns></returns>
         private bool bMustReturn(Inventory model)
         {
-            string str = model.InvtType;
-            if (str.Length > 1 && (str.Substring(1, 1).Equals("1") || str.Substring(1, 1).Equals("0")))
+            PropertyInfo[] piArray = model.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public);
+            string tmpStr = string.Empty;
+            for (int i = 0; i < piArray.Count(); i++)
             {
-                return true;
+                if(piArray[i].Name.Equals(CommonRule.PropertyName))
+                {
+                    tmpStr = piArray[i].GetValue(model, null).ToDBString();
+                    if (string.IsNullOrEmpty(tmpStr) || tmpStr.Length < CommonRule.PropertyIndex + 1)
+                        continue;
+                    if (CommonRule.lstPermit.Contains(tmpStr.Substring(CommonRule.PropertyIndex,1)))
+                        return true;
+                }
+                if(piArray[i].Name.Equals(SpecialRule.PropertyName))
+                {
+                    tmpStr = piArray[i].GetValue(model, null).ToDBString();
+                    if (string.IsNullOrEmpty(tmpStr))
+                        continue;
+                    if (SpecialRule.lstPermit.Contains(tmpStr))
+                        return true;
+                }
             }
+            
             return false;
         }
 

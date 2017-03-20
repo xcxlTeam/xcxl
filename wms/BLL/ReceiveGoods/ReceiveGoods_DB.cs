@@ -75,7 +75,7 @@ namespace BLL.ReceiveGoods
  join pu_ArrHead b on a.id = b.id
  join copypolist c on a.iposid = c.id
  where c.cordercode = '{0}' and c.ivouchrowno = '{1}' and b.ccode = '{2}'", model.VOUCHERNO,model.ROWNO,model.ArrivalCode);
-            return OperationSql.ExecuteScalarForU8(CommandType.Text, strSql, null).ToInt32();
+            return OperationSql.ExecuteScalarForERP(CommandType.Text, strSql, null).ToInt32();
         }
 
         internal bool IsChecking(Barcode_Model barcodeMdl, ref string strErrorMsg)
@@ -193,7 +193,7 @@ namespace BLL.ReceiveGoods
                             
                             //TODO:取其他入库单表头
                             sql = string.Format("select cCode as MaterialDoc,CONVERT(varchar(100), dDate, 23) as MaterialDocDate,cast(cVouchType as int) as MaterialDocType from rdrecord08 where cCode='{0}'", vouchcode);
-                            OperationSql.GetDatasetForU8(sql, out result, out strErrMsg);
+                            OperationSql.GetDatasetForERP(sql, out result, out strErrMsg);
                             if (!string.IsNullOrEmpty(strErrMsg))
                                 return false;
                             drm.lstMaterialDoc = TOOL.DataTableToList.DataSetToList<MaterialDoc_Model>(result.Tables[0]);
@@ -209,7 +209,7 @@ rds.iQuantity ReceiveQty, rd.cWhCode StorageLoc
 join rdrecords08 rds on rd.ID = rds.ID
 join inventory i on rds.cInvCode = i.cInvCode
  where rd.cCode='{0}'", vouchcode);
-                            OperationSql.GetDatasetForU8(sql, out result, out strErrMsg);
+                            OperationSql.GetDatasetForERP(sql, out result, out strErrMsg);
                             if (!string.IsNullOrEmpty(strErrMsg))
                                 return false;
                             drm.lstDeliveryDetail = TOOL.DataTableToList.DataSetToList<DeliveryReceiveDetail_Model>(result.Tables[0]);

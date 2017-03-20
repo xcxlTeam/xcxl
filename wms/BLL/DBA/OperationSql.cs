@@ -101,7 +101,7 @@ internal abstract class OperationSql
     }
 
     // 执行非查询SQL语句
-    static public int ExecuteSqlForU8(string sqlString, out string errMsg)
+    static public int ExecuteSqlForERP(string sqlString, out string errMsg)
     {
         SqlCommand cmd = new SqlCommand();
         SqlConnection conn = new SqlConnection();
@@ -203,7 +203,7 @@ internal abstract class OperationSql
     /// <param name="retBool">有数据返回true,没有 false</param>
     /// <param name="errMsg">错误信息</param>
     /// <returns>0正确:非0 错误</returns>
-    static public bool GetBoolForU8(string sqlString, out bool retBool, out string errMsg)
+    static public bool GetBoolForERP(string sqlString, out bool retBool, out string errMsg)
     {
 
         SqlDataReader Reader = null;
@@ -329,7 +329,7 @@ internal abstract class OperationSql
     /// <param name="retString">查找到的string</param>
     /// <param name="errMsg">错误信息</param>
     /// <returns>0正确:非0 错误</returns>
-    static public int GetStringForU8(string sqlString, out string retString, out string errMsg)
+    static public int GetStringForERP(string sqlString, out string retString, out string errMsg)
     {
         SqlCommand cmd = new SqlCommand();
         SqlConnection conn = new SqlConnection();
@@ -419,7 +419,7 @@ internal abstract class OperationSql
     /// <param name="result">返回的DATASET</param>
     /// <param name="errMsg">出错信息</param>
     /// <returns>0：正确 非0：错误</returns>
-    static public int GetDatasetForU8(string sqlString, out DataSet result, out string errMsg)
+    static public int GetDatasetForERP(string sqlString, out DataSet result, out string errMsg)
     {
         errMsg = "";
         result = new DataSet();
@@ -532,7 +532,7 @@ internal abstract class OperationSql
         }
     }
 
-    public static int ExecuteNonQueryForU8(CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+    public static int ExecuteNonQueryForERP(CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
     {
         SqlCommand cmd = new SqlCommand();
 
@@ -567,7 +567,7 @@ internal abstract class OperationSql
         }
     }
 
-    public static int ExecuteNonQuery2ForU8(CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+    public static int ExecuteNonQuery2ForERP(CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
     {
 
         SqlCommand cmd = new SqlCommand();
@@ -606,7 +606,7 @@ internal abstract class OperationSql
         }
     }
 
-    public static DataSet ExecuteDataSetForU8(CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+    public static DataSet ExecuteDataSetForERP(CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
     {
 
         SqlCommand cmd = new SqlCommand();
@@ -920,7 +920,7 @@ internal abstract class OperationSql
     /// <param name="commandText">存储过程的名字或者 T-SQL 语句</param>
     /// <param name="commandParameters">以数组形式提供SqlCommand命令中用到的参数列表</param>
     /// <returns>返回一个object类型的数据，可以通过 Convert.To{Type}方法转换类型</returns>
-    public static object ExecuteScalarForU8(CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+    public static object ExecuteScalarForERP(CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
     {
         SqlCommand cmd = new SqlCommand();
 

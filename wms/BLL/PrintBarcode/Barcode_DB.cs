@@ -4026,7 +4026,7 @@ having (1=1) ";
                                     }
                                     else
                                     {
-                                        dt[i].cvenname = OperationSql.ExecuteScalarForU8(CommandType.Text, "select cVenAbbName from Vendor where cVenCode = '" + dt[i].cvencode + "'", null).ToDBString();
+                                        dt[i].cvenname = OperationSql.ExecuteScalarForERP(CommandType.Text, "select cVenAbbName from Vendor where cVenCode = '" + dt[i].cvencode + "'", null).ToDBString();
                                         if (dt[i].cvenname.Equals(string.Empty) || dt[i].cvenname.Equals(""))
                                         {
                                             strErrMsg = "第" + (i + 1).ToString() + "行的物料编码" + dt[i].MaterialNo + "在U8中的供应商代码" + dt[i].cvencode + "不存在";
