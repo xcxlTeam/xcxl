@@ -618,6 +618,15 @@ namespace Test
             MessageBox.Show("ad");
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string errMsg = string.Empty;
+            DataSet ds = new DataSet();
+            localWebTest.TestReceipt(ref errMsg,out ds);
+
+            MessageBox.Show("ad");
+        }
+
 
     }
 }

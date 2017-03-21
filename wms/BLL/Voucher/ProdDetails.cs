@@ -8,7 +8,7 @@ namespace BLL.Voucher
     /// <summary>
     /// 生产单
     /// </summary>
-    public class Prod : Inventory
+    public class ProdDetails : Inventory
     {
         
         /// <summary>
@@ -77,6 +77,48 @@ namespace BLL.Voucher
         /// 建筑编号
         /// </summary>
         public string BuildingNo { get; set; }
+        #region 计算物料需求用
+        /// <summary>
+        /// 大库库存
+        /// </summary>
+        public decimal CurrentStock { get; set; }
+        /// <summary>
+        /// 车间库库存
+        /// </summary>
+        public decimal WorkshopStock { get; set; }
+        /// <summary>
+        /// 建筑优先级
+        /// </summary>
+        public int iGrade { get; set; }
+        /// <summary>
+        /// 操作类型值：1领料|0不操作|-1返料|-2必返料
+        /// </summary>
+        public int iOperate { get; set; }
+        /// <summary>
+        /// 发料或返库量（负数表示返料）
+        /// </summary>
+        public decimal dTransfer { get; set; }
+        /// <summary>
+        /// 操作类型：领料|无动作|返库
+        /// </summary>
+        public string sOperate { get; set; }
+        /// <summary>
+        /// 物料类型：现场物料|必返品|普通料
+        /// </summary>
+        public string sInvType { get; set; }
+        /// <summary>
+        /// 车间仓库编号
+        /// </summary>
+        public string WorkShopNo { get; set; }
+        /// <summary>
+        /// 物料需求计算子表ID
+        /// </summary>
+        public int AllotDetailID { get; set; }
+        /// <summary>
+        /// 物料需求计算行号
+        /// </summary>
+        public int AllotRowNo { get; set; } 
+        #endregion
 
     }
 }

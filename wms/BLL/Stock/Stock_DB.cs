@@ -405,7 +405,7 @@ namespace BLL.Stock
             {
                 list = new List<string>();
                 string strSql = "select csbvcode from SaleBillVouchZT where ccusname like '%" + ccusname + "%' and cSource=N'销售' and ivouchstate='Opening' and iverifystate=0 and isnull(bReturnFlag,0)<>1 ";
-                using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(System.Data.CommandType.Text, strSql))
+                using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(System.Data.CommandType.Text, strSql))
                 {
                     while (dr.Read())
                     {
@@ -439,7 +439,7 @@ where cSource=N'销售' and csbvcode='" + code + "'";
                 model.csbvcode = code;
                 model.details = new List<SaleBillDetails_Model>();
 
-                using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(System.Data.CommandType.Text, strSql))
+                using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(System.Data.CommandType.Text, strSql))
                 {
                     while (dr.Read())
                     {
@@ -500,7 +500,7 @@ where cSource=N'销售' and csbvcode='" + code + "'";
                         SM.dsoqty = dr["dsoqty"].ToDecimal();
                         SM.RealQty = dr["RealQty"].ToDecimal();
                         //获取autoid
-                        SM.autoid = OperationSql.ExecuteScalarForU8(System.Data.CommandType.Text, @"Select SaleBillVouchZW.autoid
+                        SM.autoid = OperationSql.ExecuteScalarForERP(System.Data.CommandType.Text, @"Select SaleBillVouchZW.autoid
  From SaleBillVouchZW  
 left join (select cbdefine1 as cbdefine1,cbdefine5 as cbdefine5,cbdefine6 as cbdefine6,autoid as keyextend_b_autoid_salebillvouchs_extradefine_autoid 
 from salebillvouchs_extradefine) extend_b_autoid_salebillvouchs_extradefine on 
@@ -529,7 +529,7 @@ where cSource=N'销售' and csbvcode = '" + SM.ssbvcode + "' and SaleBillVouchZW
                 list = new List<SaleBillDetails_Model>();
                 string strSql = @"select cSOCode,iRowNo,iQuantity from SO_SODetails
 where dbclosedate is null and cInvCode = '" + detail.cinvcode + "' and cSOCode != '" + detail.ssocode + "'";
-                using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(System.Data.CommandType.Text, strSql))
+                using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(System.Data.CommandType.Text, strSql))
                 {
                     while (dr.Read())
                     {
@@ -652,7 +652,7 @@ values ('" + detail.cinvcode + "','" + detail.cinvname + "','" + detail.cinvstd 
             try
             {
                 string sql = @"update salebillvouchs_extradefine set cbdefine5 = '是',cbdefine6 = '" + detail.dsocode + "' where autoid = " + detail.autoid;
-                int i = OperationSql.ExecuteNonQueryForU8(CommandType.Text, sql, null);
+                int i = OperationSql.ExecuteNonQueryForERP(CommandType.Text, sql, null);
                 if (i <= 0)
                 {
                     strErrMsg = "数据库操作失败,未能更新记录";
@@ -680,7 +680,7 @@ values ('" + detail.cinvcode + "','" + detail.cinvname + "','" + detail.cinvstd 
             try
             {
                 string sql = @"update salebillvouchs_extradefine set cbdefine5 = null,cbdefine6 = null where autoid = " + detail.autoid;
-                int i = OperationSql.ExecuteNonQueryForU8(CommandType.Text, sql, null);
+                int i = OperationSql.ExecuteNonQueryForERP(CommandType.Text, sql, null);
                 if (i <= 0)
                 {
                     strErrMsg = "数据库操作失败,未能弃审记录";
@@ -719,7 +719,7 @@ keyextend_b_autoid_salebillvouchs_extradefine_autoid=salebillvouchzw.autoid
 join SaleBillVouchZT on SaleBillVouchZT.sbvid=SaleBillVouchZW.sbvid
 left join SO_SODetails on (SaleBillVouchZW.cSOCode = SO_SODetails.cSOCode and SaleBillVouchZW.iorderrowno = SO_SODetails.iRowNo)
 where cSource=N'销售' and csbvcode = '" + dsbvcode + "'";
-                    dsocode = OperationSql.ExecuteScalarForU8(System.Data.CommandType.Text, strSql).ToDBString();
+                    dsocode = OperationSql.ExecuteScalarForERP(System.Data.CommandType.Text, strSql).ToDBString();
                 }
                 strSql = @"select * from T_temptrans where (1=1) ";
                 if(cinvcode != null)

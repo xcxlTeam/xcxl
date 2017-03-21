@@ -1,6 +1,6 @@
-﻿namespace WMS.Print
+﻿namespace WMS.Warehouse
 {
-    partial class Form1
+    partial class FrmAllot
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.chensMenuStrip1 = new ChensControl.ChensMenuStrip();
-            this.拣货单生成ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mRP计算ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.必返料单生成ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.停工单设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.当天使用现场物料清单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmPickUp = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmBackUp = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmMustBack = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmStopOrder = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmSceneMaterialReport = new System.Windows.Forms.ToolStripMenuItem();
             this.chensGroupBox1 = new ChensControl.ChensGroupBox();
-            this.chensDataGridView1 = new ChensControl.ChensDataGridView();
+            this.dgvData = new ChensControl.ChensDataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +51,7 @@
             this.chensButton2 = new ChensControl.ChensButton();
             this.chensMenuStrip1.SuspendLayout();
             this.chensGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chensDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.chensGroupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,50 +60,50 @@
             this.chensMenuStrip1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.chensMenuStrip1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.chensMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.拣货单生成ToolStripMenuItem,
-            this.mRP计算ToolStripMenuItem,
-            this.必返料单生成ToolStripMenuItem,
-            this.停工单设置ToolStripMenuItem,
-            this.当天使用现场物料清单ToolStripMenuItem});
+            this.tsmPickUp,
+            this.tsmBackUp,
+            this.tsmMustBack,
+            this.tsmStopOrder,
+            this.tsmSceneMaterialReport});
             this.chensMenuStrip1.Location = new System.Drawing.Point(0, 0);
             this.chensMenuStrip1.Name = "chensMenuStrip1";
             this.chensMenuStrip1.Size = new System.Drawing.Size(992, 25);
             this.chensMenuStrip1.TabIndex = 0;
             this.chensMenuStrip1.Text = "chensMenuStrip1";
             // 
-            // 拣货单生成ToolStripMenuItem
+            // tsmPickUp
             // 
-            this.拣货单生成ToolStripMenuItem.Name = "拣货单生成ToolStripMenuItem";
-            this.拣货单生成ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
-            this.拣货单生成ToolStripMenuItem.Text = "拣货单生成";
+            this.tsmPickUp.Name = "tsmPickUp";
+            this.tsmPickUp.Size = new System.Drawing.Size(80, 21);
+            this.tsmPickUp.Text = "拣货单生成";
             // 
-            // mRP计算ToolStripMenuItem
+            // tsmBackUp
             // 
-            this.mRP计算ToolStripMenuItem.Name = "mRP计算ToolStripMenuItem";
-            this.mRP计算ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
-            this.mRP计算ToolStripMenuItem.Text = "返库单生成";
+            this.tsmBackUp.Name = "tsmBackUp";
+            this.tsmBackUp.Size = new System.Drawing.Size(80, 21);
+            this.tsmBackUp.Text = "返库单生成";
             // 
-            // 必返料单生成ToolStripMenuItem
+            // tsmMustBack
             // 
-            this.必返料单生成ToolStripMenuItem.Name = "必返料单生成ToolStripMenuItem";
-            this.必返料单生成ToolStripMenuItem.Size = new System.Drawing.Size(92, 21);
-            this.必返料单生成ToolStripMenuItem.Text = "必返料单生成";
+            this.tsmMustBack.Name = "tsmMustBack";
+            this.tsmMustBack.Size = new System.Drawing.Size(92, 21);
+            this.tsmMustBack.Text = "必返料单生成";
             // 
-            // 停工单设置ToolStripMenuItem
+            // tsmStopOrder
             // 
-            this.停工单设置ToolStripMenuItem.Name = "停工单设置ToolStripMenuItem";
-            this.停工单设置ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
-            this.停工单设置ToolStripMenuItem.Text = "停工单设置";
+            this.tsmStopOrder.Name = "tsmStopOrder";
+            this.tsmStopOrder.Size = new System.Drawing.Size(80, 21);
+            this.tsmStopOrder.Text = "停工单设置";
             // 
-            // 当天使用现场物料清单ToolStripMenuItem
+            // tsmSceneMaterialReport
             // 
-            this.当天使用现场物料清单ToolStripMenuItem.Name = "当天使用现场物料清单ToolStripMenuItem";
-            this.当天使用现场物料清单ToolStripMenuItem.Size = new System.Drawing.Size(164, 21);
-            this.当天使用现场物料清单ToolStripMenuItem.Text = "当天使用现场物料清单打印";
+            this.tsmSceneMaterialReport.Name = "tsmSceneMaterialReport";
+            this.tsmSceneMaterialReport.Size = new System.Drawing.Size(164, 21);
+            this.tsmSceneMaterialReport.Text = "当天使用现场物料清单打印";
             // 
             // chensGroupBox1
             // 
-            this.chensGroupBox1.Controls.Add(this.chensDataGridView1);
+            this.chensGroupBox1.Controls.Add(this.dgvData);
             this.chensGroupBox1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.chensGroupBox1.Location = new System.Drawing.Point(0, 99);
             this.chensGroupBox1.Name = "chensGroupBox1";
@@ -112,17 +112,17 @@
             this.chensGroupBox1.TabStop = false;
             this.chensGroupBox1.Text = "查询结果";
             // 
-            // chensDataGridView1
+            // dgvData
             // 
-            this.chensDataGridView1.AllowUserToAddRows = false;
-            this.chensDataGridView1.AllowUserToDeleteRows = false;
+            this.dgvData.AllowUserToAddRows = false;
+            this.dgvData.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.chensDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.chensDataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.chensDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.chensDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.chensDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.chensDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvData.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
             this.Column3,
             this.Column1,
@@ -132,21 +132,21 @@
             this.Column7,
             this.Column4,
             this.Column6});
-            this.chensDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chensDataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.chensDataGridView1.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.chensDataGridView1.GridColor = System.Drawing.Color.LightGray;
-            this.chensDataGridView1.HaveCopyMenu = true;
-            this.chensDataGridView1.Location = new System.Drawing.Point(3, 19);
-            this.chensDataGridView1.Name = "chensDataGridView1";
-            this.chensDataGridView1.ReadOnly = true;
-            this.chensDataGridView1.RowHeadersVisible = false;
+            this.dgvData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvData.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvData.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.dgvData.GridColor = System.Drawing.Color.LightGray;
+            this.dgvData.HaveCopyMenu = true;
+            this.dgvData.Location = new System.Drawing.Point(3, 19);
+            this.dgvData.Name = "dgvData";
+            this.dgvData.ReadOnly = true;
+            this.dgvData.RowHeadersVisible = false;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            this.chensDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.chensDataGridView1.RowTemplate.Height = 23;
-            this.chensDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.chensDataGridView1.Size = new System.Drawing.Size(986, 343);
-            this.chensDataGridView1.TabIndex = 0;
+            this.dgvData.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvData.RowTemplate.Height = 23;
+            this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvData.Size = new System.Drawing.Size(986, 343);
+            this.dgvData.TabIndex = 0;
             // 
             // Column2
             // 
@@ -186,7 +186,7 @@
             // 
             // Column7
             // 
-            this.Column7.HeaderText = "制法";
+            this.Column7.HeaderText = "建筑编号";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
@@ -227,7 +227,7 @@
             this.chensButton2.UseVisualStyleBackColor = false;
             this.chensButton2.Click += new System.EventHandler(this.chensButton2_Click);
             // 
-            // Form1
+            // FrmAllot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -236,12 +236,12 @@
             this.Controls.Add(this.chensGroupBox1);
             this.Controls.Add(this.chensMenuStrip1);
             this.MainMenuStrip = this.chensMenuStrip1;
-            this.Name = "Form1";
+            this.Name = "FrmAllot";
             this.Text = "Form1";
             this.chensMenuStrip1.ResumeLayout(false);
             this.chensMenuStrip1.PerformLayout();
             this.chensGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chensDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.chensGroupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -251,12 +251,15 @@
         #endregion
 
         private ChensControl.ChensMenuStrip chensMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem mRP计算ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 必返料单生成ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmBackUp;
+        private System.Windows.Forms.ToolStripMenuItem tsmMustBack;
         private ChensControl.ChensGroupBox chensGroupBox1;
-        private ChensControl.ChensDataGridView chensDataGridView1;
+        private ChensControl.ChensDataGridView dgvData;
         private ChensControl.ChensGroupBox chensGroupBox2;
         private ChensControl.ChensButton chensButton2;
+        private System.Windows.Forms.ToolStripMenuItem tsmPickUp;
+        private System.Windows.Forms.ToolStripMenuItem tsmSceneMaterialReport;
+        private System.Windows.Forms.ToolStripMenuItem tsmStopOrder;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -266,8 +269,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.ToolStripMenuItem 拣货单生成ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 当天使用现场物料清单ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 停工单设置ToolStripMenuItem;
     }
 }

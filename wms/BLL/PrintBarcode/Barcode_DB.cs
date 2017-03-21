@@ -1479,7 +1479,7 @@ namespace BLL.PrintBarcode
                         //校验U8数据
                         bool U8checked = false;
                         string querysql = @"select cinvname,cinvstd from inventory where cinvcode = '" + dt[i].MaterialNo + "'";
-                        using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(CommandType.Text, querysql, null))
+                        using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(CommandType.Text, querysql, null))
                         {
                             if (dr != null)
                             {
@@ -1899,7 +1899,7 @@ namespace BLL.PrintBarcode
             {
                 string strSql = @"select isnull(cinvDefine3,'') from inventory where cInvCode = '" + cInvCode + @"' ";
                 string plantname = "";
-                using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null))
+                using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null))
                 {
                     if (dr == null) return false;
                     while (dr.Read())
@@ -3430,7 +3430,7 @@ having (1=1) ";
                         strSql = strSql + " and cmaketime < '" + enddate + "'";
                     }
                 }
-                SqlDataReader dr = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null);
+                SqlDataReader dr = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null);
                 if (dr == null) return null;
                 List<MaterialLabel_Model> lst = new List<MaterialLabel_Model>(); ;
                 while (dr.Read())
@@ -3441,7 +3441,7 @@ having (1=1) ";
                     head.cpoid = dr["cpoid"].ToDBString();//cpoid;
                     strSql = @"Select zPurpotail.*,'' as editprop  ,extend_b_cinvcode_v_inventory_cvenname From  zPurpotail  left join (select cvenname as extend_b_cinvcode_v_inventory_cvenname,cinvcode as keyextend_b_cinvcode_v_inventory_cinvcode from v_inventory) extend_b_cinvcode_v_inventory on keyextend_b_cinvcode_v_inventory_cinvcode=zpurpotail.cinvcode  Where POID = N'" + dr["poid"].ToDBString() + "' order by ivouchrowno";
 
-                    using (SqlDataReader drow = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null))
+                    using (SqlDataReader drow = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null))
                     {
                         //lst = new List<MaterialLabel_Model>();
                         while (drow.Read())
@@ -3519,7 +3519,7 @@ having (1=1) ";
         internal List<MaterialLabel_Model> VenGetPULstForPrint(string cvencode, string cpoid, ref string strErrMsg)
         {
             string strSql = @"select * from zpurpoheader where cvoucherstate = '审核' and cpoid like N'%" + cpoid + "%' and cvencode = '" + cvencode + "'";
-            SqlDataReader dr = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null);
+            SqlDataReader dr = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null);
             if (dr == null) return null;
             List<MaterialLabel_Model> lst = new List<MaterialLabel_Model>();
             while(dr.Read())
@@ -3530,7 +3530,7 @@ having (1=1) ";
                 head.cpoid = dr["cpoid"].ToDBString();//cpoid;
                 strSql = @"Select zPurpotail.*,'' as editprop  ,extend_b_cinvcode_v_inventory_cvenname From  zPurpotail  left join (select cvenname as extend_b_cinvcode_v_inventory_cvenname,cinvcode as keyextend_b_cinvcode_v_inventory_cinvcode from v_inventory) extend_b_cinvcode_v_inventory on keyextend_b_cinvcode_v_inventory_cinvcode=zpurpotail.cinvcode  Where cbclosedate is null and POID = N'" + dr["poid"].ToDBString() + "' order by ivouchrowno";
             
-                using (SqlDataReader drow = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null))
+                using (SqlDataReader drow = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null))
                 {
                     //lst = new List<MaterialLabel_Model>();
                     while (drow.Read())
@@ -3739,7 +3739,7 @@ having (1=1) ";
                     string ivouchrowno = dr["rowno"].ToDBString();
                     //从U8中获取单据数据
                     strSql = @"select * from zpurpoheader where (cstate = 1 or cstate = 2) and cpoid = N'" + voucherno + "' and cvencode = '" + cvencode + "'";
-                    SqlDataReader U8dr = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null);
+                    SqlDataReader U8dr = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null);
                     if (U8dr == null) return false;
                     U8dr.Read();
                     string poid = U8dr["poid"].ToDBString();
@@ -3750,7 +3750,7 @@ having (1=1) ";
                     head.cpoid = U8dr["cpoid"].ToDBString();//cpoid;
                     strSql = @"Select zPurpotail.*,'' as editprop  ,extend_b_cinvcode_v_inventory_cvenname From  zPurpotail  left join (select cvenname as extend_b_cinvcode_v_inventory_cvenname,cinvcode as keyextend_b_cinvcode_v_inventory_cinvcode from v_inventory) extend_b_cinvcode_v_inventory on keyextend_b_cinvcode_v_inventory_cinvcode=zpurpotail.cinvcode  Where POID = N'" + poid + "' and ivouchrowno = " + ivouchrowno;
 
-                    using (SqlDataReader drow = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null))
+                    using (SqlDataReader drow = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null))
                     {
                         //lst = new List<MaterialLabel_Model>();
                         while (drow.Read())
@@ -3812,7 +3812,7 @@ having (1=1) ";
                         strSql = @"select * from zpurpoheader where (cstate = 1 or cstate = 2) and cpoid in " + voucherno + " and cvencode = '" + cvencode + "'";
                     }
                     //从U8中获取单据数据
-                    using (SqlDataReader U8dr = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null))
+                    using (SqlDataReader U8dr = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null))
                     {
                         if (U8dr == null) return false;
                         while (U8dr.Read())
@@ -3841,7 +3841,7 @@ having (1=1) ";
                             }
                             strSql = strSql + " order by POID, ivouchrowno";
 
-                            using (SqlDataReader drow = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null))
+                            using (SqlDataReader drow = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null))
                             {
                                 //lst = new List<MaterialLabel_Model>();
                                 while (drow.Read())
@@ -3989,7 +3989,7 @@ having (1=1) ";
                         //校验U8数据
                         bool U8checked = false;
                         string querysql = @"select cinvname,cinvstd from inventory where cinvcode = '" + dt[i].MaterialNo + "'";
-                        using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(CommandType.Text, querysql, null))
+                        using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(CommandType.Text, querysql, null))
                         {
                             if (dr != null)
                             {
@@ -4011,7 +4011,7 @@ having (1=1) ";
                             return false;
                         }
                         querysql = @"select bProxyWh from Warehouse where bProxyWh = '1' and cWhCode = '" + dt[i].WarehouseNo + "'";
-                        using (SqlDataReader dr1 = OperationSql.ExecuteReaderForU8(CommandType.Text, querysql, null))
+                        using (SqlDataReader dr1 = OperationSql.ExecuteReaderForERP(CommandType.Text, querysql, null))
                         {
                             if (dr1 != null)
                             {
@@ -4026,7 +4026,7 @@ having (1=1) ";
                                     }
                                     else
                                     {
-                                        dt[i].cvenname = OperationSql.ExecuteScalarForU8(CommandType.Text, "select cVenAbbName from Vendor where cVenCode = '" + dt[i].cvencode + "'", null).ToDBString();
+                                        dt[i].cvenname = OperationSql.ExecuteScalarForERP(CommandType.Text, "select cVenAbbName from Vendor where cVenCode = '" + dt[i].cvencode + "'", null).ToDBString();
                                         if (dt[i].cvenname.Equals(string.Empty) || dt[i].cvenname.Equals(""))
                                         {
                                             strErrMsg = "第" + (i + 1).ToString() + "行的物料编码" + dt[i].MaterialNo + "在U8中的供应商代码" + dt[i].cvencode + "不存在";
@@ -4281,7 +4281,7 @@ having (1=1) ";
                         strSql = strSql + " and dcreatetime < '" + enddate + "'";
                     }
                 }
-                SqlDataReader dr = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null);
+                SqlDataReader dr = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null);
                 if (dr == null) return null;
                 List<MaterialLabel_Model> lst = new List<MaterialLabel_Model>(); ;
                 while (dr.Read())
@@ -4292,7 +4292,7 @@ having (1=1) ";
                     head.cpoid = dr["ccode"].ToDBString();
                     strSql = @"Select iquantity,ivouchrowno,cinvname,cinvstd, OM_MODetails.* From  OM_MODetails  left join  inventory on inventory.cInvCode=OM_MODetails.cinvcode where  cbCloser is null and MOID = N'" + dr["moid"].ToDBString() + "' order by ivouchrowno";
 
-                    using (SqlDataReader drow = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null))
+                    using (SqlDataReader drow = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null))
                     {
                         //lst = new List<MaterialLabel_Model>();
                         while (drow.Read())
@@ -4507,7 +4507,7 @@ having (1=1) ";
                 {
                     strSql = strSql + " and cInvStd like N'%" + cinvstd + "%' ";
                 }
-                SqlDataReader dr = OperationSql.ExecuteReaderForU8(CommandType.Text, strSql, null);
+                SqlDataReader dr = OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null);
                 if (dr == null) return false;
                 while (dr.Read())
                 {
@@ -4707,7 +4707,7 @@ having (1=1) ";
             try
             {
                 string querysql = @"select bProxyWh from Warehouse where bProxyWh = '1' and cWhCode = '" + cWhCode + "'";
-                using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(CommandType.Text, querysql, null))
+                using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(CommandType.Text, querysql, null))
                 {
                     if (dr != null)
                     {
@@ -4732,7 +4732,7 @@ having (1=1) ";
             try
             {
                 string querysql = @"select * from Vendor where cvencode = '" + cvencode + "'";
-                using (SqlDataReader dr = OperationSql.ExecuteReaderForU8(CommandType.Text, querysql, null))
+                using (SqlDataReader dr = OperationSql.ExecuteReaderForERP(CommandType.Text, querysql, null))
                 {
                     if (dr != null)
                     {

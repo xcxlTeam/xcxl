@@ -129,7 +129,7 @@ namespace BLL.PrintBarcode
         public bool GetTrayInfoByTrayIDForOutStock(Barcode_Model Barcode_Model, ref Tray_Model trayInfo)
         {
             bool IsResult = false;
-            string connString = OperationSql.U8ConnStr;
+            string connString = OperationSql.ERPConnStr;
             DataSet ds = new DataSet();
             string errMsg = "";
             SqlCommand view = new SqlCommand();

@@ -24,8 +24,8 @@ namespace BLL.Voucher
                 case 2:
                     if (list != null && list.Count<object>() > 0)
                     {
-                        strSql = string.Format(@"select top 100000000 a.*,b.Allergic,b.SceneMaterial,b.UserFlag,b.InvtType,b.ShelfLife from xMES_Purchase a 
-join xMES_ItemMST b on a.invtid=b.invtid where PoNbr='{0}'", list[0].ToString());
+                        strSql = string.Format(@"select top 100000000 a.*,b.Allergic,b.SceneMaterial,b.UserFlag,b.InvtType,b.ShelfLife,b.StkUnit from xMES_Purchase a 
+                        join xMES_ItemMST b on a.invtid=b.invtid where PoNbr='{0}'", list[0].ToString());
                     }
                     break;
                 case 3:
@@ -130,7 +130,7 @@ join xMES_ItemMST b on a.invtid=b.invtid where PoNbr='{0}'", list[0].ToString())
                     break;
             }
 
-            return OperationSql.ExecuteReader(CommandType.Text, strSql, null);
+            return OperationSql.ExecuteReaderForERP(CommandType.Text, strSql, null);
         }
 
 

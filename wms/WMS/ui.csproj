@@ -132,10 +132,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\ThoughtWorks.QRCode.dll</HintPath>
     </Reference>
-    <Reference Include="UFSoft.U8.Framework.Login.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=19a34671517e8c56, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLL\UFSoft.U8.Framework.Login.UI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basic\Basic_Func.cs" />
@@ -193,6 +189,12 @@
     </Compile>
     <Compile Include="Basic\FrmP2BFile.Designer.cs">
       <DependentUpon>FrmP2BFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmSpecialMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmSpecialMaterial.Designer.cs">
+      <DependentUpon>FrmSpecialMaterial.cs</DependentUpon>
     </Compile>
     <Compile Include="Basic\FrmUserFile.cs">
       <SubType>Form</SubType>
@@ -382,11 +384,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_ProductLabel.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Print\Form1.cs">
+    <Compile Include="Warehouse\FrmAllot.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Print\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Warehouse\FrmAllot.Designer.cs">
+      <DependentUpon>FrmAllot.cs</DependentUpon>
     </Compile>
     <Compile Include="Print\Form12.cs">
       <SubType>Form</SubType>
@@ -594,6 +596,24 @@
     </Compile>
     <Compile Include="Print\Print_Func.cs" />
     <Compile Include="Print\Print_Var.cs" />
+    <Compile Include="Product\FrmErrWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FrmErrWork.Designer.cs">
+      <DependentUpon>FrmErrWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FrmWorkBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FrmWorkBase.Designer.cs">
+      <DependentUpon>FrmWorkBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FrmWorkLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FrmWorkLine.Designer.cs">
+      <DependentUpon>FrmWorkLine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quality\FrmQuality.cs">
@@ -850,8 +870,8 @@
     <EmbeddedResource Include="MaterialRequest\FrmMaterialRequestList.resx">
       <DependentUpon>FrmMaterialRequestList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Print\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Warehouse\FrmAllot.resx">
+      <DependentUpon>FrmAllot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Print\Form12.resx">
       <DependentUpon>Form12.cs</DependentUpon>
@@ -961,6 +981,12 @@
     <EmbeddedResource Include="Print\Report4.rdlc" />
     <EmbeddedResource Include="Print\Report5.rdlc" />
     <EmbeddedResource Include="Print\Report6.rdlc" />
+    <EmbeddedResource Include="Product\FrmErrWork.resx">
+      <DependentUpon>FrmErrWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FrmWorkLine.resx">
+      <DependentUpon>FrmWorkLine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -1150,6 +1176,9 @@
     <None Include="Service References\WebService\WMS.WebService.Preparation.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\WebService\WMS.WebService.ProdHead.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\WebService\WMS.WebService.ProductLabel_Model.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -1282,9 +1311,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Product\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.msMain = new ChensControl.ChensMenuStrip();
             this.tsmiAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiSaveAdd = new System.Windows.Forms.ToolStripMenuItem();
@@ -35,20 +36,20 @@
             this.tsmiCancel = new System.Windows.Forms.ToolStripMenuItem();
             this.tcFile = new ChensControl.ChensTabControl();
             this.tpBasic = new System.Windows.Forms.TabPage();
-            this.txtDescription = new ChensControl.ChensTextBox();
-            this.chensLabel2 = new ChensControl.ChensLabel();
-            this.txtWarehouseNo = new ChensControl.ChensTextBox();
+            this.cbbBuildingLst = new ChensControl.ChensComboBox();
+            this.chensLabel8 = new ChensControl.ChensLabel();
+            this.txtpCode = new ChensControl.ChensTextBox();
+            this.bsPreparation = new System.Windows.Forms.BindingSource(this.components);
             this.chensLabel9 = new ChensControl.ChensLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtWarehouseName = new ChensControl.ChensTextBox();
+            this.txtpName = new ChensControl.ChensTextBox();
             this.chensLabel3 = new ChensControl.ChensLabel();
             this.chensLabel1 = new ChensControl.ChensLabel();
-            this.cbbWarehouseStatus = new ChensControl.ChensComboBox();
-            this.chensLabel8 = new ChensControl.ChensLabel();
             this.msMain.SuspendLayout();
             this.tcFile.SuspendLayout();
             this.tpBasic.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsPreparation)).BeginInit();
             this.SuspendLayout();
             // 
             // msMain
@@ -79,6 +80,7 @@
             this.tsmiSaveAdd.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.tsmiSaveAdd.Size = new System.Drawing.Size(80, 21);
             this.tsmiSaveAdd.Text = "保存并新增";
+            this.tsmiSaveAdd.Click += new System.EventHandler(this.tsmiSaveAdd_Click);
             // 
             // tsmiSaveClose
             // 
@@ -86,6 +88,7 @@
             this.tsmiSaveClose.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.tsmiSaveClose.Size = new System.Drawing.Size(80, 21);
             this.tsmiSaveClose.Text = "保存并关闭";
+            this.tsmiSaveClose.Click += new System.EventHandler(this.tsmiSaveClose_Click);
             // 
             // tsmiCancel
             // 
@@ -93,6 +96,7 @@
             this.tsmiCancel.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
             this.tsmiCancel.Size = new System.Drawing.Size(44, 21);
             this.tsmiCancel.Text = "关闭";
+            this.tsmiCancel.Click += new System.EventHandler(this.tsmiCancel_Click);
             // 
             // tcFile
             // 
@@ -104,69 +108,72 @@
             this.tcFile.Location = new System.Drawing.Point(0, 25);
             this.tcFile.Name = "tcFile";
             this.tcFile.SelectedIndex = 0;
-            this.tcFile.Size = new System.Drawing.Size(810, 228);
+            this.tcFile.Size = new System.Drawing.Size(810, 172);
             this.tcFile.TabIndex = 4;
             this.tcFile.TabStop = false;
             // 
             // tpBasic
             // 
             this.tpBasic.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tpBasic.Controls.Add(this.cbbWarehouseStatus);
+            this.tpBasic.Controls.Add(this.cbbBuildingLst);
             this.tpBasic.Controls.Add(this.chensLabel8);
-            this.tpBasic.Controls.Add(this.txtDescription);
-            this.tpBasic.Controls.Add(this.chensLabel2);
-            this.tpBasic.Controls.Add(this.txtWarehouseNo);
+            this.tpBasic.Controls.Add(this.txtpCode);
             this.tpBasic.Controls.Add(this.chensLabel9);
             this.tpBasic.Controls.Add(this.label4);
             this.tpBasic.Controls.Add(this.label13);
-            this.tpBasic.Controls.Add(this.txtWarehouseName);
+            this.tpBasic.Controls.Add(this.txtpName);
             this.tpBasic.Controls.Add(this.chensLabel3);
             this.tpBasic.Controls.Add(this.chensLabel1);
             this.tpBasic.Location = new System.Drawing.Point(4, 29);
             this.tpBasic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpBasic.Name = "tpBasic";
             this.tpBasic.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tpBasic.Size = new System.Drawing.Size(802, 195);
+            this.tpBasic.Size = new System.Drawing.Size(802, 139);
             this.tpBasic.TabIndex = 0;
             this.tpBasic.Text = "制法信息";
             this.tpBasic.UseVisualStyleBackColor = true;
             // 
-            // txtDescription
+            // cbbBuildingLst
             // 
-            this.txtDescription.BackColor = System.Drawing.Color.White;
-            this.txtDescription.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDescription.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.txtDescription.HotTrack = false;
-            this.txtDescription.Location = new System.Drawing.Point(151, 92);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(630, 50);
-            this.txtDescription.TabIndex = 8;
-            this.txtDescription.TextEnabled = false;
+            this.cbbBuildingLst.BackColor = System.Drawing.Color.White;
+            this.cbbBuildingLst.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.cbbBuildingLst.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbBuildingLst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbBuildingLst.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.cbbBuildingLst.FormattingEnabled = true;
+            this.cbbBuildingLst.HotTrack = false;
+            this.cbbBuildingLst.Location = new System.Drawing.Point(151, 88);
+            this.cbbBuildingLst.Name = "cbbBuildingLst";
+            this.cbbBuildingLst.Size = new System.Drawing.Size(262, 25);
+            this.cbbBuildingLst.TabIndex = 9;
             // 
-            // chensLabel2
+            // chensLabel8
             // 
-            this.chensLabel2.AutoSize = true;
-            this.chensLabel2.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.chensLabel2.Location = new System.Drawing.Point(65, 94);
-            this.chensLabel2.Name = "chensLabel2";
-            this.chensLabel2.Size = new System.Drawing.Size(56, 17);
-            this.chensLabel2.TabIndex = 134;
-            this.chensLabel2.Text = "制法描述";
+            this.chensLabel8.AutoSize = true;
+            this.chensLabel8.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chensLabel8.Location = new System.Drawing.Point(65, 91);
+            this.chensLabel8.Name = "chensLabel8";
+            this.chensLabel8.Size = new System.Drawing.Size(56, 17);
+            this.chensLabel8.TabIndex = 135;
+            this.chensLabel8.Text = "所属建筑";
             // 
-            // txtWarehouseNo
+            // txtpCode
             // 
-            this.txtWarehouseNo.BackColor = System.Drawing.Color.White;
-            this.txtWarehouseNo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtWarehouseNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWarehouseNo.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.txtWarehouseNo.HotTrack = false;
-            this.txtWarehouseNo.Location = new System.Drawing.Point(151, 43);
-            this.txtWarehouseNo.Name = "txtWarehouseNo";
-            this.txtWarehouseNo.Size = new System.Drawing.Size(243, 23);
-            this.txtWarehouseNo.TabIndex = 1;
-            this.txtWarehouseNo.TextEnabled = false;
+            this.txtpCode.BackColor = System.Drawing.Color.White;
+            this.txtpCode.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.txtpCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpCode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPreparation, "pCode", true));
+            this.txtpCode.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.txtpCode.HotTrack = false;
+            this.txtpCode.Location = new System.Drawing.Point(151, 43);
+            this.txtpCode.Name = "txtpCode";
+            this.txtpCode.Size = new System.Drawing.Size(243, 23);
+            this.txtpCode.TabIndex = 1;
+            this.txtpCode.TextEnabled = false;
+            // 
+            // bsPreparation
+            // 
+            this.bsPreparation.DataSource = typeof(WMS.WebService.Preparation);
             // 
             // chensLabel9
             // 
@@ -200,19 +207,20 @@
             this.label13.TabIndex = 129;
             this.label13.Text = "*";
             // 
-            // txtWarehouseName
+            // txtpName
             // 
-            this.txtWarehouseName.BackColor = System.Drawing.Color.White;
-            this.txtWarehouseName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtWarehouseName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtWarehouseName.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.txtWarehouseName.HotTrack = false;
-            this.txtWarehouseName.Location = new System.Drawing.Point(481, 43);
-            this.txtWarehouseName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtWarehouseName.Name = "txtWarehouseName";
-            this.txtWarehouseName.Size = new System.Drawing.Size(300, 23);
-            this.txtWarehouseName.TabIndex = 2;
-            this.txtWarehouseName.TextEnabled = false;
+            this.txtpName.BackColor = System.Drawing.Color.White;
+            this.txtpName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.txtpName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPreparation, "pName", true));
+            this.txtpName.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.txtpName.HotTrack = false;
+            this.txtpName.Location = new System.Drawing.Point(481, 43);
+            this.txtpName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtpName.Name = "txtpName";
+            this.txtpName.Size = new System.Drawing.Size(300, 23);
+            this.txtpName.TabIndex = 2;
+            this.txtpName.TextEnabled = false;
             // 
             // chensLabel3
             // 
@@ -235,44 +243,22 @@
             this.chensLabel1.TabIndex = 0;
             this.chensLabel1.Text = "基本信息";
             // 
-            // cbbWarehouseStatus
-            // 
-            this.cbbWarehouseStatus.BackColor = System.Drawing.Color.White;
-            this.cbbWarehouseStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.cbbWarehouseStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbWarehouseStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbWarehouseStatus.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.cbbWarehouseStatus.FormattingEnabled = true;
-            this.cbbWarehouseStatus.HotTrack = false;
-            this.cbbWarehouseStatus.Location = new System.Drawing.Point(151, 156);
-            this.cbbWarehouseStatus.Name = "cbbWarehouseStatus";
-            this.cbbWarehouseStatus.Size = new System.Drawing.Size(262, 25);
-            this.cbbWarehouseStatus.TabIndex = 9;
-            // 
-            // chensLabel8
-            // 
-            this.chensLabel8.AutoSize = true;
-            this.chensLabel8.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.chensLabel8.Location = new System.Drawing.Point(65, 159);
-            this.chensLabel8.Name = "chensLabel8";
-            this.chensLabel8.Size = new System.Drawing.Size(56, 17);
-            this.chensLabel8.TabIndex = 135;
-            this.chensLabel8.Text = "所属建筑";
-            // 
             // FrmP2BFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 253);
+            this.ClientSize = new System.Drawing.Size(810, 197);
             this.Controls.Add(this.tcFile);
             this.Controls.Add(this.msMain);
             this.Name = "FrmP2BFile";
             this.Text = "新增制法";
+            this.Load += new System.EventHandler(this.FrmP2BFile_Load);
             this.msMain.ResumeLayout(false);
             this.msMain.PerformLayout();
             this.tcFile.ResumeLayout(false);
             this.tpBasic.ResumeLayout(false);
             this.tpBasic.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsPreparation)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,16 +273,15 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiCancel;
         private ChensControl.ChensTabControl tcFile;
         private System.Windows.Forms.TabPage tpBasic;
-        private ChensControl.ChensComboBox cbbWarehouseStatus;
+        private ChensControl.ChensComboBox cbbBuildingLst;
         private ChensControl.ChensLabel chensLabel8;
-        private ChensControl.ChensTextBox txtDescription;
-        private ChensControl.ChensLabel chensLabel2;
-        private ChensControl.ChensTextBox txtWarehouseNo;
+        private ChensControl.ChensTextBox txtpCode;
         private ChensControl.ChensLabel chensLabel9;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label13;
-        private ChensControl.ChensTextBox txtWarehouseName;
+        private ChensControl.ChensTextBox txtpName;
         private ChensControl.ChensLabel chensLabel3;
         private ChensControl.ChensLabel chensLabel1;
+        private System.Windows.Forms.BindingSource bsPreparation;
     }
 }

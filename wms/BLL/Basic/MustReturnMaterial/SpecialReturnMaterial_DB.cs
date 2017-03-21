@@ -6,26 +6,31 @@ using System.Linq;
 using System.Text;
 using BLL.Common;
 
-namespace BLL.Basic.P2B
+namespace BLL.Basic.MustReturnMaterial
 {
-
-    internal class Building_DB
+    public class SpecialReturnMaterial_DB
     {
-        private SqlParameter[] GetParameterFromModel(Building model)
+        public SqlDataReader GetSpecialList(string fieldName)
+        {
+            string strSql = string.Empty;
+            strSql = string.Format("SELECT {0} FROM T_SpecialReturnMaterial WHERE IsDel = 1", fieldName);
+
+            return OperationSql.ExecuteReader(CommandType.Text, strSql, null);
+        }
+
+        private SqlParameter[] GetParameterFromModel(SpecialReturnMaterial model)
         {
             int i;
             SqlParameter[] param = new SqlParameter[]{
                new SqlParameter("@ErrorMsg",SqlDbType.NVarChar,1000),                        
                
                new SqlParameter("@v_ID", model.ID.ToSqlValue()),
-               new SqlParameter("@v_bNo", model.bNo.ToSqlValue()),
-               new SqlParameter("@v_bName", model.bName.ToSqlValue()),
                new SqlParameter("@v_IsDel", model.IsDel.ToSqlValue()),
                new SqlParameter("@v_Creater", model.Creater.ToSqlValue()),
                new SqlParameter("@v_CreateTime", model.CreateTime.ToSqlValue()),
                new SqlParameter("@v_Modifyer", model.Modifyer.ToSqlValue()),
                new SqlParameter("@v_ModifyTime", model.ModifyTime.ToSqlValue()),
-               new SqlParameter("@v_warehouseno", model.WareHouseNo.ToSqlValue()),
+               new SqlParameter("@v_InvtID", model.InvtID.ToSqlValue()),
 
               };
             i = 0;
@@ -35,56 +40,30 @@ namespace BLL.Basic.P2B
             param[i++].Direction = ParameterDirection.Input;
             param[i++].Direction = ParameterDirection.Input;
             param[i++].Direction = ParameterDirection.Input;
-            param[i++].Direction = ParameterDirection.Output;
             param[i++].Direction = ParameterDirection.Input;
-            param[i++].Direction = ParameterDirection.Output;
             param[i++].Direction = ParameterDirection.Input;
 
 
             i = 0;
             param[i++].Size = 1000;
             param[i++].Size = 18;
+            param[i++].Size = 10;
             param[i++].Size = 20;
             param[i++].Size = 50;
-            param[i++].Size = 18;
-            param[i++].Size = 18;
-            param[i++].Size = 18;
-            param[i++].Size = 18;
-            param[i++].Size = 18;
+            param[i++].Size = 20;
+            param[i++].Size = 50;
             param[i++].Size = 20;
 
 
             return param;
         }
 
-        public bool ExistsbNo(Building model, bool bIncludeDel)
-        {
-            SqlParameter[] param = new SqlParameter[]{
-               new SqlParameter("@ErrorMsg",SqlDbType.NVarChar,1000),
-               
-               new SqlParameter("@v_bNo", model.bNo.ToSqlValue()),
-               new SqlParameter("@IncludeDel", bIncludeDel.ToSqlValue()),
-            };
-            param[0].Direction = ParameterDirection.Output;
 
-            OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "Proc_ExistsbNo", param);
-
-            string ErrorMsg = param[0].Value.ToDBString();
-            if (ErrorMsg.StartsWith("execution error"))
-            {
-                throw new Exception(ErrorMsg);
-            }
-            else
-            {
-                return string.IsNullOrEmpty(ErrorMsg);
-            }
-        }
-
-        public bool SaveBuilding(ref Building model)
+        public bool SaveSpecialReturnMaterial(ref SpecialReturnMaterial model)
         {
             SqlParameter[] param = GetParameterFromModel(model);
 
-            OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "Proc_SaveBuilding", param);
+            OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "Proc_SaveSpecialReturnMaterial", param);
 
             string ErrorMsg = param[0].Value.ToDBString();
             if (ErrorMsg.StartsWith("execution error"))
@@ -100,7 +79,7 @@ namespace BLL.Basic.P2B
             }
         }
 
-        public bool DeleteBuildingByID(Building model)
+        public bool DeleteSpecialReturnMaterialByID(SpecialReturnMaterial model)
         {
             SqlParameter[] param = new SqlParameter[]{
                new SqlParameter("@ErrorMsg",SqlDbType.NVarChar,1000),
@@ -110,7 +89,7 @@ namespace BLL.Basic.P2B
             };
             param[0].Direction = ParameterDirection.Output;
 
-            OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "Proc_DeleteBuildingByID", param);
+            OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "Proc_DeleteSpecialReturnMaterialByID", param);
 
             string ErrorMsg = param[0].Value.ToDBString();
             if (ErrorMsg.StartsWith("execution error"))
@@ -123,13 +102,12 @@ namespace BLL.Basic.P2B
             }
         }
 
-        public SqlDataReader GetBuildingByID(Building model)
+        public SqlDataReader GetSpecialReturnMaterialByID(SpecialReturnMaterial model)
         {
             string strSql = string.Empty;
-            strSql = string.Format("SELECT * FROM V_Building WHERE ID = {0}", model.ID);
+            strSql = string.Format("SELECT * FROM T_SpecialReturnMaterial WHERE ID = {0}", model.ID);
 
             return OperationSql.ExecuteReader(CommandType.Text, strSql, null);
         }
-
     }
 }

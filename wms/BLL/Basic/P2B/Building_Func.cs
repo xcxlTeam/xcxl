@@ -200,8 +200,11 @@ namespace BLL.Basic.P2B
            model.IsDel = dr["ISDEL"].ToInt32();
            model.Creater = dr["CREATER"].ToDBString();
            model.CreateTime = dr["CREATETIME"].ToDateTime();
+           model.iGrade = dr["iGrade"].ToInt32();
            model.Modifyer = dr["MODIFYER"].ToDBString();
            model.ModifyTime = dr["MODIFYTIME"].ToDateTimeNull();
+           model.WareHouseNo = dr["WareHouseNo"].ToDBString();
+
 
            return model;
        }

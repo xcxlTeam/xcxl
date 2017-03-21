@@ -37,6 +37,8 @@ namespace Test.localhost {
         
         private System.Threading.SendOrPostCallback TestReadDataOperationCompleted;
         
+        private System.Threading.SendOrPostCallback TestReceiptOperationCompleted;
+        
         private System.Threading.SendOrPostCallback WriteLogOperationCompleted;
         
         private System.Threading.SendOrPostCallback TestMaterialOuterLabelOperationCompleted;
@@ -537,6 +539,9 @@ namespace Test.localhost {
         
         /// <remarks/>
         public event TestReadDataCompletedEventHandler TestReadDataCompleted;
+        
+        /// <remarks/>
+        public event TestReceiptCompletedEventHandler TestReceiptCompleted;
         
         /// <remarks/>
         public event WriteLogCompletedEventHandler WriteLogCompleted;
@@ -1322,6 +1327,37 @@ namespace Test.localhost {
             if ((this.TestReadDataCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.TestReadDataCompleted(this, new TestReadDataCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TestReceipt", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool TestReceipt(ref string strErrMsg, out System.Data.DataSet ds) {
+            object[] results = this.Invoke("TestReceipt", new object[] {
+                        strErrMsg});
+            strErrMsg = ((string)(results[1]));
+            ds = ((System.Data.DataSet)(results[2]));
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TestReceiptAsync(string strErrMsg) {
+            this.TestReceiptAsync(strErrMsg, null);
+        }
+        
+        /// <remarks/>
+        public void TestReceiptAsync(string strErrMsg, object userState) {
+            if ((this.TestReceiptOperationCompleted == null)) {
+                this.TestReceiptOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTestReceiptOperationCompleted);
+            }
+            this.InvokeAsync("TestReceipt", new object[] {
+                        strErrMsg}, this.TestReceiptOperationCompleted, userState);
+        }
+        
+        private void OnTestReceiptOperationCompleted(object arg) {
+            if ((this.TestReceiptCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TestReceiptCompleted(this, new TestReceiptCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -22266,6 +22302,48 @@ namespace Test.localhost {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((System.Data.DataSet)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void TestReceiptCompletedEventHandler(object sender, TestReceiptCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TestReceiptCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TestReceiptCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public string strErrMsg {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[1]));
+            }
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet ds {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[2]));
             }
         }
     }

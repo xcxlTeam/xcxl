@@ -4,20 +4,22 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using BLL.Common;
+using System.Data;
+using BLL.Basic.User;
 
 namespace BLL.Voucher
 {
     public class ReadReceipt_Func
     {
-        private Receipt GetModelFromDataReader(SqlDataReader dr)
+        private ReceiptDetails GetModelFromDataReader(SqlDataReader dr)
         {
-            Receipt model = new Receipt();
-            model.Address = dr["Allergic"].ToCHString();
+            ReceiptDetails model = new ReceiptDetails();
+            model.Address = dr["Address"].ToCHString();
             model.LineRef = dr["LineRef"].ToDBString();
             model.Name = dr["Name"].ToCHString();
-            model.Phone = dr["Name"].ToDBString();
+            model.Phone = dr["Phone"].ToDBString();
             model.PoNbr = dr["PoNbr"].ToDBString();
-            model.PromDate = dr["PromDate"].ToDateTime();
+            model.PromDate = dr["PromDate"].ToDBString();
             model.QtyOrd = dr["QtyOrd"].ToDecimal();
             model.QtyRcvd = dr["QtyRcvd"].ToDecimal();
             model.VendID = dr["VendID"].ToInt32();
@@ -38,28 +40,116 @@ namespace BLL.Voucher
             return model;
         }
 
-        public bool GetReceiptByPoNbr(ref Receipt model, ref string strError)
+        private ReceiptHead GetHeadModelFromDataReader(SqlDataReader dr)
+        {
+            ReceiptHead model = new ReceiptHead();
+            model.Address = dr["Address"].ToCHString();
+            model.Name = dr["Name"].ToCHString();
+            model.Phone = dr["Phone"].ToDBString();
+            model.PoNbr = dr["PoNbr"].ToDBString();
+            model.VendID = dr["VendID"].ToInt32();
+            model.PurchUnit = dr["PurchUnit"].ToDBString();
+
+            return model;
+        }
+
+
+        public string GetReceiptByPoNbr(string strPoNo,string strUserJson)
         {
             ReadAPI_DB DB = new ReadAPI_DB();
+            ReceiptHead model = null;
+            bool bSucc = false;
+            string strError = string.Empty;
             try
             {
-                using (SqlDataReader dr = DB.ReadData(ReadApiType.RECEIPT, model.PoNbr))
+                UserInfo user=JSONUtil.JSONHelper.JsonToObject<UserInfo>(strUserJson);
+                using (SqlDataReader dr = DB.ReadData(ReadApiType.RECEIPT, strPoNo))
                 {
-                    if (dr.Read())
+                    while (dr.Read())
                     {
-                        model = (GetModelFromDataReader(dr));
+                        if(model==null)
+                        { 
+                            model = (GetHeadModelFromDataReader(dr));
+                            model.lstDetails = new List<ReceiptDetails>();
+                        }
+                        model.lstDetails.Add(GetModelFromDataReader(dr));
                     }
-                    return true;
+                    if (model==null)
+                    {
+                        throw new Exception("未找到数据！");
+                    }
+                    bSucc = true;
+                    return GetReturnJson(bSucc, model, strError);
                 }
             }
             catch (Exception ex)
             {
                 strError = ex.Message;
-                return false;
+                bSucc = false;
+                model=new ReceiptHead();
+                return GetReturnJson(bSucc, model, strError);
             }
             finally
             {
             }
+        }
+
+        public string PostReciptInfo(string strReceiveJson, string strUserJson)
+        {
+            bool bSucc = false;
+            string strErrMsg = string.Empty;
+            string strPostAndTask = string.Empty;
+            ReceiptHead DeliveryInfo = new ReceiptHead();
+            Receipt_DB DRD = new Receipt_DB();
+            UserInfo userModel = new UserInfo();
+
+            try
+            {
+                if (string.IsNullOrEmpty(strReceiveJson))
+                {
+                    return GetReturnJson(false, DeliveryInfo, "没有过账数据！");
+                }
+
+                DeliveryInfo = JSONUtil.JSONHelper.JsonToObject<ReceiptHead>(strReceiveJson);
+
+                if (DeliveryInfo == null || DeliveryInfo.lstDetails == null || DeliveryInfo.lstDetails.Count <= 0)
+                {
+                    return GetReturnJson(false, DeliveryInfo, "解析客户端数据出错！");
+                }
+
+                if (DeliveryInfo.lstDetails.Where(t => t.iQty > 0).Count() == 0)
+                {
+                    return GetReturnJson(false, DeliveryInfo, "收货数量都为零，请确认！");
+                }
+
+                userModel = JSONUtil.JSONHelper.JsonToObject<UserInfo>(strUserJson);
+
+                if (userModel == null || string.IsNullOrEmpty(userModel.UserNo))
+                {
+                    return GetReturnJson(false, DeliveryInfo, "没有获取用户信息！");
+                }
+                bSucc = DRD.PostReceipt(ref DeliveryInfo,userModel, ref strErrMsg);
+                if (bSucc == false)
+                {
+                    return GetReturnJson(false, DeliveryInfo, strErrMsg);
+                }
+
+                return GetReturnJson(bSucc, DeliveryInfo, strErrMsg);
+
+            }
+            catch (Exception ex)
+            {
+                TOOL.WriteLogMethod.WriteLog("方法：PostReciptInfo---操作人：" + userModel.UserName + strReceiveJson);
+                return GetReturnJson(false, DeliveryInfo, "Web异常：" + ex.Message + ex.StackTrace);
+            }
+        }
+
+
+        private string GetReturnJson(bool bSucc, ReceiptHead DeliveryInfo, string strErrMsg)
+        {
+            DeliveryInfo.Status = bSucc == true ? "S" : "E";
+            DeliveryInfo.Message = strErrMsg;
+            return JSONUtil.JSONHelper.ObjectToJson<ReceiptHead>(DeliveryInfo);
         }
 
 

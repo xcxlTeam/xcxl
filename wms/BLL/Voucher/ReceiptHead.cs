@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BLL.Voucher
 {
-    public class Receipt:Inventory
+    public class ReceiptHead 
     {
         /// <summary>
         /// 采购订单号
@@ -32,24 +32,35 @@ namespace BLL.Voucher
         /// </summary>
         public string CuryID { get; set; }
         /// <summary>
-        /// 行号
-        /// </summary>
-        public string LineRef { get; set; }
-        /// <summary>
-        /// 订单数量
-        /// </summary>
-        public decimal QtyOrd { get; set; }
-        /// <summary>
-        /// 已接收数量
-        /// </summary>
-        public decimal QtyRcvd { get; set; }
-        /// <summary>
-        /// 到货日期
-        /// </summary>
-        public DateTime PromDate { get; set; }
-        /// <summary>
         /// 单位
         /// </summary>
         public string PurchUnit { get; set; }
+
+        public string BatNbr { get; set; }
+
+        public string RcptNbr { get; set; }
+       
+
+        public List<ReceiptDetails> lstDetails { get; set; }
+
+        /// <summary>
+        /// 状态 S成功 E 失败
+        /// </summary>
+        public String Status { get; set; }
+        /// <summary>
+        /// 失败消息
+        /// </summary>
+        public String Message { get; set; }
+
+        /// <summary>
+        /// 订单状态
+        /// </summary>
+        public string OrderState { get; set; }
+        /// <summary>
+        /// 退货类型
+        /// </summary>
+        public string ReceiptType { get; set; }
+
     }
+
 }
