@@ -26,7 +26,7 @@ namespace BLL.Basic.MustReturnMaterial
         /// </summary>
         public string Descr { get; set; }
     }
-    public abstract class MustReturnRule
+    public  class MustReturnRule
     {
         public static string PropertyName { get; set; }
 
@@ -37,7 +37,7 @@ namespace BLL.Basic.MustReturnMaterial
     /// <summary>
     /// 通用规则（元素指定位置的字符在结果集中）
     /// </summary>
-    public static class CommonRule : MustReturnRule
+    public class CommonRule : MustReturnRule
     {
         public CommonRule()
             : base()
@@ -50,7 +50,7 @@ namespace BLL.Basic.MustReturnMaterial
     /// <summary>
     /// 特殊规则（元素本身在结果集中）
     /// </summary>
-    public static class SpecialRule : MustReturnRule
+    public class SpecialRule : MustReturnRule
     {
         public SpecialRule()
             : base()
