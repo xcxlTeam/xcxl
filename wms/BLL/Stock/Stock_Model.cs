@@ -36,13 +36,22 @@ namespace BLL.Stock
             set { _MaterialNo = value; }
         }
         private string _MaterialDesc;
-
-        public string MaterialDesc
+        /// <summary>
+        /// 英文名称
+        /// </summary>
+        public string MaterialENDesc
         {
             get { return _MaterialDesc; }
             set { _MaterialDesc = value; }
         }
-
+        /// <summary>
+        /// 中文名称
+        /// </summary>
+        public string MaterialCHDesc
+        {
+            get { return _MaterialDesc; }
+            set { _MaterialDesc = value; }
+        }
         private string _MaterialStd;
 
         public string MaterialStd
@@ -72,13 +81,17 @@ namespace BLL.Stock
             get { return _AreaNo; }
             set { _AreaNo = value; }
         }
-        private double _Qty;
+        private decimal _Qty;
 
-        public double Qty
+        public decimal Qty
         {
             get { return _Qty; }
             set { _Qty = value; }
         }
+        /// <summary>
+        /// 件数（通常是1）
+        /// </summary>
+        public int Num { get; set; }
         private string _TempMaterialNo;
 
         public string TempMaterialNo
@@ -181,6 +194,18 @@ namespace BLL.Stock
 
         public string cvencode { get; set; }
         public string cvenname { get; set; }
+        /// <summary>
+        /// 生产日期
+        /// </summary>
+        public string dMDate { get; set; }
+        /// <summary>
+        /// 失效日期
+        /// </summary>
+        public string dVDate { get; set; }
+        /// <summary>
+        /// 保质期(天)				
+        /// </summary>
+        public int ShelfLife { get; set; }
     }
 
     public class QueryConditions

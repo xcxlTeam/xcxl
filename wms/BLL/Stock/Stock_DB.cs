@@ -27,8 +27,8 @@ namespace BLL.Stock
                         Stock_Model stockModel = new Stock_Model();
                         stockModel.MaterialNo = dr["materialno"].ToDBString();
                         stockModel.AreaNo = dr["areano"].ToDBString();
-                        stockModel.MaterialDesc = dr["materialdesc"].ToDBString();
-                        stockModel.Qty = dr["qty"].ToDouble();
+                        stockModel.MaterialENDesc = dr["materialdesc"].ToDBString();
+                        stockModel.Qty = dr["qty"].ToDecimal();
                         lstStock.Add(stockModel);
                     }
                 }
@@ -42,7 +42,7 @@ namespace BLL.Stock
 
         public List<Stock_Model> GetCapacity(QueryConditions list)
         {
-            if (list==null)
+            if (list == null)
             {
                 return null;
             }
@@ -96,7 +96,7 @@ namespace BLL.Stock
                                 group by a.materialno, a.materialdesc, a.materialstd, b.ProductLineNo
                                 ) T
                                 GROUP BY T.materialno, T.materialdesc, T.materialstd,T.ProductLineNo";
-                if(!string.IsNullOrEmpty(list.ProductLineNo))
+                if (!string.IsNullOrEmpty(list.ProductLineNo))
                 {
                     strSql = strSql.Replace("--0", "").Replace("@ProductLineNo", list.ProductLineNo.ToSelSqlString());
                 }
@@ -104,12 +104,12 @@ namespace BLL.Stock
                 {
                     strSql = strSql.Replace("--1", "").Replace("@MaterialNo", list.MaterialNo.ToSelSqlString());
                 }
-                if (list.StartTime!=null)
+                if (list.StartTime != null)
                 {
                     string BeginDate = list.StartTime.ToDateTime().ToString("yyyy-MM-dd");
                     strSql = strSql.Replace("--2", "").Replace("@BeginDate", BeginDate.ToSelSqlString());
                 }
-                if (list.EndTime!=null)
+                if (list.EndTime != null)
                 {
                     string EndDate = list.EndTime.ToDateTime().AddDays(1).ToString("yyyy-MM-dd");
                     strSql = strSql.Replace("--3", "").Replace("@EndDate", EndDate.ToSelSqlString());
@@ -131,10 +131,10 @@ namespace BLL.Stock
                     while (dr.Read())
                     {
                         Stock_Model stockModel = new Stock_Model();
-                        stockModel.ProductLineNo= dr["ProductLineNo"].ToDBString();
+                        stockModel.ProductLineNo = dr["ProductLineNo"].ToDBString();
                         stockModel.MaterialNo = dr["materialno"].ToDBString();
-                        stockModel.MaterialDesc = dr["materialdesc"].ToDBString();
-                        stockModel.MaterialStd= dr["materialstd"].ToDBString();
+                        stockModel.MaterialENDesc = dr["materialdesc"].ToDBString();
+                        stockModel.MaterialStd = dr["materialstd"].ToDBString();
                         stockModel.TotalQty = dr["TotalQty"].ToDouble();
                         stockModel.TrayQty = dr["TrayQty"].ToDouble();
                         stockModel.SaveQty = dr["SaveQty"].ToDouble();
@@ -173,15 +173,15 @@ namespace BLL.Stock
                         Stock_Model stockModel = new Stock_Model();
                         stockModel.MaterialNo = dr["materialno"].ToDBString();
                         stockModel.AreaNo = dr["areano"].ToDBString();
-                        stockModel.MaterialDesc = dr["materialdesc"].ToDBString();
-                        stockModel.MaterialStd= dr["MaterialStd"].ToDBString();
-                        stockModel.AreaName= dr["AreaName"].ToDBString();
+                        stockModel.MaterialENDesc = dr["materialdesc"].ToDBString();
+                        stockModel.MaterialStd = dr["MaterialStd"].ToDBString();
+                        stockModel.AreaName = dr["AreaName"].ToDBString();
                         stockModel.HouseName = dr["HouseName"].ToDBString();
                         stockModel.WarehouseName = dr["WarehouseName"].ToDBString();
                         stockModel.HouseNo = dr["HouseNo"].ToDBString();
                         stockModel.WarehouseNo = dr["WarehouseNo"].ToDBString();
 
-                        stockModel.Qty = dr["qty"].ToDouble();
+                        stockModel.Qty = dr["qty"].ToDecimal();
                         stockModel.SerialNo = strSerialNo;
                         lstStock.Add(stockModel);
                     }
@@ -228,10 +228,10 @@ namespace BLL.Stock
                         Stock_Model stockModel = new Stock_Model();
                         stockModel.MaterialNo = dr["materialno"].ToDBString();
                         stockModel.AreaNo = dr["areano"].ToDBString();
-                        stockModel.MaterialDesc = dr["materialdesc"].ToDBString();
-                        stockModel.MaterialStd= dr["materialstd"].ToDBString();
+                        stockModel.MaterialENDesc = dr["materialdesc"].ToDBString();
+                        stockModel.MaterialStd = dr["materialstd"].ToDBString();
 
-                        stockModel.Qty = dr["qty"].ToDouble();
+                        stockModel.Qty = dr["qty"].ToDecimal();
                         if (!string.IsNullOrEmpty(VoucherNo))
                             stockModel.VoucherNo = dr["VoucherNo"].ToDBString();
                         lstStock.Add(stockModel);
@@ -261,8 +261,8 @@ namespace BLL.Stock
                     {
                         Stock_Model SM = new Stock_Model();
                         SM.MaterialNo = dr["materialno"].ToDBString();
-                        SM.MaterialDesc = dr["materialdesc"].ToDBString();
-                        SM.Qty = dr["qty"].ToDouble();
+                        SM.MaterialENDesc = dr["materialdesc"].ToDBString();
+                        SM.Qty = dr["qty"].ToDecimal();
                         lstStock.Add(SM);
                     }
                 }
@@ -422,8 +422,8 @@ namespace BLL.Stock
                 return false;
             }
         }
-        
-        public bool GetSaleBillVouchByCode(string code, out SaleBillVouch_Model model,out string strErrMsg)
+
+        public bool GetSaleBillVouchByCode(string code, out SaleBillVouch_Model model, out string strErrMsg)
         {
             try
             {
@@ -534,13 +534,13 @@ where dbclosedate is null and cInvCode = '" + detail.cinvcode + "' and cSOCode !
                     while (dr.Read())
                     {
                         strSql = "select * from T_temptrans where RealQty < " + detail.qty + " and ssocode = '" + dr["cSOCode"].ToDBString() + "' and cinvcode = '" + detail.cinvcode + "'";
-                        if(OperationSql.ExecuteReader(System.Data.CommandType.Text, strSql).Read())
+                        if (OperationSql.ExecuteReader(System.Data.CommandType.Text, strSql).Read())
                         {
                             break;
                         }
                         strSql = "select SUM(qty) from T_temptrans where  cinvcode = '" + detail.cinvcode + "' and dsocode = '" + dr["cSOCode"].ToDBString() + "'";
                         decimal sum = OperationSql.ExecuteScalar(System.Data.CommandType.Text, strSql).ToDecimal();
-                        if(sum != null && (dr["iQuantity"].ToDecimal() - sum < detail.qty))
+                        if (sum != null && (dr["iQuantity"].ToDecimal() - sum < detail.qty))
                         {
                             continue;
                         }
@@ -550,7 +550,7 @@ where dbclosedate is null and cInvCode = '" + detail.cinvcode + "' and cSOCode !
                         {
                             continue;
                         }
-                        else if(sum < detail.qty)
+                        else if (sum < detail.qty)
                         {
                             continue;
                         }
@@ -722,7 +722,7 @@ where cSource=N'销售' and csbvcode = '" + dsbvcode + "'";
                     dsocode = OperationSql.ExecuteScalarForERP(System.Data.CommandType.Text, strSql).ToDBString();
                 }
                 strSql = @"select * from T_temptrans where (1=1) ";
-                if(cinvcode != null)
+                if (cinvcode != null)
                 {
                     strSql += " and cinvcode = '" + cinvcode + "' ";
                 }
@@ -771,7 +771,7 @@ where cSource=N'销售' and csbvcode = '" + dsbvcode + "'";
                 strErrMsg = "";
                 return true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 list = null;
                 strErrMsg = ex.Message;
@@ -779,7 +779,7 @@ where cSource=N'销售' and csbvcode = '" + dsbvcode + "'";
             }
         }
 
-        public bool QueryStockSumByWHcode(string WHcode,out List<Stock_Model> list, out string strErrMsg)
+        public bool QueryStockSumByWHcode(string WHcode, out List<Stock_Model> list, out string strErrMsg)
         {
             try
             {
@@ -791,9 +791,9 @@ where cSource=N'销售' and csbvcode = '" + dsbvcode + "'";
                     {
                         Stock_Model model = new Stock_Model();
                         model.MaterialNo = dr["materialno"].ToDBString();
-                        model.MaterialDesc = dr["materialdesc"].ToDBString();
+                        model.MaterialENDesc = dr["materialdesc"].ToDBString();
                         model.MaterialStd = dr["materialstd"].ToDBString();
-                        model.Qty = dr["sumqty"].ToDouble();
+                        model.Qty = dr["sumqty"].ToDecimal();
                         list.Add(model);
                     }
                 }
@@ -808,10 +808,10 @@ where cSource=N'销售' and csbvcode = '" + dsbvcode + "'";
             }
         }
         /// <summary>
-        /// 获取物料总库存
+        /// 获取物料总库存(按仓库及物料汇总)
         /// </summary>
         /// <param name="list"></param>
-        /// <param name="strArrayMaterialNo"></param>
+        /// <param name="strArrayMaterialNo">物料员，以“，”分隔</param>
         /// <param name="strErrMsg"></param>
         /// <returns></returns>
         public bool QueryStockSumForTransfer(out List<StockHead_Model> list, string strArrayMaterialNo, out string strErrMsg)
@@ -829,7 +829,7 @@ where cSource=N'销售' and csbvcode = '" + dsbvcode + "'";
             }
             try
             {
-                string sql = @"select materialno, materialdesc,materialstd,SUM(iquantity) as sumqty,sum(inum) as sumnum from T_CURRENTSTOCK where warehouseno IN ('01','04') AND MATERIALNO IN ("+strMaterialNo+") group by materialno,materialdesc,materialstd,warehouseno";
+                string sql = @"select materialno,Descr,CHDesc,warehouseno,SUM(iquantity) as sumqty,sum(inum) as sumnum from T_CURRENTSTOCK where 1=1 AND MATERIALNO IN (" + strMaterialNo + ") group by materialno,Descr,CHDesc,warehouseno";
                 list = new List<StockHead_Model>();
                 using (SqlDataReader dr = OperationSql.ExecuteReader(System.Data.CommandType.Text, sql))
                 {
@@ -837,7 +837,7 @@ where cSource=N'销售' and csbvcode = '" + dsbvcode + "'";
                     {
                         StockHead_Model model = new StockHead_Model();
                         model.MaterialNo = dr["materialno"].ToDBString();
-                        model.MaterialDesc = dr["materialdesc"].ToDBString();
+                        model.MaterialENDesc = dr["materialdesc"].ToDBString();
                         model.MaterialCHDesc = dr["MaterialCHDesc"].ToCHString();
                         model.iQuantity = dr["sumqty"].ToDecimal();
                         model.iNum = dr["sumnum"].ToInt32();
@@ -856,8 +856,115 @@ where cSource=N'销售' and csbvcode = '" + dsbvcode + "'";
             }
         }
 
+        public bool QueryStockSumByArraySerialNo(out List<StockHead_Model> list, string strArraySerialNo, out string strErrMsg)
+        {
+            string strSerialNo = "";
+            string[] ArrayMaterialNo = strArraySerialNo.Split(',');
+            foreach (var item in ArrayMaterialNo)
+            {
+                if (string.IsNullOrEmpty(strSerialNo))
+                {
+                    strSerialNo = "N'" + item + "'";
+                }
+                else
+                    strSerialNo += (",N'" + item + "'");
+            }
+            try
+            {
+                string sql = @"select materialno,batchno,Descr,CHDesc,dMDate,dVDate,shelflife,qty ,num,serialno from T_BARCODE where 1=1 AND serialno IN (" + strSerialNo + ")";
+                list = new List<StockHead_Model>();
+                using (SqlDataReader dr = OperationSql.ExecuteReader(System.Data.CommandType.Text, sql))
+                {
+                    while (dr.Read())
+                    {
+                        Stock_Model model = new Stock_Model();
+                        model.MaterialNo = dr["materialno"].ToDBString();
+                        model.MaterialENDesc = dr["materialdesc"].ToDBString();
+                        model.MaterialCHDesc = dr["MaterialCHDesc"].ToCHString();
+                        model.Qty = dr["qty"].ToDecimal();
+                        model.Num = dr["num"].ToInt32();
+                        model.BatchNo = dr["batchno"].ToDBString();
+                        model.SerialNo = dr["serialno"].ToDBString();
+                        StockHead_Model head = list.Find(s => s.MaterialNo.Equals(model.MaterialNo) && s.BatchNo.Equals(model.BatchNo));
+                        if (head == null)
+                        {
+                            head = new StockHead_Model(model);
+                            list.Add(head);
+                        }
+                        else
+                        {
+                            head.iQuantity += model.Qty;
+                            head.iNum += model.Num;
+                            head.lstStockInfo.Add(model);
+                        }
+                    }
+                }
+                strErrMsg = "";
+                return true;
+            }
+            catch (Exception ex)
+            {
+                list = null;
+                strErrMsg = ex.Message;
+                return false;
+            }
+        }
 
-        public bool SaveCheckOmitAdd(string strBarcode, Basic.Area.AreaInfo areaInfo,ref string strErrMsg)
+        public bool PostScanInStockNoSource(string strArraySerialNo, string strAreaNo, string strUserNo, ref string strError)
+        {
+            bool bResult = false;
+            List<StockHead_Model> lstHead;
+            try
+            {
+                QueryStockSumByArraySerialNo(out lstHead, strArraySerialNo, out strError);
+               if (lstHead == null || lstHead.Count==0)
+               {
+                   if (string.IsNullOrEmpty(strError))
+                       strError = "未找到条码相关数据！";
+                   throw new Exception(strError);
+               }
+                SqlParameter[] param = new SqlParameter[]{
+               new SqlParameter("strAreaNo", SqlDbType.NVarChar),        
+               new SqlParameter("data_xml", SqlDbType.Xml),
+               new SqlParameter("strUserNo", SqlDbType.NVarChar),
+               new SqlParameter("bResult", SqlDbType.Bit),
+               new SqlParameter("strErrMsg",SqlDbType.NVarChar,1000),    
+              };
+
+                int i;
+                i = 0;
+                param[i++].Direction = ParameterDirection.Input;
+                param[i++].Direction = ParameterDirection.Input;
+                param[i++].Direction = ParameterDirection.Input;
+                param[i++].Direction = ParameterDirection.Output;
+                param[i++].Direction = ParameterDirection.Output;
+
+                i = 0;
+                param[i++].Size = 20;
+                param[i++].Size = 30000;
+                param[i++].Size = 20;
+                param[i++].Size = 1;
+                param[i++].Size = 1000;
+
+                param[0].Value = strAreaNo;
+                param[1].Value = XMLUtil.XmlUtil.Serializer(typeof(List<StockHead_Model>), lstHead);
+                param[2].Value = strUserNo;
+
+                OperationSql.ExecuteNonQuery2(CommandType.StoredProcedure, "proc_instock_nosource", param);
+
+                bResult = Convert.ToBoolean(param[3].Value);
+                strError = param[4].Value.ToDBString();
+
+                return bResult;
+            }
+            catch (Exception ex)
+            {
+                strError = ex.Message;
+                return false;
+            }
+        }
+
+        public bool SaveCheckOmitAdd(string strBarcode, Basic.Area.AreaInfo areaInfo, ref string strErrMsg)
         {
             SqlCommand cmd = new SqlCommand();
             SqlConnection conn = new SqlConnection();

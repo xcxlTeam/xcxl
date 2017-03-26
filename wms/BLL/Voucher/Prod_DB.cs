@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Data;
+using BLL.Basic.User;
 
 namespace BLL.Voucher
 {
@@ -53,5 +54,6 @@ namespace BLL.Voucher
             return OperationSql.ExecuteReader(CommandType.Text, strSql, null);
 
         }
+
     }
 }

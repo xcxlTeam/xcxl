@@ -256,6 +256,8 @@
     <Compile Include="Voucher\ReceiptHead.cs" />
     <Compile Include="Voucher\Receipt_DB.cs" />
     <Compile Include="Voucher\Transfer.cs" />
+    <Compile Include="Voucher\Transfer_DB.cs" />
+    <Compile Include="Voucher\Transfer_Func.cs" />
     <Compile Include="XMLUtil\XmlUtil.cs" />
   </ItemGroup>
   <ItemGroup>

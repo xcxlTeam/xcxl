@@ -440,11 +440,11 @@ namespace BLL.Stock
             if (Common_Func.readerExists(dr, "Barcode")) model.Barcode = dr["Barcode"].ToDBString();
             if (Common_Func.readerExists(dr, "SerialNo")) model.SerialNo = dr["SerialNo"].ToDBString();
             if (Common_Func.readerExists(dr, "MaterialNo")) model.MaterialNo = dr["MaterialNo"].ToDBString();
-            if (Common_Func.readerExists(dr, "MaterialDesc")) model.MaterialDesc = dr["MaterialDesc"].ToDBString();
+            if (Common_Func.readerExists(dr, "MaterialDesc")) model.MaterialENDesc = dr["MaterialDesc"].ToDBString();
             if (Common_Func.readerExists(dr, "WarehouseNo")) model.WarehouseNo = dr["WarehouseNo"].ToDBString();
             if (Common_Func.readerExists(dr, "HouseNo")) model.HouseNo = dr["HouseNo"].ToDBString();
             if (Common_Func.readerExists(dr, "AreaNo")) model.AreaNo = dr["AreaNo"].ToDBString();
-            if (Common_Func.readerExists(dr, "Qty")) model.Qty = dr["Qty"].ToDouble();
+            if (Common_Func.readerExists(dr, "Qty")) model.Qty = dr["Qty"].ToDecimal();
             if (Common_Func.readerExists(dr, "TempMaterialNo")) model.TempMaterialNo = dr["TempMaterialNo"].ToDBString();
             if (Common_Func.readerExists(dr, "TempMaterialDesc")) model.TempMaterialDesc = dr["TempMaterialDesc"].ToDBString();
             if (Common_Func.readerExists(dr, "PickAreaNo")) model.PickAreaNo = dr["PickAreaNo"].ToDBString();
@@ -462,6 +462,11 @@ namespace BLL.Stock
         }
 
         private Stock_DB _db = new Stock_DB();
+
+        public bool PostScanInStockNoSource(string strArraySerialNo, string strAreaNo, string strUserNo, ref string strError)
+        {
+            return _db.PostScanInStockNoSource(strArraySerialNo, strAreaNo, strUserNo, ref strError);
+        }
 
         public bool GetSaleBillVouchCodeByCustomer(string ccusname, out List<string> list, out string strErrMsg)
         {

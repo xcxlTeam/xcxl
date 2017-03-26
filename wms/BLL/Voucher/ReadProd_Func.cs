@@ -326,7 +326,7 @@ namespace BLL.Voucher
 
             prod.lstDetails = lstGroupDetails;
 
-            #region 给实体类赋伪值，防止部分需要回定属性不被序列化
+            #region 给实体类赋伪值，防止部分需要回写属性不被序列化
             prod.AllotNo = "0000";
             prod.AllotID = 0;
             prod.AllotDate = DateTime.MaxValue;

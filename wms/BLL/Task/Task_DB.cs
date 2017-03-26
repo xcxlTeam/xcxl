@@ -203,10 +203,7 @@ WHERE C.taskno = '{0}'", strTaskNo);
                 new SqlParameter("strToAreaNo", SqlDbType.NVarChar),
                 new SqlParameter("Task_xml", SqlDbType.Xml),
                 new SqlParameter("strUserNo", SqlDbType.NVarChar),
-                //new SqlParameter("bResult", SqlDbType.Int,ParameterDirection.Output),
                 new SqlParameter("bResult", SqlDbType.Int),
-
-                //new SqlParameter("strErrMsg", SqlDbType.NVarChar,1000,strErrMsg,ParameterDirection.Output)
                 new SqlParameter("strErrMsg", SqlDbType.NVarChar,1000,strErrMsg)
 
             };
@@ -214,7 +211,6 @@ WHERE C.taskno = '{0}'", strTaskNo);
                 cmdParms[0].Value = strToAreaNo;
                 cmdParms[1].Value = strTaskXml;
                 cmdParms[2].Value = userModel.UserNo;
-
                 cmdParms[3].Direction = ParameterDirection.Output;
                 cmdParms[4].Direction = ParameterDirection.Output;
 

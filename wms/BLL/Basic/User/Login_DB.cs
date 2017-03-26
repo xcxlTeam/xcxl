@@ -21,14 +21,14 @@ namespace BLL.Basic.User
             string LoginIP = user.LoginIP;
             DateTime CurrentTime;
             string strSql = string.Empty;
-            if (user.UserNo.ToUpper() != "ADMIN")
+            //if (user.UserNo.ToUpper() != "ADMIN")
             {
                 strSql = string.Format("SELECT GETDATE() CurrentTime,V_User.* FROM V_User WHERE UserNo = '{0}' AND password = '{1}'", user.UserNo, user.Password);
             }
-            else
-            {
-                strSql = string.Format("SELECT GETDATE() CurrentTime,V_User.* FROM V_User WHERE UserNo = '{0}' ", user.UserNo);
-            }
+            //else
+            //{
+            //    strSql = string.Format("SELECT GETDATE() CurrentTime,V_User.* FROM V_User WHERE UserNo = '{0}' ", user.UserNo);
+            //}
             //strSql = string.Format("SELECT GETDATE() CurrentTime,V_User.* FROM V_User WHERE UserNo = '{0}'", user.UserNo);
 
             UserInfo model;
