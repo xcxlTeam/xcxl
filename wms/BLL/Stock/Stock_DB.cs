@@ -28,7 +28,7 @@ namespace BLL.Stock
                         stockModel.MaterialNo = dr["materialno"].ToDBString();
                         stockModel.AreaNo = dr["areano"].ToDBString();
                         stockModel.MaterialENDesc = dr["materialdesc"].ToDBString();
-                        stockModel.Qty = dr["qty"].ToDouble();
+                        stockModel.Qty = dr["qty"].ToDecimal();
                         lstStock.Add(stockModel);
                     }
                 }
@@ -181,7 +181,7 @@ namespace BLL.Stock
                         stockModel.HouseNo = dr["HouseNo"].ToDBString();
                         stockModel.WarehouseNo = dr["WarehouseNo"].ToDBString();
 
-                        stockModel.Qty = dr["qty"].ToDouble();
+                        stockModel.Qty = dr["qty"].ToDecimal();
                         stockModel.SerialNo = strSerialNo;
                         lstStock.Add(stockModel);
                     }
@@ -231,7 +231,7 @@ namespace BLL.Stock
                         stockModel.MaterialENDesc = dr["materialdesc"].ToDBString();
                         stockModel.MaterialStd = dr["materialstd"].ToDBString();
 
-                        stockModel.Qty = dr["qty"].ToDouble();
+                        stockModel.Qty = dr["qty"].ToDecimal();
                         if (!string.IsNullOrEmpty(VoucherNo))
                             stockModel.VoucherNo = dr["VoucherNo"].ToDBString();
                         lstStock.Add(stockModel);
@@ -262,7 +262,7 @@ namespace BLL.Stock
                         Stock_Model SM = new Stock_Model();
                         SM.MaterialNo = dr["materialno"].ToDBString();
                         SM.MaterialENDesc = dr["materialdesc"].ToDBString();
-                        SM.Qty = dr["qty"].ToDouble();
+                        SM.Qty = dr["qty"].ToDecimal();
                         lstStock.Add(SM);
                     }
                 }

@@ -444,7 +444,7 @@ namespace BLL.Stock
             if (Common_Func.readerExists(dr, "WarehouseNo")) model.WarehouseNo = dr["WarehouseNo"].ToDBString();
             if (Common_Func.readerExists(dr, "HouseNo")) model.HouseNo = dr["HouseNo"].ToDBString();
             if (Common_Func.readerExists(dr, "AreaNo")) model.AreaNo = dr["AreaNo"].ToDBString();
-            if (Common_Func.readerExists(dr, "Qty")) model.Qty = dr["Qty"].ToDouble();
+            if (Common_Func.readerExists(dr, "Qty")) model.Qty = dr["Qty"].ToDecimal();
             if (Common_Func.readerExists(dr, "TempMaterialNo")) model.TempMaterialNo = dr["TempMaterialNo"].ToDBString();
             if (Common_Func.readerExists(dr, "TempMaterialDesc")) model.TempMaterialDesc = dr["TempMaterialDesc"].ToDBString();
             if (Common_Func.readerExists(dr, "PickAreaNo")) model.PickAreaNo = dr["PickAreaNo"].ToDBString();
