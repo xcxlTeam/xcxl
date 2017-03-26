@@ -22,6 +22,15 @@ namespace BLL.Task
         /// 规格型号
         /// </summary>
         public string MaterialStd { get; set; }
+        /// <summary>
+        /// 英文名称
+        /// </summary>
+        public string Descr { get; set; }
+        /// <summary>
+        /// 中文名称
+        /// </summary>
+        public string CHDesc { get; set; }
+
 
 
         public decimal TaskQty { get; set; }
@@ -86,13 +95,8 @@ namespace BLL.Task
         public decimal ShelvePackCount { get; set; }
 
         /// <summary>
-        /// 当期下架过账数量
+        /// 批号（通常不会指定，只扫一次调拨任务中可能会指定）
         /// </summary>
-        public decimal CurrentPostQty { get; set; }
-
-        /// <summary>
-        /// SAP余量库存
-        /// </summary>
-        public decimal RemainStockQty { get; set; }
+        public string BatchNo { get; set; }
     }
 }

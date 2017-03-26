@@ -7,6 +7,19 @@ namespace BLL.Stock
 {
     public class StockHead_Model
     {
+        public StockHead_Model() { }
+        public StockHead_Model(Stock_Model child)
+        {
+            this.MaterialNo = child.MaterialNo;
+            this.BatchNo = child.BatchNo;
+            this.MaterialCHDesc = child.MaterialCHDesc;
+            this.MaterialENDesc = child.MaterialENDesc;
+            this.ShelfLife = child.ShelfLife;
+            this.iQuantity = child.Qty;
+            this.iNum = child.Num;
+            this.lstStockInfo = new List<Stock_Model> { child };
+
+        }
         public List<Stock_Model> lstStockInfo { get; set; }
 
         public string Status { get; set; } //状态 S成功 E 失败
@@ -29,7 +42,7 @@ namespace BLL.Stock
         /// <summary>
         /// 英文名称
         /// </summary>
-        public string MaterialDesc { get; set; }
+        public string MaterialENDesc { get; set; }
         /// <summary>
         /// 中文名称
         /// </summary>
@@ -60,8 +73,12 @@ namespace BLL.Stock
         public int fDisableNum { get; set; }
         public decimal fStopQuantity { get; set; }
         public int fStopNum { get; set; }
-        public DateTime dMdate { get; set; }
-        public DateTime dVdate { get; set; }
+        public string dMdate { get; set; }
+        public string dVdate { get; set; }
+        /// <summary>
+        /// 保质期(天)				
+        /// </summary>
+        public int ShelfLife { get; set; }
 
     }
 }

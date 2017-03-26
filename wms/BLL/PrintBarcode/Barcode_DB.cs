@@ -1485,7 +1485,7 @@ namespace BLL.PrintBarcode
                             {
                                 while (dr.Read())
                                 {
-                                    dt[i].MaterialDesc = dr["cinvname"].ToString();
+                                    dt[i].MaterialENDesc = dr["cinvname"].ToString();
                                     dt[i].MaterialStd = dr["cinvstd"].ToString();
                                     U8checked = true;
                                     break;
@@ -1509,7 +1509,7 @@ namespace BLL.PrintBarcode
                         ID = Convert.ToInt32(cmd.Parameters["@ID"].Value);
                         cmd.Parameters.Clear();
                         Stock_Model stockmodel = dt[i];
-                        strSql += @"insert T_STOCK (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,status,isdel,batchno) values(" + ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + stockmodel.Qty.ToString("F0") + ",1,0,'期初');";
+                        strSql += @"insert T_STOCK (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,status,isdel,batchno) values(" + ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialENDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + stockmodel.Qty.ToString("F0") + ",1,0,'期初');";
                     }
                 }
                 cmd.CommandText = strSql;
@@ -1830,7 +1830,7 @@ namespace BLL.PrintBarcode
                     cmd.ExecuteNonQuery();
                     int STOCK_ID = Convert.ToInt32(cmd.Parameters["@ID"].Value);
                     cmd.Parameters.Clear();
-                    strSql += @"insert T_STOCK (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,barcode,serialno,batchno,createtime,status,isdel) values(" + STOCK_ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + Convert.ToInt16(labelModel.outpackqty).ToString() + ",'" + detail.barcode + "','" + detail.BarcodeExpress + "','151120X',GETDATE(),1,0);";
+                    strSql += @"insert T_STOCK (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,barcode,serialno,batchno,createtime,status,isdel) values(" + STOCK_ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialENDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + Convert.ToInt16(labelModel.outpackqty).ToString() + ",'" + detail.barcode + "','" + detail.BarcodeExpress + "','151120X',GETDATE(),1,0);";
                     strSql += @"update T_STOCK set qty=qty - " + Convert.ToInt16(labelModel.outpackqty).ToString() + " where batchno = '期初' and materialno = '" + stockmodel.MaterialNo + "' and warehouseno = '" + stockmodel.WarehouseNo + "' and houseno = '" + stockmodel.HouseNo + "' and areano = '" + stockmodel.AreaNo + "' ;";
                 }
                 cmd.CommandText = strSql;
@@ -3995,7 +3995,7 @@ having (1=1) ";
                             {
                                 while (dr.Read())
                                 {
-                                    dt[i].MaterialDesc = dr["cinvname"].ToString();
+                                    dt[i].MaterialENDesc = dr["cinvname"].ToString();
                                     dt[i].MaterialStd = dr["cinvstd"].ToString();
                                     U8checked = true;
                                     break;
@@ -4051,11 +4051,11 @@ having (1=1) ";
                         Stock_Model stockmodel = dt[i];
                         if (dt[i].cvencode.Equals(string.Empty) || dt[i].cvencode.Equals(""))
                         {
-                            strSql += @"insert T_STOCK_MaterialImport (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,status,isdel,batchno) values(" + ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + stockmodel.Qty.ToString("F0") + ",1,0,'期初');";
+                            strSql += @"insert T_STOCK_MaterialImport (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,status,isdel,batchno) values(" + ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialENDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + stockmodel.Qty.ToString("F0") + ",1,0,'期初');";
                         }
                         else
                         {
-                            strSql += @"insert T_STOCK_MaterialImport (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,status,isdel,batchno,returnsupcode,returnsupname) values(" + ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + stockmodel.Qty.ToString("F0") + ",1,0,'期初','" + dt[i].cvencode + "','" + dt[i].cvenname + "');";
+                            strSql += @"insert T_STOCK_MaterialImport (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,status,isdel,batchno,returnsupcode,returnsupname) values(" + ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialENDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + stockmodel.Qty.ToString("F0") + ",1,0,'期初','" + dt[i].cvencode + "','" + dt[i].cvenname + "');";
                         }
                     }
                 }
@@ -4180,12 +4180,12 @@ having (1=1) ";
                     cmd.Parameters.Clear();
                     if (label_lst[i].cvencode.Length > 0)
                     {
-                        strSql += @"insert T_STOCK (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,barcode,serialno,batchno,createtime,status,isdel) values(" + STOCK_ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + Convert.ToInt16(labelModel.outpackqty).ToString() + ",'" + detail.barcode + "','" + detail.BarcodeExpress + "','160804X',GETDATE(),1,0);";
+                        strSql += @"insert T_STOCK (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,barcode,serialno,batchno,createtime,status,isdel) values(" + STOCK_ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialENDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + Convert.ToInt16(labelModel.outpackqty).ToString() + ",'" + detail.barcode + "','" + detail.BarcodeExpress + "','160804X',GETDATE(),1,0);";
                         strSql += @"update T_STOCK_MaterialImport set qty=qty - " + Convert.ToInt16(labelModel.outpackqty).ToString() + " where batchno = '期初' and materialno = '" + stockmodel.MaterialNo + "' and warehouseno = '" + stockmodel.WarehouseNo + "' and houseno = '" + stockmodel.HouseNo + "' and areano = '" + stockmodel.AreaNo + "' and returnsupcode ='" + label_lst[i].cvencode + "' ;";
                     }
                     else
                     {
-                        strSql += @"insert T_STOCK (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,barcode,serialno,batchno,createtime,status,isdel) values(" + STOCK_ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + Convert.ToInt16(labelModel.outpackqty).ToString() + ",'" + detail.barcode + "','" + detail.BarcodeExpress + "','160804X',GETDATE(),1,0);";
+                        strSql += @"insert T_STOCK (id,materialno,materialdesc,materialstd,warehouseno,houseno,areano,qty,barcode,serialno,batchno,createtime,status,isdel) values(" + STOCK_ID.ToString() + ",'" + stockmodel.MaterialNo + "','" + stockmodel.MaterialENDesc + "','" + stockmodel.MaterialStd + "','" + stockmodel.WarehouseNo + "','" + stockmodel.HouseNo + "','" + stockmodel.AreaNo + "'," + Convert.ToInt16(labelModel.outpackqty).ToString() + ",'" + detail.barcode + "','" + detail.BarcodeExpress + "','160804X',GETDATE(),1,0);";
                         strSql += @"update T_STOCK_MaterialImport set qty=qty - " + Convert.ToInt16(labelModel.outpackqty).ToString() + " where batchno = '期初' and materialno = '" + stockmodel.MaterialNo + "' and warehouseno = '" + stockmodel.WarehouseNo + "' and houseno = '" + stockmodel.HouseNo + "' and areano = '" + stockmodel.AreaNo + "' ;";
                     }
                     

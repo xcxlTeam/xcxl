@@ -33,11 +33,17 @@ namespace BLL.Voucher
                     {
                         int iCount = list.Count<object>();
                         if (iCount == 1)
-                            strSql = string.Format("select top 100000000 * from xMES_TranSF_To01 where InvtID='{0}'", list[0].ToString());
+                            strSql = string.Format(@"select top 100000000  a.BatNbr,a.SiteID,a.ToSiteID,a.RefNbr,a.InvtID,a.CHDesc,a.Descr,a.WhseLoc,a.ToWhseLoc,a.LotSerNbr,a.Qty,a.TranDate
+                            ,b.Allergic,b.SceneMaterial,b.UserFlag,b.InvtType,b.ShelfLife,b.StkUnit from xMES_TranSF_To01 a join join xMES_ItemMST b on a.invtid=b.invtid where InvtID='{0}'", list[0].ToString());
                         if (iCount == 2)
-                            strSql = string.Format("select top 100000000 * from xMES_TranSF_To01 where InvtID='{0}' and LotSerNbr='{1}'", list[0].ToString(), list[1].ToString());
+                            strSql = string.Format(@"select top 100000000  a.BatNbr,a.SiteID,a.ToSiteID,a.RefNbr,a.InvtID,a.CHDesc,a.Descr,a.WhseLoc,a.ToWhseLoc,a.LotSerNbr,a.Qty,a.TranDate
+                            ,b.Allergic,b.SceneMaterial,b.UserFlag,b.InvtType,b.ShelfLife,b.StkUnit from xMES_TranSF_To01 a join join xMES_ItemMST b on a.invtid=b.invtid where InvtID='{0}' and LotSerNbr='{1}'", list[0].ToString(), list[1].ToString());
                         if (iCount == 3)
-                            strSql = string.Format("select top 100000000 * from xMES_TranSF_To01 where InvtID='{0}' and LotSerNbr='{1}' and CONVERT(varchar(100), TranDate, 23)='{2}'", list[0].ToString(), list[1].ToString(), Convert.ToDateTime(list[2]).ToString("yyyy-MM-dd"));
+                            strSql = string.Format(@"select top 100000000  a.BatNbr,a.SiteID,a.ToSiteID,a.RefNbr,a.InvtID,a.CHDesc,a.Descr,a.WhseLoc,a.ToWhseLoc,a.LotSerNbr,a.Qty,a.TranDate
+                            ,b.Allergic,b.SceneMaterial,b.UserFlag,b.InvtType,b.ShelfLife,b.StkUnit from xMES_TranSF_To01 a join join xMES_ItemMST b on a.invtid=b.invtid where InvtID='{0}' and LotSerNbr='{1}' and CONVERT(varchar(100), TranDate, 23)='{2}'", list[0].ToString(), list[1].ToString(), Convert.ToDateTime(list[2]).ToString("yyyy-MM-dd"));
+                        if (iCount == 4)
+                            strSql = string.Format(@"select top 100000000  a.BatNbr,a.SiteID,a.ToSiteID,a.RefNbr,a.InvtID,a.CHDesc,a.Descr,a.WhseLoc,a.ToWhseLoc,a.LotSerNbr,a.Qty,a.TranDate
+                            ,b.Allergic,b.SceneMaterial,b.UserFlag,b.InvtType,b.ShelfLife,b.StkUnit from xMES_TranSF_To01 a join join xMES_ItemMST b on a.invtid=b.invtid where InvtID='{0}' and LotSerNbr='{1}' and TranDate>= '{2}' and and TranDate<='{3}'", list[0].ToString(), list[1].ToString(), Convert.ToDateTime(list[2]).ToString("yyyy-MM-dd"), Convert.ToDateTime(list[3]).ToString("yyyy-MM-dd"));
                     }
                     break;
                 case 4:

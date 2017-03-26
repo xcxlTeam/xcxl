@@ -8,6 +8,14 @@ namespace BLL.Voucher
     public class Transfer:Inventory
     {
         /// <summary>
+        /// 状态 S成功 E 失败
+        /// </summary>
+        public String Status { get; set; }
+        /// <summary>
+        /// 失败消息
+        /// </summary>
+        public String Message { get; set; }
+        /// <summary>
         /// BatchNumber
         /// </summary>
         public string BatNbr	{get;set;}	
@@ -42,20 +50,7 @@ namespace BLL.Voucher
         /// <summary>
         /// 转库单日期
         /// </summary>
-        public DateTime TranDate { get; set; }		
+        public string TranDate { get; set; }		
 	
-
-							
-								
-								
-								
-								
-								
-
-			
-								
-								
-								
-
     }
 }

@@ -24,7 +24,7 @@ namespace BLL.Voucher
         /// </summary>
         public string InvtType { get; set; }
         /// <summary>
-        /// 保质期				
+        /// 保质期(天)				
         /// </summary>
         public int ShelfLife { get; set; }
         /// <summary>
