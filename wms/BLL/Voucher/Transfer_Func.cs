@@ -77,7 +77,7 @@ namespace BLL.Voucher
             }
         }
 
-        public string PostReciptInfo(string strReceiveJson, string strUserJson)
+        public string PostTransferInfo(string strReceiveJson, string strUserJson)
         {
             bool bSucc = false;
             string strErrMsg = string.Empty;
@@ -123,7 +123,7 @@ namespace BLL.Voucher
             }
             catch (Exception ex)
             {
-                TOOL.WriteLogMethod.WriteLog("方法：PostTransfer---操作人：" + userModel.UserName + strReceiveJson);
+                TOOL.WriteLogMethod.WriteLog("方法：PostTransferInfo---操作人：" + userModel.UserName + strReceiveJson);
                 return GetReturnJson(false, DeliveryInfo, "Web异常：" + ex.Message + ex.StackTrace);
             }
         }
